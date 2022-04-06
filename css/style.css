@@ -1,16 +1,45 @@
 /* 공통 구조
 **********************************************/
 
-/* Global */
-.area { display: flex; position: relative; width: 1000px; margin: 0 auto;}
+.area { position: relative; width: 1200px; margin: 0 auto;}
 
-/* Container */
-.contents { flex: 1; border: 1px solid #000;}
+/* header */
+.header .menu .area { display: flex;}
+.header .menu h1 { width: 276px;}
+.header .menu h1 a { display: block;}
+.header .allMenuBtn { width: 85px;}
+.gnb { flex: 1;}
+.gnb .depth1 { display: flex; justify-content: space-between;}
+.gnb .depth2 { display: none;}
 
-/* GNB */
+/* container */
+.wrap { display: flex; margin-top: 56px;}
+.wrap .lnbBody { width: 240px; margin-right: 48px;}
+.wrap .contents { flex: 1;}
 
-/* LNB */
-.lnb { width: 200px;}
+/* lnbBody */
+.lnbBody h2 { display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; height: 120px; font-size: 32px; color: #fff; background-color: #366cc3; border-radius: 0 45px 0 0;}
+.lnbBody h2::before { content: ''; position: absolute; left: -75px; top: -67px; width: 75px; height: 67.5px; margin: 0 16px 19.5px 0; opacity: 0.1; border: solid 32px #fff; border-radius: 50%;}
+.lnb { margin-top: 8px;}
+.lnb .depth1 >li >a { display: flex; align-items: center; position: relative; height: 56px; padding-left: 16px; border: solid 1px #dbdbdb;}
+.lnb .depth1 >li >a.active { z-index: 1; color: #fff; border: 1px solid #343e68; background-color: #343e68;}
+.lnb .depth1 >li ~ li { margin-top: -1px;}
+.lnb .depth2 { display: none;}
+
+/* contents */
+.contents {}
+.contentsHeader { display: flex; align-items: flex-end; justify-content: space-between;}
+.contentsHeader .title h3 { font-size: 28px;}
+.contentsHeader .title p { margin-top: 16px;}
+.contentsHeader .location { display: flex; align-items: center; padding-bottom: 6px;}
+.contentsHeader .location i.home { margin: -3px 4px 0 0; background-position-x: -144px;}
+.contentsHeader .location .text { position: relative; margin-left: 4px; padding-left: 20px;}
+.contentsHeader .location .text::after { content: ''; display: inline-block; position: absolute; left: 0; top: 3px; width: 16px; height: 16px; text-indent: -9999rem; background: url(../images/common/split_16.png) no-repeat -80px 0/320px 128px;}
+.contentsHeader .location button { width: 32px; height: 32px; border: solid 1px #dbdbdb; border-radius: 50%;}
+.contentsHeader .location button.print { margin-left: 16px;}
+.contentsHeader .location button.print i { background-position-x: -72px;}
+.contentsHeader .location button.share { margin-left: 4px;}
+.contentsHeader .location button.share i { background-position-x: -96px;}
 
 /* 푸터 */
 
@@ -19,16 +48,103 @@
 **********************************************/
 
 /* 정렬 */
-.tal { text-align:left !important;}
-.tac { text-align:center !important;}
-.tar { text-align:right !important;}
+.textleft { text-align:left !important;}
+.textCenter { text-align:center !important;}
+.textRight { text-align:right !important;}
 
-/* 마진 */
+/* 색상 */
+.colorBlue { color: #6684EA !important;}
+.colorRed { color: #FD2020 !important;}
+.colorGreen { color: #4EC457 !important;}
+.colorBlack { color: #111 !important;}
+.colorGray { color: #777 !important;}
+.colorWood { color: #D69630 !important;}
 
 /* Split 아이콘 */
-
+.split16 { display: inline-block; width: 16px; height: 16px; text-indent: -9999rem; background: url(../images/common/split_16.png) no-repeat 0 0/320px 128px;}
+.split24 { display: inline-block; width: 24px; height: 24px; text-indent: -9999rem; background: url(../images/common/split_24.png) no-repeat 0 0/480px 192px;}
 
 /* 버튼 */
+.button { display: inline-flex; align-items: center; justify-content: center; padding: 0 16px;}
+.button.h48 { min-width: 96px; height: 48px;}
+.button.h40 { min-width: 80px; height: 40px;}
+.button.h32 { height: 32px;}
+.button.black { color: #fff; background-color: #333;}
+.button.blue { color: #fff; background-color: #366cc3;}
+
+/* 셀렉트 박스 */
+select.h32 { height: 32px; background-position: right 16px top 8px;}
+
+/* 체크박스, 라디오 박스 */
+.icheckbox,
+.iradio { position:absolute; top: 0; left: 0; min-width: 22px; min-height: 22px;}
+.focus { outline: 2px solid #000 !important; border-radius: 2px;}
+
+.checkboxGroup { display: flex;}
+.checkboxGroup li ~ li { margin-left: 20px;}
+.checkboxGroup .checkboxBox { display: inline-block; position: relative; min-height: 24px; padding-left: 30px;}
+.checkboxGroup input,
+.checkboxGroup label { font-size: 14px; cursor: pointer;}
+.checkboxGroup label::before { content: ''; display: block; position: absolute; left: 0; top: 0; width: 22px; height: 22px; border: 1px solid #ddd; background: url(https://limjungk.cafe24.com/dist/icoCheck.png) no-repeat; border-radius: 50%; transition: background-color .2s ease-in-out;}
+.checkboxGroup .checked +label::before { border-color: #366cc3; background-color: #366cc3; background-position-x: -24px;}
+.checkboxGroup .disabled,
+.checkboxGroup .disabled +label { cursor: not-allowed;}
+.checkboxGroup .disabled +label::before { border-color: #e5e5e5; background-color: #fff;}
+.checkboxGroup .checkbox-disabled-checked::before { border-color: #e5e5e5; background-color: red;}
+
+.radiogroup { display: flex;}
+.radiogroup li ~ li { margin-left: 20px;}
+.radiogroup .radioBox { display: inline-block; position: relative; min-height: 20px; padding-left: 28px;}
+.radiogroup	input { position: absolute; top: 0; left: 0; z-index: 1; width: 20px; height: 20px; margin: 0; opacity: 0 !important; cursor: pointer;}
+.radiogroup label { font-size: 14px; cursor: pointer;}
+.radiogroup label::before { content: ''; display: block; position: absolute; left: 0; top: 0; width: 20px; height: 20px; border: 1px solid #ddd; background-color: #fff; border-radius: 50%; transition: background-color .2s ease-in-out;}
+.radiogroup label::after { content: ''; display: block; position: absolute; left: 5px; top: 5px; width: 12px; height: 12px; border-radius: 50%; transition: background-color .2s ease-in-out;}
+.radiogroup .checked +label::before { border-color: #366cc3; background-color: #fff;}
+.radiogroup .checked +label::after { border-color: #366cc3; background-color: #366cc3;}
+.radiogroup	.disabled,
+.radiogroup	.disabled +label { cursor: not-allowed;}
+.radiogroup	.disabled +label::before { border-color: #bbb; background-color: #fff;}
+.radiogroup .disabled +label::after { display: none;}
+
+/* searchBody */
+.searchBody { display: flex; align-items: center; justify-content: space-between; height: 88px; margin-top: 40px; padding-right: 48px; background-color: #f7f7f7;}
+.searchBody { display: flex; align-items: center;}
+.searchBody label { padding: 0 16px 0 48px; font-weight: 700;}
+.searchBody .button .searchIcon { background-position-x: -144px;}
+.searchBody .button span { margin-top: -2px;}
+
+/* controlBody */
+.controlBody { display: flex; align-items: flex-end; justify-content: space-between; margin-top: 40px;}
+.controlBody >b { font-size: 14px;}
+
+/* tableBody */
+.tableBody { overflow: hidden; margin-top: 8px; border-top: 2px solid #333;}
+.tableBody table { width: calc(100% + 2px); margin-left: -1px;}
+.tableBody table th { padding: 16px 0; border-left: 1px solid #dbdbdb; background-color: #f7f7f7;}
+.tableBody table td { padding: 16px 12px; text-align: center; border: 1px solid #dbdbdb;}
+.tableBody table td a { text-align: left;}
+.tableBody table td a .new { display: inline-flex; justify-content: center; width: 28px; height: 16px; margin-left: 4px; font-size: 8px; font-weight: 700; font-style: normal; color: #ee0700; vertical-align: middle; border: 1px solid #ee0700;}
+.tableBody table td .fix { background-position-x: -120px;}
+.tableBody table td .file { background-position-x: -24px;}
+
+.pageNumber { display: flex; align-items: center; justify-content: center; gap: 4px; margin-top: 32px;}
+.pageNumber a { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border: solid 1px #dbdbdb;}
+.pageNumber .first i { background-position-x: -112px;}
+.pageNumber .prev i { background-position-x: -48px;}
+.pageNumber .next i { background-position-x: -64px;}
+.pageNumber .last i { background-position-x: -128px;}
+
+/* evaluationBody */
+.evaluationBody { display: flex; align-items: flex-end; justify-content: space-between; margin-top: 80px; padding: 33px 48px 32px; border: 1px solid #dbdbdb; border-top: 1px solid #333;}
+.evaluationBody .context { flex: 1;}
+.evaluationBody .context .groupBox { margin-top: 17px;}
+.evaluationBody .btn { width: 80px;}
+
+
+
+
+
+
 
 
 /* 레이어
