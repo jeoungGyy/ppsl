@@ -1,0 +1,18 @@
+@media all and (max-width:767px){
+
+:root {font-size: 14px;}
+
+}
+
+@media screen and (max-width: 560px) { :root {font-size: 13px;}}
+@media screen and (max-width: 414px) { :root {font-size: 12px;}}
+@media screen and (max-width: 375px) { :root {font-size: 11px;}}
+
+/* HiDPI support */
+@media (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .img {
+    background-image: url(https://limjungk.cafe24.com/dist/iocLine@2x.png);
+    -webkit-background-size: 60px 13px;
+    background-size: 60px 13px;
+  }
+}

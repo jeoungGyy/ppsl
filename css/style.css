@@ -1,0 +1,44 @@
+/* 공통 구조
+**********************************************/
+
+/* Global */
+.area { display: flex; position: relative; width: 1000px; margin: 0 auto;}
+
+/* Container */
+.contents { flex: 1; border: 1px solid #000;}
+
+/* GNB */
+
+/* LNB */
+.lnb { width: 200px;}
+
+/* 푸터 */
+
+
+/* 공통 STYLE
+**********************************************/
+
+/* 정렬 */
+.tal { text-align:left !important;}
+.tac { text-align:center !important;}
+.tar { text-align:right !important;}
+
+/* 마진 */
+
+/* Split 아이콘 */
+
+
+/* 버튼 */
+
+
+/* 레이어
+**********************************************/
+
+
+
+
+/* 콘텐츠 명
+**********************************************/
+
+/* 하위 콘텐츠 명 */
+
