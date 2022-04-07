@@ -127,7 +127,7 @@ select.h32 { height: 32px; background-position: right 16px top 8px;}
 .checkboxGroup .disabled +label::before { border-color: #e5e5e5; background-color: #fff;}
 .checkboxGroup .checkbox-disabled-checked::before { border-color: #e5e5e5; background-color: red;}
 
-.radiogroup { display: flex;}
+/* .radiogroup { display: flex;}
 .radiogroup li { margin-right: 20px;}
 .radiogroup .radioBox { display: inline-block; position: relative; min-height: 20px; padding-left: 28px;}
 .radiogroup	input { position: absolute; top: 0; left: 0; z-index: 1; width: 20px; height: 20px; margin: 0; opacity: 0 !important; cursor: pointer;}
@@ -139,7 +139,14 @@ select.h32 { height: 32px; background-position: right 16px top 8px;}
 .radiogroup	.disabled,
 .radiogroup	.disabled +label { cursor: not-allowed;}
 .radiogroup	.disabled +label::before { border-color: #bbb; background-color: #fff;}
-.radiogroup .disabled +label::after { display: none;}
+.radiogroup .disabled +label::after { display: none;} */
+
+.iradio { position: absolute; top: -1px; left: 0; width: 20px; height: 20px; border: 1px solid #a5a5a5; border-radius: 50%; transition: all .2s ease-in-out;}
+.iradio::before { content: ''; position: absolute; left: 3px; top: 3px; width: 12px; height: 12px; border-radius: 50%; transition: all .2s ease-in-out;}
+.iradio input { margin: 0; width: 20px; height: 20px;}
+.iradio.checked { border-color: #366cc3; transition: all .2s ease-in-out;}
+.iradio.checked::before { background-color: #366cc3;}
+.radioBox { display: flex; align-items: center; position: relative; height: 20px; padding-left: 28px;}
 
 /* lineSpace */
 .lineSpace { display: flex; align-items: center;}
@@ -205,9 +212,10 @@ select.h32 { height: 32px; background-position: right 16px top 8px;}
 .viewBody .postGroup li a { display: inline-block;}
 
 /* evaluationBody */
-.evaluationBody { display: flex; align-items: flex-end; justify-content: space-between; margin-top: 80px; padding: 33px 48px 32px; border: 1px solid #dbdbdb; border-top: 1px solid #333;}
+.evaluationBody { display: flex; align-items: center; justify-content: space-between; margin-top: 80px; padding: 33px 48px 32px; border: 1px solid #dbdbdb; border-top: 1px solid #333;}
 .evaluationBody .context { flex: 1;}
-.evaluationBody .context .groupBox { margin-top: 17px;}
+.evaluationBody .context .groupBox { display: flex; align-items: center; margin-top: 17px;}
+.evaluationBody .context .groupBox li { margin-right: 32px;}
 .evaluationBody .btn { width: 80px;}
 
 
