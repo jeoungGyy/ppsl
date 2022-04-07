@@ -10,7 +10,7 @@
 .header .global .area { display: flex; align-items: center; justify-content: flex-end; height: 32px;}
 .header .global .area >div { display: flex; align-items: center;}
 .header .global span { padding-top: 2px; font-size: 12px;}
-.header .global .time { display: inline-flex; align-items: center; justify-content: center; height: 24px; margin-left: 8px; padding: 0 8px; border: solid 1px #dbdbdb; background-color: #f7f7f7; border-radius: 4px;}
+.header .global .time { display: inline-flex; align-items: center; justify-content: center; height: 24px; margin-left: 8px; padding: 1px 8px 0; border: solid 1px #dbdbdb; background-color: #f7f7f7; border-radius: 4px;}
 .header .global .logOutBtn { display: inline-flex; align-items: center; justify-content: center; height: 24px; margin-left: 8px; padding: 0 8px; font-size: 12px; border: solid 1px #dbdbdb; border-radius: 4px; }
 .header .global .timeExtensionBtn { display: inline-flex; align-items: center; justify-content: center; height: 24px; margin-left: 4px; padding: 0 8px; font-size: 12px; border: solid 1px #dbdbdb; border-radius: 4px; }
 .header .global .fontSize { display: flex; align-items: center; justify-content: center; position: relative; width: 24px; height: 24px; font-size: 16px; font-weight: 700; border: solid 1px #dbdbdb;}
@@ -112,7 +112,7 @@ select.h32 { height: 32px; background-position: right 16px top 8px;}
 
 /* 체크박스, 라디오 박스 */
 .icheckbox,
-.iradio { position:absolute; top: 0; left: 0; min-width: 22px; min-height: 22px;}
+.iradio { position:absolute; top: 0; left: 0; min-width: 20px; min-height: 20px;}
 .focus { outline: 2px solid #000 !important; border-radius: 2px;}
 
 .checkboxGroup { display: flex;}
@@ -131,9 +131,9 @@ select.h32 { height: 32px; background-position: right 16px top 8px;}
 .radiogroup li { margin-right: 20px;}
 .radiogroup .radioBox { display: inline-block; position: relative; min-height: 20px; padding-left: 28px;}
 .radiogroup	input { position: absolute; top: 0; left: 0; z-index: 1; width: 20px; height: 20px; margin: 0; opacity: 0 !important; cursor: pointer;}
-.radiogroup label { font-size: 14px; cursor: pointer;}
-.radiogroup label::before { content: ''; display: block; position: absolute; left: 0; top: 0; width: 20px; height: 20px; border: 1px solid #ddd; background-color: #fff; border-radius: 50%; transition: background-color .2s ease-in-out;}
-.radiogroup label::after { content: ''; display: block; position: absolute; left: 5px; top: 5px; width: 12px; height: 12px; border-radius: 50%; transition: background-color .2s ease-in-out;}
+.radiogroup label { display: flex; align-items: center; height: 20px; font-size: 14px; cursor: pointer;}
+.radiogroup label::before { content: ''; display: block; position: absolute; left: 0; top: 0; width: 18px; height: 18px; border: 1px solid #ddd; background-color: #fff; border-radius: 50%; transition: background-color .2s ease-in-out;}
+.radiogroup label::after { content: ''; display: block; position: absolute; left: 4px; top: 4px; width: 12px; height: 12px; border-radius: 50%; transition: background-color .2s ease-in-out;}
 .radiogroup .checked +label::before { border-color: #366cc3; background-color: #fff;}
 .radiogroup .checked +label::after { border-color: #366cc3; background-color: #366cc3;}
 .radiogroup	.disabled,
