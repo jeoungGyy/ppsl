@@ -5,6 +5,10 @@
 .onlyMobile { display: none;}
 .area { position: relative; width: 1200px; margin: 0 auto;}
 
+/* skipnav */
+.skipnav a { display: block; position: fixed; left: 0; top: -100px; z-index: 300; width: 100%; padding: 10px 0; color: #fff; text-align: center; background-color: #111;}
+.skipnav a:focus { top: 0;}
+
 /* header */
 .header { position: fixed; left: 0; top: 0; width: 100%; z-index: 100; padding-top: 8px; background-color: #fff; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);}
 .header .global .area { display: flex; align-items: center; justify-content: flex-end; height: 32px;}
@@ -98,14 +102,19 @@
 .split24 { display: inline-block; width: 24px; height: 24px; text-indent: -9999rem; background: url(../images/common/split_24.png) no-repeat 0 0/480px 192px;} */
 
 /* 버튼 */
-.button { display: inline-flex; align-items: center; justify-content: center; padding: 0 16px;}
+.button { display: inline-flex; align-items: center; justify-content: center; padding: 0 16px; transition: background-color .2s ease-in-out;}
 .button.h48 { min-width: 96px; height: 48px;}
 .button.h40 { min-width: 80px; height: 40px;}
 .button.h32 { height: 32px; font-size: 14px;}
 .button.black { color: #fff; background-color: #333;}
+.button.black:hover, 
+.button.black:active { background-color: #000;}
 .button.blue { color: #fff; background-color: #366cc3;}
+.button.blue:hover,
+.button.blue:active { background-color: #2b569c;}
 .button.lineBlack { border: 1px solid #333;}
-.button.lineBlack:hover { color: #366cc3; border-color: #366cc3;}
+.button.lineBlack:hover,
+.button.lineBlack:active { color: #366cc3; border-color: #366cc3;}
 
 /* 셀렉트 박스 */
 select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 8px;}

@@ -34,6 +34,11 @@
 
 <body>
 <div id="wrap">
+	<nav class="skipnav">
+		<a href="#contentLink">본문 바로가기</a>
+		<a href="#menuLink">메뉴 바로가기</a>
+	</nav>
+	
 	<!-- PC 메뉴 -->
 	<header class="onlyPC header">
 		<div class="global">
@@ -57,7 +62,7 @@
 		<div class="menu">
 			<div class="area">
 				<h1><a href="#"><img src="../../images/common/ci.svg" alt="공적연금연계제도"></a></h1>
-				<nav class="gnb">
+				<nav id="menuLink" class="gnb">
 					<ul class="depth1">
 						<li><a href="#">안내</a>
 							<ul class="depth2">
@@ -227,7 +232,7 @@
 					</nav>
 				</div>
 
-				<div class="contents">
+				<div id="contentLink" class="contents">
 					<header class="contentsHeader">
 						<div class="title">
 							<h3>이용안내</h3>
