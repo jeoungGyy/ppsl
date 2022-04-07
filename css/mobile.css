@@ -9,9 +9,9 @@
 /* header */
 .moHeader .global { display: flex; align-items: center; justify-content: space-between; height: 72px; padding: 0 16px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);}
 .moHeader .global h1 a { display: block;}
-.moHeader .global h1 a i { display: block; width: 188px; height: 36px; text-indent: -99999px; background: url(../images/common/ci@2x.png) no-repeat center/cover;}
-.moHeader .global .searchBtn i { display: block; width: 32px; height: 32px; text-indent: -99999px; background: url(../images/common/ico_search@2x.png) no-repeat center/cover;}
-.moHeader .global .allMenuBtn i { display: block; width: 32px; height: 32px; text-indent: -99999px; background: url(../images/common/ico_menu@2x.png) no-repeat center/cover;}
+.moHeader .global h1 a img { width: 188px; height: 36px; vertical-align: middle;}
+.moHeader .global .searchBtn i { display: block; width: 32px; height: 32px; text-indent: -99999px; background: url(../images/common/ico_search.svg) no-repeat center/cover;}
+.moHeader .global .allMenuBtn i { display: block; width: 32px; height: 32px; text-indent: -99999px; background: url(../../images/common/ico_menu.svg) no-repeat center/cover;}
 
 /* wrap */
 .wrap { margin-top: 40px; padding: 0 16px;}
@@ -31,7 +31,7 @@
 .searchBody .title { display: flex; align-items: center; justify-content: space-between; height: 48px; padding: 0 6px 0 16px; background-color: #f7f7f7;}
 .searchBody .title h4 { font-size: 16px;}
 .searchBody .title .toggleBtn { padding: 10px;}
-.searchBody .title .toggleBtn i { display: inline-block; width: 16px; height: 16px; text-indent: -99999px; vertical-align: middle; background: url(../images/common/ico_arrow_down@2x.png) no-repeat center/cover;}
+.searchBody .title .toggleBtn i { display: inline-block; width: 16px; height: 16px; text-indent: -99999px; vertical-align: middle; background: url(../images/common/ico_arrow_down.svg) no-repeat center/cover;}
 .controlBox { display: none; padding: 16px;}
 .controlBox li label { width: 45px; padding-left: 0;}
 .controlBox li ~ li { margin-top: 8px;}
@@ -47,13 +47,26 @@
 
 /* tableBody */
 .tableBody >ul >li { padding: 28px 0 24px; border-bottom: solid 1px #dbdbdb;}
+.tableBody >ul >li a { display: block;}
 .tableBody >ul >li .notice span { font-size: 14px;}
-.tableBody >ul >li .title { display: block; margin-top: 8px;}
+.tableBody >ul >li .title { display: block; margin-top: 8px; line-height: 24px;}
 .tableBody >ul >li .lineSpace { margin-top: 16px;}
 .tableBody >ul >li .lineSpace span { font-family: var(--fontMontserrat);}
 .tableBody >ul >li.empty { text-align: center;}
 
 .pageNumber a { width: 32px; height: 32px; font-size: 14px;}
+
+/* viewBody */
+.viewBody { margin-top: 24px; padding-top: 24px;}
+.viewBody h4 { font-size: 18px;}
+.viewBody .lineSpace { display: block;}
+.viewBody .lineSpace >span { display: block;}
+.viewBody .lineSpace >span ~ span { margin: 8px 0 0 0; padding-left: 0;}
+.viewBody .lineSpace >span ~ span::before { display: none;}
+.viewBody .fileForm { margin-top: 16px;}
+.viewBody .article { padding: 24px 0;}
+.viewBody .postGroup li a { overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+
 
 /* evaluationBody */
 .evaluationBody { display: block; margin-top: 48px; padding: 32px 24px;}

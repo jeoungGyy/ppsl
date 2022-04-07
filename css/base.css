@@ -16,22 +16,6 @@
 	url(../fonts/NanumBarunGothic/NanumBarunGothicBoldSubset.ttf) format('truetype');
 }
 @font-face {
-	font-family: 'NanumBarunGothic';
-	font-weight: 300;
-	src: local("나눔바른고딕 Light"),
-	url(../fonts/NanumBarunGothic/NanumBarunGothicLightSubset.woff2) format('woff2'),
-	url(../fonts/NanumBarunGothic/NanumBarunGothicLightSubset.woff) format('woff'),
-	url(../fonts/NanumBarunGothic/NanumBarunGothicLightSubset.ttf) format('truetype');
-}
-@font-face {
-	font-family: 'NanumBarunGothic';
-	font-weight: 200;
-	src: local("나눔바른고딕 UltraLight"),
-	url(../fonts/NanumBarunGothic/NanumBarunGothicUltraLightSubset.woff2) format('woff2'),
-	url(../fonts/NanumBarunGothic/NanumBarunGothicUltraLightSubset.woff) format('woff'),
-	url(../fonts/NanumBarunGothic/NanumBarunGothicUltraLightSubset.ttf) format('truetype');
-}
-@font-face {
 	font-family: 'Montserrat';
 	font-weight: 400;
 	src: local("나눔바른고딕"),
@@ -53,7 +37,7 @@ html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,pre,a,main,abbr,address,cite,code,
   text-size-adjust : none;
 }
 body {
-	font: 16px/1.5 "NanumBarunGothic", "Apple SD Gothic Neo", "Droid sans", "Microsoft NeoGothic ", sans-serif;
+	font: 16px/1 "NanumBarunGothic", "Apple SD Gothic Neo", "Droid sans", "Microsoft NeoGothic ", sans-serif;
 	font-weight: 400;
 	color:#333;
 	-webkit-text-size-adjust: none;
@@ -61,7 +45,7 @@ body {
 
 a:link,
 a:visited { color:#333; text-decoration:none;}
-select { height: 40px; padding: 0 48px 0 16px; font-size:100%; vertical-align:middle; border: 1px solid #dbdbdb; background: #fff url(../images/common/ico_dropdown@2x.png) no-repeat right 16px top 12px/16px 16px; -webkit-appearance: none;	-moz-appearance: none; appearance: none;}
+select { height: 40px; padding: 0 48px 0 16px; font-size:100%; vertical-align:middle; border: 1px solid #dbdbdb; background: #fff url(../images/common/ico_dropdown.svg) no-repeat right 16px top 12px/16px 16px; -webkit-appearance: none;	-moz-appearance: none; appearance: none;}
 select[disabled] { background-color: #ccc;}
 select::-ms-expand { display: none;} /* 화살표 없애기 for IE10, 11*/
 input[type=submit] { border:0; cursor:pointer; -webkit-appearance: none;}
