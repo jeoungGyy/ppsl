@@ -21,7 +21,7 @@
 .header .global .searchBox { position: relative;}
 .header .global .searchBox input { width: 176px; height: 24px; padding-right: 34px; border: solid 1px #dbdbdb; border-radius: 12px;}
 .header .global .searchBox .searchBtn { position: absolute; right: 16px; top: 5px;}
-.header .global .searchBox .searchBtn i { display: inline-block; width: 16px; height: 16px; text-indent: -99999px; background: url(../../images/common/ico_search2.svg) no-repeat center/cover;}
+.header .global .searchBox .searchBtn i { display: inline-block; width: 16px; height: 16px; text-indent: -99999px; background: url(../images/common/ico_search2.svg) no-repeat center/cover;}
 .header .global .loginSpace { margin-left: 16px;}
 .header .global .textSpace { margin-left: 32px;}
 .header .global .searchSpace { margin-left: 32px;}
@@ -30,7 +30,7 @@
 .header .menu h1 a { display: inline-block; padding-bottom: 6px;}
 .header .menu h1 a img { width: 208px; height: 40px; vertical-align: middle;}
 .header .allMenuBtn { width: 32px; margin-left: 56px;}
-.header .allMenuBtn i { display: block; width: 32px; height: 32px; text-indent: -99999px; background: url(../../images/common/ico_menu.svg) no-repeat center/cover;}
+.header .allMenuBtn i { display: block; width: 32px; height: 32px; text-indent: -99999px; background: url(../images/common/ico_menu.svg) no-repeat center/cover;}
 .gnb { flex: 1;}
 .gnb .depth1 { display: flex; justify-content: space-between;}
 .gnb .depth1 >li >a { display: block; font-size: 18px; font-weight: 700;}
@@ -55,7 +55,7 @@
 .contentsHeader .title h3 { font-size: 28px;}
 .contentsHeader .title p { margin-top: 16px; color: #5a5a5a;}
 .contentsHeader .location { display: inline-flex; align-items: center; padding-bottom: 6px;}
-.contentsHeader .location i.home { display: inline-block; width: 16px; height: 16px; margin: -3px 4px 0 0; background: url(../../images/common/ico_home.svg) no-repeat center/cover;}
+.contentsHeader .location i.home { display: inline-block; width: 16px; height: 16px; margin: -3px 4px 0 0; background: url(../images/common/ico_home.svg) no-repeat center/cover;}
 .contentsHeader .location span { color: #767676;}
 .contentsHeader .location .text { position: relative; margin-left: 4px; padding-left: 20px;}
 .contentsHeader .location .text::after { content: ''; display: inline-block; position: absolute; left: 0; top: 3px; width: 16px; height: 16px; text-indent: -9999rem;}
@@ -64,11 +64,11 @@
 .contentsHeader .location button:hover { border-color: #366cc3; background-color: #366cc3;}
 .contentsHeader .location button:hover i { background-position-y: -24px;}
 .contentsHeader .location button.printBtn { margin-left: 16px;}
-.contentsHeader .location button.printBtn i { background: url(../../images/common/ico_print.svg) no-repeat center/cover;}
-.contentsHeader .location button.printBtn:hover i { background: url(../../images/common/ico_print_w.svg) no-repeat center/cover;}
+.contentsHeader .location button.printBtn i { background: url(../images/common/ico_print.svg) no-repeat center/cover;}
+.contentsHeader .location button.printBtn:hover i { background: url(../images/common/ico_print_w.svg) no-repeat center/cover;}
 .contentsHeader .location button.shareBtn { margin-left: 4px;}
-.contentsHeader .location button.shareBtn i { background: url(../../images/common/ico_share.svg) no-repeat center/cover;}
-.contentsHeader .location button.shareBtn:hover i { background: url(../../images/common/ico_share_w.svg) no-repeat center/cover;}
+.contentsHeader .location button.shareBtn i { background: url(../images/common/ico_share.svg) no-repeat center/cover;}
+.contentsHeader .location button.shareBtn:hover i { background: url(../images/common/ico_share_w.svg) no-repeat center/cover;}
 
 /* 푸터 */
 
@@ -163,7 +163,7 @@ select.h32 { height: 32px; background-position: right 16px top 8px;}
 .controlBox li input[type=text] { flex: 1;}
 .controlBox li .button { min-width: 88px; margin-left: 4px;}
 .controlBox li .button span { margin-top: -2px;}
-.controlBox li .button .searchIcon { display: inline-block; width: 24px; height: 24px; background: url(../../images/common/ico_search_w_24.svg) no-repeat center/cover;}
+.controlBox li .button .searchIcon { display: inline-block; width: 24px; height: 24px; background: url(../images/common/ico_search_w_24.svg) no-repeat center/cover;}
 .controlBox li.ml4 { padding-left: 4px;}
 .controlBox li.wp35 { width: 35%;}
 .controlBox li.wp25 { width: 25%;}
@@ -182,18 +182,18 @@ select.h32 { height: 32px; background-position: right 16px top 8px;}
 .tableBody table td a { text-align: left; line-height: 24px;}
 .tableBody table td.empty { padding: 40px 0;}
 .tableBody a .new { display: inline-flex; justify-content: center; align-items: center; width: 28px; height: 16px; margin-left: 4px; font-size: 8px; font-weight: 700; font-style: normal; color: #ee0700; vertical-align: middle; border: 1px solid #ee0700;}
-.tableBody .fix { display: inline-block; width: 24px; height: 24px; text-indent: -99999px; background: url(../../images/common/ico_notice.svg) no-repeat center/cover;}
-.tableBody .file { display: inline-block; width: 24px; height: 24px; text-indent: -99999px; background: url(../../images/common/ico_attach.svg) no-repeat center/cover;}
+.tableBody .fix { display: inline-block; width: 24px; height: 24px; text-indent: -99999px; background: url(../images/common/ico_notice.svg) no-repeat center/cover;}
+.tableBody .file { display: inline-block; width: 24px; height: 24px; text-indent: -99999px; background: url(../images/common/ico_attach.svg) no-repeat center/cover;}
 
 .pageNumber { display: flex; align-items: center; justify-content: center; margin-top: 32px;}
 .pageNumber a { display: flex; justify-content: center; align-items: center;  width: 40px; height: 40px; margin: 0 2px; font-family: 'Montserrat'; font-weight: 400; border: solid 1px #dbdbdb;}
 .pageNumber a:hover { border-color: #366cc3;}
 .pageNumber a.active { color: #fff; border-color: #366cc3; background-color: #366cc3;}
 .pageNumber a i { display: inline-block; width: 16px; height: 16px; text-indent: -99999px;}
-.pageNumber .first i { background: url(../../images/common/ico_arrow_left_double.svg) no-repeat center/cover;}
-.pageNumber .prev i { background: url(../../images/common/ico_arrow_left.svg) no-repeat center/cover;}
-.pageNumber .next i { background: url(../../images/common/ico_arrow_right.svg) no-repeat center/cover;}
-.pageNumber .last i { background: url(../../images/common/ico_arrow_right_double.svg) no-repeat center/cover;}
+.pageNumber .first i { background: url(../images/common/ico_arrow_left_double.svg) no-repeat center/cover;}
+.pageNumber .prev i { background: url(../images/common/ico_arrow_left.svg) no-repeat center/cover;}
+.pageNumber .next i { background: url(../images/common/ico_arrow_right.svg) no-repeat center/cover;}
+.pageNumber .last i { background: url(../images/common/ico_arrow_right_double.svg) no-repeat center/cover;}
 
 /* viewBody */
 .viewBody { margin-top: 40px; padding-top: 40px; border-top: 2px solid #333;}
