@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <path style="fill:none" d="M0 0h24v24H0z"/>
+    <path d="M16 0v1.5A1.6 1.6 0 0 1 14.316 3H1.684A1.6 1.6 0 0 1 0 1.5V0" transform="translate(4 16)" style="stroke:#366cc3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:1.5px;fill:none"/>
+    <g data-name="Group 18">
+        <path d="M.5 0v8" transform="translate(11.5 5)" style="stroke:#366cc3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:1.5px;fill:none"/>
+        <path d="m-1.111 0-3 3.5 3 3.5" transform="rotate(-90 9.195 .694)" style="stroke:#366cc3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:1.5px;fill:none"/>
+    </g>
+</svg>

@@ -49,12 +49,11 @@
 .controlBody .control .button { width: 64px;}
 
 /* tableBody */
-.tableBody >ul >li { padding: 28px 0 24px; border-bottom: solid 1px #dbdbdb;}
-.tableBody >ul >li a { display: block;}
-.tableBody >ul >li .notice span { font-size: 14px;}
-.tableBody >ul >li .title { display: block; margin-top: 8px; line-height: 24px;}
-.tableBody >ul >li .lineSpace { margin-top: 16px;}
-.tableBody >ul >li .lineSpace span { font-family: var(--fontMontserrat);}
+.tableBody >ul >li a { display: block; padding: 28px 0 24px; border-bottom: solid 1px #dbdbdb;}
+.tableBody >ul >li a .notice span { font-size: 14px;}
+.tableBody >ul >li a .title { display: block; margin-top: 8px; line-height: 24px;}
+.tableBody >ul >li a .lineSpace { margin-top: 16px;}
+.tableBody >ul >li a .lineSpace span { font-family: var(--fontMontserrat);}
 .tableBody >ul >li.empty { padding: 40px 0; text-align: center;}
 
 .pageNumber a { width: 32px; height: 32px; font-size: 14px;}
@@ -68,7 +67,7 @@
 .viewBody .lineSpace >span ~ span::before { display: none;}
 .viewBody .fileForm { margin-top: 16px;}
 .viewBody .article { padding: 24px 0;}
-.viewBody .postGroup li a { overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.viewBody .postGroup li .ellipsis { flex: 1;}
 
 
 /* evaluationBody */
