@@ -1,18 +1,66 @@
 @media all and (max-width:767px){
 
-:root {font-size: 14px;}
+/* 공통 구조
+**********************************************/
 
-}
+.onlyPC { display: none;}
+.onlyMobile { display: block;}
 
-@media screen and (max-width: 560px) { :root {font-size: 13px;}}
-@media screen and (max-width: 414px) { :root {font-size: 12px;}}
-@media screen and (max-width: 375px) { :root {font-size: 11px;}}
 
-/* HiDPI support */
-@media (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
-  .img {
-    background-image: url(https://limjungk.cafe24.com/dist/iocLine@2x.png);
-    -webkit-background-size: 60px 13px;
-    background-size: 60px 13px;
-  }
+/* searchBody */
+.searchBody { padding: 0; border: solid 1px #dbdbdb; background-color: #fff;}
+.searchBody .title { display: flex; align-items: center; justify-content: space-between; height: 48px; padding: 0 6px 0 16px; background-color: #f7f7f7;}
+.searchBody .title h4 { font-size: 16px;}
+.searchBody .title .toggleBtn { padding: 10px;}
+.searchBody .title .toggleBtn i { display: inline-block; width: 16px; height: 16px; text-indent: -99999px; vertical-align: middle; background: url(../images/common/ico_arrow_down@2x.png) no-repeat center/cover;}
+.controlBox { display: none; padding: 16px;}
+.controlBox li label { width: 45px; padding-left: 0;}
+.controlBox li ~ li { margin-top: 8px;}
+.controlBox li.wp35,
+.controlBox li.wp25,
+.controlBox li.wp40 { width: 100%;}
+
+/* tableBody */
+.tableBody >ul >li { padding: 28px 0 24px; border-bottom: solid 1px #dbdbdb;}
+.tableBody >ul >li .notice span { font-size: 14px;}
+.tableBody >ul >li .title { display: block; margin-top: 8px;}
+.tableBody >ul >li .space { display: flex; align-items: center; margin-top: 16px;}
+.tableBody >ul >li .space span { font-family: var(--fontMontserrat); font-size: 14px;}
+.tableBody >ul >li .space span ~ span { position: relative; margin-left: 12px; padding-left: 12px;}
+.tableBody >ul >li .space span ~ span::before { content: ''; display: block; position: absolute; left: 0; top: 3px; width: 1px; height: 12px; background-color: #dbdbdb;}
+.tableBody >ul >li.empty { text-align: center;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

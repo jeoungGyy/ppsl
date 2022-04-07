@@ -3,33 +3,41 @@
 	font-family: 'NanumBarunGothic';
 	font-weight: 400;
 	src: local("나눔바른고딕"),
-			url(../fonts/NanumBarunGothic/NanumBarunGothicSubset.woff2) format('woff2'),
-			url(../fonts/NanumBarunGothic/NanumBarunGothicSubset.woff) format('woff'),
-			url(../fonts/NanumBarunGothic/NanumBarunGothicSubset.ttf) format('truetype');
+	url(../fonts/NanumBarunGothic/NanumBarunGothicSubset.woff2) format('woff2'),
+	url(../fonts/NanumBarunGothic/NanumBarunGothicSubset.woff) format('woff'),
+	url(../fonts/NanumBarunGothic/NanumBarunGothicSubset.ttf) format('truetype');
 }
- @font-face {
+@font-face {
 	font-family: 'NanumBarunGothic';
 	font-weight: 700;
 	src: local("나눔바른고딕 Bold"),
-			url(../fonts/NanumBarunGothic/NanumBarunGothicBoldSubset.woff2) format('woff2'),
-			url(../fonts/NanumBarunGothic/NanumBarunGothicBoldSubset.woff) format('woff'),
-			url(../fonts/NanumBarunGothic/NanumBarunGothicBoldSubset.ttf) format('truetype');
+	url(../fonts/NanumBarunGothic/NanumBarunGothicBoldSubset.woff2) format('woff2'),
+	url(../fonts/NanumBarunGothic/NanumBarunGothicBoldSubset.woff) format('woff'),
+	url(../fonts/NanumBarunGothic/NanumBarunGothicBoldSubset.ttf) format('truetype');
 }
- @font-face {
+@font-face {
 	font-family: 'NanumBarunGothic';
 	font-weight: 300;
 	src: local("나눔바른고딕 Light"),
-			url(../fonts/NanumBarunGothic/NanumBarunGothicLightSubset.woff2) format('woff2'),
-			url(../fonts/NanumBarunGothic/NanumBarunGothicLightSubset.woff) format('woff'),
-			url(../fonts/NanumBarunGothic/NanumBarunGothicLightSubset.ttf) format('truetype');
+	url(../fonts/NanumBarunGothic/NanumBarunGothicLightSubset.woff2) format('woff2'),
+	url(../fonts/NanumBarunGothic/NanumBarunGothicLightSubset.woff) format('woff'),
+	url(../fonts/NanumBarunGothic/NanumBarunGothicLightSubset.ttf) format('truetype');
 }
- @font-face {
+@font-face {
 	font-family: 'NanumBarunGothic';
 	font-weight: 200;
 	src: local("나눔바른고딕 UltraLight"),
-			url(../fonts/NanumBarunGothic/NanumBarunGothicUltraLightSubset.woff2) format('woff2'),
-			url(../fonts/NanumBarunGothic/NanumBarunGothicUltraLightSubset.woff) format('woff'),
-			url(../fonts/NanumBarunGothic/NanumBarunGothicUltraLightSubset.ttf) format('truetype');
+	url(../fonts/NanumBarunGothic/NanumBarunGothicUltraLightSubset.woff2) format('woff2'),
+	url(../fonts/NanumBarunGothic/NanumBarunGothicUltraLightSubset.woff) format('woff'),
+	url(../fonts/NanumBarunGothic/NanumBarunGothicUltraLightSubset.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'Montserrat';
+	font-weight: 400;
+	src: local("나눔바른고딕"),
+	url(../fonts/Montserrat/Montserrat-Regular.woff2) format('woff2'),
+	url(../fonts/Montserrat/Montserrat-Regular.woff) format('woff'),
+	url(../fonts/Montserrat/Montserrat-Regular.ttf) format('truetype');
 }
 
 html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,pre,a,main,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strong,sub,sup,var,b,u,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td, header, article, section, aside, nav, figure, figcaption, adress, textarea, input[type=text], input[type=password], input[type=file] {
@@ -55,10 +63,11 @@ a:link,
 a:visited { color:#333; text-decoration:none;}
 select { height: 40px; padding: 0 48px 0 16px; font-size:100%; vertical-align:middle; border: 1px solid #dbdbdb; background: #fff url(../images/common/ico_dropdown@2x.png) no-repeat right 16px top 12px/16px 16px; -webkit-appearance: none;	-moz-appearance: none; appearance: none;}
 select[disabled] { background-color: #ccc;}
+select::-ms-expand { display: none;} /* 화살표 없애기 for IE10, 11*/
 input[type=submit] { border:0; cursor:pointer; -webkit-appearance: none;}
 input[type=file],
 input[type=text],
-input[type=password] { height: 40px; padding:0 3px; font-size:100%; vertical-align:middle; border:1px solid #dbdbdb; background-color:#fff; -webkit-appearance: none;}
+input[type=password] { height: 40px; padding:0 16px; font-size:100%; vertical-align:middle; border:1px solid #dbdbdb; background-color:#fff; -webkit-appearance: none;}
 input[type=text]:focus, input[type=password]:focus { background-color:#ecf9ff;}
 /* input[readonly],
 input[disabled] { background-color:#ccc;} */
@@ -95,7 +104,5 @@ table td { vertical-align: middle;}
   --pink: #d37398;
   --white: #fff;
   --gray: #eaeaea; */
-  /* --fontPretendard: 'Pretendard';
-  --fontGmarketSans: 'Gmarket Sans';
-  --fontRoboto: 'Roboto'; */
+  --fontMontserrat: 'Montserrat';
 }
