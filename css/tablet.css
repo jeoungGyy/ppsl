@@ -4,9 +4,12 @@
 **********************************************/
 
 .area { width: 100%;}
+/* header */
+.header .global,
+.header .menu { padding: 0 16px;}
 
 /* wrap */
-.wrap { padding: 0 16px;}
+.wrap { padding: 104px 16px 0;}
 
 /* lnbBody */
 .wrap .lnbBody { display: none;}
