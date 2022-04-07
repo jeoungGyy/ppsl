@@ -186,7 +186,7 @@ select.h32 { height: 32px; background-position: right 16px top 8px;}
 .tableBody table td a { text-align: left; line-height: 24px;}
 .tableBody table td.empty { padding: 40px 0;}
 .tableBody a .new { display: inline-flex; justify-content: center; align-items: center; width: 28px; height: 16px; margin-left: 4px; font-size: 8px; font-weight: 700; font-style: normal; color: #ee0700; vertical-align: middle; border: 1px solid #ee0700;}
-.tableBody .fix { display: inline-block; width: 24px; height: 24px; text-indent: -99999px; vertical-align: middle; background: url(../images/common/ico_notice.svg) no-repeat center/cover;}
+.tableBody .fix { display: inline-block; width: 24px; height: 24px; margin-top: -1px; text-indent: -99999px; vertical-align: middle; background: url(../images/common/ico_notice.svg) no-repeat center/cover;}
 .tableBody .file { display: inline-block; width: 24px; height: 24px; text-indent: -99999px; background: url(../images/common/ico_attach.svg) no-repeat center/cover;}
 
 .pageNumber { display: flex; align-items: center; justify-content: center; margin-top: 32px;}
