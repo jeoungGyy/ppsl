@@ -14,7 +14,7 @@
 .moHeader .global .allMenuBtn i { display: block; width: 32px; height: 32px; text-indent: -99999px; background: url(../../images/common/ico_menu.svg) no-repeat center/cover;}
 
 /* wrap */
-.wrap { margin-top: 40px; padding: 0 16px;}
+.wrap { display: block; margin-top: 40px; padding: 0 16px;}
 
 /* contents */
 .contentsHeader { display: block; text-align: center;}
@@ -32,17 +32,20 @@
 .searchBody .title h4 { font-size: 16px;}
 .searchBody .title .toggleBtn { padding: 10px;}
 .searchBody .title .toggleBtn i { display: inline-block; width: 16px; height: 16px; text-indent: -99999px; vertical-align: middle; background: url(../images/common/ico_arrow_down.svg) no-repeat center/cover;}
-.controlBox { display: none; padding: 16px;}
+.controlBox { display: flex; flex-wrap: wrap; padding: 16px;}
 .controlBox li label { width: 45px; padding-left: 0;}
 .controlBox li ~ li { margin-top: 8px;}
 .controlBox li.wp35,
 .controlBox li.wp25,
-.controlBox li.wp40 { width: 100%;}
+.controlBox li.wp40,
+.controlBox li.wp60 { width: 100%;}
+.controlBox.flexWrap { margin-top: -8px;}
+.controlBox.flexWrap li { margin-top: 8px;}
 
 /* controlBody */
 .controlBody { display: block; margin-top: 24px;}
 .controlBody .control { display: flex; align-items: center; margin-top: 8px;}
-.controlBody .control select { flex: 1; margin-right: 4px;}
+.controlBody .control select { width: calc(50% - 36px); margin-right: 4px;}
 .controlBody .control .button { width: 64px;}
 
 /* tableBody */
@@ -52,7 +55,7 @@
 .tableBody >ul >li .title { display: block; margin-top: 8px; line-height: 24px;}
 .tableBody >ul >li .lineSpace { margin-top: 16px;}
 .tableBody >ul >li .lineSpace span { font-family: var(--fontMontserrat);}
-.tableBody >ul >li.empty { text-align: center;}
+.tableBody >ul >li.empty { padding: 40px 0; text-align: center;}
 
 .pageNumber a { width: 32px; height: 32px; font-size: 14px;}
 
