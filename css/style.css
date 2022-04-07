@@ -204,7 +204,7 @@ select.h32 { height: 32px; background-position: right 16px top 8px;}
 .viewBody .fileForm ul li a { display: inline-block;}
 .viewBody .fileForm ul li ~ li { margin-top: 8px;}
 .viewBody .article { padding: 40px 0; line-height: 24px;}
-.viewBody .article p ~ p { margin-top: 16px;}
+.viewBody .article p ~ p { margin-top: 24px;}
 .viewBody .btns { display: flex; justify-content: flex-end; padding-top: 32px; border-top: solid 1px #dbdbdb;}
 .viewBody .postGroup { margin-top: 40px; border-top: solid 1px #dbdbdb;}
 .viewBody .postGroup li { display: flex; align-items: center; padding: 18px 16px; border-bottom: solid 1px #dbdbdb;}
