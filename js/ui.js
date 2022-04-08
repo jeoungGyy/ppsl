@@ -5,7 +5,7 @@ $(document).ready(function () {
 			common.initial();
 			common.groupBox();
 			common.menu();
-			// common.menu_active();
+			common.menu_active();
 			// common.header_slider();
 			// common.aside_scroll();
 			// common.layer_popup();
@@ -24,7 +24,7 @@ $(document).ready(function () {
         else if ($(this).width() >= 768 && !fired[1]) {
           fired[0] = false;
           fired[1] = true;
-          
+
           $controlBox.removeAttr('style');
         }
       });
@@ -98,6 +98,70 @@ $(document).ready(function () {
           }, 10);
         }
       }
+		},
+		/* 메뉴 */
+		menu_active: function () {
+			var $header = $(".header");
+			var $gnb = $(".gnb >ul");
+			var $lnbBody = $(".lnbBody");
+			var $location = $(".location .locationDepth");
+			var $title = $(".mainTitle");
+			var fired = [];
+
+			if(typeof depth !== "undefined") {
+
+				/* 메인 헤더 라인 삭제 */
+				// if(depth === "main") {
+				// 	$header.addClass("no_line");
+
+				// 	return false;
+				// }
+
+				$.each($gnb.find("a"), function(index, item) {
+					var _item = $(this).attr("data-menu");
+					if(!_item) {
+						console.log("메뉴에 depth 값이 없거나, 콘텐츠 depth 값이 올바르지 않습니다.");
+						return false;
+					}
+
+					var _depth = _item.split("_");
+					var _depthShift = _depth.shift();
+					if(_depth.join("") === depth.join("")) {
+						$(this).addClass("active").parents().parents().siblings("a").addClass("active arrow").attr('title', '메뉴 확장').parents(".gnb_menu").siblings("a").addClass("active");
+						var lnb_clone = $(this).parents(".depth2").clone();
+						var lnb_title = $(this).parents(".depth2").siblings("a").text();
+
+						$lnbBody.find("h2").text(lnb_title).siblings(".lnb").append(lnb_clone);
+						$location.append('<a href="#" class="text"><span>'+lnb_title+'</span></a>');
+						$location.append('<a href="#" class="text"><span>'+$(this).text()+'</span></a>');
+
+						//페이지타이틀
+						$title.text("국민취업지원제도 - "+lnb_title+" - "+ $(this).text());
+
+						return false;
+					}
+				});
+			} else {
+				//페이지타이틀(deth없는경우)
+				console.log("페이지타이틀(deth없는경우)");
+			}
+
+			/* LNB 아코디언 */
+			if ($(window).width() > common.mobile_size && !fired[0]) {
+				/*
+					20210604 2레벨 메뉴 클릭시 펼침/닫기 제거
+					- LNB만 적용되도록 수정했습니다.
+				*/
+				// $lnb.find(".menu_exist").attr('title', '메뉴 축소');
+				// $lnb.find(".menu_exist.arrow").attr('title', '메뉴 확장');
+				// $lnb.find(".menu_exist").on("click", function(e){
+				// 	e.preventDefault();
+				// 	if(!$(this).hasClass("arrow")) {
+				// 		$lnb.find(".menu_exist").removeClass("arrow").attr('title', '메뉴 축소').siblings("ul").slideUp(100);
+				// 		$(this).addClass("arrow").attr('title', '메뉴 확장').siblings("ul").slideDown(100);
+				// 	}
+				// });
+			}
 		},
 	},
 

@@ -46,9 +46,12 @@
 .gnb .depth1 { font-size: 0;}
 .gnb .depth1 >li { display: inline-block; position: relative; width: calc(100% / 6);}
 .gnb .depth1 >li >a { display: flex; align-items: center; justify-content: center; height: 64px; font-size: 18px; font-weight: 700; text-align: center;}
+.gnb .depth1 >li >a.active { border: 1px solid #000;}
 .gnb .depth1 >li:first-child >a { padding-left: 0;}
 .gnb .depth1 >li:last-child >a { padding-right: 0;}
 .gnb .depth2 { display: none; position: absolute; left: 0; top: 64px; font-size: 16px; opacity: 0; transition: opacity .3s ease-in-out;}
+.gnb .depth2 >li >a.active { border: 1px solid blue;}
+.gnb .depth3 >li >a.active { border: 1px solid red;}
 .gnb .depth1.active .depth2 { display: block; border-left: 1px solid #000;}
 .gnb .depth1.active.show .depth2 { opacity: 1;}
 
@@ -59,10 +62,10 @@
 .wrap .lnbBody { width: 240px; margin-right: 48px;}
 .lnbBody h2 { display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; height: 120px; font-size: 32px; color: #fff; background: #366cc3 url(../images/common/pattern.svg) no-repeat center/cover; border-radius: 0 45px 0 0;}
 .lnb { margin-top: 8px;}
-.lnb .depth1 >li >a { display: flex; align-items: center; position: relative; height: 56px; padding-left: 16px; border: solid 1px #dbdbdb;}
-.lnb .depth1 >li >a.active { z-index: 1; color: #fff; border: 1px solid #343e68; background-color: #343e68;}
-.lnb .depth1 >li ~ li { margin-top: -1px;}
-.lnb .depth2 { display: none;}
+.lnb .depth2 >li >a { display: flex; align-items: center; position: relative; height: 56px; padding-left: 16px; border: solid 1px #dbdbdb;}
+.lnb .depth2 >li >a.active { z-index: 1; color: #fff; border: 1px solid #343e68; background-color: #343e68;}
+.lnb .depth2 >li ~ li { margin-top: -1px;}
+.lnb .depth3 { display: none;}
 
 /* contents */
 .wrap .contents { flex: 1;}
@@ -233,7 +236,9 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .viewBody .lineSpace { margin-top: 16px;}
 .viewBody .fileForm { margin-top: 24px; padding: 15px 16px; font-size: 14px; border-top: 1px solid #dbdbdb; border-bottom: 1px solid #dbdbdb; background-color: #f7f7f7;}
 .viewBody .fileForm ul li a { display: inline-block; line-height: 21px;}
-.viewBody .fileForm ul li a .download { display: inline-block; width: 24px; height: 24px; margin-left: 4px; vertical-align: middle; background: url(../images/common/ico_download.svg) no-repeat center/cover;}
+.viewBody .fileForm ul li a i { display: inline-block; width: 24px; height: 24px; margin-left: 4px; vertical-align: middle;}
+.viewBody .fileForm ul li a i.play {  background: url(../images/common/ico_play.svg) no-repeat center/cover;}
+.viewBody .fileForm ul li a i.download { background: url(../images/common/ico_download.svg) no-repeat center/cover;}
 .viewBody .fileForm ul li ~ li { margin-top: 8px;}
 .viewBody .article { padding: 40px 0; line-height: 24px;}
 .viewBody .article p ~ p { margin-top: 24px;}

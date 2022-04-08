@@ -1,6 +1,6 @@
 var str = '';
 
-str += '<title>공적연금연계제도</title>';
+str += '<title class="mainTitle">공적연금연계제도</title>';
 str += '<meta http-equiv="X-UA-Compatible" content="IE=edge">';
 str += '<meta name="viewport" content="width=device-width, viewport-fit=cover">';
 str += '<meta name="theme-color" content="#000000">';
