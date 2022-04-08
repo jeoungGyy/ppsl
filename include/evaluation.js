@@ -29,7 +29,7 @@ str += '          <label for="radio4" class="">불만족</label>';
 str += '        </div>';
 str += '      </li>';
 str += '      <li>';
-str += '        <div class="radioBox checked">';
+str += '        <div class="radioBox">';
 str += '          <input type="radio" id="radio5" name="radio">';
 str += '          <label for="radio5" class="">매우 불만족</label>';
 str += '        </div>';
