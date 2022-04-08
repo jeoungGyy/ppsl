@@ -45,8 +45,7 @@
 
 /* lnbBody */
 .wrap .lnbBody { width: 240px; margin-right: 48px;}
-.lnbBody h2 { display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; height: 120px; font-size: 32px; color: #fff; background-color: #366cc3; border-radius: 0 45px 0 0;}
-.lnbBody h2::before { content: ''; position: absolute; left: -75px; top: -67px; width: 75px; height: 67.5px; margin: 0 16px 19.5px 0; opacity: 0.1; border: solid 32px #fff; border-radius: 50%;}
+.lnbBody h2 { display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; height: 120px; font-size: 32px; color: #fff; background: #366cc3 url(../images/common/pattern.svg) no-repeat center/cover; border-radius: 0 45px 0 0;}
 .lnb { margin-top: 8px;}
 .lnb .depth1 >li >a { display: flex; align-items: center; position: relative; height: 56px; padding-left: 16px; border: solid 1px #dbdbdb;}
 .lnb .depth1 >li >a.active { z-index: 1; color: #fff; border: 1px solid #343e68; background-color: #343e68;}

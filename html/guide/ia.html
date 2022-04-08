@@ -3,33 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<title>공적연금연계제도 화면목록</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, viewport-fit=cover">
-	<meta name="theme-color" content="#000000">
-	<meta name="format-detection" content="telephone=no">
-	<link rel="icon" type="image/png" sizes="192x192" href="../images/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="../images/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
-	<meta name="description" content="사이트 소개 320자 이내로 작성.">
-	<meta name="keywords" content="키워드입력, 키워드2, 키워드3">
-	<meta name="author" content="사이트명">
-	<meta property="og:type" content="website">
-	<meta property="og:title" content="해당 링크의 제목">
-	<meta property="og:description" content="해당 링크 설명">
-	<meta property="og:image" content="썸네일 이미지, http:// 부터 시작하는 절대 주소를 써야합니다.">
-	<meta property="og:url" content="링크 주소">
-	<meta name="twitter:card" content="photo">
-	<meta name="twitter:url" content="사이트 주소">
-	<meta name="twitter:description" content="사이트 소개.">
-	<meta name="twitter:image" content="썸네일 이미지, http:// 부터 시작하는 절대 주소를 써야합니다.">
-	<link rel="stylesheet" href="../../css/base.css">
-	<link rel="stylesheet" href="../../css/style.css">
-	<link rel="stylesheet" href="../../css/tablet.css">
-	<link rel="stylesheet" href="../../css/mobile.css">
-	<script src="../../js/jquery-1.12.4.min.js"></script>
-	<script src="../../js/icheck.js"></script>
-	<script src="../../js/ui.js"></script>
+	<script src="../../include/head.js"></script> <!-- include: 공통 헤드 -->
 	<style>
 		:root { font-size: 11px;}
 		body { padding: 1rem;}
@@ -46,10 +20,11 @@
 		table th,
 		table td { padding: 0.7rem 0.5rem; font-size: 1.2rem; border: 1px solid #ddd;}
 		table td a { display: block; color: #999;}
-		table td a.active { font-weight: 700; color: #000;}
+		table td a.active { font-weight: 700; color: #000 !important;}
 		table td.tac { color: #999; text-align: center;}
 		table td.tac.active { color: #000;}
-		a:visited { color: #5b11d0 !important;}
+		a { color: #999 !important;}
+		#root a:visited { color: #5b11d0 !important;}
 		tr.add td { background-color: #f3e8f5;}
 	</style>
 </head>
@@ -73,15 +48,17 @@
 					<col style="width: 18%;" />
 					<col />
 					<col style="width: 11rem;" />
-					<col style="width: 3rem; background-color:#dbf8e2;" />
-					<col style="width: 3rem; background-color:#dbf8e2;" />
+					<col style="width: 6rem; background-color:#dbf8e2;" />
+					<col style="width: 7rem; background-color:#dbf8e2;" />
 				</colgroup>
 				<thead>
 					<tr>
-						<th colspan="3">메뉴</th>
-						<th rowspan="1">화면ID</th>
-						<th>D</th>
-						<th>L</th>
+						<th>1depth</th>
+						<th>2depth</th>
+						<th>3depth</th>
+						<th>화면ID</th>
+						<th>디자인</th>
+						<th>레이어유무</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -89,55 +66,31 @@
 						<td>공통</td>
 						<td>레이어 선택창</td>
 						<td></td>
-						<td><a href="../../html/home/layer-confirm.html" class="active" target="_blank">layer-confirm</a></td>
+						<td><a href="../html/home/layer-confirm.html"  target="_blank">layer-confirm</a></td>
 						<td class="tac"></td>
-						<td class="tac active">L</td>
+						<td class="tac"></td>
 					</tr>
 					<tr>
 						<td></td>
 						<td>확인 메시지</td>
 						<td></td>
-						<td><a href="../../html/home/layer-message.html" class="active" target="_blank">layer-message</a></td>
+						<td><a href="../html/home/layer-message.html"  target="_blank">layer-message</a></td>
 						<td class="tac"></td>
-						<td class="tac active">L</td>
+						<td class="tac"></td>
 					</tr>
 					<tr>
 						<td></td>
 						<td>가운데용 모달 팝업창</td>
 						<td></td>
-						<td><a href="../../html/home/layer-center.html" class="active" target="_blank">layer-center</a></td>
+						<td><a href="../html/home/layer-center.html"  target="_blank">layer-center</a></td>
 						<td class="tac"></td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>셀렉트 선택창</td>
-						<td></td>
-						<td><a href="../../html/home/layer-select.html" class="active" target="_blank">layer-select</a></td>
 						<td class="tac"></td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>서비스 준비중</td>
-						<td></td>
-						<td><a href="../../html/home/layer_service.html" class="active" target="_blank">layer_service</a></td>
-						<td class="tac"></td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>투표 안내 레이어</td>
-						<td></td>
-						<td><a href="../../html/home/layer-vote.html" class="active" target="_blank">layer-vote</a></td>
-						<td class="tac"></td>
-						<td class="tac active">L</td>
 					</tr>
 					<tr>
 						<td></td>
 						<td>로딩</td>
 						<td></td>
-						<td><a href="../../html/home/loading.html" class="active" target="_blank">loading</a></td>
+						<td><a href="../html/home/loading.html"  target="_blank">loading</a></td>
 						<td class="tac"></td>
 						<td class="tac"></td>
 					</tr>
@@ -145,1022 +98,433 @@
 						<td></td>
 						<td>404페이지</td>
 						<td></td>
-						<td><a href="../../html/home/common_404.html" class="active" target="_blank">common_404</a></td>
-						<td class="tac"></td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>태블릿용</td>
-						<td></td>
-						<td><a href="../../html/home/common_tablet.html" class="active" target="_blank">common_tablet</a></td>
-						<td class="tac"></td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>기상 아이콘 모음</td>
-						<td></td>
-						<td><a href="../../html/home/common_icons.html" class="active" target="_blank">common_icons</a></td>
-						<td class="tac"></td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>맵 아이콘 모음</td>
-						<td></td>
-						<td><a href="../../html/home/common_mapicons.html" class="active" target="_blank">common_mapicons</a></td>
+						<td><a href="../home/common_404.html" target="_blank">common_404</a></td>
 						<td class="tac"></td>
 						<td class="tac"></td>
 					</tr>
 					<tr class="ia_line">
-						<td>오늘세종엔</td>
+						<td>홈</td>
 						<td></td>
 						<td></td>
-						<td><a href="../../html/home/UI-SJN-01-001U.html" class="active" target="_blank">UI-SJN-01-001U</a></td>
-						<td class="tac active">D</td>
+						<td><a href="../home/HO_00_01_01.html"  target="_blank">HO_00_01_01</a></td>
+						<td class="tac"></td>
 						<td class="tac"></td>
 					</tr>
 					<tr class="ia_line">
-						<td>통합검색</td>
-						<td></td>
-						<td></td>
-						<td><a href="../../html/home/UI-SJN-02-001U.html" class="active" target="_blank">UI-SJN-02-001U</a></td>
-						<td class="tac active">D</td>
+						<td>안내</td>
+						<td>제도소개</td>
+						<td>연금연계제도</td>
+						<td><a href="../guide/HO_01_01_01_01.html"  target="_blank">HO_01_01_01_01</a></td>
+						<td class="tac"></td>
 						<td class="tac"></td>
 					</tr>
 					<tr>
 						<td></td>
 						<td></td>
-						<td>(음성)</td>
-						<td><a href="../../html/home/UI-SJN-02-002L.html" class="active" target="_blank">UI-SJN-02-002L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
+						<td>용어집</td>
+						<td><a href="../guide/HO_01_01_02_01<.html"  target="_blank">HO_01_01_02_01</a></td>
+						<td class="tac"></td>
+						<td class="tac"></td>
 					</tr>
 					<tr>
 						<td></td>
 						<td></td>
-						<td>결과</td>
-						<td><a href="../../html/home/UI-SJN-02-010L.html" class="active" target="_blank">UI-SJN-02-010L</a></td>
-						<td class="tac active">D</td>
+						<td>관계기관법령</td>
+						<td><a href="../guide/HO_01_01_03.html"  target="_blank">HO_01_01_03</a></td>
+						<td class="tac"></td>
+						<td class="tac"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>신청/청구안내</td>
+						<td>연계신청</td>
+						<td><a href="../guide/HO_01_02_01.html"  target="_blank">HO_01_02_01</a></td>
+						<td class="tac"></td>
+						<td class="tac"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>반납금납부</td>
+						<td><a href="../guide/HO_01_02_02.html"  target="_blank">HO_01_02_02</a></td>
+						<td class="tac"></td>
+						<td class="tac"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>연금종류 및 청구</td>
+						<td><a href="../guide/HO_01_02_03_01.html"  target="_blank">HO_01_02_03_01</a></td>
+						<td class="tac"></td>
+						<td class="tac"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>신고/절차안내</td>
+						<td>사망신고안내</td>
+						<td><a href="../guide/HO_01_03_01.html"  target="_blank">HO_01_03_01</a></td>
+						<td class="tac"></td>
+						<td class="tac"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>권리구제절차</td>
+						<td><a href="../guide/HO_01_03_02.html"  target="_blank">HO_01_03_02</a></td>
+						<td class="tac"></td>
+						<td class="tac"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>상담사례</td>
+						<td>목록</td>
+						<td><a href="../guide/HO_01_04_01.html"  target="_blank">HO_01_04_01</a></td>
+						<td class="tac"></td>
+						<td class="tac"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>상세</td>
+						<td><a href="../guide/HO_01_04_02.html"  target="_blank">HO_01_04_02</a></td>
+						<td class="tac"></td>
+						<td class="tac"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>찾아오시는길</td>
+						<td></td>
+						<td><a href="../guide/HO_01_05_01.html"  target="_blank">HO_01_05_01</a></td>
+						<td class="tac"></td>
 						<td class="tac"></td>
 					</tr>
 					<tr class="ia_line">
-						<td>생활정보</td>
-						<td>소통</td>
-						<td></td>
-						<td><a href="../../html/info/UI-SJN-03-001U.html" class="active" target="_blank">UI-SJN-03-001U</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>건강/환경</td>
-						<td></td>
-						<td><a href="../../html/info/UI-SJN-03-002U.html" class="active" target="_blank">UI-SJN-03-002U</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>교통/안전</td>
-						<td></td>
-						<td><a href="../../html/info/UI-SJN-03-003U.html" class="active" target="_blank">UI-SJN-03-003U</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>교육/문화</td>
-						<td></td>
-						<td><a href="../../html/info/UI-SJN-03-004U.html" class="active" target="_blank">UI-SJN-03-004U</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>세종여행</td>
-						<td></td>
-						<td><a href="../../html/info/UI-SJN-03-005U.html" class="active" target="_blank">UI-SJN-03-005U</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>스마트세종</td>
-						<td></td>
-						<td><a href="../../html/info/UI-SJN-03-006U.html" class="active" target="_blank">UI-SJN-03-006U</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>메뉴 설정</td>
-						<td></td>
-						<td><a href="../../html/info/UI-SJN-03-100U.html" class="active" target="_blank">UI-SJN-03-100U</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>공유경제</td>
-						<td></td>
-						<td><a href="../../html/info/UI-SJN-04-002U.html" class="active" target="_blank">UI-SJN-04-002U</a></td>
-						<td class="tac active">D</td>
+						<td>상담</td>
+						<td>상담</td>
+						<td>목록</td>
+						<td><a href="../guide/HO_02_01_01.html"  target="_blank">HO_02_01_01</a></td>
 						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>등록/수정</td>
-						<td><a href="../../html/info/UI-SJN-04-004U.html" class="active"  target="_blank">UI-SJN-04-004U</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>우리가게</td>
-						<td></td>
-						<td><a href="../../html/info/UI-SJN-04-005U.html" class="active" target="_blank">UI-SJN-04-005U</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>등록/수정</td>
-						<td><a href="../../html/info/UI-SJN-04-006U.html" class="active" target="_blank">UI-SJN-04-006U</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>홍보/행사</td>
-						<td></td>
-						<td><a href="../../html/info/UI-SJN-04-007U.html" class="active" target="_blank">UI-SJN-04-007U</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>등록/수정</td>
-						<td><a href="../../html/info/UI-SJN-04-008U.html" class="active" target="_blank">UI-SJN-04-008U</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>리뷰 목록</td>
-						<td></td>
-						<td><a href="../../html/info/UI-SJN-04-009U.html" class="active" target="_blank">UI-SJN-04-009U</a></td>
-						<td class="tac active">D</td>
 						<td class="tac"></td>
 					</tr>
 					<tr>
 						<td></td>
 						<td></td>
 						<td>등록</td>
-						<td><a href="../../html/info/UI-SJN-04-010P.html" class="active" target="_blank">UI-SJN-04-010P</a></td>
-						<td class="tac active">D</td>
+						<td><a href="../guide/HO_02_01_02.html"  target="_blank">HO_02_01_02</a></td>
 						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>사진 리뷰 목록</td>
-						<td></td>
-						<td><a href="../../html/info/UI-SJN-04-011P.html" class="active" target="_blank">UI-SJN-04-011P</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>사진 리뷰</td>
-						<td><a href="../../html/info/UI-SJN-04-012P.html" class="active" target="_blank">UI-SJN-04-012P</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>공유하기</td>
-						<td></td>
-						<td><a href="../../html/info/UI-SJN-04-100L.html" class="active" target="_blank">UI-SJN-04-100L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>캘린더</td>
-						<td></td>
-						<td><a href="../../html/info/UI-SJN-04-101L.html" class="active" target="_blank">UI-SJN-04-101L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>신고하기</td>
-						<td></td>
-						<td><a href="../../html/info/UI-SJN-04-102U.html" class="active" target="_blank">UI-SJN-04-102U</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>척척세종</td>
-						<td></td>
-						<td><a href="../../html/info/UI-SJN-06-001L.html" class="active" target="_blank">UI-SJN-06-001L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>기상</td>
-						<td></td>
-						<td><a href="../../html/info/UI-SJN-07-001P.html" class="active" target="_blank">UI-SJN-07-001P</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>교육정보</td>
-						<td></td>
-						<td><a href="../../html/info/UI-SJN-08-001P.html" class="active" target="_blank">UI-SJN-08-001P</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>문화행사캘린더</td>
-						<td></td>
-						<td><a href="../../html/info/UI-SJN-09-001P.html" class="active" target="_blank">UI-SJN-09-001P</a></td>
-						<td class="tac active">D</td>
 						<td class="tac"></td>
 					</tr>
 					<tr>
 						<td></td>
 						<td></td>
 						<td>상세</td>
-						<td><a href="../../html/info/UI-SJN-09-002U.html" class="active" target="_blank">UI-SJN-09-002U</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>세종뉴스 정보</td>
-						<td></td>
-						<td><a href="../../html/info/UI-SJN-11-001U.html" class="active" target="_blank">UI-SJN-11-001U</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>상세</td>
-						<td><a href="../../html/info/UI-SJN-11-002U.html" class="active" target="_blank">UI-SJN-11-002U</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>견학신청</td>
-						<td></td>
-						<td><a href="../../html/info/UI-SJN-13-002U.html" class="active" target="_blank">UI-SJN-13-002U</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>언론보도 목록</td>
-						<td></td>
-						<td><a href="../../html/info/UI-SJN-13-003U.html" class="active" target="_blank">UI-SJN-13-003U</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>상세</td>
-						<td><a href="../../html/info/UI-SJN-13-004U.html" class="active" target="_blank">UI-SJN-13-004U</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>포토갤러리 목록</td>
-						<td></td>
-						<td><a href="../../html/info/UI-SJN-13-005U.html" class="active" target="_blank">UI-SJN-13-005U</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>상세</td>
-						<td><a href="../../html/info/UI-SJN-13-006U.html" class="active" target="_blank">UI-SJN-13-006U</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>스마트도시 소개</td>
-						<td></td>
-						<td><a href="../../html/info/UI-SJN-14-001U.html" class="active" target="_blank">UI-SJN-14-001U</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr class="ia_line">
-						<td>지도</td>
-						<td></td>
-						<td></td>
-						<td><a href="../../html/map/UI-SJN-20-001U.html" class="active" target="_blank">UI-SJN-20-001U</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>길찾기</td>
-						<td></td>
-						<td><a href="../../html/map/UI-SJN-21-002L.html" class="active" target="_blank">UI-SJN-21-002L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>결과</td>
-						<td><a href="../../html/map/UI-SJN-21-003L.html" class="active" target="_blank">UI-SJN-21-003L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>전체 카테고리</td>
-						<td></td>
-						<td><a href="../../html/map/UI-SJN-22-001U.html" class="active" target="_blank">UI-SJN-22-001U</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>장소목록</td>
-						<td></td>
-						<td><a href="../../html/map/UI-SJN-23-001L.html" class="active" target="_blank">UI-SJN-23-001L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>상세</td>
-						<td><a href="../../html/map/UI-SJN-23-002L.html" class="active" target="_blank">UI-SJN-23-002L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>장소선택</td>
-						<td><a href="../../html/map/UI-SJN-24-001L.html" class="active" target="_blank">UI-SJN-24-001L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>핀고정</td>
-						<td></td>
-						<td><a href="../../html/map/UI-SJN-24-002L.html" class="active" target="_blank">UI-SJN-24-002L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>주차장</td>
-						<td></td>
-						<td><a href="../../html/map/UI-SJN-30-002L.html" class="active" target="_blank">UI-SJN-30-002L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>전기차충전소</td>
-						<td></td>
-						<td><a href="../../html/map/UI-SJN-30-006L.html" class="active" target="_blank">UI-SJN-30-006L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>개인이동수단</td>
-						<td></td>
-						<td><a href="../../html/map/UI-SJN-30-007L.html" class="active" target="_blank">UI-SJN-30-007L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>선별진료소</td>
-						<td></td>
-						<td><a href="../../html/map/UI-SJN-31-001L.html" target="_blank">UI-SJN-31-001L</a></td>
+						<td><a href="../guide/HO_02_01_04.html"  target="_blank">HO_02_01_04</a></td>
 						<td class="tac"></td>
 						<td class="tac"></td>
 					</tr>
 					<tr>
-						<td></td>
-						<td></td>
-						<td>코로나방역시설</td>
-						<td><a href="../../html/map/UI-SJN-31-002L.html" target="_blank">UI-SJN-31-002L</a></td>
-						<td class="tac"></td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>코로나확진자현황</td>
-						<td><a href="../../html/map/UI-SJN-31-003L.html" target="_blank">UI-SJN-31-003L</a></td>
-						<td class="tac"></td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>코로나예방접종</td>
-						<td><a href="../../html/map/UI-SJN-31-004L.html" target="_blank">UI-SJN-31-004L</a></td>
-						<td class="tac">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>바이러스노출체크</td>
-						<td><a href="../../html/map/UI-SJN-31-005L.html" target="_blank">UI-SJN-31-005L</a></td>
-						<td class="tac"></td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>자동크린넷</td>
-						<td></td>
-						<td><a href="../../html/map/UI-SJN-32-010L.html" class="active" target="_blank">UI-SJN-32-010L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>상세</td>
-						<td><a href="../../html/map/UI-SJN-32-011L.html" class="active" target="_blank">UI-SJN-32-011L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>투표소안내</td>
-						<td></td>
-						<td><a href="../../html/map/UI-SJN-32-100L.html" class="active" target="_blank">UI-SJN-32-100L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>병원</td>
-						<td></td>
-						<td><a href="../../html/map/UI-SJN-33-001L.html" class="active" target="_blank">UI-SJN-33-001L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>상세</td>
-						<td><a href="../../html/map/UI-SJN-33-002L.html" class="active" target="_blank">UI-SJN-33-002L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>약국</td>
-						<td></td>
-						<td><a href="../../html/map/UI-SJN-33-003L.html" class="active" target="_blank">UI-SJN-33-003L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>상세</td>
-						<td><a href="../../html/map/UI-SJN-33-004L.html" class="active" target="_blank">UI-SJN-33-004L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>어르신돌봄</td>
-						<td></td>
-						<td><a href="../../html/map/UI-SJN-33-005L.html" class="active" target="_blank">UI-SJN-33-005L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>상세</td>
-						<td><a href="../../html/map/UI-SJN-33-006L.html" class="active" target="_blank">UI-SJN-33-006L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>헬스케어존</td>
-						<td></td>
-						<td><a href="../../html/map/UI-SJN-33-007L.html" class="active" target="_blank">UI-SJN-33-007L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>자동심장충격기</td>
-						<td></td>
-						<td><a href="../../html/map/UI-SJN-33-008L.html" class="active" target="_blank">UI-SJN-33-008L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>지역화폐사용처</td>
-						<td></td>
-						<td><a href="../../html/map/UI-SJN-34-001L.html" class="active" target="_blank">UI-SJN-34-001L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>상세</td>
-						<td><a href="../../html/map/UI-SJN-34-002L.html" class="active" target="_blank">UI-SJN-34-002L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>미세먼지</td>
-						<td></td>
-						<td><a href="../../html/map/UI-SJN-35-001L.html" class="active" target="_blank">UI-SJN-35-001L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>상세</td>
-						<td><a href="../../html/map/UI-SJN-35-002L.html" class="active" target="_blank">UI-SJN-35-002L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>생생버스</td>
-						<td>버스번호</td>
-						<td><a href="../../html/map/UI-SJN-40-003L.html" class="active" target="_blank">UI-SJN-40-003L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>실시간위치</td>
-						<td><a href="../../html/map/UI-SJN-40-004L.html" class="active" target="_blank">UI-SJN-40-004L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>버스정류장</td>
-						<td><a href="../../html/map/UI-SJN-40-005L.html" class="active" target="_blank">UI-SJN-40-005L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>승하차알림설정</td>
-						<td><a href="../../html/map/UI-SJN-40-006L.html" class="active" target="_blank">UI-SJN-40-006L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>하차알림</td>
-						<td><a href="../../html/map/UI-SJN-40-007L.html" class="active" target="_blank">UI-SJN-40-007L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>승하차일림</td>
-						<td><a href="../../html/map/UI-SJN-40-008L.html" class="active" target="_blank">UI-SJN-40-008L</a></td>
-						<td class="tac active" colspan="2">위젯용</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>도시변화</td>
-						<td>위성영상 목록</td>
-						<td><a href="../../html/map/UI-SJN-41-001L.html" class="active" target="_blank">UI-SJN-41-001L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>위성영상 비교</td>
-						<td><a href="../../html/map/UI-SJN-41-002L.html" class="active" target="_blank">UI-SJN-41-002L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>안전신고</td>
+						<td>상담</td>
+						<td>상담 FAQ</td>
 						<td>목록</td>
-						<td><a href="../../html/map/UI-SJN-42-001L.html" class="active" target="_blank">UI-SJN-42-001L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
+						<td><a href="../guide/HO_02_02_01.html"  target="_blank">HO_02_02_01</a></td>
+						<td class="tac"></td>
+						<td class="tac"></td>
 					</tr>
 					<tr>
 						<td></td>
 						<td></td>
 						<td>상세</td>
-						<td><a href="../../html/map/UI-SJN-42-002L.html" class="active" target="_blank">UI-SJN-42-002L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>안내</td>
-						<td><a href="../../html/map/UI-SJN-42-003L.html" class="active" target="_blank">UI-SJN-42-003L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>안전신고하기</td>
-						<td><a href="../../html/map/UI-SJN-42-004L.html" class="active" target="_blank">UI-SJN-42-004L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>안심서비스</td>
-						<td>진입</td>
-						<td><a href="../../html/map/UI-SJN-50-001L.html" class="active" target="_blank">UI-SJN-50-001L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>기본화면</td>
-						<td><a href="../../html/map/UI-SJN-50-002L.html" class="active" target="_blank">UI-SJN-50-002L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>친구관리</td>
-						<td><a href="../../html/map/UI-SJN-50-003L.html" class="active" target="_blank">UI-SJN-50-003L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>문자 위치확인</td>
-						<td><a href="../../html/map/UI-SJN-50-004L.html" class="active" target="_blank">UI-SJN-50-004L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>친구 위치 이동 기록</td>
-						<td><a href="../../html/map/UI-SJN-50-005L.html" class="active" target="_blank">UI-SJN-50-005L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>긴급구조요청</td>
-						<td><a href="../../html/map/UI-SJN-50-006L.html" class="active" target="_blank">UI-SJN-50-006L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>수신</td>
-						<td><a href="../../html/map/UI-SJN-50-007L.html" class="active" target="_blank">UI-SJN-50-007L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>세종엔 안심서비스 알림창</td>
-						<td><a href="../../html/map/UI-SJN-50-008L.html" class="active"  target="_blank">UI-SJN-50-008L</a></td>
-						<td class="tac active" colspan="2">위젯용</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>안심장소 등록</td>
-						<td><a href="../../html/map/UI-SJN-50-009L.html" class="active" target="_blank">UI-SJN-50-009L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>안심장소관리(편집)</td>
-						<td><a href="../../html/map/UI-SJN-50-010L.html" class="active" target="_blank">UI-SJN-50-010L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>안심장소 검색(키워드)</td>
-						<td><a href="../../html/map/UI-SJN-50-011L.html" class="active" target="_blank">UI-SJN-50-011L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>안심장소 검색(지도지정)</td>
-						<td><a href="../../html/map/UI-SJN-50-012L.html" class="active" target="_blank">UI-SJN-50-012L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>레이어</td>
-						<td></td>
-						<td><a href="../../html/map/UI-SJN-60-001L.html" class="active" target="_blank">UI-SJN-60-001L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>CCTV</td>
-						<td></td>
-						<td><a href="../../html/map/UI-SJN-60-002L.html" class="active" target="_blank">UI-SJN-60-002L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>교통정보</td>
-						<td></td>
-						<td><a href="../../html/map/UI-SJN-60-003L.html" class="active" target="_blank">UI-SJN-60-003L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>가로등</td>
-						<td></td>
-						<td><a href="../../html/map/UI-SJN-60-004L.html" class="active" target="_blank">UI-SJN-60-004L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr class="ia_line">
-						<td>내정보</td>
-						<td>정보수정요청</td>
-						<td></td>
-						<td><a href="../../html/home/UI-SJN-70-001L.html" class="active" target="_blank">UI-SJN-70-001L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>영업시간 입력</td>
-						<td></td>
-						<td><a href="../../html/home/UI-SJN-70-002L.html" class="active" target="_blank">UI-SJN-70-002L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>메뉴 입력</td>
-						<td></td>
-						<td><a href="../../html/home/UI-SJN-70-003L.html" class="active" target="_blank">UI-SJN-70-003L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>제공 서비스 입력</td>
-						<td></td>
-						<td><a href="../../html/home/UI-SJN-70-004L.html" class="active" target="_blank">UI-SJN-70-004L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>메인</td>
-						<td></td>
-						<td><a href="../../html/home/UI-SJN-80-001U.html" class="active" target="_blank">UI-SJN-80-001U</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>프로필 관리</td>
-						<td></td>
-						<td><a href="../../html/home/UI-SJN-80-002L.html" class="active" target="_blank">UI-SJN-80-002L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>내 활동내역</td>
-						<td></td>
-						<td><a href="../../html/home/UI-SJN-80-003U.html" class="active" target="_blank">UI-SJN-80-003U</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>안심서비스설정</td>
-						<td></td>
-						<td><a href="../../html/map/UI-SJN-81-001L.html" class="active" target="_blank">UI-SJN-81-001L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>고객센터</td>
-						<td>자주묻는질문</td>
-						<td><a href="../../html/home/UI-SJN-82-001U.html" class="active" target="_blank">UI-SJN-82-001U</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>서비스개선요청</td>
-						<td><a href="../../html/home/UI-SJN-82-002U.html" class="active" target="_blank">UI-SJN-82-002U</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td><a href="../../html/home/UI-SJN-82-003L.html" class="active" target="_blank">UI-SJN-82-003L</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>이용약관및 정책</td>
-						<td>개인정보처리방침 </td>
-						<td><a href="../../html/home/UI-SJN-83-001U.html" class="active" target="_blank">UI-SJN-83-001U</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>저작권정책</td>
-						<td><a href="../../html/home/UI-SJN-83-002U.html" class="active" target="_blank">UI-SJN-83-002U</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>영상정보처리기기운영방침</td>
-						<td><a href="../../html/home/UI-SJN-83-003U.html" class="active" target="_blank">UI-SJN-83-003U</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>이메일무단수집거부</td>
-						<td><a href="../../html/home/UI-SJN-83-004U.html" class="active" target="_blank">UI-SJN-83-004U</a></td>
-						<td class="tac active">D</td>
-						<td class="tac"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td>즐겨찾기</td>
-						<td><a href="../../html/home/UI-SJN-84-001U.html" class="active" target="_blank">UI-SJN-84-001U</a></td>
+						<td><a href="../guide/HO_02_02_02.html"  target="_blank">HO_02_02_02</a></td>
 						<td class="tac"></td>
 						<td class="tac"></td>
 					</tr>
 					<tr>
 						<td></td>
-						<td>잠금설정</td>
-						<td></td>
-						<td><a href="../../html/home/UI-SJN-85-001U.html" class="active" target="_blank">UI-SJN-85-001U</a></td>
-						<td class="tac active">D</td>
+						<td>전산문의</td>
+						<td>목록</td>
+						<td><a href="../guide/HO_02_03_01.html"  target="_blank">HO_02_03_01</a></td>
+						<td class="tac"></td>
 						<td class="tac"></td>
 					</tr>
 					<tr>
 						<td></td>
 						<td></td>
-						<td>간편번호</td>
-						<td><a href="../../html/home/UI-SJN-85-002U.html" class="active" target="_blank">UI-SJN-85-002U</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
+						<td>등록</td>
+						<td><a href="../guide/HO_02_03_02.html"  target="_blank">HO_02_03_02</a></td>
+						<td class="tac"></td>
+						<td class="tac"></td>
 					</tr>
 					<tr>
 						<td></td>
 						<td></td>
-						<td>패턴</td>
-						<td><a href="../../html/home/UI-SJN-85-003U.html" class="active" target="_blank">UI-SJN-85-003U</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
+						<td>상세</td>
+						<td><a href="../guide/HO_02_03_04.html"  target="_blank">HO_02_03_04</a></td>
+						<td class="tac"></td>
+						<td class="tac"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>제도개선</td>
+						<td>목록</td>
+						<td><a href="../guide/HO_02_04_01.html"  target="_blank">HO_02_04_01</a></td>
+						<td class="tac"></td>
+						<td class="tac"></td>
 					</tr>
 					<tr>
 						<td></td>
 						<td></td>
-						<td>생체인식</td>
-						<td><a href="../../html/home/UI-SJN-85-004U.html" class="active" target="_blank">UI-SJN-85-004U</a></td>
-						<td class="tac active">D</td>
-						<td class="tac active">L</td>
+						<td>등록</td>
+						<td><a href="../guide/HO_02_04_02.html"  target="_blank">HO_02_04_02</a></td>
+						<td class="tac"></td>
+						<td class="tac"></td>
 					</tr>
-					<tr class="ia_line">
-						<td>메인화면(PC)</td>
+					<tr>
 						<td></td>
 						<td></td>
-						<td><a href="../../html/pc/UI-SJN-90-001U.html" class="active" target="_blank">UI-SJN-90-001U</a></td>
-						<td class="tac active">D</td>
+						<td>상세</td>
+						<td><a href="../guide/HO_02_04_04.html"  target="_blank">HO_02_04_04</a></td>
+						<td class="tac"></td>
+						<td class="tac"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>심사요청</td>
+						<td>목록</td>
+						<td><a href="../guide/HO_02_05_01.html"  target="_blank">HO_02_05_01</a></td>
+						<td class="tac"></td>
+						<td class="tac"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>상세</td>
+						<td><a href="../guide/HO_02_05_04.html"  target="_blank">HO_02_05_04</a></td>
+						<td class="tac"></td>
 						<td class="tac"></td>
 					</tr>
 					<tr class="ia_line">
-						<td>오픈API</td>
-						<td>오픈API소개</td>
+						<td>신청</td>
+						<td>반납금 모의계산</td>
 						<td></td>
-						<td><a href="../../html/home/UI-SJN-91-001U.html" class="active" target="_blank">UI-SJN-91-001U</a></td>
-						<td class="tac active">D</td>
+						<td><a href="../guide/HO_02_06_01.html"  target="_blank">HO_02_06_01</a></td>
+						<td class="tac"></td>
 						<td class="tac"></td>
 					</tr>
 					<tr>
 						<td></td>
-						<td>오픈API 서비스목록</td>
+						<td>연계신청</td>
 						<td></td>
-						<td><a href="../../html/home/UI-SJN-91-002U.html" class="active" target="_blank">UI-SJN-91-002U</a></td>
-						<td class="tac active">D</td>
+						<td><a href="../guide/HO_03_01_01.html"  target="_blank">HO_03_01_01</a></td>
+						<td class="tac"></td>
 						<td class="tac"></td>
 					</tr>
 					<tr>
 						<td></td>
-						<td>오픈API상세보기</td>
+						<td>신청정보변경</td>
 						<td></td>
-						<td><a href="../../html/home/UI-SJN-91-003U.html" class="active" target="_blank">UI-SJN-91-003U</a></td>
-						<td class="tac active">D</td>
+						<td><a href="../guide/HO_03_05_01.html"  target="_blank">HO_03_05_01</a></td>
+						<td class="tac"></td>
 						<td class="tac"></td>
 					</tr>
 					<tr>
 						<td></td>
-						<td>오픈API활용신청</td>
-						<td></td>
-						<td><a href="../../html/home/UI-SJN-91-004U.html" class="active" target="_blank">UI-SJN-91-004U</a></td>
-						<td class="tac active">D</td>
+						<td>신청상태조회</td>
+						<td>목록</td>
+						<td><a href="../guide/HO_03_06_01.html"  target="_blank">HO_03_06_01</a></td>
+						<td class="tac"></td>
 						<td class="tac"></td>
 					</tr>
 					<tr>
 						<td></td>
-						<td>오픈API신청목록</td>
+						<td>신청상태조회</td>
+						<td>상세</td>
+						<td><a href="../guide/HO_03_06_02.html"  target="_blank">HO_03_06_02</a></td>
+						<td class="tac"></td>
+						<td class="tac"></td>
+					</tr>
+					<tr class="ia_line">
+						<td>청구</td>
+						<td>연계연금청구</td>
 						<td></td>
-						<td><a href="../../html/home/UI-SJN-91-005U.html" class="active" target="_blank">UI-SJN-91-005U</a></td>
-						<td class="tac active">D</td>
+						<td><a href="../guide/HO_04_01_01.html"  target="_blank">HO_04_01_01</a></td>
+						<td class="tac"></td>
 						<td class="tac"></td>
 					</tr>
 					<tr>
 						<td></td>
-						<td>로그인</td>
-						<td></td>
-						<td><a href="../../html/home/UI-SJN-98-001U.html" class="active" target="_blank">UI-SJN-98-001U</a></td>
-						<td class="tac active">D</td>
+						<td>수급계좌변경</td>
+						<td>이용동의</td>
+						<td><a href="../guide/HO_04_02_01.html"  target="_blank">HO_04_02_01</a></td>
+						<td class="tac"></td>
 						<td class="tac"></td>
 					</tr>
 					<tr>
 						<td></td>
-						<td>바탕화면 위젯</td>
 						<td></td>
-						<td><a href="../../html/home/UI-SJN-99-001U.html" class="active" target="_blank">UI-SJN-99-001U</a></td>
-						<td class="tac active" colspan="2">위젯용</td>
+						<td>수정</td>
+						<td><a href="../guide/HO_04_02_02.html"  target="_blank">HO_04_02_02</a></td>
+						<td class="tac"></td>
+						<td class="tac"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>조회</td>
+						<td><a href="../guide/HO_04_02_03.html"  target="_blank">HO_04_02_03</a></td>
+						<td class="tac"></td>
+						<td class="tac"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>청구상태조회</td>
+						<td></td>
+						<td><a href="../guide/HO_04_03_01.html"  target="_blank">HO_04_03_01</a></td>
+						<td class="tac"></td>
+						<td class="tac"></td>
+					</tr>
+					<tr class="ia_line">
+						<td>알림</td>
+						<td>공지사항</td>
+						<td>목록</td>
+						<td><a href="../inform/HO_05_01_01.html" class="active" target="_blank">HO_05_01_01</a></td>
+						<td class="tac active">○</td>
+						<td class="tac"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>상세</td>
+						<td><a href="../inform/HO_05_01_02.html" class="active" target="_blank">HO_05_01_02</a></td>
+						<td class="tac active">○</td>
+						<td class="tac"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>자료실</td>
+						<td>목록</td>
+						<td><a href="../inform/HO_05_02_01.html" class="active" target="_blank">HO_05_02_01</a></td>
+						<td class="tac active">○</td>
+						<td class="tac"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>상세</td>
+						<td><a href="../inform/HO_05_02_02.html" class="active" target="_blank">HO_05_02_02</a></td>
+						<td class="tac active">○</td>
+						<td class="tac"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>연금연계소식</td>
+						<td>목록</td>
+						<td><a href="../inform/HO_05_03_01.html" class="active" target="_blank">HO_05_03_01</a></td>
+						<td class="tac active">○</td>
+						<td class="tac"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>상세</td>
+						<td><a href="../inform/HO_05_03_02.html" class="active" target="_blank">HO_05_03_02</a></td>
+						<td class="tac active">○</td>
+						<td class="tac"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>이용안내</td>
+						<td>목록</td>
+						<td><a href="../inform/HO_05_04_01.html" class="active" target="_blank">HO_05_04_01</a></td>
+						<td class="tac active">○</td>
+						<td class="tac"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>상세</td>
+						<td><a href="../inform/HO_05_04_02.html" class="active" target="_blank">HO_05_04_02</a></td>
+						<td class="tac active">○</td>
+						<td class="tac"></td>
+					</tr>
+					<tr class="ia_line">
+						<td>마이페이지</td>
+						<td>나의 현황</td>
+						<td>신청/청구현황</td>
+						<td><a href="../guide/HO_06_01_01.html"  target="_blank">HO_06_01_01</a></td>
+						<td class="tac"></td>
+						<td class="tac"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>연금수령현황</td>
+						<td><a href="../guide/HO_06_01_02.html"  target="_blank">HO_06_01_02</a></td>
+						<td class="tac"></td>
+						<td class="tac"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>반납금현황</td>
+						<td><a href="../guide/HO_06_01_03.html"  target="_blank">HO_06_01_03</a></td>
+						<td class="tac"></td>
+						<td class="tac"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>상담내역</td>
+						<td><a href="../guide/HO_06_01_04.html"  target="_blank">HO_06_01_04</a></td>
+						<td class="tac"></td>
+						<td class="tac"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>예상연금/반납금</td>
+						<td>예상연금조회</td>
+						<td><a href="../guide/HO_06_02_01.html"  target="_blank">HO_06_02_01</a></td>
+						<td class="tac"></td>
+						<td class="tac"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>예상반납금조회</td>
+						<td><a href="../guide/HO_06_02_05.html"  target="_blank">HO_06_02_05</a></td>
+						<td class="tac"></td>
+						<td class="tac"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>증명서발급요청</td>
+						<td>목록</td>
+						<td><a href="../guide/HO_06_03_01.html"  target="_blank">HO_06_03_01</a></td>
+						<td class="tac"></td>
+						<td class="tac"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>등록</td>
+						<td><a href="../guide/HO_06_03_02.html"  target="_blank">HO_06_03_02</a></td>
+						<td class="tac"></td>
+						<td class="tac"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>증명서</td>
+						<td>조회</td>
+						<td><a href="../guide/HO_06_04_01.html"  target="_blank">HO_06_04_01</a></td>
+						<td class="tac"></td>
+						<td class="tac"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>출력</td>
+						<td><a href="../guide/HO_06_04_02.html"  target="_blank">HO_06_04_02</a></td>
+						<td class="tac"></td>
+						<td class="tac"></td>
 					</tr>
 				</tbody>
 			</table>
