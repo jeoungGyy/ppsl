@@ -100,7 +100,6 @@ $(document).ready(function () {
 		},
 		/* 메뉴 활성화 */
 		menu_active: function () {
-			var $header = $(".header");
 			var $gnb = $(".gnb >ul");
 			var $lnbBody = $(".lnbBody");
 			var $location = $(".location .locationDepth");
@@ -129,14 +128,11 @@ $(document).ready(function () {
 						$(this).addClass("active").parents().parents().siblings("a").addClass("active arrow").parents(".gnb_menu").siblings("a").addClass("active");
 						var lnb_clone = $(this).parents(".depth2").clone();
 						var lnb_title = $(this).parents(".depth2").siblings("a").text();
-
-            var lnb_title_a = $(this).parents(".depth2").siblings("a").clone();
-
-            console.log(lnb_title_a)
+            var lnb_title_clone = $(this).parents(".depth2").siblings("a").clone();
+            var this_clone = $(this).clone();
 
 						$lnbBody.find("h2").text(lnb_title).siblings(".lnb").append(lnb_clone);
-						$location.append(lnb_title_a);
-						$location.append($(this));
+						$location.append(lnb_title_clone).append(this_clone);
 
 						//페이지타이틀
 						$title.text("국민취업지원제도 - "+lnb_title+" - "+ $(this).text());
