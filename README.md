@@ -1,6 +1,6 @@
 ## 국민연금연계제도
 
-확인 URL: https://jeounggyy.github.io/ppls/html/guide/ia.html
+확인 URL: https://jeounggyy.github.io/ppsl/html/guide/ia.html
 
 
 ### 04-08
