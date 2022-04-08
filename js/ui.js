@@ -38,8 +38,8 @@ $(document).ready(function () {
 		},
 		/* 메뉴 */
 		menu: function () {
-			var $gnb = $(".gnb");
-			var $header = $(".header");
+      var $header = $(".header");
+			var $gnb = $header.find(".gnb");
 			var $depth1 = $(".gnb .depth1");
 			var $depth2 = $(".gnb .depth2");
       var $subMenuBlind = $(".subMenuBlind");
@@ -97,6 +97,8 @@ $(document).ready(function () {
           }, 10);
         }
       }
+
+
 		},
 		/* 메뉴 활성화 */
 		menu_active: function () {
@@ -164,8 +166,59 @@ $(document).ready(function () {
 		},
 	},
 
+  /* 레이어 팝업 */
+  layerPopup = {
+    init: function () {
+      var $layerLink = $('.layerLink');
+
+      $layerLink.on('click', function(){
+        var _target = $("#" + $(this).attr("aria-controls"));
+        layerPopup.open(this, _target);
+      });
+    },
+    open: function (_this, _target) {
+      _target.addClass('active').focus();
+      TweenLite.to(_target, 0.3, {onComplete:function() {
+        _target.addClass('show').find('.layerClose').off().on({
+          'click': function() {
+            layerPopup.close(_this, _target);
+          },
+          'keydown': function(e) {
+            var _keyCode = e.keyCode || e.which;
+            if(_keyCode === 9) {
+              if(!e.shiftKey) {
+                e.preventDefault();
+                _target.focus();
+              }
+            }
+          }
+        });
+        // 레이어 팝업 외부 클릭 시 창닫기
+        $(document).off().on('click', function (e){
+          if(_target.has(e.target).length === 0) {
+            layerPopup.close(_this, _target);
+          }
+        });
+      }});
+    },
+    close: function (_this, _target) {
+      $(document).off();
+      _target.removeClass("show");
+      TweenLite.to(_target, 0.3, {onComplete:function() {
+        _target.removeClass("active");
+        _this.focus();
+        _this = null;
+        _target = null;
+      }});
+    },
+  }
+
+  layerPopup.init();
 	common.init();
 });
+
+
+
 
 
 /* 알림 */
