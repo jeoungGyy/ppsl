@@ -29,9 +29,8 @@ $(document).ready(function () {
         }
       });
 		},
-    /* 메뉴 */
+    /* 라디오, 체크박스 */
 		groupBox: function () {
-      // 라디오, 체크박스
       $('.groupBox input').iCheck({
         checkboxClass: 'icheckbox',
         radioClass: 'iradio',
@@ -99,7 +98,7 @@ $(document).ready(function () {
         }
       }
 		},
-		/* 메뉴 */
+		/* 메뉴 활성화 */
 		menu_active: function () {
 			var $header = $(".header");
 			var $gnb = $(".gnb >ul");
@@ -127,13 +126,17 @@ $(document).ready(function () {
 					var _depth = _item.split("_");
 					var _depthShift = _depth.shift();
 					if(_depth.join("") === depth.join("")) {
-						$(this).addClass("active").parents().parents().siblings("a").addClass("active arrow").attr('title', '메뉴 확장').parents(".gnb_menu").siblings("a").addClass("active");
+						$(this).addClass("active").parents().parents().siblings("a").addClass("active arrow").parents(".gnb_menu").siblings("a").addClass("active");
 						var lnb_clone = $(this).parents(".depth2").clone();
 						var lnb_title = $(this).parents(".depth2").siblings("a").text();
 
+            var lnb_title_a = $(this).parents(".depth2").siblings("a").clone();
+
+            console.log(lnb_title_a)
+
 						$lnbBody.find("h2").text(lnb_title).siblings(".lnb").append(lnb_clone);
-						$location.append('<a href="#" class="text"><span>'+lnb_title+'</span></a>');
-						$location.append('<a href="#" class="text"><span>'+$(this).text()+'</span></a>');
+						$location.append(lnb_title_a);
+						$location.append($(this));
 
 						//페이지타이틀
 						$title.text("국민취업지원제도 - "+lnb_title+" - "+ $(this).text());

@@ -75,11 +75,11 @@
 .contentsHeader .location { display: inline-flex; align-items: center; padding-bottom: 6px;}
 .contentsHeader .location i.home { display: inline-block; width: 16px; height: 16px; margin: -3px 4px 0 0; background: url(../images/common/ico_home.svg) no-repeat center/cover;}
 .contentsHeader .location .locationDepth { display: flex; align-items: center;}
-.contentsHeader .location .locationDepth .text { position: relative; margin-left: 4px; padding-left: 20px; font-size: 14px; color: #767676;}
-.contentsHeader .location .locationDepth .text::after { content: ''; display: inline-block; position: absolute; left: 0; top: -1px; width: 16px; height: 16px; text-indent: -9999rem; background: url(../images/common/ico_bc_arrow.svg) no-repeat center/16px 16px;}
-.contentsHeader .location .locationDepth .text:hover span { border-bottom: 1px solid #767676;}
-.contentsHeader .location .locationDepth .text:last-child span { font-weight: 700; color: #333;}
-.contentsHeader .location .locationDepth .text:last-child:hover span { border-bottom: 1px solid #333;}
+.contentsHeader .location .locationDepth a { position: relative; margin-left: 4px; padding-left: 20px; font-size: 14px; color: #767676;}
+.contentsHeader .location .locationDepth a::after { content: ''; display: inline-block; position: absolute; left: 0; top: -1px; width: 16px; height: 16px; text-indent: -9999rem; background: url(../images/common/ico_bc_arrow.svg) no-repeat center/16px 16px;}
+.contentsHeader .location .locationDepth a:hover span { border-bottom: 1px solid #767676;}
+.contentsHeader .location .locationDepth a:last-child span { font-weight: 700; color: #333;}
+.contentsHeader .location .locationDepth a:last-child:hover span { border-bottom: 1px solid #333;}
 .contentsHeader .location button { display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; border: solid 1px #dbdbdb; border-radius: 50%;}
 .contentsHeader .location button i { display: block; width: 24px; height: 24px; text-indent: -99999px;}
 .contentsHeader .location button:hover { border-color: #366cc3; background-color: #366cc3;}
