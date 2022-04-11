@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<script src="../../include/head.js"></script> <!-- include: 공통 헤드 -->
+	<style>
+
+	</style>
+</head>
+
+<body>
+<div id="wrap">
+	<div class="slide">
+			<div class="slidesjs-slide" style="background-color: red; height: 500px;">
+				111111111111111111
+			</div>
+			<div class="slidesjs-slide" style="background-color: blue; height: 500px;">
+				222222222
+			</div>
+	</div>
+		
+</div>
+
+<script>
+//<![CDATA[
+$(document).ready(function(){
+
+
+			//메인비주얼
+			$('.slide').slidesjs({
+				// width: 1300, 
+				// height: 1370,
+				play: {active: true, auto: true, effect: "fade", interval: 6000, restartDelay: 9000, swap: true},
+				//effect: {slide:{speed: 1000}},
+				effect : {
+					fade : { //slide : , fade :
+						speed : 500
+					}
+				},
+				navigation: {active: true, effect: "fade"},
+				pagination: {active: true, effect: "fade"}
+			});
+			$('.slide a.slidesjs-play').click(function() {$('.slide a.slidesjs-stop').focus();});
+			$('.slide a.slidesjs-stop').click(function() {$('.slide a.slidesjs-play').focus();});
+
+			// var $slider = $('.slider'),
+			// 	$slider_prev = $slider.parent().find('.slick-prev'),
+			// 	$slider_next = $slider.parent().find('.slick-next');
+			// $slider.slick({
+			// 	arrow: true,
+			// 	slidesToShow: 3,
+			// 	slidesToScroll: 1,			
+			// 	prevArrow: $slider_prev,
+			// 	nextArrow: $slider_next,
+			// 	responsive: [
+			// 	{	  breakpoint: 1025,
+			// 	  settings: {
+			// 		slidesToShow: 2,
+			// 		slidesToScroll: 1				
+			// 		}
+			// 	},
+			// 	{	  breakpoint: 641,
+			// 	  settings: {
+			// 		slidesToShow: 1,
+			// 		slidesToScroll: 1				
+			// 		}
+			// 	}]
+			// });
+		});
+	//]]>
+</script>
+</body>
+</html>

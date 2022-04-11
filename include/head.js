@@ -20,6 +20,7 @@ str += '<link rel="stylesheet" href="../../css/style.css">';
 str += '<link rel="stylesheet" href="../../css/tablet.css">';
 str += '<link rel="stylesheet" href="../../css/mobile.css">';
 str += '<script src="../../js/jquery-1.12.4.min.js"></script>';
+str += '<script src="../../js/jquery.slides.min.js"></script>';
 str += '<script src="../../js/gsap.min.js"></script>';
 str += '<script src="../../js/icheck.js"></script>';
 str += '<script src="../../js/ui.js"></script>';

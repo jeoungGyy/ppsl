@@ -1,6 +1,8 @@
 $(document).ready(function () {
-
+  
 	common = {
+    mobile_size: 767,
+
 		init: function () {
 			common.initial();
 			common.groupBox();
@@ -45,7 +47,7 @@ $(document).ready(function () {
       var $subMenuBlind = $(".subMenuBlind");
       var menu_change = Boolean;
 
-      $gnb.on({
+      $(".header .gnb, .subMenuBlind").on({
         "mouseenter": function () {
           setTimeout(menuchk, 300);
           menu_change = true;
@@ -55,13 +57,12 @@ $(document).ready(function () {
           menu_change = false;
         }
       });
-
-      $subMenuBlind.on({
-        "mouseenter": function () {
+      $gnb.find(">ul li a").on({
+        "focus": function () {
           setTimeout(menuchk, 100);
           menu_change = true;
         },
-        "mouseleave": function () {
+        "blur": function () {
           setTimeout(menuchk, 100);
           menu_change = false;
         }
@@ -69,36 +70,32 @@ $(document).ready(function () {
 
       function menuchk(){
         if(menu_change === true) {
-          setTimeout(function () {
-            var _menu_height = $depth2.map(function () {
-              return $(this).height();
-            }).get();
-            var _menu_height_value = Math.max.apply(null, _menu_height);
-            // TweenMax.to($gnb_blind, 0.2, { height: _menu_height_value + "", opacity: 1, ease: "Power4.ease" });
-            // $gnb_menu_sub.css({"height": _menu_height_value, "opacity": 1});
-            $header.height(_menu_height_value + 104);
-
-            $depth1.addClass('active');
-            setTimeout(function () {
-              $depth1.addClass('show');
-              $depth2.height(_menu_height_value);
-              $subMenuBlind.height(_menu_height_value);
-            }, 10);
-          }, 10);
-
-          // $gnb_menu.show().addClass("active");
-          // $blind_common.addClass("active");
+          var _menu_height = $depth2.map(function () {
+            return $(this).height();
+          }).get();
+          var _menu_height_value = Math.max.apply(null, _menu_height);
+          $depth1.addClass('active');
+          $depth2.height(_menu_height_value);
+          $subMenuBlind.height(_menu_height_value);
+          TweenMax.to($header, 0.1, { height: _menu_height_value + 104, onComplete:function() {
+            $depth1.addClass('show');
+          }});
         } else {
-          $header.height('');
           $subMenuBlind.height('');
           $depth1.removeClass('show');
-          setTimeout(function () {
+          $depth2.height('');
+          TweenMax.to($header, 0.1, { height: '', onComplete:function() {
             $depth1.removeClass('active');
-          }, 10);
+          }});
         }
       }
 
-
+      /* 3뎁스 메뉴 있는 것 체크 - 화살표 아이콘 달아주기위해 사용 */
+			$.each($depth2.find(">li >a"), function(index, item) {
+				if($(this).siblings("ul").length) {
+					$(this).addClass("menu_exist");
+				}
+			});
 		},
 		/* 메뉴 활성화 */
 		menu_active: function () {
@@ -127,14 +124,15 @@ $(document).ready(function () {
 					var _depth = _item.split("_");
 					var _depthShift = _depth.shift();
 					if(_depth.join("") === depth.join("")) {
-						$(this).addClass("active").parents().parents().siblings("a").addClass("active arrow").parents(".gnb_menu").siblings("a").addClass("active");
-						var lnb_clone = $(this).parents(".depth2").clone();
+            $(this).addClass("active").attr('title', '메뉴 선택').parents("ul").siblings("a").addClass("active arrow").attr('title', '메뉴 선택');
 						var lnb_title = $(this).parents(".depth2").siblings("a").text();
-            var lnb_title_clone = $(this).parents(".depth2").siblings("a").clone();
+						var lnb_clone = $(this).parents(".depth2").clone();
+            var lnb_title_clone2 = $(this).parents(".depth2").siblings("a").clone();
+            // var lnb_title_clone3 = $(this).parents(".depth3").siblings("a").clone();
             var this_clone = $(this).clone();
 
 						$lnbBody.find("h2").text(lnb_title).siblings(".lnb").append(lnb_clone);
-						$location.append(lnb_title_clone).append(this_clone);
+						$location.append(lnb_title_clone2).append(this_clone);
 
 						//페이지타이틀
 						$title.text("국민취업지원제도 - "+lnb_title+" - "+ $(this).text());
@@ -149,19 +147,15 @@ $(document).ready(function () {
 
 			/* LNB 아코디언 */
 			if ($(window).width() > common.mobile_size && !fired[0]) {
-				/*
-					20210604 2레벨 메뉴 클릭시 펼침/닫기 제거
-					- LNB만 적용되도록 수정했습니다.
-				*/
-				// $lnb.find(".menu_exist").attr('title', '메뉴 축소');
-				// $lnb.find(".menu_exist.arrow").attr('title', '메뉴 확장');
-				// $lnb.find(".menu_exist").on("click", function(e){
-				// 	e.preventDefault();
-				// 	if(!$(this).hasClass("arrow")) {
-				// 		$lnb.find(".menu_exist").removeClass("arrow").attr('title', '메뉴 축소').siblings("ul").slideUp(100);
-				// 		$(this).addClass("arrow").attr('title', '메뉴 확장').siblings("ul").slideDown(100);
-				// 	}
-				// });
+				$lnbBody.find(".menu_exist").attr('title', '메뉴 축소');
+				$lnbBody.find(".menu_exist.arrow").attr('title', '메뉴 확장');
+				$lnbBody.find(".menu_exist").on("click", function(e){
+					e.preventDefault();
+					if(!$(this).hasClass("arrow")) {
+						$lnbBody.find(".menu_exist").removeClass("arrow").attr('title', '메뉴 축소').siblings("ul").slideUp(100);
+						$(this).addClass("arrow").attr('title', '메뉴 확장').siblings("ul").slideDown(100);
+					}
+				});
 			}
 		},
 	},
@@ -173,15 +167,24 @@ $(document).ready(function () {
 
       $layerLink.on('click', function(){
         var _target = $("#" + $(this).attr("aria-controls"));
-        layerPopup.open(this, _target);
+        var _target_aria = $(this).attr("aria-controls");
+        layerPopup.open(this, _target, _target_aria);
       });
     },
-    open: function (_this, _target) {
+    open: function (_this, _target, _target_aria) {
+      //전체메뉴일 경우
+      if(_target_aria === 'allMenu_pop') {
+        var gnb_clone = $(".gnb").clone();
+        var $allMenu = $(".allMenu");
+        $allMenu.append(gnb_clone);
+      }
+
+      $('body').addClass('noScroll');
       _target.addClass('active').focus();
       TweenLite.to(_target, 0.3, {onComplete:function() {
         _target.addClass('show').find('.layerClose').off().on({
           'click': function() {
-            layerPopup.close(_this, _target);
+            layerPopup.close(_this, _target, _target_aria);
           },
           'keydown': function(e) {
             var _keyCode = e.keyCode || e.which;
@@ -196,15 +199,22 @@ $(document).ready(function () {
         // 레이어 팝업 외부 클릭 시 창닫기
         $(document).off().on('click', function (e){
           if(_target.has(e.target).length === 0) {
-            layerPopup.close(_this, _target);
+            layerPopup.close(_this, _target, _target_aria);
           }
         });
       }});
     },
-    close: function (_this, _target) {
+    close: function (_this, _target, _target_aria) {
       $(document).off();
       _target.removeClass("show");
       TweenLite.to(_target, 0.3, {onComplete:function() {
+        //전체메뉴일 경우
+        if(_target_aria === 'allMenu_pop') {
+          var $allMenu = $(".allMenu");
+          $allMenu.find(".gnb").remove();
+        }
+
+        $('body').removeClass('noScroll');
         _target.removeClass("active");
         _this.focus();
         _this = null;
@@ -216,8 +226,6 @@ $(document).ready(function () {
   layerPopup.init();
 	common.init();
 });
-
-
 
 
 
