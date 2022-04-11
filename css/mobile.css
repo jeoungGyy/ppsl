@@ -29,6 +29,7 @@
 .contentsHeader .title p { color: #767676;}
 .contentsHeader .location { margin-top: 16px; padding-bottom: 0;}
 .contentsHeader .location button.printBtn { display: none;}
+.contentsHeader .location button.shareBtn { margin-left: 16px;}
 
 
 /* 공통 STYLE
