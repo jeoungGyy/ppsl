@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<script src="../../include/head.js"></script> <!-- include: 공통 헤드 -->
+	<style>
+		body { padding: 50px;}
+	</style>
+
+	<script>
+		$(document).ready (function () {
+		var $date = $("#date");
+		var $datepicker = null;
+		var visible = false;
+		
+		$.datepicker.setDefaults({
+			dateFormat: 'yymmdd',
+			prevText: '이전 달',
+			nextText: '다음 달',
+			monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+			monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+			dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+			dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+			dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+			showMonthAfterYear: true,
+			beforeShow: function () {
+			visible = true
+		},
+		onClose: function () {
+			visible = false;
+		},
+		showOn: "button",
+		buttonText: "Open Calendar"
+		});
+		
+		$date.datepicker ({
+			onSelect: function (date) {
+				$(this).trigger ("focus");
+			} // onSelect
+		}).focus(); // instantiate datepicker
+		
+		$datepicker = $date.datepicker ("widget");
+		if ($datepicker.length == 0) {
+			alert ("no date picker");
+			return false;
+		}
+		
+		$date.on ("keydown", function (e) {
+			if (! visible) return true;
+			var key = e.keyCode;
+			var message, date, day, month, year, $datepicker;
+			$datepicker = $(this).datepicker ("widget");
+			
+			if (key >= 37 && key <= 40 && ! e.ctrlKey) {
+			e.ctrlKey = true;
+			$date.trigger (e);
+			return false;
+			} // if
+			
+			if (key >= 33 && key <=40) {
+			day = $datepicker.find (".ui-state-hover").text();
+			month = $datepicker.find (".ui-datepicker-month").text();
+			year = $datepicker.find (".ui-datepicker-year").text();
+			date = new Date (year + " " + month + " " + day);
+			message = $.datepicker.formatDate ("yy DD d MM", date);
+			$("#message").text (message);
+			return false;
+			} // if
+
+			return true;
+		}); // keydown
+	});
+	</script>
+</head>
+
+<body>
+	<ul>
+	<li>left / right : move by day</li>
+	<li>up / down : move by week</li>
+	<li>page up / down : move by month</li>
+	<li>control + page up / down : move by year</li>
+	<li>control + home : move to current date</li>
+	<li>enter : close datepicker and select currently highlighted date and place it in the input field ready for editing</li>
+	</ul>
+	
+
+	
+	<div role="application">
+		<label for="date">Choose a date:</label>
+		<input type="text" id="date">
+	</div>
+	
+	<button>Submit</button>
+	
+	
+	</body>
+</html>

@@ -203,6 +203,10 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .controlBox li .button { min-width: 89px; margin-left: 4px;}
 .controlBox li .button span { margin-top: -2px;}
 .controlBox li .button .searchIcon { display: inline-block; width: 24px; height: 24px; margin-right: 4px; background: url(../images/common/ico_search_w_24.svg) no-repeat center/cover;}
+.controlBox li .searchReset { flex: 1; position: relative;}
+.controlBox li .searchReset .searchResetBtn { display: none; position: absolute; right: 16px; top: 12px; width: 16px; height: 16px;}
+.controlBox li .searchReset .searchResetBtn i { display: block; width: 100%; height: 100%; text-indent: -99999px; background: url(../images/common/ico_clear.svg) no-repeat center/cover;}
+.controlBox li .searchReset.active .searchResetBtn { display: block;}
 .controlBox li.ml4 { padding-left: 4px;}
 .controlBox li.wp35 { width: 35%;}
 .controlBox li.wp25 { width: 25%;}

@@ -6,6 +6,7 @@ $(document).ready(function () {
 		init: function () {
 			common.initial();
 			common.groupBox();
+			common.searchReset();
 			common.menu();
 			common.menu_active();
 			// common.header_slider();
@@ -33,6 +34,15 @@ $(document).ready(function () {
 		},
     /* 라디오, 체크박스 */
 		groupBox: function () {
+      $('.groupBox input').iCheck({
+        checkboxClass: 'icheckbox',
+        radioClass: 'iradio',
+      });
+		},
+    /* 인풋 글자 체크 */
+		searchReset: function () {
+      var $searchReset = $('.searchReset');
+      
       $('.groupBox input').iCheck({
         checkboxClass: 'icheckbox',
         radioClass: 'iradio',

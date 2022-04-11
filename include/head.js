@@ -16,10 +16,12 @@ str += '<meta property="og:description" content="공적연금연계제도 홈페
 str += '<meta property="og:image" content="http://www.ppsl.or.kr/image/ppsl/por/man/ppslmetaog.jpg">';
 str += '<meta property="og:url" content="http://www.ppsl.or.kr">';
 str += '<link rel="stylesheet" href="../../css/base.css">';
+str += '<link rel="stylesheet" href="../../css/jquery-ui.css">';
 str += '<link rel="stylesheet" href="../../css/style.css">';
 str += '<link rel="stylesheet" href="../../css/tablet.css">';
 str += '<link rel="stylesheet" href="../../css/mobile.css">';
 str += '<script src="../../js/jquery-1.12.4.min.js"></script>';
+str += '<script src="../../js/jquery-ui.js"></script>';
 str += '<script src="../../js/jquery.slides.min.js"></script>';
 str += '<script src="../../js/gsap.min.js"></script>';
 str += '<script src="../../js/icheck.js"></script>';
