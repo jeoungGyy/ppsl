@@ -17,11 +17,17 @@
 }
 @font-face {
 	font-family: 'Montserrat';
-	font-weight: 400;
-	src: local("나눔바른고딕"),
-	url(../fonts/Montserrat/Montserrat-Regular.woff2) format('woff2'),
-	url(../fonts/Montserrat/Montserrat-Regular.woff) format('woff'),
-	url(../fonts/Montserrat/Montserrat-Regular.ttf) format('truetype');
+	src: local("Montserrat"),
+	url(../fonts/Montserrat/Montserrat-SemiBold.woff2) format('woff2'),
+	url(../fonts/Montserrat/Montserrat-SemiBold.woff) format('woff'),
+	url(../fonts/Montserrat/Montserrat-SemiBold.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'EliceDigitalBaeum-Bd';
+	src: local("EliceDigitalBaeum-Bd"),
+	url(../fonts/EliceDigitalBaeum/EliceDigitalBaeum-Bd.woff2) format('woff2'),
+	url(../fonts/EliceDigitalBaeum/EliceDigitalBaeum-Bd.woff) format('woff'),
+	url(../fonts/EliceDigitalBaeum/EliceDigitalBaeum-Bd.ttf) format('truetype');
 }
 
 html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,pre,a,main,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strong,sub,sup,var,b,u,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td, header, article, section, aside, nav, figure, figcaption, adress, textarea, input[type=text], input[type=password], input[type=file] {

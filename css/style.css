@@ -82,7 +82,7 @@ body.noScroll { overflow: hidden;}
 .contentsHeader { display: flex; align-items: flex-end; justify-content: space-between;}
 .contentsHeader .title h3 { font-size: 28px;}
 .contentsHeader .title p { margin-top: 16px; color: #5a5a5a; line-height: 24px;}
-.contentsHeader .location { display: inline-flex; align-items: center; padding-bottom: 6px;}
+.contentsHeader .location { display: inline-flex; align-items: center;}
 .contentsHeader .location i.home { display: inline-block; width: 16px; height: 16px; margin: -3px 4px 0 0; background: url(../images/common/ico_home.svg) no-repeat center/cover;}
 .contentsHeader .location .locationDepth { display: flex; align-items: center;}
 .contentsHeader .location .locationDepth a { position: relative; margin-left: 4px; padding-left: 20px; font-size: 14px; color: #767676;}
@@ -113,7 +113,8 @@ body.noScroll { overflow: hidden;}
 .textRight { text-align:right !important;}
 
 /* 글꼴 */
-.fontMontserrat { font-family: 'Montserrat', "NanumBarunGothic"; font-weight: 400;}
+.fontMontserrat { font-family: 'Montserrat', "NanumBarunGothic";}
+.fontEliceDigital { font-family: 'EliceDigitalBaeum-Bd', "NanumBarunGothic";}
 
 /* 색상 */
 .colorBlue { color: #366cc3 !important;}
@@ -215,7 +216,6 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .controlBox.flexWrap { flex-wrap: wrap; margin-top: -16px;}
 .controlBox.flexWrap li { margin-top: 16px;}
 
-
 /* controlBody */
 .controlBody { display: flex; align-items: flex-end; justify-content: space-between; margin-top: 40px;}
 .controlBody >b { font-size: 14px;}
@@ -270,6 +270,13 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .evaluationBody .context .groupBox li { margin-right: 32px;}
 .evaluationBody .btn { width: 80px;}
 
+/* stepBody */
+.stepBody { margin-top: 40px;}
+.stepBody .stepBy { display: flex; margin: 0 -20px;}
+.stepBody .stepBy li { display: flex; align-items: baseline; justify-content: center; flex: 1; height: 56px; margin: 0 20px; padding-top: 18px; color: #fff; background-color: #366cc3; border-radius: 8px;}
+.stepBody .stepBy li span { display: block;}
+.stepBody .stepBy li span.text { margin-left: 6px;}
+
 
 
 
@@ -303,8 +310,33 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 
 
 
+/* 신청
+**********************************************/
+
+/* 연계신청 */
+.targetBody .targetOff { display: flex; align-items: center; justify-content: center; margin-top: 40px; padding: 32px 0; background-color: #f7f7f7; border-radius: 8px;}
+.targetBody .targetOff .icon { width: 64px; height: 64px; background: url(../images/common/ico_notapplication.svg) no-repeat center/cover;}
+.targetBody .targetOff .textGroup { text-align: center;}
+.targetBody .targetOff .textGroup h4 span { font-size: 24px;}
+.targetBody .targetOff .textGroup h4 span.normal { font-size: 16px; font-weight: 400;}
+.targetBody .targetOff .textGroup h4 span.text { position: relative;}
+.targetBody .targetOff .textGroup h4 span.text::before { content: ''; display: block; position: absolute; left: 0; bottom: 0; width: 100%; height: 14px; background-color: #333; opacity: 0.1;}
+.targetBody .targetOff .textGroup p { margin-top: 12px; font-size: 14px; color: #767676; line-height: 21px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 콘텐츠 명
 **********************************************/
 
 /* 하위 콘텐츠 명 */
-

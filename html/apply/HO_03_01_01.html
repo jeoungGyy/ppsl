@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<script src="../../include/head.js"></script> <!-- include: 공통 헤드 -->
+</head>
+
+<body>
+<div id="wrap">
+	<script src="../../include/header.js"></script> <!-- include: 공통 헤더 -->
+
+	<div class="container">
+		<div class="area">
+			<div class="wrap">
+				<div class="lnbBody">
+					<h2></h2>
+					<nav class="lnb">
+					</nav>
+				</div>
+
+				<div id="contentLink" class="contents">
+					<header class="contentsHeader">
+						<div class="title">
+							<h3>연계신청</h3>
+						</div>
+						<script src="../../include/location.js"></script> <!-- include: 공통 현재위치 -->
+					</header>
+
+					<div class="stepBody">
+						<ul class="stepBy">
+							<li>
+								<span class="invisible">현재 단계</span>
+								<span class="fontMontserrat">01</span>
+								<span class="fontEliceDigital text">접수중</span>
+							</li>
+							<li>
+								<span class="fontMontserrat">02</span>
+								<span class="fontEliceDigital text">접수완료</span>
+							</li>
+							<li>
+								<span class="fontMontserrat">03</span>
+								<span class="fontEliceDigital text">기관심사중</span>
+							</li>
+							<li>
+								<span class="fontMontserrat">04</span>
+								<span class="fontEliceDigital text">처리완료</span>
+							</li>
+						</ul>
+					</div>
+
+					<!-- 대상자 -->
+					<div class="targetBody">
+						<!-- 대상자가 아닐경우 -->
+						<div class="targetOff">
+							<i class="icon"></i>
+							<div class="textGroup">
+								<h4><span class="normal">고객님께서는</span> <span class="fontEliceDigital text">연계신청 대상자가 아닙니다.</span></h4>
+								<p>2개 이상의 가입/재직 기간이 있어야 신청가능합니다.</p>
+							</div>
+						</div>
+						<!-- //대상자가 아닐경우 -->
+
+						<!-- 대상자일 경우 -->
+						<div class="targetOn">
+
+						</div>
+						<!-- //대상자일 경우 -->
+
+						<!-- 신청 취소 -->
+						<div class="targetCancel">
+
+						</div>
+						<!-- //신청 취소 -->
+
+						<!-- 완료 -->
+						<div class="targetComplete">
+
+						</div>
+						<!-- //완료 -->
+					</div>
+					<!-- //대상자 -->
+
+					<h4 class="defaultH4">가입(재직)이력 <span>조회일 : 2022.03.10</span></h4>
+					<div>
+						<h5 class="defaultH5">국민연금</h5>
+						<h5 class="defaultH5">직역연금</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="../../include/footer.js"></script> <!-- include: 공통 푸터 -->
+
+	<script>
+		var depth = [3, 1]; /* 현재메뉴 활성화 용: gnb에 있는 data-menu 값과 일치하게 해주세요. */
+	</script>
+</div>
+</body>
+</html>
