@@ -121,6 +121,7 @@ body.noScroll { overflow: hidden;}
 
 /* Heading */
 .defaultH4 { font-size: 19px;}
+.defaultH4.mt { margin-top: 40px;}
 .defaultH5 { font-size: 16px;}
 .defaultH5.mt { margin-top: 24px;}
 
@@ -143,6 +144,7 @@ hr.space { margin: 40px 0; border-top: 1px solid #dbdbdb;}
 .button.h40 { min-width: 80px; height: 40px;}
 .button.h32 { height: 32px; font-size: 14px;}
 .button.h24 { height: 24px; font-size: 14px;}
+.button[disabled] { color: #959595 !important; border-color: #f7f7f7 !important; background-color: #f7f7f7 !important; cursor: not-allowed;}
 .button.black { color: #fff; background-color: #333;}
 .button.black:hover, 
 .button.black:active { background-color: #000;}
@@ -150,6 +152,8 @@ hr.space { margin: 40px 0; border-top: 1px solid #dbdbdb;}
 .button.blue:hover,
 .button.blue:active { background-color: #2b569c;}
 .button.gray { background-color: #eaeaea;}
+.button.gray:hover,
+.button.gray:active { background-color: #dbdbdb;}
 .button.lineBlack { border: 1px solid #333;}
 .button.lineBlack:hover,
 .button.lineBlack:active { color: #366cc3; border-color: #366cc3;}
@@ -165,38 +169,22 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .iradio { position:absolute; top: 0; left: 0; min-width: 20px; min-height: 20px;}
 .focus { outline: 2px solid #000 !important; border-radius: 2px;}
 
-.checkboxGroup { display: flex;}
-.checkboxGroup li ~ li { margin-left: 20px;}
-.checkboxGroup .checkboxBox { display: inline-block; position: relative; min-height: 24px; padding-left: 30px;}
-.checkboxGroup input,
-.checkboxGroup label { font-size: 14px; cursor: pointer;}
-.checkboxGroup label::before { content: ''; display: block; position: absolute; left: 0; top: 0; width: 22px; height: 22px; border: 1px solid #ddd; background: url(https://limjungk.cafe24.com/dist/icoCheck.png) no-repeat; border-radius: 50%; transition: background-color .2s ease-in-out;}
-.checkboxGroup .checked +label::before { border-color: #366cc3; background-color: #366cc3; background-position-x: -24px;}
-.checkboxGroup .disabled,
-.checkboxGroup .disabled +label { cursor: not-allowed;}
-.checkboxGroup .disabled +label::before { border-color: #e5e5e5; background-color: #fff;}
-.checkboxGroup .checkbox-disabled-checked::before { border-color: #e5e5e5; background-color: red;}
-
-/* .radiogroup { display: flex;}
-.radiogroup li { margin-right: 20px;}
-.radiogroup .radioBox { display: inline-block; position: relative; min-height: 20px; padding-left: 28px;}
-.radiogroup	input { position: absolute; top: 0; left: 0; z-index: 1; width: 20px; height: 20px; margin: 0; opacity: 0 !important; cursor: pointer;}
-.radiogroup label { display: flex; align-items: center; height: 20px; padding-top: 1px; font-size: 14px; cursor: pointer;}
-.radiogroup label::before { content: ''; display: block; position: absolute; left: 0; top: 0; width: 18px; height: 18px; border: 1px solid #ddd; background-color: #fff; border-radius: 50%; transition: background-color .2s ease-in-out;}
-.radiogroup label::after { content: ''; display: block; position: absolute; left: 4px; top: 4px; width: 12px; height: 12px; border-radius: 50%; transition: background-color .2s ease-in-out;}
-.radiogroup .checked +label::before { border-color: #366cc3; background-color: #fff;}
-.radiogroup .checked +label::after { border-color: #366cc3; background-color: #366cc3;}
-.radiogroup	.disabled,
-.radiogroup	.disabled +label { cursor: not-allowed;}
-.radiogroup	.disabled +label::before { border-color: #bbb; background-color: #fff;}
-.radiogroup .disabled +label::after { display: none;} */
+.checkboxBox { display: flex; align-items: center; position: relative; height: 20px; padding-left: 28px;}
+.checkboxBox label { cursor: pointer;}
+.icheckbox { position: absolute; top: -1px; left: 0; width: 20px; height: 20px; border: 1px solid #a5a5a5; border-radius: 50%; transition: all .2s ease-in-out;}
+.icheckbox::before { content: ''; display: block; position: absolute; left: 4px; top: 5px; width: 11.11px; height: 7.8px; background: url(../images/common/ico_checkbox.svg) no-repeat center/cover;}
+.icheckbox input { margin: 0; width: 20px; height: 20px;}
+.icheckbox.checked { border-color: #366cc3; background-color: #366cc3;}
+.icheckbox.checked::before { background: url(../images/common/ico_checkbox_w.svg) no-repeat center/cover;}
+.icheckbox.disabled { border-color: #dbdbdb;}
+.icheckbox.disabled::before { background: url(../images/common/ico_checkbox_d.svg) no-repeat center/cover;}
 
 .radioBox { display: flex; align-items: center; position: relative; height: 20px; padding-left: 28px;}
 .radioBox label { cursor: pointer;}
 .iradio { position: absolute; top: -1px; left: 0; width: 20px; height: 20px; border: 1px solid #a5a5a5; border-radius: 50%; transition: all .2s ease-in-out;}
 .iradio::before { content: ''; position: absolute; left: 3px; top: 3px; width: 12px; height: 12px; border-radius: 50%; transition: all .2s ease-in-out;}
 .iradio input { margin: 0; width: 20px; height: 20px;}
-.iradio.checked { border-color: #366cc3; transition: all .2s ease-in-out;}
+.iradio.checked { border-color: #366cc3;}
 .iradio.checked::before { background-color: #366cc3;}
 
 /* lineSpace */
@@ -206,8 +194,13 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .lineSpace >span ~ span::before { content: ''; display: block; position: absolute; left: 0; top: 1px; width: 1px; height: 12px; background-color: #dbdbdb;}
 .lineSpace >span span ~ span { margin-left: 4px;}
 
-/* searchBody */
+/* guideText */
+.guideText li { position: relative; padding-left: 12px; font-size: 14px; line-height: 21px;}
+.guideText li::before { content: ''; position: absolute; left: 0; top: 8px; width: 4px; height: 4px; background-color: #333;}
+.guideText li ~ li { margin-top: 8px;}
+.guideText.mt { margin-top: 16px;}
 
+/* searchBody */
 .searchBody { margin-top: 40px; padding: 24px 48px 24px 0; background-color: #f7f7f7;}
 .controlBox { display: flex;}
 .controlBox li { display: flex; align-items: center;}
@@ -238,15 +231,43 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .tableBody { overflow: hidden; margin-top: 8px; border-top: 2px solid #333;}
 .tableBody table { width: calc(100% + 2px); margin-left: -1px;}
 .tableBody table th { padding: 16px 0; border-left: 1px solid #dbdbdb; background-color: #f7f7f7;}
-.tableBody table td { padding: 16px 12px; text-align: center; border: 1px solid #dbdbdb;}
+.tableBody table td { padding: 16px 12px; text-align: center; line-height: 24px; border: 1px solid #dbdbdb;}
 .tableBody table tr:hover td { background-color: #f7f7f7;}
 .tableBody table td a { text-align: left; line-height: 24px;}
 .tableBody table td a:hover span { border-bottom: 1px solid #333;}
+.tableBody table td .groupBox { position: relative; width: 20px; height: 20px; margin: 0 auto; cursor: pointer;}
+.tableBody table td .block { display: block; text-align: left;}
 .tableBody table td.empty { padding: 40px 0;}
+.tableBody table tr.off { background-color: #f7f7f7;}
+.tableBody table tr.off .colorBlue { color: inherit !important;}
+.tableBody table td table { margin-top: 8px; border-top: 2px solid #333;}
+.tableBody table td table th:first-child { border-left: none;}
+.tableBody table td table td:first-child { border-left: none;}
+.tableBody table td table td:last-child { border-right: none;}
+.tableBody table td table td input[type=text],
+.tableBody table td table td select { width: 100%;}
 .tableBody a .new { display: inline-flex; justify-content: center; align-items: center; width: 28px; height: 16px; margin: -2px 0 0 4px; font-size: 8px; font-weight: 700; font-style: normal; color: #ee0700; vertical-align: middle; border: 1px solid #ee0700;}
 .tableBody .fix { display: inline-block; width: 24px; height: 24px; margin-top: -1px; text-indent: -99999px; vertical-align: middle; background: url(../images/common/ico_notice.svg) no-repeat center/cover;}
 .tableBody .file { display: inline-block; width: 24px; height: 24px; text-indent: -99999px; background: url(../images/common/ico_attach.svg) no-repeat center/cover;}
 
+/* hTableBody */
+.hTableBody { overflow: hidden; margin-top: 8px; border-top: 2px solid #333;}
+.hTableBody table th { padding: 23px 0 23px 24px; text-align: left; border-bottom: 1px solid #dbdbdb; background-color: #f7f7f7;}
+.hTableBody table td { padding: 12px 15px; border-left: 1px solid #dbdbdb; border-bottom: 1px solid #dbdbdb;}
+.hTableBody table td .post input { width: 200px;}
+.hTableBody table td .post button { margin-left: 4px;}
+.hTableBody table td .address input:first-child { width: 70%;}
+.hTableBody table td .address input:last-child { width: 30%; margin-left: 4px;}
+.hTableBody table td .phone select { width: 120px;}
+.hTableBody table td .phone span { position: relative; width: 120px; margin-left: 25px;}
+.hTableBody table td .phone span::before { content: ''; display: block; position: absolute; left: -16px; top: 18px; width: 7px; height: 2px; background-color: #333;}
+.hTableBody table td .phone input { width: 100%;}
+.hTableBody table td .email input { width: 200px;}
+.hTableBody table td .email span { position: relative; margin-left: 33px;}
+.hTableBody table td .email span::before { content: '@'; position: absolute; left: -24px; top: 13px;}
+.hTableBody table td .email select { width: 200px; margin-left: 4px;}
+
+/* pageNumber */
 .pageNumber { display: flex; align-items: center; justify-content: center; margin-top: 32px;}
 .pageNumber a { display: flex; justify-content: center; align-items: center;  width: 40px; height: 40px; margin: 0 2px; font-family: 'Montserrat'; font-weight: 400; border: solid 1px #dbdbdb;}
 .pageNumber a:hover { border-color: #366cc3;}
@@ -352,21 +373,14 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .targetBody .sameStyle .guideText .application span { border-bottom: 1px solid #333;}
 .targetBody .sameStyle .guideText .application .arrowRight { width: 16px; height: 16px; margin-left: 4px; background: url(../images/common/ico_arrow_right.svg) no-repeat center/cover;}
 
-.agreeBody {}
 .agreeBody { margin-top: 40px;}
 .agreeBody .bletBlue { position: relative; padding-left: 12px; font-size: 14px; line-height: 21px;}
 .agreeBody .bletBlue::before { content: ''; display: block; position: absolute; left: 0; top: 7px; width: 4px; height: 4px; background-color: #366cc3;}
-
 .agreeBody .roundBox { overflow: hidden; margin-top: 40px; border: solid 1px #dbdbdb; border-radius: 8px;}
 .agreeBody .roundBox h4 { padding: 14px 24px; font-size: 16px; background-color: #f7f7f7;}
 .agreeBody .roundBox .overflowY { overflow-x: hidden; overflow-y: scroll; height: 152px; margin: 23px 8px 23px 24px; font-size: 14px; line-height: 21px;}
-.agreeBody .roundBox .overflowY::-webkit-scrollbar {
-  width: 4px;  /* 세로축 스크롤바 길이 */
-}
-.agreeBody .roundBox .overflowY::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-  background-color: #959595;
-}
+.agreeBody .roundBox .overflowY::-webkit-scrollbar { width: 4px;}
+.agreeBody .roundBox .overflowY::-webkit-scrollbar-thumb { border-radius: 4px; background-color: #959595;}
 .agreeBody .roundBox .overflowY >p ~ p { margin-top: 20px;}
 .agreeBody .roundBox .overflowY .styleGray { color: #767676;}
 .agreeBody .roundBox .overflowY ol > li { margin-top: 20px;}
@@ -375,6 +389,31 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .agreeBody .groupBox li ~ li { margin-left: 32px;}
 .agreeBody .btns { display: flex; justify-content: flex-end; margin-top: 32px;}
 .agreeBody .btns button ~ button { margin-left: 8px;}
+
+.appBody {}
+.appBody { margin-top: 40px;}
+.appBody .dateGroup { margin-top: 9px; border-top: 2px solid #333; border-bottom: 1px solid #333;}
+.appBody .dateGroup .head { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #dbdbdb;}
+.appBody .dateGroup .head b { padding: 16px 24px; background-color: #f7f7f7;}
+.appBody .dateGroup .head span { padding: 16px 0;}
+.appBody .dateGroup .body { padding: 40px 0; text-align: center;} 
+.appBody .dateGroup .body .in { margin-top: 24px;}
+.appBody .dateGroup .body .in span { display: block;}
+.appBody .dateGroup .body .in span ~ span { margin-top: 8px;}
+.appBody .dateGroup .body .he { display: inline-flex; align-items: center; margin-top: 24px;}
+.appBody .dateGroup .body .he select { width: 240px;}
+.appBody .dateGroup .body .he .tooltipBtn { margin-top: -15px;}
+.appBody .dateGroup .body .he .tooltipBtn i { display: inline-block; width: 24px; height: 24px; text-indent: -99999px; background: url(../images/common/ico_help.svg) no-repeat center/cover;}
+.appBody .dateGroup .body .he select { margin: 0 8px;}
+.appBody .btns { display: flex; align-items: center; justify-content: space-between; margin-top: 32px;}
+.appBody .btns >div { display: flex;}
+.appBody .btns >div button ~ button { margin-left: 8px;}
+
+
+
+
+
+
 
 
 

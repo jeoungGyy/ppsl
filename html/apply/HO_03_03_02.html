@@ -21,164 +21,290 @@
 				<div id="contentLink" class="contents">
 					<header class="contentsHeader">
 						<div class="title">
-							<h3>연계신청접수</h3>
-							<p>온라인으로 연계신청을 할 수 있습니다.</p>
+							<h3>연계신청하기</h3>
 						</div>
 						<script src="../../include/location.js"></script> <!-- include: 공통 현재위치 -->
 					</header>
 
-					<div class="agreeBody">
-						<p class="bletBlue colorBlue">
-							연계신청을 한 경우에는 원칙적으로 취하할 수 없습니다.<br>
-							다만, 연계 신청 처리결과 통보서가 도달하기 전에는 취하 가능 합니다.
-						</p>
-						<div class="roundBox">
-							<h4>연계제도 및 내용확인</h4>
-							<div class="overflowY" tabindex="0">
-								<ol>
-									<li>
-										1. 공적연금 연계신청 대상자는 국민연금 가입기간과 직역연금 재직기간을 연계하려는 연금가입자(연금가입자였던 자 포함)로서 다음 요건을 충족해야합니다.
-										<ul class="styleGray">
-											<li>· 국민연금 → 직역연금으로 이동한 경우 : 2007.7.23.까지 국민연금 가입을 유지하고 직역연금으로 이동한자</li>
-											<li>· 직역연금 → 국민연금으로 이동한 경우 : 2009.2.6.까지 직역연금 가입을 유지하고 국민연금으로 이동한자</li>
-										</ul>
-									</li>
-									<li>
-										2. 연계연금 수급 가능 요건입니다.
-										<ul class="styleGray">
-											<li>· 국민연금(만 60세 이전 납부기간) 가입기간 + 직역연금 재직기간이 240개월 이상이며 국민연금과 직역연금에 관한 법률상 연금 개시연령을 충족한 자</li>
-										</ul>
-									</li>
-									<li>3. 직역연금 퇴직자가 직역연금법상 미납액(기여금, 합산반납금 등)이 있는 경우 해당 금액 완납 전까지 연계신청 승인이 보류됩니다.</li>
-									<li>4. 공적연계법 적용(연계 승인) 후 공무원연금 및 사립학교교직원연금법, 군인연금법에 의한 퇴직급여 일시금 지급이 불가합니다.</li>
-								</ol>
-							</div>
+					<div class="appBody">
+						<h4 class="defaultH4">신청인정보</h4>
+						<div class="hTableBody">
+							<table>
+								<caption>신청인 정보 : 성명, 주민등록번호, 우편번호, 주소, 자택번호, 휴대번호, 전자우편(이메일)로 구성</caption>
+								<colgroup>
+									<col style="width: 162px;">
+									<col>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">성명</th>
+										<td>김공단</td>
+									</tr>
+									<tr>
+										<th scope="row">주민등록번호</th>
+										<td>000000-*******</td>
+									</tr>
+									<tr>
+										<th scope="row">우편번호</th>
+										<td>
+											<div class="flexLeft post">
+												<input type="text" title="우편번호" disabled>
+												<button type="button" class="button h40 lineBlack">우편번호검색</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">주소</th>
+										<td>
+											<div class="flexLeft address">
+												<input type="text" title="주소" disabled>
+												<input type="text" title="상세주소 입력" placeholder="상세주소">
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">자택번호</th>
+										<td>
+											<div class="flexLeft phone">
+												<select title="자택번호 국번 선택">
+													<option>선택</option>
+												</select>
+												<span><input type="tel" title="자택번호 앞 4자리"></span>
+												<span><input type="tel" title="자택번호 뒤 4자리"></span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">휴대번호</th>
+										<td>
+											<div class="flexLeft phone">
+												<select title="휴대번호 국번 선택">
+													<option>선택</option>
+												</select>
+												<span><input type="tel" title="휴대번호 앞 4자리"></span>
+												<span><input type="tel" title="휴대번호 뒤 4자리"></span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">전자우편(이메일)</th>
+										<td>
+											<div class="flexLeft email">
+												<input type="text" title="이메일 아이디 입력">
+												<span><input type="email" title="이메일 도메인 입력"></span>
+												<select title="이메일 도메인 선택">
+													<option>선택</option>
+												</select>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
-						<ul class="groupBox">
-							<li>
-								<div class="radioBox">
-									<input type="radio" id="radio1_1" name="radio1">
-									<label for="radio1_1">동의 합니다.</label>
-								</div>
-							</li>
-							<li>
-								<div class="radioBox">
-									<input type="radio" id="radio1_2" name="radio1">
-									<label for="radio1_2">미동의 합니다.</label>
-								</div>
-							</li>
+						<ul class="guideText mt">
+							<li>“주소” 란에는 통지서를 받을 수 있도록 ＂우편번호＂를 선택하여 실제 주소를 입력하셔야 합니다.</li>
+							<li>휴대폰 번호를 입력하신 경우 안내문자가 발송 될 수 있습니다.</li>
 						</ul>
 
-						<div class="roundBox">
-							<h4>개인정보 수집 및 사용에 대한 안내</h4>
-							<div class="overflowY" tabindex="0">
-								<p class="styleTitle">[개인정보의 수집 이용 목적]</p>
-								<ol class="styleGray">
-									<li>
-										가. 공적연금연계 홈페이지 전자민원 서비스는 다음의 목적을 위해 개인정보를 수집 및 이용합니다. 수집된 개인정보는 다음 목적이외의 용도로는 이용되지 않으며 수집 목적이 변경될 경우 사전에 알리고 동의를 받을 예정입니다.
-										<ul>
-											<li>- 민원사무처리 및 증명서 발급 서비스 제공, 전자통지서비스 신청</li>
-											<li>- 민원신청서 등에 포함된 개인정보는 민원사무처리 등을 위한 목적으로 이용됩니다.(전자민원 처리과정 조회, 증명서 발급 및 증명서 진위여부 확인 등)</li>
-										</ul>
-									</li>
-									<li>
-										나. 수집하는 개인정보의 항목
-										<ul>
-											<li>
-												- 필수항목 : 성명,  주소, 자택전화번호, 휴대 전화번호, 이메일 주소 등  민원신청서 상 필수입력 항목
-												<span>&lt;전자민원 신고/신청 이력&gt;</span>
-												<ul>
-													<li>· 보유항목 : 성명,  주소, 자택전화번호, 휴대 전화번호, 이메일 주소</li>
-													<li>· 보유기간 : 준영구</li>
-													<li>· 보유근거 : 전자정부법 제7조, 민원사무처리에 관한 법률 시행령 제35조, 사무 및 기록물관리예규</li>
-												</ul>
-												<span>&lt;전자통지서비스 신규/변경/철회 신청&gt;</span>
-												<ul>
-													<li>· 보유항목 : 성명,  주소, 자택전화번호, 휴대 전화번호, 이메일 주소</li>
-													<li>· 보유기간 : 준영구</li>
-													<li>· 보유근거 : 국민연금과 직역연금의 연계에 관한 법률 제27조 및 동법 시행령 제17조 등</li>
-												</ul>
-											</li>
-										</ul>
-									</li>
-									<li>
-										라. 동의를 거부할 권리가 있다는 사실과 동의 거부에 따른 불이익 내용
-										<p>이용자는 공적연금연계 홈페이지 서비스에서 수집하는 개인정보에 대하여 동의를 거부할 권리가 있으며, 동의 거부시에는 전자민원 신고/신청, 증명서 발급 서비스, 전자통지서비스 등에 제한을 받을 수 있습니다.</p>
-									</li>
-								</ol>
-							</div>
+						<h4 class="defaultH4 mt">가입내용</h4>
+						<div class="tableBody">
+							<table>
+								<caption>가입내용 : 선택, 연금기관, 기간 구분, 상세내역로 구성</caption>
+								<colgroup>
+									<col style="width: 64px;">
+									<col style="width: 112px;">
+									<col style="width: 128px;">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">선택</th>
+										<th scope="col">연금기관</th>
+										<th scope="col">기간 구분</th>
+										<th scope="col">상세내역</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<div class="groupBox">
+												<input type="checkbox" name="checkbox" title="첫번째 가입내용 선택">
+											</div>
+										</td>
+										<td>국민연금공단</td>
+										<td>가입기간</td>
+										<td>
+											<span class="block">2년 6월  ( YYYY - MM - DD ~ YYYY - MM - DD )</span>
+											<table>
+												<caption>첫번째 가입내용 상세내역 : 연계신청가능 월수, 퇴직일시금 수령, 반납금 납부방법, 반납금 납부횟수로 구성</caption>
+												<colgroup>
+													<col style="width: 25%;">
+													<col style="width: 25%;">
+													<col style="width: 25%;">
+													<col>
+												</colgroup>
+												<thead>
+													<tr>
+														<th><span class="colorBlue">연계신청가능 월수</span></th>
+														<th>퇴직일시금 수령</th>
+														<th>반납금 납부방법</th>
+														<th>반납금 납부횟수</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><span class="colorBlue">30</span></td>
+														<td>미수령</td>
+														<td>-</td>
+														<td>-</td>
+													</tr>
+													<tr>
+														<td><span class="colorBlue">30</span></td>
+														<td>미수령</td>
+														<td>-</td>
+														<td>-</td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+									</tr>
+									<tr class="off">
+										<td></td>
+										<td>공무원연금</td>
+										<td>재직기간<br>
+											(사학연금으로 합산)</td>
+										<td>
+											<span class="block">2년 6월  ( YYYY - MM - DD ~ YYYY - MM - DD )</span>
+											<table>
+												<caption>두번째 가입내용 상세내역 : 연계신청가능 월수, 퇴직일시금 수령, 반납금 납부방법, 반납금 납부횟수로 구성</caption>
+												<colgroup>
+													<col style="width: 25%;">
+													<col style="width: 25%;">
+													<col style="width: 25%;">
+													<col>
+												</colgroup>
+												<thead>
+													<tr>
+														<th><span class="colorBlue">연계신청가능 월수</span></th>
+														<th>퇴직일시금 수령</th>
+														<th>반납금 납부방법</th>
+														<th>반납금 납부횟수</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><span class="colorBlue">30</span></td>
+														<td>미수령</td>
+														<td>
+															<select title="첫번째 반납금 납부방법 선택" disabled>
+																<option>선택</option>
+															</select>
+														</td>
+														<td>
+															<select title="첫번째 반납금 납부횟수 선택" disabled>
+																<option>선택</option>
+															</select>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="groupBox">
+												<input type="checkbox" name="checkbox" title="세번째 가입내용 선택">
+											</div>
+										</td>
+										<td>사립학교 교직원연금공단</td>
+										<td>재직기간</td>
+										<td>
+											<span class="block">2년 6월  ( YYYY - MM - DD ~ YYYY - MM - DD )</span>
+											<table>
+												<caption>세번째 가입내용 상세내역 : 연계신청가능 월수, 퇴직일시금 수령, 반납금 납부방법, 반납금 납부횟수로 구성</caption>
+												<colgroup>
+													<col style="width: 25%;">
+													<col style="width: 25%;">
+													<col style="width: 25%;">
+													<col>
+												</colgroup>
+												<thead>
+													<tr>
+														<th><span class="colorBlue">연계신청가능 월수</span></th>
+														<th>퇴직일시금 수령</th>
+														<th>반납금 납부방법</th>
+														<th>반납금 납부횟수</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><span class="colorBlue">30</span></td>
+														<td>수령</td>
+														<td>
+															<select title="첫번째 반납금 납부방법 선택">
+																<option>선택</option>
+															</select>
+														</td>
+														<td>
+															<select title="첫번째 반납금 납부횟수 선택">
+																<option>선택</option>
+															</select>
+														</td>
+													</tr>
+													<tr>
+														<td><span class="colorBlue">30</span></td>
+														<td>수령</td>
+														<td>
+															<select title="두번째 반납금 납부방법 선택">
+																<option>선택</option>
+															</select>
+														</td>
+														<td>
+															<select title="두번째 반납금 납부횟수 선택">
+																<option>선택</option>
+															</select>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
-						<ul class="groupBox">
-							<li>
-								<div class="radioBox">
-									<input type="radio" id="radio2_1" name="radio2">
-									<label for="radio2_1">동의 합니다.</label>
-								</div>
-							</li>
-							<li>
-								<div class="radioBox">
-									<input type="radio" id="radio2_2" name="radio2">
-									<label for="radio2_2">미동의 합니다.</label>
-								</div>
-							</li>
+						<ul class="guideText mt">
+							<li>“가입내용” 란에는 본인이 연게 신청을 하려는 연금의 가입, 재직(복무)연월수가 자동표시되오니 확인 하시기 바랍니다.</li>
 						</ul>
 
-						<div class="roundBox">
-							<h4>고유식별정보 수집에 대한 안내</h4>
-							<div class="overflowY" tabindex="0">
-								<p class="styleTitle">[고유식별정보 수집에 대한 안내]</p>
-								<p class="styleGray">공적연금연계 홈페이지 전자민원 서비스는 민원사무처리를 위해 고유식별정보(주민등록번호, 외국인등록번호 등)를 수집 및 이용합니다. 수집된 고유식별정보는 해당 목적이외의 용도로는 이용되지 않습니다.</p>
-								<ol class="styleGray">
-									<li>
-										가. 개인식별정보의 보유 및 이용기간(법적근거 또는 내부결재 문서 근거)
-										<p>이용자 개인정보는 원칙적으로 처리목적이 달성되면 지체없이 파기합니다. 단, 다음의 정보는 아래의 사유로 명시한 기간동안 보유/이용합니다.</p>
-										<span>&lt;전자민원 신고/신청 이력&gt;</span>
-										<ul>
-											<li>· 고유식별정보 : 주민등록번호, 외국인등록번호</li>
-											<li>· 보유기간 : 준영구</li>
-											<li>· 보유근거 : 전자정부법 제7조, 민원사무처리에 관한 법률 시행령 제35조</li>
-										</ul>
-										<span>&lt;전자민원 증명서(발급물)&gt;</span>
-										<ul>
-											<li>· 고유식별정보 : 주민등록번호, 외국인등록번호</li>
-											<li>· 보유기간 : 준영구</li>
-											<li>· 보유근거 : 전자정부법 제7조, 민원사무처리에 관한 법률 시행령 제35조</li>
-										</ul>
-										<span>&lt;전자통지서비스 신규/변경/철회 신청&gt;</span>
-										<ul>
-											<li>· 고유식별정보 : 주민등록번호, 외국인등록번호</li>
-											<li>· 보유기간 : 준영구</li>
-											<li>· 보유근거 : 국민연금과 직역연금의 연계에 관한 법률 제27조 및 동법 시행령 제17조 등</li>
-										</ul>
-									</li>
-									<li>
-										나. 동의를 거부할 권리가 있다는 사실과 동의 거부에 따른 불이익 내용
-										<p>이용자는 공적연금연계 홈페이지 서비스에서 수집하는 고유식별정보에 대하여 동의를 거부할 권리가 있으며, 동의 거부시에는 전자민원 민원신청 및 증명 발급, 전자통지서비스가 제한됩니다.</p>
-									</li>
-								</ol>
+						<h4 class="defaultH4 mt">국민연금자격취득일</h4>
+						<div class="dateGroup">
+							<div class="head">
+								<b>국민연금 가입자 자격을 취득한 날짜</b>
+								<span>YYYY - MM - DD</span>
+							</div>
+							<div class="body">
+								<p>「국민연금과 직역연금의 연계신청에 관한 법률 시행규칙」 제2조에 따라 위와 같이 신청합니다.</p>
+								<div class="in">
+									<span>신청일 : <b>YYYY - MM - DD</b></span>
+									<span>신청인 : <b>김공단</b></span>
+								</div>
+								<div class="he">
+									<button type="button" class="tooltipBtn" aria-describedby="tooltip1"><i class="icon">도움말</i></button>
+									<select title="연금관리기관 선택">
+										<option>국민연금공단</option>
+									</select>
+									<span>귀하</span>
+								</div>
 							</div>
 						</div>
-						<ul class="groupBox">
-							<li>
-								<div class="radioBox">
-									<input type="radio" id="radio3_1" name="radio3">
-									<label for="radio3_1">동의 합니다.</label>
-								</div>
-							</li>
-							<li>
-								<div class="radioBox">
-									<input type="radio" id="radio3_2" name="radio3">
-									<label for="radio3_2">미동의 합니다.</label>
-								</div>
-							</li>
-						</ul>
 
 						<div class="btns">
-							<button type="button" class="button h48 gray">미동의하고, 홈화면으로 이동</button>
-							<button type="button" class="button h48 blue">동의하고, 신청서 작성하기</button>
+							<button type="button" class="button h48 lineBlack">인쇄하기</button>
+							<div>
+								<button type="button" class="button h48 gray">취소하기</button>
+								<button type="button" class="button h48 blue">연계신청 등록</button>
+							</div>
 						</div>
-
-						<script src="../../include/evaluation.js"></script> <!-- include: 공통 평가 -->
 					</div>
 				</div>
 			</div>
