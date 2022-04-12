@@ -127,13 +127,14 @@ body.noScroll { overflow: hidden;}
 /* 색상 */
 .colorBlue { color: #366cc3 !important;}
 .colorGray { color: #767676 !important;}
+.colorLightGray { color: #959595 !important;}
 /* .colorRed { color: #FD2020 !important;}
 .colorGreen { color: #4EC457 !important;}
 .colorBlack { color: #111 !important;}
 .colorGray { color: #777 !important;}
 .colorWood { color: #D69630 !important;} */
 
-/* 색상 */
+/* hr */
 hr.space { margin: 40px 0; border-top: 1px solid #dbdbdb;}
 
 /* 버튼 */
