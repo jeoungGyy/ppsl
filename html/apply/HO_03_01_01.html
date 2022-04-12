@@ -62,28 +62,197 @@
 
 						<!-- 대상자일 경우 -->
 						<div class="targetOn">
-
+							<i class="icon"></i>
+							<div class="textGroup">
+								<h4><span class="normal">고객님께서는</span> <span class="fontEliceDigital text">연계신청 가능</span><span class="normal">하십니다.</span></h4>
+								<button type="button" class="button h40 black" onclick="location.href='HO_03_03_01.html'"><span class="dsBlock">연계신청 하기</span><i class="arrowRight"></i></button>
+							</div>
 						</div>
 						<!-- //대상자일 경우 -->
 
 						<!-- 신청 취소 -->
-						<div class="targetCancel">
+						<div class="targetCancel sameStyle">
+							<div class="tableBody">
+								<table>
+									<caption>연계신청 취소 : 접수번호, 접수일, 내용, 구분, 상태, 처리지사로 구성</caption>
+									<colgroup>
+										<col>
+										<col style="width: 184px;">
+										<col style="width: 144px;">
+										<col style="width: 136px;">
+										<col style="width: 136px;">
+										<col style="width: 124px;">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">접수번호</th>
+											<th scope="col">접수일</th>
+											<th scope="col">내용</th>
+											<th scope="col">구분</th>
+											<th scope="col">상태</th>
+											<th scope="col">처리지사</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>2009101000040</td>
+											<td>2006-03-01</td>
+											<td>연계신청서</td>
+											<td></td>
+											<td>접수완료</td>
+											<td><button type="button" class="button h24 lineBlack">조회</button></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
 
+							<div class="guideText">
+								<span class="blet">접수 상태 중인 경우 취소 가능합니다.</span>
+								<button type="button" class="application"><span>신청접수 취소</span><i class="arrowRight"></i></button>
+							</div>
 						</div>
 						<!-- //신청 취소 -->
 
 						<!-- 완료 -->
-						<div class="targetComplete">
+						<div class="targetComplete sameStyle">
+							<div class="tableBody">
+								<table>
+									<caption>연계신청 완료 : 접수번호, 접수일, 내용, 구분, 상태, 처리지사로 구성</caption>
+									<colgroup>
+										<col>
+										<col style="width: 184px;">
+										<col style="width: 144px;">
+										<col style="width: 136px;">
+										<col style="width: 136px;">
+										<col style="width: 124px;">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">접수번호</th>
+											<th scope="col">접수일</th>
+											<th scope="col">내용</th>
+											<th scope="col">구분</th>
+											<th scope="col">상태</th>
+											<th scope="col">처리지사</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>2009101000040</td>
+											<td>2006-03-01</td>
+											<td>연계신청서</td>
+											<td></td>
+											<td>접수중</td>
+											<td><button type="button" class="button h24 lineBlack">조회</button></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
 
+							<div class="guideText">
+								<span class="blet">연계신청  관련 문의는 처리 지사를  통해 문의 하시기 바랍니다</span>
+							</div>
 						</div>
 						<!-- //완료 -->
 					</div>
 					<!-- //대상자 -->
 
-					<h4 class="defaultH4">가입(재직)이력 <span>조회일 : 2022.03.10</span></h4>
+					<hr class="space">
+
+					<div class="flexLeft flexEnd">
+						<h4 class="defaultH4">가입(재직)이력</h4>
+						<span class="subDate">조회일 : 2022.03.10</span>
+					</div>
 					<div>
-						<h5 class="defaultH5">국민연금</h5>
-						<h5 class="defaultH5">직역연금</h5>
+						<h5 class="defaultH5 mt">국민연금</h5>
+						<div class="tableBody">
+							<table>
+								<caption>국민연금 가입(재직)이력 : 기관, 기간, 가입기간, 퇴직급여수령, 연계신청으로 구성</caption>
+								<colgroup>
+									<col style="width: 184px;">
+									<col>
+									<col style="width: 136px;">
+									<col style="width: 136px;">
+									<col style="width: 94px;">
+									<col style="width: 94px;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">기관</th>
+										<th scope="col">기간</th>
+										<th scope="col">가입기간</th>
+										<th scope="col">퇴직급여수령</th>
+										<th scope="col" colspan="2">연계신청</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>국민연금</td>
+										<td>2006-03-01 ~ 2011-03-01</td>
+										<td>5년 00개월</td>
+										<td>-</td>
+										<td>60개월</td>
+										<td><span class="colorBlue">가능</span></td>
+									</tr>
+									<tr>
+										<td>국민연금</td>
+										<td>2020-08-01 ~ 현재</td>
+										<td>1년05개월</td>
+										<td>-</td>
+										<td>17개월</td>
+										<td><span class="colorBlue">가능</span></td>
+									</tr>
+									<tr>
+										<td class="empty" colspan="6">데이터가 없습니다.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<h5 class="defaultH5 mt">직역연금</h5>
+						<div class="tableBody">
+							<table>
+								<caption>직역연금 가입(재직)이력 : 기관, 기간, 가입기간, 퇴직급여수령, 연계신청으로 구성</caption>
+								<colgroup>
+									<col style="width: 184px;">
+									<col>
+									<col style="width: 136px;">
+									<col style="width: 136px;">
+									<col style="width: 94px;">
+									<col style="width: 94px;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">기관</th>
+										<th scope="col">기간</th>
+										<th scope="col">가입기간</th>
+										<th scope="col">퇴직급여수령</th>
+										<th scope="col" colspan="2">연계신청</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>국민연금</td>
+										<td>2006-03-01 ~ 2011-03-01</td>
+										<td>5년 00개월</td>
+										<td>-</td>
+										<td>60개월</td>
+										<td><span class="colorBlue">가능</span></td>
+									</tr>
+									<tr>
+										<td>국민연금</td>
+										<td>2020-08-01 ~ 현재</td>
+										<td>1년05개월</td>
+										<td>-</td>
+										<td>17개월</td>
+										<td><span class="colorBlue">가능</span></td>
+									</tr>
+									<tr>
+										<td class="empty" colspan="6">재직 이력이 없습니다.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</div>
 				</div>
 			</div>
