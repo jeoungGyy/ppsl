@@ -21,16 +21,17 @@
 				<div id="contentLink" class="contents">
 					<header class="contentsHeader">
 						<div class="title">
-							<h3>연계신청하기</h3>
+							<h3>신청정보변경</h3>
+							<p>변경할 정보를 입력 해주세요.</p>
 						</div>
 						<script src="../../include/location.js"></script> <!-- include: 공통 현재위치 -->
 					</header>
 
 					<div class="appBody">
-						<h4 class="defaultH4">신청인정보</h4>
+						<h4 class="defaultH4">변경정보</h4>
 						<div class="hTableBody">
 							<table>
-								<caption>신청인 정보 : 성명, 주민등록번호, 우편번호, 주소, 자택번호, 휴대번호, 전자우편(이메일)로 구성</caption>
+								<caption>신청인 변경정보 : 성명, 주민등록번호, 우편번호, 주소, 자택번호, 휴대번호, 전자우편(이메일)로 구성</caption>
 								<colgroup>
 									<col style="width: 162px;">
 									<col>
@@ -128,91 +129,6 @@
 									<tr>
 										<td>
 											<div class="groupBox">
-												<input type="checkbox" name="checkbox" title="첫번째 가입내용 선택">
-											</div>
-										</td>
-										<td>국민연금공단</td>
-										<td>가입기간</td>
-										<td>
-											<span class="block">2년 6월  ( YYYY - MM - DD ~ YYYY - MM - DD )</span>
-											<table>
-												<caption>첫번째 가입내용 상세내역 : 연계신청가능 월수, 퇴직일시금 수령, 반납금 납부방법, 반납금 납부횟수로 구성</caption>
-												<colgroup>
-													<col style="width: 25%;">
-													<col style="width: 25%;">
-													<col style="width: 25%;">
-													<col>
-												</colgroup>
-												<thead>
-													<tr>
-														<th><span class="colorBlue">연계신청가능 월수</span></th>
-														<th>퇴직일시금 수령</th>
-														<th>반납금 납부방법</th>
-														<th>반납금 납부횟수</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td><span class="colorBlue">30</span></td>
-														<td>미수령</td>
-														<td>-</td>
-														<td>-</td>
-													</tr>
-													<tr>
-														<td><span class="colorBlue">30</span></td>
-														<td>미수령</td>
-														<td>-</td>
-														<td>-</td>
-													</tr>
-												</tbody>
-											</table>
-										</td>
-									</tr>
-									<tr class="off">
-										<td></td>
-										<td>공무원연금</td>
-										<td>재직기간<br>
-											(사학연금으로 합산)</td>
-										<td>
-											<span class="block">2년 6월  ( YYYY - MM - DD ~ YYYY - MM - DD )</span>
-											<table>
-												<caption>두번째 가입내용 상세내역 : 연계신청가능 월수, 퇴직일시금 수령, 반납금 납부방법, 반납금 납부횟수로 구성</caption>
-												<colgroup>
-													<col style="width: 25%;">
-													<col style="width: 25%;">
-													<col style="width: 25%;">
-													<col>
-												</colgroup>
-												<thead>
-													<tr>
-														<th><span class="colorBlue">연계신청가능 월수</span></th>
-														<th>퇴직일시금 수령</th>
-														<th>반납금 납부방법</th>
-														<th>반납금 납부횟수</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td><span class="colorBlue">30</span></td>
-														<td>미수령</td>
-														<td>
-															<select title="첫번째 반납금 납부방법 선택" disabled>
-																<option>선택</option>
-															</select>
-														</td>
-														<td>
-															<select title="첫번째 반납금 납부횟수 선택" disabled>
-																<option>선택</option>
-															</select>
-														</td>
-													</tr>
-												</tbody>
-											</table>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<div class="groupBox">
 												<input type="checkbox" name="checkbox" title="세번째 가입내용 선택">
 											</div>
 										</td>
@@ -276,12 +192,7 @@
 							<li>“가입내용” 란에는 본인이 연게 신청을 하려는 연금의 가입, 재직(복무)연월수가 자동표시되오니 확인 하시기 바랍니다.</li>
 						</ul>
 
-						<h4 class="defaultH4 mt">국민연금자격취득일</h4>
-						<div class="dateGroup">
-							<div class="head">
-								<b>국민연금 가입자 자격을 취득한 날짜</b>
-								<span>YYYY - MM - DD</span>
-							</div>
+						<div class="dateGroup otherStyle">
 							<div class="body">
 								<p>「국민연금과 직역연금의 연계신청에 관한 법률 시행규칙」 제2조에 따라 위와 같이 신청합니다.</p>
 								<div class="in">
@@ -289,7 +200,6 @@
 									<span>신청인 : <b>김공단</b></span>
 								</div>
 								<div class="he">
-									<button type="button" class="tooltipBtn" aria-describedby="tooltip1"><i class="icon">도움말</i></button>
 									<select title="연금관리기관 선택">
 										<option>국민연금공단</option>
 									</select>
@@ -298,12 +208,30 @@
 							</div>
 						</div>
 
-						<div class="btnsGroup spaceBetween">
-							<button type="button" class="button h48 lineBlack">인쇄하기</button>
-							<div>
-								<button type="button" class="button h48 gray">취소하기</button>
-								<button type="button" class="button h48 blue">연계신청 등록</button>
+						<div class="roundBox">
+							<h4>행정정보이용 동의서</h4>
+							<div class="default">
+								<p>본인은 이 건 사무처리;와 관련하여 “전자정부밥”제 22조의2 규정에 따라 이용기관의 담당자가 전자적으로 본인의 정보를 이용하는 것에 동의합니다.</p>
 							</div>
+						</div>
+						<ul class="groupBox inlineGroupBox">
+							<li>
+								<div class="radioBox">
+									<input type="radio" id="radio1" name="radio">
+									<label for="radio1">동의 합니다.</label>
+								</div>
+							</li>
+							<li>
+								<div class="radioBox">
+									<input type="radio" id="radio2" name="radio">
+									<label for="radio2">미동의 합니다.</label>
+								</div>
+							</li>
+						</ul>
+
+						<div class="btnsGroup flexEnd bdt mt">
+							<button type="button" class="button h48 gray">취소</button>
+							<button type="button" class="button h48 blue">정보변경 신청</button>
 						</div>
 					</div>
 				</div>
@@ -314,7 +242,7 @@
 	<script src="../../include/footer.js"></script> <!-- include: 공통 푸터 -->
 
 	<script>
-		var depth = [3, 1]; /* 현재메뉴 활성화 용: gnb에 있는 data-menu 값과 일치하게 해주세요. */
+		var depth = [3, 2]; /* 현재메뉴 활성화 용: gnb에 있는 data-menu 값과 일치하게 해주세요. */
 	</script>
 </div>
 </body>

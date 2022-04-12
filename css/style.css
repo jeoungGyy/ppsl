@@ -161,6 +161,14 @@ hr.space { margin: 40px 0; border-top: 1px solid #dbdbdb;}
 .button .dsBlock { vertical-align: middle; line-height: 24px;}
 .button .arrowRight { display: inline-block; width: 24px; height: 24px; margin-left: 4px; background: url(../images/common/ico_arrow_line_w.svg) no-repeat center/cover;}
 
+.btnsGroup { display: flex; align-items: center; padding-top: 32px;}
+.btnsGroup.spaceBetween { justify-content: space-between;}
+.btnsGroup.flexEnd { justify-content: flex-end;}
+.btnsGroup.bdt { border-top: 1px solid #333;}
+.btnsGroup.mt { margin-top: 40px;}
+.btnsGroup >div { display: flex;}
+.btnsGroup button ~ button { margin-left: 8px;}
+
 /* 셀렉트 박스 */
 select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 8px;}
 
@@ -199,6 +207,10 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .guideText li::before { content: ''; position: absolute; left: 0; top: 8px; width: 4px; height: 4px; background-color: #333;}
 .guideText li ~ li { margin-top: 8px;}
 .guideText.mt { margin-top: 16px;}
+.guideText .application { display: inline-flex; align-items: center; margin-left: 16px;}
+.guideText .application span { border-bottom: 1px solid #333;}
+.guideText .application .arrowRight { width: 16px; height: 16px; margin-left: 4px; background: url(../images/common/ico_arrow_right.svg) no-repeat center/cover;} */
+
 
 /* searchBody */
 .searchBody { margin-top: 40px; padding: 24px 48px 24px 0; background-color: #f7f7f7;}
@@ -311,8 +323,21 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .stepBody .stepBy li span { display: block;}
 .stepBody .stepBy li span.text { margin-left: 6px;}
 
+/* roundBox */
+.roundBox { overflow: hidden; margin-top: 40px; border: solid 1px #dbdbdb; border-radius: 8px;}
+.roundBox h4 { padding: 14px 24px; font-size: 16px; background-color: #f7f7f7;}
+.roundBox .overflowY { overflow-x: hidden; overflow-y: scroll; height: 152px; margin: 23px 8px 23px 24px; font-size: 14px; line-height: 21px;}
+.roundBox .overflowY::-webkit-scrollbar { width: 4px;}
+.roundBox .overflowY::-webkit-scrollbar-thumb { border-radius: 4px; background-color: #959595;}
+.roundBox .overflowY >p ~ p { margin-top: 20px;}
+.roundBox .overflowY .styleGray { color: #767676;}
+.roundBox .overflowY ol > li { margin-top: 20px;}
+.roundBox .overflowY li span { display: block; margin-top: 15px;}
+.roundBox .default { padding: 23px 24px; font-size: 14px; line-height: 21px;}
 
-
+/* inlineGroupBox */
+.inlineGroupBox { display: flex; align-items: center; margin-top: 12px;}
+.inlineGroupBox li ~ li { margin-left: 32px;}
 
 
 /* 레이어
@@ -366,31 +391,11 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .targetBody .targetOn .textGroup .button { margin-top: 24px;}
 .targetBody .sameStyle { margin-top: 40px;}
 .targetBody .sameStyle .tableBody { margin-top: 0;}
-.targetBody .sameStyle .guideText { display: flex; align-items: center; margin-top: 16px;}
-.targetBody .sameStyle .guideText .blet { position: relative; padding-left: 12px; font-size: 14px;}
-.targetBody .sameStyle .guideText .blet::before { content: ''; display: block; position: absolute; left: 0; top: 5px; width: 4px; height: 4px; background-color: #333;}
-.targetBody .sameStyle .guideText .application { display: flex; align-items: center; margin-left: 16px;}
-.targetBody .sameStyle .guideText .application span { border-bottom: 1px solid #333;}
-.targetBody .sameStyle .guideText .application .arrowRight { width: 16px; height: 16px; margin-left: 4px; background: url(../images/common/ico_arrow_right.svg) no-repeat center/cover;}
 
 .agreeBody { margin-top: 40px;}
 .agreeBody .bletBlue { position: relative; padding-left: 12px; font-size: 14px; line-height: 21px;}
 .agreeBody .bletBlue::before { content: ''; display: block; position: absolute; left: 0; top: 7px; width: 4px; height: 4px; background-color: #366cc3;}
-.agreeBody .roundBox { overflow: hidden; margin-top: 40px; border: solid 1px #dbdbdb; border-radius: 8px;}
-.agreeBody .roundBox h4 { padding: 14px 24px; font-size: 16px; background-color: #f7f7f7;}
-.agreeBody .roundBox .overflowY { overflow-x: hidden; overflow-y: scroll; height: 152px; margin: 23px 8px 23px 24px; font-size: 14px; line-height: 21px;}
-.agreeBody .roundBox .overflowY::-webkit-scrollbar { width: 4px;}
-.agreeBody .roundBox .overflowY::-webkit-scrollbar-thumb { border-radius: 4px; background-color: #959595;}
-.agreeBody .roundBox .overflowY >p ~ p { margin-top: 20px;}
-.agreeBody .roundBox .overflowY .styleGray { color: #767676;}
-.agreeBody .roundBox .overflowY ol > li { margin-top: 20px;}
-.agreeBody .roundBox .overflowY li span { display: block; margin-top: 15px;}
-.agreeBody .groupBox { display: flex; align-items: center; margin-top: 12px;}
-.agreeBody .groupBox li ~ li { margin-left: 32px;}
-.agreeBody .btns { display: flex; justify-content: flex-end; margin-top: 32px;}
-.agreeBody .btns button ~ button { margin-left: 8px;}
 
-.appBody {}
 .appBody { margin-top: 40px;}
 .appBody .dateGroup { margin-top: 9px; border-top: 2px solid #333; border-bottom: 1px solid #333;}
 .appBody .dateGroup .head { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #dbdbdb;}
@@ -405,9 +410,9 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .appBody .dateGroup .body .he .tooltipBtn { margin-top: -15px;}
 .appBody .dateGroup .body .he .tooltipBtn i { display: inline-block; width: 24px; height: 24px; text-indent: -99999px; background: url(../images/common/ico_help.svg) no-repeat center/cover;}
 .appBody .dateGroup .body .he select { margin: 0 8px;}
-.appBody .btns { display: flex; align-items: center; justify-content: space-between; margin-top: 32px;}
-.appBody .btns >div { display: flex;}
-.appBody .btns >div button ~ button { margin-left: 8px;}
+.appBody .dateGroup.otherStyle { border: none;}
+.appBody .dateGroup.otherStyle .body { padding-bottom: 0;}
+
 
 
 
