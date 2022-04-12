@@ -42,10 +42,17 @@ $(document).ready(function () {
     /* 인풋 글자 체크 */
 		searchReset: function () {
       var $searchReset = $('.searchReset');
+      var $searchResetBtn = $('.searchResetBtn');
       
-      $('.groupBox input').iCheck({
-        checkboxClass: 'icheckbox',
-        radioClass: 'iradio',
+      $searchReset.find('input').on('change keyup paste', function() {
+        if($(this).val()) {
+          $(this).parent().addClass('btnShow');
+          $searchResetBtn.on('click', function() {
+            $(this).siblings('input').val('').parent().removeClass('btnShow');
+          });
+        } else {
+          $(this).parent().removeClass('btnShow');
+        }
       });
 		},
 		/* 메뉴 */
