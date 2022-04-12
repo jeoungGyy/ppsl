@@ -319,10 +319,10 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 /* stepBody */
 .stepBody { margin-top: 40px;}
 .stepBody .stepBy { display: flex; margin: 0 -20px;}
-.stepBody .stepBy li { display: flex; align-items: baseline; justify-content: center; flex: 1; height: 56px; margin: 0 20px; padding-top: 18px; color: #fff; background-color: #366cc3; border-radius: 8px;}
+.stepBody .stepBy li { display: flex; align-items: baseline; justify-content: center; flex: 1; position: relative; height: 56px; margin: 0 20px; padding-top: 18px; color: #fff; background-color: #366cc3; border-radius: 8px;}
 .stepBody .stepBy li span { display: block;}
 .stepBody .stepBy li span.text { margin-left: 6px;}
-
+.stepBody .stepBy li ~ li::before { content: ''; display: block; position: absolute; left: -28px; top: 20px; width: 16px; height: 16px; background: url(../images/common/ico_bc_arrow.svg) no-repeat center/cover;}
 /* roundBox */
 .roundBox { overflow: hidden; margin-top: 40px; border: solid 1px #dbdbdb; border-radius: 8px;}
 .roundBox h4 { padding: 14px 24px; font-size: 16px; background-color: #f7f7f7;}
