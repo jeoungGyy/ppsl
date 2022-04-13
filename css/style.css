@@ -421,7 +421,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .proposalBody .flexGroup dl { display: flex; align-items: center; border: 1px solid #dbdbdb;}
 .proposalBody .flexGroup dl dt { padding: 11px 24px 10px; font-weight: 700; border-right: 1px solid #dbdbdb; background-color: #f7f7f7;}
 .proposalBody .flexGroup dl dd { padding: 11px 17px 10px;}
-
+.proposalBody h4 { margin-top: 24px; font-size: 24px; text-align: center;}
 
 
 
