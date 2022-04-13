@@ -323,6 +323,8 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .stepBody .stepBy li span { display: block;}
 .stepBody .stepBy li span.text { margin-left: 6px;}
 .stepBody .stepBy li ~ li::before { content: ''; display: block; position: absolute; left: -28px; top: 20px; width: 16px; height: 16px; background: url(../images/common/ico_bc_arrow.svg) no-repeat center/cover;}
+.stepBody .stepBy li.active { color: #333; border: 1px solid #366cc3; background-color: #fff;}
+
 /* roundBox */
 .roundBox { overflow: hidden; margin-top: 40px; border: solid 1px #dbdbdb; border-radius: 8px;}
 .roundBox h4 { padding: 14px 24px; font-size: 16px; background-color: #f7f7f7;}
