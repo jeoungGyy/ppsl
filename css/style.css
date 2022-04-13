@@ -209,30 +209,30 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .guideText.mt { margin-top: 16px;}
 .guideText .application { display: inline-flex; align-items: center; margin-left: 16px;}
 .guideText .application span { border-bottom: 1px solid #333;}
-.guideText .application .arrowRight { width: 16px; height: 16px; margin-left: 4px; background: url(../images/common/ico_arrow_right.svg) no-repeat center/cover;} */
+.guideText .application .arrowRight { width: 16px; height: 16px; margin-left: 4px; background: url(../images/common/ico_arrow_right.svg) no-repeat center/cover;}
 
 
 /* searchBody */
 .searchBody { margin-top: 40px; padding: 24px 48px 24px 0; background-color: #f7f7f7;}
-.controlBox { display: flex;}
-.controlBox li { display: flex; align-items: center;}
-.controlBox li label { width: 92px; padding-left: 48px; font-weight: 700;}
-.controlBox li select,
-.controlBox li input[type=text] { flex: 1; width: 100%;}
-.controlBox li .button { min-width: 89px; margin-left: 4px;}
-.controlBox li .button span { margin-top: -2px;}
-.controlBox li .button .searchIcon { display: inline-block; width: 24px; height: 24px; margin-right: 4px; background: url(../images/common/ico_search_w_24.svg) no-repeat center/cover;}
-.controlBox li .searchReset { flex: 1; position: relative;}
-.controlBox li .searchReset .searchResetBtn { display: none; position: absolute; right: 16px; top: 12px; width: 16px; height: 16px;}
-.controlBox li .searchReset .searchResetBtn i { display: block; width: 100%; height: 100%; text-indent: -99999px; background: url(../images/common/ico_clear.svg) no-repeat center/cover;}
-.controlBox li .searchReset.btnShow .searchResetBtn { display: block;}
-.controlBox li.ml4 { padding-left: 4px;}
-.controlBox li.wp35 { width: 35%;}
-.controlBox li.wp25 { width: 25%;}
-.controlBox li.wp40 { width: 40%;}
-.controlBox li.wp60 { width: 60%;}
-.controlBox.flexWrap { flex-wrap: wrap; margin-top: -16px;}
-.controlBox.flexWrap li { margin-top: 16px;}
+.searchBody .controlBox { display: flex;}
+.searchBody .controlBox li { display: flex; align-items: center;}
+.searchBody .controlBox li label { width: 92px; padding-left: 48px; font-weight: 700;}
+.searchBody .controlBox li select,
+.searchBody .controlBox li input[type=text] { flex: 1; width: 100%;}
+.searchBody .controlBox li .button { min-width: 89px; margin-left: 4px;}
+.searchBody .controlBox li .button span { margin-top: -2px;}
+.searchBody .controlBox li .button .searchIcon { display: inline-block; width: 24px; height: 24px; margin-right: 4px; background: url(../images/common/ico_search_w_24.svg) no-repeat center/cover;}
+.searchBody .controlBox li .searchReset { flex: 1; position: relative;}
+.searchBody .controlBox li .searchReset .searchResetBtn { display: none; position: absolute; right: 16px; top: 12px; width: 16px; height: 16px;}
+.searchBody .controlBox li .searchReset .searchResetBtn i { display: block; width: 100%; height: 100%; text-indent: -99999px; background: url(../images/common/ico_clear.svg) no-repeat center/cover;}
+.searchBody .controlBox li .searchReset.btnShow .searchResetBtn { display: block;}
+.searchBody .controlBox li.ml4 { padding-left: 4px;}
+.searchBody .controlBox li.wp35 { width: 35%;}
+.searchBody .controlBox li.wp25 { width: 25%;}
+.searchBody .controlBox li.wp40 { width: 40%;}
+.searchBody .controlBox li.wp60 { width: 60%;}
+.searchBody .controlBox.flexWrap { flex-wrap: wrap; margin-top: -16px;}
+.searchBody .controlBox.flexWrap li { margin-top: 16px;}
 
 /* controlBody */
 .controlBody { display: flex; align-items: flex-end; justify-content: space-between; margin-top: 40px;}
@@ -416,10 +416,11 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .appBody .dateGroup.otherStyle { border: none;}
 .appBody .dateGroup.otherStyle .body { padding-bottom: 0;}
 
-
-
-
-
+/* 신청상태조회 */
+.proposalBody .flexGroup { display: flex; align-items: center; justify-content: space-between;}
+.proposalBody .flexGroup dl { display: flex; align-items: center; border: 1px solid #dbdbdb;}
+.proposalBody .flexGroup dl dt { padding: 11px 24px 10px; font-weight: 700; border-right: 1px solid #dbdbdb; background-color: #f7f7f7;}
+.proposalBody .flexGroup dl dd { padding: 11px 17px 10px;}
 
 
 
