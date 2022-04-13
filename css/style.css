@@ -167,6 +167,7 @@ hr.space { margin: 40px 0; border-top: 1px solid #dbdbdb;}
 .btnsGroup.flexEnd { justify-content: flex-end;}
 .btnsGroup.bdt { border-top: 1px solid #333;}
 .btnsGroup.mt { margin-top: 40px;}
+.btnsGroup.mt2 { margin-top: 24px;}
 .btnsGroup >div { display: flex;}
 .btnsGroup button ~ button { margin-left: 8px;}
 
@@ -435,7 +436,8 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .proposalBody h4 { margin-top: 24px; font-size: 24px; text-align: center;}
 .proposalBody .sign1 { margin-top: 40px; text-align: center;}
 .proposalBody .sign2 { margin-top: 40px; padding-top: 40px; text-align: center; border-top: 1px solid #dbdbdb;}
-
+.proposalBody .text1 { margin-top: 24px; padding-left: 24px;}
+.proposalBody .text1 p { margin-top: 16px;}
 
 
 
