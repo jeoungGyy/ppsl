@@ -104,6 +104,13 @@ str += '              <li><a href="../mypage/HO_06_03_01.html" data-menu="depth_
 str += '              <li><a href="../mypage/HO_06_04_01.html" data-menu="depth_6_4"><span>증명서</span></a></li>';
 str += '            </ul>';
 str += '          </li>';
+str += '          <li style="display:none;"><a href="#" data-menu="depth_7"><span>약관 및 방침</span></a>';
+str += '            <ul class="depth2">';
+str += '              <li><a href="#" data-menu="depth_7_1"><span>개인정보처리방침</span></a></li>';
+str += '              <li><a href="#" data-menu="depth_7_2"><span>이용안내</span></a></li>';
+str += '              <li><a href="#" data-menu="depth_7_3"><span>서비스 약관</span></a></li>';
+str += '            </ul>';
+str += '          </li>';
 str += '        </ul>';
 str += '      </nav>';
 str += '      <div class="btnsWrap">';

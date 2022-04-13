@@ -261,6 +261,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .tableBody a .new { display: inline-flex; justify-content: center; align-items: center; width: 28px; height: 16px; margin: -2px 0 0 4px; font-size: 8px; font-weight: 700; font-style: normal; color: #ee0700; vertical-align: middle; border: 1px solid #ee0700;}
 .tableBody .fix { display: inline-block; width: 24px; height: 24px; margin-top: -1px; text-indent: -99999px; vertical-align: middle; background: url(../images/common/ico_notice.svg) no-repeat center/cover;}
 .tableBody .file { display: inline-block; width: 24px; height: 24px; text-indent: -99999px; background: url(../images/common/ico_attach.svg) no-repeat center/cover;}
+.tableBody.mt { margin-top: 40px;}
 
 /* hTableBody */
 .hTableBody { overflow: hidden; margin-top: 8px; border-top: 2px solid #333;}
@@ -355,7 +356,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .layerPopup .sitemapHeader h1 a { display: inline-block;}
 .layerPopup .gnb { padding-top: 48px;}
 .layerPopup .gnb .depth1 { display: flex;}
-.layerPopup .gnb .depth1 >li { flex: 1;}
+.layerPopup .gnb .depth1 >li { display: block !important; flex: 1;}
 .layerPopup .gnb .depth1 >li ~ li { margin-left: 24px;}
 .layerPopup .gnb .depth1 >li >a { height: 56px; color: #fff; background-color: #366cc3;}
 .layerPopup .gnb .depth2 { display: block; padding-left: 20px; font-size: 16px; opacity: 1;}

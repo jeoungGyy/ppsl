@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<script src="../../include/head.js"></script> <!-- include: 공통 헤드 -->
+</head>
+
+<body>
+<div id="wrap">
+	<script src="../../include/header.js"></script> <!-- include: 공통 헤더 -->
+
+	<div class="container">
+		<div class="area">
+			<div class="wrap">
+				<div class="lnbBody">
+					<h2></h2>
+					<nav class="lnb">
+					</nav>
+				</div>
+
+				<div id="contentLink" class="contents">
+					<header class="contentsHeader">
+						<div class="title">
+							<h3>신청상태조회</h3>
+							<p>신청한 내용의 상태를 클릭하시면 보다 상세한 접수상태를 확인 할 수 있습니다.</p>
+						</div>
+						<script src="../../include/location.js"></script> <!-- include: 공통 현재위치 -->
+					</header>
+
+					<div class="stepBody">
+						<ul class="stepBy">
+							<li>
+								<span class="fontMontserrat">01</span>
+								<span class="fontEliceDigital text">접수중</span>
+							</li>
+							<li>
+								<span class="fontMontserrat">02</span>
+								<span class="fontEliceDigital text">접수완료</span>
+							</li>
+							<li>
+								<span class="fontMontserrat">03</span>
+								<span class="fontEliceDigital text">기관심사중</span>
+							</li>
+							<li>
+								<span class="fontMontserrat">04</span>
+								<span class="fontEliceDigital text">처리완료</span>
+							</li>
+						</ul>
+					</div>
+
+					<div class="tableBody mt">
+						<table>
+							<caption>신청상태조회 : 번호, 접수번호, 접수일, 내용, 구분, 상태, 처리지사로 구성</caption>
+							<colgroup>
+								<col style="width: 64px;">
+								<col>
+								<col style="width: 144px;">
+								<col style="width: 144px;">
+								<col style="width: 120px;">
+								<col style="width: 136px;">
+								<col style="width: 124px;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">번호</th>
+									<th scope="col">접수번호</th>
+									<th scope="col">접수일</th>
+									<th scope="col">내용</th>
+									<th scope="col">구분</th>
+									<th scope="col">상태</th>
+									<th scope="col">처리지사</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>20183012000063</td>
+									<td>yyyy-mm-dd</td>
+									<td>연계취하신청서</td>
+									<td>미해당</td>
+									<td><span class="colorBlue">처리완료</span></td>
+									<td><button type="button" class="button h24 lineBlack">조회</button></td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>20183012000439</td>
+									<td>yyyy-mm-dd</td>
+									<td>연계취하신청서</td>
+									<td>미해당</td>
+									<td><span class="colorBlue">처리완료</span></td>
+									<td><button type="button" class="button h24 lineBlack">조회</button></td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>20183012000439</td>
+									<td>yyyy-mm-dd</td>
+									<td>연계취하신청서</td>
+									<td>미해당</td>
+									<td><span class="colorBlue">처리완료</span></td>
+									<td><button type="button" class="button h24 lineBlack">조회</button></td>
+								</tr>
+								<tr>
+									<td class="empty" colspan="7">데이터가 없습니다.</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<script src="../../include/evaluation.js"></script> <!-- include: 공통 평가 -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="../../include/footer.js"></script> <!-- include: 공통 푸터 -->
+
+	<script>
+		var depth = [3, 3]; /* 현재메뉴 활성화 용: gnb에 있는 data-menu 값과 일치하게 해주세요. */
+	</script>
+</div>
+</body>
+</html>
