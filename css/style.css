@@ -114,6 +114,7 @@ body.noScroll { overflow: hidden;}
 .flexLeft { display: flex;}
 .flexLeft .subDate { margin-left: 16px; font-size: 14px; color: #767676;}
 .flexLeft.flexEnd { align-items: flex-end;}
+.flexLeft.spaceBetween { align-items: center; justify-content: space-between;}
 
 /* 글꼴 */
 .fontMontserrat { font-family: 'Montserrat', "NanumBarunGothic";}
@@ -280,12 +281,22 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .hTableBody table td .email span::before { content: '@'; position: absolute; left: -25px; top: 13px;}
 .hTableBody table td .email select { width: 200px; margin-left: 4px;}
 
+/* whTableBody */
+.whTableBody { overflow: hidden; border-top: 2px solid #333;}
+.whTableBody table { width: calc(100% + 1px); margin-left: -1px;}
+.whTableBody table th { padding: 24px 0; line-height: 24px; border-left: 1px solid #dbdbdb; border-bottom: 1px solid #dbdbdb; background-color: #f7f7f7;}
+.whTableBody table td { padding: 13px 16px; line-height: 24px; border-left: 1px solid #dbdbdb; border-bottom: 1px solid #dbdbdb;}
+.whTableBody table td .in  span { display: block;}
+.whTableBody table td .in  span ~ span { margin-top: 8px;}
+.whTableBody table td.sameTh { font-weight: 700; text-align: center; background-color: #f7f7f7;}
+.whTableBody.mt { margin-top: 24px;}
+
 /* pageNumber */
 .pageNumber { display: flex; align-items: center; justify-content: center; margin-top: 32px;}
-.pageNumber a { display: flex; justify-content: center; align-items: center;  width: 40px; height: 40px; margin: 0 2px; font-family: 'Montserrat'; font-weight: 400; border: solid 1px #dbdbdb;}
+.pageNumber a { display: flex; justify-content: center; align-items: center;  width: 40px; height: 40px; margin: 0 2px; padding-top: 3px; font-weight: 400; border: solid 1px #dbdbdb;}
 .pageNumber a:hover { border-color: #366cc3;}
 .pageNumber a.active { color: #fff; border-color: #366cc3; background-color: #366cc3;}
-.pageNumber a i { display: inline-block; width: 16px; height: 16px; text-indent: -99999px;}
+.pageNumber a i { display: inline-block; width: 16px; height: 16px; margin-top: -3px; text-indent: -99999px;}
 .pageNumber .first i { background: url(../images/common/ico_arrow_left_double.svg) no-repeat center/cover;}
 .pageNumber .prev i { background: url(../images/common/ico_arrow_left.svg) no-repeat center/cover;}
 .pageNumber .next i { background: url(../images/common/ico_arrow_right.svg) no-repeat center/cover;}
@@ -422,7 +433,8 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .proposalBody .flexGroup dl dt { padding: 11px 24px 10px; font-weight: 700; border-right: 1px solid #dbdbdb; background-color: #f7f7f7;}
 .proposalBody .flexGroup dl dd { padding: 11px 17px 10px;}
 .proposalBody h4 { margin-top: 24px; font-size: 24px; text-align: center;}
-
+.proposalBody .sign1 { margin-top: 40px; text-align: center;}
+.proposalBody .sign2 { margin-top: 40px; padding-top: 40px; text-align: center; border-top: 1px solid #dbdbdb;}
 
 
 
