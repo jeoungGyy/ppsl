@@ -42,15 +42,15 @@
 .searchBody .title .toggleBtn { padding: 10px;}
 .searchBody .title .toggleBtn i { display: inline-block; width: 16px; height: 16px; text-indent: -99999px; vertical-align: middle; background: url(../images/common/ico_arrow_down.svg) no-repeat center/cover;}
 .searchBody .title .toggleBtn.active i { transform: rotate(-180deg);}
-.controlBox { display: none; flex-wrap: wrap; padding: 16px;}
-.controlBox li label { width: 45px; padding-left: 0;}
-.controlBox li ~ li { margin-top: 8px;}
-.controlBox li.wp35,
-.controlBox li.wp25,
-.controlBox li.wp40,
-.controlBox li.wp60 { width: 100%;}
-.controlBox.flexWrap { margin-top: -8px;}
-.controlBox.flexWrap li { margin-top: 8px;}
+.searchBody .controlBox { display: none; flex-wrap: wrap; padding: 16px;}
+.searchBody .controlBox li label { width: 45px; padding-left: 0;}
+.searchBody .controlBox li ~ li { margin-top: 8px;}
+.searchBody .controlBox li.wp35,
+.searchBody .controlBox li.wp25,
+.searchBody .controlBox li.wp40,
+.searchBody .controlBox li.wp60 { width: 100%;}
+.searchBody .controlBox.flexWrap { margin-top: -8px;}
+.searchBody .controlBox.flexWrap li { margin-top: 8px;}
 
 /* controlBody */
 .controlBody { display: block; margin-top: 24px;}

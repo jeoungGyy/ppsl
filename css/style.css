@@ -162,6 +162,13 @@ hr.space { margin: 40px 0; border-top: 1px solid #dbdbdb;}
 .button .dsBlock { vertical-align: middle; line-height: 24px;}
 .button .arrowRight { display: inline-block; width: 24px; height: 24px; margin-left: 4px; background: url(../images/common/ico_arrow_line_w.svg) no-repeat center/cover;}
 
+.lineButton { display: inline-flex; align-items: center;}
+.lineButton span { border-bottom: 1px solid #333;}
+.lineButton .arrowRight { width: 16px; height: 16px; margin-left: 4px; background: url(../images/common/ico_arrow_right.svg) no-repeat center/cover;}
+.lineButton:hover { color: #366cc3;}
+.lineButton:hover span { border-color: #366cc3;}
+.lineButton:hover .arrowRight { background: url(../images/common/ico_arrow_right_hover.svg) no-repeat center/cover;}
+
 .btnsGroup { display: flex; align-items: center; padding-top: 32px;}
 .btnsGroup.spaceBetween { justify-content: space-between;}
 .btnsGroup.flexEnd { justify-content: flex-end;}
@@ -208,10 +215,8 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .guideText li { position: relative; padding-left: 12px; font-size: 14px; line-height: 21px;}
 .guideText li::before { content: ''; position: absolute; left: 0; top: 8px; width: 4px; height: 4px; background-color: #333;}
 .guideText li ~ li { margin-top: 8px;}
+.guideText li .ml { margin-left: 16px;}
 .guideText.mt { margin-top: 16px;}
-.guideText .application { display: inline-flex; align-items: center; margin-left: 16px;}
-.guideText .application span { border-bottom: 1px solid #333;}
-.guideText .application .arrowRight { width: 16px; height: 16px; margin-left: 4px; background: url(../images/common/ico_arrow_right.svg) no-repeat center/cover;}
 
 
 /* searchBody */
