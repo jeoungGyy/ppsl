@@ -182,7 +182,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .checkboxBox { display: flex; align-items: center; position: relative; height: 20px; padding-left: 28px;}
 .checkboxBox label { cursor: pointer;}
 .icheckbox { position: absolute; top: -1px; left: 0; width: 20px; height: 20px; border: 1px solid #a5a5a5; border-radius: 50%; transition: all .2s ease-in-out;}
-.icheckbox::before { content: ''; display: block; position: absolute; left: 4px; top: 5px; width: 11.11px; height: 7.8px; background: url(../images/common/ico_checkbox.svg) no-repeat center/cover;}
+.icheckbox::before { content: ''; display: block; position: absolute; left: 4px; top: 6px; width: 11.11px; height: 7.8px; background: url(../images/common/ico_checkbox.svg) no-repeat center/cover;}
 .icheckbox input { margin: 0; width: 20px; height: 20px;}
 .icheckbox.checked { border-color: #366cc3; background-color: #366cc3;}
 .icheckbox.checked::before { background: url(../images/common/ico_checkbox_w.svg) no-repeat center/cover;}
