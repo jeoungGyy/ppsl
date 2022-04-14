@@ -130,7 +130,7 @@ body.noScroll { overflow: hidden;}
 .colorBlue { color: #366cc3 !important;}
 .colorGray { color: #767676 !important;}
 .colorLightGray { color: #959595 !important;}
-/* .colorRed { color: #FD2020 !important;}
+/*.colorRed { color: #fc0606 !important;}
 .colorGreen { color: #4EC457 !important;}
 .colorBlack { color: #111 !important;}
 .colorGray { color: #777 !important;}
@@ -216,6 +216,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .guideText li::before { content: ''; position: absolute; left: 0; top: 8px; width: 4px; height: 4px; background-color: #333;}
 .guideText li ~ li { margin-top: 8px;}
 .guideText li .ml { margin-left: 16px;}
+.guideText li .etcColorRed { color: #fc0606;}
 .guideText.mt { margin-top: 16px;}
 
 
@@ -335,13 +336,13 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .evaluationBody .btn { width: 80px;}
 
 /* stepBody */
-.stepBody { margin-top: 40px;}
+.stepBody { overflow: hidden; margin-top: 40px;}
 .stepBody .stepBy { display: flex; margin: 0 -20px;}
-.stepBody .stepBy li { display: flex; align-items: baseline; justify-content: center; flex: 1; position: relative; height: 56px; margin: 0 20px; padding-top: 18px; color: #fff; background-color: #366cc3; border-radius: 8px;}
+.stepBody .stepBy li { display: flex; align-items: baseline; justify-content: center; flex: 1; position: relative; height: 56px; margin: 0 20px; padding-top: 18px; border: 1px solid #dbdbdb; border-radius: 8px;}
 .stepBody .stepBy li span { display: block;}
 .stepBody .stepBy li span.text { margin-left: 6px;}
-.stepBody .stepBy li ~ li::before { content: ''; display: block; position: absolute; left: -28px; top: 20px; width: 16px; height: 16px; background: url(../images/common/ico_bc_arrow.svg) no-repeat center/cover;}
-.stepBody .stepBy li.active { color: #333; border: 1px solid #366cc3; background-color: #fff;}
+.stepBody .stepBy li ~ li::before { content: ''; display: block; position: absolute; left: -28px; top: 50%; width: 16px; height: 16px; margin-top: -8px; background: url(../images/common/ico_bc_arrow.svg) no-repeat center/cover;}
+.stepBody .stepBy li.active { color: #fff; border: 1px solid #366cc3; background-color: #366cc3;}
 
 /* roundBox */
 .roundBox { overflow: hidden; margin-top: 40px; border: solid 1px #dbdbdb; border-radius: 8px;}
