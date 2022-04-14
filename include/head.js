@@ -2,7 +2,7 @@ var str = '';
 
 str += '<title class="mainTitle">공적연금연계제도</title>';
 str += '<meta http-equiv="X-UA-Compatible" content="IE=edge">';
-str += '<meta name="viewport" content="width=device-width, viewport-fit=cover">';
+str += '<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">';
 str += '<meta name="theme-color" content="#000000">';
 str += '<meta name="format-detection" content="telephone=no">';
 str += '<link rel="icon" type="image/x-icon" sizes="16x16" href="../../images/common/url_icon.ico">';
