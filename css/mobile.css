@@ -231,7 +231,7 @@ hr.space.style2 { margin: 0 -16px;}
 
 /* 신청상태조회 */
 .proposalBody h4.deText { margin-top: 0; line-height: 36px;}
-.proposalBody .m_flexGroup { margin-top: 16px; padding: 16px; background-color: #f7f7f7; border-radius: 8px;}
+.proposalBody .m_flexGroup { margin: 16px 0; padding: 16px; background-color: #f7f7f7; border-radius: 8px;}
 .proposalBody .m_flexGroup dl { display: flex; align-items: center; font-size: 14px;}
 .proposalBody .m_flexGroup dl dd { margin-left: 4px;}
 .proposalBody .m_flexGroup dl + dl { margin-top: 8px;}
