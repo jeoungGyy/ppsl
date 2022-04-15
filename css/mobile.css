@@ -35,13 +35,30 @@
 /* 공통 STYLE
 **********************************************/
 
+/* 모바일용 줄바꿈 */
+.m_block { display: block;}
+
+/* 정렬 */
+.m_flexEnd { justify-content: flex-end !important;}
+
+
+/* Margin */
+.pcmt40 { margin-top: 0;}
+
+/* hr */
+hr.space { margin: 32px -16px; height: 12px; background-color: #f7f7f7;}
+hr.space.style { margin: 24px -16px 0;}
+hr.space.style2 { margin: 0 -16px;}
+
+/* 버튼 */
+.m_twin .button { flex-direction: column; flex: 1; height: inherit; padding: 16px 0; line-height: 24px;}
+.btnsGroup { padding-top: 24px;}
+.btnsGroup.m_bdt { border-top: 1px solid #333;}
+
 /* searchBody */
 .searchBody { margin-top: 24px; padding: 0; border: solid 1px #dbdbdb; background-color: #fff;}
 .searchBody .title { display: flex; align-items: center; justify-content: space-between; height: 48px; padding: 0 6px 0 16px; background-color: #f7f7f7;}
 .searchBody .title h4 { font-size: 16px;}
-.searchBody .title .toggleBtn { padding: 10px;}
-.searchBody .title .toggleBtn i { display: inline-block; width: 16px; height: 16px; text-indent: -99999px; vertical-align: middle; background: url(../images/common/ico_arrow_down.svg) no-repeat center/cover;}
-.searchBody .title .toggleBtn.active i { transform: rotate(-180deg);}
 .searchBody .controlBox { display: none; flex-wrap: wrap; padding: 16px;}
 .searchBody .controlBox li label { width: 45px; padding-left: 0;}
 .searchBody .controlBox li ~ li { margin-top: 8px;}
@@ -59,6 +76,87 @@
 .controlBody .control .button { width: 64px;}
 
 .pageNumber a { width: 32px; height: 32px; font-size: 14px;}
+
+/* m_tableBody */
+.m_tableBody { padding: 24px 16px; border: 1px solid #dbdbdb; border-radius: 8px;}
+.m_tableBody .mList >li ~ li { margin-top: 8px;}
+.m_tableBody .mList >li h6 { font-size: 14px;}
+.m_tableBody .mList >li .roundBoxGray { padding: 24px 16px; font-size: 14px; background-color: #f7f7f7; border-radius: 8px;}
+.m_tableBody .mList >li .roundBoxGray >.flexLeft { margin-top: 8px;}
+.m_tableBody .mList >li .roundBoxGray >.flexLeft .listDate { display: inline-block; font-size: 14px; line-height: 21px;}
+.m_tableBody .mList >li .roundBoxGray >.flexLeft .roundText { display: flex; align-items: center; justify-content: center; width: 64px; height: 24px; font-size: 12px; border: 1px solid #333; border-radius: 12px;}
+.m_tableBody .mList >li .roundBoxGray >.flexLeft .roundText.blueLine { color: #366cc3; border-color: #366cc3;}
+.m_tableBody .mList >li .roundBoxGray.sp { padding: 16px;}
+.m_tableBody .mList >li .roundBoxGray.mt { margin-top: 16px;}
+.m_tableBody .mList >li .groupBox label { font-weight: 700;}
+.m_tableBody .mList >li.empty { text-align: center;}
+.m_tableBody .mList.mt { margin-top: 8px;}
+.m_tableBody .msList { margin-top: 16px; font-size: 14px;}
+.m_tableBody .msList li { display: flex; align-items: center; justify-content: space-between;}
+.m_tableBody .msList li ~ li { margin-top: 12px;}
+.m_tableBody .msList li.block { display: block;}
+.m_tableBody .msList li.block >* { display: block;}
+.m_tableBody .msList li.block >.mt { margin-top: 8px;}
+.m_tableBody .msList li.lineBreak { margin-top: 16px; padding-top: 16px; border-top: 1px solid #dbdbdb;}
+.m_tableBody .msList.bdt { padding-top: 16px; border-top: 1px solid #dbdbdb;}
+.m_tableBody.mt { margin-top: 16px;}
+.m_tableBody.mt2 { margin-top: 24px;}
+.m_tableBody.noBorder { padding: 0; border: none;}
+
+.mListMulti >li { padding: 24px 16px; border: 1px solid #dbdbdb; border-radius: 8px;}
+.mListMulti >li ~ li { margin-top: 16px;}
+.mListMulti >li .roundBoxGray { padding: 24px 16px; font-size: 14px; background-color: #f7f7f7; border-radius: 8px;}
+.mListMulti >li .roundBoxGray >.flexLeft { margin-top: 8px;}
+.mListMulti >li .roundBoxGray >.flexLeft .listDate { display: inline-block; font-size: 14px; line-height: 21px;}
+.mListMulti >li .roundBoxGray >.flexLeft .roundText { display: flex; align-items: center; justify-content: center; width: 64px; height: 24px; font-size: 12px; border: 1px solid #333; border-radius: 12px;}
+.mListMulti >li .roundBoxGray.sp { padding: 16px;}
+.mListMulti >li .roundBoxGray.mt { margin-top: 16px;}
+.mListMulti >li .groupBox label { font-weight: 700;}
+.mListMulti >li .titleStyle .flexLeft h6 { font-size: 16px;}
+.mListMulti >li .titleStyle .flexLeft span { position: relative; margin-left: 12px; padding-left: 12px; font-size: 14px;}
+.mListMulti >li .titleStyle .flexLeft span::before { content: ''; display: block; position: absolute; left: 0; top: 0; width: 1px; height: 12px; background-color: #ccc;}
+.mListMulti >li .titleStyle .text { margin-top: 12px; font-size: 14px; line-height: 21px;}
+.mListMulti >li .single { font-size: 14px;}
+.mListMulti >li .defaultText { line-height: 24px;}
+.mListMulti >li .btnLine { margin-top: 16px; padding-top: 16px; border-top: 1px solid #dbdbdb;}
+.mListMulti >li .btnLine .lineButton { font-size: 14px;}
+.mListMulti >li.active { border-color: #366cc3;}
+.mListMulti >li.off { background-color: #f7f7f7;}
+.mListMulti >li.off .roundBoxGray { border: solid 1px #dbdbdb;}
+.mListMulti >li.off .colorBlue { color: #333 !important;}
+.mListMulti .msList { margin-top: 16px; font-size: 14px;}
+.mListMulti .msList li { display: flex; align-items: baseline; justify-content: space-between;}
+.mListMulti .msList li span + b { text-align: right; line-height: 21px;}
+.mListMulti .msList li ~ li { margin-top: 12px;}
+.mListMulti .msList li select { width: 100%;}
+.mListMulti .msList li.block { display: block;}
+.mListMulti .msList li.block >* { display: block;}
+.mListMulti .msList li.block >.mt { margin-top: 8px;}
+.mListMulti .msList li.lineBreak { margin-top: 16px; padding-top: 16px; border-top: 1px solid #dbdbdb;}
+
+/* m_hTableBody */
+.m_hTableBody li ~ li { margin-top: 24px;}
+.m_hTableBody li label { display: block; margin-bottom: 8px; font-size: 14px; font-weight: 700;}
+.m_hTableBody li .boxGray { display: flex; align-items: center; height: 67px; padding-left: 16px; background-color: #f7f7f7; border-radius: 8px;}
+.m_hTableBody li .boxGray .num { position: relative; margin-left: 12px; padding-left: 12px; font-size: 14px;}
+.m_hTableBody li .boxGray .num::before { content: ''; display: block; position: absolute; left: 0; top: 0; width: 1px; height: 12px; background-color: #ccc;}
+.m_hTableBody li .post input { flex: 1; width: 100%; margin-right: 4px;}
+.m_hTableBody li .address input { display: block; width: 100%; margin-top: 8px;}
+.m_hTableBody li .phone { gap: 17px;}
+.m_hTableBody li .phone span { flex: 1;}
+.m_hTableBody li .phone span ~ span { position: relative;}
+.m_hTableBody li .phone span ~ span::before { content: ''; display: block; position: absolute; left: -12px; top: 20px; width: 7px; height: 1px; background-color: #333;}
+.m_hTableBody li .phone select,
+.m_hTableBody li .phone input { width: 100%;}
+.m_hTableBody li .email span { position: relative; width: 100%; padding-right: 21px;}
+.m_hTableBody li .email span::before { content: '@'; position: absolute; right: 0; top: 13px;}
+.m_hTableBody li .email input { width: 100%;}
+.m_hTableBody li .emailSub { margin-top: 8px;}
+.m_hTableBody li .emailSub span { flex: 1;}
+.m_hTableBody li .emailSub span ~ span { margin-left: 4px;}
+.m_hTableBody li .emailSub select,
+.m_hTableBody li .emailSub input { width: 100%;}
+
 
 /* viewBody */
 .viewBody { margin-top: 24px; padding-top: 24px;}
@@ -81,18 +179,66 @@
 
 /* stepBody */
 .stepBody .stepBy { margin: 0 -12px;}
-.stepBody .stepBy li { justify-content: inherit; flex-direction: column; align-items: center; height: 80px; margin: 0 12px; padding-top: 11px; text-align: center;}
+.stepBody .stepBy li { justify-content: inherit; flex-direction: column; align-items: center; height: 80px; margin: 0 12px; padding-top: 7px; text-align: center;}
 .stepBody .stepBy li span { font-size: 14px; line-height: 21px;}
 .stepBody .stepBy li span.text { margin: 2px 0 0 0; line-height: 18px;}
 .stepBody .stepBy li ~ li::before { left: -21px;}
 
+/* roundBox */
+.roundBox { margin-top: 24px;}
+.roundBox.m_marginDefault { margin-top: 0;}
+
+/* tooltipBtn */
+.tooltipBtn i { width: 20px; height: 20px;}
+
+/* toggleBtn */
+.toggleBtn { overflow: hidden; padding: 10px;}
+.toggleBtn i { display: inline-block; width: 16px; height: 16px; text-indent: -99999px; vertical-align: middle; background: url(../images/common/ico_arrow_down.svg) no-repeat center/cover;}
+.toggleBtn.active i { transform: rotate(-180deg);}
+.targetHidden { display: none;}
 
 
+/* 신청
+**********************************************/
 
+/* 연계신청 */
+.targetBody .targetOff { flex-direction: column; margin-top: 24px; padding: 16px 0 24px;}
+.targetBody .targetOff .textGroup h4 { margin-top: 8px; line-height: 29px;}
+.targetBody .targetOff .textGroup h4 span.normal { display: block;}
+.targetBody .targetOff .textGroup h4 span.text { display: inline-block; font-size: 19px;}
+.targetBody .targetOn { flex-direction: column; margin-top: 24px; padding: 16px 0 24px;}
+.targetBody .targetOn .textGroup h4 { margin-top: 8px;}
+.targetBody .targetOn .textGroup h4 span.text { font-size: 19px;}
+.targetBody .targetOn .textGroup .button { margin-top: 16px;}
+.targetBody .targetCancel { margin-top: 24px;} 
+.targetBody .targetComplete { margin-top: 24px;}
 
+.agreeBody .btnsGroup { margin-top: 32px;}
 
+.appBody { margin-top: 0;}
+.appBody .dateGroup { margin-top: 0; border: none;}
+.appBody .dateGroup .head { flex-direction: column; align-items: inherit; padding: 24px 16px; border-bottom: none; background-color: #f7f7f7; border-radius: 8px;}
+.appBody .dateGroup .head b { padding: 0;}
+.appBody .dateGroup .head .flexLeft { margin-top: 8px;}
+.appBody .dateGroup .body { padding: 32px 0;}
+.appBody .dateGroup .body .in { margin-top: 21px;}
+.appBody .dateGroup .body .he { display: flex;}
+.appBody .dateGroup .body .he select { flex: 1;}
+.appBody .target { margin-bottom: 32px;}
 
+.toggleGroup { height: 64px;}
+.toggleGroup .toggleBtn { margin-right: -12px;}
 
+/* 신청상태조회 */
+.proposalBody h4.deText { margin-top: 0; line-height: 36px;}
+.proposalBody .m_flexGroup { margin-top: 16px; padding: 16px; background-color: #f7f7f7; border-radius: 8px;}
+.proposalBody .m_flexGroup dl { display: flex; align-items: center; font-size: 14px;}
+.proposalBody .m_flexGroup dl dd { margin-left: 4px;}
+.proposalBody .m_flexGroup dl + dl { margin-top: 8px;}
+.proposalBody .target { padding-bottom: 32px;}
+.proposalBody .sign1 { margin-top: 32px; padding-top: 32px; border-top: 1px solid #dbdbdb;}
+.proposalBody .sign2 { margin-top: 32px; padding-top: 0; border-top: none;}
+.proposalBody .btnsGroup { margin-top: 32px;}
 
 
 

@@ -244,9 +244,23 @@ $(document).ready(function () {
 	common.init();
 });
 
+/* 신청: 토글 버튼 */
+apply = {
+  toggleBtn: function () {
+    var _this = $(event.currentTarget);
+    var $target = _this.parent().next()
 
+    if($target.css('display') === "none") {
+      $target.slideDown(200);
+      _this.addClass('active').attr({'title': '확장됨'});
+    } else {
+      $target.slideUp(200);
+      _this.removeClass('active').attr({'title': '축소됨'});
+    }
+  }
+}
 
-/* 알림 */
+/* 알림: 토글 버튼 */
 inform = {
   toggleBtn: function () {
     var $controlBox = $(".searchBody .controlBox");
@@ -261,3 +275,4 @@ inform = {
     }
   }
 }
+
