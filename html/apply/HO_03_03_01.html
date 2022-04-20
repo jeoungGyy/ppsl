@@ -21,168 +21,164 @@
 				<div id="contentLink" class="contents">
 					<header class="contentsHeader">
 						<div class="title">
-							<h3>연계신청접수</h3>
-							<p>온라인으로 연계신청을 할 수 있습니다.</p>
+							<h3>신청상태조회</h3>
+							<p>신청한 내용의 상태를 클릭하시면 보다 상세한 접수상태를 확인 할 수 있습니다.</p>
 						</div>
 						<script src="../../include/location.js"></script> <!-- include: 공통 현재위치 -->
 					</header>
 
-					<div class="agreeBody">
-						<ul class="guideText">
-							<li>연계신청을 한 경우에는 원칙적으로 취하할 수 없습니다.</li>
-							<li>연계신청 후 접수중, 접수완료 일 경우 신청접수취소 가능합니다.</li>
-						</ul>
-
-						<hr class="space onlyMobile">
-
-						<div class="roundBox m_marginDefault">
-							<h4>연계제도 및 내용확인</h4>
-							<div class="overflowY" tabindex="0">
-								<ol>
-									<li class="mt0">
-										1. 공적연금 연계신청 대상자는 국민연금 가입기간과 직역연금 재직기간을 연계하려는 연금가입자(연금가입자였던 자 포함)로서 다음 요건을 충족해야합니다.
-										<ul class="styleGray">
-											<li>· 국민연금 → 직역연금으로 이동한 경우 : 2007.7.23.까지 국민연금 가입을 유지하고 직역연금으로 이동한자</li>
-											<li>· 직역연금 → 국민연금으로 이동한 경우 : 2009.2.6.까지 직역연금 가입을 유지하고 국민연금으로 이동한자</li>
-										</ul>
-									</li>
-									<li>
-										2. 연계연금 수급 가능 요건입니다.
-										<ul class="styleGray">
-											<li>· 국민연금(만 60세 이전 납부기간) 가입기간 + 직역연금 재직기간이 240개월 이상이며 국민연금과 직역연금에 관한 법률상 연금 개시연령을 충족한 자</li>
-										</ul>
-									</li>
-									<li>3. 직역연금 퇴직자가 직역연금법상 미납액(기여금, 합산반납금 등)이 있는 경우 해당 금액 완납 전까지 연계신청 승인이 보류됩니다.</li>
-									<li>4. 공적연계법 적용(연계 승인) 후 공무원연금 및 사립학교교직원연금법, 군인연금법에 의한 퇴직급여 일시금 지급이 불가합니다.</li>
-								</ol>
-							</div>
-						</div>
-						<ul class="groupBox inlineGroupBox">
-							<li>
-								<div class="radioBox">
-									<input type="radio" id="radio1_1" name="radio1">
-									<label for="radio1_1">동의 합니다.</label>
-								</div>
+					<div class="stepBody">
+						<ul class="stepBy">
+							<li class="active">
+								<span class="fontMontserrat">01</span>
+								<span class="fontEliceDigital text">접수<span class="m_block">중</span></span>
 							</li>
-							<li>
-								<div class="radioBox">
-									<input type="radio" id="radio1_2" name="radio1">
-									<label for="radio1_2">미동의 합니다.</label>
-								</div>
+							<li class="active">
+								<span class="fontMontserrat">02</span>
+								<span class="fontEliceDigital text">접수<span class="m_block">완료</span></span>
+							</li>
+							<li class="active">
+								<span class="fontMontserrat">03</span>
+								<span class="fontEliceDigital text">기관<span class="m_block">심사중</span></span>
+							</li>
+							<li class="active">
+								<span class="invisible">현재 단계</span>
+								<span class="fontMontserrat">04</span>
+								<span class="fontEliceDigital text">처리<span class="m_block">완료</span></span>
 							</li>
 						</ul>
-
-						<div class="roundBox">
-							<h4>개인정보 수집 및 사용에 대한 안내</h4>
-							<div class="overflowY" tabindex="0">
-								<p class="styleTitle">[개인정보의 수집 이용 목적]</p>
-								<ol class="styleGray">
-									<li>
-										가. 공적연금연계 홈페이지 전자민원 서비스는 다음의 목적을 위해 개인정보를 수집 및 이용합니다. 수집된 개인정보는 다음 목적이외의 용도로는 이용되지 않으며 수집 목적이 변경될 경우 사전에 알리고 동의를 받을 예정입니다.
-										<ul>
-											<li>- 민원사무처리 및 증명서 발급 서비스 제공, 전자통지서비스 신청</li>
-											<li>- 민원신청서 등에 포함된 개인정보는 민원사무처리 등을 위한 목적으로 이용됩니다.(전자민원 처리과정 조회, 증명서 발급 및 증명서 진위여부 확인 등)</li>
-										</ul>
-									</li>
-									<li>
-										나. 수집하는 개인정보의 항목
-										<ul>
-											<li>
-												- 필수항목 : 성명,  주소, 자택전화번호, 휴대 전화번호, 이메일 주소 등  민원신청서 상 필수입력 항목
-												<span>&lt;전자민원 신고/신청 이력&gt;</span>
-												<ul>
-													<li>· 보유항목 : 성명,  주소, 자택전화번호, 휴대 전화번호, 이메일 주소</li>
-													<li>· 보유기간 : 준영구</li>
-													<li>· 보유근거 : 전자정부법 제7조, 민원사무처리에 관한 법률 시행령 제35조, 사무 및 기록물관리예규</li>
-												</ul>
-												<span>&lt;전자통지서비스 신규/변경/철회 신청&gt;</span>
-												<ul>
-													<li>· 보유항목 : 성명,  주소, 자택전화번호, 휴대 전화번호, 이메일 주소</li>
-													<li>· 보유기간 : 준영구</li>
-													<li>· 보유근거 : 국민연금과 직역연금의 연계에 관한 법률 제27조 및 동법 시행령 제17조 등</li>
-												</ul>
-											</li>
-										</ul>
-									</li>
-									<li>
-										라. 동의를 거부할 권리가 있다는 사실과 동의 거부에 따른 불이익 내용
-										<p>이용자는 공적연금연계 홈페이지 서비스에서 수집하는 개인정보에 대하여 동의를 거부할 권리가 있으며, 동의 거부시에는 전자민원 신고/신청, 증명서 발급 서비스, 전자통지서비스 등에 제한을 받을 수 있습니다.</p>
-									</li>
-								</ol>
-							</div>
-						</div>
-						<ul class="groupBox inlineGroupBox">
-							<li>
-								<div class="radioBox">
-									<input type="radio" id="radio2_1" name="radio2">
-									<label for="radio2_1">동의 합니다.</label>
-								</div>
-							</li>
-							<li>
-								<div class="radioBox">
-									<input type="radio" id="radio2_2" name="radio2">
-									<label for="radio2_2">미동의 합니다.</label>
-								</div>
-							</li>
+						<ul class="guideText mt">
+							<li>연계신청 처리완료 되었습니다.</li>
 						</ul>
-
-						<div class="roundBox">
-							<h4>고유식별정보 수집에 대한 안내</h4>
-							<div class="overflowY" tabindex="0">
-								<p class="styleTitle">[고유식별정보 수집에 대한 안내]</p>
-								<p class="styleGray">공적연금연계 홈페이지 전자민원 서비스는 민원사무처리를 위해 고유식별정보(주민등록번호, 외국인등록번호 등)를 수집 및 이용합니다. 수집된 고유식별정보는 해당 목적이외의 용도로는 이용되지 않습니다.</p>
-								<ol class="styleGray">
-									<li>
-										가. 개인식별정보의 보유 및 이용기간(법적근거 또는 내부결재 문서 근거)
-										<p>이용자 개인정보는 원칙적으로 처리목적이 달성되면 지체없이 파기합니다. 단, 다음의 정보는 아래의 사유로 명시한 기간동안 보유/이용합니다.</p>
-										<span>&lt;전자민원 신고/신청 이력&gt;</span>
-										<ul>
-											<li>· 고유식별정보 : 주민등록번호, 외국인등록번호</li>
-											<li>· 보유기간 : 준영구</li>
-											<li>· 보유근거 : 전자정부법 제7조, 민원사무처리에 관한 법률 시행령 제35조</li>
-										</ul>
-										<span>&lt;전자민원 증명서(발급물)&gt;</span>
-										<ul>
-											<li>· 고유식별정보 : 주민등록번호, 외국인등록번호</li>
-											<li>· 보유기간 : 준영구</li>
-											<li>· 보유근거 : 전자정부법 제7조, 민원사무처리에 관한 법률 시행령 제35조</li>
-										</ul>
-										<span>&lt;전자통지서비스 신규/변경/철회 신청&gt;</span>
-										<ul>
-											<li>· 고유식별정보 : 주민등록번호, 외국인등록번호</li>
-											<li>· 보유기간 : 준영구</li>
-											<li>· 보유근거 : 국민연금과 직역연금의 연계에 관한 법률 제27조 및 동법 시행령 제17조 등</li>
-										</ul>
-									</li>
-									<li>
-										나. 동의를 거부할 권리가 있다는 사실과 동의 거부에 따른 불이익 내용
-										<p>이용자는 공적연금연계 홈페이지 서비스에서 수집하는 고유식별정보에 대하여 동의를 거부할 권리가 있으며, 동의 거부시에는 전자민원 민원신청 및 증명 발급, 전자통지서비스가 제한됩니다.</p>
-									</li>
-								</ol>
-							</div>
-						</div>
-						<ul class="groupBox inlineGroupBox">
-							<li>
-								<div class="radioBox">
-									<input type="radio" id="radio3_1" name="radio3">
-									<label for="radio3_1">동의 합니다.</label>
-								</div>
-							</li>
-							<li>
-								<div class="radioBox">
-									<input type="radio" id="radio3_2" name="radio3">
-									<label for="radio3_2">미동의 합니다.</label>
-								</div>
-							</li>
-						</ul>
-
-						<div class="btnsGroup flexEnd bdt mt m_twin">
-							<button type="button" class="button h48 gray"><span class="m_block">미동의하고,</span> 홈화면으로 이동</button>
-							<button type="button" class="button h48 blue" onclick="location.href='HO_03_03_02.html'"><span class="m_block">동의하고,</span> 신청서 작성하기</button>
-						</div>
-
-						<script src="../../include/evaluation.js"></script> <!-- include: 공통 평가 -->
 					</div>
+
+					<!-- PC -->
+					<div class="onlyPC">
+						<div class="tableBody mt">
+							<table>
+								<caption>신청상태조회 : 번호, 접수번호, 접수일, 내용, 구분, 상태, 처리지사로 구성</caption>
+								<colgroup>
+									<col style="width: 64px;">
+									<col>
+									<col style="width: 144px;">
+									<col style="width: 144px;">
+									<col style="width: 120px;">
+									<col style="width: 136px;">
+									<col style="width: 124px;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">번호</th>
+										<th scope="col">접수번호</th>
+										<th scope="col">접수일</th>
+										<th scope="col">내용</th>
+										<th scope="col">구분</th>
+										<th scope="col">상태</th>
+										<th scope="col">처리지사</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>20183012000063</td>
+										<td>yyyy-mm-dd</td>
+										<td>연계신청접수취소</td>
+										<td>-</td>
+										<td>확인중</td>
+										<td><button type="button" class="button h24 lineBlack">조회</button></td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>20183012000439</td>
+										<td>yyyy-mm-dd</td>
+										<td>연계신청서</td>
+										<td>미해당</td>
+										<td>접수완료</td>
+										<td><button type="button" class="button h24 lineBlack">조회</button></td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>20183012000439</td>
+										<td>yyyy-mm-dd</td>
+										<td>연계취하신청서</td>
+										<td>미해당</td>
+										<td><span class="colorBlue">처리완료</span></td>
+										<td><button type="button" class="button h24 lineBlack">조회</button></td>
+									</tr>
+									<tr>
+										<td class="empty" colspan="7">데이터가 없습니다.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<!-- //PC -->
+
+					<!-- Mobile -->
+					<div class="onlyMobile m_tableBody mt2 noBorder">
+						<ul class="mList">
+							<li>
+								<div class="roundBoxGray">
+									<h6 class="fontDefault">접수번호</h6>
+									<div class="flexLeft spaceBetween">
+										<b class="listDate colorBlue">2009101000040</b>
+										<div class="roundText blueLine">처리완료</div>
+									</div>
+									
+									<ul class="msList bdt">
+										<li>
+											<label>접수일</label>
+											<b>2006-03-01</b>
+										</li>
+										<li>
+											<label>내용</label>
+											<b>연계신청서</b>
+										</li>
+										<li>
+											<label>구분</label>
+											<b>미해당</b>
+										</li>
+										<li>
+											<label>처리지사</label>
+											<button type="button" class="button h24 lineBlack">조회</button>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="roundBoxGray">
+									<h6 class="fontDefault">접수번호</h6>
+									<div class="flexLeft spaceBetween">
+										<b class="listDate colorBlue">2009101000040</b>
+										<div class="roundText blueLine">처리완료</div>
+									</div>
+									
+									<ul class="msList bdt">
+										<li>
+											<label>접수일</label>
+											<b>2006-03-01</b>
+										</li>
+										<li>
+											<label>내용</label>
+											<b>연계신청서</b>
+										</li>
+										<li>
+											<label>구분</label>
+											<b>미해당</b>
+										</li>
+										<li>
+											<label>처리지사</label>
+											<button type="button" class="button h24 lineBlack">조회</button>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!-- //Mobile -->
+					
+
+					<script src="../../include/evaluation.js"></script> <!-- include: 공통 평가 -->
 				</div>
 			</div>
 		</div>
@@ -191,7 +187,7 @@
 	<script src="../../include/footer.js"></script> <!-- include: 공통 푸터 -->
 
 	<script>
-		var depth = [3, 1]; /* 현재메뉴 활성화 용: gnb에 있는 data-menu 값과 일치하게 해주세요. */
+		var depth = [3, 3]; /* 현재메뉴 활성화 용: gnb에 있는 data-menu 값과 일치하게 해주세요. */
 	</script>
 </div>
 </body>
