@@ -122,6 +122,13 @@ body.noScroll { overflow: hidden;}
 .fontEliceDigital { font-family: 'EliceDigitalBaeum-Bd', "NanumBarunGothic";}
 .wNormal { font-weight: 400;}
 .subText { margin-top: 8px; font-size: 14px;}
+.requireText { margin-top: 5px; font-size: 12px; color: #767676;}
+.requireText i { display: inline-block; width: 16px; height: 16px; margin: -2px 4px 0 0; vertical-align: middle;}
+.requireText i { background: url(../images/common/ico_caption.svg) no-repeat center/cover;}
+.requireText.error { color: #ee0700;}
+.requireText.error i { background: url(../images/common/ico_error.svg) no-repeat center/cover;}
+.requireText.success { color: #366cc3;}
+.requireText.success i { background: url(../images/common/ico_success.svg) no-repeat center/cover;}
 
 /* Heading */
 .defaultH4 { font-size: 19px;}
@@ -137,10 +144,12 @@ body.noScroll { overflow: hidden;}
 .colorGray { color: #767676 !important;}
 .colorLightGray { color: #959595 !important;}
 .colorOrange { color: #fc0606 !important;}
-
+.colorRed { color: #ee0700 !important;}
 
 /* hr */
 hr.space { margin: 40px 0; height: 1px; background-color: #dbdbdb;}
+
+/* 아이콘 */
 
 /* 버튼 */
 .button { display: inline-flex; align-items: center; justify-content: center; padding: 0 16px; transition: background-color .2s ease-in-out;}
@@ -190,6 +199,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .icheckbox,
 .iradio { position:absolute; top: 0; left: 0; min-width: 20px; min-height: 20px;}
 .focus { outline: 2px solid #000 !important; border-radius: 2px;}
+.groupBox.flexLeft li ~ li { margin-left: 24px;}
 
 .checkboxBox { display: flex; align-items: center; position: relative; height: 20px; padding-left: 28px;}
 .checkboxBox label { cursor: pointer;}
@@ -297,6 +307,13 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .hTableBody table td .email span { position: relative; margin-left: 33px;}
 .hTableBody table td .email span::before { content: '@'; position: absolute; left: -25px; top: 13px;}
 .hTableBody table td .email select { width: 200px; margin-left: 4px;}
+.hTableBody table td .twin { display: flex;}
+.hTableBody table td .twin select,
+.hTableBody table td .twin input { flex: 1; margin-right: 4px;}
+.hTableBody table td .spcemt { margin-top: 8px;}
+.hTableBody table td .defaultBtn input { width: 400px;}
+.hTableBody table td .defaultBtn .button { margin-left: 4px;}
+.hTableBody table td .mw404 { max-width: 404px;}
 
 /* whTableBody */
 .whTableBody { overflow: hidden; border-top: 2px solid #333;}
@@ -360,6 +377,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .setpBodyStyle .stepByStyle li { display: flex; flex-direction: column; align-items: center; position: relative; margin: 0 4px; text-align: center; background-color: #f4f7fc;}
 .setpBodyStyle .stepByStyle li .iconRound { display: flex; align-items: center; justify-content: center; width: 32px; height: 32px;}
 .setpBodyStyle .stepByStyle li .iconRound i { display: block; width: 16px; height: 16px; margin: 0 auto; background-color: #dbdbdb; border-radius: 50%;}
+.setpBodyStyle .stepByStyle li .iconRound.bgBlue i { background-color: #366cc3;}
 .setpBodyStyle .stepByStyle li span.text { display: block; margin-top: 8px; font-size: 14px;}
 .setpBodyStyle .stepByStyle li.active >span.text { color: #366cc3;}
 .setpBodyStyle .stepByStyle li.active .iconRound { background-color: #366cc3; border-radius: 50%;}
@@ -481,8 +499,8 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 /* 연계연금청구 */
 .proposalBody .subFill { display: flex; align-items: center; justify-content: space-between; margin-top: 24px;}
 .proposalBody .subFill >span { font-size: 14px;}
-
-
+.otherTextBody { display: flex; align-items: center; justify-content: space-between;}
+.otherTextBody .icheckbox::before { left: 3px;}
 
 
 

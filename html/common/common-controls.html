@@ -146,31 +146,31 @@
 			<li>
 				<div class="radioBox">
 					<input type="radio" id="radio1" name="radio" checked>
-					<label for="radio1" class="">매우만족</label>
+					<label for="radio1">매우만족</label>
 				</div>
 			</li>
 			<li>
 				<div class="radioBox">
 					<input type="radio" id="radio2" name="radio">
-					<label for="radio2" class="">만족</label>
+					<label for="radio2">만족</label>
 				</div>
 			</li>
 			<li>
 				<div class="radioBox">
 					<input type="radio" id="radio3" name="radio">
-					<label for="radio3" class="">보통</label>
+					<label for="radio3">보통</label>
 				</div>
 			</li>
 			<li>
 				<div class="radioBox">
 					<input type="radio" id="radio4" name="radio">
-					<label for="radio4" class="">불만족</label>
+					<label for="radio4">불만족</label>
 				</div>
 			</li>
 			<li>
 				<div class="radioBox">
 					<input type="radio" id="radio5" name="radio">
-					<label for="radio5" class="">매우 불만족</label>
+					<label for="radio5">매우 불만족</label>
 				</div>
 			</li>
 		</ul>
@@ -186,6 +186,110 @@
 		<select title="" disabled>
 			<option>선택</option>
 		</select>
+	</div>
+
+	<br><br><br>
+	
+	<h3>피씨 테이블</h3>
+	<div>
+		<div class="hTableBody">
+			<table>
+				<caption>신청인 정보 : 성명, 주민등록번호, 우편번호, 주소, 자택번호, 휴대번호, 전자우편(이메일)로 구성</caption>
+				<colgroup>
+					<col style="width: 162px;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">성명</th>
+						<td>김공단</td>
+					</tr>
+					<tr>
+						<th scope="row">주민등록번호</th>
+						<td>000000-*******</td>
+					</tr>
+					<tr>
+						<th scope="row">우편번호</th>
+						<td>
+							<div class="flexLeft post">
+								<input type="text" title="우편번호" disabled>
+								<button type="button" class="button h40 lineBlack">우편번호검색</button>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">주소</th>
+						<td>
+							<div class="flexLeft address">
+								<input type="text" title="주소" disabled>
+								<input type="text" title="상세주소 입력" placeholder="상세주소">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">자택번호</th>
+						<td>
+							<div class="flexLeft phone">
+								<select title="자택번호 국번 선택">
+									<option>선택</option>
+								</select>
+								<span><input type="tel" title="자택번호 앞 4자리"></span>
+								<span><input type="tel" title="자택번호 뒤 4자리"></span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">휴대번호</th>
+						<td>
+							<div class="flexLeft phone">
+								<select title="휴대번호 국번 선택">
+									<option>선택</option>
+								</select>
+								<span><input type="tel" title="휴대번호 앞 4자리"></span>
+								<span><input type="tel" title="휴대번호 뒤 4자리"></span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">전자우편(이메일)</th>
+						<td>
+							<div class="flexLeft email">
+								<input type="text" title="이메일 아이디 입력">
+								<span><input type="email" title="이메일 도메인 입력"></span>
+								<select title="이메일 도메인 선택">
+									<option>선택</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">계좌정보 <span class="colorOrange">*</span></th>
+						<td>
+							<div class="flexLeft twin mw404">
+								<select title="금융기관 선택">
+									<option>금융기관</option>
+								</select>
+								<input type="text" title="예금주 입력" placeholder="예금주를 입력해주세요">
+							</div>
+							<div class="spcemt">
+								<div class="flexLeft defaultBtn">
+									<input type="text" class="error" title="계좌번호 입력" placeholder="계좌번호를 입력해주세요"> <!-- 실패: error, 성공: success 시 보더색상이 변경됩니다.  -->
+									<button type="button" class="button h40 lineBlack">계좌정보 확인</button>
+								</div>
+								<div class="requireText error">
+									<i></i>
+									<span>계좌번호를 입력해 주세요.</span>
+								</div>
+								<div class="requireText success">
+									<i></i>
+									<span>성공 내용입니다.</span>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 	</div>
 
 	<br><br><br>

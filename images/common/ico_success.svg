@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <path style="fill:none" d="M0 0h16v16H0z"/>
+    <g transform="translate(2 2)">
+        <circle cx="6" cy="6" r="6" style="fill:#366cc3"/>
+        <path data-name="ic" d="M17772 13194v-1.5h1.5v1.5zm0-2.5v-4.5h1.5v4.5z" transform="translate(-17766.805 -13184.498)" style="fill:#fff"/>
+    </g>
+</svg>

@@ -1,0 +1,251 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<script src="../../include/head.js"></script> <!-- include: 공통 헤드 -->
+</head>
+
+<body>
+<div id="wrap">
+	<script src="../../include/header.js"></script> <!-- include: 공통 헤더 -->
+
+	<div class="container">
+		<div class="area">
+			<div class="wrap">
+				<div class="lnbBody">
+					<h2></h2>
+					<nav class="lnb">
+					</nav>
+				</div>
+
+				<div id="contentLink" class="contents">
+					<header class="contentsHeader">
+						<div class="title">
+							<h3>연계연금청구</h3>
+							<p>급여청구 신청 단계는 다음과 같습니다.</p>
+						</div>
+						<script src="../../include/location.js"></script> <!-- include: 공통 현재위치 -->
+					</header>
+
+					<div class="setpBodyStyle">
+						<ul class="stepByStyle">
+							<li>
+								<span class="iconRound bgBlue"><i></i></span>
+								<span class="text">청구인정보 확인</span>
+							</li>
+							<li class="active">
+								<span class="invisible">현재 단계</span>
+								<span class="iconRound"><i></i></span>
+								<span class="text">지급계좌 확인</span>
+							</li>
+							<li>
+								<span class="iconRound"><i></i></span>
+								<span class="text">연계노령청구 정보</span>
+							</li>
+							<li>
+								<span class="iconRound"><i></i></span>
+								<span class="text">연계퇴직청구 정보</span>
+							</li>
+							<li>
+								<span class="iconRound"><i></i></span>
+								<span class="text">청구신청 완료</span>
+							</li>
+						</ul>
+						<span class="line"></span>
+					</div>
+
+					<hr class="space style onlyMobile">
+
+					<div class="proposalBody">
+						<h4 class="deText pcmt40 momt32">연계노령퇴직연금 <span class="m_block">청구 신청서</span></h4>
+						<div class="subFill">
+							<h4 class="defaultH4">지급계좌 확인</h4>
+							<span><span class="colorOrange">*</span> 필수 입력 항목</span>
+						</div>
+						
+						<div class="pcmt24">
+							<button class="flexLeft spaceBetween toggleGroup active" title="확장됨">
+								<b class="defaultH5">연계노령연금 지급계좌</b>
+								<sapn class="toggleBtn onlyMobile"><i>연계노령연금 지급계좌 토글</i></sapn>
+							</button>
+							<div class="target">
+								<!-- PC -->
+								<div class="onlyPC">
+									<div class="hTableBody">
+										<table>
+											<caption>연계노령연금 지급계좌 : 계좌구분, 계좌정보로 구성</caption>
+											<colgroup>
+												<col style="width: 170px;">
+												<col>
+											</colgroup>
+											<tbody>
+												<tr>
+													<th scope="row">계좌구분 <span class="colorOrange">*</span></th>
+													<td>
+														<ul class="groupBox flexLeft">
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio1" name="testRadio">
+																	<label for="testRadio1">일반계좌</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio2" name="testRadio">
+																	<label for="testRadio2">국민연금 안심통장</label>
+																	<button type="button" class="tooltipBtn" aria-describedby="tooltip1"><i class="icon">도움말</i></button>
+																</div>
+															</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">계좌정보 <span class="colorOrange">*</span></th>
+													<td>
+														<div class="flexLeft twin mw404">
+															<select title="금융기관 선택">
+																<option>금융기관</option>
+															</select>
+															<input type="text" title="예금주 입력" placeholder="예금주를 입력해주세요">
+														</div>
+														<div class="spcemt">
+															<div class="flexLeft defaultBtn">
+																<input type="text" title="계좌번호 입력" placeholder="계좌번호를 입력해주세요">
+																<button type="button" class="button h40 lineBlack">계좌정보 확인</button>
+															</div>
+															<div class="requireText">
+																<i></i>
+																<span>“-” 필수입력 예)123-456-789-01</span>
+															</div>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<!-- //PC -->
+
+								<!-- Mobile -->
+								<div class="onlyMobile m_tableBody noBorder">
+									모바일
+								</div>
+								<!-- //Mobile -->
+
+								<ul class="guideText mt">
+									<li>"지급계좌"란에는 지급받으려는 금융기관의 계좌번호를 적되, 반드시 입출금이 가능한 계좌여야 합니다.</li>
+									<li>공무원연금에서 대부금을 미상환한 경우의 연금 지급계좌는 대부 금융기관과 같아야 합니다.</li>
+									<li>입출금이 가능한 본인 명의의 계좌만 등록 가능합니다.</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="pcmt24">
+							<div class="otherTextBody toggleGroup" title="축소됨">
+								<button class="flexLeft spaceBetween">
+									<b class="defaultH5">연계퇴직연금 지급계좌</b>
+									<sapn class="toggleBtn onlyMobile"><i>연계퇴직연금 지급계좌 토글</i></sapn>
+								</button>
+								<div class="groupBox">
+									<div class="checkboxBox">
+										<input type="checkbox" id="checkbox1" name="checkbox">
+										<label for="checkbox1">연계노령연금계좌와 동일</label>
+									</div>
+								</div>
+							</div>
+							<div class="target">
+								<!-- PC -->
+								<div class="onlyPC">
+									<div class="hTableBody">
+										<table>
+											<caption>연계퇴직연금 지급계좌 : 계좌구분, 계좌정보로 구성</caption>
+											<colgroup>
+												<col style="width: 170px;">
+												<col>
+											</colgroup>
+											<tbody>
+												<tr>
+													<th scope="row">계좌구분 <span class="colorOrange">*</span></th>
+													<td>
+														<ul class="groupBox flexLeft">
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio1" name="testRadio">
+																	<label for="testRadio1">일반계좌</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio2" name="testRadio">
+																	<label for="testRadio2">국민연금 안심통장</label>
+																	<button type="button" class="tooltipBtn" aria-describedby="tooltip1"><i class="icon">도움말</i></button>
+																</div>
+															</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">계좌정보 <span class="colorOrange">*</span></th>
+													<td>
+														<div class="flexLeft twin mw404">
+															<select title="금융기관 선택">
+																<option>금융기관</option>
+															</select>
+															<input type="text" title="예금주 입력" placeholder="예금주를 입력해주세요">
+														</div>
+														<div class="spcemt">
+															<div class="flexLeft defaultBtn">
+																<input type="text" class="error" title="계좌번호 입력" placeholder="계좌번호를 입력해주세요"> <!-- 실패: error, 성공: success 시 보더색상이 변경됩니다.  -->
+																<button type="button" class="button h40 lineBlack">계좌정보 확인</button>
+															</div>
+															<div class="requireText error">
+																<i></i>
+																<span>계좌번호를 입력해 주세요.</span>
+															</div>
+															<div class="requireText success">
+																<i></i>
+																<span>성공 내용입니다.</span>
+															</div>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<!-- //PC -->
+
+								<!-- Mobile -->
+								<div class="onlyMobile m_tableBody noBorder">
+									모바일
+								</div>
+								<!-- //Mobile -->
+
+								<ul class="guideText mt">
+									<li>"지급계좌"란에는 지급받으려는 금융기관의 계좌번호를 적되, 반드시 입출금이 가능한 계좌여야 합니다.</li>
+									<li>공무원연금에서 대부금을 미상환한 경우의 연금 지급계좌는 대부 금융기관과 같아야 합니다.</li>
+									<li>입출금이 가능한 본인 명의의 계좌만 등록 가능합니다.</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="btnsGroup flexEnd bdt mt m_twin">
+							<button type="button" class="button h48 gray" onclick="location.href='HO_04_01_02_02_01.html'">이전</button>
+							<button type="button" class="button h48 blue" onclick="location.href='HO_04_01_02_02_03.html'">다음</button>
+						</div>
+					</div>
+					
+					<script src="../../include/evaluation.js"></script> <!-- include: 공통 평가 -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="../../include/footer.js"></script> <!-- include: 공통 푸터 -->
+
+	<script>
+		var depth = [4, 1]; /* 현재메뉴 활성화 용: gnb에 있는 data-menu 값과 일치하게 해주세요. */
+	</script>
+</div>
+</body>
+</html>
