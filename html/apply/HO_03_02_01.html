@@ -30,285 +30,289 @@
 					<hr class="space style onlyMobile">
 
 					<div class="appBody">
-						<div class="flexLeft spaceBetween toggleGroup">
-							<h4 class="defaultH4">변경정보</h4>
-							<button type="button" class="toggleBtn onlyMobile active" title="확장됨" onclick="apply.toggleBtn();"><i>변경정보 토글</i></button>
-						</div>
-						<div class="target">
-							<!-- PC -->
-							<div class="onlyPC">
-								<div class="hTableBody">
-									<table>
-										<caption>신청인 변경정보 : 성명, 주민등록번호, 우편번호, 주소, 자택번호, 휴대번호, 전자우편(이메일)로 구성</caption>
-										<colgroup>
-											<col style="width: 162px;">
-											<col>
-										</colgroup>
-										<tbody>
-											<tr>
-												<th scope="row">성명</th>
-												<td>김공단</td>
-											</tr>
-											<tr>
-												<th scope="row">주민등록번호</th>
-												<td>000000-*******</td>
-											</tr>
-											<tr>
-												<th scope="row">우편번호</th>
-												<td>
-													<div class="flexLeft post">
-														<input type="text" title="우편번호" disabled>
-														<button type="button" class="button h40 lineBlack">우편번호검색</button>
-													</div>
-												</td>
-											</tr>
-											<tr>
-												<th scope="row">주소</th>
-												<td>
-													<div class="flexLeft address">
-														<input type="text" title="주소" disabled>
-														<input type="text" title="상세주소 입력" placeholder="상세주소">
-													</div>
-												</td>
-											</tr>
-											<tr>
-												<th scope="row">자택번호</th>
-												<td>
-													<div class="flexLeft phone">
-														<select title="자택번호 국번 선택">
-															<option>선택</option>
-														</select>
-														<span><input type="tel" title="자택번호 앞 4자리"></span>
-														<span><input type="tel" title="자택번호 뒤 4자리"></span>
-													</div>
-												</td>
-											</tr>
-											<tr>
-												<th scope="row">휴대번호</th>
-												<td>
-													<div class="flexLeft phone">
-														<select title="휴대번호 국번 선택">
-															<option>선택</option>
-														</select>
-														<span><input type="tel" title="휴대번호 앞 4자리"></span>
-														<span><input type="tel" title="휴대번호 뒤 4자리"></span>
-													</div>
-												</td>
-											</tr>
-											<tr>
-												<th scope="row">전자우편(이메일)</th>
-												<td>
-													<div class="flexLeft email">
-														<input type="text" title="이메일 아이디 입력">
-														<span><input type="email" title="이메일 도메인 입력"></span>
-														<select title="이메일 도메인 선택">
-															<option>선택</option>
-														</select>
-													</div>
-												</td>
-											</tr>
-										</tbody>
-									</table>
+						<div>
+							<button class="flexLeft spaceBetween toggleGroup active" title="확장됨">
+								<b class="defaultH4">변경정보</b>
+								<span class="toggleBtn onlyMobile" ><i>변경정보 토글</i></span>
+							</button>
+							<div class="target">
+								<!-- PC -->
+								<div class="onlyPC">
+									<div class="hTableBody">
+										<table>
+											<caption>신청인 변경정보 : 성명, 주민등록번호, 우편번호, 주소, 자택번호, 휴대번호, 전자우편(이메일)로 구성</caption>
+											<colgroup>
+												<col style="width: 162px;">
+												<col>
+											</colgroup>
+											<tbody>
+												<tr>
+													<th scope="row">성명</th>
+													<td>김공단</td>
+												</tr>
+												<tr>
+													<th scope="row">주민등록번호</th>
+													<td>000000-*******</td>
+												</tr>
+												<tr>
+													<th scope="row">우편번호</th>
+													<td>
+														<div class="flexLeft post">
+															<input type="text" title="우편번호" disabled>
+															<button type="button" class="button h40 lineBlack">우편번호검색</button>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">주소</th>
+													<td>
+														<div class="flexLeft address">
+															<input type="text" title="주소" disabled>
+															<input type="text" title="상세주소 입력" placeholder="상세주소">
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">자택번호</th>
+													<td>
+														<div class="flexLeft phone">
+															<select title="자택번호 국번 선택">
+																<option>선택</option>
+															</select>
+															<span><input type="tel" title="자택번호 앞 4자리"></span>
+															<span><input type="tel" title="자택번호 뒤 4자리"></span>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">휴대번호</th>
+													<td>
+														<div class="flexLeft phone">
+															<select title="휴대번호 국번 선택">
+																<option>선택</option>
+															</select>
+															<span><input type="tel" title="휴대번호 앞 4자리"></span>
+															<span><input type="tel" title="휴대번호 뒤 4자리"></span>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">전자우편(이메일)</th>
+													<td>
+														<div class="flexLeft email">
+															<input type="text" title="이메일 아이디 입력">
+															<span><input type="email" title="이메일 도메인 입력"></span>
+															<select title="이메일 도메인 선택">
+																<option>선택</option>
+															</select>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
 								</div>
-							</div>
-							<!-- //PC -->
+								<!-- //PC -->
 
-							<!-- Mobile -->
-							<div class="onlyMobile">
-								<ul class="m_hTableBody">
-									<li>
-										<div class="boxGray">
-											<b>김공단</b>
-											<span class="num">000000-*******</span>
-										</div>
-									</li>
-									<li>
-										<label>주소</label>
-										<div class="flexLeft post">
-											<input type="text" title="우편번호" disabled>
-											<button type="button" class="button h40 lineBlack">우편번호검색</button>
-										</div>
-										<div class="address">
-											<input type="text" title="주소" disabled>
-											<input type="text" title="상세주소 입력" placeholder="상세주소">
-										</div>
-									</li>
-									<li>
-										<label>자택번호</label>
-										<div class="flexLeft phone">
-											<span>
-												<select title="자택번호 국번 선택">
-													<option>선택</option>
-												</select>
-											</span>
-											<span><input type="tel" title="자택번호 앞 4자리"></span>
-											<span><input type="tel" title="자택번호 뒤 4자리"></span>
-										</div>
-									</li>
-									<li>
-										<label>휴대번호</label>
-										<div class="flexLeft phone">
-											<span>
-												<select title="휴대번호 국번 선택">
-													<option>선택</option>
-												</select>
-											</span>
-											<span><input type="tel" title="휴대번호 앞 4자리"></span>
-											<span><input type="tel" title="휴대번호 뒤 4자리"></span>
-										</div>
-									</li>
-									<li>
-										<label>전자우편(이메일)</label>
-										<div class="flexLeft email">
-											<span><input type="text" title="이메일 아이디 입력"></span>
-										</div>
-										<div class="flexLeft emailSub">
-											<span>
-												<input type="email" title="이메일 도메인 입력">
-											</span>
-											<span>
-												<select title="이메일 도메인 선택">
-													<option>선택</option>
-												</select>
-											</span>
-										</div>
-									</li>
+								<!-- Mobile -->
+								<div class="onlyMobile">
+									<ul class="m_hTableBody">
+										<li>
+											<div class="boxGray">
+												<b>김공단</b>
+												<span class="num">000000-*******</span>
+											</div>
+										</li>
+										<li>
+											<label>주소</label>
+											<div class="flexLeft post">
+												<input type="text" title="우편번호" disabled>
+												<button type="button" class="button h40 lineBlack">우편번호검색</button>
+											</div>
+											<div class="address">
+												<input type="text" title="주소" disabled>
+												<input type="text" title="상세주소 입력" placeholder="상세주소">
+											</div>
+										</li>
+										<li>
+											<label>자택번호</label>
+											<div class="flexLeft phone">
+												<span>
+													<select title="자택번호 국번 선택">
+														<option>선택</option>
+													</select>
+												</span>
+												<span><input type="tel" title="자택번호 앞 4자리"></span>
+												<span><input type="tel" title="자택번호 뒤 4자리"></span>
+											</div>
+										</li>
+										<li>
+											<label>휴대번호</label>
+											<div class="flexLeft phone">
+												<span>
+													<select title="휴대번호 국번 선택">
+														<option>선택</option>
+													</select>
+												</span>
+												<span><input type="tel" title="휴대번호 앞 4자리"></span>
+												<span><input type="tel" title="휴대번호 뒤 4자리"></span>
+											</div>
+										</li>
+										<li>
+											<label>전자우편(이메일)</label>
+											<div class="flexLeft email">
+												<span><input type="text" title="이메일 아이디 입력"></span>
+											</div>
+											<div class="flexLeft emailSub">
+												<span>
+													<input type="email" title="이메일 도메인 입력">
+												</span>
+												<span>
+													<select title="이메일 도메인 선택">
+														<option>선택</option>
+													</select>
+												</span>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<!-- //Mobile -->
+								<ul class="guideText mt">
+									<li>“주소” 란에는 통지서를 받을 수 있도록 ＂우편번호＂를 선택하여 실제 주소를 입력하셔야 합니다.</li>
+									<li>휴대폰 번호를 입력하신 경우 안내문자가 발송 될 수 있습니다.</li>
 								</ul>
 							</div>
-							<!-- //Mobile -->
-							<ul class="guideText mt">
-								<li>“주소” 란에는 통지서를 받을 수 있도록 ＂우편번호＂를 선택하여 실제 주소를 입력하셔야 합니다.</li>
-								<li>휴대폰 번호를 입력하신 경우 안내문자가 발송 될 수 있습니다.</li>
-							</ul>
 						</div>
 						
 						<hr class="space style2 onlyMobile">
 
-						<div class="flexLeft spaceBetween toggleGroup pcmt40">
-							<h4 class="defaultH4">가입내용</h4>
-							<button type="button" class="toggleBtn onlyMobile" title="축소됨" onclick="apply.toggleBtn();"><i>가입내용 토글</i></button>
-						</div>
-						<div class="target targetHidden">
-							<!-- PC -->
-							<div class="onlyPC">
-								<div class="tableBody">
-									<table>
-										<caption>가입내용 : 선택, 연금기관, 기간 구분, 상세내역로 구성</caption>
-										<colgroup>
-											<col style="width: 64px;">
-											<col style="width: 112px;">
-											<col style="width: 128px;">
-											<col>
-										</colgroup>
-										<thead>
-											<tr>
-												<th scope="col">선택</th>
-												<th scope="col">연금기관</th>
-												<th scope="col">기간 구분</th>
-												<th scope="col">상세내역</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>
-													<div class="groupBox">
-														<input type="checkbox" name="checkbox" title="세번째 가입내용 선택">
-													</div>
-												</td>
-												<td>사립학교 교직원연금공단</td>
-												<td>재직기간</td>
-												<td>
-													<span class="block">2년 6월  ( YYYY - MM - DD ~ YYYY - MM - DD )</span>
-													<table>
-														<caption>세번째 가입내용 상세내역 : 연계신청가능 월수, 퇴직일시금 수령, 반납금 납부방법, 반납금 납부횟수로 구성</caption>
-														<colgroup>
-															<col style="width: 25%;">
-															<col style="width: 25%;">
-															<col style="width: 25%;">
-															<col>
-														</colgroup>
-														<thead>
-															<tr>
-																<th><span class="colorBlue">연계신청가능 월수</span></th>
-																<th>퇴직일시금 수령</th>
-																<th>반납금 납부방법</th>
-																<th>반납금 납부횟수</th>
-															</tr>
-														</thead>
-														<tbody>
-															<tr>
-																<td><span class="colorBlue">30</span></td>
-																<td>수령</td>
-																<td>
-																	<select title="첫번째 반납금 납부방법 선택">
-																		<option>선택</option>
-																	</select>
-																</td>
-																<td>
-																	<select title="첫번째 반납금 납부횟수 선택">
-																		<option>선택</option>
-																	</select>
-																</td>
-															</tr>
-														</tbody>
-													</table>
-												</td>
-											</tr>
-										</tbody>
-									</table>
+						<div>
+							<button class="flexLeft spaceBetween toggleGroup pcmt40" title="축소됨">
+								<b class="defaultH4">가입내용</b>
+								<span class="toggleBtn onlyMobile"><i>가입내용 토글</i></span>
+							</button>
+							<div class="target targetHidden">
+								<!-- PC -->
+								<div class="onlyPC">
+									<div class="tableBody">
+										<table>
+											<caption>가입내용 : 선택, 연금기관, 기간 구분, 상세내역로 구성</caption>
+											<colgroup>
+												<col style="width: 64px;">
+												<col style="width: 112px;">
+												<col style="width: 128px;">
+												<col>
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col">선택</th>
+													<th scope="col">연금기관</th>
+													<th scope="col">기간 구분</th>
+													<th scope="col">상세내역</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>
+														<div class="groupBox">
+															<input type="checkbox" name="checkbox" title="세번째 가입내용 선택">
+														</div>
+													</td>
+													<td>사립학교 교직원연금공단</td>
+													<td>재직기간</td>
+													<td>
+														<span class="block">2년 6월  ( YYYY - MM - DD ~ YYYY - MM - DD )</span>
+														<table>
+															<caption>세번째 가입내용 상세내역 : 연계신청가능 월수, 퇴직일시금 수령, 반납금 납부방법, 반납금 납부횟수로 구성</caption>
+															<colgroup>
+																<col style="width: 25%;">
+																<col style="width: 25%;">
+																<col style="width: 25%;">
+																<col>
+															</colgroup>
+															<thead>
+																<tr>
+																	<th><span class="colorBlue">연계신청가능 월수</span></th>
+																	<th>퇴직일시금 수령</th>
+																	<th>반납금 납부방법</th>
+																	<th>반납금 납부횟수</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td><span class="colorBlue">30</span></td>
+																	<td>수령</td>
+																	<td>
+																		<select title="첫번째 반납금 납부방법 선택">
+																			<option>선택</option>
+																		</select>
+																	</td>
+																	<td>
+																		<select title="첫번째 반납금 납부횟수 선택">
+																			<option>선택</option>
+																		</select>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
 								</div>
-							</div>
-							<!-- //PC -->
+								<!-- //PC -->
 
-							<!-- Mobile -->
-							<div class="onlyMobile">
-								<ul class="mListMulti">
-									<li>
-										<div class="groupBox">
-											<div class="checkboxBox">
-												<input type="checkbox" id="m_chechbox1" name="m_checkbox" title="첫번째 가입내용 선택">
-												<label for="m_chechbox1">사립학교교직원연금공단</label>
+								<!-- Mobile -->
+								<div class="onlyMobile">
+									<ul class="mListMulti">
+										<li>
+											<div class="groupBox">
+												<div class="checkboxBox">
+													<input type="checkbox" id="m_chechbox1" name="m_checkbox" title="첫번째 가입내용 선택">
+													<label for="m_chechbox1">사립학교교직원연금공단</label>
+												</div>
 											</div>
-										</div>
-										<div class="roundBoxGray sp mt">
-											<span>재직기간</span>
-											<div class="flexLeft spaceBetween">
-												<b class="listDate">2년 6월<br>( YYYY - MM - DD ~ YYYY - MM - DD )</b>
+											<div class="roundBoxGray sp mt">
+												<span>재직기간</span>
+												<div class="flexLeft spaceBetween">
+													<b class="listDate">2년 6월<br>( YYYY - MM - DD ~ YYYY - MM - DD )</b>
+												</div>
 											</div>
-										</div>
-										<ul class="msList">
-											<li>
-												<span class="colorBlue">연계신청가능 월수</span>
-												<b class="colorBlue">30</b>
-											</li>
-											<li>
-												<span>퇴직일시금 수령</span>
-												<b>미수령</b>
-											</li>
-											<li class="block lineBreak">
-												<b>반납금 납부방법</b>
-												<span class="mt">
-													<select title="반납금 납부방법 선택">
-														<option>선택</option>
-													</select>
-												</span>
-											</li>
-											<li class="block">
-												<b>반납금 납부횟수</b>
-												<span class="mt">
-													<select title="반납금 납부횟수 선택">
-														<option>선택</option>
-													</select>
-												</span>
-											</li>
-										</ul>
-									</li>
+											<ul class="msList">
+												<li>
+													<span class="colorBlue">연계신청가능 월수</span>
+													<b class="colorBlue">30</b>
+												</li>
+												<li>
+													<span>퇴직일시금 수령</span>
+													<b>미수령</b>
+												</li>
+												<li class="block lineBreak">
+													<b>반납금 납부방법</b>
+													<span class="mt">
+														<select title="반납금 납부방법 선택">
+															<option>선택</option>
+														</select>
+													</span>
+												</li>
+												<li class="block">
+													<b>반납금 납부횟수</b>
+													<span class="mt">
+														<select title="반납금 납부횟수 선택">
+															<option>선택</option>
+														</select>
+													</span>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<!-- //Mobile -->
+								<ul class="guideText mt">
+									<li>“가입내용” 란에는 본인이 연게 신청을 하려는 연금의 가입, 재직(복무)연월수가 자동표시되오니 확인 하시기 바랍니다.</li>
 								</ul>
 							</div>
-							<!-- //Mobile -->
-							<ul class="guideText mt">
-								<li>“가입내용” 란에는 본인이 연게 신청을 하려는 연금의 가입, 재직(복무)연월수가 자동표시되오니 확인 하시기 바랍니다.</li>
-							</ul>
 						</div>
 
 						<hr class="space style2 onlyMobile">

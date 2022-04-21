@@ -18,19 +18,32 @@ $(document).ready(function () {
 		initial: function () {
       var fired = [];
       var $controlBox = $(".searchBody .controlBox");
+      var $targetHidden = $(".targetHidden");
+      
 
       $(window).on('resize', function () {
         if ($(this).width() <= 767 && !fired[0]) {
           fired[0] = true;
           fired[1] = false;
+
+          /* 모바일 토글 버튼 slideDownUp */
+          var $toggleGroup = $('button.toggleGroup');
+          $toggleGroup.on('click', function() {
+            if($(this).siblings('.target').css('display') === "none") {
+              $(this).addClass('active').attr({'title': '확장됨'}).siblings('.target').slideDown(200);
+            } else {
+              $(this).removeClass('active').attr({'title': '축소됨'}).siblings('.target').slideUp(200);
+            }
+          });
         }
         else if ($(this).width() >= 768 && !fired[1]) {
           fired[0] = false;
           fired[1] = true;
 
           $controlBox.removeAttr('style');
+          $targetHidden.removeAttr('style');
         }
-      });
+      }).trigger("resize");;
 		},
     /* 라디오, 체크박스 */
 		groupBox: function () {
@@ -176,6 +189,7 @@ $(document).ready(function () {
 			}
 		},
 	},
+  
 
   /* 레이어 팝업 */
   layerPopup = {
@@ -238,27 +252,27 @@ $(document).ready(function () {
         _target = null;
       }});
     },
-  }
+  },
 
+  common.init();
   layerPopup.init();
-	common.init();
 });
 
 /* 신청: 토글 버튼 */
-apply = {
-  toggleBtn: function () {
-    var _this = $(event.currentTarget);
-    var $target = _this.parent().next()
+// apply = {
+//   toggleBtn: function () {
+//     var _this = $(event.currentTarget);
+//     var $target = _this.parent().next()
 
-    if($target.css('display') === "none") {
-      $target.slideDown(200);
-      _this.addClass('active').attr({'title': '확장됨'});
-    } else {
-      $target.slideUp(200);
-      _this.removeClass('active').attr({'title': '축소됨'});
-    }
-  }
-}
+//     if($target.css('display') === "none") {
+//       $target.slideDown(200);
+//       _this.addClass('active').attr({'title': '확장됨'});
+//     } else {
+//       $target.slideUp(200);
+//       _this.removeClass('active').attr({'title': '축소됨'});
+//     }
+//   }
+// }
 
 /* 알림: 토글 버튼 */
 inform = {

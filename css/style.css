@@ -108,19 +108,20 @@ body.noScroll { overflow: hidden;}
 **********************************************/
 
 /* 정렬 */
-.textleft { text-align:left !important;}
+.textLeft { text-align:left !important;}
 .textCenter { text-align:center !important;}
 .textRight { text-align:right !important;}
 .flexLeft { display: flex;}
 .flexLeft .subDate { margin-left: 16px; font-size: 14px; color: #767676;}
 .flexLeft.flexEnd { align-items: flex-end;}
-.flexLeft.alignCenter { align-items: center;}
-.flexLeft.spaceBetween { align-items: center; justify-content: space-between;}
+.alignCenter { align-items: center;}
+.spaceBetween { align-items: center; justify-content: space-between;}
 
 /* 글꼴 */
 .fontMontserrat { font-family: 'Montserrat', "NanumBarunGothic";}
 .fontEliceDigital { font-family: 'EliceDigitalBaeum-Bd', "NanumBarunGothic";}
 .wNormal { font-weight: 400;}
+.subText { margin-top: 8px; font-size: 14px;}
 
 /* Heading */
 .defaultH4 { font-size: 19px;}
@@ -128,17 +129,15 @@ body.noScroll { overflow: hidden;}
 .defaultH5.mt { margin-top: 24px;}
 
 /* Margin */
-.pcmt40 { margin-top: 40px;}
+#wrap .pcmt24 { margin-top: 24px;}
+#wrap .pcmt40 { margin-top: 40px;}
 
 /* 색상 */
 .colorBlue { color: #366cc3 !important;}
 .colorGray { color: #767676 !important;}
 .colorLightGray { color: #959595 !important;}
-/*.colorRed { color: #fc0606 !important;}
-.colorGreen { color: #4EC457 !important;}
-.colorBlack { color: #111 !important;}
-.colorGray { color: #777 !important;}
-.colorWood { color: #D69630 !important;} */
+.colorOrange { color: #fc0606 !important;}
+
 
 /* hr */
 hr.space { margin: 40px 0; height: 1px; background-color: #dbdbdb;}
@@ -179,6 +178,8 @@ hr.space { margin: 40px 0; height: 1px; background-color: #dbdbdb;}
 .btnsGroup.bdt { border-top: 1px solid #333;}
 .btnsGroup.mt { margin-top: 40px;}
 .btnsGroup.mt2 { margin-top: 24px;}
+.btnsGroup.mt3 { margin-top: 16px;}
+.btnsGroup.pdt0 { padding-top: 0;}
 .btnsGroup >div { display: flex;}
 .btnsGroup button ~ button { margin-left: 8px;}
 
@@ -222,6 +223,8 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .guideText li .ml { margin-left: 16px;}
 .guideText li .etcColorRed { color: #fc0606;}
 .guideText.mt { margin-top: 16px;}
+.guideText.blue li { color: #366cc3;}
+.guideText.blue li::before { background-color: #366cc3;}
 
 
 /* searchBody */
@@ -276,6 +279,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .tableBody .fix { display: inline-block; width: 24px; height: 24px; margin-top: -1px; text-indent: -99999px; vertical-align: middle; background: url(../images/common/ico_notice.svg) no-repeat center/cover;}
 .tableBody .file { display: inline-block; width: 24px; height: 24px; text-indent: -99999px; background: url(../images/common/ico_attach.svg) no-repeat center/cover;}
 .tableBody.mt { margin-top: 40px;}
+.tableBody.mt2 { margin-top: 16px;}
 
 /* hTableBody */
 .hTableBody { overflow: hidden; margin-top: 8px; border-top: 2px solid #333;}
@@ -349,6 +353,20 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .stepBody .stepBy li >span.text { margin-left: 6px;}
 .stepBody .stepBy li ~ li::before { content: ''; display: block; position: absolute; left: -28px; top: 50%; width: 16px; height: 16px; margin-top: -8px; background: url(../images/common/ico_bc_arrow.svg) no-repeat center/cover;}
 .stepBody .stepBy li.active { color: #fff; border: 1px solid #366cc3; background-color: #366cc3;}
+.stepBody.mt { margin-top: 24px;}
+
+.setpBodyStyle { overflow: hidden; position: relative; margin-top: 40px; padding: 24px 50px; background-color: #f4f7fc; border-radius: 8px;}
+.setpBodyStyle .stepByStyle { display: flex; justify-content: space-between; position: relative; z-index: 2; margin: 0 -4px;}
+.setpBodyStyle .stepByStyle li { display: flex; flex-direction: column; align-items: center; position: relative; margin: 0 4px; text-align: center; background-color: #f4f7fc;}
+.setpBodyStyle .stepByStyle li .iconRound { display: flex; align-items: center; justify-content: center; width: 32px; height: 32px;}
+.setpBodyStyle .stepByStyle li .iconRound i { display: block; width: 16px; height: 16px; margin: 0 auto; background-color: #dbdbdb; border-radius: 50%;}
+.setpBodyStyle .stepByStyle li span.text { display: block; margin-top: 8px; font-size: 14px;}
+.setpBodyStyle .stepByStyle li.active >span.text { color: #366cc3;}
+.setpBodyStyle .stepByStyle li.active .iconRound { background-color: #366cc3; border-radius: 50%;}
+.setpBodyStyle .stepByStyle li.active .iconRound i { width: 24px; height: 24px; background-color: inherit;}
+.setpBodyStyle .stepByStyle li.active .iconRound i::after { content: ''; display: block; width: 24px; height: 24px; background: url(../images/common/ico_check_w.svg) no-repeat center/cover;}
+.setpBodyStyle .line { position: absolute; left: 92px; right: 92px; top: 40px; z-index: 1; height: 1px; background-color: #dbdbdb;}
+
 
 /* roundBox */
 .roundBox { overflow: hidden; margin-top: 40px; border: solid 1px #dbdbdb; border-radius: 8px;}
@@ -369,6 +387,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .inlineGroupBox li ~ li { margin-left: 32px;}
 
 /* tooltipBtn */
+.tooltipBtn { margin: -2px 4px 0 4px;}
 .tooltipBtn i { display: inline-block; width: 24px; height: 24px; text-indent: -99999px; background: url(../images/common/ico_help.svg) no-repeat center/cover;}
 
 
@@ -405,15 +424,16 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 **********************************************/
 
 /* 연계신청 */
-.targetBody .targetOff { display: flex; align-items: center; justify-content: center; margin-top: 40px; padding: 32px 0; background-color: #f7f7f7; border-radius: 8px;}
+.targetBody .targetOff { display: flex; justify-content: center; margin-top: 40px; padding: 32px 0; background-color: #f7f7f7; border-radius: 8px;}
 .targetBody .targetOff .icon { width: 64px; height: 64px; background: url(../images/common/ico_notapplication.svg) no-repeat center/cover;}
 .targetBody .targetOff .textGroup { text-align: center;}
 .targetBody .targetOff .textGroup h4 span { font-size: 24px;}
 .targetBody .targetOff .textGroup h4 span.normal { font-size: 16px; font-weight: 400;}
-.targetBody .targetOff .textGroup h4 span.text { position: relative;}
+.targetBody .targetOff .textGroup h4 span.text { position: relative; margin: 0 -2px; padding: 0 2px;}
 .targetBody .targetOff .textGroup h4 span.text::before { content: ''; display: block; position: absolute; left: 0; bottom: 0; width: 100%; height: 14px; background-color: #333; opacity: 0.1;}
 .targetBody .targetOff .textGroup p { margin-top: 12px; font-size: 14px; color: #767676; line-height: 21px;}
-.targetBody .targetOn { display: flex; align-items: center; justify-content: center; margin-top: 40px; padding: 32px 0; background-color: #f4f7fc; border-radius: 8px;}
+.targetBody .targetOff .textGroup .btn { margin-top: 24px;}
+.targetBody .targetOn { display: flex; justify-content: center; margin-top: 40px; padding: 32px 0; background-color: #f4f7fc; border-radius: 8px;}
 .targetBody .targetOn .icon { width: 64px; height: 64px; background: url(../images/common/ico_application.svg) no-repeat center/cover;}
 .targetBody .targetOn .textGroup { text-align: center;}
 .targetBody .targetOn .textGroup h4 span { font-size: 24px;}
@@ -430,7 +450,6 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .appBody .dateGroup { margin-top: 9px; border-top: 2px solid #333; border-bottom: 1px solid #333;}
 .appBody .dateGroup .head { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #dbdbdb;}
 .appBody .dateGroup .head b { padding: 16px 24px; background-color: #f7f7f7;}
-.appBody .dateGroup .head .flexLeft .tooltipBtn { margin: -2px 4px 0 0;}
 .appBody .dateGroup .body { padding: 40px 0; text-align: center;} 
 .appBody .dateGroup .body p { line-height: 24px;}
 .appBody .dateGroup .body .in { margin-top: 24px;}
@@ -453,6 +472,23 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .proposalBody .sign2 { margin-top: 40px; padding-top: 40px; text-align: center; border-top: 1px solid #dbdbdb;}
 .proposalBody .text1 { margin-top: 24px; padding-left: 24px;}
 .proposalBody .text1 p { margin-top: 16px;}
+
+
+
+/* 청구
+**********************************************/
+
+/* 연계연금청구 */
+.proposalBody .subFill { display: flex; align-items: center; justify-content: space-between; margin-top: 24px;}
+.proposalBody .subFill >span { font-size: 14px;}
+
+
+
+
+
+
+
+
 
 
 

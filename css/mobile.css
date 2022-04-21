@@ -40,10 +40,13 @@
 
 /* 정렬 */
 .m_flexEnd { justify-content: flex-end !important;}
-
+.m_lh29 { line-height: 29px;}
 
 /* Margin */
-.pcmt40 { margin-top: 0;}
+#wrap .pcmt24 { margin-top: 0;}
+#wrap .pcmt40 { margin-top: 0;}
+#wrap .momt24 { margin-top: 24px;}
+#wrap .momt32 { margin-top: 32px;}
 
 /* hr */
 hr.space { margin: 32px -16px; height: 12px; background-color: #f7f7f7;}
@@ -54,6 +57,7 @@ hr.space.style2 { margin: 0 -16px;}
 .m_twin .button { flex-direction: column; flex: 1; height: inherit; padding: 16px 0; line-height: 24px;}
 .btnsGroup { padding-top: 24px;}
 .btnsGroup.m_bdt { border-top: 1px solid #333;}
+.btnsGroup.m_styleOther { margin: 0 -15px !important; padding: 24px 16px 0; border-top: 12px solid #f7f7f7;}
 
 /* searchBody */
 .searchBody { margin-top: 24px; padding: 0; border: solid 1px #dbdbdb; background-color: #fff;}
@@ -81,13 +85,14 @@ hr.space.style2 { margin: 0 -16px;}
 .m_tableBody { padding: 24px 16px; border: 1px solid #dbdbdb; border-radius: 8px;}
 .m_tableBody .mList >li ~ li { margin-top: 8px;}
 .m_tableBody .mList >li h6 { font-size: 14px;}
-.m_tableBody .mList >li .roundBoxGray { padding: 24px 16px; font-size: 14px; background-color: #f7f7f7; border-radius: 8px;}
-.m_tableBody .mList >li .roundBoxGray >.flexLeft { margin-top: 8px;}
-.m_tableBody .mList >li .roundBoxGray >.flexLeft .listDate { display: inline-block; font-size: 14px; line-height: 21px;}
-.m_tableBody .mList >li .roundBoxGray >.flexLeft .roundText { display: flex; align-items: center; justify-content: center; width: 64px; height: 24px; font-size: 12px; border: 1px solid #333; border-radius: 12px;}
-.m_tableBody .mList >li .roundBoxGray >.flexLeft .roundText.blueLine { color: #366cc3; border-color: #366cc3;}
-.m_tableBody .mList >li .roundBoxGray.sp { padding: 16px;}
-.m_tableBody .mList >li .roundBoxGray.mt { margin-top: 16px;}
+.m_tableBody .roundBoxGray { padding: 24px 16px; font-size: 14px; background-color: #f7f7f7; border-radius: 8px;}
+.m_tableBody .roundBoxGray >.flexLeft { margin-top: 8px;}
+.m_tableBody .roundBoxGray >.flexLeft .listDate { display: inline-block; font-size: 14px; line-height: 21px;}
+.m_tableBody .roundBoxGray >.flexLeft .roundText { display: flex; align-items: center; justify-content: center; width: 64px; height: 24px; font-size: 12px; border: 1px solid #333; border-radius: 12px;}
+.m_tableBody .roundBoxGray >.flexLeft .roundText.blueLine { color: #366cc3; border-color: #366cc3;}
+.m_tableBody .roundBoxGray >.flexLeft.mt0 { margin-top: 0;}
+.m_tableBody .roundBoxGray.sp { padding: 16px;}
+.m_tableBody .roundBoxGray.mt { margin-top: 16px;}
 .m_tableBody .mList >li .groupBox label { font-weight: 700;}
 .m_tableBody .mList >li.empty { text-align: center;}
 .m_tableBody .mList.mt { margin-top: 8px;}
@@ -99,6 +104,12 @@ hr.space.style2 { margin: 0 -16px;}
 .m_tableBody .msList li.block >.mt { margin-top: 8px;}
 .m_tableBody .msList li.lineBreak { margin-top: 16px; padding-top: 16px; border-top: 1px solid #dbdbdb;}
 .m_tableBody .msList.bdt { padding-top: 16px; border-top: 1px solid #dbdbdb;}
+.m_tableBody .msList.mt0 { margin-top: 0;}
+.m_tableBody .boxGray { display: flex; align-items: center; background-color: #f7f7f7;}
+.m_tableBody .boxGray b { font-size: 16px;}
+.m_tableBody .boxGray .num { position: relative; margin-left: 12px; padding-left: 12px; font-size: 16px;}
+.m_tableBody .boxGray .num::before { content: ''; display: block; position: absolute; left: 0; top: 0; width: 1px; height: 12px; background-color: #ccc;}
+
 .m_tableBody.mt { margin-top: 16px;}
 .m_tableBody.mt2 { margin-top: 24px;}
 .m_tableBody.noBorder { padding: 0; border: none;}
@@ -108,6 +119,7 @@ hr.space.style2 { margin: 0 -16px;}
 .mListMulti >li .roundBoxGray { padding: 24px 16px; font-size: 14px; background-color: #f7f7f7; border-radius: 8px;}
 .mListMulti >li .roundBoxGray >.flexLeft { margin-top: 8px;}
 .mListMulti >li .roundBoxGray >.flexLeft .listDate { display: inline-block; font-size: 14px; line-height: 21px;}
+.mListMulti >li .roundBoxGray >.flexLeft .listText { display: inline-block; font-size: 16px; line-height: 21px;}
 .mListMulti >li .roundBoxGray >.flexLeft .roundText { display: flex; align-items: center; justify-content: center; width: 64px; height: 24px; font-size: 12px; border: 1px solid #333; border-radius: 12px;}
 .mListMulti >li .roundBoxGray.sp { padding: 16px;}
 .mListMulti >li .roundBoxGray.mt { margin-top: 16px;}
@@ -184,6 +196,12 @@ hr.space.style2 { margin: 0 -16px;}
 .stepBody .stepBy li span.text { margin: 2px 0 0 0; line-height: 18px;}
 .stepBody .stepBy li ~ li::before { left: -21px;}
 
+.setpBodyStyle { padding-bottom: 50px;}
+.setpBodyStyle .stepByStyle li span.text { display: none;}
+.setpBodyStyle .stepByStyle li.active { margin: 0; padding: 0 8px;}
+.setpBodyStyle .stepByStyle li.active >span.text { display: block; position: absolute; left: 50%; bottom: -22px; width: max-content; transform: translateX(-50%);}
+.setpBodyStyle .line { left: 63px; right: 63px;}
+
 /* roundBox */
 .roundBox { margin-top: 24px;}
 .roundBox.m_marginDefault { margin-top: 0;}
@@ -192,9 +210,12 @@ hr.space.style2 { margin: 0 -16px;}
 .tooltipBtn i { width: 20px; height: 20px;}
 
 /* toggleBtn */
-.toggleBtn { overflow: hidden; padding: 10px;}
-.toggleBtn i { display: inline-block; width: 16px; height: 16px; text-indent: -99999px; vertical-align: middle; background: url(../images/common/ico_arrow_down.svg) no-repeat center/cover;}
-.toggleBtn.active i { transform: rotate(-180deg);}
+.toggleGroup { width: 100%; height: 64px;}
+.toggleGroup .defaultH5 { font-size: 19px;}
+.toggleGroup .toggleBtn { margin-right: -12px;}
+.toggleGroup .toggleBtn { overflow: hidden; padding: 10px;}
+.toggleGroup .toggleBtn i { display: inline-block; width: 16px; height: 16px; text-indent: -99999px; vertical-align: middle; background: url(../images/common/ico_arrow_down.svg) no-repeat center/cover;}
+.toggleGroup.active .toggleBtn i { transform: rotate(-180deg);}
 .targetHidden { display: none;}
 
 
@@ -203,10 +224,13 @@ hr.space.style2 { margin: 0 -16px;}
 
 /* 연계신청 */
 .targetBody .targetOff { flex-direction: column; margin-top: 24px; padding: 16px 0 24px;}
-.targetBody .targetOff .textGroup h4 { margin-top: 8px; line-height: 29px;}
-.targetBody .targetOff .textGroup h4 span.normal { display: block;}
-.targetBody .targetOff .textGroup h4 span.text { display: inline-block; font-size: 19px;}
+.targetBody .targetOff .icon { margin: 0 auto;}
+.targetBody .textGroup h4 { margin-top: 8px; font-weight: 400; line-height: 29px;}
+.targetBody .textGroup h4 span.normal { display: block;}
+.targetBody .textGroup h4 span.text { display: inline-block; font-size: 19px;}
+.targetBody .targetOff .textGroup .btn { margin-top: 16px;}
 .targetBody .targetOn { flex-direction: column; margin-top: 24px; padding: 16px 0 24px;}
+.targetBody .targetOn .icon { margin: 0 auto;}
 .targetBody .targetOn .textGroup h4 { margin-top: 8px;}
 .targetBody .targetOn .textGroup h4 span.text { font-size: 19px;}
 .targetBody .targetOn .textGroup .button { margin-top: 16px;}
@@ -226,9 +250,6 @@ hr.space.style2 { margin: 0 -16px;}
 .appBody .dateGroup .body .he select { flex: 1;}
 .appBody .target { margin-bottom: 32px;}
 
-.toggleGroup { height: 64px;}
-.toggleGroup .toggleBtn { margin-right: -12px;}
-
 /* 신청상태조회 */
 .proposalBody h4.deText { margin-top: 0; line-height: 36px;}
 .proposalBody .m_flexGroup { margin: 16px 0; padding: 16px; background-color: #f7f7f7; border-radius: 8px;}
@@ -239,6 +260,24 @@ hr.space.style2 { margin: 0 -16px;}
 .proposalBody .sign1 { margin-top: 32px; padding-top: 32px; border-top: 1px solid #dbdbdb;}
 .proposalBody .sign2 { margin-top: 32px; padding-top: 0; border-top: none;}
 .proposalBody .btnsGroup { margin-top: 32px;}
+
+
+
+/* 청구
+**********************************************/
+
+/* 연계연금청구 */
+.proposalBody .subFill { height: 51px; margin: 24px -16px 0; padding: 0 16px; background-color: #f7f7f7;}
+.proposalBody .subFill .defaultH4 { font-size: 16px;}
+
+
+
+
+
+
+
+
+
 
 
 
