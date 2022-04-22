@@ -1,0 +1,582 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<script src="../../include/head.js"></script> <!-- include: 공통 헤드 -->
+</head>
+
+<body>
+<div id="wrap">
+	<script src="../../include/header.js"></script> <!-- include: 공통 헤더 -->
+
+	<div class="container">
+		<div class="area">
+			<div class="wrap">
+				<div class="lnbBody">
+					<h2></h2>
+					<nav class="lnb">
+					</nav>
+				</div>
+
+				<div id="contentLink" class="contents">
+					<header class="contentsHeader">
+						<div class="title">
+							<h3>연계연금청구</h3>
+							<p>급여청구 신청 단계는 다음과 같습니다.</p>
+						</div>
+						<script src="../../include/location.js"></script> <!-- include: 공통 현재위치 -->
+					</header>
+
+					<div class="setpBodyStyle">
+						<ul class="stepByStyle">
+							<li>
+								<span class="iconRound bgBlue"><i></i></span>
+								<span class="text">청구인정보 확인</span>
+							</li>
+							<li>
+								<span class="iconRound bgBlue"><i></i></span>
+								<span class="text">지급계좌 확인</span>
+							</li>
+							<li>
+								<span class="iconRound bgBlue"><i></i></span>
+								<span class="text">연계노령청구 정보</span>
+							</li>
+							<li class="active">
+								<span class="invisible">현재 단계</span>
+								<span class="iconRound"><i></i></span>
+								<span class="text">연계퇴직청구 정보</span>
+							</li>
+							<li>
+								<span class="iconRound"><i></i></span>
+								<span class="text">청구신청 완료</span>
+							</li>
+						</ul>
+						<span class="line"></span>
+					</div>
+
+					<hr class="space style onlyMobile">
+
+					<div class="proposalBody">
+						<h4 class="deText pcmt40 momt32">연계노령퇴직연금 <span class="m_block">청구 신청서</span></h4>
+						<div class="subFill">
+							<h4 class="defaultH4">연계퇴직청구 정보</h4>
+							<span><span class="colorOrange">*</span> 필수 입력 항목</span>
+						</div>
+						
+						<div class="pcmt24 m_toggleArea">
+							<button class="flexLeft spaceBetween toggleGroup active" title="확장됨">
+								<b class="defaultH5">형벌사항</b>
+								<span class="toggleBtn onlyMobile"><i>형벌사항 토글</i></span>
+							</button>
+							<div class="target">
+								<!-- PC -->
+								<div class="onlyPC">
+									<div class="hTableBody">
+										<table>
+											<caption>형벌사항 : 형벌사항으로 구성</caption>
+											<colgroup>
+												<col style="width: 130px;">
+												<col>
+											</colgroup>
+											<tbody>
+												<tr>
+													<th scope="row" id="radioLabel1">형벌사항 <span class="colorOrange">*</span></th>
+													<td>
+														<ul class="groupBox flexLeft" role="radiogroup" aria-labelledby="radioLabel1">
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio1_1" name="testRadio1">
+																	<label for="testRadio1_1">있음</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio1_2" name="testRadio1">
+																	<label for="testRadio1_2">없음</label>
+																</div>
+															</li>
+														</ul>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<!-- //PC -->
+
+								<!-- Mobile -->
+								<div class="onlyMobile">
+									<ul class="m_hTableBody">
+										<li>
+											<label>형벌사항 <span class="colorOrange">*</span></label>
+											<div class="roundBoxGray">
+												<ul class="groupBox flexLeft">
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_testRadio1_1" name="m_testRadio1">
+															<label for="m_testRadio1_1">있음</label>
+														</div>
+													</li>
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_testRadio1_2" name="m_testRadio1">
+															<label for="m_testRadio1_2">없음</label>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<!-- //Mobile -->
+
+								<ul class="guideText mt">
+									<li>형벌사항은 연금기관에서 확인 후 문의 연락 드릴 수 있습니다.</li>
+								</ul>
+							</div>
+						</div>
+
+						<hr class="space style2 onlyMobile">
+
+						<div class="pcmt24 m_toggleArea">
+							<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+								<b class="defaultH5">대부사항</b>
+								<span class="toggleBtn onlyMobile"><i>대부사항 토글</i></span>
+							</button>
+							<div class="target targetHidden">
+								<!-- PC -->
+								<div class="onlyPC">
+									<div class="hTableBody">
+										<table>
+											<caption>대부사항 : 대부사항, 기관선택, 대부종류, 상환액, 상환방법, 분할상환, 할부기간으로 구성</caption>
+											<colgroup>
+												<col style="width: 130px;">
+												<col>
+											</colgroup>
+											<tbody>
+												<tr>
+													<th scope="row" id="radioLabel2">대부사항 <span class="colorOrange">*</span></th>
+													<td>
+														<ul class="groupBox flexLeft" role="radiogroup" aria-labelledby="radioLabel2">
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio2_1" name="testRadio2">
+																	<label for="testRadio2_1">있음</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio2_2" name="testRadio2">
+																	<label for="testRadio2_2">없음</label>
+																</div>
+															</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">기관선택 <span class="colorOrange">*</span></th>
+													<td>
+														<div class="mw200">
+															<select title="기관 선택">
+																<option>기관선택</option>
+															</select>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">대부종류 <span class="colorOrange">*</span></th>
+													<td>
+														<div class="mw200">
+															<select title="대부종류 선택">
+																<option>대부종류 선택</option>
+															</select>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">상환액 <span class="colorOrange">*</span></th>
+													<td>
+														<div class="mw200">
+															<input type="tel" title="상환액 입력" placeholder="상환액 입력"> <span class="other">원(이백만원)</span>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row" id="radioLabel3">상환방법 <span class="colorOrange">*</span></th>
+													<td>
+														<ul class="groupBox flexLeft" role="radiogroup" aria-labelledby="radioLabel3">
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio3_1" name="testRadio3">
+																	<label for="testRadio3_1">일시</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio3_2" name="testRadio3">
+																	<label for="testRadio3_2">분할</label>
+																</div>
+															</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row" id="radioLabel4">분할상환 <span class="colorOrange">*</span></th>
+													<td>
+														<ul class="groupBox flexLeft" role="radiogroup" aria-labelledby="radioLabel4">
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio4_1" name="testRadio4">
+																	<label for="testRadio4_1">전액</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio4_2" name="testRadio4">
+																	<label for="testRadio4_2">일부</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio4_3" name="testRadio4">
+																	<label for="testRadio4_3">할부</label>
+																</div>
+															</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row" id="radioLabel5">할부기간</th>
+													<td>
+														<ul class="groupBox flexLeft" role="radiogroup" aria-labelledby="radioLabel5">
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio5_1" name="testRadio5">
+																	<label for="testRadio5_1">1년</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio5_2" name="testRadio5">
+																	<label for="testRadio5_2">2년</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio5_3" name="testRadio5">
+																	<label for="testRadio5_3">3년</label>
+																</div>
+															</li>
+														</ul>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<!-- //PC -->
+
+								<!-- Mobile -->
+								<div class="onlyMobile">
+									<ul class="m_hTableBody">
+										<li>
+											<label>대부사항 <span class="colorOrange">*</span></label>
+											<div class="roundBoxGray">
+												<ul class="groupBox flexLeft">
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_testRadio2_1" name="m_testRadio2">
+															<label for="m_testRadio2_1">있음</label>
+														</div>
+													</li>
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_testRadio2_2" name="m_testRadio2">
+															<label for="m_testRadio2_2">없음</label>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<label>기관선택 <span class="colorOrange">*</span></label>
+											<div class="default">
+												<select title="기관 선택">
+													<option>기관선택</option>
+												</select>
+											</div>
+										</li>
+										<li>
+											<label>대부종류 <span class="colorOrange">*</span></label>
+											<div class="default">
+												<select title="대부종류 선택">
+													<option>대부종류 선택</option>
+												</select>
+											</div>
+										</li>
+										<li>
+											<label>상환액 <span class="colorOrange">*</span></label>
+											<div>
+												<div class="defaultBtn">
+													<input type="tel" title="상환액 입력" placeholder="상환액 입력">
+													<span class="other">원</span>
+												</div>
+												<div class="momt8">(이백만원)</div>
+											</div>
+										</li>
+										<li>
+											<label>상환방법 <span class="colorOrange">*</span></label>
+											<div class="roundBoxGray">
+												<ul class="groupBox flexLeft">
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_testRadio3_1" name="m_testRadio3">
+															<label for="m_testRadio3_1">일시</label>
+														</div>
+													</li>
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_testRadio3_2" name="m_testRadio3">
+															<label for="m_testRadio3_2">분할</label>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<label>분할상환 <span class="colorOrange">*</span></label>
+											<div class="roundBoxGray">
+												<ul class="groupBox flexLeft">
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_testRadio4_1" name="m_testRadio4">
+															<label for="m_testRadio4_1">전액</label>
+														</div>
+													</li>
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_testRadio4_2" name="m_testRadio4">
+															<label for="m_testRadio4_2">일부</label>
+														</div>
+													</li>
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_testRadio4_3" name="m_testRadio4">
+															<label for="m_testRadio4_3">할부</label>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<label>할부기간</label>
+											<div class="roundBoxGray">
+												<ul class="groupBox flexLeft">
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_testRadio5_1" name="m_testRadio5">
+															<label for="m_testRadio5_1">1년</label>
+														</div>
+													</li>
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_testRadio5_2" name="m_testRadio5">
+															<label for="m_testRadio5_2">2년</label>
+														</div>
+													</li>
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_testRadio5_3" name="m_testRadio5">
+															<label for="m_testRadio5_3">3년</label>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<!-- //Mobile -->
+
+								<ul class="guideText mt">
+									<li>"지급계좌"란에는 지급받으려는 금융기관의 계좌번호를 적되, 반드시 입출금이 가능한 계좌여야 합니다.</li>
+									<li>공무원연금에서 대부금을 미상환한 경우의 연금 지급계좌는 대부 금융기관과 같아야 합니다.</li>
+									<li>입출금이 가능한 본인 명의의 계좌만 등록 가능합니다.</li>
+								</ul>
+							</div>
+						</div>
+
+						<hr class="space style2 onlyMobile">
+
+						<div class="pcmt24 m_toggleArea">
+							<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+								<b class="defaultH5">퇴직사유</b>
+								<span class="toggleBtn onlyMobile"><i>퇴직사유 토글</i></span>
+							</button>
+							<div class="target targetHidden">
+								<!-- PC -->
+								<div class="onlyPC">
+									<div class="hTableBody">
+										<table>
+											<caption>퇴직사유 : 해당 퇴직사유로 구성</caption>
+											<colgroup>
+												<col style="width: 130px;">
+												<col>
+											</colgroup>
+											<tbody>
+												<tr>
+													<th scope="row" id="radioLabel6">해당<br> 퇴직사유</th>
+													<td>
+														<ul class="groupBox flexLeft flexWrap" role="radiogroup" aria-labelledby="radioLabel6">
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio6_1" name="testRadio6">
+																	<label for="testRadio6_1">의원면직</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio6_2" name="testRadio6">
+																	<label for="testRadio6_2">명예퇴직</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio6_3" name="testRadio6">
+																	<label for="testRadio6_3">정년퇴직</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio6_4" name="testRadio6">
+																	<label for="testRadio6_4">당연퇴직</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio6_5" name="testRadio6">
+																	<label for="testRadio6_5">직권면직</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio6_6" name="testRadio6">
+																	<label for="testRadio6_6">해임</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio6_7" name="testRadio6">
+																	<label for="testRadio6_7">파면</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio6_8" name="testRadio6">
+																	<label for="testRadio6_8">복무기간 만료</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio6_9" name="testRadio6">
+																	<label for="testRadio6_9">기타</label>
+																</div>
+															</li>
+														</ul>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<!-- //PC -->
+
+								<!-- Mobile -->
+								<div class="onlyMobile">
+									<ul class="m_hTableBody">
+										<li>
+											<label>대부사항 <span class="colorOrange">*</span></label>
+											<div class="roundBoxGray">
+												<ul class="groupBox flexLeft flexWrap">
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_testRadio6_1" name="m_testRadio6">
+															<label for="m_testRadio6_1">의원면직</label>
+														</div>
+													</li>
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_testRadio6_2" name="m_testRadio6">
+															<label for="m_testRadio6_2">명예퇴직</label>
+														</div>
+													</li>
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_testRadio6_3" name="m_testRadio6">
+															<label for="m_testRadio6_3">정년퇴직</label>
+														</div>
+													</li>
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_testRadio6_4" name="m_testRadio6">
+															<label for="m_testRadio6_4">당연퇴직</label>
+														</div>
+													</li>
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_testRadio6_5" name="m_testRadio6">
+															<label for="m_testRadio6_5">직권면직</label>
+														</div>
+													</li>
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_testRadio6_6" name="m_testRadio6">
+															<label for="m_testRadio6_6">해임</label>
+														</div>
+													</li>
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_testRadio6_7" name="m_testRadio6">
+															<label for="m_testRadio6_7">파면</label>
+														</div>
+													</li>
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_testRadio6_8" name="m_testRadio6">
+															<label for="m_testRadio6_8">복무기간 만료</label>
+														</div>
+													</li>
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_testRadio6_9" name="m_testRadio6">
+															<label for="m_testRadio6_9">기타</label>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<!-- //Mobile -->
+							</div>
+						</div>
+
+						<div class="btnsGroup m_styleOther flexEnd bdt mt">
+							<button type="button" class="button h48 gray" onclick="location.href='HO_04_01_02_02_03.html'">이전</button>
+							<button type="button" class="button h48 blue" onclick="location.href='HO_04_01_02_02_05.html'">다음</button>
+						</div>
+					</div>
+					
+					<script src="../../include/evaluation.js"></script> <!-- include: 공통 평가 -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="../../include/footer.js"></script> <!-- include: 공통 푸터 -->
+
+	<script>
+		var depth = [4, 1]; /* 현재메뉴 활성화 용: gnb에 있는 data-menu 값과 일치하게 해주세요. */
+	</script>
+</div>
+</body>
+</html>

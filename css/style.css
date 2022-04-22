@@ -311,7 +311,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 
 /* hTableBody */
 .hTableBody { overflow: hidden; margin-top: 8px; border-top: 2px solid #333;}
-.hTableBody table th { padding: 23px 0 23px 24px; text-align: left; border-bottom: 1px solid #dbdbdb; background-color: #f7f7f7;}
+.hTableBody table th { padding: 23px 0 23px 24px; text-align: left; line-height: 24px; border-bottom: 1px solid #dbdbdb; background-color: #f7f7f7;}
 .hTableBody table td { padding: 12px 15px; border-left: 1px solid #dbdbdb; border-bottom: 1px solid #dbdbdb;}
 .hTableBody table td .post input { width: 200px;}
 .hTableBody table td .post button { margin-left: 4px;}
@@ -331,6 +331,10 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .hTableBody table td .spcemt { margin-top: 8px;}
 .hTableBody table td .defaultBtn input { width: 400px;}
 .hTableBody table td .defaultBtn .button { margin-left: 4px;}
+.hTableBody table td .mw200 { display: flex; align-items: center;}
+.hTableBody table td .mw200 input,
+.hTableBody table td .mw200 select { width: 200px;}
+.hTableBody table td .mw200 .other { margin-left: 4px;}
 .hTableBody table td .mw404 { max-width: 404px;}
 .hTableBody table td .mw528 { max-width: 528px;}
 .hTableBody table td .defaultBtn { display: flex; align-items: center;}
