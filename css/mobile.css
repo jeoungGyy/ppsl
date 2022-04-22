@@ -3,9 +3,9 @@
 /* 공통 구조
 **********************************************/
 
-.onlyPC { display: none;}
-.onlyMobile { display: block;}
-.mobileVisible { display: none;}
+#wrap .onlyPC { display: none;}
+#wrap .onlyMobile { display: block;}
+#wrap .mobileVisible { display: none;}
 
 /* header */
 /* .moHeader .global { display: flex; align-items: center; justify-content: space-between; height: 72px; padding: 0 16px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);}
@@ -45,6 +45,7 @@
 /* Margin */
 #wrap .pcmt24 { margin-top: 0;}
 #wrap .pcmt40 { margin-top: 0;}
+#wrap .momt8 { margin-top: 8px;}
 #wrap .momt24 { margin-top: 24px;}
 #wrap .momt32 { margin-top: 32px;}
 
@@ -96,15 +97,15 @@ hr.space.style2 { margin: 0 -16px;}
 .m_tableBody .mList >li .groupBox label { font-weight: 700;}
 .m_tableBody .mList >li.empty { text-align: center;}
 .m_tableBody .mList.mt { margin-top: 8px;}
-.m_tableBody .msList { margin-top: 16px; font-size: 14px;}
-.m_tableBody .msList li { display: flex; align-items: center; justify-content: space-between;}
-.m_tableBody .msList li ~ li { margin-top: 12px;}
-.m_tableBody .msList li.block { display: block;}
-.m_tableBody .msList li.block >* { display: block;}
-.m_tableBody .msList li.block >.mt { margin-top: 8px;}
-.m_tableBody .msList li.lineBreak { margin-top: 16px; padding-top: 16px; border-top: 1px solid #dbdbdb;}
-.m_tableBody .msList.bdt { padding-top: 16px; border-top: 1px solid #dbdbdb;}
-.m_tableBody .msList.mt0 { margin-top: 0;}
+.msList { margin-top: 16px; font-size: 14px;}
+.msList li { display: flex; align-items: center; justify-content: space-between;}
+.msList li ~ li { margin-top: 12px;}
+.msList li.block { display: block;}
+.msList li.block >* { display: block;}
+.msList li.block >.mt { margin-top: 8px;}
+.msList li.lineBreak { margin-top: 16px; padding-top: 16px; border-top: 1px solid #dbdbdb;}
+.msList.bdt { padding-top: 16px; border-top: 1px solid #dbdbdb;}
+.msList.mt0 { margin-top: 0;}
 .m_tableBody .boxGray { display: flex; align-items: center; background-color: #f7f7f7;}
 .m_tableBody .boxGray b { font-size: 16px;}
 .m_tableBody .boxGray .num { position: relative; margin-left: 12px; padding-left: 12px; font-size: 16px;}
@@ -148,12 +149,16 @@ hr.space.style2 { margin: 0 -16px;}
 
 /* m_hTableBody */
 .m_hTableBody >li ~ li { margin-top: 24px;}
-.m_hTableBody >li >label { display: block; margin-bottom: 8px; font-size: 14px; font-weight: 700;}
+.m_hTableBody >li >label,
+.m_hTableBody >li >div >label { display: block; margin-bottom: 8px; font-size: 14px; font-weight: 700;}
+.m_hTableBody >li .default input[type=text],
+.m_hTableBody >li .default input[type=tel],
+.m_hTableBody >li .default select { width: 100%;}
 .m_hTableBody >li .boxGray { display: flex; align-items: center; height: 67px; padding-left: 16px; background-color: #f7f7f7; border-radius: 8px;}
 .m_hTableBody >li .boxGray .num { position: relative; margin-left: 12px; padding-left: 12px; font-size: 14px;}
 .m_hTableBody >li .boxGray .num::before { content: ''; display: block; position: absolute; left: 0; top: 0; width: 1px; height: 12px; background-color: #ccc;}
 .m_hTableBody >li .roundBoxGray { padding: 16px; background-color: #f7f7f7; border-radius: 8px;}
-.m_hTableBody >li .roundBoxGray li ~ li { margin-top: 16px;}
+.m_hTableBody >li .roundBoxGray.block li ~ li { margin-top: 16px;}
 .m_hTableBody >li .post input { flex: 1; width: 100%; margin-right: 4px;}
 .m_hTableBody >li .address input { display: block; width: 100%; margin-top: 8px;}
 .m_hTableBody >li .phone { gap: 17px;}
@@ -174,9 +179,28 @@ hr.space.style2 { margin: 0 -16px;}
 .m_hTableBody >li .twin select,
 .m_hTableBody >li .twin input { width: 50%; margin: 0 2px;}
 .m_hTableBody >li .spcemt { margin-top: 8px;}
-.m_hTableBody >li .defaultBtn input { width: 100%;}
-.m_hTableBody >li .defaultBtn button { margin-top: 8px;}
+.m_hTableBody >li .blockBtn input { width: 100%;}
+.m_hTableBody >li .blockBtn button { margin-top: 8px;}
+.m_hTableBody >li .defaultBtn { display: flex; align-items: center;}
+.m_hTableBody >li .defaultBtn input { flex: 1;}
+.m_hTableBody >li .defaultBtn .other { margin-left: 4px;}
 
+/* m_xBtnBody */
+.m_xBtnBody { margin-top: 8px;}
+.m_xBtnBody >li { overflow: hidden; position: relative; padding: 24px 0 0; border: 1px solid #dbdbdb; border-radius: 8px;}
+.m_xBtnBody >li ~ li { margin-top: 16px;}
+.m_xBtnBody >li .bottomStyle { margin-top: 24px; border-top: 1px solid #dbdbdb;}
+.m_xBtnBody >li .bottomStyle .text { display: flex; align-items: center; justify-content: center; width: 100%; height: 40px; font-size: 16px; background-color: #f7f7f7;}
+.m_xBtnBody >li .bottomStyle .m_button { display: flex; align-items: center; justify-content: center; width: 100%; height: 40px; font-size: 16px;}
+.m_xBtnBody >li .bottomStyle .m_button[disabled] { color: #959595; background-color: #f7f7f7;}
+.m_xBtnBody >li .listRemove { position: absolute; right: 8px; top: 8px;}
+.m_xBtnBody >li .listRemove i { display: block; width: 24px; height: 24px; text-indent: -99999px; background: url(../images/common/ico_close.svg) no-repeat center/cover;}
+.m_xBtnBody >li >ul { padding: 0 16px;}
+.m_xBtnBody.defaultPadding >li { padding-bottom: 24px;}
+.m_xBtnBody.mt { margin-top: 16px;}
+
+/* jQuery 달력 */
+.calendarBody button { width: 40px; height: 40px;}
 
 /* viewBody */
 .viewBody { margin-top: 24px; padding-top: 24px;}
@@ -278,10 +302,10 @@ hr.space.style2 { margin: 0 -16px;}
 .proposalBody .subFill { height: 51px; margin: 24px -16px 0; padding: 0 16px; background-color: #f7f7f7;}
 .proposalBody .subFill .defaultH4 { font-size: 16px;}
 .etcCheckbox { position: inherit; right: inherit; top: inherit; margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid #dbdbdb;}
-
-
-
-
+.listAdd button { justify-content: center; width: 100%; padding-top: 16px;}
+.etcBleuBox { margin-top: 0;}
+.listDownload { display: flex; align-items: center; justify-content: space-between; height: 51px; margin-top: 24px; padding: 0 16px; background-color: #f7f7f7; border-radius: 8px;}
+.listDownload .icon { display: block; width: 24px; height: 24px; background: url(../images/common/ico_download2.svg) no-repeat center/cover;}
 
 
 

@@ -114,17 +114,21 @@ body.noScroll { overflow: hidden;}
 .textRight { text-align:right !important;}
 .flexLeft { display: flex;}
 .flexLeft .subDate { margin-left: 16px; font-size: 14px; color: #767676;}
-.flexLeft.flexEnd { align-items: flex-end;}
+.flexEnd { align-items: flex-end;}
 .alignCenter { align-items: center;}
 .spaceBetween { align-items: center; justify-content: space-between;}
+.justifyRight { justify-content: flex-end;}
+.justifyContent { justify-content: center;}
+.flexWrap { flex-wrap: wrap;}
+
 
 /* 글꼴 */
 .fontMontserrat { font-family: 'Montserrat', "NanumBarunGothic";}
 .fontEliceDigital { font-family: 'EliceDigitalBaeum-Bd', "NanumBarunGothic";}
 .wNormal { font-weight: 400;}
 .subText { margin-top: 8px; font-size: 14px;}
-.requireText { margin-top: 5px; font-size: 12px; color: #767676;}
-.requireText i { display: inline-block; width: 16px; height: 16px; margin: -2px 4px 0 0; vertical-align: middle;}
+.requireText { margin-top: 5px; font-size: 12px; color: #767676; text-align: left; line-height: 18px;}
+.requireText i { display: inline-block; width: 16px; height: 16px; margin: -2px 0 0 0; vertical-align: middle;}
 .requireText i { background: url(../images/common/ico_caption.svg) no-repeat center/cover;}
 .requireText.error { color: #ee0700;}
 .requireText.error i { background: url(../images/common/ico_error.svg) no-repeat center/cover;}
@@ -158,7 +162,7 @@ hr.space { margin: 40px 0; height: 1px; background-color: #dbdbdb;}
 .button.h40 { min-width: 80px; min-height: 40px;}
 .button.h32 { min-height: 32px; font-size: 14px;}
 .button.h24 { min-height: 24px; font-size: 14px;}
-.button[disabled] { color: #959595 !important; border-color: #f7f7f7 !important; background-color: #f7f7f7 !important; cursor: not-allowed;}
+.button[disabled] { color: #959595 !important; border-color: #dbdbdb !important; background-color: #f7f7f7 !important; cursor: not-allowed;}
 .button.black { color: #fff; background-color: #333;}
 .button.black:hover, 
 .button.black:active { background-color: #000;}
@@ -174,10 +178,12 @@ hr.space { margin: 40px 0; height: 1px; background-color: #dbdbdb;}
 
 .button .dsBlock { vertical-align: middle; line-height: 24px;}
 .button .arrowRight { display: inline-block; width: 24px; height: 24px; margin-left: 4px; background: url(../images/common/ico_arrow_line_w.svg) no-repeat center/cover;}
+.button .icoDownload2 { display: inline-block; width: 16px; height: 16px; margin-left: 4px; background: url(../images/common/ico_download2.svg) no-repeat center/cover;}
 
 .lineButton { display: inline-flex; align-items: center;}
-.lineButton span { border-bottom: 1px solid #333;}
-.lineButton .arrowRight { width: 16px; height: 16px; margin-left: 4px; background: url(../images/common/ico_arrow_right.svg) no-repeat center/cover;}
+.lineButton span { font-size: 14px; border-bottom: 1px solid #333;}
+.lineButton .arrowRight { width: 16px; height: 16px; margin: 0 0 0 4px; background: url(../images/common/ico_arrow_right.svg) no-repeat center/cover;}
+.lineButton .icoPlus { width: 16px; height: 16px; margin: -1px 0 0 4px; background: url(../images/common/ico_plus.svg) no-repeat center/cover;}
 .lineButton:hover { color: #366cc3;}
 .lineButton:hover span { border-color: #366cc3;}
 .lineButton:hover .arrowRight { background: url(../images/common/ico_arrow_right_hover.svg) no-repeat center/cover;}
@@ -198,13 +204,16 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 
 /* 체크박스, 라디오 박스 */
 .icheckbox,
-.iradio { position:absolute; top: 0; left: 0; min-width: 20px; min-height: 20px;}
+.iradio { position: absolute; top: -1px; left: 0; min-width: 20px; min-height: 20px; border: 1px solid #a5a5a5; background-color: #fff; border-radius: 50%; transition: all .2s ease-in-out;}
 .focus { outline: 2px solid #000 !important; border-radius: 2px;}
 .groupBox.flexLeft li ~ li { margin-left: 24px;}
+.groupBox.flexLeft.flexWrap { margin-top: -16px;}
+.groupBox.flexLeft.flexWrap li { margin: 16px 24px 0 0;}
+.groupBox.single { position: relative; display: inline-block; width: 20px; height: 20px; cursor: pointer;}
+.groupBox.single .icheckbox { top: 5px;}
 
 .checkboxBox { display: flex; align-items: center; position: relative; height: 20px; padding-left: 28px;}
 .checkboxBox label { cursor: pointer;}
-.icheckbox { position: absolute; top: -1px; left: 0; width: 20px; height: 20px; border: 1px solid #a5a5a5; border-radius: 50%; transition: all .2s ease-in-out;}
 .icheckbox::before { content: ''; display: block; position: absolute; left: 4px; top: 5px; width: 11.11px; height: 7.8px; background: url(../images/common/ico_checkbox.svg) no-repeat center/cover;}
 .icheckbox input { margin: 0; width: 20px; height: 20px;}
 .icheckbox.checked { border-color: #366cc3; background-color: #366cc3;}
@@ -214,7 +223,6 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 
 .radioBox { display: flex; align-items: center; position: relative; height: 20px; padding-left: 28px;}
 .radioBox label { cursor: pointer;}
-.iradio { position: absolute; top: -1px; left: 0; width: 20px; height: 20px; border: 1px solid #a5a5a5; background-color: #fff; border-radius: 50%; transition: all .2s ease-in-out;}
 .iradio::before { content: ''; position: absolute; left: 3px; top: 3px; width: 12px; height: 12px; border-radius: 50%; transition: all .2s ease-in-out;}
 .iradio input { margin: 0; width: 20px; height: 20px;}
 .iradio.checked { border-color: #366cc3;}
@@ -274,7 +282,10 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .tableBody table tr:hover td { background-color: #f7f7f7;}
 .tableBody table td a { text-align: left; line-height: 24px;}
 .tableBody table td a:hover span { border-bottom: 1px solid #333;}
-.tableBody table td .groupBox { position: relative; width: 20px; height: 20px; margin: 0 auto; cursor: pointer;}
+.tableBody table td input[type=text],
+.tableBody table td input[type=tel],
+.tableBody table td select { width: 100%; height: 32px; font-size: 14px;}
+.tableBody table td select { background-position: right 16px top 7px;}
 .tableBody table td .block { display: block; text-align: left;}
 .tableBody table td.empty { padding: 40px 0;}
 .tableBody table tr.off { background-color: #f7f7f7;}
@@ -286,11 +297,17 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .tableBody table td table td { padding: 10px 13px;}
 .tableBody table td table td input[type=text],
 .tableBody table td table td select { width: 100%;}
+.tableBody table.vaTop td { vertical-align: top;}
 .tableBody a .new { display: inline-flex; justify-content: center; align-items: center; width: 28px; height: 16px; margin: -2px 0 0 4px; font-size: 8px; font-weight: 700; font-style: normal; color: #ee0700; vertical-align: middle; border: 1px solid #ee0700;}
 .tableBody .fix { display: inline-block; width: 24px; height: 24px; margin-top: -1px; text-indent: -99999px; vertical-align: middle; background: url(../images/common/ico_notice.svg) no-repeat center/cover;}
 .tableBody .file { display: inline-block; width: 24px; height: 24px; text-indent: -99999px; background: url(../images/common/ico_attach.svg) no-repeat center/cover;}
 .tableBody.mt { margin-top: 40px;}
 .tableBody.mt2 { margin-top: 16px;}
+.tableBody.vaTop table td { vertical-align: top;}
+.tableBody.vaTop table td .groupBox { padding-top: 6px;}
+.tableBody.padding12 table td { padding: 12px;}
+.tableFooterControl { height: 48px; padding-right: 12px; background-color: #f7f7f7;}
+.tableFooterControl button ~ button { margin-left: 8px;}
 
 /* hTableBody */
 .hTableBody { overflow: hidden; margin-top: 8px; border-top: 2px solid #333;}
@@ -315,16 +332,26 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .hTableBody table td .defaultBtn input { width: 400px;}
 .hTableBody table td .defaultBtn .button { margin-left: 4px;}
 .hTableBody table td .mw404 { max-width: 404px;}
+.hTableBody table td .mw528 { max-width: 528px;}
+.hTableBody table td .defaultBtn { display: flex; align-items: center;}
+.hTableBody table td .defaultBtn input { flex: 1;}
 
 /* whTableBody */
 .whTableBody { overflow: hidden; border-top: 2px solid #333;}
 .whTableBody table { width: calc(100% + 1px); margin-left: -1px;}
 .whTableBody table th { padding: 24px 0; line-height: 24px; border-left: 1px solid #dbdbdb; border-bottom: 1px solid #dbdbdb; background-color: #f7f7f7;}
 .whTableBody table td { padding: 13px 16px; line-height: 24px; border-left: 1px solid #dbdbdb; border-bottom: 1px solid #dbdbdb;}
+.whTableBody table td input[type=text],
+.whTableBody table td input[type=tel] { height: 32px;}
 .whTableBody table td .in  span { display: block;}
 .whTableBody table td .in  span ~ span { margin-top: 8px;}
+.whTableBody table td .defaultBtn { display: flex; align-items: center;}
+.whTableBody table td .defaultBtn input { flex: 1;}
+.whTableBody table td .defaultBtn .other { min-width: 37px; margin-left: 4px; text-align: right;}
 .whTableBody table td.sameTh { font-weight: 700; text-align: center; background-color: #f7f7f7;}
 .whTableBody.mt { margin-top: 24px;}
+.whTableBody.mt2 { margin-top: 8px;}
+.whTableBody.padding16 table th { padding: 16px 0;}
 
 /* pageNumber */
 .pageNumber { display: flex; align-items: center; justify-content: center; margin-top: 32px;}
@@ -336,6 +363,14 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .pageNumber .prev i { background: url(../images/common/ico_arrow_left.svg) no-repeat center/cover;}
 .pageNumber .next i { background: url(../images/common/ico_arrow_right.svg) no-repeat center/cover;}
 .pageNumber .last i { background: url(../images/common/ico_arrow_right_double.svg) no-repeat center/cover;}
+
+/* jQuery 달력 */
+.calendarBody { display: flex; align-items: center;}
+.calendarBody input { flex: 1;}
+.calendarBody button { display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; text-indent: -99999px; border: 1px solid #dbdbdb; border-left: none;}
+.calendarBody button::after { content: ''; display: block; width: 16px; height: 16px; margin-left: 1px; background: url(../images/common/ico_calendar.svg) no-repeat center/cover;}
+.ui-datepicker { background-color: #fff;}
+
 
 /* viewBody */
 .viewBody { margin-top: 40px; padding-top: 40px; border-top: 2px solid #333;}
@@ -501,8 +536,8 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .proposalBody .subFill { display: flex; align-items: center; justify-content: space-between; margin-top: 24px;}
 .proposalBody .subFill >span { font-size: 14px;}
 .etcCheckbox { position: absolute; right: 0; top: -27px;}
-
-
+.etcBleuBox { margin-top: 8px; padding: 24px; background-color: #f4f7fc; border-radius: 8px;}
+.etcBleuBox p { margin-top: 8px; font-size: 14px; line-height: 24px;}
 
 
 

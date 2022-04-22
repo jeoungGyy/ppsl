@@ -33,12 +33,12 @@
 								<span class="iconRound bgBlue"><i></i></span>
 								<span class="text">청구인정보 확인</span>
 							</li>
-							<li class="active">
-								<span class="invisible">현재 단계</span>
-								<span class="iconRound"><i></i></span>
+							<li>
+								<span class="iconRound bgBlue"><i></i></span>
 								<span class="text">지급계좌 확인</span>
 							</li>
-							<li>
+							<li class="active">
+								<span class="invisible">현재 단계</span>
 								<span class="iconRound"><i></i></span>
 								<span class="text">연계노령청구 정보</span>
 							</li>
@@ -59,64 +59,82 @@
 					<div class="proposalBody">
 						<h4 class="deText pcmt40 momt32">연계노령퇴직연금 <span class="m_block">청구 신청서</span></h4>
 						<div class="subFill">
-							<h4 class="defaultH4">지급계좌 확인</h4>
+							<h4 class="defaultH4">연계노령청구 정보</h4>
 							<span><span class="colorOrange">*</span> 필수 입력 항목</span>
 						</div>
 						
 						<div class="pcmt24 m_toggleArea">
 							<button class="flexLeft spaceBetween toggleGroup active" title="확장됨">
-								<b class="defaultH5">연계노령연금 지급계좌</b>
-								<sapn class="toggleBtn onlyMobile"><i>연계노령연금 지급계좌 토글</i></sapn>
+								<b class="defaultH5">소득</b>
+								<span class="toggleBtn onlyMobile"><i>소득 토글</i></span>
 							</button>
 							<div class="target">
 								<!-- PC -->
 								<div class="onlyPC">
 									<div class="hTableBody">
 										<table>
-											<caption>연계노령연금 지급계좌 : 계좌구분, 계좌정보로 구성</caption>
+											<caption>소득 : 종사여부, 소득종류, 월평균 소득금액로 구성</caption>
 											<colgroup>
 												<col style="width: 170px;">
 												<col>
 											</colgroup>
 											<tbody>
 												<tr>
-													<th scope="row">계좌구분 <span class="colorOrange">*</span></th>
+													<th scope="row">종사여부 <span class="colorOrange">*</span></th>
 													<td>
 														<ul class="groupBox flexLeft">
 															<li>
 																<div class="radioBox">
-																	<input type="radio" id="testRadio1" name="testRadio">
-																	<label for="testRadio1">일반계좌</label>
+																	<input type="radio" id="testRadio1_1" name="testRadio1" required>
+																	<label for="testRadio1_1">종사</label>
 																</div>
 															</li>
 															<li>
 																<div class="radioBox">
-																	<input type="radio" id="testRadio2" name="testRadio">
-																	<label for="testRadio2">국민연금 안심통장</label>
-																	<button type="button" class="tooltipBtn" aria-describedby="tooltip1"><i class="icon">도움말</i></button>
+																	<input type="radio" id="testRadio1_2" name="testRadio1" required>
+																	<label for="testRadio1_2">비종사</label>
 																</div>
 															</li>
 														</ul>
 													</td>
 												</tr>
 												<tr>
-													<th scope="row">계좌정보 <span class="colorOrange">*</span></th>
+													<th scope="row">소득종류 <span class="colorOrange">*</span></th>
 													<td>
-														<div class="twin mw404">
-															<select title="금융기관 선택">
-																<option>금융기관</option>
-															</select>
-															<input type="text" title="예금주 입력" placeholder="예금주를 입력해주세요">
+														<ul class="groupBox flexLeft">
+															<li>
+																<div class="checkboxBox">
+																	<input type="checkbox" id="testCheckbox1_1" name="testCheckbox1" required>
+																	<label for="testCheckbox1_1">근로소득</label>
+																</div>
+															</li>
+															<li>
+																<div class="checkboxBox">
+																	<input type="checkbox" id="testCheckbox1_2" name="testCheckbox1" required>
+																	<label for="testCheckbox1_2">사업소득</label>
+																</div>
+															</li>
+															<li>
+																<div class="checkboxBox">
+																	<input type="checkbox" id="testCheckbox1_3" name="testCheckbox1" required>
+																	<label for="testCheckbox1_3">부동산임대 소득</label>
+																</div>
+															</li>
+														</ul>
+														<div class="requireText">
+															<i></i>
+															<span>소득 종사일 경우 해당하는 종류를 선택 해 주세요</span>
 														</div>
-														<div class="spcemt">
-															<div class="defaultBtn">
-																<input type="text" title="계좌번호 입력" placeholder="계좌번호를 입력해주세요">
-																<button type="button" class="button h40 lineBlack">계좌정보 확인</button>
-															</div>
-															<div class="requireText">
-																<i></i>
-																<span>“-” 필수입력 예)123-456-789-01</span>
-															</div>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">월평균 소득금액 <span class="colorOrange">*</span></th>
+													<td>
+														<input type="tel" title="월평균 소득액 입력" required placeholder="월평균 소득액 입력">
+														원(이백만원)
+														<div class="requireText error">
+															<i></i>
+															<span>월평균 소득금액을 입력해주세요</span>
 														</div>
 													</td>
 												</tr>
@@ -130,42 +148,65 @@
 								<div class="onlyMobile">
 									<ul class="m_hTableBody">
 										<li>
-											<label>계좌구분 <span class="colorOrange">*</span></label>
+											<label>종사여부 <span class="colorOrange">*</span></label>
 											<div class="roundBoxGray">
-												<ul class="groupBox">
+												<ul class="groupBox flexLeft">
 													<li>
 														<div class="radioBox">
-															<input type="radio" id="m_testRadio1" name="m_testRadio">
-															<label for="m_testRadio1">일반계좌</label>
+															<input type="radio" id="m_testRadio1_1" name="m_testRadio1" required>
+															<label for="m_testRadio1_1">종사</label>
 														</div>
 													</li>
 													<li>
 														<div class="radioBox">
-															<input type="radio" id="m_testRadio2" name="m_testRadio">
-															<label for="m_testRadio2">국민연금 안심통장</label>
-															<button type="button" class="tooltipBtn" aria-describedby="tooltip1"><i class="icon">도움말</i></button>
+															<input type="radio" id="m_testRadio1_2" name="m_testRadio1" required>
+															<label for="m_testRadio1_2">비종사</label>
 														</div>
 													</li>
 												</ul>
 											</div>
 										</li>
 										<li>
-											<label>계좌정보 <span class="colorOrange">*</span></label>
-											<div class="twin mw404">
-												<select title="금융기관 선택">
-													<option>금융기관</option>
-												</select>
-												<input type="text" title="예금주 입력" placeholder="예금주를 입력해주세요">
+											<label>소득종류 <span class="colorOrange">*</span></label>
+											<div class="roundBoxGray">
+												<ul class="groupBox flexLeft flexWrap">
+													<li>
+														<div class="checkboxBox">
+															<input type="checkbox" id="m_testCheckbox1_1" name="m_testCheckbox1" required>
+															<label for="m_testCheckbox1_1">근로소득</label>
+														</div>
+													</li>
+													<li>
+														<div class="checkboxBox">
+															<input type="checkbox" id="m_testCheckbox1_2" name="m_testCheckbox1" required>
+															<label for="m_testCheckbox1_2">사업소득</label>
+														</div>
+													</li>
+													<li>
+														<div class="checkboxBox">
+															<input type="checkbox" id="m_testCheckbox1_3" name="m_testCheckbox1" required>
+															<label for="m_testCheckbox1_3">부동산임대 소득</label>
+														</div>
+													</li>
+												</ul>
 											</div>
-											<div class="spcemt">
+											<div class="requireText">
+												<i></i>
+												<span>소득 종사일 경우 해당하는 종류를 선택 해 주세요</span>
+											</div>
+										</li>
+										<li>
+											<label>월평균 소득금액 <span class="colorOrange">*</span></label>
+											<div>
 												<div class="defaultBtn">
-													<input type="text" title="계좌번호 입력" placeholder="계좌번호를 입력해주세요">
-													<button type="button" class="button h40 lineBlack">계좌정보 확인</button>
+													<input type="tel" title="월평균 소득액 입력" required placeholder="월평균 소득액 입력">
+													<span class="other">원</span>
 												</div>
-												<div class="requireText">
+												<div class="requireText error">
 													<i></i>
-													<span>“-” 필수입력 예)123-456-789-01</span>
+													<span>월평균 소득금액을 입력해주세요</span>
 												</div>
+												<div class="momt8">(이백만원)</div>
 											</div>
 										</li>
 									</ul>
@@ -173,9 +214,7 @@
 								<!-- //Mobile -->
 
 								<ul class="guideText mt">
-									<li>"지급계좌"란에는 지급받으려는 금융기관의 계좌번호를 적되, 반드시 입출금이 가능한 계좌여야 합니다.</li>
-									<li>공무원연금에서 대부금을 미상환한 경우의 연금 지급계좌는 대부 금융기관과 같아야 합니다.</li>
-									<li>입출금이 가능한 본인 명의의 계좌만 등록 가능합니다.</li>
+									<li>"소득"란에는 "[ ]종사, [ ]비종사" 중에서 해당 사항의 [ ] 안에 "√"표시를 한 후 소득이 있는 업무에 종사하는 경우 월평균소득금액과 소득 종류를 적으십시오.</li>
 								</ul>
 							</div>
 						</div>
@@ -184,69 +223,1374 @@
 
 						<div class="pcmt24 m_toggleArea">
 							<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
-								<b class="defaultH5">연계퇴직연금 지급계좌</b>
-								<sapn class="toggleBtn onlyMobile"><i>연계퇴직연금 지급계좌 토글</i></sapn>
+								<b class="defaultH5">부양가족 연금 지급대상자</b>
+								<span class="toggleBtn onlyMobile"><i>부양가족 연금 지급대상자 토글</i></span>
 							</button>
 							<div class="target targetHidden">
-								<div class="groupBox etcCheckbox">
-									<div class="checkboxBox">
-										<input type="checkbox" id="checkbox1" name="checkbox">
-										<label for="checkbox1">연계노령연금계좌와 동일</label>
-									</div>
-								</div>
-
 								<!-- PC -->
 								<div class="onlyPC">
-									<div class="hTableBody">
+									<div class="tableBody padding12 vaTop">
 										<table>
-											<caption>연계퇴직연금 지급계좌 : 계좌구분, 계좌정보로 구성</caption>
+											<caption>부양가족 연금 지급대상자 : 선택, 이름, 주민번호, 관계, 장애여부, 확인으로 구성</caption>
 											<colgroup>
-												<col style="width: 170px;">
+												<col style="width: 64px;">
+												<col style="width: 144px;">
 												<col>
+												<col style="width: 154px;">
+												<col style="width: 200px;">
+												<col style="width: 90px;">
 											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col">선택</th>
+													<th scope="col">이름 <span class="colorOrange">*</span></th>
+													<th scope="col">주민번호 <span class="colorOrange">*</span></th>
+													<th scope="col">관계 <span class="colorOrange">*</span></th>
+													<th scope="col">장애여부 <span class="colorOrange">*</span></th>
+													<th scope="col">확인</th>
+												</tr>
+											</thead>
 											<tbody>
 												<tr>
-													<th scope="row">계좌구분 <span class="colorOrange">*</span></th>
 													<td>
-														<ul class="groupBox flexLeft">
+														<div class="groupBox single">
+															<input type="checkbox" name="wCheckbox" title="첫번째 부양가족 연금 지급대상자 선택">
+														</div>
+													</td>
+													<td><input type="text" title="첫번째 부양가족 이름 입력" required placeholder="실명입력"></td>
+													<td><input type="tel" title="첫번째 부양가족 주민번호 입력" required placeholder="13자리 주민번호 입력"></td>
+													<td>
+														<select title="첫번째 부양가족 관계선택">
+															<option>관계선택</option>
+														</select>
+													</td>
+													<td>
+														<ul class="groupBox flexLeft justifyContent">
 															<li>
 																<div class="radioBox">
-																	<input type="radio" id="testRadio11" name="testRadio">
-																	<label for="testRadio11">일반계좌</label>
+																	<input type="radio" id="testRadio11_1" name="testRadio11" required title="첫번째 부양가족 장애 선택">
+																	<label for="testRadio11_1">장애</label>
 																</div>
 															</li>
 															<li>
 																<div class="radioBox">
-																	<input type="radio" id="testRadio12" name="testRadio">
-																	<label for="testRadio12">국민연금 안심통장</label>
-																	<button type="button" class="tooltipBtn" aria-describedby="tooltip1"><i class="icon">도움말</i></button>
+																	<input type="radio" id="testRadio11_2" name="testRadio11" required title="첫번째 부양가족 비장애 선택">
+																	<label for="testRadio11_2">비장애</label>
+																</div>
+															</li>
+														</ul>
+													</td>
+													<td><button type="button" class="button h32 lineBlack" disabled>확인</button></td>
+												</tr>
+												<tr>
+													<td>
+														<div class="groupBox single">
+															<input type="checkbox" name="wCheckbox" title="두번째 부양가족 연금 지급대상자 선택">
+														</div>
+													</td>
+													<td>
+														<input type="text" title="두번째 부양가족 이름 입력" required placeholder="실명입력">
+														<div class="requireText error">
+															<i></i>
+															<span>실명을 입력하세요</span>
+														</div>
+													</td>
+													<td>
+														<input type="tel" title="두번째 부양가족 주민번호 입력" required placeholder="13자리 주민번호 입력">
+														<div class="requireText error">
+															<i></i>
+															<span>13자리 주민번호를 입력하세요</span>
+														</div>
+													</td>
+													<td>
+														<select title="두번째 부양가족 관계선택">
+															<option>관계선택</option>
+														</select>
+													</td>
+													<td>
+														<ul class="groupBox flexLeft justifyContent">
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio12_1" name="testRadio12" required title="두번째 부양가족 장애 선택">
+																	<label for="testRadio12_1">장애</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio12_2" name="testRadio12" required title="두번째 부양가족 비장애 선택">
+																	<label for="testRadio12_2">비장애</label>
+																</div>
+															</li>
+														</ul>
+													</td>
+													<td><button type="button" class="button h32 lineBlack" disabled>확인</button></td>
+												</tr>
+												<tr>
+													<td>
+														<div class="groupBox single">
+															<input type="checkbox" name="wCheckbox" title="세번째 부양가족 연금 지급대상자 선택">
+														</div>
+													</td>
+													<td>
+														<input type="text" title="세번째 부양가족 이름 입력" required placeholder="실명입력">
+														<div class="requireText success">
+															<i></i>
+															<span>확인되었습니다</span>
+														</div>
+													</td>
+													<td>
+														<input type="tel" title="세번째 부양가족 주민번호 입력" required placeholder="13자리 주민번호 입력">
+														<div class="requireText success">
+															<i></i>
+															<span>확인되었습니다</span>
+														</div>
+													</td>
+													<td>
+														<select title="세번째 부양가족 관계선택">
+															<option>관계선택</option>
+														</select>
+													</td>
+													<td>
+														<ul class="groupBox flexLeft justifyContent">
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio13_1" name="testRadio13" required title="세번째 부양가족 장애 선택">
+																	<label for="testRadio13_1">장애</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio13_2" name="testRadio13" required title="세번째 부양가족 비장애 선택">
+																	<label for="testRadio13_2">비장애</label>
+																</div>
+															</li>
+														</ul>
+													</td>
+													<td><button type="button" class="button h32 lineBlack">확인</button></td>
+												</tr>
+												<tr>
+													<td>
+														<div class="groupBox single">
+															<input type="checkbox" name="wCheckbox" title="네번째 부양가족 연금 지급대상자 선택">
+														</div>
+													</td>
+													<td><input type="text" title="네번째 부양가족 이름 입력" required placeholder="실명입력"></td>
+													<td><input type="tel" title="네번째 부양가족 주민번호 입력" required placeholder="13자리 주민번호 입력"></td>
+													<td>
+														<select title="네번째 부양가족 관계선택">
+															<option>관계선택</option>
+														</select>
+													</td>
+													<td>
+														<ul class="groupBox flexLeft justifyContent">
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio14_1" name="testRadio14" required title="네번째 부양가족 장애 선택">
+																	<label for="testRadio14_1">장애</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio14_2" name="testRadio14" required title="네번째 부양가족 비장애 선택">
+																	<label for="testRadio14_2">비장애</label>
+																</div>
+															</li>
+														</ul>
+													</td>
+													<td>확인됨</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="tableFooterControl flexLeft alignCenter justifyRight">
+										<button type="button" class="button h24 lineBlack">선택삭제</button>
+										<button type="button" class="button h24 lineBlack">행추가</button>
+									</div>
+								</div>
+								<!-- //PC -->
+
+								<!-- Mobile -->
+								<div class="onlyMobile">
+									<ul class="m_xBtnBody">
+										<li>
+											<ul class="m_hTableBody">
+												<li>
+													<label>이름 <span class="colorOrange">*</span></label>
+													<div class="default">
+														<input type="text" title="첫번째 부양가족 이름 입력" required placeholder="실명입력">
+													</div>
+												</li>
+												<li>
+													<label>주민번호 <span class="colorOrange">*</span></label>
+													<div class="default">
+														<input type="tel" title="첫번째 부양가족 주민번호 입력" required placeholder="13자리 주민번호 입력">
+													</div>
+												</li>
+												<li>
+													<label>관계 <span class="colorOrange">*</span></label>
+													<div class="default">
+														<select title="첫번째 부양가족 관계선택">
+															<option>관계선택</option>
+														</select>
+													</div>
+												</li>
+												<li>
+													<label>장애여부 <span class="colorOrange">*</span></label>
+													<div class="roundBoxGray">
+														<ul class="groupBox flexLeft">
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="m_testRadio11_1" name="m_testRadio11" required title="첫번째 부양가족 장애 선택">
+																	<label for="m_testRadio11_1">장애</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="m_testRadio11_2" name="m_testRadio11" required title="첫번째 부양가족 비장애 선택">
+																	<label for="m_testRadio11_2">비장애</label>
+																</div>
+															</li>
+														</ul>
+													</div>
+												</li>
+											</ul>
+											<div class="bottomStyle">
+												<button type="button" class="m_button">확인</button>
+											</div>
+											<button type="button" class="listRemove"><i>첫번째 부양가족 삭제</i></button>
+										</li>
+										<li>
+											<ul class="m_hTableBody">
+												<li>
+													<label>이름 <span class="colorOrange">*</span></label>
+													<div class="default">
+														<input type="text" title="두번째 부양가족 이름 입력" required placeholder="실명입력">
+													</div>
+												</li>
+												<li>
+													<label>주민번호 <span class="colorOrange">*</span></label>
+													<div class="default">
+														<input type="tel" title="두번째 부양가족 주민번호 입력" required placeholder="13자리 주민번호 입력">
+													</div>
+												</li>
+												<li>
+													<label>관계 <span class="colorOrange">*</span></label>
+													<div class="default">
+														<select title="두번째 부양가족 관계선택">
+															<option>관계선택</option>
+														</select>
+													</div>
+												</li>
+												<li>
+													<label>장애여부 <span class="colorOrange">*</span></label>
+													<div class="roundBoxGray">
+														<ul class="groupBox flexLeft">
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="m_testRadio12_1" name="m_testRadio12" required title="두번째 부양가족 장애 선택">
+																	<label for="m_testRadio12_1">장애</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="m_testRadio12_2" name="m_testRadio12" required title="두번째 부양가족 비장애 선택">
+																	<label for="m_testRadio12_2">비장애</label>
+																</div>
+															</li>
+														</ul>
+													</div>
+												</li>
+											</ul>
+											<div class="bottomStyle">
+												<button type="button" class="m_button" disabled>확인</button>
+											</div>
+											<button type="button" class="listRemove"><i>두번째 부양가족 삭제</i></button>
+										</li>
+										<li>
+											<ul class="m_hTableBody">
+												<li>
+													<label>이름 <span class="colorOrange">*</span></label>
+													<div class="default">
+														<input type="text" title="세번째 부양가족 이름 입력" required placeholder="실명입력">
+													</div>
+												</li>
+												<li>
+													<label>주민번호 <span class="colorOrange">*</span></label>
+													<div class="default">
+														<input type="tel" title="세번째 부양가족 주민번호 입력" required placeholder="13자리 주민번호 입력">
+													</div>
+												</li>
+												<li>
+													<label>관계 <span class="colorOrange">*</span></label>
+													<div class="default">
+														<select title="세번째 부양가족 관계선택">
+															<option>관계선택</option>
+														</select>
+													</div>
+												</li>
+												<li>
+													<label>장애여부 <span class="colorOrange">*</span></label>
+													<div class="roundBoxGray">
+														<ul class="groupBox flexLeft">
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="m_testRadio13_1" name="m_testRadio13" required title="세번째 부양가족 장애 선택">
+																	<label for="m_testRadio13_1">장애</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="m_testRadio13_2" name="m_testRadio13" required title="세번째 부양가족 비장애 선택">
+																	<label for="m_testRadio13_2">비장애</label>
+																</div>
+															</li>
+														</ul>
+													</div>
+												</li>
+											</ul>
+											<div class="bottomStyle">
+												<span class="text">확인됨</span>
+											</div>
+											<button type="button" class="listRemove"><i>세번째 부양가족 삭제</i></button>
+										</li>
+									</ul>
+
+									<div class="listAdd">
+										<button type="button" class="lineButton"><span>추가</span><i class="icoPlus"></i></button>
+									</div>
+								</div>
+								<!-- //Mobile -->
+
+								<ul class="guideText mt">
+									<li>"부양가족연금 지급대상자"란에는 연계노령연금 수급권자에 의해 생계를 유지하고 있던 사람 중에서 다음에 해당하는 사람을 적으십시오(국민연금 가입기간이 10년 이상인 경우에만 해당합니다).</li>
+									<li>배우자, 19세 미만 또는 장애등급 2급 이상에 해당하는 자녀(배우자가 혼인 전에 얻은 자녀를 포함), 60세 이상 또는 장애등급 2급 이상에 해당하는 부모(배우자의 부모 포함)</li>
+								</ul>
+							</div>
+						</div>
+
+						<hr class="space style2 ">
+
+						<div class="subFill onlyPC">
+							<h4 class="defaultH4">출산크레딧 대상자 입력</h4>
+						</div>
+						<div class="m_toggleArea">
+							<div class="onlyMobile">
+								<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+									<b class="defaultH5">출산크레딧 대상자 입력</b>
+									<span class="toggleBtn onlyMobile"><i>출산크레딧 대상자 입력 토글</i></span>
+								</button>
+							</div>
+							<div class="target targetHidden">
+								<div class="etcBleuBox">
+									<b>출산크레딧이란?</b>
+									<p><span class="colorBlue">2008년 1월 1일 이후 출생(입양)한 자녀</span>를 포함하여 <span class="colorBlue">2자녀 이상</span> 있을 경우 가입기간을  추가로 인정하는 제도 입니다.</p>
+									<!-- PC -->
+									<div class="onlyPC">
+										<div class="tableBody">
+											<table>
+												<caption>출산크레딧이란? : 자녀수, 2자녀, 3자녀, 4자녀, 5자녀로 구성</caption>
+												<colgroup>
+													<col>
+													<col style="width: 20%;">
+													<col style="width: 20%;">
+													<col style="width: 20%;">
+													<col style="width: 20%;">
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">자녀수</th>
+														<th scope="col">2자녀</th>
+														<th scope="col">3자녀</th>
+														<th scope="col">4자녀</th>
+														<th scope="col">5자녀</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>추가인정기간</td>
+														<td>12개월</td>
+														<td>30개월</td>
+														<td>48개월</td>
+														<td>50개월</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<!-- //PC -->
+
+									<!-- Mobile -->
+									<div class="onlyMobile">
+										<ul class="msList mt0">
+											<li class="lineBreak">
+												<label>2자녀</label>
+												<b>12개월</b>
+											</li>
+											<li>
+												<label>3자녀</label>
+												<b>30개월</b>
+											</li>
+											<li>
+												<label>4자녀</label>
+												<b>48개월</b>
+											</li>
+											<li>
+												<label>5자녀</label>
+												<b>50개월</b>
+											</li>
+										</ul>
+									</div>
+									<!-- //Mobile -->
+									
+								</div>
+
+								<h5 class="defaultH5 mt">크레딧 대상자</h5>
+								<div>
+									<!-- PC -->
+									<div class="onlyPC">
+										<div class="tableBody padding12 vaTop">
+											<table>
+												<caption>크레딧 대상자 : 선택, 이름, 주민번호, 관계, 출생(입양)일자, 소멸(파양)일자, 확인으로 구성</caption>
+												<colgroup>
+													<col style="width: 70px;">
+													<col style="width: 110px;">
+													<col>
+													<col style="width: 144px;">
+													<col style="width: 164px;">
+													<col style="width: 164px;">
+													<col style="width: 90px;">
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">선택</th>
+														<th scope="col">이름 <span class="colorOrange">*</span></th>
+														<th scope="col">주민번호 <span class="colorOrange">*</span></th>
+														<th scope="col">관계 <span class="colorOrange">*</span></th>
+														<th scope="col">출생(입양)일자 <span class="colorOrange">*</span></th>
+														<th scope="col">소멸(파양)일자 <span class="colorOrange">*</span><button type="button" class="tooltipBtn" aria-describedby="tooltip1"><i class="icon">도움말</i></button></th>
+														<th scope="col">확인</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>
+															<div class="groupBox single">
+																<input type="checkbox" name="wCheckbox2" title="첫번째 크레딧 대상자 선택">
+															</div>
+														</td>
+														<td><input type="text" required title="첫번째 크레딧 대상자 이름 입력" placeholder="실명입력"></td>
+														<td><input type="tel" required title="첫번째 크레딧 대상자 주민번호 입력" placeholder="13자리 주민번호"></td>
+														<td>
+															<select title="첫번째 크레딧 대상자 관계 선택">
+																<option>관계선택</option>
+															</select>
+														</td>
+														<td>
+															<div class="calendarBody" role="application">
+																<input type="text" class="jQdate" title="첫번째 출생(입양)일자 선택" placeholder="날짜선택">
+															</div>
+														</td>
+														<td>
+															<div class="calendarBody" role="application">
+																<input type="text" class="jQdate" title="첫번째 소멸(파양)일자 선택" placeholder="날짜선택">
+															</div>
+														</td>
+														<td><button type="button" class="button h32 lineBlack" disabled>확인</button></td>
+													</tr>
+													<tr>
+														<td>
+															<div class="groupBox single">
+																<input type="checkbox" name="wCheckbox2" title="두번째 크레딧 대상자 선택">
+															</div>
+														</td>
+														<td>
+															<input type="text" required title="두번째 크레딧 대상자 이름 입력" placeholder="실명입력">
+															<div class="requireText error">
+																<i></i>
+																<span>실명을 입력하세요.</span>
+															</div>
+														</td>
+														<td>
+															<input type="tel" required title="두번째 크레딧 대상자 주민번호 입력" placeholder="13자리 주민번호">
+															<div class="requireText error">
+																<i></i>
+																<span>13자리 주민번호를 입력하세요</span>
+															</div>
+														</td>
+														<td>
+															<select title="두번째 크레딧 대상자 관계 선택">
+																<option>관계선택</option>
+															</select>
+														</td>
+														<td>
+															<div class="calendarBody" role="application">
+																<input type="text" class="jQdate" title="두번째 출생(입양)일자 선택" placeholder="날짜선택">
+															</div>
+														</td>
+														<td>
+															<div class="calendarBody" role="application">
+																<input type="text" class="jQdate" title="두번째 소멸(파양)일자 선택" placeholder="날짜선택">
+															</div>
+														</td>
+														<td><button type="button" class="button h32 lineBlack" disabled>확인</button></td>
+													</tr>
+													<tr>
+														<td>
+															<div class="groupBox single">
+																<input type="checkbox" name="wCheckbox2" title="세번째 크레딧 대상자 선택">
+															</div>
+														</td>
+														<td>
+															<input type="text" required title="세번째 크레딧 대상자 이름 입력" placeholder="실명입력">
+															<div class="requireText success">
+																<i></i>
+																<span>확인되었습니다</span>
+															</div>
+														</td>
+														<td>
+															<input type="tel" required title="세번째 크레딧 대상자 주민번호 입력" placeholder="13자리 주민번호">
+															<div class="requireText success">
+																<i></i>
+																<span>확인되었습니다</span>
+															</div>
+														</td>
+														<td>
+															<select title="세번째 크레딧 대상자 관계 선택">
+																<option>관계선택</option>
+															</select>
+														</td>
+														<td>
+															<div class="calendarBody" role="application">
+																<input type="text" class="jQdate" title="세번째 출생(입양)일자 선택" placeholder="날짜선택">
+															</div>
+														</td>
+														<td>
+															<div class="calendarBody" role="application">
+																<input type="text" class="jQdate" title="세번째 소멸(파양)일자 선택" placeholder="날짜선택">
+															</div>
+														</td>
+														<td><button type="button" class="button h32 lineBlack">확인</button></td>
+													</tr>
+													<tr>
+														<td>
+															<div class="groupBox single">
+																<input type="checkbox" name="wCheckbox2" title="네번째 크레딧 대상자 선택">
+															</div>
+														</td>
+														<td><input type="text" required title="네번째 크레딧 대상자 이름 입력" placeholder="실명입력"></td>
+														<td><input type="tel" required title="네번째 크레딧 대상자 주민번호 입력" placeholder="13자리 주민번호"></td>
+														<td>
+															<select title="네번째 크레딧 대상자 관계 선택">
+																<option>관계선택</option>
+															</select>
+														</td>
+														<td>
+															<div class="calendarBody" role="application">
+																<input type="text" class="jQdate" title="네번째 출생(입양)일자 선택" placeholder="날짜선택">
+															</div>
+														</td>
+														<td>
+															<div class="calendarBody" role="application">
+																<input type="text" class="jQdate" title="네번째 소멸(파양)일자 선택" placeholder="날짜선택">
+															</div>
+														</td>
+														<td><button type="button" class="button h32 lineBlack">확인</button></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+										<div class="tableFooterControl flexLeft alignCenter justifyRight">
+											<button type="button" class="button h24 lineBlack">선택삭제</button>
+											<button type="button" class="button h24 lineBlack">행추가</button>
+										</div>
+									</div>
+									<!-- //PC -->
+
+									<!-- Mobile -->
+									<div class="onlyMobile">
+										<ul class="m_xBtnBody">
+											<li>
+												<ul class="m_hTableBody">
+													<li>
+														<label>이름 <span class="colorOrange">*</span></label>
+														<div class="default">
+															<input type="text" title="첫번째 크레딧 대상자 이름 입력" required placeholder="실명입력">
+														</div>
+													</li>
+													<li>
+														<label>주민번호 <span class="colorOrange">*</span></label>
+														<div class="default">
+															<input type="tel" title="첫번째 크레딧 대상자 주민번호 입력" required placeholder="13자리 주민번호 입력">
+														</div>
+													</li>
+													<li>
+														<label>관계 <span class="colorOrange">*</span></label>
+														<div class="default">
+															<select title="첫번째 크레딧 대상자 관계선택">
+																<option>관계선택</option>
+															</select>
+														</div>
+													</li>
+													<li>
+														<label>출생(입양)일자 <span class="colorOrange">*</span></label>
+														<div class="calendarBody" role="application">
+															<input type="text" class="jQdate" title="첫번째 출생(입양)일자 선택" placeholder="날짜선택">
+														</div>
+													</li>
+													<li>
+														<div class="flexLeft spaceBetween">
+															<label>소멸(파양)일자 <span class="colorOrange">*</span></label>
+															<button type="button" class="tooltipBtn" aria-describedby="tooltip1" style="margin-bottom: 8px;"><i class="icon">도움말</i></button>
+														</div>
+														<div class="calendarBody" role="application">
+															<input type="text" class="jQdate" title="첫번째 소멸(파양)일자 선택" placeholder="날짜선택">
+														</div>
+													</li>
+												</ul>
+												<div class="bottomStyle">
+													<button type="button" class="m_button">확인</button>
+												</div>
+												<button type="button" class="listRemove"><i>첫번째 크레딧 대상자 삭제</i></button>
+											</li>
+											<li>
+												<ul class="m_hTableBody">
+													<li>
+														<label>이름 <span class="colorOrange">*</span></label>
+														<div class="default">
+															<input type="text" title="두번째 크레딧 대상자 이름 입력" required placeholder="실명입력">
+														</div>
+													</li>
+													<li>
+														<label>주민번호 <span class="colorOrange">*</span></label>
+														<div class="default">
+															<input type="tel" title="두번째 크레딧 대상자 주민번호 입력" required placeholder="13자리 주민번호 입력">
+														</div>
+													</li>
+													<li>
+														<label>관계 <span class="colorOrange">*</span></label>
+														<div class="default">
+															<select title="두번째 크레딧 대상자 관계선택">
+																<option>관계선택</option>
+															</select>
+														</div>
+													</li>
+													<li>
+														<label>출생(입양)일자 <span class="colorOrange">*</span></label>
+														<div class="calendarBody" role="application">
+															<input type="text" class="jQdate" title="두번째 출생(입양)일자 선택" placeholder="날짜선택">
+														</div>
+													</li>
+													<li>
+														<div class="flexLeft spaceBetween">
+															<label>소멸(파양)일자 <span class="colorOrange">*</span></label>
+															<button type="button" class="tooltipBtn" aria-describedby="tooltip1" style="margin-bottom: 8px;"><i class="icon">도움말</i></button>
+														</div>
+														<div class="calendarBody" role="application">
+															<input type="text" class="jQdate" title="두번째 소멸(파양)일자 선택" placeholder="날짜선택">
+														</div>
+													</li>
+												</ul>
+												<div class="bottomStyle">
+													<span class="text">확인됨</span>
+												</div>
+												<button type="button" class="listRemove"><i>두번째 크레딧 대상자 삭제</i></button>
+											</li>
+										</ul>
+	
+										<div class="listAdd">
+											<button type="button" class="lineButton"><span>추가</span><i class="icoPlus"></i></button>
+										</div>
+									</div>
+									<!-- //Mobile -->
+
+									<ul class="guideText mt">
+										<li>2008년 이후 둘째 이상 자녀를 출생(입양)하였다면 가입기간을 추가해주는 ‘출산크레딧’ 혜택을 받을 수 있습니다.</li>
+										<li>크레딧 대상 자녀가 있는 경우 모두 입력해주시기 바랍니다.</li>
+									</ul>
+								</div>
+
+								<h5 class="defaultH5 mt">합의대상자</h5>
+								<div>
+									<!-- PC -->
+									<div class="onlyPC">
+										<div class="tableBody padding12 vaTop">
+											<table>
+												<caption>합의대상자 : 선택, 이름, 주민번호, 관계, 합의사항, 확인으로 구성</caption>
+												<colgroup>
+													<col style="width: 70px;">
+													<col style="width: 110px;">
+													<col style="width: 164px;">
+													<col style="width: 164px;">
+													<col>
+													<col style="width: 90px;">
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">선택</th>
+														<th scope="col">이름 <span class="colorOrange">*</span></th>
+														<th scope="col">주민번호 <span class="colorOrange">*</span></th>
+														<th scope="col">관계 <span class="colorOrange">*</span></th>
+														<th scope="col">합의사항 <span class="colorOrange">*</span></th>
+														<th scope="col">확인</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>
+															<div class="groupBox single">
+																<input type="checkbox" name="wCheckbox3" title="첫번째 합의대상자 선택">
+															</div>
+														</td>
+														<td><input type="text" required title="첫번째 합의대상자 이름 입력" placeholder="실명입력"></td>
+														<td><input type="tel" required title="첫번째 합의대상자 주민번호 입력" placeholder="13자리 주민번호"></td>
+														<td>
+															<select title="첫번째 합의대상자 관계 선택">
+																<option>관계선택</option>
+															</select>
+														</td>
+														<td>
+															<select title="첫번째 합의대상자 합의사항 선택">
+																<option>합의사항</option>
+															</select>
+														</td>
+														<td><button type="button" class="button h32 lineBlack" disabled>확인</button></td>
+													</tr>
+													<tr>
+														<td>
+															<div class="groupBox single">
+																<input type="checkbox" name="wCheckbox3" title="두번째 합의대상자 선택">
+															</div>
+														</td>
+														<td>
+															<input type="text" required title="두번째 합의대상자 이름 입력" placeholder="실명입력">
+															<div class="requireText error">
+																<i></i>
+																<span>실명을 입력하세요.</span>
+															</div>
+														</td>
+														<td>
+															<input type="tel" required title="두번째 합의대상자 주민번호 입력" placeholder="13자리 주민번호">
+															<div class="requireText error">
+																<i></i>
+																<span>13자리 주민번호를 입력하세요</span>
+															</div>
+														</td>
+														<td>
+															<select title="두번째 합의대상자 관계 선택">
+																<option>관계선택</option>
+															</select>
+														</td>
+														<td>
+															<select title="두번째 합의대상자 합의사항 선택">
+																<option>합의사항</option>
+															</select>
+														</td>
+														<td><button type="button" class="button h32 lineBlack" disabled>확인</button></td>
+													</tr>
+													<tr>
+														<td>
+															<div class="groupBox single">
+																<input type="checkbox" name="wCheckbox3" title="세번째 합의대상자 선택">
+															</div>
+														</td>
+														<td>
+															<input type="text" required title="세번째 합의대상자 이름 입력" placeholder="실명입력">
+															<div class="requireText success">
+																<i></i>
+																<span>확인되었습니다</span>
+															</div>
+														</td>
+														<td>
+															<input type="tel" required title="세번째 합의대상자 주민번호 입력" placeholder="13자리 주민번호">
+															<div class="requireText success">
+																<i></i>
+																<span>확인되었습니다</span>
+															</div>
+														</td>
+														<td>
+															<select title="세번째 합의대상자 관계 선택">
+																<option>관계선택</option>
+															</select>
+														</td>
+														<td>
+															<select title="세번째 합의대상자 합의사항 선택">
+																<option>합의사항</option>
+															</select>
+														</td>
+														<td><button type="button" class="button h32 lineBlack">확인</button></td>
+													</tr>
+													<tr>
+														<td>
+															<div class="groupBox single">
+																<input type="checkbox" name="wCheckbox3" title="네번째 합의대상자 선택">
+															</div>
+														</td>
+														<td><input type="text" required title="네번째 합의대상자 이름 입력" placeholder="실명입력"></td>
+														<td><input type="tel" required title="네번째 합의대상자 주민번호 입력" placeholder="13자리 주민번호"></td>
+														<td>
+															<select title="네번째 합의대상자 관계 선택">
+																<option>관계선택</option>
+															</select>
+														</td>
+														<td>
+															<select title="네번째 합의대상자 합의사항 선택">
+																<option>합의사항</option>
+															</select>
+														</td>
+														<td>확인됨</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+										<div class="tableFooterControl flexLeft spaceBetween">
+											<button type="button" class="button h24 lineBlack">합의서 다운로드 <i class="icoDownload2"></i></button>
+											<div>
+												<button type="button" class="button h24 lineBlack">선택삭제</button>
+												<button type="button" class="button h24 lineBlack">행추가</button>
+											</div>
+										</div>
+									</div>
+									<!-- //PC -->
+
+									<!-- Mobile -->
+									<div class="onlyMobile">
+										<ul class="m_xBtnBody">
+											<li>
+												<ul class="m_hTableBody">
+													<li>
+														<label>이름 <span class="colorOrange">*</span></label>
+														<div class="default">
+															<input type="text" title="첫번째 합의대상자 이름 입력" required placeholder="실명입력">
+														</div>
+													</li>
+													<li>
+														<label>주민번호 <span class="colorOrange">*</span></label>
+														<div class="default">
+															<input type="tel" title="첫번째 합의대상자 주민번호 입력" required placeholder="13자리 주민번호 입력">
+														</div>
+													</li>
+													<li>
+														<label>관계 <span class="colorOrange">*</span></label>
+														<div class="default">
+															<select title="첫번째 합의대상자 관계선택">
+																<option>관계선택</option>
+															</select>
+														</div>
+													</li>
+													<li>
+														<label>합의사항 <span class="colorOrange">*</span></label>
+														<div class="default">
+															<select title="첫번째 합의대상자 합의사항 선택">
+																<option>미합의</option>
+															</select>
+														</div>
+													</li>
+												</ul>
+												<div class="bottomStyle">
+													<button type="button" class="m_button">확인</button>
+												</div>
+												<button type="button" class="listRemove"><i>첫번째 합의대상자 삭제</i></button>
+											</li>
+											<li>
+												<ul class="m_hTableBody">
+													<li>
+														<label>이름 <span class="colorOrange">*</span></label>
+														<div class="default">
+															<input type="text" title="두번째 합의대상자 이름 입력" required placeholder="실명입력">
+														</div>
+													</li>
+													<li>
+														<label>주민번호 <span class="colorOrange">*</span></label>
+														<div class="default">
+															<input type="tel" title="두번째 합의대상자 주민번호 입력" required placeholder="13자리 주민번호 입력">
+														</div>
+													</li>
+													<li>
+														<label>관계 <span class="colorOrange">*</span></label>
+														<div class="default">
+															<select title="두번째 합의대상자 관계선택">
+																<option>관계선택</option>
+															</select>
+														</div>
+													</li>
+													<li>
+														<div class="flexLeft spaceBetween">
+															<label>합의사항 <span class="colorOrange">*</span></label>
+															<button type="button" class="tooltipBtn" aria-describedby="tooltip1" style="margin-bottom: 8px;"><i class="icon">도움말</i></button>
+														</div>
+														<div class="default">
+															<select title="두번째 합의대상자 합의사항 선택">
+																<option>미합의</option>
+															</select>
+														</div>
+													</li>
+												</ul>
+												<div class="bottomStyle">
+													<span class="text">확인됨</span>
+												</div>
+												<button type="button" class="listRemove"><i>두번째 합의대상자 삭제</i></button>
+											</li>
+										</ul>
+	
+										<div class="listAdd">
+											<button type="button" class="lineButton"><span>추가</span><i class="icoPlus"></i></button>
+										</div>
+
+										<a href="12345678910.pdf" class="listDownload" download>
+											<span>합의서 다운로드</span>
+											<i class="icon"></i>
+										</a>
+									</div>
+									<!-- //Mobile -->
+
+									<ul class="guideText mt">
+										<li>함께 양육했던 배우자가 있는 경우 합의 대상자로 입력하고 합의서를 관할지사로 보내주시기 바랍니다.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<hr class="space style2">
+
+						<div class="m_toggleArea">
+							<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+								<b class="defaultH5">외국인 연금가입대상자</b>
+								<span class="toggleBtn onlyMobile"><i>외국인 연금가입대상자 토글</i></span>
+							</button>
+
+							<div class="target targetHidden">
+								<!-- PC -->
+								<div class="onlyPC">
+									<div class="whTableBody mt2 padding16">
+										<table>
+											<caption>외국인 연금가입대상자 : 외국인 연금 가입기간, 선택, 국가명, 가입기간으로 구성</caption>
+											<colgroup>
+												<col>
+												<col style="width: 364px;">
+												<col style="width: 364px;">
+											</colgroup>
+											<tbody>
+												<tr>
+													<th scope="row">외국인 연금 가입기간 <span class="colorOrange">*</span></th>
+													<td colspan="2">
+														<ul class="groupBox flexLeft">
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio15_1" name="testRadio15" required checked>
+																	<label for="testRadio15_1">있음</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio15_2" name="testRadio15" required>
+																	<label for="testRadio15_2">없음</label>
 																</div>
 															</li>
 														</ul>
 													</td>
 												</tr>
 												<tr>
-													<th scope="row">계좌정보 <span class="colorOrange">*</span></th>
-													<td>
-														<div class="twin mw404">
-															<select title="금융기관 선택">
-																<option>금융기관</option>
-															</select>
-															<input type="text" title="예금주 입력" placeholder="예금주를 입력해주세요">
+													<th scope="col">선택</th>
+													<th scope="col">국가명 <span class="colorOrange">*</span></th>
+													<th scope="col">가입기간 <span class="colorOrange">*</span></th>
+												</tr>
+												<tr>
+													<td class="textCenter">
+														<div class="groupBox single">
+															<input type="checkbox" name="wCheckbox15" title="첫번째 외국인 연금가입대상자 선택">
 														</div>
-														<div class="spcemt">
-															<div class="defaultBtn">
-																<input type="text" class="error" title="계좌번호 입력" placeholder="계좌번호를 입력해주세요"> <!-- 실패: error, 성공: success 시 보더색상이 변경됩니다.  -->
-																<button type="button" class="button h40 lineBlack">계좌정보 확인</button>
-															</div>
-															<div class="requireText error">
-																<i></i>
-																<span>계좌번호를 입력해 주세요.</span>
-															</div>
-															<div class="requireText success">
-																<i></i>
-																<span>성공 내용입니다.</span>
-															</div>
+													</td>
+													<td>
+														<div class="defaultBtn">
+															<input type="text" required title="첫번째 국가명 입력" placeholder="국가명 검색 후 입력">
+															<button type="button" class="button h32 lineBlack other">조회</button>
+														</div>
+													</td>
+													<td>
+														<div class="defaultBtn">
+															<input type="tel" required title="첫번째 가입기간 입력" placeholder="가입기간 입력">
+															<span class="other">개월</span>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td class="textCenter">
+														<div class="groupBox single">
+															<input type="checkbox" name="wCheckbox15" title="두번째 외국인 연금가입대상자 선택">
+														</div>
+													</td>
+													<td>
+														<div class="defaultBtn">
+															<input type="text" required title="두번째 국가명 입력" placeholder="국가명 검색 후 입력">
+															<button type="button" class="button h32 lineBlack other">조회</button>
+														</div>
+													</td>
+													<td>
+														<div class="defaultBtn">
+															<input type="tel" required title="두번째 가입기간 입력" placeholder="가입기간 입력">
+															<span class="other">개월</span>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+									<div class="tableFooterControl flexLeft alignCenter justifyRight">
+										<button type="button" class="button h24 lineBlack">선택삭제</button>
+										<button type="button" class="button h24 lineBlack">행추가</button>
+									</div>
+								</div>
+								<!-- //PC -->
+
+								<!-- Mobile -->
+								<div class="onlyMobile">
+									<ul class="m_hTableBody">
+										<li>
+											<label>외국인 연금 가입기간 <span class="colorOrange">*</span></label>
+											<div class="roundBoxGray">
+												<ul class="groupBox flexLeft">
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_testRadio15_1" name="m_testRadio15" required checked>
+															<label for="m_testRadio15_1">있음</label>
+														</div>
+													</li>
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_testRadio15_2" name="m_testRadio15" required>
+															<label for="m_testRadio15_2">없음</label>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+									<ul class="m_xBtnBody mt defaultPadding">
+										<li>
+											<ul class="m_hTableBody">
+												<li>
+													<label>국가명 <span class="colorOrange">*</span></label>
+													<div class="defaultBtn">
+														<input type="text" required title="첫번째 국가명 입력" placeholder="국가명 검색 후 입력">
+														<button type="button" class="button h40 lineBlack other">조회</button>
+													</div>
+												</li>
+												<li>
+													<label>가입기간 <span class="colorOrange">*</span></label>
+													<div class="defaultBtn">
+														<input type="tel" required title="첫번째 가입기간 입력" placeholder="가입기간 입력">
+														<span class="other">개월</span>
+													</div>
+												</li>
+											</ul>
+											<button type="button" class="listRemove"><i>첫번째 외국인 연금가입대상자 삭제</i></button>
+										</li>
+										<li>
+											<ul class="m_hTableBody">
+												<li>
+													<label>국가명 <span class="colorOrange">*</span></label>
+													<div class="defaultBtn">
+														<input type="text" required title="두번째 국가명 입력" placeholder="국가명 검색 후 입력">
+														<button type="button" class="button h40 lineBlack other">조회</button>
+													</div>
+												</li>
+												<li>
+													<label>가입기간 <span class="colorOrange">*</span></label>
+													<div class="defaultBtn">
+														<input type="tel" required title="두번째 가입기간 입력" placeholder="가입기간 입력">
+														<span class="other">개월</span>
+													</div>
+												</li>
+											</ul>
+											<button type="button" class="listRemove"><i>두번째 외국인 연금가입대상자 삭제</i></button>
+										</li>
+									</ul>
+
+									<div class="listAdd">
+										<button type="button" class="lineButton"><span>추가</span><i class="icoPlus"></i></button>
+									</div>
+								</div>
+								<!-- //Mobile -->
+								
+								<ul class="guideText mt">
+									<li>협정 상대국에서 연금보험료를 납부 하셨던 분은  사회보장협정에 의하여 상대국 연금 납부(인정) 기간과 중복되지 않은 한국 국민연금 가입기간을 합산하여 협정국 법령에 따른 연금 연금 수급요건(연령 및 기간)을 충족하는 경우에는 협정국으로부터 연금을 지급받을 수 있습니다.</li>
+								</ul>
+							</div>
+						</div>
+
+						<hr class="space style2 onlyMobile">
+
+						<div class="pcmt24 m_toggleArea">
+							<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+								<b class="defaultH5">외국 거주기간 대상자</b>
+								<span class="toggleBtn onlyMobile"><i>외국 거주기간 대상자 토글</i></span>
+							</button>
+
+							<div class="target targetHidden">
+								<!-- PC -->
+								<div class="onlyPC">
+									<div class="whTableBody mt2 padding16">
+										<table>
+											<caption>외국 거주기간 대상자 : 외국 거주기간 대상자, 선택, 국가명, 가입기간으로 구성</caption>
+											<colgroup>
+												<col>
+												<col style="width: 364px;">
+												<col style="width: 364px;">
+											</colgroup>
+											<tbody>
+												<tr>
+													<th scope="row">외국 거주기간 대상자 <span class="colorOrange">*</span></th>
+													<td colspan="2">
+														<ul class="groupBox flexLeft">
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio16_1" name="testRadio16" required checked>
+																	<label for="testRadio16_1">있음</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio16_2" name="testRadio16" required>
+																	<label for="testRadio16_2">없음</label>
+																</div>
+															</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="col">선택</th>
+													<th scope="col">국가명 <span class="colorOrange">*</span></th>
+													<th scope="col">가입기간 <span class="colorOrange">*</span></th>
+												</tr>
+												<tr>
+													<td class="textCenter">
+														<div class="groupBox single">
+															<input type="checkbox" name="wCheckbox16" title="첫번째 외국인 연금가입대상자 선택">
+														</div>
+													</td>
+													<td>
+														<div class="defaultBtn">
+															<input type="text" required title="첫번째 국가명 입력" placeholder="국가명 검색 후 입력">
+															<button type="button" class="button h32 lineBlack other">조회</button>
+														</div>
+													</td>
+													<td>
+														<div class="defaultBtn">
+															<input type="tel" required title="첫번째 가입기간 입력" placeholder="가입기간 입력">
+															<span class="other">개월</span>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td class="textCenter">
+														<div class="groupBox single">
+															<input type="checkbox" name="wCheckbox16" title="두번째 외국인 연금가입대상자 선택">
+														</div>
+													</td>
+													<td>
+														<div class="defaultBtn">
+															<input type="text" required title="두번째 국가명 입력" placeholder="국가명 검색 후 입력">
+															<button type="button" class="button h32 lineBlack other">조회</button>
+														</div>
+													</td>
+													<td>
+														<div class="defaultBtn">
+															<input type="tel" required title="두번째 가입기간 입력" placeholder="가입기간 입력">
+															<span class="other">개월</span>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+									<div class="tableFooterControl flexLeft alignCenter justifyRight">
+										<button type="button" class="button h24 lineBlack">선택삭제</button>
+										<button type="button" class="button h24 lineBlack">행추가</button>
+									</div>
+								</div>
+								<!-- //PC -->
+
+								<!-- Mobile -->
+								<div class="onlyMobile">
+									<ul class="m_hTableBody">
+										<li>
+											<label>외국 거주기간 대상자 <span class="colorOrange">*</span></label>
+											<div class="roundBoxGray">
+												<ul class="groupBox flexLeft">
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_testRadio16_1" name="m_testRadio16" required checked>
+															<label for="m_testRadio16_1">있음</label>
+														</div>
+													</li>
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_testRadio16_2" name="m_testRadio16" required>
+															<label for="m_testRadio16_2">없음</label>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+									<ul class="m_xBtnBody mt defaultPadding">
+										<li>
+											<ul class="m_hTableBody">
+												<li>
+													<label>국가명 <span class="colorOrange">*</span></label>
+													<div class="defaultBtn">
+														<input type="text" required title="첫번째 국가명 입력" placeholder="국가명 검색 후 입력">
+														<button type="button" class="button h40 lineBlack other">조회</button>
+													</div>
+												</li>
+												<li>
+													<label>가입기간 <span class="colorOrange">*</span></label>
+													<div class="defaultBtn">
+														<input type="tel" required title="첫번째 가입기간 입력" placeholder="가입기간 입력">
+														<span class="other">개월</span>
+													</div>
+												</li>
+											</ul>
+											<button type="button" class="listRemove"><i>외국 거주기간 대상자 삭제</i></button>
+										</li>
+										<li>
+											<ul class="m_hTableBody">
+												<li>
+													<label>국가명 <span class="colorOrange">*</span></label>
+													<div class="defaultBtn">
+														<input type="text" required title="두번째 국가명 입력" placeholder="국가명 검색 후 입력">
+														<button type="button" class="button h40 lineBlack other">조회</button>
+													</div>
+												</li>
+												<li>
+													<label>가입기간 <span class="colorOrange">*</span></label>
+													<div class="defaultBtn">
+														<input type="tel" required title="두번째 가입기간 입력" placeholder="가입기간 입력">
+														<span class="other">개월</span>
+													</div>
+												</li>
+											</ul>
+											<button type="button" class="listRemove"><i>외국 거주기간 대상자 삭제</i></button>
+										</li>
+									</ul>
+
+									<div class="listAdd">
+										<button type="button" class="lineButton"><span>추가</span><i class="icoPlus"></i></button>
+									</div>
+								</div>
+								<!-- //Mobile -->
+
+								<ul class="guideText mt">
+									<li>사회보장협정(가입기간협산) 체결국가 : 캐나다, 미국, 독일, 프랑스, 헝가리, 호주, 체코, 아일랜드, 벨기에, 폴란드, 불가리아, 슬로바키아, 루마니아, 오스크리아, 덴마크, 인도, 스페인, 스웨덴, 터키, 브라질, 핀란드 (2017년3월 현재 21개국)</li>
+								</ul>
+							</div>
+						</div>
+
+						<hr class="space style2 onlyMobile">
+
+						<div class="pcmt24 m_toggleArea">
+							<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+								<b class="defaultH5">첨부파일</b>
+								<span class="toggleBtn onlyMobile"><i>첨부파일 토글</i></span>
+							</button>
+
+							<div class="target targetHidden">
+								<!-- PC -->
+								<div class="onlyPC">
+									<div class="hTableBody">
+										<table>
+											<caption>첨부파일 : 혼인관계증명서, 가족관계증명서, 근로소득원천징수 영수증, 소득금액 증명원, 신분증 사본, 주민등록등본, 통장사본 1, 통장사본 2, 기타로 구성</caption>
+											<colgroup>
+												<col style="width: 210px;">
+												<col>
+											</colgroup>
+											<tbody>
+												<tr>
+													<th scope="row">혼인관계증명서</th>
+													<td>
+														<div class="defaultBtn">
+															<input type="text" title="혼인관계증명서 등록" placeholder="등록해 주세요.">
+															<button type="button" class="button h40 lineBlack">찾기</button>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">가족관계증명서</th>
+													<td>
+														<div class="defaultBtn">
+															<input type="text" title="가족관계증명서 등록" placeholder="등록해 주세요.">
+															<button type="button" class="button h40 lineBlack">찾기</button>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">근로소득원천징수 영수증</th>
+													<td>
+														<div class="defaultBtn">
+															<input type="text" title="근로소득원천징수 영수증 등록" placeholder="등록해 주세요.">
+															<button type="button" class="button h40 lineBlack">찾기</button>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">소득금액 증명원</th>
+													<td>
+														<div class="defaultBtn">
+															<input type="text" title="소득금액 증명원 등록" placeholder="등록해 주세요.">
+															<button type="button" class="button h40 lineBlack">찾기</button>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">신분증 사본</th>
+													<td>
+														<div class="defaultBtn">
+															<input type="text" title="신분증 사본 등록" placeholder="등록해 주세요.">
+															<button type="button" class="button h40 lineBlack">찾기</button>
+														</div>
+														<div class="requireText">
+															<i></i>
+															<span>주민등록증 앞면</span>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">주민등록등본</th>
+													<td>
+														<div class="defaultBtn">
+															<input type="text" title="주민등록등본 등록" placeholder="등록해 주세요.">
+															<button type="button" class="button h40 lineBlack">찾기</button>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">통장사본 1</th>
+													<td>
+														<div class="defaultBtn">
+															<input type="text" title="통장사본 1 등록" placeholder="등록해 주세요.">
+															<button type="button" class="button h40 lineBlack">찾기</button>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">통장사본 2</th>
+													<td>
+														<div class="defaultBtn">
+															<input type="text" title="통장사본 2 등록" placeholder="등록해 주세요.">
+															<button type="button" class="button h40 lineBlack">찾기</button>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">기타</th>
+													<td>
+														<div class="defaultBtn">
+															<input type="text" title="기타 등록" placeholder="등록해 주세요.">
+															<button type="button" class="button h40 lineBlack">찾기</button>
 														</div>
 													</td>
 												</tr>
@@ -260,42 +1604,72 @@
 								<div class="onlyMobile">
 									<ul class="m_hTableBody">
 										<li>
-											<label>계좌구분 <span class="colorOrange">*</span></label>
-											<div class="roundBoxGray">
-												<ul class="groupBox">
-													<li>
-														<div class="radioBox">
-															<input type="radio" id="m_testRadio3" name="m_testRadio2">
-															<label for="m_testRadio3">일반계좌</label>
-														</div>
-													</li>
-													<li>
-														<div class="radioBox">
-															<input type="radio" id="m_testRadio4" name="m_testRadio2">
-															<label for="m_testRadio4">국민연금 안심통장</label>
-															<button type="button" class="tooltipBtn" aria-describedby="tooltip1"><i class="icon">도움말</i></button>
-														</div>
-													</li>
-												</ul>
+											<label>혼인관계증명서</label>
+											<div class="defaultBtn">
+												<input type="text" title="혼인관계증명서 등록" placeholder="등록해 주세요.">
+												<button type="button" class="button h40 lineBlack other">찾기</button>
 											</div>
 										</li>
 										<li>
-											<label>계좌정보 <span class="colorOrange">*</span></label>
-											<div class="twin mw404">
-												<select title="금융기관 선택">
-													<option>금융기관</option>
-												</select>
-												<input type="text" title="예금주 입력" placeholder="예금주를 입력해주세요">
+											<label>가족관계증명서</label>
+											<div class="defaultBtn">
+												<input type="text" title="가족관계증명서 등록" placeholder="등록해 주세요.">
+												<button type="button" class="button h40 lineBlack other">찾기</button>
 											</div>
-											<div class="spcemt">
+										</li>
+										<li>
+											<label>근로소득원천징수 영수증</label>
+											<div class="defaultBtn">
+												<input type="text" title="근로소득원천징수 영수증 등록" placeholder="등록해 주세요.">
+												<button type="button" class="button h40 lineBlack other">찾기</button>
+											</div>
+										</li>
+										<li>
+											<label>소득금액 증명원</label>
+											<div class="defaultBtn">
+												<input type="text" title="소득금액 증명원 등록" placeholder="등록해 주세요.">
+												<button type="button" class="button h40 lineBlack other">찾기</button>
+											</div>
+										</li>
+										<li>
+											<label>신분증 사본</label>
+											<div class="defaultBtn">
+												<input type="text" title="신분증 사본 등록" placeholder="등록해 주세요.">
+												<button type="button" class="button h40 lineBlack other">찾기</button>
+											</div>
+										</li>
+										<li>
+											<label>주민등록등본</label>
+											<div>
 												<div class="defaultBtn">
-													<input type="text" title="계좌번호 입력" placeholder="계좌번호를 입력해주세요">
-													<button type="button" class="button h40 lineBlack">계좌정보 확인</button>
+													<input type="text" title="주민등록등본 등록" placeholder="등록해 주세요.">
+													<button type="button" class="button h40 lineBlack other">찾기</button>
 												</div>
 												<div class="requireText">
 													<i></i>
-													<span>“-” 필수입력 예)123-456-789-01</span>
+													<span>주민등록증 앞면</span>
 												</div>
+											</div>
+										</li>
+										<li>
+											<label>통장사본 1</label>
+											<div class="defaultBtn">
+												<input type="text" title="통장사본 1 등록" placeholder="등록해 주세요.">
+												<button type="button" class="button h40 lineBlack other">찾기</button>
+											</div>
+										</li>
+										<li>
+											<label>통장사본 2</label>
+											<div class="defaultBtn">
+												<input type="text" title="통장사본 2 등록" placeholder="등록해 주세요.">
+												<button type="button" class="button h40 lineBlack other">찾기</button>
+											</div>
+										</li>
+										<li>
+											<label>기타</label>
+											<div class="defaultBtn">
+												<input type="text" title="기타 등록" placeholder="등록해 주세요.">
+												<button type="button" class="button h40 lineBlack other">찾기</button>
 											</div>
 										</li>
 									</ul>
@@ -303,16 +1677,21 @@
 								<!-- //Mobile -->
 
 								<ul class="guideText mt">
-									<li>"지급계좌"란에는 지급받으려는 금융기관의 계좌번호를 적되, 반드시 입출금이 가능한 계좌여야 합니다.</li>
-									<li>공무원연금에서 대부금을 미상환한 경우의 연금 지급계좌는 대부 금융기관과 같아야 합니다.</li>
-									<li>입출금이 가능한 본인 명의의 계좌만 등록 가능합니다.</li>
+									<li>급여청구시 필요한 서류 입니다.</li>
+									<li>등록하신 문서는 담당자가 확인 후 확인 연락 드릴 수 있습니다.</li>
+									<li>준비되신 서류를 등록해주세요.</li>
+									<li>온라인 등록 시 첨부파일은 선택 사항입니다.</li>
+									<li>
+										첨부시 지원하는 문서 종류 다음과 같습니다.<br>
+										- MS문서(doc, docx, ppt, pptx, xls, xlsx), 한글문서(hwp), 텍스트문서(txt), 이미지(png, jpeg, jpg, gif)
+									</li>
 								</ul>
 							</div>
 						</div>
 
 						<div class="btnsGroup m_styleOther flexEnd bdt mt">
-							<button type="button" class="button h48 gray" onclick="location.href='HO_04_01_02_02_01.html'">이전</button>
-							<button type="button" class="button h48 blue" onclick="location.href='HO_04_01_02_02_03.html'">다음</button>
+							<button type="button" class="button h48 gray" onclick="location.href='HO_04_01_02_02_02.html'">이전</button>
+							<button type="button" class="button h48 blue" onclick="location.href='HO_04_01_02_02_04.html'">다음</button>
 						</div>
 					</div>
 					
