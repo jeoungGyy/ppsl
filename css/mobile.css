@@ -147,27 +147,35 @@ hr.space.style2 { margin: 0 -16px;}
 .mListMulti .msList li.lineBreak { margin-top: 16px; padding-top: 16px; border-top: 1px solid #dbdbdb;}
 
 /* m_hTableBody */
-.m_hTableBody li ~ li { margin-top: 24px;}
-.m_hTableBody li label { display: block; margin-bottom: 8px; font-size: 14px; font-weight: 700;}
-.m_hTableBody li .boxGray { display: flex; align-items: center; height: 67px; padding-left: 16px; background-color: #f7f7f7; border-radius: 8px;}
-.m_hTableBody li .boxGray .num { position: relative; margin-left: 12px; padding-left: 12px; font-size: 14px;}
-.m_hTableBody li .boxGray .num::before { content: ''; display: block; position: absolute; left: 0; top: 0; width: 1px; height: 12px; background-color: #ccc;}
-.m_hTableBody li .post input { flex: 1; width: 100%; margin-right: 4px;}
-.m_hTableBody li .address input { display: block; width: 100%; margin-top: 8px;}
-.m_hTableBody li .phone { gap: 17px;}
-.m_hTableBody li .phone span { flex: 1;}
-.m_hTableBody li .phone span ~ span { position: relative;}
-.m_hTableBody li .phone span ~ span::before { content: ''; display: block; position: absolute; left: -12px; top: 20px; width: 7px; height: 1px; background-color: #333;}
-.m_hTableBody li .phone select,
-.m_hTableBody li .phone input { width: 100%;}
-.m_hTableBody li .email span { position: relative; width: 100%; padding-right: 21px;}
-.m_hTableBody li .email span::before { content: '@'; position: absolute; right: 0; top: 13px;}
-.m_hTableBody li .email input { width: 100%;}
-.m_hTableBody li .emailSub { margin-top: 8px;}
-.m_hTableBody li .emailSub span { flex: 1;}
-.m_hTableBody li .emailSub span ~ span { margin-left: 4px;}
-.m_hTableBody li .emailSub select,
-.m_hTableBody li .emailSub input { width: 100%;}
+.m_hTableBody >li ~ li { margin-top: 24px;}
+.m_hTableBody >li >label { display: block; margin-bottom: 8px; font-size: 14px; font-weight: 700;}
+.m_hTableBody >li .boxGray { display: flex; align-items: center; height: 67px; padding-left: 16px; background-color: #f7f7f7; border-radius: 8px;}
+.m_hTableBody >li .boxGray .num { position: relative; margin-left: 12px; padding-left: 12px; font-size: 14px;}
+.m_hTableBody >li .boxGray .num::before { content: ''; display: block; position: absolute; left: 0; top: 0; width: 1px; height: 12px; background-color: #ccc;}
+.m_hTableBody >li .roundBoxGray { padding: 16px; background-color: #f7f7f7; border-radius: 8px;}
+.m_hTableBody >li .roundBoxGray li ~ li { margin-top: 16px;}
+.m_hTableBody >li .post input { flex: 1; width: 100%; margin-right: 4px;}
+.m_hTableBody >li .address input { display: block; width: 100%; margin-top: 8px;}
+.m_hTableBody >li .phone { gap: 17px;}
+.m_hTableBody >li .phone span { flex: 1;}
+.m_hTableBody >li .phone span ~ span { position: relative;}
+.m_hTableBody >li .phone span ~ span::before { content: ''; display: block; position: absolute; left: -12px; top: 20px; width: 7px; height: 1px; background-color: #333;}
+.m_hTableBody >li .phone select,
+.m_hTableBody >li .phone input { width: 100%;}
+.m_hTableBody >li .email span { position: relative; width: 100%; padding-right: 21px;}
+.m_hTableBody >li .email span::before { content: '@'; position: absolute; right: 0; top: 13px;}
+.m_hTableBody >li .email input { width: 100%;}
+.m_hTableBody >li .emailSub { margin-top: 8px;}
+.m_hTableBody >li .emailSub span { flex: 1;}
+.m_hTableBody >li .emailSub span ~ span { margin-left: 4px;}
+.m_hTableBody >li .emailSub select,
+.m_hTableBody >li .emailSub input { width: 100%;}
+.m_hTableBody >li .twin { display: flex; margin: 0 -2px;}
+.m_hTableBody >li .twin select,
+.m_hTableBody >li .twin input { width: 50%; margin: 0 2px;}
+.m_hTableBody >li .spcemt { margin-top: 8px;}
+.m_hTableBody >li .defaultBtn input { width: 100%;}
+.m_hTableBody >li .defaultBtn button { margin-top: 8px;}
 
 
 /* viewBody */
@@ -269,7 +277,7 @@ hr.space.style2 { margin: 0 -16px;}
 /* 연계연금청구 */
 .proposalBody .subFill { height: 51px; margin: 24px -16px 0; padding: 0 16px; background-color: #f7f7f7;}
 .proposalBody .subFill .defaultH4 { font-size: 16px;}
-
+.etcCheckbox { position: inherit; right: inherit; top: inherit; margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid #dbdbdb;}
 
 
 

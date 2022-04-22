@@ -3,6 +3,9 @@
 확인 URL: https://jeounggyy.github.io/ppsl/html/guide/ia.html
 
 
+### 04-22
+- HO_04_01_02_02_02 등록
+
 ### 04-21
 - 모바일 토글 버튼 수정
 - HO_04_01_01 등록

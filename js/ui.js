@@ -30,9 +30,9 @@ $(document).ready(function () {
           var $toggleGroup = $('button.toggleGroup');
           $toggleGroup.on('click', function() {
             if($(this).siblings('.target').css('display') === "none") {
-              $(this).addClass('active').attr({'title': '확장됨'}).siblings('.target').slideDown(200);
+              $(this).addClass('active').attr({'title': '확장됨'}).parents('.m_toggleArea').find('.target').slideDown(200);
             } else {
-              $(this).removeClass('active').attr({'title': '축소됨'}).siblings('.target').slideUp(200);
+              $(this).removeClass('active').attr({'title': '축소됨'}).parents('.m_toggleArea').find('.target').slideUp(200);
             }
           });
         }
@@ -43,7 +43,7 @@ $(document).ready(function () {
           $controlBox.removeAttr('style');
           $targetHidden.removeAttr('style');
         }
-      }).trigger("resize");;
+      }).trigger("resize");
 		},
     /* 라디오, 체크박스 */
 		groupBox: function () {
