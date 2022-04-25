@@ -1,0 +1,801 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<script src="../../include/head.js"></script> <!-- include: 공통 헤드 -->
+</head>
+
+<body>
+<div id="wrap">
+	<script src="../../include/header.js"></script> <!-- include: 공통 헤더 -->
+
+	<div class="container">
+		<div class="area">
+			<div class="wrap">
+				<div class="lnbBody">
+					<h2></h2>
+					<nav class="lnb">
+					</nav>
+				</div>
+
+				<div id="contentLink" class="contents">
+					<header class="contentsHeader">
+						<div class="title">
+							<h3>청구상태조회</h3>
+							<p>신청한 연계연금청구의 청구 상태를 확인 할 수 있습니다.</p>
+						</div>
+						<script src="../../include/location.js"></script> <!-- include: 공통 현재위치 -->
+					</header>
+
+					<div class="pcmt40 momt24">
+						<ul class="guideText blue">
+							<li>청구자격 적격여부는 청구신청 이후 연계기관에서 확인  후 정확히 판단할 수 있습니다.</li>
+							<li>연계퇴직유족, 연계노령 유족연금은 온라인 서비스를 지원하지 않습니다.</li>
+						</ul>
+					</div>
+					<div class="stepBody mt">
+						<!-- 3단계 -->
+						<ul class="stepBy">
+							<li class="active">
+								<span class="fontMontserrat">01</span>
+								<span class="fontEliceDigital text">접수<span class="m_block">중</span></span>
+							</li>
+							<li class="active">
+								<span class="fontMontserrat">02</span>
+								<span class="fontEliceDigital text">접수<span class="m_block">완료</span></span>
+							</li>
+							<li class="active">
+								<span class="invisible">현재 단계</span>
+								<span class="fontMontserrat">03</span>
+								<span class="fontEliceDigital text">기관<span class="m_block">심사중</span></span>
+							</li>
+							<li>
+								<span class="fontMontserrat">04</span>
+								<span class="fontEliceDigital text">처리<span class="m_block">완료</span></span>
+							</li>
+						</ul>
+						<ul class="guideText mt">
+							<li><span class="etcColorRed">국민연금공단, 공무원연금공단</span>에서 심사중에 있습니다.</li>
+							<li>심사는 정확한 확인을 위해 경우에 따라 4주 이상 소요 될수 있습니다.</li>
+						</ul>
+						<!-- //3단계 -->
+					</div>
+
+					<!-- 대상자 -->
+					<div class="targetBody">
+						<div class="pcmt40">
+							<!-- PC -->
+							<div class="onlyPC">
+								<div class="tableBody">
+									<table>
+										<caption>청구상태조회 : 접수방법, 접수번호, 접수일, 내용, 수급정보, 상태, 처리지사로 구성</caption>
+										<colgroup>
+											<col style="width: 104px;">
+											<col>
+											<col style="width: 124px;">
+											<col style="width: 144px;">
+											<col style="width: 124px;">
+											<col style="width: 124px;">
+											<col style="width: 124px;">
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">접수방법</th>
+												<th scope="col">접수번호</th>
+												<th scope="col">접수일</th>
+												<th scope="col">내용</th>
+												<th scope="col">수급정보</th>
+												<th scope="col">상태</th>
+												<th scope="col">처리지사</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>인터넷</td>
+												<td>2009101000040</td>
+												<td>2006.03.01</td>
+												<td>연계노령연금</td>
+												<td>2016.04.30</td>
+												<td>기관심사중</td>
+												<td><button type="button" class="button h24 lineBlack">확인</button></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!-- //PC -->
+							<!-- Mobile -->
+							<div class="onlyMobile m_tableBody mt noBorder">
+								<ul class="mList">
+									<li>
+										<div class="roundBoxGray">
+											<h6 class="fontDefault">접수번호</h6>
+											<div class="flexLeft spaceBetween">
+												<b class="listDate colorBlue">2009101000040</b>
+												<div class="roundText">기관심사중</div>
+											</div>
+											
+											<ul class="msList bdt">
+												<li>
+													<label>접수방법</label>
+													<b>인터넷</b>
+												</li>
+												<li>
+													<label>접수일</label>
+													<b>2006.03.01</b>
+												</li>
+												<li>
+													<label>내용</label>
+													<b>연계노령연금</b>
+												</li>
+												<li>
+													<label>수급정보</label>
+													<b>2016.04.30</b>
+												</li>
+												<li>
+													<label>처리지사</label>
+													<button type="button" class="button h24 lineBlack">확인</button>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!-- //Mobile -->
+						</div>
+					</div>
+					<!-- //대상자 -->
+
+					<hr class="space style2">
+
+					<div class="proposalBody">
+						<h4 class="deText pcmt40 momt32">연계노령퇴직연금 <span class="m_block">청구 신청서</span></h4>
+						
+						<!-- PC -->
+						<div class="onlyPC">
+							<div class="whTableBody mt">
+								<table>
+									<caption>연계노령퇴직연금 청구신청 완료</caption>
+									<colgroup>
+										<col style="width: 83px;">
+										<col style="width: 100px;">
+										<col style="width: 100px;">
+										<col style="width: 104px;">
+										<col>
+										<col style="width: 144px;">
+										<col style="width: 114px;">
+										<col style="width: 114px;">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th id="a" rowspan="5">청구인</th>
+											<th id="a1" colspan="2">성명</th>
+											<td headers="a a1" colspan="2">김공단</td>
+											<th id="a2">주민등록번호</th>
+											<td headers="a a2" colspan="2"></td>
+										</tr>
+										<tr>
+											<th id="a3" colspan="2">주소</th>
+											<td headers="a a3" colspan="5">(우편번호) 주소 전체</td>
+										</tr>
+										<tr>
+											<th id="a4" colspan="2">자택전화</th>
+											<td headers="a a4" colspan="5">02-1234-5678</td>
+										</tr>
+										<tr>
+											<th id="a5" colspan="2">휴대전화</th>
+											<td headers="a a5" colspan="5">010-1234-1234</td>
+										</tr>
+										<tr>
+											<th id="a6" colspan="2">전자우편(이메일)</th>
+											<td headers="a a6" colspan="5">abcd123@email.com</td>
+										</tr>
+										<tr>
+											<th id="b" rowspan="3">지급<br>계좌</th> <!-- 연금종류 만큼 rowspan="3" 값을 조정해주세요. -->
+											<th id="b1" colspan="2">연금종류</th>
+											<th id="b2" colspan="2">금융기관</th>
+											<th id="b3" colspan="3">계좌번호</th>
+										</tr>
+										<tr>
+											<td headers="b b1" colspan="2" class="sameTh">국민연금공단</td>
+											<td headers="b b2" colspan="2" class="textCenter">국민은행</td>
+											<td headers="b b3" colspan="3" class="textCenter">-</td>
+										</tr>
+										<tr>
+											<td headers="b b1" colspan="2" class="sameTh">사립학교교직원 연금공단</td>
+											<td headers="b b2" colspan="2" class="textCenter">국민은행</td>
+											<td headers="b b3" colspan="3" class="textCenter">-</td>
+										</tr>
+										<tr>
+											<th id="c" colspan="3" rowspan="2">연계신청한 연금가입내용</th>
+											<th id="c1">합계</th>
+											<th id="c2">국민연금</th>
+											<th id="c3">공무원연금</th>
+											<th id="c4">군인연금</th>
+											<th id="c5">별정우체국</th>
+										</tr>
+										<tr>
+											<td headers="c c1" class="textCenter">00년00월</td>
+											<td headers="c c2" class="textCenter">00년00월</td>
+											<td headers="c c3" class="textCenter">00년00월</td>
+											<td headers="c c4" class="textCenter">00년00월</td>
+											<td headers="c c5" class="textCenter">00년00월</td>
+										</tr>
+										<tr>
+											<th id="d" colspan="8">연계노령연금관련</th>
+										</tr>
+										<tr>
+											<th id="d1" rowspan="3">소득<br> 정보</th>
+											<th id="d2" colspan="2">종사여부</th>
+											<td headers="d d1 d2" colspan="5">비종사</td>
+										</tr>
+										<tr>
+											<th id="d3" colspan="2">월평균 소득금액</th>
+											<td headers="d d1 d3" colspan="5">0원</td>
+										</tr>
+										<tr>
+											<th id="d4" colspan="2">소득 종류</th>
+											<td headers="d d1 d4" colspan="5">없음</td>
+										</tr>
+										<tr>
+											<th id="e" colspan="3" rowspan="4">부양가족 연금지급대상자 정보</th> <!-- 가입자 수 만큼 rowspan="4" 값을 조정해주세요. -->
+											<th id="e1">이름</th>
+											<th id="e2" colspan="2">주민등록번호</th>
+											<th id="e3">청구인과의 관계</th>
+											<th id="e4">장애여부</th>
+										</tr>
+										<tr>
+											<td headers="e e1" class="textCenter">김연금</td>
+											<td headers="e e2" class="textCenter" colspan="2">101010-*******</td>
+											<td headers="e e3" class="textCenter">배우자</td>
+											<td headers="e e4" class="textCenter">없음</td>
+										</tr>
+										<tr>
+											<td headers="e e1" class="textCenter">이연금</td>
+											<td headers="e e2" class="textCenter" colspan="2">101010-*******</td>
+											<td headers="e e3" class="textCenter">자</td>
+											<td headers="e e4" class="textCenter">없음</td>
+										</tr>
+										<tr>
+											<td headers="e e1" class="textCenter">박연금</td>
+											<td headers="e e2" class="textCenter" colspan="2">101010-*******</td>
+											<td headers="e e3" class="textCenter">녀</td>
+											<td headers="e e4" class="textCenter">없음</td>
+										</tr>
+										<tr>
+											<th id="f" rowspan="3">외국<br>연금<br>가입<br>기간</th>
+											<th id="f1" colspan="2">유무</th>
+											<td headers="f f1" colspan="5">없음</td>
+										</tr>
+										<tr>
+											<th id="f2" colspan="2">국가명</th>
+											<td headers="f f2" colspan="5">-</td>
+										</tr>
+										<tr>
+											<th id="f3" colspan="2">가입기간</th>
+											<td headers="f f3" colspan="5">0년 0월</td>
+										</tr>
+										<tr>
+											<th id="g" rowspan="3">외국<br>거주<br>기간</th>
+											<th id="g1" colspan="2">유무</th>
+											<td headers="g g1" colspan="5">없음</td>
+										</tr>
+										<tr>
+											<th id="g2" colspan="2">국가명</th>
+											<td headers="g g2" colspan="5">-</td>
+										</tr>
+										<tr>
+											<th id="g3" colspan="2">가입기간</th>
+											<td headers="g g3" colspan="5">0년 0월</td>
+										</tr>
+										<tr>
+											<th id="h" colspan="8">연계퇴직연금관련</th>
+										</tr>
+										<tr>
+											<th id="i" rowspan="2">형벌<br>사항</th>
+											<th id="i1" colspan="2">유무</th>
+											<td headers="h i i1" colspan="5">없음</td>
+										</tr>
+										<tr>
+											<th id="i2" colspan="2">형벌종류</th>
+											<td headers="h i i2" colspan="5">없음</td>
+										</tr>
+										<tr>
+											<th id="j" rowspan="4">대부<br>사항</th>
+											<th id="j1" colspan="2">유무</th>
+											<td headers="h j j1" colspan="5">없음</td>
+										</tr>
+										<tr>
+											<th id="j2" colspan="2">대부 종류</th>
+											<td headers="h j j2" colspan="5">-</td>
+										</tr>
+										<tr>
+											<th id="j3" rowspan="2">상환방법</th>
+											<th id="j4">일시상활</th>
+											<td headers="h j j3 j4" colspan="5">등록된 내용 노출</td>
+										</tr>
+										<tr>
+											<th id="j5">분할상환</th>
+											<td headers="h j j3 j5" colspan="5">등록된 내용 노출</td>
+										</tr>
+
+										<tr>
+											<th id="k" colspan="3">퇴직사유</th>
+											<td headers="h k" colspan="5">없음</td>
+										</tr>
+										<tr>
+											<th id="l" rowspan="3">가산<br>기간</th>
+											<th id="l1" colspan="2">사병</th>
+											<td headers="h l l1" colspan="5">등록된 내용 노출</td>
+										</tr>
+										<tr>
+											<th id="l2" colspan="2">소급</th>
+											<td headers="h l l2" colspan="5">등록된 내용 노출</td>
+										</tr>
+										<tr>
+											<th id="l3" colspan="2">합산(통산)</th>
+											<td headers="h l l3" colspan="5">등록된 내용 노출</td>
+										</tr>
+									</tbody>
+								</table>
+								<table>
+									<caption>연계노령퇴직연금 청구신청 급여선택</caption>
+									<colgroup>
+										<col style="width: 283px;">
+										<col>
+										<col style="width: 157px;">
+										<col style="width: 157px;">
+										<col style="width: 157px;">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th id="m" rowspan="5">급여선택</th>
+											<th id="m1" colspan="2">발생 급여</th>
+											<th id="m2" colspan="2">선택급여</th>
+										</tr>
+										<tr>
+											<th id="m3">급여명</th>
+											<th id="m4">발생일</th>
+											<th id="m5">급여명</th>
+											<th id="m6">발생일</th>
+										</tr>
+										<tr>
+											<td headers="m m1 m3" class="textCenter">ㅇㅇㅇㅇㅇㅇ</td>
+											<td headers="m m1 m4" class="textCenter">YYYY - MM - DD</td>
+											<td headers="m m1 m5" class="textCenter">ㅇㅇㅇㅇㅇㅇ</td>
+											<td headers="m m1 m6" class="textCenter">YYYY - MM - DD</td>
+										</tr>
+										<tr>
+											<td headers="m m1 m3" class="textCenter">ㅇㅇㅇㅇㅇㅇ</td>
+											<td headers="m m1 m4" class="textCenter">YYYY - MM - DD</td>
+											<td headers="m m1 m5" class="textCenter">ㅇㅇㅇㅇㅇㅇ</td>
+											<td headers="m m1 m6" class="textCenter">YYYY - MM - DD</td>
+										</tr>
+										<tr>
+											<td headers="m m1 m3" class="textCenter">ㅇㅇㅇㅇㅇㅇ</td>
+											<td headers="m m1 m4" class="textCenter">YYYY - MM - DD</td>
+											<td headers="m m1 m5" class="textCenter">ㅇㅇㅇㅇㅇㅇ</td>
+											<td headers="m m1 m6" class="textCenter">YYYY - MM - DD</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!-- //PC -->
+
+						<!-- Mobile -->
+						<div class="onlyMobile">
+							<div class="m_toggleArea">
+								<button class="flexLeft spaceBetween toggleGroup active" title="확장됨">
+									<b class="defaultH4">청구인</b>
+									<span class="toggleBtn onlyMobile"><i>청구인 토글</i></span>
+								</button>
+								<div class="target">
+									<ul class="mListMulti">
+										<li>
+											<div class="titleStyle">
+												<div class="flexLeft flexEnd">
+													<h6 class="name">홍길*</h6>
+													<span>000000-******</span>
+												</div>
+												<p class="text">[12356] 30116 세종특별자치시 한누리대로 411, 644호 행정안전부 주소정책과</p>
+											</div>
+											
+											<ul class="msList">
+												<li class="lineBreak">
+													<span>자택번호</span>
+													<b>-</b>
+												</li>
+												<li>
+													<span>휴대전화</span>
+													<b>010-1234-1234</b>
+												</li>
+												<li>
+													<span>전자우편(이메일)</span>
+													<b>abcd123@email.com</b>
+												</li>
+												<li>
+													<span>처리결과확인방법</span>
+													<b></b>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<hr class="space style2 onlyMobile">
+
+							<div class="m_toggleArea">
+								<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+									<b class="defaultH4">지급계좌</b>
+									<span class="toggleBtn onlyMobile"><i>지급계좌 토글</i></span>
+								</button>
+								<div class="target targetHidden">
+									<ul class="mListMulti">
+										<li>
+											<div class="groupBox">
+												<h5 class="defaultH5">연계노령연금</h5>
+											</div>
+											<div class="roundBoxGray sp mt">
+												<span>우리은행</span>
+												<div class="flexLeft spaceBetween">
+													<b class="listDate">999-999999-99-999</b>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="groupBox">
+												<h5 class="defaultH5">연계퇴직연금</h5>
+											</div>
+											<div class="roundBoxGray sp mt">
+												<span>우리은행</span>
+												<div class="flexLeft spaceBetween">
+													<b class="listDate">999-999999-99-999</b>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<hr class="space style2 onlyMobile">
+
+							<div class="m_toggleArea">
+								<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+									<b class="defaultH4">연계신청한 연금가입내용</b>
+									<span class="toggleBtn onlyMobile"><i>연계신청한 연금가입내용 토글</i></span>
+								</button>
+								<div class="target targetHidden">
+									<ul class="mListMulti">
+										<li>
+											<div class="spaceBetweenStyle">
+												<span>합계</span>
+												<b>10년 2개월</b>
+											</div>
+											
+											<ul class="msList">
+												<li class="lineBreak">
+													<span>국민연금</span>
+													<b>5년 1개월</b>
+												</li>
+												<li>
+													<span>공무원연금</span>
+													<b>5년 1개월</b>
+												</li>
+												<li>
+													<span>군인연금</span>
+													<b></b>
+												</li>
+												<li>
+													<span>별정우체국연금</span>
+													<b></b>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<hr class="space style2 onlyMobile">
+
+							<div class="m_toggleArea">
+								<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+									<b class="defaultH4">연계노령연금관련</b>
+									<span class="toggleBtn onlyMobile"><i>연계노령연금관련 토글</i></span>
+								</button>
+								<div class="target targetHidden">
+									<ul class="mListMulti">
+										<li>
+											<div class="groupBox">
+												<h5 class="defaultH5">소득정보</h5>
+											</div>
+											<div class="roundBoxGray sp mt">
+												<ul class="msList mt0">
+													<li>
+														<span>종사여부</span>
+														<b>비종사</b>
+													</li>
+													<li>
+														<span>월평균 소득금액</span>
+														<b>0원</b>
+													</li>
+													<li>
+														<span>소득종류</span>
+														<b>없음</b>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<div class="groupBox">
+												<h5 class="defaultH5">부양가족 연금지급대상자 정보</h5>
+											</div>
+											<ul class="grayBoxList">
+												<li>
+													<div class="titleStyle">
+														<div class="flexLeft flexEnd">
+															<h6 class="name">김연금</h6>
+															<span>000000-******</span>
+														</div>
+													</div>
+													
+													<ul class="msList">
+														<li class="lineBreak">
+															<span>청구인과의 관계</span>
+															<b>배우자</b>
+														</li>
+														<li>
+															<span>장애여부</span>
+															<b>없음</b>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<div class="titleStyle">
+														<div class="flexLeft flexEnd">
+															<h6 class="name">이연금</h6>
+															<span>000000-******</span>
+														</div>
+													</div>
+													
+													<ul class="msList">
+														<li class="lineBreak">
+															<span>청구인과의 관계</span>
+															<b>자</b>
+														</li>
+														<li>
+															<span>장애여부</span>
+															<b>없음</b>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<div class="titleStyle">
+														<div class="flexLeft flexEnd">
+															<h6 class="name">박연금</h6>
+															<span>000000-******</span>
+														</div>
+													</div>
+													
+													<ul class="msList">
+														<li class="lineBreak">
+															<span>청구인과의 관계</span>
+															<b>녀</b>
+														</li>
+														<li>
+															<span>장애여부</span>
+															<b>없음</b>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<div class="groupBox">
+												<h5 class="defaultH5">외국연금 가입기간</h5>
+											</div>
+											<div class="roundBoxGray sp mt">
+												<ul class="msList mt0">
+													<li>
+														<span>유무</span>
+														<b>없음</b>
+													</li>
+													<li>
+														<span>국가명</span>
+														<b>-</b>
+													</li>
+													<li>
+														<span>가입기간</span>
+														<b>0년 0월</b>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<div class="groupBox">
+												<h5 class="defaultH5">외국 거주기간</h5>
+											</div>
+											<div class="roundBoxGray sp mt">
+												<ul class="msList mt0">
+													<li>
+														<span>유무</span>
+														<b>없음</b>
+													</li>
+													<li>
+														<span>국가명</span>
+														<b>-</b>
+													</li>
+													<li>
+														<span>가입기간</span>
+														<b>0년 0월</b>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<hr class="space style2 onlyMobile">
+
+							<div class="m_toggleArea">
+								<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+									<b class="defaultH4">연계퇴직연금관련</b>
+									<span class="toggleBtn onlyMobile"><i>연계퇴직연금관련 토글</i></span>
+								</button>
+								<div class="target targetHidden">
+									<ul class="mListMulti">
+										<li>
+											<div class="groupBox">
+												<h5 class="defaultH5">형벌사항</h5>
+											</div>
+											<div class="roundBoxGray sp mt">
+												<ul class="msList mt0">
+													<li>
+														<span>형벌사항</span>
+														<b>없음</b>
+													</li>
+													<li>
+														<span>형벌종류</span>
+														<b></b>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<div class="groupBox">
+												<h5 class="defaultH5">대부사항</h5>
+											</div>
+											<div class="roundBoxGray sp mt">
+												<ul class="msList mt0">
+													<li>
+														<span>대부종류</span>
+														<b>-</b>
+													</li>
+													<li>
+														<span>상환방법(일시)</span>
+														<b>등록된 내용 노출</b>
+													</li>
+													<li>
+														<span>상환방법(분할)</span>
+														<b>등록된내용 노출</b>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<div class="groupBox">
+												<h5 class="defaultH5">퇴직사유</h5>
+											</div>
+											<div class="roundBoxGray sp mt">
+												<ul class="msList mt0">
+													<li>
+														<span>없음</span>
+														<b></b>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<div class="groupBox">
+												<h5 class="defaultH5">가산기간</h5>
+											</div>
+											<div class="roundBoxGray sp mt">
+												<ul class="msList mt0">
+													<li>
+														<span>합산(통산)</span>
+														<b class="fontSize16">10년 2개월</b>
+													</li>
+													<li class="lineBreak">
+														<span>사병</span>
+														<b>5년 1개월</b>
+													</li>
+													<li>
+														<span>소급</span>
+														<b>5년 1개월</b>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<div class="groupBox">
+												<h5 class="defaultH5">급여선택</h5>
+											</div>
+											<ul>
+												<li>
+													<b class="smallFont">발생급여</b>
+													<ul class="grayBoxList fontSize14">
+														<li>
+															<b>국민연금</b>
+															<span class="mt">발생일 : YYYY - MM - DD</span>
+														</li>
+														<li>
+															<b>국민연금</b>
+															<span class="mt">발생일 : YYYY - MM - DD</span>
+														</li>
+														<li>
+															<b>국민연금</b>
+															<span class="mt">발생일 : YYYY - MM - DD</span>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<b class="smallFont">선택급여</b>
+													<ul class="grayBoxList fontSize14">
+														<li>
+															<b>국민연금</b>
+															<span class="mt">발생일 : YYYY - MM - DD</span>
+														</li>
+														<li>
+															<b>국민연금</b>
+															<span class="mt">발생일 : YYYY - MM - DD</span>
+														</li>
+														<li>
+															<b>국민연금</b>
+															<span class="mt">발생일 : YYYY - MM - DD</span>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<hr class="space style2 onlyMobile">
+						</div>
+						<!-- //Mobile -->
+
+						<div class="dateGroup otherStyle2 pdB0">
+							<div class="body">
+								<p>「국민연금과 직역연금의 연계신청에 관한 법률 시행규칙」 제2조에 따라 위와 같이 신청합니다.</p>
+								<div class="in">
+									<span>청구날짜 : <b>YYYY - MM - DD</b></span>
+									<span>청구인 : <b>김공단</b> (서명 또는 인)</span>
+								</div>
+							</div>
+							<div class="sign2 m_bdt">
+								<b>사립학교교직원 연금공단</b> 이사장 (귀하)
+							</div>
+						</div>
+
+						<div class="btnsGroup flexEnd bdt mt">
+							<button type="button" class="button h48 lineBlack">목록</button>
+						</div>
+					</div>
+					
+					<script src="../../include/evaluation.js"></script> <!-- include: 공통 평가 -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="../../include/footer.js"></script> <!-- include: 공통 푸터 -->
+
+	<script>
+		var depth = [4, 3]; /* 현재메뉴 활성화 용: gnb에 있는 data-menu 값과 일치하게 해주세요. */
+	</script>
+</div>
+</body>
+</html>
