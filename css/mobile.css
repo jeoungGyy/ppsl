@@ -54,12 +54,14 @@
 hr.space { margin: 32px -16px; height: 12px; background-color: #f7f7f7;}
 hr.space.style { margin: 24px -16px 0;}
 hr.space.style2 { margin: 0 -16px;}
+hr.space.style3 { margin: 32px -16px 0;}
 
 /* 버튼 */
 .m_twin .button { flex-direction: column; flex: 1; height: inherit; padding: 16px 0; line-height: 24px;}
 .btnsGroup { padding-top: 24px;}
 .btnsGroup.m_bdt { border-top: 1px solid #333;}
 .btnsGroup.m_styleOther { margin: 0 -15px !important; padding: 24px 16px 0; border-top: 12px solid #f7f7f7;}
+.btnsGroup.m_mb32 { margin-bottom: 32px;}
 
 /* searchBody */
 .searchBody { margin-top: 24px; padding: 0; border: solid 1px #dbdbdb; background-color: #fff;}
@@ -87,12 +89,13 @@ hr.space.style2 { margin: 0 -16px;}
 .m_tableBody { padding: 24px 16px; border: 1px solid #dbdbdb; border-radius: 8px;}
 .m_tableBody .mList >li ~ li { margin-top: 8px;}
 .m_tableBody .mList >li h6 { font-size: 14px;}
-.m_tableBody .roundBoxGray { padding: 24px 16px; font-size: 14px; background-color: #f7f7f7; border-radius: 8px;}
+.m_tableBody .roundBoxGray { position: relative; padding: 24px 16px; font-size: 14px; background-color: #f7f7f7; border-radius: 8px;}
 .m_tableBody .roundBoxGray >.flexLeft { margin-top: 8px;}
 .m_tableBody .roundBoxGray >.flexLeft .listDate { display: inline-block; font-size: 14px; line-height: 21px;}
 .m_tableBody .roundBoxGray >.flexLeft .roundText { display: flex; align-items: center; justify-content: center; width: 64px; height: 24px; font-size: 12px; border: 1px solid #333; border-radius: 12px;}
 .m_tableBody .roundBoxGray >.flexLeft .roundText.blueLine { color: #366cc3; border-color: #366cc3;}
 .m_tableBody .roundBoxGray >.flexLeft.mt0 { margin-top: 0;}
+.m_tableBody .roundBoxGray .tooltipBtn { position: absolute; right: 13px; top: 13px;}
 .m_tableBody .roundBoxGray.sp { padding: 16px;}
 .m_tableBody .roundBoxGray.mt { margin-top: 16px;}
 .m_tableBody .mList >li .groupBox label { font-weight: 700;}
@@ -315,8 +318,9 @@ hr.space.style2 { margin: 0 -16px;}
 .listDownload { display: flex; align-items: center; justify-content: space-between; height: 51px; margin-top: 24px; padding: 0 16px; background-color: #f7f7f7; border-radius: 8px;}
 .listDownload .icon { display: block; width: 24px; height: 24px; background: url(../images/common/ico_download2.svg) no-repeat center/cover;}
 
-
-
+/* 수급계좌변경 */
+.subDateBody { display: flex; justify-content: flex-end; margin-bottom: 16px;}
+.subDateBody .subDate { font-size: 14px; color: #767676;}
 
 
 
