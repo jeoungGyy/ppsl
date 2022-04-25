@@ -125,6 +125,8 @@ body.noScroll { overflow: hidden;}
 /* 글꼴 */
 .fontMontserrat { font-family: 'Montserrat', "NanumBarunGothic";}
 .fontEliceDigital { font-family: 'EliceDigitalBaeum-Bd', "NanumBarunGothic";}
+.fontSize14 { font-size: 14px;}
+.fontSize16 { font-size: 16px;}
 .wNormal { font-weight: 400;}
 .subText { margin-top: 8px; font-size: 14px;}
 .requireText { margin-top: 5px; font-size: 12px; color: #767676; text-align: left; line-height: 18px;}
@@ -273,6 +275,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .controlBody { display: flex; align-items: flex-end; justify-content: space-between; margin-top: 40px;}
 .controlBody >b { font-size: 14px;}
 .controlBody .control .button { padding-bottom: 1px;}
+
 
 /* tableBody */
 .tableBody { overflow: hidden; margin-top: 8px; border-top: 2px solid #333;}
@@ -448,6 +451,31 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .tooltipBtn { margin: -2px 4px 0 4px;}
 .tooltipBtn i { display: inline-block; width: 24px; height: 24px; text-indent: -99999px; background: url(../images/common/ico_help.svg) no-repeat center/cover;}
 
+/* dateGroup */
+.dateGroup { margin-top: 9px; border-top: 2px solid #333; border-bottom: 1px solid #333;}
+.dateGroup .head { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #dbdbdb;}
+.dateGroup .head b { padding: 16px 24px; background-color: #f7f7f7;}
+.dateGroup .body { padding: 40px 0; text-align: center;} 
+.dateGroup .body p { line-height: 24px;}
+.dateGroup .body .in { margin-top: 24px;}
+.dateGroup .body .in span { display: block;}
+.dateGroup .body .in span ~ span { margin-top: 8px;}
+.dateGroup .body .he { display: inline-flex; align-items: center; margin-top: 24px;}
+.dateGroup .body .he select { width: 240px;}
+.dateGroup .body .he .tooltipBtn { margin-top: -15px;}
+.dateGroup .body .he select { margin: 0 8px;}
+.dateGroup.otherStyle { border: none;}
+.dateGroup.otherStyle .body { padding-bottom: 0;}
+.dateGroup.noBorder { margin-top: 0; border: none;}
+.dateGroup.pdB0 .body { padding-bottom: 0;}
+
+
+
+
+
+
+
+
 
 /* 레이어
 **********************************************/
@@ -505,20 +533,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .agreeBody { margin-top: 40px;}
 
 .appBody { margin-top: 40px;}
-.appBody .dateGroup { margin-top: 9px; border-top: 2px solid #333; border-bottom: 1px solid #333;}
-.appBody .dateGroup .head { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #dbdbdb;}
-.appBody .dateGroup .head b { padding: 16px 24px; background-color: #f7f7f7;}
-.appBody .dateGroup .body { padding: 40px 0; text-align: center;} 
-.appBody .dateGroup .body p { line-height: 24px;}
-.appBody .dateGroup .body .in { margin-top: 24px;}
-.appBody .dateGroup .body .in span { display: block;}
-.appBody .dateGroup .body .in span ~ span { margin-top: 8px;}
-.appBody .dateGroup .body .he { display: inline-flex; align-items: center; margin-top: 24px;}
-.appBody .dateGroup .body .he select { width: 240px;}
-.appBody .dateGroup .body .he .tooltipBtn { margin-top: -15px;}
-.appBody .dateGroup .body .he select { margin: 0 8px;}
-.appBody .dateGroup.otherStyle { border: none;}
-.appBody .dateGroup.otherStyle .body { padding-bottom: 0;}
+
 
 /* 신청상태조회 */
 .proposalBody .flexGroup { display: flex; align-items: center; justify-content: space-between;}

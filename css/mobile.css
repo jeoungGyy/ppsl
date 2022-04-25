@@ -48,6 +48,7 @@
 #wrap .momt8 { margin-top: 8px;}
 #wrap .momt24 { margin-top: 24px;}
 #wrap .momt32 { margin-top: 32px;}
+#wrap .momb32 { margin-bottom: 32px !important;}
 
 /* hr */
 hr.space { margin: 32px -16px; height: 12px; background-color: #f7f7f7;}
@@ -125,14 +126,19 @@ hr.space.style2 { margin: 0 -16px;}
 .mListMulti >li .roundBoxGray.sp { padding: 16px;}
 .mListMulti >li .roundBoxGray.mt { margin-top: 16px;}
 .mListMulti >li .groupBox label { font-weight: 700;}
+.mListMulti >li .grayBoxList >li { margin-top: 8px; padding: 24px 16px; background-color: #f7f7f7; border-radius: 8px;}
+.mListMulti >li .grayBoxList >li .mt { display: block; margin-top: 8px;}
 .mListMulti >li .titleStyle .flexLeft h6 { font-size: 16px;}
 .mListMulti >li .titleStyle .flexLeft span { position: relative; margin-left: 12px; padding-left: 12px; font-size: 14px;}
 .mListMulti >li .titleStyle .flexLeft span::before { content: ''; display: block; position: absolute; left: 0; top: 0; width: 1px; height: 12px; background-color: #ccc;}
 .mListMulti >li .titleStyle .text { margin-top: 12px; font-size: 14px; line-height: 21px;}
+.mListMulti >li .spaceBetweenStyle { display: flex; align-items: center; justify-content: space-between;}
+.mListMulti >li .spaceBetweenStyle span { font-size: 14px;}
 .mListMulti >li .single { font-size: 14px;}
 .mListMulti >li .defaultText { line-height: 24px;}
 .mListMulti >li .btnLine { margin-top: 16px; padding-top: 16px; border-top: 1px solid #dbdbdb;}
 .mListMulti >li .btnLine .lineButton { font-size: 14px;}
+.mListMulti >li .smallFont { display: block; margin-top: 16px; font-size: 14px;}
 .mListMulti >li.active { border-color: #366cc3;}
 .mListMulti >li.off { background-color: #f7f7f7;}
 .mListMulti >li.off .roundBoxGray { border: solid 1px #dbdbdb;}
@@ -146,6 +152,7 @@ hr.space.style2 { margin: 0 -16px;}
 .mListMulti .msList li.block >* { display: block;}
 .mListMulti .msList li.block >.mt { margin-top: 8px;}
 .mListMulti .msList li.lineBreak { margin-top: 16px; padding-top: 16px; border-top: 1px solid #dbdbdb;}
+.mListMulti .msList.mt0 { margin-top: 0;}
 
 /* m_hTableBody */
 .m_hTableBody >li ~ li { margin-top: 24px;}
