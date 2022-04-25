@@ -27,41 +27,123 @@
 						<script src="../../include/location.js"></script> <!-- include: 공통 현재위치 -->
 					</header>
 
-					<div class="setpBodyStyle">
-						<ul class="stepByStyle">
-							<li>
-								<span class="iconRound bgBlue"><i></i></span>
-								<span class="text">청구인정보 확인</span>
-							</li>
-							<li>
-								<span class="iconRound bgBlue"><i></i></span>
-								<span class="text">지급계좌 확인</span>
-							</li>
-							<li>
-								<span class="iconRound bgBlue"><i></i></span>
-								<span class="text">연계노령청구 정보</span>
-							</li>
-							<li>
-								<span class="iconRound bgBlue"><i></i></span>
-								<span class="text">연계퇴직청구 정보</span>
-							</li>
+					<div class="stepBody mt">
+						<!-- 1단계 -->
+						<ul class="stepBy">
 							<li class="active">
 								<span class="invisible">현재 단계</span>
-								<span class="iconRound"><i></i></span>
-								<span class="text">청구신청 완료</span>
+								<span class="fontMontserrat">01</span>
+								<span class="fontEliceDigital text">접수<span class="m_block">중</span></span>
+							</li>
+							<li>
+								<span class="fontMontserrat">02</span>
+								<span class="fontEliceDigital text">접수<span class="m_block">완료</span></span>
+							</li>
+							<li>
+								<span class="fontMontserrat">03</span>
+								<span class="fontEliceDigital text">기관<span class="m_block">심사중</span></span>
+							</li>
+							<li>
+								<span class="fontMontserrat">04</span>
+								<span class="fontEliceDigital text">처리<span class="m_block">완료</span></span>
 							</li>
 						</ul>
-						<span class="line"></span>
+						<ul class="guideText mt">
+							<li>접수기관에서 연금담당자가 확인하시면 접수완료로 변경됩니다.</li>
+						</ul>
+						<!-- //1단계 -->
 					</div>
 
-					<hr class="space style onlyMobile">
+					<!-- 대상자 -->
+					<div class="targetBody">
+						<div class="pcmt40">
+							<!-- PC -->
+							<div class="onlyPC">
+								<div class="tableBody">
+									<table>
+										<caption>연계급여 청구 : 접수방법, 접수번호, 접수일, 내용, 수급정보, 상태, 처리지사로 구성</caption>
+										<colgroup>
+											<col style="width: 104px;">
+											<col>
+											<col style="width: 124px;">
+											<col style="width: 144px;">
+											<col style="width: 124px;">
+											<col style="width: 124px;">
+											<col style="width: 124px;">
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">접수방법</th>
+												<th scope="col">접수번호</th>
+												<th scope="col">접수일</th>
+												<th scope="col">내용</th>
+												<th scope="col">수급정보</th>
+												<th scope="col">상태</th>
+												<th scope="col">처리지사</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>인터넷</td>
+												<td>2009101000040</td>
+												<td>2006.03.01</td>
+												<td>연계노령연금</td>
+												<td>2016.04.30</td>
+												<td>접수중</td>
+												<td><button type="button" class="button h24 lineBlack">조회</button></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!-- //PC -->
+							<!-- Mobile -->
+							<div class="onlyMobile m_tableBody mt noBorder">
+								<ul class="mList">
+									<li>
+										<div class="roundBoxGray">
+											<h6 class="fontDefault">접수번호</h6>
+											<div class="flexLeft spaceBetween">
+												<b class="listDate colorBlue">2009101000040</b>
+												<div class="roundText">접수중</div>
+											</div>
+											
+											<ul class="msList bdt">
+												<li>
+													<label>접수방법</label>
+													<b>인터넷</b>
+												</li>
+												<li>
+													<label>접수일</label>
+													<b>2006.03.01</b>
+												</li>
+												<li>
+													<label>내용</label>
+													<b>연계노령연금</b>
+												</li>
+												<li>
+													<label>수급정보</label>
+													<b>2016.04.30</b>
+												</li>
+												<li>
+													<label>처리지사</label>
+													<button type="button" class="button h24 lineBlack">조회</button>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!-- //Mobile -->
+						</div>
+					</div>
+					<!-- //대상자 -->
+
+					<hr class="space">
 
 					<div class="proposalBody">
 						<h4 class="deText pcmt40 momt32">연계노령퇴직연금 <span class="m_block">청구 신청서</span></h4>
-						<div class="subFill">
-							<h4 class="defaultH4">청구신청 완료</h4>
-						</div>
-						
+
 						<!-- PC -->
 						<div class="onlyPC">
 							<div class="whTableBody mt">
@@ -682,46 +764,20 @@
 							<div class="body">
 								<p>「국민연금과 직역연금의 연계신청에 관한 법률 시행규칙」 제2조에 따라 위와 같이 신청합니다.</p>
 								<div class="in">
-									<span>신청일 : <b>YYYY - MM - DD</b></span>
-									<span>신청인 : <b>김공단</b></span>
+									<span>청구날짜 : <b>YYYY - MM - DD</b></span>
+									<span>청구인 : <b>김공단</b> (서명 또는 인)</span>
 								</div>
-								<div class="he">
-									<button type="button" class="tooltipBtn" aria-describedby="tooltip2"><i class="icon">도움말</i></button>
-									<select title="연금관리기관 선택">
-										<option>국민연금공단</option>
-									</select>
-									<span>귀하</span>
-								</div>
+							</div>
+							<div class="sign2 m_bdt">
+								<b>사립학교교직원 연금공단</b> 이사장 (귀하)
 							</div>
 						</div>
 
-						<div class="roundBox">
-							<h4>행정정보이용 동의서</h4>
-							<div class="default">
-								<p>본인은 이 건 사무처리;와 관련하여 “전자정부밥”제 22조의2 규정에 따라 이용기관의 담당자가 전자적으로 본인의 정보를 이용하는 것에 동의합니다.</p>
-							</div>
-						</div>
-						<ul class="groupBox inlineGroupBox momb32">
-							<li>
-								<div class="radioBox">
-									<input type="radio" id="radio1" name="radio">
-									<label for="radio1">동의 합니다.</label>
-								</div>
-							</li>
-							<li>
-								<div class="radioBox">
-									<input type="radio" id="radio2" name="radio">
-									<label for="radio2">미동의 합니다.</label>
-								</div>
-							</li>
-						</ul>
-
-						<div class="btnsGroup m_styleOther flexEnd bdt mt">
-							<button type="button" class="button h48 gray" onclick="location.href='HO_04_01_02_02_04.html'">이전</button>
-							<button type="button" class="button h48 blue">완료</button>
+						<div class="btnsGroup flexEnd bdt mt">
+							<button type="button" class="button h48 lineBlack">목록</button>
 						</div>
 					</div>
-					
+
 					<script src="../../include/evaluation.js"></script> <!-- include: 공통 평가 -->
 				</div>
 			</div>

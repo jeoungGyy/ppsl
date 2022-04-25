@@ -466,7 +466,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .dateGroup .body .he select { margin: 0 8px;}
 .dateGroup.otherStyle { border: none;}
 .dateGroup.otherStyle .body { padding-bottom: 0;}
-.dateGroup.noBorder { margin-top: 0; border: none;}
+.dateGroup.otherStyle2 { margin-top: 0; border: none;}
 .dateGroup.pdB0 .body { padding-bottom: 0;}
 
 

@@ -298,6 +298,7 @@ hr.space.style2 { margin: 0 -16px;}
 .proposalBody .target { padding-bottom: 32px;}
 .proposalBody .sign1 { margin-top: 32px; padding-top: 32px; border-top: 1px solid #dbdbdb;}
 .proposalBody .sign2 { margin-top: 32px; padding-top: 0; border-top: none;}
+.proposalBody .sign2.m_bdt { padding-top: 32px; border-top: 1px solid #dbdbdb;}
 .proposalBody .btnsGroup { margin-top: 32px;}
 
 
