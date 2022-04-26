@@ -12,7 +12,6 @@ $(document).ready(function () {
 			common.calendar();
 			// common.header_slider();
 			// common.aside_scroll();
-			// common.layer_popup();
 			// common.family_site();
 		},
     /* 초기화 */
@@ -205,17 +204,17 @@ $(document).ready(function () {
         dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
         dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
         showMonthAfterYear: true,
-        beforeShow: function () {
+        beforeShow: function() {
         visible = true
       },
-      onClose: function () {
+      onClose: function() {
         visible = false;
       },
       showOn: "button",
       buttonText: "달력선택"
       });
       
-      $date.datepicker ({
+      $date.datepicker({
         onSelect: function (date) {
           $(this).trigger("focus");
         } // onSelect
@@ -223,11 +222,11 @@ $(document).ready(function () {
       
       $datepicker = $date.datepicker("widget");
       if ($datepicker.length == 0) {
-        console.log("no date picker");
+        // console.log("no date picker");
         return false;
       }
       
-      $date.on("keydown", function (e) {
+      $date.on("keydown", function(e) {
         if (! visible) return true;
         var key = e.keyCode;
         var message, date, day, month, year, $datepicker;
@@ -245,7 +244,6 @@ $(document).ready(function () {
         year = $datepicker.find(".ui-datepicker-year").text();
         date = new Date (year + " " + month + " " + day);
         message = $.datepicker.formatDate ("yy DD d MM", date);
-        $("#message").text(message);
         return false;
         } // if
 

@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<script src="../../include/head.js"></script> <!-- include: 공통 헤드 -->
+</head>
+
+<body>
+<div id="wrap">
+
+	<div class="container">
+
+
+		<!-- 레이어 -->
+		<div id="countryName" class="layerPopup active show" role="dialog" aria-modal="true" aria-labelledby="countryNameTitle" tabindex="0">
+			<div class="layerBody small countryName">
+				<h5 id="countryNameTitle" class="layerTitle">기본 스크롤 레이어</h5>
+				<div class="layerContent">
+					<div class="flexBtnOne">
+						<input type="text" title="국가명 입력" placeholder="국가명 입력">
+						<button type="button" class="button h40 black">검색</button>
+					</div>
+					<div class="overflowY" tabindex="0">
+						<div class="tableBody">
+							<table>
+								<caption>국가명 조회 : 국가코드, 국가명으로 구성</caption>
+								<colgroup>
+									<col style="width: 84px;">
+									<col>
+									<col style="width: 84px;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">국가코드</th>
+										<th scope="col" colspan="2">국가명</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>275</td>
+										<td>미국</td>
+										<td><button type="button" class="button h24 lineBlack">선택</button></td>
+									</tr>
+									<tr>
+										<td>276</td>
+										<td>미국 인근섬</td>
+										<td><button type="button" class="button h24 lineBlack">선택</button></td>
+									</tr>
+									<tr>
+										<td class="empty" colspan="3">국가명을 검색해 주세요.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<button type="button" class="layerClose"><i>창 닫기</i></button>
+			</div>
+		</div>
+		<!-- //레이어 -->
+
+
+	</div>
+
+
+
+</div>
+</body>
+</html>

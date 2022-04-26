@@ -57,6 +57,7 @@ hr.space { margin: 32px -16px; height: 12px; background-color: #f7f7f7;}
 hr.space.style { margin: 24px -16px 0;}
 hr.space.style2 { margin: 0 -16px;}
 hr.space.style3 { margin: 32px -16px 0;}
+hr.space.style4 { margin: 24px -16px 32px;}
 
 /* 버튼 */
 .m_twin .button { flex-direction: column; flex: 1; height: inherit; padding: 16px 0; line-height: 24px;}
@@ -197,6 +198,7 @@ hr.space.style3 { margin: 32px -16px 0;}
 .m_hTableBody >li .defaultBtn { display: flex; align-items: center;}
 .m_hTableBody >li .defaultBtn input { flex: 1;}
 .m_hTableBody >li .defaultBtn .other { margin-left: 4px;}
+.m_hTableBody >li.empty { text-align: center;}
 
 /* m_xBtnBody */
 .m_xBtnBody { margin-top: 8px;}
@@ -247,6 +249,11 @@ hr.space.style3 { margin: 32px -16px 0;}
 .setpBodyStyle .stepByStyle li.active >span.text { display: block; position: absolute; left: 50%; bottom: -22px; width: max-content; transform: translateX(-50%);}
 .setpBodyStyle .line { left: 63px; right: 63px;}
 
+/* overflowY */
+.overflowY { overflow-x: hidden; overflow-y: scroll; scroll-behavior:smooth;}
+.overflowY::-webkit-scrollbar { width: 0;}
+.overflowY::-webkit-scrollbar-thumb { border-radius: 0;}
+
 /* roundBox */
 .roundBox { margin-top: 24px;}
 .roundBox.m_marginDefault { margin-top: 0;}
@@ -274,6 +281,45 @@ hr.space.style3 { margin: 32px -16px 0;}
 .dateGroup .body .he select { flex: 1;}
 
 
+
+
+
+
+
+
+
+
+
+
+
+/* 레이어
+**********************************************/
+
+.layerBody { max-height: 600px; padding: 8px 16px 32px;}
+.layerTitle { height: 48px;}
+.layerBody .overflowY { margin-right: 0; padding-right: 0;}
+.layerClose { right: 16px; top: 20px;}
+
+/* 국가명 조회 */
+.countryName .overflowY { max-height: 448px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 신청
 **********************************************/
 
@@ -292,6 +338,7 @@ hr.space.style3 { margin: 32px -16px 0;}
 .targetBody .targetCancel { margin-top: 24px;} 
 .targetBody .targetComplete { margin-top: 24px;}
 
+.agreeBody { margin-top: 24px;}
 .agreeBody .btnsGroup { margin-top: 32px;}
 
 .appBody { margin-top: 0;}
