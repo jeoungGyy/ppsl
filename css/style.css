@@ -250,7 +250,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 
 /* flexBtn* */
 .flexBtnOne { display: flex; align-items: center;}
-.flexBtnOne input { flex: 1;}
+.flexBtnOne input { flex: 1; width: 100%;}
 .flexBtnOne button { margin-left: 4px;}
 
 /* searchBody */
@@ -351,7 +351,8 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .hTableBody table td .mw404 { max-width: 404px;}
 .hTableBody table td .mw528 { max-width: 528px;}
 .hTableBody table td .defaultBtn { display: flex; align-items: center;}
-.hTableBody table td .defaultBtn input { flex: 1;}
+.hTableBody table td .defaultBtn input,
+.hTableBody table td .defaultBtn a { flex: 1;}
 
 /* whTableBody */
 .whTableBody { overflow: hidden; border-top: 2px solid #333;}

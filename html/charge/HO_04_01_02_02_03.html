@@ -466,11 +466,19 @@
 													<div class="default">
 														<input type="text" title="두번째 부양가족 이름 입력" required placeholder="실명입력">
 													</div>
+													<div class="requireText error">
+														<i></i>
+														<span>실명을 입력하세요</span>
+													</div>
 												</li>
 												<li>
 													<label>주민번호 <span class="colorOrange">*</span></label>
 													<div class="default">
 														<input type="tel" title="두번째 부양가족 주민번호 입력" required placeholder="13자리 주민번호 입력">
+													</div>
+													<div class="requireText error">
+														<i></i>
+														<span>13자리 주민번호를 입력하세요</span>
 													</div>
 												</li>
 												<li>
@@ -513,11 +521,19 @@
 													<div class="default">
 														<input type="text" title="세번째 부양가족 이름 입력" required placeholder="실명입력">
 													</div>
+													<div class="requireText success">
+														<i></i>
+														<span>확인되었습니다</span>
+													</div>
 												</li>
 												<li>
 													<label>주민번호 <span class="colorOrange">*</span></label>
 													<div class="default">
 														<input type="tel" title="세번째 부양가족 주민번호 입력" required placeholder="13자리 주민번호 입력">
+													</div>
+													<div class="requireText success">
+														<i></i>
+														<span>확인되었습니다</span>
 													</div>
 												</li>
 												<li>
@@ -1522,8 +1538,8 @@
 													<th scope="row">가족관계증명서</th>
 													<td>
 														<div class="defaultBtn">
-															<input type="text" title="가족관계증명서 등록" placeholder="등록해 주세요.">
-															<button type="button" class="button h40 lineBlack">찾기</button>
+															<a href="123456789.pdf" download="">123456789.pdf</a>
+															<button type="button" class="button h40 lineBlack">삭제</button>
 														</div>
 													</td>
 												</tr>
@@ -1613,8 +1629,8 @@
 										<li>
 											<label>가족관계증명서</label>
 											<div class="defaultBtn">
-												<input type="text" title="가족관계증명서 등록" placeholder="등록해 주세요.">
-												<button type="button" class="button h40 lineBlack other">찾기</button>
+												<a href="123456789.pdf" download>123456789.pdf</a>
+												<button type="button" class="button h40 lineBlack other">삭제</button>
 											</div>
 										</li>
 										<li>
@@ -1705,7 +1721,7 @@
 		<!-- 레이어 -->
 		<div id="countryName" class="layerPopup" role="dialog" aria-modal="true" aria-labelledby="countryNameTitle" tabindex="0">
 			<div class="layerBody small countryName">
-				<h5 id="countryNameTitle" class="layerTitle">기본 스크롤 레이어</h5>
+				<h5 id="countryNameTitle" class="layerTitle">국가명 조회</h5>
 				<div class="layerContent">
 					<div class="flexBtnOne">
 						<input type="text" title="국가명 입력" placeholder="국가명 입력">

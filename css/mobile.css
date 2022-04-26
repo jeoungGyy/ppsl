@@ -196,7 +196,8 @@ hr.space.style4 { margin: 24px -16px 32px;}
 .m_hTableBody >li .blockBtn input { width: 100%;}
 .m_hTableBody >li .blockBtn button { margin-top: 8px;}
 .m_hTableBody >li .defaultBtn { display: flex; align-items: center;}
-.m_hTableBody >li .defaultBtn input { flex: 1;}
+.m_hTableBody >li .defaultBtn input,
+.m_hTableBody >li .defaultBtn a { flex: 1; width: 100%;}
 .m_hTableBody >li .defaultBtn .other { margin-left: 4px;}
 .m_hTableBody >li.empty { text-align: center;}
 
@@ -297,6 +298,9 @@ hr.space.style4 { margin: 24px -16px 32px;}
 
 .layerBody { max-height: 600px; padding: 8px 16px 32px;}
 .layerTitle { height: 48px;}
+.layerBody.small,
+.layerBody.normal,
+.layerBody.big { width: 100%;}
 .layerBody .overflowY { margin-right: 0; padding-right: 0;}
 .layerClose { right: 16px; top: 20px;}
 
