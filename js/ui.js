@@ -165,7 +165,7 @@ $(document).ready(function () {
 						$location.append(lnb_title_clone2).append(this_clone);
 
 						//페이지타이틀
-						$title.text("국민취업지원제도 - "+lnb_title+" - "+ $(this).text());
+						$title.text("공적연금연계제도 - "+lnb_title+" - "+ $(this).text());
 
 						return false;
 					}
