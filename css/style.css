@@ -217,7 +217,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 
 .checkboxBox { display: flex; align-items: center; position: relative; height: 20px; padding-left: 28px;}
 .checkboxBox label { cursor: pointer;}
-.icheckbox::before { content: ''; display: block; position: absolute; left: 4px; top: 5px; width: 11.11px; height: 7.8px; background: url(../images/common/ico_checkbox.svg) no-repeat center/cover;}
+.icheckbox::before { content: ''; display: block; position: absolute; left: 50%; top: 5px; width: 11.11px; height: 7.8px; background: url(../images/common/ico_checkbox.svg) no-repeat center/cover; transform: translateX(-50%);}
 .icheckbox input { margin: 0; width: 20px; height: 20px;}
 .icheckbox.checked { border-color: #366cc3; background-color: #366cc3;}
 .icheckbox.checked::before { background: url(../images/common/ico_checkbox_w.svg) no-repeat center/cover;}
@@ -483,8 +483,8 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .dateGroup.otherStyle3 { border-bottom: none;}
 .dateGroup.pdB0 .body { padding-bottom: 0;}
 
-
-
+/* paragraphGroup */
+.paragraphGroup p { line-height: 24px;}
 
 
 
@@ -507,7 +507,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .layerBody.small { width: 384px;}
 .layerBody.normal { width: 588px;}
 .layerBody.big { width: 792px;}
-.layerBody .overflowY { max-height: 552px; margin-right: -20px; padding-right: 16px;}
+.layerBody .overflowY { max-height: 560px; margin-right: -20px; padding-right: 16px;}
 .layerTitle { display: flex; align-items: center; height: 56px; margin-bottom: 24px; font-size: 19px; border-bottom: 1px solid #333;}
 .layerClose { position: absolute; right: 40px; top: 24px; font-size: 13px; color: #fff;}
 .layerClose i { display: block; width: 24px; height: 24px; text-indent: -99999px; background: url(../images/common/ico_close2.svg) no-repeat center/cover;}

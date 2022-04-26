@@ -251,9 +251,7 @@ hr.space.style4 { margin: 24px -16px 32px;}
 .setpBodyStyle .line { left: 63px; right: 63px;}
 
 /* overflowY */
-.overflowY { overflow-x: hidden; overflow-y: scroll; scroll-behavior:smooth;}
-.overflowY::-webkit-scrollbar { width: 0;}
-.overflowY::-webkit-scrollbar-thumb { border-radius: 0;}
+.overflowY { scroll-behavior:smooth;}
 
 /* roundBox */
 .roundBox { margin-top: 24px;}
@@ -301,7 +299,7 @@ hr.space.style4 { margin: 24px -16px 32px;}
 .layerBody.small,
 .layerBody.normal,
 .layerBody.big { width: 100%;}
-.layerBody .overflowY { margin-right: 0; padding-right: 0; max-height: 448px;}
+.layerBody .overflowY { margin-right: 0; padding-right: 0; max-height: 424px;}
 .layerClose { right: 16px; top: 20px;}
 
 

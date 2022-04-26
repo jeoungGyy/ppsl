@@ -748,7 +748,7 @@
 							<div class="btnsGroup flexEnd bdt mt m_mt0">
 								<button type="button" class="button h48 gray">이전</button>
 								<button type="button" class="button h48 gray">취소</button> <!-- 모바일인 경우 '이전' 버튼 대신 '취소' 버튼이 들어갑니다. -->
-								<button type="button" class="button h48 blue">완료</button>
+								<button type="button" class="button h48 blue layerLink" aria-controls="applyGuideLayer">완료</button>
 							</div>
 						</div>
 						<!-- //연계신청 완료 -->
@@ -758,6 +758,25 @@
 				</div>
 			</div>
 		</div>
+
+
+
+		<!-- 레이어 -->
+		<div id="applyGuideLayer" class="layerPopup" role="dialog" aria-modal="true" aria-labelledby="applyGuideLayerTitle" tabindex="0">
+			<div class="layerBody small applyGuideLayer">
+				<h5 id="applyGuideLayerTitle" class="layerTitle">안내</h5>
+				<div class="layerContent">
+					<div class="paragraphGroup">
+						<p>
+							연계신청을 한 경우 원칙적으로 취하 할 수 없습니다.<br>
+							다만 연계신청 처리결과 통보서가 도달 하기 전에는 취하 가능합니다.
+						</p>
+					</div>
+				</div>
+				<button type="button" class="layerClose"><i>창 닫기</i></button>
+			</div>
+		</div>
+		<!-- //레이어 -->
 	</div>
 
 	<script src="../../include/footer.js"></script> <!-- include: 공통 푸터 -->
