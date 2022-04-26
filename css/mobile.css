@@ -302,10 +302,11 @@ hr.space.style4 { margin: 24px -16px 32px;}
 .layerBody .overflowY { margin-right: 0; padding-right: 0; max-height: 424px;}
 .layerClose { right: 16px; top: 20px;}
 
-
-
-
-
+/* 우편번호 검색 */
+.applyPostLayer .postSearchBox { padding: 16px;}
+.applyPostLayer .postSearchBox .twin { display: block; margin: 0;}
+.applyPostLayer .postSearchBox .twin select { width: 100%; margin: 0;}
+.applyPostLayer .postSearchBox .twin select ~ select { margin-top: 8px;}
 
 
 

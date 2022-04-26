@@ -527,11 +527,15 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .layerPopup .gnb .depth3 >li:first-child { margin-top: 16px;}
 .layerPopup .gnb .depth3 >li ~ li { margin-top: 8px;}
 
-
-
-
-
-
+/* 우편번호 검색 */
+.applyPostLayer .postTitle .b { display: block; margin-top: 8px; font-size: 14px; color: #767676;}
+.applyPostLayer .postSearchBox { margin-top: 16px; padding: 24px; background-color: #f7f7f7;}
+.applyPostLayer .postSearchBox .twin { display: flex; margin: 0 -2px;}
+.applyPostLayer .postSearchBox .twin select { width: 50%; margin: 0 2px;}
+.applyPostLayer .postSearchBox .defaultBtn { display: flex; align-items: center; margin-top: 8px;}
+.applyPostLayer .postSearchBox .defaultBtn input { flex: 1; width: 100%;}
+.applyPostLayer .postSearchBox .defaultBtn button { margin-left: 4px;}
+.applyPostLayer .postNumber { margin-top: 16px; font-size: 14px;}
 
 
 

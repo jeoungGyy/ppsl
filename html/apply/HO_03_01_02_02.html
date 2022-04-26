@@ -124,11 +124,11 @@
 													<th scope="row">주소 <span class="colorOrange">*</span></th>
 													<td>
 														<div class="flexLeft post">
-															<input type="text" title="우편번호" disabled="">
-															<button type="button" class="button h40 lineBlack">우편번호검색</button>
+															<input type="text" title="우편번호" disabled>
+															<button type="button" class="button h40 lineBlack layerLink" aria-controls="applyPostLayer">우편번호검색</button>
 														</div>
 														<div class="flexLeft address mt">
-															<input type="text" title="주소" disabled="">
+															<input type="text" title="주소" disabled>
 															<input type="text" title="상세주소 입력" placeholder="상세주소">
 														</div>
 														<div class="requireText">
@@ -225,7 +225,7 @@
 											<div>
 												<div class="flexLeft post">
 													<input type="text" title="우편번호" disabled>
-													<button type="button" class="button h40 lineBlack">우편번호검색</button>
+													<button type="button" class="button h40 lineBlack layerLink" aria-controls="applyPostLayer">우편번호검색</button>
 												</div>
 												<div class="address">
 													<input type="text" title="주소" disabled>
@@ -494,7 +494,7 @@
 
 									<div class="btnsGroup flexEnd">
 										<button type="button" class="button h40 gray">이전</button>
-										<button type="button" class="button h40 blue" disabled="">다음</button>
+										<button type="button" class="button h40 blue" disabled>다음</button>
 										<button type="button" class="button h40 blue">다음</button>
 									</div>
 								</div>
@@ -771,6 +771,75 @@
 							연계신청을 한 경우 원칙적으로 취하 할 수 없습니다.<br>
 							다만 연계신청 처리결과 통보서가 도달 하기 전에는 취하 가능합니다.
 						</p>
+					</div>
+				</div>
+				<button type="button" class="layerClose"><i>창 닫기</i></button>
+			</div>
+		</div>
+
+		<div id="applyPostLayer" class="layerPopup" role="dialog" aria-modal="true" aria-labelledby="applyPostLayerTitle" tabindex="0">
+			<div class="layerBody normal applyPostLayer">
+				<h5 id="applyPostLayerTitle" class="layerTitle">우편번호 검색</h5>
+				<div class="layerContent">
+					<div class="overflowY" tabindex="0">
+						<div class="postTitle">
+							<span class="t">시도, 시군구 및 도로명을 입력해 주세요. </span>
+							<span class="b">예) 수문길, 중대로 9길</span>
+						</div>
+						<div class="postSearchBox">
+							<div class="twin">
+								<select title="시/도 선택">
+									<option>선택</option>
+								</select>
+								<select title="시/군/구 선택">
+									<option>선택</option>
+								</select>
+							</div>
+							<div class="defaultBtn">
+								<input type="text" title="우편번호 검색" placeholder="우편번호 검색">
+								<button type="button" class="button h40 black">검색</button>
+							</div>
+						</div>
+
+						<div class="postNumber">
+							<span>총 15건</span>
+						</div>
+						<div class="tableBody">
+							<table>
+								<caption>우편번호 검색 : 주소(도로명), 우편번호로 구성</caption>
+								<colgroup>
+									<col>
+									<col style="width: 104px;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">주소(도로명)</th>
+										<th scope="col">우편번호</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="textLeft"><button type="button">서울특별시 서초구 반포대로 75 (서초동)</button></td>
+										<td>006670</td>
+									</tr>
+									<tr>
+										<td class="textLeft"><button type="button">서울특별시 서초구 반포대로 33 (서초동, 성진개발빌딩)</button></td>
+										<td>006710</td>
+									</tr>
+									<tr>
+										<td class="textLeft"><button type="button">서울특별시 서초구 반포대로 5 (서초동, 승정빌딩2)</button></td>
+										<td>06656</td>
+									</tr>
+									<tr>
+										<td class="empty" colspan="2">자료가 없습니다. 다른 검색조건을 선택해주세요.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<ul class="guideText mt">
+							<li>도로명주소가 검색되지 않는 경우는 행정안전부 새주소안내 시스템<br>
+								(http://www.juso.go.kr)에서 확인하시기 바랍니다.</li>
+						</ul>
 					</div>
 				</div>
 				<button type="button" class="layerClose"><i>창 닫기</i></button>
