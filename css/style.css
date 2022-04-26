@@ -485,7 +485,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 
 /* paragraphGroup */
 .paragraphGroup p { line-height: 24px;}
-
+.paragraphGroup p ~ p { margin-top: 20px;}
 
 
 
