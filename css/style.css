@@ -160,10 +160,10 @@ hr.space { margin: 40px 0; height: 1px; background-color: #dbdbdb;}
 
 /* 버튼 */
 .button { display: inline-flex; align-items: center; justify-content: center; padding: 0 16px; transition: background-color .2s ease-in-out;}
-.button.h48 { min-width: 96px; min-height: 48px; padding: 0 24px;}
-.button.h40 { min-width: 80px; min-height: 40px;}
-.button.h32 { min-height: 32px; font-size: 14px;}
-.button.h24 { min-height: 24px; font-size: 14px;}
+.button.h48 { min-width: 96px; min-height: 48px; height: 48px; padding: 0 24px;}
+.button.h40 { min-width: 80px; min-height: 40px; height: 40px;}
+.button.h32 { min-height: 32px; height: 32px; font-size: 14px;}
+.button.h24 { min-height: 24px; height: 24px; font-size: 14px;}
 .button[disabled] { color: #959595 !important; border-color: #dbdbdb !important; background-color: #f7f7f7 !important; cursor: not-allowed;}
 .button.black { color: #fff; background-color: #333;}
 .button.black:hover, 
@@ -338,11 +338,11 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .viewBody .postGroup li a { display: inline-block;}
 
 /* evaluationBody */
-/* .evaluationBody { display: flex; align-items: center; justify-content: space-between; margin-top: 80px; padding: 33px 48px 32px; border: 1px solid #dbdbdb; border-top: 1px solid #333;}
+.evaluationBody { display: flex; align-items: center; justify-content: space-between; margin-top: 80px; padding: 33px 48px 32px; border: 1px solid #dbdbdb; border-top: 1px solid #333;}
 .evaluationBody .context { flex: 1;}
 .evaluationBody .context .groupBox { display: flex; align-items: center; margin-top: 17px;}
 .evaluationBody .context .groupBox li { margin-right: 32px;}
-.evaluationBody .btn { width: 80px;} */
+.evaluationBody .btn { width: 80px;}
 
 /* stepBody */
 .stepBody { overflow: hidden; margin-top: 40px;}

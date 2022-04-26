@@ -105,11 +105,11 @@ hr.space.style4 { margin: 24px -16px 32px;}
 
 
 /* evaluationBody */
-/* .evaluationBody { display: block; margin-top: 48px; padding: 32px 24px;}
+.evaluationBody { display: block; margin-top: 48px; padding: 32px 24px;}
 .evaluationBody .context { flex: none;}
 .evaluationBody .btn { margin-top: 24px;}
 .evaluationBody .context .groupBox { flex-wrap: wrap; margin-top: 0;}
-.evaluationBody .context .groupBox li { margin-top: 17px;} */
+.evaluationBody .context .groupBox li { margin-top: 17px;}
 
 /* stepBody */
 .stepBody .stepBy { margin: 0 -12px;}
