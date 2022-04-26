@@ -157,7 +157,6 @@ body.noScroll { overflow: hidden;}
 /* hr */
 hr.space { margin: 40px 0; height: 1px; background-color: #dbdbdb;}
 
-/* 아이콘 */
 
 /* 버튼 */
 .button { display: inline-flex; align-items: center; justify-content: center; padding: 0 16px; transition: background-color .2s ease-in-out;}
@@ -282,6 +281,146 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .controlBody .control .button { padding-bottom: 1px;}
 
 
+/* jQuery 달력 */
+.calendarBody { display: flex; align-items: center;}
+.calendarBody input { flex: 1;}
+.calendarBody button { display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; text-indent: -99999px; border: 1px solid #dbdbdb; border-left: none;}
+.calendarBody button::after { content: ''; display: block; width: 16px; height: 16px; margin-left: 1px; background: url(../images/common/ico_calendar.svg) no-repeat center/cover;}
+.ui-widget { font-family: "NanumBarunGothic", "Apple SD Gothic Neo", "Droid sans", "Microsoft NeoGothic ", sans-serif}
+.ui-datepicker { width: 280px; padding: 12px 16px 6px; background-color: #fff;}
+.ui-widget-content { color: #333; border-color: #333; border-radius: 0;}
+.ui-widget-header { font-size: 16px; border: none;}
+.ui-datepicker-calendar thead th { width: 32px; padding: 10px 0 7px; font-size: 12px; font-family: 'Montserrat', "NanumBarunGothic"; font-weight: 400; color: #959595; border-bottom: 1px solid #dbdbdb;}
+.ui-datepicker td { padding: 4px 0; text-align: center;}
+.ui-datepicker tbody tr:first-child td { padding-top: 8px;}
+.ui-datepicker td a { padding: 0;}
+.ui-datepicker td a.ui-state-active { font-weight: 600; color: #fff !important; background-color: #366cc3;}
+.ui-state-hover,
+.ui-datepicker td a.ui-state-highlight { background-color: #f7f7f7;}
+.ui-datepicker td.ui-datepicker-week-end a { color: #0052bb;}
+.ui-datepicker td:last-child.ui-datepicker-week-end a { color: #ee0700;}
+.ui-state-default, 
+.ui-widget-content .ui-state-default { display: flex; align-items: center; justify-content: center; width: 28px; height: 28px; margin: 0 auto; font-size: 14px; font-family: 'Montserrat', "NanumBarunGothic"; font-weight: 400; color: #333; text-align: center; border: none; border-radius: 50%;}
+.ui-datepicker .ui-datepicker-prev { left: -6px; cursor: pointer;}
+.ui-datepicker .ui-datepicker-next { right: -6px; cursor: pointer;}
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span { display: block; width: 16px; height: 16px;}
+.ui-datepicker .ui-datepicker-prev span { background: url(../images/common/ico_arrow_left.svg) no-repeat center/cover;}
+.ui-datepicker .ui-datepicker-next span { background: url(../images/common/ico_arrow_right.svg) no-repeat center/cover;}
+.ui-datepicker-year::after { content: '년';}
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {	border: none;	font-weight: inherit;	color: inherit;}
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover { top: 2px;}
+
+
+/* viewBody */
+.viewBody { margin-top: 40px; padding-top: 40px; border-top: 2px solid #333;}
+.viewBody .notice span { font-size: 14px;}
+.viewBody h4 { margin-top: 8px; font-size: 20px; line-height: 30px;}
+.viewBody .lineSpace { margin-top: 16px;}
+.viewBody .fileForm { margin-top: 24px; padding: 15px 16px; font-size: 14px; border-top: 1px solid #dbdbdb; border-bottom: 1px solid #dbdbdb; background-color: #f7f7f7;}
+.viewBody .fileForm ul li a { display: inline-block; line-height: 21px;}
+.viewBody .fileForm ul li a i { display: inline-block; width: 24px; height: 24px; margin-left: 4px; vertical-align: middle;}
+.viewBody .fileForm ul li a i.play {  background: url(../images/common/ico_play.svg) no-repeat center/cover;}
+.viewBody .fileForm ul li a i.download { background: url(../images/common/ico_download.svg) no-repeat center/cover;}
+.viewBody .fileForm ul li ~ li { margin-top: 8px;}
+.viewBody .article { padding: 40px 0; line-height: 24px;}
+.viewBody .article p ~ p { margin-top: 24px;}
+.viewBody .btns { display: flex; justify-content: flex-end; padding-top: 32px; border-top: solid 1px #dbdbdb;}
+.viewBody .postGroup { margin-top: 40px; border-top: solid 1px #dbdbdb;}
+.viewBody .postGroup li { display: flex; align-items: center; padding: 18px 16px; border-bottom: solid 1px #dbdbdb;}
+.viewBody .postGroup li span { width: 88px;}
+.viewBody .postGroup li a { display: inline-block;}
+
+/* evaluationBody */
+/* .evaluationBody { display: flex; align-items: center; justify-content: space-between; margin-top: 80px; padding: 33px 48px 32px; border: 1px solid #dbdbdb; border-top: 1px solid #333;}
+.evaluationBody .context { flex: 1;}
+.evaluationBody .context .groupBox { display: flex; align-items: center; margin-top: 17px;}
+.evaluationBody .context .groupBox li { margin-right: 32px;}
+.evaluationBody .btn { width: 80px;} */
+
+/* stepBody */
+.stepBody { overflow: hidden; margin-top: 40px;}
+.stepBody .stepBy { display: flex; margin: 0 -20px;}
+.stepBody .stepBy li { display: flex; align-items: baseline; justify-content: center; flex: 1; position: relative; height: 56px; margin: 0 20px; padding-top: 18px; border: 1px solid #dbdbdb; border-radius: 8px;}
+.stepBody .stepBy li >span { display: block; font-weight: 600;}
+.stepBody .stepBy li >span.text { margin-left: 6px;}
+.stepBody .stepBy li ~ li::before { content: ''; display: block; position: absolute; left: -28px; top: 50%; width: 16px; height: 16px; margin-top: -8px; background: url(../images/common/ico_bc_arrow.svg) no-repeat center/cover;}
+.stepBody .stepBy li.active { color: #fff; border: 1px solid #366cc3; background-color: #366cc3;}
+.stepBody.mt { margin-top: 24px;}
+
+.setpBodyStyle { overflow: hidden; position: relative; margin-top: 40px; padding: 24px 50px; background-color: #f4f7fc; border-radius: 8px;}
+.setpBodyStyle .stepByStyle { display: flex; justify-content: space-between; position: relative; z-index: 2; margin: 0 -4px;}
+.setpBodyStyle .stepByStyle li { display: flex; flex-direction: column; align-items: center; position: relative; margin: 0 4px; text-align: center; background-color: #f4f7fc;}
+.setpBodyStyle .stepByStyle li .iconRound { display: flex; align-items: center; justify-content: center; width: 32px; height: 32px;}
+.setpBodyStyle .stepByStyle li .iconRound i { display: block; width: 16px; height: 16px; margin: 0 auto; background-color: #dbdbdb; border-radius: 50%;}
+.setpBodyStyle .stepByStyle li .iconRound.bgBlue i { background-color: #366cc3;}
+.setpBodyStyle .stepByStyle li span.text { display: block; margin-top: 8px; font-size: 14px;}
+.setpBodyStyle .stepByStyle li.active >span.text { color: #366cc3;}
+.setpBodyStyle .stepByStyle li.active .iconRound { background-color: #366cc3; border-radius: 50%;}
+.setpBodyStyle .stepByStyle li.active .iconRound i { width: 24px; height: 24px; background-color: inherit;}
+.setpBodyStyle .stepByStyle li.active .iconRound i::after { content: ''; display: block; width: 24px; height: 24px; background: url(../images/common/ico_check_w.svg) no-repeat center/cover;}
+.setpBodyStyle .line { position: absolute; left: 92px; right: 92px; top: 40px; z-index: 1; height: 1px; background-color: #dbdbdb;}
+
+/* overflowY */
+.overflowY { overflow-x: hidden; overflow-y: scroll;}
+.overflowY::-webkit-scrollbar { width: 4px;}
+.overflowY::-webkit-scrollbar-thumb { border-radius: 4px; background-color: #959595;}
+
+/* roundBox */
+.roundBox { overflow: hidden; margin-top: 40px; border: solid 1px #dbdbdb; border-radius: 8px;}
+.roundBox h4 { padding: 14px 24px; font-size: 16px; background-color: #f7f7f7;}
+.roundBox .overflowY { height: 152px; margin: 23px 8px 23px 24px; font-size: 14px; line-height: 21px;}
+.roundBox .overflowY >p ~ p { margin-top: 20px;}
+.roundBox .overflowY .styleGray { color: #767676;}
+.roundBox .overflowY ol >li { margin-top: 20px;}
+.roundBox .overflowY ol >li.mt0 { margin-top: 0;}
+.roundBox .overflowY li span { display: block; margin-top: 15px;}
+.roundBox .default { padding: 23px 24px; font-size: 14px; line-height: 21px;}
+
+.inlineGroupBox { display: flex; align-items: center; margin-top: 12px;}
+.inlineGroupBox li ~ li { margin-left: 32px;}
+
+/* tooltipBtn */
+.tooltipBtn { margin: -2px 4px 0 4px;}
+.tooltipBtn i { display: inline-block; width: 24px; height: 24px; text-indent: -99999px; background: url(../images/common/ico_help.svg) no-repeat center/cover;}
+
+/* dateGroup */
+.dateGroup { margin-top: 9px; border-top: 2px solid #333; border-bottom: 1px solid #333;}
+.dateGroup .head { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #dbdbdb;}
+.dateGroup .head b { padding: 16px 24px; background-color: #f7f7f7;}
+.dateGroup .body { padding: 40px 0; text-align: center;} 
+.dateGroup .body p { line-height: 24px;}
+.dateGroup .body .in { margin-top: 24px;}
+.dateGroup .body .in span { display: block;}
+.dateGroup .body .in span ~ span { margin-top: 8px;}
+.dateGroup .body .he { display: inline-flex; align-items: center; margin-top: 24px;}
+.dateGroup .body .he select { width: 240px;}
+.dateGroup .body .he .tooltipBtn { margin-top: -15px;}
+.dateGroup .body .he select { margin: 0 8px;}
+.dateGroup.otherStyle { border: none;}
+.dateGroup.otherStyle .body { padding-bottom: 0;}
+.dateGroup.otherStyle2 { margin-top: 0; border: none;}
+.dateGroup.otherStyle3 { border-bottom: none;}
+.dateGroup.pdB0 .body { padding-bottom: 0;}
+
+/* paragraphGroup */
+.paragraphGroup p { line-height: 24px;}
+.paragraphGroup p ~ p { margin-top: 20px;}
+
+
+
+
+
+/* 테이블
+**********************************************/
+
+
 /* tableBody */
 .tableBody { overflow: hidden; margin-top: 8px; border-top: 2px solid #333;}
 .tableBody table { width: calc(100% + 2px); margin-left: -1px;}
@@ -381,144 +520,6 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .pageNumber .prev i { background: url(../images/common/ico_arrow_left.svg) no-repeat center/cover;}
 .pageNumber .next i { background: url(../images/common/ico_arrow_right.svg) no-repeat center/cover;}
 .pageNumber .last i { background: url(../images/common/ico_arrow_right_double.svg) no-repeat center/cover;}
-
-/* jQuery 달력 */
-.calendarBody { display: flex; align-items: center;}
-.calendarBody input { flex: 1;}
-.calendarBody button { display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; text-indent: -99999px; border: 1px solid #dbdbdb; border-left: none;}
-.calendarBody button::after { content: ''; display: block; width: 16px; height: 16px; margin-left: 1px; background: url(../images/common/ico_calendar.svg) no-repeat center/cover;}
-.ui-widget { font-family: "NanumBarunGothic", "Apple SD Gothic Neo", "Droid sans", "Microsoft NeoGothic ", sans-serif}
-.ui-datepicker { width: 280px; padding: 12px 16px 6px; background-color: #fff;}
-.ui-widget-content { color: #333; border-color: #333; border-radius: 0;}
-.ui-widget-header { font-size: 16px; border: none;}
-.ui-datepicker-calendar thead th { width: 32px; padding: 10px 0 7px; font-size: 12px; font-family: 'Montserrat', "NanumBarunGothic"; font-weight: 400; color: #959595; border-bottom: 1px solid #dbdbdb;}
-.ui-datepicker td { padding: 4px 0; text-align: center;}
-.ui-datepicker tbody tr:first-child td { padding-top: 8px;}
-.ui-datepicker td a { padding: 0;}
-.ui-datepicker td a.ui-state-active { font-weight: 600; color: #fff !important; background-color: #366cc3;}
-.ui-datepicker td a.ui-state-highlight { background-color: #f7f7f7;}
-.ui-datepicker td.ui-datepicker-week-end a { color: #0052bb;}
-.ui-datepicker td:last-child.ui-datepicker-week-end a { color: #ee0700;}
-.ui-state-default, 
-.ui-widget-content .ui-state-default { display: flex; align-items: center; justify-content: center; width: 28px; height: 28px; margin: 0 auto; font-size: 14px; font-family: 'Montserrat', "NanumBarunGothic"; font-weight: 400; color: #333; text-align: center; border: none; border-radius: 50%;}
-.ui-datepicker .ui-datepicker-prev { left: -6px; cursor: pointer;}
-.ui-datepicker .ui-datepicker-next { right: -6px; cursor: pointer;}
-.ui-datepicker .ui-datepicker-prev span,
-.ui-datepicker .ui-datepicker-next span { display: block; width: 16px; height: 16px;}
-.ui-datepicker .ui-datepicker-prev span { background: url(../images/common/ico_arrow_left.svg) no-repeat center/cover;}
-.ui-datepicker .ui-datepicker-next span { background: url(../images/common/ico_arrow_right.svg) no-repeat center/cover;}
-.ui-datepicker-year::after { content: '년';}
-.ui-state-hover,
-.ui-widget-content .ui-state-hover,
-.ui-widget-header .ui-state-hover,
-.ui-state-focus,
-.ui-widget-content .ui-state-focus,
-.ui-widget-header .ui-state-focus {	border: none;	font-weight: inherit;	color: inherit;}
-.ui-datepicker .ui-datepicker-prev-hover,
-.ui-datepicker .ui-datepicker-next-hover { top: 2px;}
-
-
-/* viewBody */
-.viewBody { margin-top: 40px; padding-top: 40px; border-top: 2px solid #333;}
-.viewBody .notice span { font-size: 14px;}
-.viewBody h4 { margin-top: 8px; font-size: 20px; line-height: 30px;}
-.viewBody .lineSpace { margin-top: 16px;}
-.viewBody .fileForm { margin-top: 24px; padding: 15px 16px; font-size: 14px; border-top: 1px solid #dbdbdb; border-bottom: 1px solid #dbdbdb; background-color: #f7f7f7;}
-.viewBody .fileForm ul li a { display: inline-block; line-height: 21px;}
-.viewBody .fileForm ul li a i { display: inline-block; width: 24px; height: 24px; margin-left: 4px; vertical-align: middle;}
-.viewBody .fileForm ul li a i.play {  background: url(../images/common/ico_play.svg) no-repeat center/cover;}
-.viewBody .fileForm ul li a i.download { background: url(../images/common/ico_download.svg) no-repeat center/cover;}
-.viewBody .fileForm ul li ~ li { margin-top: 8px;}
-.viewBody .article { padding: 40px 0; line-height: 24px;}
-.viewBody .article p ~ p { margin-top: 24px;}
-.viewBody .btns { display: flex; justify-content: flex-end; padding-top: 32px; border-top: solid 1px #dbdbdb;}
-.viewBody .postGroup { margin-top: 40px; border-top: solid 1px #dbdbdb;}
-.viewBody .postGroup li { display: flex; align-items: center; padding: 18px 16px; border-bottom: solid 1px #dbdbdb;}
-.viewBody .postGroup li span { width: 88px;}
-.viewBody .postGroup li a { display: inline-block;}
-
-/* evaluationBody */
-.evaluationBody { display: flex; align-items: center; justify-content: space-between; margin-top: 80px; padding: 33px 48px 32px; border: 1px solid #dbdbdb; border-top: 1px solid #333;}
-.evaluationBody .context { flex: 1;}
-.evaluationBody .context .groupBox { display: flex; align-items: center; margin-top: 17px;}
-.evaluationBody .context .groupBox li { margin-right: 32px;}
-.evaluationBody .btn { width: 80px;}
-
-/* stepBody */
-.stepBody { overflow: hidden; margin-top: 40px;}
-.stepBody .stepBy { display: flex; margin: 0 -20px;}
-.stepBody .stepBy li { display: flex; align-items: baseline; justify-content: center; flex: 1; position: relative; height: 56px; margin: 0 20px; padding-top: 18px; border: 1px solid #dbdbdb; border-radius: 8px;}
-.stepBody .stepBy li >span { display: block; font-weight: 600;}
-.stepBody .stepBy li >span.text { margin-left: 6px;}
-.stepBody .stepBy li ~ li::before { content: ''; display: block; position: absolute; left: -28px; top: 50%; width: 16px; height: 16px; margin-top: -8px; background: url(../images/common/ico_bc_arrow.svg) no-repeat center/cover;}
-.stepBody .stepBy li.active { color: #fff; border: 1px solid #366cc3; background-color: #366cc3;}
-.stepBody.mt { margin-top: 24px;}
-
-.setpBodyStyle { overflow: hidden; position: relative; margin-top: 40px; padding: 24px 50px; background-color: #f4f7fc; border-radius: 8px;}
-.setpBodyStyle .stepByStyle { display: flex; justify-content: space-between; position: relative; z-index: 2; margin: 0 -4px;}
-.setpBodyStyle .stepByStyle li { display: flex; flex-direction: column; align-items: center; position: relative; margin: 0 4px; text-align: center; background-color: #f4f7fc;}
-.setpBodyStyle .stepByStyle li .iconRound { display: flex; align-items: center; justify-content: center; width: 32px; height: 32px;}
-.setpBodyStyle .stepByStyle li .iconRound i { display: block; width: 16px; height: 16px; margin: 0 auto; background-color: #dbdbdb; border-radius: 50%;}
-.setpBodyStyle .stepByStyle li .iconRound.bgBlue i { background-color: #366cc3;}
-.setpBodyStyle .stepByStyle li span.text { display: block; margin-top: 8px; font-size: 14px;}
-.setpBodyStyle .stepByStyle li.active >span.text { color: #366cc3;}
-.setpBodyStyle .stepByStyle li.active .iconRound { background-color: #366cc3; border-radius: 50%;}
-.setpBodyStyle .stepByStyle li.active .iconRound i { width: 24px; height: 24px; background-color: inherit;}
-.setpBodyStyle .stepByStyle li.active .iconRound i::after { content: ''; display: block; width: 24px; height: 24px; background: url(../images/common/ico_check_w.svg) no-repeat center/cover;}
-.setpBodyStyle .line { position: absolute; left: 92px; right: 92px; top: 40px; z-index: 1; height: 1px; background-color: #dbdbdb;}
-
-/* overflowY */
-.overflowY { overflow-x: hidden; overflow-y: scroll;}
-.overflowY::-webkit-scrollbar { width: 4px;}
-.overflowY::-webkit-scrollbar-thumb { border-radius: 4px; background-color: #959595;}
-
-/* roundBox */
-.roundBox { overflow: hidden; margin-top: 40px; border: solid 1px #dbdbdb; border-radius: 8px;}
-.roundBox h4 { padding: 14px 24px; font-size: 16px; background-color: #f7f7f7;}
-.roundBox .overflowY { height: 152px; margin: 23px 8px 23px 24px; font-size: 14px; line-height: 21px;}
-.roundBox .overflowY >p ~ p { margin-top: 20px;}
-.roundBox .overflowY .styleGray { color: #767676;}
-.roundBox .overflowY ol >li { margin-top: 20px;}
-.roundBox .overflowY ol >li.mt0 { margin-top: 0;}
-.roundBox .overflowY li span { display: block; margin-top: 15px;}
-.roundBox .default { padding: 23px 24px; font-size: 14px; line-height: 21px;}
-
-
-/* inlineGroupBox */
-.inlineGroupBox { display: flex; align-items: center; margin-top: 12px;}
-.inlineGroupBox li ~ li { margin-left: 32px;}
-
-/* tooltipBtn */
-.tooltipBtn { margin: -2px 4px 0 4px;}
-.tooltipBtn i { display: inline-block; width: 24px; height: 24px; text-indent: -99999px; background: url(../images/common/ico_help.svg) no-repeat center/cover;}
-
-/* dateGroup */
-.dateGroup { margin-top: 9px; border-top: 2px solid #333; border-bottom: 1px solid #333;}
-.dateGroup .head { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #dbdbdb;}
-.dateGroup .head b { padding: 16px 24px; background-color: #f7f7f7;}
-.dateGroup .body { padding: 40px 0; text-align: center;} 
-.dateGroup .body p { line-height: 24px;}
-.dateGroup .body .in { margin-top: 24px;}
-.dateGroup .body .in span { display: block;}
-.dateGroup .body .in span ~ span { margin-top: 8px;}
-.dateGroup .body .he { display: inline-flex; align-items: center; margin-top: 24px;}
-.dateGroup .body .he select { width: 240px;}
-.dateGroup .body .he .tooltipBtn { margin-top: -15px;}
-.dateGroup .body .he select { margin: 0 8px;}
-.dateGroup.otherStyle { border: none;}
-.dateGroup.otherStyle .body { padding-bottom: 0;}
-.dateGroup.otherStyle2 { margin-top: 0; border: none;}
-.dateGroup.otherStyle3 { border-bottom: none;}
-.dateGroup.pdB0 .body { padding-bottom: 0;}
-
-/* paragraphGroup */
-.paragraphGroup p { line-height: 24px;}
-.paragraphGroup p ~ p { margin-top: 20px;}
-
-
-
-
-
 
 
 

@@ -5,90 +5,24 @@
 	<script src="../../include/head.js"></script> <!-- include: 공통 헤드 -->
 	<style>
 		body { padding: 50px;}
+		h3 { margin-bottom: 15px;}
 	</style>
-
-	<script>
-		$(document).ready (function () {
-		var $date = $("#date");
-		var $datepicker = null;
-		var visible = false;
-		
-		$.datepicker.setDefaults({
-			dateFormat: 'yymmdd',
-			prevText: '이전 달',
-			nextText: '다음 달',
-			monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
-			monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
-			dayNames: ['일', '월', '화', '수', '목', '금', '토'],
-			dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
-			dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
-			showMonthAfterYear: true,
-			beforeShow: function () {
-			visible = true
-		},
-		onClose: function () {
-			visible = false;
-		},
-		showOn: "button",
-		buttonText: "Open Calendar"
-		});
-		
-		$date.datepicker ({
-			onSelect: function (date) {
-				$(this).trigger ("focus");
-			} // onSelect
-		}).focus(); // instantiate datepicker
-		
-		$datepicker = $date.datepicker ("widget");
-		if ($datepicker.length == 0) {
-			alert ("no date picker");
-			return false;
-		}
-		
-		$date.on ("keydown", function (e) {
-			if (! visible) return true;
-			var key = e.keyCode;
-			var message, date, day, month, year, $datepicker;
-			$datepicker = $(this).datepicker ("widget");
-			
-			if (key >= 37 && key <= 40 && ! e.ctrlKey) {
-			e.ctrlKey = true;
-			$date.trigger (e);
-			return false;
-			} // if
-			
-			if (key >= 33 && key <=40) {
-			day = $datepicker.find (".ui-state-hover").text();
-			month = $datepicker.find (".ui-datepicker-month").text();
-			year = $datepicker.find (".ui-datepicker-year").text();
-			date = new Date (year + " " + month + " " + day);
-			message = $.datepicker.formatDate ("yy DD d MM", date);
-			$("#message").text (message);
-			return false;
-			} // if
-
-			return true;
-		}); // keydown
-	});
-	</script>
 </head>
 
 <body>
 <div id="wrap">
 	<ul>
-	<li>left / right : move by day</li>
-	<li>up / down : move by week</li>
-	<li>page up / down : move by month</li>
-	<li>control + page up / down : move by year</li>
-	<li>control + home : move to current date</li>
-	<li>enter : close datepicker and select currently highlighted date and place it in the input field ready for editing</li>
+		<li>left / right : move by day</li>
+		<li>up / down : move by week</li>
+		<li>page up / down : move by month</li>
+		<li>control + page up / down : move by year</li>
+		<li>control + home : move to current date</li>
+		<li>enter : close datepicker and select currently highlighted date and place it in the input field ready for editing</li>
 	</ul>
-	
-
 	
 	<div role="application">
 		<label for="date">Choose a date:</label>
-		<input type="text" id="date">
+		<input type="text" class="jQdate">
 	</div>
 	
 	<button>Submit</button>
@@ -188,6 +122,309 @@
 		<select title="" disabled>
 			<option>선택</option>
 		</select>
+	</div>
+
+	<br><br><br>
+
+	<h3>lineSpace</h3>
+	<div>
+		<div class="lineSpace">
+			<span><span class="colorGray">작성일 :</span><span>2022-03-12</span></span>
+			<span><span class="colorGray">조회수 :</span><span>346</span></span>
+		</div>
+	</div>
+
+	<br><br><br>
+
+	<h3>guideText</h3>
+	<div>
+		<ul class="guideText">
+			<li>연계신청을 한 경우 원칙적으로 취하 할 수 없습니다.</li>
+			<li>연계신청 후 접수중일 경우 신청접수취소 가능합니다.</li>
+		</ul>
+		<ul class="guideText blue mt">
+			<li>연계신청을 한 경우 원칙적으로 취하 할 수 없습니다.</li>
+		</ul>
+	</div>
+
+	<br><br><br>
+
+	<h3>flexBtn*</h3>
+	<div>
+		<div class="flexBtnOne">
+			<input type="text" title="국가명 입력" placeholder="국가명 입력">
+			<button type="button" class="button h40 black">검색</button>
+		</div>
+	</div>
+
+	<br><br><br>
+
+	<h3>searchBody</h3>
+	<div>
+		<div class="searchBody">
+			<!-- onlyMobile -->
+			<header class="onlyMobile title">
+				<h4>검색조건</h4>
+				<button type="button" class="toggleBtn" title="축소됨" onclick="inform.toggleBtn();"><i>검색조건 토글</i></button>
+			</header>
+			<!-- //onlyMobile -->
+
+			<ul class="controlBox">
+				<li class="wp35">
+					<label for="temp01">기관</label>
+					<select id="temp01">
+						<option>전체</option>
+					</select>
+				</li>
+				<li class="wp25">
+					<label>검색</label>
+					<select title="검색조건 선택">
+						<option>전체</option>
+					</select>
+				</li>
+				<li class="wp40 ml4">
+					<span class="searchReset"><input type="text" title="검색어 입력" placeholder="검색어를 입력하세요."><button type="button" class="searchResetBtn"><i>검색어 지우기</i></button></span>
+					<button type="button" class="button h40 black"><i class="searchIcon"></i><span>검색</span></button>
+				</li>
+			</ul>
+		</div>
+
+		<div class="searchBody">
+			<!-- onlyMobile -->
+			<header class="onlyMobile title">
+				<h4>검색조건</h4>
+				<button type="button" class="toggleBtn" title="축소됨" onclick="inform.toggleBtn();"><i>검색조건 토글</i></button>
+			</header>
+			<!-- //onlyMobile -->
+
+			<ul class="controlBox flexWrap">
+				<li class="wp40">
+					<label for="temp01">기관</label>
+					<select id="temp01">
+						<option>전체</option>
+					</select>
+				</li>
+				<li class="wp35">
+					<label for="temp02">구분</label>
+					<select id="temp02">
+						<option>전체</option>
+					</select>
+				</li>
+				<li class="wp40">
+					<label for="temp03">검색</label>
+					<select id="temp03">
+						<option>전체</option>
+					</select>
+				</li>
+				<li class="wp60 ml4">
+					<span class="searchReset"><input type="text" title="검색어 입력" placeholder="검색어를 입력하세요."><button type="button" class="searchResetBtn"><i>검색어 지우기</i></button></span>
+					<button type="button" class="button h40 black"><i class="searchIcon"></i><span>검색</span></button>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<br><br><br>
+
+	<h3>controlBody</h3>
+	<div>
+		<div class="controlBody">
+			<b>총 123,456건</b>
+			<div class="control">
+				<select class="select h32" title="기관 선택">
+					<option>기관전체</option>
+				</select>
+				<select class="select h32" title="목록 갯수 선택">
+					<option>10개씩 보기</option>
+				</select>
+				<button type="button" class="button h32 black">확인</button>
+			</div>
+		</div>
+	</div>
+
+	<br><br><br>
+
+	<h3>stepBody</h3>
+	<div>
+		<div class="stepBody">
+			<!-- 0단계 -->
+			<ul class="stepBy">
+				<li>
+					<span class="fontMontserrat">01</span>
+					<span class="fontEliceDigital text">접수<span class="m_block">중</span></span>
+				</li>
+				<li>
+					<span class="fontMontserrat">02</span>
+					<span class="fontEliceDigital text">접수<span class="m_block">완료</span></span>
+				</li>
+				<li>
+					<span class="fontMontserrat">03</span>
+					<span class="fontEliceDigital text">기관<span class="m_block">심사중</span></span>
+				</li>
+				<li>
+					<span class="fontMontserrat">04</span>
+					<span class="fontEliceDigital text">처리<span class="m_block">완료</span></span>
+				</li>
+			</ul>
+			<ul class="guideText mt">
+				<li>국민연금과 직역연금 사이 연계신청을 통해 이어 드립니다.</li>
+			</ul>
+			<!-- //0단계 -->
+
+			<!-- 1단계 -->
+			<ul class="stepBy">
+				<li class="active">
+					<span class="invisible">현재 단계</span>
+					<span class="fontMontserrat">01</span>
+					<span class="fontEliceDigital text">접수<span class="m_block">중</span></span>
+				</li>
+				<li>
+					<span class="fontMontserrat">02</span>
+					<span class="fontEliceDigital text">접수<span class="m_block">완료</span></span>
+				</li>
+				<li>
+					<span class="fontMontserrat">03</span>
+					<span class="fontEliceDigital text">기관<span class="m_block">심사중</span></span>
+				</li>
+				<li>
+					<span class="fontMontserrat">04</span>
+					<span class="fontEliceDigital text">처리<span class="m_block">완료</span></span>
+				</li>
+			</ul>
+			<ul class="guideText mt">
+				<li>접수기관에서 연금담당자가 확인하시면 접수완료로 변경됩니다.</li>
+			</ul>
+			<!-- //1단계 -->
+		</div>
+
+		<div class="setpBodyStyle">
+			<ul class="stepByStyle">
+				<li class="active">
+					<span class="invisible">현재 단계</span>
+					<span class="iconRound"><i></i></span>
+					<span class="text">신청인정보 입력</span>
+				</li>
+				<li>
+					<span class="iconRound"><i></i></span>
+					<span class="text">연금가입내역 확인</span>
+				</li>
+				<li>
+					<span class="iconRound"><i></i></span>
+					<span class="text">연계신청 완료</span>
+				</li>
+			</ul>
+			<span class="line"></span>
+		</div>
+	</div>
+
+	<br><br><br>
+
+	<h3>overflowY</h3>
+	<div>
+		<div class="overflowY" tabindex="0">
+			내용
+		</div>
+	</div>
+
+	<br><br><br>
+
+	<h3>roundBox</h3>
+	<div>
+		<div class="roundBox m_marginDefault">
+			<h4>연계제도 및 내용확인</h4>
+			<div class="overflowY" tabindex="0">
+				<ol>
+					<li class="mt0">
+						1. 공적연금 연계신청 대상자는 국민연금 가입기간과 직역연금 재직기간을 연계하려는 연금가입자(연금가입자였던 자 포함)로서 다음 요건을 충족해야합니다.
+						<ul class="styleGray">
+							<li>· 국민연금 → 직역연금으로 이동한 경우 : 2007.7.23.까지 국민연금 가입을 유지하고 직역연금으로 이동한자</li>
+							<li>· 직역연금 → 국민연금으로 이동한 경우 : 2009.2.6.까지 직역연금 가입을 유지하고 국민연금으로 이동한자</li>
+						</ul>
+					</li>
+					<li>
+						2. 연계연금 수급 가능 요건입니다.
+						<ul class="styleGray">
+							<li>· 국민연금(만 60세 이전 납부기간) 가입기간 + 직역연금 재직기간이 240개월 이상이며 국민연금과 직역연금에 관한 법률상 연금 개시연령을 충족한 자</li>
+						</ul>
+					</li>
+					<li>3. 직역연금 퇴직자가 직역연금법상 미납액(기여금, 합산반납금 등)이 있는 경우 해당 금액 완납 전까지 연계신청 승인이 보류됩니다.</li>
+					<li>4. 공적연계법 적용(연계 승인) 후 공무원연금 및 사립학교교직원연금법, 군인연금법에 의한 퇴직급여 일시금 지급이 불가합니다.</li>
+				</ol>
+			</div>
+		</div>
+		<ul class="groupBox inlineGroupBox">
+			<li>
+				<div class="radioBox">
+					<input type="radio" id="radio1_1" name="radio1">
+					<label for="radio1_1">동의 합니다.</label>
+				</div>
+			</li>
+			<li>
+				<div class="radioBox">
+					<input type="radio" id="radio1_2" name="radio1">
+					<label for="radio1_2">미동의 합니다.</label>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<br><br><br>
+
+	<h3>tooltipBtn</h3>
+	<div>
+		<button type="button" class="tooltipBtn" aria-describedby="tooltip1"><i class="icon">도움말</i></button>
+	</div>
+
+	<br><br><br>
+
+	<h3>dateGroup</h3>
+	<div>
+		<div class="dateGroup otherStyle3 pdB0">
+			<div class="head">
+				<b>국민연금 가입자 자격을 취득한 날짜</b>
+				<div class="flexLeft alignCenter">
+					<button type="button" class="tooltipBtn" aria-describedby="tooltip1"><i class="icon">도움말</i></button>
+					<span>YYYY - MM - DD</span>
+				</div>
+			</div>
+			<div class="body">
+				<p>「국민연금과 직역연금의 연계신청에 관한 법률 시행규칙」 제2조에 따라 위와 같이 신청합니다.</p>
+				<div class="in">
+					<span>신청일 : <b>YYYY - MM - DD</b></span>
+					<span>신청인 : <b>김공단</b></span>
+				</div>
+				<div class="he">
+					<button type="button" class="tooltipBtn" aria-describedby="tooltip2"><i class="icon">도움말</i></button>
+					<select title="연금관리기관 선택">
+						<option>국민연금공단</option>
+					</select>
+					<span>귀하</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<br><br><br>
+
+	<h3>paragraphGroup</h3>
+	<div>
+		<div class="paragraphGroup">
+			<p>
+				고객님께서는 연계신청 대상자 아닙니다.<br>
+				연계신청은 국민연금과 직역연금(공무원,사립학교,군인,별정우체국) 재직이력이 있어야 신청 가능합니다.
+			</p>
+			<p>
+				현재 공동연계 홈페이지에 등록된 귀하의 재직이력기관 : [국민연금공단]<br>
+				둘 이상의 재직이력을 가지고 있으나 홈페이지에 등록되어 있지 않다면 아래의 사항을 확인하시기 바랍니다.
+			</p>
+		</div>
+	</div>
+
+	<br><br><br>
+
+	<h3>11111111</h3>
+	<div>
+		11111111
 	</div>
 
 	<br><br><br>

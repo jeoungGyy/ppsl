@@ -89,6 +89,78 @@ hr.space.style4 { margin: 24px -16px 32px;}
 
 .pageNumber a { width: 32px; height: 32px; font-size: 14px;}
 
+/* jQuery 달력 */
+.calendarBody button { width: 40px; height: 40px;}
+
+/* viewBody */
+.viewBody { margin-top: 24px; padding-top: 24px;}
+.viewBody h4 { font-size: 18px;}
+.viewBody .lineSpace { display: block;}
+.viewBody .lineSpace >span { display: block;}
+.viewBody .lineSpace >span ~ span { margin: 8px 0 0 0; padding-left: 0;}
+.viewBody .lineSpace >span ~ span::before { display: none;}
+.viewBody .fileForm { margin-top: 16px;}
+.viewBody .article { padding: 24px 0;}
+.viewBody .postGroup li .ellipsis { flex: 1;}
+
+
+/* evaluationBody */
+/* .evaluationBody { display: block; margin-top: 48px; padding: 32px 24px;}
+.evaluationBody .context { flex: none;}
+.evaluationBody .btn { margin-top: 24px;}
+.evaluationBody .context .groupBox { flex-wrap: wrap; margin-top: 0;}
+.evaluationBody .context .groupBox li { margin-top: 17px;} */
+
+/* stepBody */
+.stepBody .stepBy { margin: 0 -12px;}
+.stepBody .stepBy li { justify-content: inherit; flex-direction: column; align-items: center; height: 80px; margin: 0 12px; padding-top: 7px; text-align: center;}
+.stepBody .stepBy li span { font-size: 14px; line-height: 21px;}
+.stepBody .stepBy li span.text { margin: 2px 0 0 0; line-height: 18px;}
+.stepBody .stepBy li ~ li::before { left: -21px;}
+
+.setpBodyStyle { padding-bottom: 50px;}
+.setpBodyStyle .stepByStyle li span.text { display: none;}
+.setpBodyStyle .stepByStyle li.active { margin: 0; padding: 0 8px;}
+.setpBodyStyle .stepByStyle li.active >span.text { display: block; position: absolute; left: 50%; bottom: -22px; width: max-content; transform: translateX(-50%);}
+.setpBodyStyle .line { left: 63px; right: 63px;}
+
+/* overflowY */
+.overflowY { scroll-behavior:smooth;}
+
+/* roundBox */
+.roundBox { margin-top: 24px;}
+.roundBox.m_marginDefault { margin-top: 0;}
+
+/* tooltipBtn */
+.tooltipBtn i { width: 20px; height: 20px;}
+
+/* toggleBtn */
+.toggleGroup { width: 100%; height: 64px;}
+.toggleGroup .defaultH5 { font-size: 19px;}
+.toggleGroup .toggleBtn { margin-right: -12px;}
+.toggleGroup .toggleBtn { overflow: hidden; padding: 10px;}
+.toggleGroup .toggleBtn i { display: inline-block; width: 16px; height: 16px; text-indent: -99999px; vertical-align: middle; background: url(../images/common/ico_arrow_down.svg) no-repeat center/cover;}
+.toggleGroup.active .toggleBtn i { transform: rotate(-180deg);}
+.targetHidden { display: none;}
+
+/* dateGroup */
+.dateGroup { margin-top: 0; border: none;}
+.dateGroup .head { flex-direction: column; align-items: inherit; padding: 24px 16px; border-bottom: none; background-color: #f7f7f7; border-radius: 8px;}
+.dateGroup .head b { padding: 0;}
+.dateGroup .head .flexLeft { margin-top: 8px;}
+.dateGroup .body { padding: 32px 0;}
+.dateGroup .body .in { margin-top: 21px;}
+.dateGroup .body .he { display: flex;}
+.dateGroup .body .he select { flex: 1;}
+
+
+
+
+
+
+/* 테이블
+**********************************************/
+
 /* m_tableBody */
 .m_tableBody { padding: 24px 16px; border: 1px solid #dbdbdb; border-radius: 8px;}
 .m_tableBody .mList >li ~ li { margin-top: 8px;}
@@ -214,80 +286,6 @@ hr.space.style4 { margin: 24px -16px 32px;}
 .m_xBtnBody >li >ul { padding: 0 16px;}
 .m_xBtnBody.defaultPadding >li { padding-bottom: 24px;}
 .m_xBtnBody.mt { margin-top: 16px;}
-
-/* jQuery 달력 */
-.calendarBody button { width: 40px; height: 40px;}
-
-/* viewBody */
-.viewBody { margin-top: 24px; padding-top: 24px;}
-.viewBody h4 { font-size: 18px;}
-.viewBody .lineSpace { display: block;}
-.viewBody .lineSpace >span { display: block;}
-.viewBody .lineSpace >span ~ span { margin: 8px 0 0 0; padding-left: 0;}
-.viewBody .lineSpace >span ~ span::before { display: none;}
-.viewBody .fileForm { margin-top: 16px;}
-.viewBody .article { padding: 24px 0;}
-.viewBody .postGroup li .ellipsis { flex: 1;}
-
-
-/* evaluationBody */
-.evaluationBody { display: block; margin-top: 48px; padding: 32px 24px;}
-.evaluationBody .context { flex: none;}
-.evaluationBody .btn { margin-top: 24px;}
-.evaluationBody .context .groupBox { flex-wrap: wrap; margin-top: 0;}
-.evaluationBody .context .groupBox li { margin-top: 17px;}
-
-/* stepBody */
-.stepBody .stepBy { margin: 0 -12px;}
-.stepBody .stepBy li { justify-content: inherit; flex-direction: column; align-items: center; height: 80px; margin: 0 12px; padding-top: 7px; text-align: center;}
-.stepBody .stepBy li span { font-size: 14px; line-height: 21px;}
-.stepBody .stepBy li span.text { margin: 2px 0 0 0; line-height: 18px;}
-.stepBody .stepBy li ~ li::before { left: -21px;}
-
-.setpBodyStyle { padding-bottom: 50px;}
-.setpBodyStyle .stepByStyle li span.text { display: none;}
-.setpBodyStyle .stepByStyle li.active { margin: 0; padding: 0 8px;}
-.setpBodyStyle .stepByStyle li.active >span.text { display: block; position: absolute; left: 50%; bottom: -22px; width: max-content; transform: translateX(-50%);}
-.setpBodyStyle .line { left: 63px; right: 63px;}
-
-/* overflowY */
-.overflowY { scroll-behavior:smooth;}
-
-/* roundBox */
-.roundBox { margin-top: 24px;}
-.roundBox.m_marginDefault { margin-top: 0;}
-
-/* tooltipBtn */
-.tooltipBtn i { width: 20px; height: 20px;}
-
-/* toggleBtn */
-.toggleGroup { width: 100%; height: 64px;}
-.toggleGroup .defaultH5 { font-size: 19px;}
-.toggleGroup .toggleBtn { margin-right: -12px;}
-.toggleGroup .toggleBtn { overflow: hidden; padding: 10px;}
-.toggleGroup .toggleBtn i { display: inline-block; width: 16px; height: 16px; text-indent: -99999px; vertical-align: middle; background: url(../images/common/ico_arrow_down.svg) no-repeat center/cover;}
-.toggleGroup.active .toggleBtn i { transform: rotate(-180deg);}
-.targetHidden { display: none;}
-
-/* dateGroup */
-.dateGroup { margin-top: 0; border: none;}
-.dateGroup .head { flex-direction: column; align-items: inherit; padding: 24px 16px; border-bottom: none; background-color: #f7f7f7; border-radius: 8px;}
-.dateGroup .head b { padding: 0;}
-.dateGroup .head .flexLeft { margin-top: 8px;}
-.dateGroup .body { padding: 32px 0;}
-.dateGroup .body .in { margin-top: 21px;}
-.dateGroup .body .he { display: flex;}
-.dateGroup .body .he select { flex: 1;}
-
-
-
-
-
-
-
-
-
-
 
 
 
