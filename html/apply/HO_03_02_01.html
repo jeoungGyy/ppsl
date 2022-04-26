@@ -21,344 +21,151 @@
 				<div id="contentLink" class="contents">
 					<header class="contentsHeader">
 						<div class="title">
-							<h3>신청정보변경</h3>
-							<p>변경할 정보를 입력 해주세요.</p>
+							<h3>신청정보변경 조회</h3>
+							<p>신청인 정보(연락처, 주소, 이메일)와 퇴직일시금 수령 하신 경우 반납금 납부 방법, 납부횟수 변경 가능합니다.</p>
 						</div>
 						<script src="../../include/location.js"></script> <!-- include: 공통 현재위치 -->
 					</header>
 
-					<hr class="space style onlyMobile">
-
-					<div class="appBody">
-						<div class="m_toggleArea">
-							<button class="flexLeft spaceBetween toggleGroup active" title="확장됨">
-								<b class="defaultH4">변경정보</b>
-								<span class="toggleBtn onlyMobile" ><i>변경정보 토글</i></span>
-							</button>
-							<div class="target">
-								<!-- PC -->
-								<div class="onlyPC">
-									<div class="hTableBody">
-										<table>
-											<caption>신청인 변경정보 : 성명, 주민등록번호, 우편번호, 주소, 자택번호, 휴대번호, 전자우편(이메일)로 구성</caption>
-											<colgroup>
-												<col style="width: 162px;">
-												<col>
-											</colgroup>
-											<tbody>
-												<tr>
-													<th scope="row">성명</th>
-													<td>김공단</td>
-												</tr>
-												<tr>
-													<th scope="row">주민등록번호</th>
-													<td>000000-*******</td>
-												</tr>
-												<tr>
-													<th scope="row">우편번호</th>
-													<td>
-														<div class="flexLeft post">
-															<input type="text" title="우편번호" disabled>
-															<button type="button" class="button h40 lineBlack">우편번호검색</button>
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<th scope="row">주소</th>
-													<td>
-														<div class="flexLeft address">
-															<input type="text" title="주소" disabled>
-															<input type="text" title="상세주소 입력" placeholder="상세주소">
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<th scope="row">자택번호</th>
-													<td>
-														<div class="flexLeft phone">
-															<select title="자택번호 국번 선택">
-																<option>선택</option>
-															</select>
-															<span><input type="tel" title="자택번호 앞 4자리"></span>
-															<span><input type="tel" title="자택번호 뒤 4자리"></span>
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<th scope="row">휴대번호</th>
-													<td>
-														<div class="flexLeft phone">
-															<select title="휴대번호 국번 선택">
-																<option>선택</option>
-															</select>
-															<span><input type="tel" title="휴대번호 앞 4자리"></span>
-															<span><input type="tel" title="휴대번호 뒤 4자리"></span>
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<th scope="row">전자우편(이메일)</th>
-													<td>
-														<div class="flexLeft email">
-															<input type="text" title="이메일 아이디 입력">
-															<span><input type="email" title="이메일 도메인 입력"></span>
-															<select title="이메일 도메인 선택">
-																<option>선택</option>
-															</select>
-														</div>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-								<!-- //PC -->
-
-								<!-- Mobile -->
-								<div class="onlyMobile">
-									<ul class="m_hTableBody">
-										<li>
-											<div class="boxGray">
-												<b>김공단</b>
-												<span class="num">000000-*******</span>
-											</div>
-										</li>
-										<li>
-											<label>주소</label>
-											<div class="flexLeft post">
-												<input type="text" title="우편번호" disabled>
-												<button type="button" class="button h40 lineBlack">우편번호검색</button>
-											</div>
-											<div class="address">
-												<input type="text" title="주소" disabled>
-												<input type="text" title="상세주소 입력" placeholder="상세주소">
-											</div>
-										</li>
-										<li>
-											<label>자택번호</label>
-											<div class="flexLeft phone">
-												<span>
-													<select title="자택번호 국번 선택">
-														<option>선택</option>
-													</select>
-												</span>
-												<span><input type="tel" title="자택번호 앞 4자리"></span>
-												<span><input type="tel" title="자택번호 뒤 4자리"></span>
-											</div>
-										</li>
-										<li>
-											<label>휴대번호</label>
-											<div class="flexLeft phone">
-												<span>
-													<select title="휴대번호 국번 선택">
-														<option>선택</option>
-													</select>
-												</span>
-												<span><input type="tel" title="휴대번호 앞 4자리"></span>
-												<span><input type="tel" title="휴대번호 뒤 4자리"></span>
-											</div>
-										</li>
-										<li>
-											<label>전자우편(이메일)</label>
-											<div class="flexLeft email">
-												<span><input type="text" title="이메일 아이디 입력"></span>
-											</div>
-											<div class="flexLeft emailSub">
-												<span>
-													<input type="email" title="이메일 도메인 입력">
-												</span>
-												<span>
-													<select title="이메일 도메인 선택">
-														<option>선택</option>
-													</select>
-												</span>
-											</div>
-										</li>
-									</ul>
-								</div>
-								<!-- //Mobile -->
-								<ul class="guideText mt">
-									<li>“주소” 란에는 통지서를 받을 수 있도록 ＂우편번호＂를 선택하여 실제 주소를 입력하셔야 합니다.</li>
-									<li>휴대폰 번호를 입력하신 경우 안내문자가 발송 될 수 있습니다.</li>
-								</ul>
-							</div>
+					<!-- PC -->
+					<div class="onlyPC">
+						<div class="tableBody mt">
+							<table>
+								<caption>신청상태조회 : 접수방법, 접수번호, 접수일, 내용, 구분, 상태, 처리지사로 구성</caption>
+								<colgroup>
+									<col style="width: 104px;">
+									<col>
+									<col style="width: 144px;">
+									<col style="width: 144px;">
+									<col style="width: 120px;">
+									<col style="width: 136px;">
+									<col style="width: 124px;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">접수방법</th>
+										<th scope="col">접수번호</th>
+										<th scope="col">접수일</th>
+										<th scope="col">내용</th>
+										<th scope="col">구분</th>
+										<th scope="col">상태</th>
+										<th scope="col">처리지사</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>인터넷</td>
+										<td>20183012000063</td>
+										<td>yyyy-mm-dd</td>
+										<td>연계신청접수취소</td>
+										<td>-</td>
+										<td>확인중</td>
+										<td><button type="button" class="button h24 lineBlack">확인</button></td>
+									</tr>
+									<tr>
+										<td>방문</td>
+										<td>20183012000439</td>
+										<td>yyyy-mm-dd</td>
+										<td>연계신청서</td>
+										<td>미해당</td>
+										<td>접수완료</td>
+										<td><button type="button" class="button h24 lineBlack">확인</button></td>
+									</tr>
+									<tr>
+										<td>방문</td>
+										<td>20183012000439</td>
+										<td>yyyy-mm-dd</td>
+										<td>연계취하신청서</td>
+										<td>미해당</td>
+										<td><span class="colorBlue">처리완료</span></td>
+										<td><button type="button" class="button h24 lineBlack">확인</button></td>
+									</tr>
+									<tr>
+										<td class="empty" colspan="7">데이터가 없습니다.</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
-						
-						<hr class="space style2 onlyMobile">
+					</div>
+					<!-- //PC -->
 
-						<div class="m_toggleArea">
-							<button class="flexLeft spaceBetween toggleGroup pcmt40" title="축소됨">
-								<b class="defaultH4">가입내용</b>
-								<span class="toggleBtn onlyMobile"><i>가입내용 토글</i></span>
-							</button>
-							<div class="target targetHidden">
-								<!-- PC -->
-								<div class="onlyPC">
-									<div class="tableBody">
-										<table>
-											<caption>가입내용 : 선택, 연금기관, 기간 구분, 상세내역로 구성</caption>
-											<colgroup>
-												<col style="width: 64px;">
-												<col style="width: 112px;">
-												<col style="width: 128px;">
-												<col>
-											</colgroup>
-											<thead>
-												<tr>
-													<th scope="col">선택</th>
-													<th scope="col">연금기관</th>
-													<th scope="col">기간 구분</th>
-													<th scope="col">상세내역</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>
-														<div class="groupBox single">
-															<input type="checkbox" name="checkbox" title="세번째 가입내용 선택">
-														</div>
-													</td>
-													<td>사립학교 교직원연금공단</td>
-													<td>재직기간</td>
-													<td>
-														<span class="block">2년 6월  ( YYYY - MM - DD ~ YYYY - MM - DD )</span>
-														<table>
-															<caption>세번째 가입내용 상세내역 : 연계신청가능 월수, 퇴직일시금 수령, 반납금 납부방법, 반납금 납부횟수로 구성</caption>
-															<colgroup>
-																<col style="width: 25%;">
-																<col style="width: 25%;">
-																<col style="width: 25%;">
-																<col>
-															</colgroup>
-															<thead>
-																<tr>
-																	<th><span class="colorBlue">연계신청가능 월수</span></th>
-																	<th>퇴직일시금 수령</th>
-																	<th>반납금 납부방법</th>
-																	<th>반납금 납부횟수</th>
-																</tr>
-															</thead>
-															<tbody>
-																<tr>
-																	<td><span class="colorBlue">30</span></td>
-																	<td>수령</td>
-																	<td>
-																		<select title="첫번째 반납금 납부방법 선택">
-																			<option>선택</option>
-																		</select>
-																	</td>
-																	<td>
-																		<select title="첫번째 반납금 납부횟수 선택">
-																			<option>선택</option>
-																		</select>
-																	</td>
-																</tr>
-															</tbody>
-														</table>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-								<!-- //PC -->
-
-								<!-- Mobile -->
-								<div class="onlyMobile">
-									<ul class="mListMulti">
-										<li>
-											<div class="groupBox">
-												<div class="checkboxBox">
-													<input type="checkbox" id="m_chechbox1" name="m_checkbox" title="첫번째 가입내용 선택">
-													<label for="m_chechbox1">사립학교교직원연금공단</label>
-												</div>
-											</div>
-											<div class="roundBoxGray sp mt">
-												<span>재직기간</span>
-												<div class="flexLeft spaceBetween">
-													<b class="listDate">2년 6월<br>( YYYY - MM - DD ~ YYYY - MM - DD )</b>
-												</div>
-											</div>
-											<ul class="msList">
-												<li>
-													<span class="colorBlue">연계신청가능 월수</span>
-													<b class="colorBlue">30</b>
-												</li>
-												<li>
-													<span>퇴직일시금 수령</span>
-													<b>미수령</b>
-												</li>
-												<li class="block lineBreak">
-													<b>반납금 납부방법</b>
-													<span class="mt">
-														<select title="반납금 납부방법 선택">
-															<option>선택</option>
-														</select>
-													</span>
-												</li>
-												<li class="block">
-													<b>반납금 납부횟수</b>
-													<span class="mt">
-														<select title="반납금 납부횟수 선택">
-															<option>선택</option>
-														</select>
-													</span>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</div>
-								<!-- //Mobile -->
-								<ul class="guideText mt">
-									<li>“가입내용” 란에는 본인이 연게 신청을 하려는 연금의 가입, 재직(복무)연월수가 자동표시되오니 확인 하시기 바랍니다.</li>
-								</ul>
-							</div>
-						</div>
-
-						<hr class="space style2 onlyMobile">
-
-						<div class="dateGroup otherStyle">
-							<div class="body">
-								<p>「국민연금과 직역연금의 연계신청에 관한 법률 시행규칙」 제2조에 따라 위와 같이 신청합니다.</p>
-								<div class="in">
-									<span>신청일 : <b>YYYY - MM - DD</b></span>
-									<span>신청인 : <b>김공단</b></span>
-								</div>
-								<div class="he">
-									<select title="연금관리기관 선택">
-										<option>국민연금공단</option>
-									</select>
-									<span>귀하</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="roundBox">
-							<h4>행정정보이용 동의서</h4>
-							<div class="default">
-								<p>본인은 이 건 사무처리;와 관련하여 “전자정부밥”제 22조의2 규정에 따라 이용기관의 담당자가 전자적으로 본인의 정보를 이용하는 것에 동의합니다.</p>
-							</div>
-						</div>
-						<ul class="groupBox inlineGroupBox">
+					<!-- Mobile -->
+					<div class="onlyMobile m_tableBody mt2 noBorder">
+						<ul class="mList">
 							<li>
-								<div class="radioBox">
-									<input type="radio" id="radio1" name="radio">
-									<label for="radio1">동의 합니다.</label>
+								<div class="roundBoxGray">
+									<h6 class="fontDefault">접수번호</h6>
+									<div class="flexLeft spaceBetween">
+										<b class="listDate colorBlue">2009101000040</b>
+										<div class="roundText">확인중</div>
+									</div>
+									
+									<ul class="msList bdt">
+										<li>
+											<label>접수방법</label>
+											<b>방문</b>
+										</li>
+										<li>
+											<label>접수일</label>
+											<b>2006-03-01</b>
+										</li>
+										<li>
+											<label>내용</label>
+											<b>연계신청서</b>
+										</li>
+										<li>
+											<label>구분</label>
+											<b>미해당</b>
+										</li>
+										<li>
+											<label>처리지사</label>
+											<button type="button" class="button h24 lineBlack">확인</button>
+										</li>
+									</ul>
 								</div>
 							</li>
 							<li>
-								<div class="radioBox">
-									<input type="radio" id="radio2" name="radio">
-									<label for="radio2">미동의 합니다.</label>
+								<div class="roundBoxGray">
+									<h6 class="fontDefault">접수번호</h6>
+									<div class="flexLeft spaceBetween">
+										<b class="listDate colorBlue">2009101000040</b>
+										<div class="roundText blueLine">처리완료</div>
+									</div>
+									
+									<ul class="msList bdt">
+										<li>
+											<label>접수방법</label>
+											<b>방문</b>
+										</li>
+										<li>
+											<label>접수일</label>
+											<b>2006-03-01</b>
+										</li>
+										<li>
+											<label>내용</label>
+											<b>연계신청서</b>
+										</li>
+										<li>
+											<label>구분</label>
+											<b>미해당</b>
+										</li>
+										<li>
+											<label>처리지사</label>
+											<button type="button" class="button h24 lineBlack">확인</button>
+										</li>
+									</ul>
 								</div>
 							</li>
 						</ul>
-
-						<div class="btnsGroup flexEnd bdt mt">
-							<button type="button" class="button h48 gray">취소</button>
-							<button type="button" class="button h48 blue">정보변경 신청</button>
-						</div>
 					</div>
+					<!-- //Mobile -->
+
+					<div class="btnsGroup flexEnd">
+						<button type="button" class="button h40 lineBlack">신청인 수정</button>
+						<button type="button" class="button h40 lineBlack">퇴직일시금 수정</button>
+					</div>
+
+					<script src="../../include/evaluation.js"></script> <!-- include: 공통 평가 -->
 				</div>
 			</div>
 		</div>

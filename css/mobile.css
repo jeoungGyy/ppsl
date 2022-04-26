@@ -27,7 +27,7 @@
 .contentsHeader { display: block; text-align: center;}
 .contentsHeader .title h3 { font-size: 24px;}
 .contentsHeader .title p { color: #767676;}
-.contentsHeader .location { margin-top: 16px; padding-bottom: 0;}
+.contentsHeader .location { position: inherit; right: inherit; top: inherit; margin-top: 16px;}
 .contentsHeader .location button.printBtn { display: none;}
 .contentsHeader .location button.shareBtn { margin-left: 16px;}
 
@@ -45,6 +45,8 @@
 /* Margin */
 #wrap .pcmt24 { margin-top: 0;}
 #wrap .pcmt40 { margin-top: 0;}
+
+#wrap .m_ml0 { margin-left: 0;}
 #wrap .momt8 { margin-top: 8px;}
 #wrap .momt24 { margin-top: 24px;}
 #wrap .momt32 { margin-top: 32px;}
@@ -61,6 +63,7 @@ hr.space.style3 { margin: 32px -16px 0;}
 .btnsGroup { padding-top: 24px;}
 .btnsGroup.m_bdt { border-top: 1px solid #333;}
 .btnsGroup.m_styleOther { margin: 0 -15px !important; padding: 24px 16px 0; border-top: 12px solid #f7f7f7;}
+#wrap .btnsGroup.m_mt0 { margin-top: 0;}
 .btnsGroup.m_mb32 { margin-bottom: 32px;}
 
 /* searchBody */
@@ -260,6 +263,16 @@ hr.space.style3 { margin: 32px -16px 0;}
 .toggleGroup.active .toggleBtn i { transform: rotate(-180deg);}
 .targetHidden { display: none;}
 
+/* dateGroup */
+.dateGroup { margin-top: 0; border: none;}
+.dateGroup .head { flex-direction: column; align-items: inherit; padding: 24px 16px; border-bottom: none; background-color: #f7f7f7; border-radius: 8px;}
+.dateGroup .head b { padding: 0;}
+.dateGroup .head .flexLeft { margin-top: 8px;}
+.dateGroup .body { padding: 32px 0;}
+.dateGroup .body .in { margin-top: 21px;}
+.dateGroup .body .he { display: flex;}
+.dateGroup .body .he select { flex: 1;}
+
 
 /* 신청
 **********************************************/
@@ -282,14 +295,6 @@ hr.space.style3 { margin: 32px -16px 0;}
 .agreeBody .btnsGroup { margin-top: 32px;}
 
 .appBody { margin-top: 0;}
-.appBody .dateGroup { margin-top: 0; border: none;}
-.appBody .dateGroup .head { flex-direction: column; align-items: inherit; padding: 24px 16px; border-bottom: none; background-color: #f7f7f7; border-radius: 8px;}
-.appBody .dateGroup .head b { padding: 0;}
-.appBody .dateGroup .head .flexLeft { margin-top: 8px;}
-.appBody .dateGroup .body { padding: 32px 0;}
-.appBody .dateGroup .body .in { margin-top: 21px;}
-.appBody .dateGroup .body .he { display: flex;}
-.appBody .dateGroup .body .he select { flex: 1;}
 .appBody .target { margin-bottom: 32px;}
 
 /* 신청상태조회 */
@@ -299,6 +304,7 @@ hr.space.style3 { margin: 32px -16px 0;}
 .proposalBody .m_flexGroup dl dd { margin-left: 4px;}
 .proposalBody .m_flexGroup dl + dl { margin-top: 8px;}
 .proposalBody .target { padding-bottom: 32px;}
+.proposalBody .target.m_pb0 { padding-bottom: 0;}
 .proposalBody .sign1 { margin-top: 32px; padding-top: 32px; border-top: 1px solid #dbdbdb;}
 .proposalBody .sign2 { margin-top: 32px; padding-top: 0; border-top: none;}
 .proposalBody .sign2.m_bdt { padding-top: 32px; border-top: 1px solid #dbdbdb;}

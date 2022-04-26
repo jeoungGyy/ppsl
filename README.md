@@ -3,7 +3,10 @@
 확인 URL: https://jeounggyy.github.io/ppsl/html/guide/ia.html
 
 
-### 04-22
+### 04-26
+- HO_03_02_02 등록
+
+### 04-25
 - HO_04_01_02_02_05 등록
 - HO_04_01_03 등록
 - HO_04_02_01 등록
