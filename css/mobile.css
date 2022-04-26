@@ -301,12 +301,8 @@ hr.space.style4 { margin: 24px -16px 32px;}
 .layerBody.small,
 .layerBody.normal,
 .layerBody.big { width: 100%;}
-.layerBody .overflowY { margin-right: 0; padding-right: 0;}
+.layerBody .overflowY { margin-right: 0; padding-right: 0; max-height: 448px;}
 .layerClose { right: 16px; top: 20px;}
-
-/* 국가명 조회 */
-.countryName .overflowY { max-height: 448px;}
-
 
 
 

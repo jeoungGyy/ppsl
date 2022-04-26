@@ -241,7 +241,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 /* guideText */
 .guideText li { position: relative; padding-left: 12px; font-size: 14px; line-height: 21px;}
 .guideText li::before { content: ''; position: absolute; left: 0; top: 8px; width: 4px; height: 4px; background-color: #333;}
-.guideText li ~ li { margin-top: 8px;}
+.guideText li ~ li { margin-top: 4px;}
 .guideText li .ml { margin-left: 16px;}
 .guideText li .etcColorRed { color: #fc0606;}
 .guideText.mt { margin-top: 16px;}
@@ -285,8 +285,8 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 /* tableBody */
 .tableBody { overflow: hidden; margin-top: 8px; border-top: 2px solid #333;}
 .tableBody table { width: calc(100% + 2px); margin-left: -1px;}
-.tableBody table th { padding: 16px 0; border-left: 1px solid #dbdbdb; background-color: #f7f7f7;}
-.tableBody table td { padding: 16px 12px; text-align: center; line-height: 24px; border: 1px solid #dbdbdb;}
+.tableBody table th { padding: 12px 0; border-left: 1px solid #dbdbdb; background-color: #f7f7f7;}
+.tableBody table td { padding: 12px 12px; text-align: center; line-height: 24px; border: 1px solid #dbdbdb;}
 .tableBody table tr:hover td { background-color: #f7f7f7;}
 .tableBody table td a { text-align: left; line-height: 24px;}
 .tableBody table td a:hover span { border-bottom: 1px solid #333;}
@@ -507,7 +507,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .layerBody.small { width: 384px;}
 .layerBody.normal { width: 588px;}
 .layerBody.big { width: 792px;}
-.layerBody .overflowY { margin-right: -20px; padding-right: 16px;}
+.layerBody .overflowY { max-height: 552px; margin-right: -20px; padding-right: 16px;}
 .layerTitle { display: flex; align-items: center; height: 56px; margin-bottom: 24px; font-size: 19px; border-bottom: 1px solid #333;}
 .layerClose { position: absolute; right: 40px; top: 24px; font-size: 13px; color: #fff;}
 .layerClose i { display: block; width: 24px; height: 24px; text-indent: -99999px; background: url(../images/common/ico_close2.svg) no-repeat center/cover;}
@@ -526,11 +526,6 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .layerPopup .gnb .depth3 >li >a::before { content: ''; display: block; width: 2px; height: 2px; position: absolute; left: 0; top: 6px; background-color: #5a5a5a;}
 .layerPopup .gnb .depth3 >li:first-child { margin-top: 16px;}
 .layerPopup .gnb .depth3 >li ~ li { margin-top: 8px;}
-
-/* 국가명 조회 */
-.countryName .overflowY { max-height: 552px;}
-
-
 
 
 
