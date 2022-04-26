@@ -283,7 +283,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 
 /* jQuery 달력 */
 .calendarBody { display: flex; align-items: center;}
-.calendarBody input { flex: 1;}
+.calendarBody input { flex: 1; width: 100%;}
 .calendarBody button { display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; text-indent: -99999px; border: 1px solid #dbdbdb; border-left: none;}
 .calendarBody button::after { content: ''; display: block; width: 16px; height: 16px; margin-left: 1px; background: url(../images/common/ico_calendar.svg) no-repeat center/cover;}
 .ui-widget { font-family: "NanumBarunGothic", "Apple SD Gothic Neo", "Droid sans", "Microsoft NeoGothic ", sans-serif}
