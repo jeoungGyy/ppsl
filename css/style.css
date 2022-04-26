@@ -124,7 +124,7 @@ body.noScroll { overflow: hidden;}
 
 
 /* 글꼴 */
-.fontMontserrat { font-family: 'Montserrat', "NanumBarunGothic";}
+.fontMontserrat { font-family: 'Montserrat', "NanumBarunGothic"; font-weight: 400;}
 .fontEliceDigital { font-family: 'EliceDigitalBaeum-Bd', "NanumBarunGothic";}
 #wrap .fontSize14 { font-size: 14px;}
 #wrap .fontSize16 { font-size: 16px;}
@@ -387,8 +387,27 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .calendarBody input { flex: 1;}
 .calendarBody button { display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; text-indent: -99999px; border: 1px solid #dbdbdb; border-left: none;}
 .calendarBody button::after { content: ''; display: block; width: 16px; height: 16px; margin-left: 1px; background: url(../images/common/ico_calendar.svg) no-repeat center/cover;}
-.ui-datepicker { background-color: #fff;}
-
+.ui-widget { font-family: "NanumBarunGothic", "Apple SD Gothic Neo", "Droid sans", "Microsoft NeoGothic ", sans-serif}
+.ui-datepicker { width: 280px; padding: 12px 16px 6px; background-color: #fff;}
+.ui-widget-content { color: #333; border-color: #333; border-radius: 0;}
+.ui-widget-header { font-size: 16px; border: none;}
+.ui-datepicker-calendar thead th { width: 32px; padding: 10px 0 7px; font-size: 12px; font-family: 'Montserrat', "NanumBarunGothic"; font-weight: 400; color: #959595; border-bottom: 1px solid #dbdbdb;}
+.ui-datepicker td { padding: 4px 0; text-align: center;}
+.ui-datepicker tbody tr:first-child td { padding-top: 8px;}
+.ui-datepicker td a { padding: 0;}
+.ui-datepicker td a.ui-state-active { font-weight: 600; color: #fff !important; background-color: #366cc3;}
+.ui-datepicker td a.ui-state-highlight { background-color: #f7f7f7;}
+.ui-datepicker td.ui-datepicker-week-end a { color: #0052bb;}
+.ui-datepicker td:last-child.ui-datepicker-week-end a { color: #ee0700;}
+.ui-state-default, 
+.ui-widget-content .ui-state-default { display: flex; align-items: center; justify-content: center; width: 28px; height: 28px; margin: 0 auto; font-size: 14px; font-family: 'Montserrat', "NanumBarunGothic"; font-weight: 400; color: #333; text-align: center; border: none; border-radius: 50%;}
+.ui-datepicker .ui-datepicker-prev { left: -6px;}
+.ui-datepicker .ui-datepicker-next { right: -6px;}
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span { display: block; width: 16px; height: 16px;}
+.ui-datepicker .ui-datepicker-prev span { background: url(../images/common/ico_arrow_left.svg) no-repeat center/cover;}
+.ui-datepicker .ui-datepicker-next span { background: url(../images/common/ico_arrow_right.svg) no-repeat center/cover;}
+.ui-datepicker-year::after { content: '년';}
 
 /* viewBody */
 .viewBody { margin-top: 40px; padding-top: 40px; border-top: 2px solid #333;}
@@ -420,7 +439,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .stepBody { overflow: hidden; margin-top: 40px;}
 .stepBody .stepBy { display: flex; margin: 0 -20px;}
 .stepBody .stepBy li { display: flex; align-items: baseline; justify-content: center; flex: 1; position: relative; height: 56px; margin: 0 20px; padding-top: 18px; border: 1px solid #dbdbdb; border-radius: 8px;}
-.stepBody .stepBy li >span { display: block;}
+.stepBody .stepBy li >span { display: block; font-weight: 600;}
 .stepBody .stepBy li >span.text { margin-left: 6px;}
 .stepBody .stepBy li ~ li::before { content: ''; display: block; position: absolute; left: -28px; top: 50%; width: 16px; height: 16px; margin-top: -8px; background: url(../images/common/ico_bc_arrow.svg) no-repeat center/cover;}
 .stepBody .stepBy li.active { color: #fff; border: 1px solid #366cc3; background-color: #366cc3;}

@@ -195,23 +195,28 @@ $(document).ready(function () {
       var visible = false;
       
       $.datepicker.setDefaults({
-        dateFormat: 'yymmdd',
+        dateFormat: 'yy.mm.dd',
         prevText: '이전 달',
         nextText: '다음 달',
         monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
         monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
-        dayNames: ['일', '월', '화', '수', '목', '금', '토'],
-        dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
-        dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+        dayNames: ['MON', 'THE', 'WED', 'THU', 'FRI', 'SAT', 'SUN'],
+        dayNamesShort: ['MON', 'THE', 'WED', 'THU', 'FRI', 'SAT', 'SUN'],
+        dayNamesMin: ['MON', 'THE', 'WED', 'THU', 'FRI', 'SAT', 'SUN'],
+        firstDay: 1,
         showMonthAfterYear: true,
-        beforeShow: function() {
-        visible = true
-      },
-      onClose: function() {
-        visible = false;
-      },
-      showOn: "button",
-      buttonText: "달력선택"
+        beforeShow: function(input) {
+          visible = true;
+          var _inputOffset = $(input).offset()
+          setTimeout(function() {
+            $('#ui-datepicker-div').css('top', _inputOffset.top + 36);
+          });
+        },
+        onClose: function() {
+          visible = false;
+        },
+        showOn: "button",
+        buttonText: "달력선택"
       });
       
       $date.datepicker({
@@ -229,7 +234,7 @@ $(document).ready(function () {
       $date.on("keydown", function(e) {
         if (! visible) return true;
         var key = e.keyCode;
-        var message, date, day, month, year, $datepicker;
+        var date, day, month, year, $datepicker;
         $datepicker = $(this).datepicker("widget");
         
         if (key >= 37 && key <= 40 && ! e.ctrlKey) {
@@ -243,7 +248,6 @@ $(document).ready(function () {
         month = $datepicker.find(".ui-datepicker-month").text();
         year = $datepicker.find(".ui-datepicker-year").text();
         date = new Date (year + " " + month + " " + day);
-        message = $.datepicker.formatDate ("yy DD d MM", date);
         return false;
         } // if
 
