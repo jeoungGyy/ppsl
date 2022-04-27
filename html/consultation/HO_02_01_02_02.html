@@ -1,0 +1,628 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<script src="../../include/head.js"></script> <!-- include: 공통 헤드 -->
+</head>
+
+<body>
+<div id="wrap">
+	<script src="../../include/header.js"></script> <!-- include: 공통 헤더 -->
+
+	<div class="container">
+		<div class="area">
+			<div class="wrap">
+				<div class="lnbBody">
+					<h2></h2>
+					<nav class="lnb">
+					</nav>
+				</div>
+
+				<div id="contentLink" class="contents">
+					<header class="contentsHeader">
+						<div class="title">
+							<h3>상담</h3>
+							<p>연금연계에 대해 궁금한 내용을 질문하면 담당 상담원이 상담하여 드립니다.</p>
+						</div>
+						<script src="../../include/location.js"></script> <!-- include: 공통 현재위치 -->
+					</header>
+
+					<div class="proposalBody">
+						<div class="flexLeft justifyRight pcmt40 momt24">
+							<span class="fontSize14"><span class="colorOrange">*</span> 필수 입력 항목</span>
+						</div>
+						<hr class="space style5 onlyMobile">
+						<!-- PC -->
+						<div class="onlyPC">
+							<div class="hTableBody">
+								<table>
+									<caption>상담 : 상담구분, 기관구분, 지사, 작성자, 공개여부, 비밀번호, 비밀번호 확인, 휴대폰번호, 주소, 제목, 내용, 첨부파일로 구성</caption>
+									<colgroup>
+										<col style="width: 160px;">
+										<col style="width: 290px;">
+										<col style="width: 160px;">
+										<col>
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">상담구분 <span class="colorOrange">*</span></th>
+											<td colspan="3">
+												<div class="gubun">
+													<div class="groupBox">
+														<div class="flexH">
+															<div class="radioBox">
+																<input type="radio" id="radio1_1" name="radio1" required>
+																<label for="radio1_1">1:1 상담</label>
+															</div>
+														</div>
+														<div class="requireText">
+															<i></i>
+															<span>상담내용을 남겨 주시면 답변드립니다.</span>
+														</div>
+													</div>
+													<div class="groupBox">
+														<div class="flexH">
+															<div class="radioBox">
+																<input type="radio" id="radio1_2" name="radio1" required>
+																<label for="radio1_2">전화상담 예약</label>
+															</div>
+															<div class="calendarBody" role="application">
+																<input type="text" class="jQdate" title="전화상담 예약 날짜 선택" placeholder="날짜선택">
+															</div>
+														</div>
+														<div class="requireText">
+															<i></i>
+															<span>상담내용과 전화번호를 남겨 주시면 전화 드립니다.</span>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">기관구분 <span class="colorOrange">*</span></th>
+											<td>
+												<select title="기관 선택">
+													<option>기관선택</option>
+													<option>국민연금</option>
+													<option>공무원연금</option>
+													<option>사립학교교직원연금공단</option>
+													<option>국방부군인연금</option>
+													<option>별정우체국연금관리단 </option>
+												</select>
+											</td>
+											<th scope="row">지사 <span class="colorOrange">*</span></th>
+											<td>
+												<!-- 기관구분: 국민연금 -->
+												<div class="flexBtnOne">
+													<input type="text" title="지사 입력" required placeholder="지사 입력">
+													<button type="button" class="button h40 lineBlack">지사선택</button>
+												</div>
+												<!-- //기관구분: 국민연금 -->
+
+												<!-- 기관구분: 공무원연금 -->
+												<div>
+													<ul class="groupBox flexLeft">
+														<li>
+															<div class="radioBox">
+																<input type="radio" id="radio3_1" name="radio3" required>
+																<label for="radio3_1">수도권</label>
+															</div>
+														</li>
+														<li>
+															<div class="radioBox">
+																<input type="radio" id="radio3_2" name="radio3" required>
+																<label for="radio3_2">비수도권</label>
+															</div>
+														</li>
+													</ul>
+													<div class="requireText">
+														<i></i>
+														<span>귀사가 공무원으로 재직중인 혹은 했던 기관의 위치</span>
+													</div>
+												</div>
+												<!-- //기관구분: 공무원연금 -->
+
+												<!-- 기관구분: 사립학교교직원연금공단 -->
+												<div>
+													<ul class="groupBox flexLeft">
+														<li>
+															<div class="radioBox">
+																<input type="radio" id="radio4_1" name="radio4" required>
+																<label for="radio4_1">심사징수팀</label>
+															</div>
+														</li>
+													</ul>
+												</div>
+												<!-- //기관구분: 사립학교교직원연금공단 -->
+
+												<!-- 기관구분: 국방부군인연금 -->
+												<div>
+													<ul class="groupBox flexLeft">
+														<li>
+															<div class="radioBox">
+																<input type="radio" id="radio5_1" name="radio5" required>
+																<label for="radio5_1">퇴직급여과</label>
+															</div>
+														</li>
+													</ul>
+												</div>
+												<!-- //기관구분: 국방부군인연금 -->
+
+												<!-- 기관구분: 별정우체국연금관리단  -->
+												<div>
+													<ul class="groupBox flexLeft">
+														<li>
+															<div class="radioBox">
+																<input type="radio" id="radio5_1" name="radio6" required>
+																<label for="radio6_1">별정우체국연금관리단</label>
+															</div>
+														</li>
+													</ul>
+												</div>
+												<!-- //기관구분: 별정우체국연금관리단  -->
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">작성자 <span class="colorOrange">*</span></th>
+											<td>홍길*</td>
+											<th scope="row">공개여부 <span class="colorOrange">*</span></th>
+											<td>
+												<ul class="groupBox flexLeft">
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="radio2_1" name="radio2" required>
+															<label for="radio2_1">공개</label>
+														</div>
+													</li>
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="radio2_2" name="radio2" required>
+															<label for="radio2_2">비공개</label>
+														</div>
+													</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">비밀번호 <span class="colorOrange">*</span></th>
+											<td colspan="3">
+												<div class="mw260">
+													<input type="password" title="비밀번호 입력" placeholder="비밀번호 입력" required>
+												</div>
+												<div class="requireText">
+													<i></i>
+													<span>영문, 숫자, 특수문자 포함 9~20자리로 설정 하여 주세요.</span>
+												</div>
+												<div class="requireText error">
+													<i></i>
+													<span>에러 메세지</span>
+												</div>
+												<div class="requireText success">
+													<i></i>
+													<span>등록가능합니다.</span>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">비밀번호 확인 <span class="colorOrange">*</span></th>
+											<td colspan="3">
+												<div class="mw260">
+													<input type="password" title="비밀번호 재입력" placeholder="비밀번호 입력" required>
+												</div>
+												<div class="requireText">
+													<i></i>
+													<span>영문, 숫자, 특수문자 포함 9~20자리로 설정 하여 주세요.</span>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">휴대폰번호 <span class="colorOrange">*</span></th>
+											<td colspan="3">
+												<div class="flexLeft phone">
+													<span><input type="tel" title="휴대번호 국번 선택" disabled required></span>
+													<span><input type="tel" title="휴대번호 앞 4자리" disabled required></span>
+													<span><input type="tel" title="휴대번호 뒤 4자리" disabled required></span>
+													<button type="button" class="button h40 lineBlack">휴대폰인증</button>
+												</div>
+												<div class="requireText">
+													<i></i>
+													<span>상담안내를 위해 연락 드릴 수 있습니다.</span>
+												</div>
+												<div class="requireText success">
+													<i></i>
+													<span>휴대폰번호 인증되었습니다.</span>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">주소 <span class="colorOrange">*</span></th>
+											<td colspan="3">
+												<div class="flexLeft post">
+													<input type="text" title="우편번호" disabled required>
+													<button type="button" class="button h40 lineBlack layerLink" aria-controls="applyPostLayer">우편번호검색</button>
+												</div>
+												<div class="flexLeft address mt">
+													<input type="text" title="주소" disabled required>
+													<input type="text" title="상세주소 입력" placeholder="상세주소" required>
+												</div>
+												<div class="requireText">
+													<i></i>
+													<span>우편물 송달을 위한 주소지를 입력해 주세요.</span>
+												</div>
+												<div class="requireText success">
+													<i></i>
+													<span>주소입력되었습니다.</span>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">제목 <span class="colorOrange">*</span></th>
+											<td colspan="3">
+												<input type="text" title="제목을 입력해 주세요." placeholder="제목을 입력해 주세요." required>
+												<div class="requireText">
+													<i></i>
+													<span>제목은 최대 30자 이내로 입력해 주세요.</span>
+												</div>
+												<div class="requireText success">
+													<i></i>
+													<span>등록가능합니다.</span>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">내용 <span class="colorOrange">*</span></th>
+											<td colspan="3">
+												<div class="textarea">
+													<textarea cols="30" rows="6" title="내용을 입력해 주세요." placeholder="내용을 입력해 주세요." required></textarea>
+													<div class="byte"><span>0</span>/200</div>
+												</div>
+												<div class="requireText">
+													<i></i>
+													<span>한글 200자(영문 4000자)까지 입력할 수 있습니다.</span>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">첨부파일 <span class="colorOrange">*</span></th>
+											<td colspan="3">
+												<div class="fileBtnBox">
+													<button type="button" class="button h40 lineBlack">파일추가</button>
+													<div class="volumeText"><span class="colorGray">총 용량</span> 11.2MB</div>
+												</div>
+												<ul class="fileList">
+													<li>
+														<div class="fileBody">
+															<div class="filePor">
+																<span class="box">첨부파일명1.doc</span>
+																<span class="volume">9.1 MB</span>
+															</div>
+															<button type="button" class="button h40 lineBlack">삭제</button>
+														</div>
+													</li>
+													<li>
+														<div class="fileBody">
+															<div class="filePor error">
+																<span class="box">첨부파일명1.doc</span>
+																<span class="volume">9.1 MB</span>
+															</div>
+															<button type="button" class="button h40 lineBlack">삭제</button>
+														</div>
+														<div class="requireText error">
+															<i></i>
+															<span>10MB를 초과 했습니다. 파일을 삭제 해 주세요</span>
+														</div>
+													</li>
+												</ul>
+												<div class="requireText">
+													<i></i>
+													<span>파일첨부 용량은 전체 최대 10MB, 최대 10개 이내 로 제한됩니다.<br>
+														지원하는 파일 형식은 : MS문서(doc, docx, ppt, pptx, xls, xlsx), 한글문서(hwp), 텍스트 문서(txt), 이미지(png, jpeg, jpg, gif) 입니다.</span>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!-- //PC -->
+
+						<!-- Mobile -->
+						<div class="onlyMobile">
+							<ul class="m_hTableBody">
+								<li>
+									<label>상담구분 <span class="colorOrange">*</span></label>
+									<div class="roundBoxGray widePd radioSet">
+										<ul class="groupBox">
+											<li>
+												<div class="radioBox">
+													<input type="radio" id="m_radio1_1" name="m_radio1" required>
+													<label for="m_radio1_1">1:1 상담</label>
+												</div>
+											</li>
+											<li>
+												<div class="radioBox">
+													<input type="radio" id="m_radio1_2" name="m_radio1" required>
+													<label for="m_radio1_2">전화상담 예약</label>
+												</div>
+												<div class="calendarBody" role="application">
+													<input type="text" class="jQdate" title="전화상담 예약 날짜 선택" placeholder="날짜선택">
+												</div>
+											</li>
+										</ul>
+										<div class="requireText">
+											<i></i>
+											<span>상담내용을 남겨 주시면 답변드립니다.</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<label>기관구분 <span class="colorOrange">*</span></label>
+									<div>
+										<select title="기관 선택">
+											<option>기관선택</option>
+											<option>국민연금</option>
+											<option>공무원연금</option>
+											<option>사립학교교직원연금공단</option>
+											<option>국방부군인연금</option>
+											<option>별정우체국연금관리단 </option>
+										</select>
+									</div>
+								</li>
+								<li>
+									<label>지사 <span class="colorOrange">*</span></label>
+									<div>
+										<!-- 기관구분: 국민연금 -->
+										<div class="flexBtnOne">
+											<input type="text" title="지사 입력" required placeholder="지사 입력">
+											<button type="button" class="button h40 lineBlack">지사선택</button>
+										</div>
+										<!-- //기관구분: 국민연금 -->
+
+										<div class="roundBoxGray">
+											<!-- 기관구분: 공무원연금 -->
+											<div>
+												<ul class="groupBox flexLeft">
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_radio3_1" name="m_radio3" required>
+															<label for="m_radio3_1">수도권</label>
+														</div>
+													</li>
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_radio3_2" name="m_radio3" required>
+															<label for="m_radio3_2">비수도권</label>
+														</div>
+													</li>
+												</ul>
+												<div class="requireText">
+													<i></i>
+													<span>귀사가 공무원으로 재직중인 혹은 했던 기관의 위치</span>
+												</div>
+											</div>
+											<!-- //기관구분: 공무원연금 -->
+
+											<!-- 기관구분: 사립학교교직원연금공단 -->
+											<div>
+												<ul class="groupBox flexLeft">
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_radio4_1" name="m_radio4" required>
+															<label for="m_radio4_1">심사징수팀</label>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<!-- //기관구분: 사립학교교직원연금공단 -->
+
+											<!-- 기관구분: 국방부군인연금 -->
+											<div>
+												<ul class="groupBox flexLeft">
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_radio5_1" name="m_radio5" required>
+															<label for="m_radio5_1">퇴직급여과</label>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<!-- //기관구분: 국방부군인연금 -->
+
+											<!-- 기관구분: 별정우체국연금관리단 -->
+											<div>
+												<ul class="groupBox flexLeft">
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_radio5_1" name="m_radio6" required>
+															<label for="m_radio6_1">별정우체국연금관리단</label>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<!-- //기관구분: 별정우체국연금관리단 -->
+										</div>
+									</div>
+								</li>
+								<li>
+									<label>작성자 <span class="colorOrange">*</span></label>
+									<div>
+										홍길*
+									</div>
+								</li>
+								<li>
+									<label>공개여부 <span class="colorOrange">*</span></label>
+									<div class="roundBoxGray">
+										<ul class="groupBox flexLeft">
+											<li>
+												<div class="radioBox">
+													<input type="radio" id="m_radio2_1" name="m_radio2" required>
+													<label for="m_radio2_1">공개</label>
+												</div>
+											</li>
+											<li>
+												<div class="radioBox">
+													<input type="radio" id="m_radio2_2" name="m_radio2" required>
+													<label for="m_radio2_2">비공개</label>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<label>비밀번호 <span class="colorOrange">*</span></label>
+									<div>
+										<input type="password" title="비밀번호 입력" placeholder="비밀번호 입력" required>
+										<div class="requireText">
+											<i></i>
+											<span>영문, 숫자, 특수문자 포함 9~20자리로 설정 하여 주세요.</span>
+										</div>
+										<div class="requireText error">
+											<i></i>
+											<span>에러 메세지</span>
+										</div>
+										<div class="requireText success">
+											<i></i>
+											<span>등록가능합니다.</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<label>휴대폰번호 <span class="colorOrange">*</span></label>
+									<div>
+										<div class="flexLeft phone">
+											<span><input type="tel" title="휴대폰번호 국번 선택" required disabled></span>
+											<span><input type="tel" title="휴대폰번호 앞 4자리" required disabled></span>
+											<span><input type="tel" title="휴대폰번호 뒤 4자리" required disabled></span>
+										</div>
+										<button type="button" class="button h40 lineBlack momt8">휴대폰인증</button>
+
+										<div class="requireText">
+											<i></i>
+											<span>상담원 안내를 위해 안내문자가 발송 될 수 있습니다.</span>
+										</div>
+										<div class="requireText success">
+											<i></i>
+											<span>휴대폰번호가 인증되었습니다.</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<label>주소 <span class="colorOrange">*</span></label>
+									<div>
+										<div class="flexLeft post">
+											<input type="text" title="우편번호" disabled>
+											<button type="button" class="button h40 lineBlack">우편번호검색</button>
+										</div>
+										<div class="address">
+											<input type="text" title="주소" disabled>
+											<input type="text" title="상세주소 입력" placeholder="상세주소">
+										</div>
+										<div class="requireText">
+											<i></i>
+											<span>우편물 송달을 위한 주소지를 입력해 주세요.</span>
+										</div>
+										<div class="requireText success">
+											<i></i>
+											<span>주소입력되었습니다.</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<label>제목 <span class="colorOrange">*</span></label>
+									<div>
+										<input type="text" title="제목을 입력해 주세요." placeholder="제목을 입력해 주세요." required>
+										<div class="requireText">
+											<i></i>
+											<span>제목은 최대 30자 이내로 입력해 주세요.</span>
+										</div>
+										<div class="requireText success">
+											<i></i>
+											<span>등록가능합니다.</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<label>내용 <span class="colorOrange">*</span></label>
+									<div>
+										<div class="textarea">
+											<textarea cols="30" rows="6" title="내용을 입력해 주세요." placeholder="내용을 입력해 주세요." required></textarea>
+											<div class="byte"><span>0</span>/200</div>
+										</div>
+										<div class="requireText">
+											<i></i>
+											<span>한글 200자(영문 4000자)까지 입력할 수 있습니다.</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<label>첨부파일 <span class="colorOrange">*</span></label>
+									<div>
+										<div class="fileBtnBox">
+											<button type="button" class="button h40 lineBlack">파일추가</button>
+											<div class="volumeText"><span class="colorGray">총 용량</span> 11.2MB</div>
+										</div>
+										<ul class="fileList">
+											<li>
+												<div class="fileBody">
+													<div class="filePor">
+														<span class="box">첨부파일명1.doc</span>
+														<span class="volume">9.1 MB</span>
+													</div>
+													<button type="button" class="button h40 lineBlack">삭제</button>
+												</div>
+											</li>
+											<li>
+												<div class="fileBody">
+													<div class="filePor error">
+														<span class="box">첨부파일명1.doc</span>
+														<span class="volume">9.1 MB</span>
+													</div>
+													<button type="button" class="button h40 lineBlack">삭제</button>
+												</div>
+												<div class="requireText error">
+													<i></i>
+													<span>10MB를 초과 했습니다. 파일을 삭제 해 주세요</span>
+												</div>
+											</li>
+										</ul>
+										<div class="requireText">
+											<i></i>
+											<span>파일첨부 용량은 전체 최대 10MB, 최대 10개 이내 로 제한됩니다.<br>
+												지원하는 파일 형식은 : MS문서(doc, docx, ppt, pptx, xls, xlsx), 한글문서(hwp), 텍스트 문서(txt), 이미지(png, jpeg, jpg, gif) 입니다.</span>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- //Mobile -->
+
+						<hr class="space style3 onlyMobile">
+
+						<ul class="guideText mt momt32">
+							<li>개인정보보호법 제71조 제3호에 의해 다른 사람의 개인정보를 위조 또는 유출한 자는 5년 이하의 징역 또는 5천만원 이하의 벌금이 부과될 수 있으며 등록된 글에 대한 법적 책임은 글쓴이에게 있습니다.</li>
+							<li>기타 개인정보 취급에 관한 상세한 사항은 저희 공적연금연계 홈페이지(www.ppsl.or.kr)에 공개하고 있는 “개인정보 처리방침” 을 참조하십시오.</li>
+							<li>개인정보보호 및 보안을 위해 매 20분마다 입력 계속여부를 확인합니다. 만약 응답이 없는 경우에는 작성중인 글이 등록되지 않을 수 있습니다.</li>
+							<li class="colorBlue">게시글 작성 시 제목 또는 내용에 개인정보(주민등록번호, 휴대전화번호 등)가 포함되지 않도록 위의하여 주시기 바랍니다. 개인정보가 포함될 시 글이 삭제될 수 있습니다.</li>
+							<li>장확한 상담을 위하여 상담사가 고객님께 전화드릴 수 있습니다.</li>
+						</ul>
+
+						<div class="btnsGroup flexEnd">
+							<button type="button" class="button h48 gray">취소</button>
+							<button type="button" class="button h48 blue">저장</button>
+						</div>
+					</div>
+
+					<script src="../../include/evaluation.js"></script> <!-- include: 공통 평가 -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="../../include/footer.js"></script> <!-- include: 공통 푸터 -->
+
+	<script>
+		var depth = [2, 1]; /* 현재메뉴 활성화 용: gnb에 있는 data-menu 값과 일치하게 해주세요. */
+	</script>
+</div>
+</body>
+</html>

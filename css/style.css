@@ -130,8 +130,8 @@ body.noScroll { overflow: hidden;}
 #wrap .fontSize16 { font-size: 16px;}
 #wrap .wNormal { font-weight: 400;}
 .subText { margin-top: 8px; font-size: 14px;}
-.requireText { margin-top: 5px; font-size: 12px; color: #767676; text-align: left; line-height: 18px;}
-.requireText i { display: inline-block; width: 16px; height: 16px; margin: -2px 0 0 0; vertical-align: middle;}
+.requireText { display: flex; margin-top: 5px; font-size: 12px; color: #767676; text-align: left; line-height: 18px;}
+.requireText i { display: inline-block; width: 16px; height: 16px; margin: 0 4px 0 0; vertical-align: middle;}
 .requireText i { background: url(../images/common/ico_caption.svg) no-repeat center/cover;}
 .requireText.error { color: #ee0700;}
 .requireText.error i { background: url(../images/common/ico_error.svg) no-repeat center/cover;}
@@ -243,14 +243,17 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .guideText li ~ li { margin-top: 4px;}
 .guideText li .ml { margin-left: 16px;}
 .guideText li .etcColorRed { color: #fc0606;}
+.guideText li.colorBlue::before { background-color: #366cc3;}
 .guideText.mt { margin-top: 16px;}
 .guideText.blue li { color: #366cc3;}
 .guideText.blue li::before { background-color: #366cc3;}
 
 /* flexBtn* */
 .flexBtnOne { display: flex; align-items: center;}
-.flexBtnOne input { flex: 1; width: 100%;}
-.flexBtnOne button { margin-left: 4px;}
+.flexBtnOne input,
+.flexBtnOne a { flex: 1; width: 100%;}
+.flexBtnOne button,
+.flexBtnOne .other { margin-left: 4px;}
 
 /* searchBody */
 .searchBody { margin-top: 40px; padding: 24px 48px 24px 0; background-color: #f7f7f7;}
@@ -288,7 +291,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 /* jQuery 달력 */
 .calendarBody { display: flex; align-items: center;}
 .calendarBody input { flex: 1; width: 100%;}
-.calendarBody button { display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; text-indent: -99999px; border: 1px solid #dbdbdb; border-left: none;}
+.calendarBody button { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; text-indent: -99999px; border: 1px solid #dbdbdb; border-left: none;}
 .calendarBody button::after { content: ''; display: block; width: 16px; height: 16px; margin-left: 1px; background: url(../images/common/ico_calendar.svg) no-repeat center/cover;}
 .ui-widget { font-family: "NanumBarunGothic", "Apple SD Gothic Neo", "Droid sans", "Microsoft NeoGothic ", sans-serif}
 .ui-datepicker { width: 280px; padding: 12px 16px 6px; background-color: #fff;}
@@ -437,8 +440,8 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .tableBody table td a:hover span { border-bottom: 1px solid #333;}
 .tableBody table td input[type=text],
 .tableBody table td input[type=tel],
-.tableBody table td select { width: 100%; height: 32px; font-size: 14px;}
-.tableBody table td select { background-position: right 16px top 7px;}
+.tableBody table td select { width: 100%; height: 32px; font-size: 14px; background-position: right 16px top 7px;}
+.tableBody table td .calendarBody button { width: 32px; height: 32px;}
 .tableBody table td .block { display: block; text-align: left;}
 .tableBody table td.empty { padding: 40px 0;}
 .tableBody table tr.off { background-color: #f7f7f7;}
@@ -478,21 +481,49 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .hTableBody table td .phone span ~ span { position: relative; margin-left: 25px;}
 .hTableBody table td .phone select + span::before,
 .hTableBody table td .phone span ~ span::before { content: ''; display: block; position: absolute; left: -16px; top: 18px; width: 7px; height: 2px; background-color: #333;}
-.hTableBody table td .phone input { width: 100%;}
+/* .hTableBody table td .phone input { width: 100%;} */
 .hTableBody table td .phone .button { margin-left: 6px;}
 .hTableBody table td .email input { width: 200px;}
 .hTableBody table td .email span { position: relative; margin-left: 33px;}
 .hTableBody table td .email span::before { content: '@'; position: absolute; left: -25px; top: 13px;}
 .hTableBody table td .email select { width: 200px; margin-left: 4px;}
+.hTableBody table td .textarea { border: solid 1px #dbdbdb;}
+.hTableBody table td .textarea textarea { border: none;}
+.hTableBody table td .textarea .byte { display: block; padding-right: 8px; font-size: 12px; color: #767676; text-align: right;}
+.hTableBody table td .fileBtnBox { display: flex; align-items: flex-end;}
+.hTableBody table td .fileBtnBox .volumeText { margin-left: 16px; font-size: 12px;}
+.hTableBody table td .fileList li { margin-top: 8px;}
+.hTableBody table td .fileList .fileBody { display: flex; align-items: center;}
+.hTableBody table td .fileList .fileBody .filePor { display: flex; align-items: center; flex: 1; position: relative; height: 40px; padding: 0 65px 0 16px;; background-color: #f7f7f7; border: solid 1px #dbdbdb;}
+.hTableBody table td .fileList .fileBody .filePor .volume { position: absolute; right: 16px; top: 50%; margin-top: -11px; font-size: 12px; color: #767676;}
+.hTableBody table td .fileList .fileBody .filePor.error { border-color: #ee0700; background-color: #fff;}
+.hTableBody table td .fileList .fileBody .button { margin-left: 4px;}
+
+
+.hTableBody table td .gubun { display: flex;}
+.hTableBody table td .gubun .groupBox:first-child { width: 230px;}
+.hTableBody table td .gubun .flexH { display: flex; align-items: center; height: 40px;}
+.hTableBody table td .gubun .calendarBody { margin-left: 16px;}
+.hTableBody table td .gubun .calendarBody input { width: 200px;}
+
 .hTableBody table td .twin { display: flex;}
 .hTableBody table td .twin select,
 .hTableBody table td .twin input { flex: 1; margin-right: 4px;}
 .hTableBody table td .spcemt { margin-top: 8px;}
 .hTableBody table td .defaultBtn input { width: 400px;}
 .hTableBody table td .defaultBtn .button { margin-left: 4px;}
-.hTableBody table td .mw200 { display: flex; align-items: center;}
+.hTableBody table td input,
+.hTableBody table td select { width: 100%;}
+.hTableBody table td + th { border-left: 1px solid #dbdbdb;}
+
+
+
+.hTableBody table td .mw200,
+.hTableBody table td .mw260 { display: flex; align-items: center;}
 .hTableBody table td .mw200 input,
 .hTableBody table td .mw200 select { width: 200px;}
+.hTableBody table td .mw260 input,
+.hTableBody table td .mw260 select { width: 260px;}
 .hTableBody table td .mw200 .other { margin-left: 4px;}
 .hTableBody table td .mw404 { max-width: 404px;}
 .hTableBody table td .mw528 { max-width: 528px;}
@@ -509,9 +540,9 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .whTableBody table td input[type=tel] { height: 32px;}
 .whTableBody table td .in  span { display: block;}
 .whTableBody table td .in  span ~ span { margin-top: 8px;}
-.whTableBody table td .defaultBtn { display: flex; align-items: center;}
-.whTableBody table td .defaultBtn input { flex: 1;}
-.whTableBody table td .defaultBtn .other { min-width: 37px; margin-left: 4px; text-align: right;}
+/* .whTableBody table td .defaultBtn { display: flex; align-items: center;}
+.whTableBody table td .defaultBtn input { flex: 1;} */
+.whTableBody table td .flexBtnOne .other { min-width: 37px; margin-left: 4px; text-align: right;}
 .whTableBody table td.sameTh { font-weight: 700; text-align: center; background-color: #f7f7f7;}
 .whTableBody.mt { margin-top: 24px;}
 .whTableBody.mt2 { margin-top: 8px;}
@@ -579,9 +610,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .applyPostLayer .postSearchBox { margin-top: 16px; padding: 24px; background-color: #f7f7f7;}
 .applyPostLayer .postSearchBox .twin { display: flex; margin: 0 -2px;}
 .applyPostLayer .postSearchBox .twin select { width: 50%; margin: 0 2px;}
-.applyPostLayer .postSearchBox .defaultBtn { display: flex; align-items: center; margin-top: 8px;}
-.applyPostLayer .postSearchBox .defaultBtn input { flex: 1; width: 100%;}
-.applyPostLayer .postSearchBox .defaultBtn button { margin-left: 4px;}
+.applyPostLayer .postSearchBox .flexBtnOne { margin-top: 8px;}
 .applyPostLayer .postNumber { margin-top: 16px; font-size: 14px;}
 
 /* 비밀번호 확인 */

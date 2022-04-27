@@ -82,7 +82,7 @@ input.success { border-color: #366cc3;}
 button { border:0 none; padding:0; margin:0; font-family: "NanumBarunGothic"; font-size:100%; color:#111; vertical-align:middle; background:transparent; cursor:pointer;}
 button::-moz-focus-inner { margin: -1px; padding: 0;}
 address,caption,cite,code,dfn,var,em { font-style:normal; font-weight:normal;}
-textarea { width:100%; padding:5px; font-family: "NanumBarunGothic"; font-size:100%; border:1px solid #ddd; background-color:#fff; border-radius:0; resize:none; -webkit-appearance: none;	-moz-appearance: none; appearance: none; -webkit-border-radius: 0px;}
+textarea { width:100%; padding:16px; font-family: "NanumBarunGothic"; font-size:100%; border:1px solid #ddd; background-color:#fff; border-radius:0; resize:none; -webkit-appearance: none;	-moz-appearance: none; appearance: none; -webkit-border-radius: 0px;}
 textarea[disabled],
 textarea[readonly] { background-color:#ccc;}
 fieldset,

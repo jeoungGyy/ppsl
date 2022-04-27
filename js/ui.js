@@ -190,6 +190,15 @@ $(document).ready(function () {
 		},
 		/* jQueryUI 달력 */
 		calendar: function () {
+      /*
+      left / right : move by day
+      up / down : move by week
+      page up / down : move by month
+      control + page up / down : move by year
+      control + home : move to current date
+      enter : close datepicker and select currently highlighted date and place it in the input field ready for editing
+      */
+      
       var $date = $(".jQdate");
       var $datepicker = null;
       var visible = false;
@@ -219,11 +228,12 @@ $(document).ready(function () {
         buttonText: "달력선택"
       });
       
-      $date.datepicker({
-        onSelect: function (date) {
-          $(this).trigger("focus");
-        } // onSelect
-      }).focus(); // instantiate datepicker
+      $date.datepicker(); // instantiate datepicker
+      // $date.datepicker({
+      //   onSelect: function (date) {
+      //     $(this).trigger("focus");
+      //   }
+      // }).focus();
       
       $datepicker = $date.datepicker("widget");
       if ($datepicker.length == 0) {
