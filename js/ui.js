@@ -262,7 +262,8 @@ $(document).ready(function () {
     init: function () {
       var $layerLink = $('.layerLink');
 
-      $layerLink.on('click', function(){
+      $layerLink.on('click', function(e){
+        e.preventDefault();
         var _target = $("#" + $(this).attr("aria-controls"));
         var _target_aria = $(this).attr("aria-controls");
         layerPopup.open(this, _target, _target_aria);

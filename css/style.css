@@ -532,6 +532,17 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 /* 레이어
 **********************************************/
 
@@ -572,6 +583,19 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .applyPostLayer .postSearchBox .defaultBtn input { flex: 1; width: 100%;}
 .applyPostLayer .postSearchBox .defaultBtn button { margin-left: 4px;}
 .applyPostLayer .postNumber { margin-top: 16px; font-size: 14px;}
+
+/* 비밀번호 확인 */
+.consultationPWLayer .pwInput { margin-top: 16px;}
+.consultationPWLayer .pwInput input { width: 100%;}
+
+
+
+
+
+
+
+
+
 
 
 
