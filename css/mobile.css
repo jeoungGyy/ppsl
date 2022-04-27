@@ -69,17 +69,22 @@ hr.space.style4 { margin: 24px -16px 32px;}
 
 /* searchBody */
 .searchBody { margin-top: 24px; padding: 0; border: solid 1px #dbdbdb; background-color: #fff;}
-.searchBody .title { display: flex; align-items: center; justify-content: space-between; height: 48px; padding: 0 6px 0 16px; background-color: #f7f7f7;}
-.searchBody .title h4 { font-size: 16px;}
+.searchBody .toggleGroup { height: 48px; background-color: #f7f7f7;}
+.searchBody .toggleGroup .defaultH5 { padding-left: 16px; font-size: 16px;}
+.searchBody .toggleGroup .toggleBtn { margin-right: 6px;}
 .searchBody .controlBox { display: none; flex-wrap: wrap; padding: 16px;}
 .searchBody .controlBox li label { width: 45px; padding-left: 0;}
 .searchBody .controlBox li ~ li { margin-top: 8px;}
+.searchBody .controlBox li .twin select:first-child { margin-left: 0;}
+.searchBody .controlBox li.pl4 { padding-left: 0;}
 .searchBody .controlBox li.wp35,
+.searchBody .controlBox li.wp30,
 .searchBody .controlBox li.wp25,
 .searchBody .controlBox li.wp40,
 .searchBody .controlBox li.wp60 { width: 100%;}
 .searchBody .controlBox.flexWrap { margin-top: -8px;}
 .searchBody .controlBox.flexWrap li { margin-top: 8px;}
+.searchBody.pl48 { padding-left: 0;}
 
 /* controlBody */
 .controlBody { display: block; margin-top: 24px;}
@@ -137,8 +142,7 @@ hr.space.style4 { margin: 24px -16px 32px;}
 /* toggleBtn */
 .toggleGroup { width: 100%; height: 64px;}
 .toggleGroup .defaultH5 { font-size: 19px;}
-.toggleGroup .toggleBtn { margin-right: -12px;}
-.toggleGroup .toggleBtn { overflow: hidden; padding: 10px;}
+.toggleGroup .toggleBtn { overflow: hidden; margin-right: -12px; padding: 10px;}
 .toggleGroup .toggleBtn i { display: inline-block; width: 16px; height: 16px; text-indent: -99999px; vertical-align: middle; background: url(../images/common/ico_arrow_down.svg) no-repeat center/cover;}
 .toggleGroup.active .toggleBtn i { transform: rotate(-180deg);}
 .targetHidden { display: none;}

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <path style="fill:none" d="M0 0h16v16H0z"/>
+    <path data-name="빼기 3" d="M-273 362h-8a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2zm-4-6a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5z" transform="translate(285 -347)" style="fill:#767676"/>
+    <g data-name="사각형 26298" style="stroke:#767676;stroke-width:1.5px;fill:none">
+        <path d="M4 0a4 4 0 0 1 4 4v2H0V4a4 4 0 0 1 4-4z" style="stroke:none" transform="translate(4 1)"/>
+        <path d="M4 .75A3.25 3.25 0 0 1 7.25 4v1.25H.75V4A3.25 3.25 0 0 1 4 .75z" style="fill:none" transform="translate(4 1)"/>
+    </g>
+</svg>

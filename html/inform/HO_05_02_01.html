@@ -27,15 +27,17 @@
 						<script src="../../include/location.js"></script> <!-- include: 공통 현재위치 -->
 					</header>
 
-					<div class="searchBody">
+					<div class="searchBody m_toggleArea">
 						<!-- onlyMobile -->
-						<header class="onlyMobile title">
-							<h4>검색조건</h4>
-							<button type="button" class="toggleBtn" title="축소됨" onclick="inform.toggleBtn();"><i>검색조건 토글</i></button>
-						</header>
+						<div class="onlyMobile">
+							<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+								<b class="defaultH5">검색조건</b>
+								<span class="toggleBtn"><i>자료실 검색조건 토글</i></span>
+							</button>
+						</div>
 						<!-- //onlyMobile -->
 
-						<ul class="controlBox flexWrap">
+						<ul class="controlBox flexWrap target">
 							<li class="wp40">
 								<label for="temp01">기관</label>
 								<select id="temp01">
@@ -54,7 +56,7 @@
 									<option>전체</option>
 								</select>
 							</li>
-							<li class="wp60 ml4">
+							<li class="wp60 pl4">
 								<span class="searchReset"><input type="text" title="검색어 입력" placeholder="검색어를 입력하세요."><button type="button" class="searchResetBtn"><i>검색어 지우기</i></button></span>
 								<button type="button" class="button h40 black"><i class="searchIcon"></i><span>검색</span></button>
 							</li>

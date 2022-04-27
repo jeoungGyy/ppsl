@@ -262,18 +262,22 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .searchBody .controlBox li input[type=text] { padding: 0 36px 0 16px;}
 .searchBody .controlBox li .button { min-width: 89px; margin-left: 4px;}
 .searchBody .controlBox li .button span { margin-top: -2px;}
-.searchBody .controlBox li .button .searchIcon { display: inline-block; width: 24px; height: 24px; margin-right: 4px; background: url(../images/common/ico_search_w_24.svg) no-repeat center/cover;}
+.searchBody .controlBox li .button .searchIcon { display: inline-block; width: 24px; height: 24px; margin: -4px 4px 0 0; background: url(../images/common/ico_search_w_24.svg) no-repeat center/cover;}
 .searchBody .controlBox li .searchReset { flex: 1; position: relative;}
 .searchBody .controlBox li .searchReset .searchResetBtn { display: none; position: absolute; right: 16px; top: 12px; width: 16px; height: 16px;}
 .searchBody .controlBox li .searchReset .searchResetBtn i { display: block; width: 100%; height: 100%; text-indent: -99999px; background: url(../images/common/ico_clear.svg) no-repeat center/cover;}
 .searchBody .controlBox li .searchReset.btnShow .searchResetBtn { display: block;}
-.searchBody .controlBox li.ml4 { padding-left: 4px;}
+.searchBody .controlBox li .twin { display: flex; align-items: center; width: 100%;}
+.searchBody .controlBox li .twin select { flex: 1; margin-left: 4px;}
+.searchBody .controlBox li.pl4 { padding-left: 4px;}
 .searchBody .controlBox li.wp35 { width: 35%;}
+.searchBody .controlBox li.wp30 { width: 30%;}
 .searchBody .controlBox li.wp25 { width: 25%;}
 .searchBody .controlBox li.wp40 { width: 40%;}
 .searchBody .controlBox li.wp60 { width: 60%;}
 .searchBody .controlBox.flexWrap { flex-wrap: wrap; margin-top: -16px;}
 .searchBody .controlBox.flexWrap li { margin-top: 16px;}
+.searchBody.pl48 { padding-left: 48px;}
 
 /* controlBody */
 .controlBody { display: flex; align-items: flex-end; justify-content: space-between; margin-top: 40px;}
@@ -425,6 +429,8 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .tableBody { overflow: hidden; margin-top: 8px; border-top: 2px solid #333;}
 .tableBody table { width: calc(100% + 2px); margin-left: -1px;}
 .tableBody table th { padding: 12px 0; border-left: 1px solid #dbdbdb; background-color: #f7f7f7;}
+.tableBody table th .sortBtn i { display: inline-block; width: 16px; height: 16px; margin-top: -4px; vertical-align: middle; background: url(../images/common/ico_dropdown.svg) no-repeat center/cover;}
+.tableBody table th .sortBtn.asc i { transform: rotate(180deg);}
 .tableBody table td { padding: 12px 12px; text-align: center; line-height: 24px; border: 1px solid #dbdbdb;}
 .tableBody table tr:hover td { background-color: #f7f7f7;}
 .tableBody table td a { text-align: left; line-height: 24px;}
@@ -446,6 +452,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .tableBody table td table td select { width: 100%;}
 .tableBody table.vaTop td { vertical-align: top;}
 .tableBody a .new { display: inline-flex; justify-content: center; align-items: center; width: 28px; height: 16px; margin: -2px 0 0 4px; font-size: 8px; font-weight: 700; font-style: normal; color: #ee0700; vertical-align: middle; border: 1px solid #ee0700;}
+.tableBody a .secret { display: inline-block; width: 16px; height: 16px; margin-top: -2px; text-indent: -99999px; vertical-align: middle; background: url(../images/common/ico_private.svg) no-repeat center/cover;}
 .tableBody .fix { display: inline-block; width: 24px; height: 24px; margin-top: -1px; text-indent: -99999px; vertical-align: middle; background: url(../images/common/ico_notice.svg) no-repeat center/cover;}
 .tableBody .file { display: inline-block; width: 24px; height: 24px; text-indent: -99999px; background: url(../images/common/ico_attach.svg) no-repeat center/cover;}
 .tableBody.mt { margin-top: 40px;}
