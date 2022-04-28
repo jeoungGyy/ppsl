@@ -21,8 +21,8 @@
 				<div id="contentLink" class="contents">
 					<header class="contentsHeader">
 						<div class="title">
-							<h3>전산문의</h3>
-							<p>홈페이지 사용 방법에 대한 문의나 전산관련 개선사항을 등록 해주세요.</p>
+							<h3>고객제안</h3>
+							<p>공적연금연계제도에 관련하여 제안사항을 등록 해주세요.</p>
 						</div>
 						<script src="../../include/location.js"></script> <!-- include: 공통 현재위치 -->
 					</header>
@@ -32,21 +32,45 @@
 						<div class="onlyMobile">
 							<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
 								<b class="defaultH5">검색조건</b>
-								<span class="toggleBtn"><i>전산문의 검색조건 토글</i></span>
+								<span class="toggleBtn"><i>고객제안 검색조건 토글</i></span>
 							</button>
 						</div>
 						<!-- //onlyMobile -->
 
 						<ul class="controlBox target">
 							<li class="wp30">
-								<select title="구분 선택" class="ml">
-									<option>구분전체</option>
-									<option>제목</option>
-									<option>내용</option>
-									<option>작성자</option>
+								<div class="twin">
+									<select title="제안 선택">
+										<option>제안분류</option>
+										<option>공통</option>
+										<option>신청관련</option>
+										<option>급여관련</option>
+										<option>변경관련</option>
+										<option>상담관련</option>
+										<option>안내관련</option>
+										<option>공동서비스관련</option>
+										<option>기준제계정</option>
+										<option>기타</option>
+									</select>
+									<select title="구분 선택" class="ml">
+										<option>구분전체</option>
+										<option>제목</option>
+										<option>내용</option>
+										<option>작성자</option>
+									</select>
+								</div>
+							</li>
+							<li class="wp30 pl4">
+								<select title="기관 선택">
+									<option>기관전체</option>
+									<option>국민연금공단</option>
+									<option>공무원연금공단</option>
+									<option>사립학교교직원연금공단</option>
+									<option>국방부군인연금</option>
+									<option>별정우체국연금관리단</option>
 								</select>
 							</li>
-							<li class="wp70 pl4">
+							<li class="wp40 pl4">
 								<span class="searchReset"><input type="text" title="검색어 입력" placeholder="검색어를 입력하세요."><button type="button" class="searchResetBtn"><i>검색어 지우기</i></button></span>
 								<button type="button" class="button h40 black"><i class="searchIcon"></i><span>검색</span></button>
 							</li>
@@ -73,21 +97,25 @@
 
 						<div class="tableBody">
 							<table>
-								<caption>전산문의 : 번호, 제목, 첨부, 작성자, 상태, 작성일로 구성</caption>
+								<caption>상담FAQ : 번호, 제안분류, 제목, 첨부, 작성자, 기관, 상태, 작성일로 구성</caption>
 								<colgroup>
 									<col class="mobileVisible" style="width: 64px;">
+									<col class="mobileVisible" style="width: 84px;">
 									<col>
-									<col class="mobileVisible" style="width: 94px;">
 									<col class="mobileVisible" style="width: 64px;">
+									<col class="mobileVisible" style="width: 70px;">
+									<col class="mobileVisible" style="width: 110px;">
 									<col class="mobileVisible" style="width: 90px;">
 									<col style="width: 124px;">
 								</colgroup>
 								<thead>
 									<tr>
 										<th scope="col" class="mobileVisible">번호</th>
+										<th scope="col" class="mobileVisible">제안분류</th>
 										<th scope="col">제목</th>
 										<th scope="col" class="mobileVisible">첨부</th>
 										<th scope="col" class="mobileVisible">작성자</th>
+										<th scope="col" class="mobileVisible">기관</th>
 										<th scope="col" class="mobileVisible">상태</th>
 										<!-- 
 											des: 내림차순 정렬, 
@@ -100,42 +128,52 @@
 								<tbody>
 									<tr>
 										<td class="mobileVisible"><i class="fix">공지</i></td>
-										<td class="textLeft"><a href="HO_02_03_03.html"><span>전산장애로 인한 홈페이지 서비스 일시 중단 안내</span></a></td>
+										<td class="mobileVisible">공통</td>
+										<td class="textLeft"><a href="HO_02_04_03.html"><span>군인연금 연계자입니다. 반납금 고지서를 이메일로만 받고 싶습니다.</span></a></td>
 										<td class="mobileVisible"></td>
 										<td class="mobileVisible">홍길*</td>
+										<td class="mobileVisible">국민연금</td>
 										<td class="mobileVisible">답변완료</td>
 										<td>2022-03-12</td>
 									</tr>
 									<tr>
 										<td class="mobileVisible"><i class="fix">공지</i></td>
-										<td class="textLeft"><a href="HO_02_03_03.html"><span>전산장애로 인한 홈페이지 서비스 일시 중단 안내</span></a></td>
+										<td class="mobileVisible">신청관련</td>
+										<td class="textLeft"><a href="HO_02_04_03.html"><span>군인연금 연계자입니다. 반납금 고지서를 이메일로만 받고 싶습니다.</span></a></td>
 										<td class="mobileVisible"></td>
 										<td class="mobileVisible">홍길*</td>
-										<td class="mobileVisible">답변완료</td>
+										<td class="mobileVisible">별정우체국연금</td>
+										<td class="mobileVisible">접수완료</td>
 										<td>2022-03-12</td>
 									</tr>
 									<tr>
 										<td class="mobileVisible">3</td>
-										<td class="textLeft"><a href="HO_02_03_03.html" class="layerLink" aria-controls="consultationPWLayer"><span>전산장애로 인한 홈페이지 서비스 일시 중단 안내/span> <i class="new" title="신규 글">NEW</i></a></td>
-											<td class="mobileVisible"></td>
-											<td class="mobileVisible">홍길*</td>
-											<td class="mobileVisible">접수완료</td>
+										<td class="mobileVisible">급여관련</td>
+										<td class="textLeft"><a href="HO_02_04_03.html" class="layerLink" aria-controls="consultationPWLayer"><span>전화상담 받고 싶습니다.</span> <i class="new" title="신규 글">NEW</i></a></td>
+										<td class="mobileVisible"></td>
+										<td class="mobileVisible">홍길*</td>
+										<td class="mobileVisible">별정우체국연금</td>
+										<td class="mobileVisible">접수완료</td>
 										<td>2022-03-12</td>
 									</tr>
 									<tr>
 										<td class="mobileVisible">2</td>
-										<td class="textLeft"><a href="HO_02_03_03.html"><span>전산장애로 인한 홈페이지 서비스 일시 중단 안내</span> <i class="new" title="신규 글">NEW</i></a></td>
+										<td class="mobileVisible">공통</td>
+										<td class="textLeft"><a href="HO_02_04_03.html"><span>1:1 상담 받고 싶습니다.</span> <i class="new" title="신규 글">NEW</i></a></td>
 										<td class="mobileVisible"><i class="file">첨부파일</i></td>
 										<td class="mobileVisible">홍길*</td>
-										<td class="mobileVisible">접수완료</td>
+										<td class="mobileVisible">국민연금</td>
+										<td class="mobileVisible">답변완료</td>
 										<td>2022-03-12</td>
 									</tr>
 									<tr>
 										<td class="mobileVisible">1</td>
-										<td class="textLeft"><a href="HO_02_03_03.html" class="layerLink" aria-controls="consultationPWLayer"><span>전산장애로 인한 홈페이지 서비스 일시 중단 안내</span></a></td>
+										<td class="mobileVisible">공동서비스관련</td>
+										<td class="textLeft"><a href="HO_02_04_03.html" class="layerLink" aria-controls="consultationPWLayer"><span>1:1 상담 받고 싶습니다.</span></a></td>
 										<td class="mobileVisible"><i class="file">첨부파일</i></td>
 										<td class="mobileVisible">홍길*</td>
-										<td class="mobileVisible">접수완료</td>
+										<td class="mobileVisible">국민연금</td>
+										<td class="mobileVisible">답변완료</td>
 										<td>2022-03-12</td>
 									</tr>
 								</tbody>
@@ -155,7 +193,7 @@
 						</div>
 
 						<div class="btnsGroup flexEnd">
-							<button type="button" class="button h48 blue" onclick="location.href='HO_02_03_02_01.html'">등록</button>
+							<button type="button" class="button h48 blue" onclick="location.href='HO_02_02_02.html'">등록</button>
 						</div>
 					</div>
 
@@ -191,7 +229,7 @@
 	<script src="../../include/footer.js"></script> <!-- include: 공통 푸터 -->
 
 	<script>
-		var depth = [2, 3]; /* 현재메뉴 활성화 용: gnb에 있는 data-menu 값과 일치하게 해주세요. */
+		var depth = [2, 4]; /* 현재메뉴 활성화 용: gnb에 있는 data-menu 값과 일치하게 해주세요. */
 	</script>
 </div>
 </body>

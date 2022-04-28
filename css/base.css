@@ -60,7 +60,7 @@ body {
 
 a:link,
 a:visited { color:#333; text-decoration:none;}
-select { height: 40px; padding: 0 48px 0 16px; font-family: "NanumBarunGothic"; font-size:100%; vertical-align:middle; border: 1px solid #dbdbdb; background: #fff url(../images/common/ico_dropdown.svg) no-repeat right 16px top 12px/16px 16px; -webkit-appearance: none;	-moz-appearance: none; appearance: none; -webkit-border-radius: 0px; border-radius: 0px;}
+select { height: 40px; padding: 0 40px 0 16px; font-family: "NanumBarunGothic"; font-size:100%; vertical-align:middle; border: 1px solid #dbdbdb; background: #fff url(../images/common/ico_dropdown.svg) no-repeat right 16px top 12px/16px 16px; -webkit-appearance: none;	-moz-appearance: none; appearance: none; -webkit-border-radius: 0px; border-radius: 0px;}
 select:hover { border-color: #333;}
 select[disabled] { color: #959595; border-color: #dbdbdb; background: #f7f7f7 url(../images/common/ico_dropdown_disable.svg) no-repeat right 16px top 12px/16px 16px;}
 select::-ms-expand { display: none;} /* 화살표 없애기 for IE10, 11*/
