@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<script src="../../include/head.js"></script> <!-- include: 공통 헤드 -->
+</head>
+
+<body>
+<div id="wrap">
+	<script src="../../include/header.js"></script> <!-- include: 공통 헤더 -->
+
+	<div class="container">
+		<div class="area">
+			<div class="wrap">
+				<div class="lnbBody">
+					<h2></h2>
+					<nav class="lnb">
+					</nav>
+				</div>
+
+				<div id="contentLink" class="contents">
+					<header class="contentsHeader">
+						<div class="title">
+							<h3>심사요청</h3>
+							<p>행정처리에 대한 이의제기를 위하여 심사요청을 할 수 있습니다.</p>
+						</div>
+						<script src="../../include/location.js"></script> <!-- include: 공통 현재위치 -->
+					</header>
+
+					<div class="searchBody pl48 m_toggleArea">
+						<!-- onlyMobile -->
+						<div class="onlyMobile">
+							<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+								<b class="defaultH5">검색조건</b>
+								<span class="toggleBtn"><i>심사요청 검색조건 토글</i></span>
+							</button>
+						</div>
+						<!-- //onlyMobile -->
+
+						<ul class="controlBox target">
+							<li class="wp30">
+								<div class="twin">
+									<select title="심사유형 선택">
+										<option>심사유형</option>
+										<option>전체</option>
+										<option>연계신청</option>
+										<option>급여청구</option>
+									</select>
+									<select title="구분 선택" class="ml">
+										<option>구분전체</option>
+										<option>제목</option>
+										<option>내용</option>
+										<option>작성자</option>
+									</select>
+								</div>
+							</li>
+							<li class="wp30 pl4">
+								<select title="기관 선택">
+									<option>기관전체</option>
+									<option>국민연금공단</option>
+									<option>공무원연금공단</option>
+									<option>사립학교교직원연금공단</option>
+									<option>국방부군인연금</option>
+									<option>별정우체국연금관리단</option>
+								</select>
+							</li>
+							<li class="wp40 pl4">
+								<span class="searchReset"><input type="text" title="검색어 입력" placeholder="검색어를 입력하세요."><button type="button" class="searchResetBtn"><i>검색어 지우기</i></button></span>
+								<button type="button" class="button h40 black"><i class="searchIcon"></i><span>검색</span></button>
+							</li>
+						</ul>
+					</div>
+
+					<div class="boardBody">
+						<div class="controlBody">
+							<b>총 123,456건</b>
+							<div class="control">
+								<select class="select h32" title="상태 선택">
+									<option>상태전체</option>
+									<option>답변완료</option>
+									<option>접수완료</option>
+								</select>
+								<select class="select h32" title="목록 갯수 선택">
+									<option>10개씩 보기</option>
+									<option>20개씩 보기</option>
+									<option>30개씩 보기</option>
+								</select>
+								<button type="button" class="button h32 black">확인</button>
+							</div>
+						</div>
+
+						<div class="tableBody">
+							<table>
+								<caption>상담FAQ : 번호, 심사유형, 제목, 첨부, 기관, 상태, 작성일로 구성</caption>
+								<colgroup>
+									<col class="mobileVisible" style="width: 64px;">
+									<col class="mobileVisible" style="width: 84px;">
+									<col>
+									<col class="mobileVisible" style="width: 64px;">
+									<col class="mobileVisible" style="width: 110px;">
+									<col class="mobileVisible" style="width: 90px;">
+									<col style="width: 124px;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col" class="mobileVisible">번호</th>
+										<th scope="col" class="mobileVisible">심사유형</th>
+										<th scope="col">제목</th>
+										<th scope="col" class="mobileVisible">첨부</th>
+										<th scope="col" class="mobileVisible">기관</th>
+										<th scope="col" class="mobileVisible">상태</th>
+										<!-- 
+											des: 내림차순 정렬, 
+											asc: 오름차순 정렬
+											[D] 버튼 클릭시 title 값도 변경해주세요.
+										-->
+										<th scope="col"><button type="button" class="sortBtn des" title="내림차순 정렬">작성일 <i></i></button></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="mobileVisible"><i class="fix">공지</i></td>
+										<td class="mobileVisible">연계신청</td>
+										<td class="textLeft"><a href="HO_02_04_03.html"><span>군인연금 연계자입니다. 반납금 고지서를 이메일로만 받고 싶습니다.</span></a></td>
+										<td class="mobileVisible"></td>
+										<td class="mobileVisible">국민연금</td>
+										<td class="mobileVisible">답변완료</td>
+										<td>2022-03-12</td>
+									</tr>
+									<tr>
+										<td class="mobileVisible"><i class="fix">공지</i></td>
+										<td class="mobileVisible">연계신청</td>
+										<td class="textLeft"><a href="HO_02_04_03.html"><span>군인연금 연계자입니다. 반납금 고지서를 이메일로만 받고 싶습니다.</span></a></td>
+										<td class="mobileVisible"></td>
+										<td class="mobileVisible">별정우체국연금</td>
+										<td class="mobileVisible">접수완료</td>
+										<td>2022-03-12</td>
+									</tr>
+									<tr>
+										<td class="mobileVisible">3</td>
+										<td class="mobileVisible">연계신청</td>
+										<td class="textLeft"><a href="HO_02_04_03.html" class="layerLink" aria-controls="consultationPWLayer"><span>전화상담 받고 싶습니다.</span> <i class="new" title="신규 글">NEW</i></a></td>
+										<td class="mobileVisible"></td>
+										<td class="mobileVisible">별정우체국연금</td>
+										<td class="mobileVisible">접수완료</td>
+										<td>2022-03-12</td>
+									</tr>
+									<tr>
+										<td class="mobileVisible">2</td>
+										<td class="mobileVisible">연계신청</td>
+										<td class="textLeft"><a href="HO_02_04_03.html"><span>1:1 상담 받고 싶습니다.</span> <i class="new" title="신규 글">NEW</i></a></td>
+										<td class="mobileVisible"><i class="file">첨부파일</i></td>
+										<td class="mobileVisible">국민연금</td>
+										<td class="mobileVisible">답변완료</td>
+										<td>2022-03-12</td>
+									</tr>
+									<tr>
+										<td class="mobileVisible">1</td>
+										<td class="mobileVisible">연계신청</td>
+										<td class="textLeft"><a href="HO_02_04_03.html" class="layerLink" aria-controls="consultationPWLayer"><span>1:1 상담 받고 싶습니다.</span></a></td>
+										<td class="mobileVisible"><i class="file">첨부파일</i></td>
+										<td class="mobileVisible">국민연금</td>
+										<td class="mobileVisible">답변완료</td>
+										<td>2022-03-12</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="pageNumber">
+							<a href="#" class="first"><i>처음 페이지</i></a>
+							<a href="#" class="prev"><i>이전 페이지</i></a>
+							<a href="#" class="active">1</a>
+							<a href="#">2</a>
+							<a href="#">3</a>
+							<a href="#">4</a>
+							<a href="#">5</a>
+							<a href="#" class="next"><i>다음 페이지</i></a>
+							<a href="#" class="last"><i>마지막 페이지</i></a>
+						</div>
+
+						<div class="btnsGroup flexEnd">
+							<button type="button" class="button h48 blue" onclick="location.href='HO_02_04_02_01.html'">등록</button>
+						</div>
+					</div>
+
+					<script src="../../include/evaluation.js"></script> <!-- include: 공통 평가 -->
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- 레이어 -->
+		<div id="consultationPWLayer" class="layerPopup" role="dialog" aria-modal="true" aria-labelledby="consultationPWLayerTitle" tabindex="0">
+			<div class="layerBody small consultationPWLayer">
+				<h5 id="consultationPWLayerTitle" class="layerTitle">비밀번호 확인</h5>
+				<div class="layerContent">
+					<div class="postTitle">
+						<span class="t">등록 시 작성한 비밀번호를 입력해주세요.</span>
+					</div>
+					<div class="pwInput">
+						<input type="password" title="비밀번호입력해 주세요." placeholder="비밀번호입력해 주세요.">
+					</div>
+					<div class="btnsGroup flexEnd mt2 pdt0">
+						<button type="button" class="button h40 gray">취소</button>
+						<button type="button" class="button h40 blue">확인</button>
+					</div>
+				</div>
+				<button type="button" class="layerClose"><i>창 닫기</i></button>
+			</div>
+		</div>
+		<!-- //레이어 -->
+	</div>
+
+	<script src="../../include/footer.js"></script> <!-- include: 공통 푸터 -->
+
+	<script>
+		var depth = [2, 5]; /* 현재메뉴 활성화 용: gnb에 있는 data-menu 값과 일치하게 해주세요. */
+	</script>
+</div>
+</body>
+</html>
