@@ -289,10 +289,11 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .m_hTableBody >li .blockBtn button { margin-top: 8px;}
 .m_hTableBody >li .radioSet li ~ li { margin-top: 16px;}
 .m_hTableBody >li .radioSet li .calendarBody { margin-top: 8px;}
-/* .m_hTableBody >li .defaultBtn { display: flex; align-items: center;}
-.m_hTableBody >li .defaultBtn input,
-.m_hTableBody >li .defaultBtn a { flex: 1; width: 100%;}
-.m_hTableBody >li .defaultBtn .other { margin-left: 4px;} */
+.m_hTableBody >li .dateSelect { display: flex; align-items: center;}
+.m_hTableBody >li .dateSelect select { flex: 1;}
+.m_hTableBody >li .dateSelect .other { width: 20px; text-align: right;}
+.m_hTableBody >li .dateSelect .other + select { margin-left: 12px;}
+
 .m_hTableBody >li.empty { text-align: center;}
 
 /* m_xBtnBody */
