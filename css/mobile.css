@@ -48,6 +48,7 @@
 
 #wrap .m_ml0 { margin-left: 0;}
 #wrap .momt8 { margin-top: 8px;}
+#wrap .momt16 { margin-top: 16px;}
 #wrap .momt24 { margin-top: 24px;}
 #wrap .momt32 { margin-top: 32px;}
 #wrap .momb32 { margin-bottom: 32px !important;}
@@ -124,7 +125,7 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .stepBody .stepBy li span.text { margin: 2px 0 0 0; line-height: 18px;}
 .stepBody .stepBy li ~ li::before { left: -21px;}
 
-.setpBodyStyle { padding-bottom: 50px;}
+.setpBodyStyle { padding-bottom: 45px;}
 .setpBodyStyle .stepByStyle li span.text { display: none;}
 .setpBodyStyle .stepByStyle li.active { margin: 0; padding: 0 8px;}
 .setpBodyStyle .stepByStyle li.active >span.text { display: block; position: absolute; left: 50%; bottom: -22px; width: max-content; transform: translateX(-50%);}
@@ -158,8 +159,8 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .dateGroup .body .he { display: flex;}
 .dateGroup .body .he select { flex: 1;}
 
-
-
+/* m_roundGray */
+.m_roundGray { padding: 24px 15px 24px 16px; font-size: 14px; background-color: #f7f7f7; border-radius: 8px;}
 
 
 
@@ -183,14 +184,17 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .m_tableBody .mList >li.empty { text-align: center;}
 .m_tableBody .mList.mt { margin-top: 8px;}
 .msList { margin-top: 16px; font-size: 14px;}
-.msList li { display: flex; align-items: center; justify-content: space-between;}
-.msList li ~ li { margin-top: 12px;}
-.msList li.block { display: block;}
-.msList li.block >* { display: block;}
-.msList li.block >.mt { margin-top: 8px;}
-.msList li.lineBreak { margin-top: 16px; padding-top: 16px; border-top: 1px solid #dbdbdb;}
+.msList >li { display: flex; align-items: center; justify-content: space-between;}
+.msList >li ~ li { margin-top: 12px;}
+.msList >li b { line-height: 21px;}
+.msList >li.block { display: block;}
+.msList >li.block >* { display: block;}
+.msList >li.block >.mt { margin-top: 8px;}
+.msList >li.lineBreak { margin-top: 16px; padding-top: 16px; border-top: 1px solid #dbdbdb;}
 .msList.bdt { padding-top: 16px; border-top: 1px solid #dbdbdb;}
 .msList.mt0 { margin-top: 0;}
+.fileList li { margin-top: 8px;}
+.fileList li a { font-weight: 700; line-height: 21px;}
 .m_tableBody .boxGray { display: flex; align-items: center; background-color: #f7f7f7;}
 .m_tableBody .boxGray b { font-size: 16px;}
 .m_tableBody .boxGray .num { position: relative; margin-left: 12px; padding-left: 12px; font-size: 16px;}
@@ -324,6 +328,26 @@ hr.space.style5 { margin: 8px -16px 32px;}
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 상담
+**********************************************/
+
+/* 상담 */
+.m_borderView { margin-top: 8px; padding: 24px 16px; border: solid 1px #dbdbdb; border-radius: 8px;}
+.m_borderView h4 { margin-top: 8px; line-height: 20px;}
 
 
 
