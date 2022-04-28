@@ -21,8 +21,8 @@
 				<div id="contentLink" class="contents">
 					<header class="contentsHeader">
 						<div class="title">
-							<h3>상담FAQ</h3>
-							<p>연금연계 상담시 자주묻는 질문에 대한 답변을 정리했습니다.</p>
+							<h3>전산문의</h3>
+							<p>홈페이지 사용 방법에 대한 문의나 전산관련 개선사항을 등록 해주세요.</p>
 						</div>
 						<script src="../../include/location.js"></script> <!-- include: 공통 현재위치 -->
 					</header>
@@ -32,40 +32,21 @@
 						<div class="onlyMobile">
 							<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
 								<b class="defaultH5">검색조건</b>
-								<span class="toggleBtn"><i>상담FAQ 검색조건 토글</i></span>
+								<span class="toggleBtn"><i>전산문의 검색조건 토글</i></span>
 							</button>
 						</div>
 						<!-- //onlyMobile -->
 
 						<ul class="controlBox target">
 							<li class="wp30">
-								<div class="twin">
-									<select title="분류 선택">
-										<option>분류전체</option>
-										<option>연계신청</option>
-										<option>연계급여</option>
-										<option>연계제도</option>
-										<option>반납금</option>
-										<option>상담FAQ</option>
-									</select>
-									<select title="구분 선택" class="ml">
-										<option>구분전체</option>
-										<option>제목</option>
-										<option>내용</option>
-									</select>
-								</div>
-							</li>
-							<li class="wp30 pl4">
-								<select title="기관 선택">
-									<option>기관전체</option>
-									<option>국민연금공단</option>
-									<option>공무원연금공단</option>
-									<option>사립학교교직원연금공단</option>
-									<option>국방부군인연금</option>
-									<option>별정우체국연금관리단</option>
+								<select title="구분 선택" class="ml">
+									<option>구분전체</option>
+									<option>제목</option>
+									<option>내용</option>
+									<option>작성자</option>
 								</select>
 							</li>
-							<li class="wp40 pl4">
+							<li class="wp70 pl4">
 								<span class="searchReset"><input type="text" title="검색어 입력" placeholder="검색어를 입력하세요."><button type="button" class="searchResetBtn"><i>검색어 지우기</i></button></span>
 								<button type="button" class="button h40 black"><i class="searchIcon"></i><span>검색</span></button>
 							</li>
@@ -76,10 +57,10 @@
 						<div class="controlBody">
 							<b>총 123,456건</b>
 							<div class="control">
-								<select class="select h32" title="분류 선택">
-									<option>분류전체</option>
-									<option>1:1상담</option>
-									<option>전화상담</option>
+								<select class="select h32" title="상태 선택">
+									<option>상태전체</option>
+									<option>답변완료</option>
+									<option>접수완료</option>
 								</select>
 								<select class="select h32" title="목록 갯수 선택">
 									<option>10개씩 보기</option>
@@ -92,11 +73,11 @@
 
 						<div class="tableBody">
 							<table>
-								<caption>상담FAQ : 번호, 분류, 제목, 첨부, 기관, 작성일로 구성</caption>
+								<caption>전산문의 : 번호, 제목, 첨부, 작성자, 상태, 작성일로 구성</caption>
 								<colgroup>
 									<col class="mobileVisible" style="width: 64px;">
-									<col class="mobileVisible" style="width: 94px;">
 									<col>
+									<col class="mobileVisible" style="width: 94px;">
 									<col class="mobileVisible" style="width: 64px;">
 									<col class="mobileVisible" style="width: 90px;">
 									<col style="width: 124px;">
@@ -104,10 +85,10 @@
 								<thead>
 									<tr>
 										<th scope="col" class="mobileVisible">번호</th>
-										<th scope="col" class="mobileVisible">분류</th>
 										<th scope="col">제목</th>
 										<th scope="col" class="mobileVisible">첨부</th>
-										<th scope="col" class="mobileVisible">기관</th>
+										<th scope="col" class="mobileVisible">작성자</th>
+										<th scope="col" class="mobileVisible">상태</th>
 										<!-- 
 											des: 내림차순 정렬, 
 											asc: 오름차순 정렬
@@ -119,47 +100,42 @@
 								<tbody>
 									<tr>
 										<td class="mobileVisible"><i class="fix">공지</i></td>
-										<td class="mobileVisible">연계급여</td>
-										<td class="textLeft"><a href="HO_02_02_02.html"><span>군인연금 연계자입니다. 반납금 고지서를 이메일로만 받고 싶습니다.</span></a></td>
+										<td class="textLeft"><a href="HO_02_03_02.html"><span>전산장애로 인한 홈페이지 서비스 일시 중단 안내</span></a></td>
 										<td class="mobileVisible"></td>
-										<td class="mobileVisible">국민연금</td>
+										<td class="mobileVisible">홍길*</td>
+										<td class="mobileVisible">답변완료</td>
 										<td>2022-03-12</td>
 									</tr>
 									<tr>
 										<td class="mobileVisible"><i class="fix">공지</i></td>
-										<td class="mobileVisible">연계급여</td>
-										<td class="textLeft"><a href="HO_02_02_02.html"><span>군인연금 연계자입니다. 반납금 고지서를 이메일로만 받고 싶습니다.</span></a></td>
+										<td class="textLeft"><a href="HO_02_03_02.html"><span>전산장애로 인한 홈페이지 서비스 일시 중단 안내</span></a></td>
 										<td class="mobileVisible"></td>
-										<td class="mobileVisible">별정우체국연금</td>
+										<td class="mobileVisible">홍길*</td>
+										<td class="mobileVisible">답변완료</td>
 										<td>2022-03-12</td>
 									</tr>
 									<tr>
 										<td class="mobileVisible">3</td>
-										<td class="mobileVisible">연계신청</td>
-										<!--
-											비밀글이 있을경우:
-											class="layerLink"와 aria-controls="consultationPWLayer" 넣어주세요.
-											layerLink 클래스에 e.preventDefault(); 적용되어 있습니다.
-										-->
-										<td class="textLeft"><a href="HO_02_02_02.html" class="layerLink" aria-controls="consultationPWLayer"><span>전화상담 받고 싶습니다.</span> <i class="new" title="신규 글">NEW</i> <i class="secret" title="비밀 글">비밀 글</i></a></td>
-										<td class="mobileVisible"></td>
-										<td class="mobileVisible">별정우체국연금</td>
+										<td class="textLeft"><a href="HO_02_03_02.html" class="layerLink" aria-controls="consultationPWLayer"><span>전산장애로 인한 홈페이지 서비스 일시 중단 안내/span> <i class="new" title="신규 글">NEW</i></a></td>
+											<td class="mobileVisible"></td>
+											<td class="mobileVisible">홍길*</td>
+											<td class="mobileVisible">접수완료</td>
 										<td>2022-03-12</td>
 									</tr>
 									<tr>
 										<td class="mobileVisible">2</td>
-										<td class="mobileVisible">연계신청</td>
-										<td class="textLeft"><a href="HO_02_02_02.html"><span>1:1 상담 받고 싶습니다.</span> <i class="new" title="신규 글">NEW</i></a></td>
+										<td class="textLeft"><a href="HO_02_03_02.html"><span>전산장애로 인한 홈페이지 서비스 일시 중단 안내</span> <i class="new" title="신규 글">NEW</i></a></td>
 										<td class="mobileVisible"><i class="file">첨부파일</i></td>
-										<td class="mobileVisible">국민연금</td>
+										<td class="mobileVisible">홍길*</td>
+										<td class="mobileVisible">접수완료</td>
 										<td>2022-03-12</td>
 									</tr>
 									<tr>
 										<td class="mobileVisible">1</td>
-										<td class="mobileVisible">연계신청</td>
-										<td class="textLeft"><a href="HO_02_02_02.html" class="layerLink" aria-controls="consultationPWLayer"><span>1:1 상담 받고 싶습니다.</span> <i class="secret" title="비밀 글">비밀 글</i></a></td>
+										<td class="textLeft"><a href="HO_02_03_02.html" class="layerLink" aria-controls="consultationPWLayer"><span>전산장애로 인한 홈페이지 서비스 일시 중단 안내</span></a></td>
 										<td class="mobileVisible"><i class="file">첨부파일</i></td>
-										<td class="mobileVisible">국민연금</td>
+										<td class="mobileVisible">홍길*</td>
+										<td class="mobileVisible">접수완료</td>
 										<td>2022-03-12</td>
 									</tr>
 								</tbody>

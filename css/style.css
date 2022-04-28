@@ -274,11 +274,12 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .searchBody .controlBox li .twin select { flex: 1;}
 .searchBody .controlBox li .twin .ml { margin-left: 4px;}
 .searchBody .controlBox li.pl4 { padding-left: 4px;}
+.searchBody .controlBox li.wp25 { width: 25%;}
 .searchBody .controlBox li.wp35 { width: 35%;}
 .searchBody .controlBox li.wp30 { width: 30%;}
-.searchBody .controlBox li.wp25 { width: 25%;}
 .searchBody .controlBox li.wp40 { width: 40%;}
 .searchBody .controlBox li.wp60 { width: 60%;}
+.searchBody .controlBox li.wp70 { width: 70%;}
 .searchBody .controlBox.flexWrap { flex-wrap: wrap; margin-top: -16px;}
 .searchBody .controlBox.flexWrap li { margin-top: 16px;}
 .searchBody.pl48 { padding-left: 48px;}

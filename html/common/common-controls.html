@@ -163,10 +163,12 @@
 	<div>
 		<div class="searchBody m_toggleArea">
 			<!-- onlyMobile -->
-			<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
-				<b class="defaultH5">검색조건</b>
-				<span class="toggleBtn"><i>상담 검색조건 토글</i></span>
-			</button>
+			<div class="onlyMobile">
+				<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+					<b class="defaultH5">검색조건</b>
+					<span class="toggleBtn"><i>상담 검색조건 토글</i></span>
+				</button>
+			</div>
 			<!-- //onlyMobile -->
 
 			<ul class="controlBox target">
@@ -182,7 +184,7 @@
 						<option>전체</option>
 					</select>
 				</li>
-				<li class="wp40 ml4">
+				<li class="wp40 pl4">
 					<span class="searchReset"><input type="text" title="검색어 입력" placeholder="검색어를 입력하세요."><button type="button" class="searchResetBtn"><i>검색어 지우기</i></button></span>
 					<button type="button" class="button h40 black"><i class="searchIcon"></i><span>검색</span></button>
 				</li>
@@ -191,10 +193,12 @@
 
 		<div class="searchBody m_toggleArea">
 			<!-- onlyMobile -->
-			<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
-				<b class="defaultH5">검색조건</b>
-				<span class="toggleBtn"><i>상담 검색조건 토글</i></span>
-			</button>
+			<div class="onlyMobile">
+				<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+					<b class="defaultH5">검색조건</b>
+					<span class="toggleBtn"><i>상담 검색조건 토글</i></span>
+				</button>
+			</div>
 			<!-- //onlyMobile -->
 
 			<ul class="controlBox flexWrap target">
@@ -216,7 +220,7 @@
 						<option>전체</option>
 					</select>
 				</li>
-				<li class="wp60 ml4">
+				<li class="wp60 pl4">
 					<span class="searchReset"><input type="text" title="검색어 입력" placeholder="검색어를 입력하세요."><button type="button" class="searchResetBtn"><i>검색어 지우기</i></button></span>
 					<button type="button" class="button h40 black"><i class="searchIcon"></i><span>검색</span></button>
 				</li>
@@ -241,15 +245,86 @@
 				</li>
 				<li class="wp30">
 					<div class="twin">
-						<select title="상태전체 선택">
+						<select title="상태전체 선택" class="ml">
 							<option>상태전체</option>
 						</select>
-						<select title="구분전체 선택">
+						<select title="구분전체 선택" class="ml">
 							<option>구분전체</option>
 						</select>
 					</div>
 				</li>
 				<li class="wp40 pl4">
+					<span class="searchReset"><input type="text" title="검색어 입력" placeholder="검색어를 입력하세요."><button type="button" class="searchResetBtn"><i>검색어 지우기</i></button></span>
+					<button type="button" class="button h40 black"><i class="searchIcon"></i><span>검색</span></button>
+				</li>
+			</ul>
+		</div>
+
+		<div class="searchBody pl48 m_toggleArea">
+			<!-- onlyMobile -->
+			<div class="onlyMobile">
+				<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+					<b class="defaultH5">검색조건</b>
+					<span class="toggleBtn"><i>상담 검색조건 토글</i></span>
+				</button>
+			</div>
+			<!-- //onlyMobile -->
+
+			<ul class="controlBox target">
+				<li class="wp30">
+					<div class="twin">
+						<select title="분류 선택">
+							<option>분류전체</option>
+							<option>연계신청</option>
+							<option>연계급여</option>
+							<option>연계제도</option>
+							<option>반납금</option>
+							<option>상담FAQ</option>
+						</select>
+						<select title="구분전체 선택" class="ml">
+							<option>구분전체</option>
+							<option>제목</option>
+							<option>내용</option>
+						</select>
+					</div>
+				</li>
+				<li class="wp30 pl4">
+					<select title="기관 선택">
+						<option>기관전체</option>
+						<option>국민연금공단</option>
+						<option>공무원연금공단</option>
+						<option>사립학교교직원연금공단</option>
+						<option>국방부군인연금</option>
+						<option>별정우체국연금관리단</option>
+					</select>
+				</li>
+				<li class="wp40 pl4">
+					<span class="searchReset"><input type="text" title="검색어 입력" placeholder="검색어를 입력하세요."><button type="button" class="searchResetBtn"><i>검색어 지우기</i></button></span>
+					<button type="button" class="button h40 black"><i class="searchIcon"></i><span>검색</span></button>
+				</li>
+			</ul>
+		</div>
+
+		<div class="searchBody pl48 m_toggleArea">
+			<!-- onlyMobile -->
+			<div class="onlyMobile">
+				<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+					<b class="defaultH5">검색조건</b>
+					<span class="toggleBtn"><i>전산문의 검색조건 토글</i></span>
+				</button>
+			</div>
+			<!-- //onlyMobile -->
+
+			<ul class="controlBox target">
+				<li class="wp30">
+					<select title="구분 선택" class="ml">
+						<option>구분전체</option>
+						<option>제목</option>
+						<option>내용</option>
+						<option>작성자</option>
+					</select>
+				</li>
+				<li class="wp70 pl4">
 					<span class="searchReset"><input type="text" title="검색어 입력" placeholder="검색어를 입력하세요."><button type="button" class="searchResetBtn"><i>검색어 지우기</i></button></span>
 					<button type="button" class="button h40 black"><i class="searchIcon"></i><span>검색</span></button>
 				</li>

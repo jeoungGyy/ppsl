@@ -79,11 +79,12 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .searchBody .controlBox li ~ li { margin-top: 8px;}
 .searchBody .controlBox li .twin select:first-child { margin-left: 0;}
 .searchBody .controlBox li.pl4 { padding-left: 0;}
-.searchBody .controlBox li.wp35,
-.searchBody .controlBox li.wp30,
 .searchBody .controlBox li.wp25,
+.searchBody .controlBox li.wp30,
+.searchBody .controlBox li.wp35,
 .searchBody .controlBox li.wp40,
-.searchBody .controlBox li.wp60 { width: 100%;}
+.searchBody .controlBox li.wp60,
+.searchBody .controlBox li.wp70 { width: 100%;}
 .searchBody .controlBox.flexWrap { margin-top: -8px;}
 .searchBody .controlBox.flexWrap li { margin-top: 8px;}
 .searchBody.pl48 { padding-left: 0;}
