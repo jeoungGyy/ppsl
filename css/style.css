@@ -602,6 +602,8 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .layerClose i { display: block; width: 24px; height: 24px; text-indent: -99999px; background: url(../images/common/ico_close2.svg) no-repeat center/cover;}
 
 /* 전체 메뉴 */
+#allMenu_pop { background-color: #fff;}
+#allMenu_pop .layerClose { top: -39px;}
 .layerPopup .sitemapHeader { display: flex; align-items: flex-end; height: 104px; padding-bottom: 7px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);}
 .layerPopup .sitemapHeader h1 a { display: inline-block;}
 .layerPopup .gnb { padding-top: 48px;}
