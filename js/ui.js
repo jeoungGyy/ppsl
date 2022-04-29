@@ -21,14 +21,15 @@ $(document).ready(function () {
       var $targetHidden = $(".targetHidden");
       
 
-      $(window).on('resize', function () {
+      $(window).off().on('resize', function () {
         if ($(this).width() <= 767 && !fired[0]) {
           fired[0] = true;
           fired[1] = false;
 
           /* 모바일 토글 버튼 slideDownUp */
           var $toggleGroup = $('button.toggleGroup');
-          $toggleGroup.on('click', function() {
+          $toggleGroup.off().on('click', function() {
+            console.log(1)
             if($(this).parents('.m_toggleArea').find('.target').css('display') === "none") {
               $(this).addClass('active').attr({'title': '확장됨'}).parents('.m_toggleArea').find('.target').slideDown(200);
             } else {

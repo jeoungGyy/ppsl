@@ -438,7 +438,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .tableBody table th .sortBtn i { display: inline-block; width: 16px; height: 16px; margin-top: -4px; vertical-align: middle; background: url(../images/common/ico_dropdown.svg) no-repeat center/cover;}
 .tableBody table th .sortBtn.asc i { transform: rotate(180deg);}
 .tableBody table td { padding: 12px 12px; text-align: center; line-height: 24px; border: 1px solid #dbdbdb;}
-.tableBody table tr:hover td { background-color: #f7f7f7;}
+.tableBody table tr:hover td { background-color: #f4f7fc;}
 .tableBody table td a { text-align: left; line-height: 24px;}
 .tableBody table td a:hover span { border-bottom: 1px solid #333;}
 .tableBody table td input[type=text],
