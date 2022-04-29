@@ -159,7 +159,7 @@ hr.space { margin: 40px 0; height: 1px; background-color: #dbdbdb;}
 
 
 /* 버튼 */
-.button { display: inline-flex; align-items: center; justify-content: center; padding: 0 16px; transition: background-color .2s ease-in-out;}
+.button { display: inline-flex; align-items: center; justify-content: center; padding: 0 16px; transition: background-color .2s ease-in-out, border-color .2s ease-in-out;;}
 .button.h48 { min-width: 96px; min-height: 48px; height: 48px; padding: 0 24px;}
 .button.h40 { min-width: 80px; min-height: 40px; height: 40px;}
 .button.h32 { min-height: 32px; height: 32px; font-size: 14px;}
@@ -437,7 +437,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .tableBody table th { padding: 12px 0; border-left: 1px solid #dbdbdb; background-color: #f7f7f7;}
 .tableBody table th .sortBtn i { display: inline-block; width: 16px; height: 16px; margin-top: -4px; vertical-align: middle; background: url(../images/common/ico_dropdown.svg) no-repeat center/cover;}
 .tableBody table th .sortBtn.asc i { transform: rotate(180deg);}
-.tableBody table td { padding: 12px 12px; text-align: center; line-height: 24px; border: 1px solid #dbdbdb;}
+.tableBody table td { padding: 12px 12px; text-align: center; line-height: 24px; border: 1px solid #dbdbdb; transition: background-color .2s ease-in-out;}
 .tableBody table tr:hover td { background-color: #f4f7fc;}
 .tableBody table td a { text-align: left; line-height: 24px;}
 .tableBody table td a:hover span { border-bottom: 1px solid #333;}
