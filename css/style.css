@@ -130,6 +130,9 @@ body.noScroll { overflow: hidden;}
 #wrap .fontSize16 { font-size: 16px;}
 #wrap .wNormal { font-weight: 400;}
 .subText { margin-top: 8px; font-size: 14px;}
+.requireBody { display: flex; align-items: center; justify-content: space-between;}
+.requireBody .requireText { margin-top: 0;}
+.requireBody .btn { margin-top: 8px;}
 .requireText { display: flex; margin-top: 5px; font-size: 12px; color: #767676; text-align: left; line-height: 18px;}
 .requireText i { display: inline-block; width: 16px; height: 16px; margin: 0 4px 0 0; vertical-align: middle;}
 .requireText i { background: url(../images/common/ico_caption.svg) no-repeat center/cover;}
@@ -144,6 +147,7 @@ body.noScroll { overflow: hidden;}
 .defaultH5.mt { margin-top: 24px;}
 
 /* Margin */
+#wrap .pcmt8 { margin-top: 8px;}
 #wrap .pcmt24 { margin-top: 24px;}
 #wrap .pcmt40 { margin-top: 40px;}
 

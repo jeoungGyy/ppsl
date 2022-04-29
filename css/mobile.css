@@ -42,6 +42,11 @@
 .m_flexEnd { justify-content: flex-end !important;}
 .m_lh29 { line-height: 29px;}
 
+/* 글꼴 */
+.requireBody { display: block;}
+.requireBody .requireText { margin-top: 5px;}
+.requireBody .btn { display: flex; justify-content: flex-end;}
+
 /* Margin */
 #wrap .pcmt24 { margin-top: 0;}
 #wrap .pcmt40 { margin-top: 0;}
