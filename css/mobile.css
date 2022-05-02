@@ -13,7 +13,7 @@
 .moHeader .global h1 a img { width: 188px; height: 36px; vertical-align: middle;}
 .moHeader .global .searchBtn i { display: block; width: 32px; height: 32px; text-indent: -99999px; background: url(../images/common/ico_search.svg) no-repeat center/cover;}
 .moHeader .global .allMenuBtn i { display: block; width: 32px; height: 32px; text-indent: -99999px; background: url(../../images/common/ico_menu.svg) no-repeat center/cover;} */
-.header { position: inherit; height: 72px; padding-top: 0;}
+.header { position: relative; height: 72px; padding-top: 0;}
 .header .global { display: none;}
 .gnb { display: none;}
 .header .menu h1 a { padding-bottom: 0;}
@@ -167,6 +167,35 @@ hr.space.style5 { margin: 8px -16px 32px;}
 
 /* m_roundGray */
 .m_roundGray { padding: 24px 15px 24px 16px; font-size: 14px; background-color: #f7f7f7; border-radius: 8px;}
+
+/* totalBody */
+.totalWrap { padding-top: 0;}
+.totalWrap .twArea { width: 100%; padding: 32px 16px;}
+.totalWrap .twSearchBody { width: 100%;}
+.totalWrap .twSearchBody::before { left: -28px; top: -93px; margin-left: 0;}
+.totalWrap .twSearchBody::after { left: inherit; right: -56px; margin-left: 0;}
+.totalWrap .twGroup { display: block;}
+.totalWrap .twGroup .twSearch { width: 100%;}
+.totalWrap .twGroup .detailTwBtn { margin: 8px 0 0 0; width: 100%;}
+.totalWrap .twGroup .groupBox { display: flex; justify-content: flex-end; margin: 8px 0 0 0;}
+.totalWrap .twGroup .tbPopular { margin-top: 4px;}
+
+.totalWrap .twList { margin-top: 32px; padding: 32px 0;}
+.totalWrap .twList .twSpacelist { display: block;}
+.totalWrap .twList .twSpacelist b { padding: 0;}
+.totalWrap .twList .twSpacelist .groupBox { flex-wrap: wrap;}
+.totalWrap .twList .twSpacelist .groupBox li { margin-top: 8px;}
+
+
+
+.totalBody { top: 72px;}
+.totalBody .tbArea { width: 100%; padding: 0 16px;}
+.tbPopular { display: block; padding-bottom: 25px;}
+.tbPopular .popularBtns { margin-left: 0;}
+.tbPopular .popularBtns button { margin-top: 16px;}
+
+
+
 
 
 
@@ -468,12 +497,16 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .subDateBody .subDate { font-size: 14px; color: #767676;}
 
 
+/* 통합검색
+**********************************************/
 
-
-
-
-
-
+.twListBody { margin-top: 32px; padding: 0 16px;}
+.twListBody .twlTitle { line-height: 29px;}
+.twListBody .twlTab { flex-wrap: wrap; margin-left: 1px;}
+.twListBody .twlTab li { flex: inherit; width: calc(100% / 3); margin: -1px 0 0 -1px;}
+.twListBody .twlTab li button { flex-direction: column; height: 75px; line-height: 24px;}
+.twListBody .twlConBox >li >a h4 { font-size: 16px; line-height: 24px;}
+.twListBody .twlConBox >li >a p { margin-top: 8px; line-height: 24px;}
 
 
 

@@ -40,7 +40,8 @@ body.noScroll { overflow: hidden;}
 .header .menu .subMenuBlind { position: absolute; left: 0; top: 64px; z-index: 99; width: 100%; height: 0; background-color: transparent;}
 .header .btnsWrap { display: flex; align-items: center;}
 .header .btnsWrap button i { display: block; width: 32px; height: 32px; text-indent: -99999px;}
-.header .btnsWrap .allSearchBtn i {  background: url(../images/common/ico_search.svg) no-repeat center/cover;}
+.header .btnsWrap .allSearchBtn i { background: url(../images/common/ico_search.svg) no-repeat center/cover;}
+.header .btnsWrap .allSearchBtn.active i { background: url(../images/common/ico_close.svg) no-repeat center/cover;}
 .header .btnsWrap .allMenuBtn { margin-left: 16px;}
 .header .btnsWrap .allMenuBtn i {  background: url(../images/common/ico_menu.svg) no-repeat center/cover;}
 .gnb { flex: 1;}
@@ -182,6 +183,7 @@ hr.space { margin: 40px 0; height: 1px; background-color: #dbdbdb;}
 .button.lineBlack { border: 1px solid #333; background-color: #fff;}
 .button.lineBlack:hover,
 .button.lineBlack:active { color: #366cc3; border-color: #366cc3;}
+.button.lineWhite { color: #fff; border: 1px solid #fff;}
 
 .button .dsBlock { vertical-align: middle; line-height: 24px;}
 .button .arrowRight { display: inline-block; width: 24px; height: 24px; margin-left: 4px; background: url(../images/common/ico_arrow_line_w.svg) no-repeat center/cover;}
@@ -575,15 +577,60 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .pageNumber .next i { background: url(../images/common/ico_arrow_right.svg) no-repeat center/cover;}
 .pageNumber .last i { background: url(../images/common/ico_arrow_right_double.svg) no-repeat center/cover;}
 
+/* totalBody */
+.totalWrap { padding-top: 104px;}
+.totalWrap .twSearchBody { overflow: hidden; position: relative; background-color: #343e68;}
+.totalWrap .twSearchBody::before { content: ''; display: block; position: absolute; left: 50%; top: -81px; width: 149px; height: 149px; margin-left: -710px; background: url(../images/common/ico_pattern_01.svg) no-repeat center/cover;}
+.totalWrap .twSearchBody::after { content: ''; display: block; position: absolute; left: 50%; bottom: -23px; width: 103px; height: 69px; margin-left: 570px; background: url(../images/common/ico_pattern_02.svg) no-repeat center/cover;}
+.totalWrap .twArea { width: 860px; margin: 0 auto; padding: 40px 0;}
+.totalWrap .twGroup { display: flex; align-items: center;}
+.totalWrap .twGroup .twSearch { width: 588px; height: 48px;}
+.totalWrap .twGroup .twSearch input { padding-left: 16px; font-size: 19px; border-bottom: none;}
+.totalWrap .twGroup .twSearch .searchResetBtn { right: 56px;}
+.totalWrap .twGroup .twSearch .tbBtn { right: 16px;}
+.totalWrap .twGroup .detailTwBtn { display: flex; align-items: center; justify-content: center; width: 138px; height: 48px; margin-left: 8px; color: #fff; border: solid 1px #fff;}
+.totalWrap .twGroup .detailTwBtn i { display: block; width: 16px; height: 16px; margin-left: 16px; background: url(../images/common/ico_arrow_down_w.svg) no-repeat center/cover;}
+.totalWrap .twGroup .groupBox { margin-left: 16px;}
+.totalWrap .twGroup .groupBox label { font-size: 14px; color: #fff;}
+.totalWrap .tbPopular .popularBtns button { color: #fff;}
+.totalWrap .twList { margin-top: 40px; padding: 40px 0; border-top: 1px solid #fff; border-bottom: 1px solid #fff;}
+.totalWrap .twList .twSpacelist { display: flex; align-items: center;}
+.totalWrap .twList .twSpacelist b { display: block; padding: 0 40px 0 24px; color: #fff;}
+.totalWrap .twList .twSpacelist .groupBox { display: flex; align-items: center; flex: 1;}
+.totalWrap .twList .twSpacelist .groupBox li { margin-right: 24px;}
+.totalWrap .twList .twSpacelist .groupBox li label { color: #fff;}
+.totalWrap .twList .twSpacelist ~ .twSpacelist { margin-top: 24px;}
+.totalWrap .formBtnBody { display: flex; align-items: center; justify-content: center; margin-top: 24px;}
+.totalWrap .formBtnBody button { margin: 0 4px;}
+
+.totalBody { display: none; position: fixed; left: 0; right: 0; top: 104px; z-index: 90; min-height: 186px; padding-top: 27px; background-color: #fff; transform: translateY(-100%); transition: transform .3s;}
+.totalBody .tbArea { width: 588px; margin: 0 auto;}
+.tbSearch { display: block; position: relative; height: 62px;}
+.tbSearch input { width: 100%; height: 100%; padding: 0 100px 0 0; font-size: 24px; font-weight: 700; border: none; border-bottom: solid 2px #333;}
+.tbSearch input::placeholder { color: #959595;}
+.tbSearch .searchResetBtn { display: none; position: absolute; right: 40px; top: 50%; margin-top: -8px;}
+.tbSearch .searchResetBtn i { display: inline-block; width: 16px; height: 16px; text-indent: -99999px; background: url(../images/common/ico_clear.svg) no-repeat center/cover;}
+.tbSearch .tbBtn { display: block; position: absolute; right: 0; top: 50%; margin-top: -17px;}
+.tbSearch .tbBtn i { display: inline-block; width: 32px; height: 32px; text-indent: -99999px; background: url(../images/common/ico_search.svg) no-repeat center/cover;}
+.tbSearch.btnShow .searchResetBtn { display: block;}
+.tbPopular { display: flex; align-items: center; margin-top: 24px;}
+.tbPopular b { display: flex; align-items: center; justify-content: center; width: 94px; height: 32px; font-size: 14px; color: #fff; background-color: #333; border-radius: 16px;}
+.tbPopular .popularBtns { flex: 1; margin-left: 24px;}
+.tbPopular .popularBtns button { display: inline-block; margin-right: 24px; font-size: 14px;}
+.totalBody .searchScrollBody { display: none; padding: 16px 0 32px;}
+.totalBody .searchScroll { overflow-x: hidden; overflow-y: auto; height: 240px;}
+.totalBody .searchScroll::-webkit-scrollbar { width: 5px;}
+.totalBody .searchScroll::-webkit-scrollbar-thumb { border-radius: 4px; background-color: #959595;}
+.totalBody .searchScroll button { padding: 4px 0; line-height: 24px;}
+.totalBody.active { display: block;}
+.totalBody.show { transform: translateY(0);}
 
 
 
-
-
-
-
-
-
+/* blind */
+.blind { display: none; position: fixed; left: 0; top: 0; z-index: 80; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); opacity: 0; transition: opacity .3s;}
+.blind.active { display: block;}
+.blind.show { opacity: 1;}
 
 
 
@@ -662,7 +709,6 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 /* 로그인
 **********************************************/
 
-.stepLogin {}
 .stepLogin .minNunber { display: flex; align-items: center; justify-content: center; height: 88px; margin-top: 40px; background-color: rgba(54, 108, 195, 0.05); border-radius: 8px;}
 .stepLogin .minNunber .inputBody { display: flex; align-items: center; margin: 0 16px;}
 .stepLogin .minNunber .inputBody span { display: block; position: relative; width: 200px;}
@@ -757,6 +803,42 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .etcCheckbox { position: absolute; right: 0; top: -27px;}
 .etcBleuBox { margin-top: 8px; padding: 24px; background-color: #f4f7fc; border-radius: 8px;}
 .etcBleuBox p { margin-top: 8px; font-size: 14px; line-height: 24px;}
+
+
+
+
+
+
+
+
+/* 통합검색
+**********************************************/
+
+.twListBody { }
+.twListBody { margin-top: 64px;}
+.twListBody .twlTitle { font-size: 19px; line-height: 36px;}
+.twListBody .twlTab { display: flex; align-items: center; margin-top: 24px;}
+.twListBody .twlTab li { flex: 1;}
+.twListBody .twlTab li ~ li { margin-left: -1px;}
+.twListBody .twlTab li button { display: flex; align-items: center; justify-content: center; width: 100%; height: 48px; border: 1px solid #dbdbdb;}
+.twListBody .twlTab li button.active { position: relative; z-index: 1; color: #fff; border-color: #366cc3; background-color: #366cc3;}
+.twListBody .controlBody { align-items: center; justify-content: flex-end;}
+.twListBody .controlBody .control { display: flex; align-items: center;}
+.twListBody .controlBody .control >.button { margin-left: 4px;}
+.twListBody .controlBody .cbBtns { display: flex; align-items: center; margin-left: 8px;}
+.twListBody .controlBody .cbBtns .cbBtn { display: flex; align-items: center; justify-content: center; width: 62px; height: 32px; font-size: 14px; border: solid 1px #dbdbdb;}
+.twListBody .controlBody .cbBtns .cbBtn ~ .cbBtn { margin-left: -1px;}
+.twListBody .controlBody .cbBtns .cbBtn.active { position: relative; z-index: 1; color: #fff; border-color: #366cc3; background-color: #366cc3;}
+.twListBody .twlConBox { margin-top: 8px; border-top: solid 2px #333;}
+.twListBody .twlConBox >li { padding: 24px 16px; border-bottom: 1px solid #dbdbdb;}
+.twListBody .twlConBox >li >a { display: block;}
+.twListBody .twlConBox >li >a .depth { display: flex; align-items: center;}
+.twListBody .twlConBox >li >a .depth span { font-size: 14px;}
+.twListBody .twlConBox >li >a .depth span ~ span { position: relative; margin-left: 4px; padding-left: 20px;}
+.twListBody .twlConBox >li >a .depth span ~ span::after { content: ''; display: inline-block; position: absolute; left: 0; top: -1px; width: 16px; height: 16px; text-indent: -9999rem; background: url(../images/common/ico_bc_arrow.svg) no-repeat center/16px 16px;}
+.twListBody .twlConBox >li >a h4 { margin-top: 16px; font-size: 17px; line-height: 21px;}
+.twListBody .twlConBox >li >a p { margin-top: 16px; line-height: 25px;}
+.twListBody .twlConBox >li:hover { background-color: #f4f7fc;}
 
 
 

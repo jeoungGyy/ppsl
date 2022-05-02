@@ -332,6 +332,86 @@ $(document).ready(function () {
     },
   },
 
+  /* 통합검색 */
+  totalSearch = {
+    init: function () {
+      var $allSearchBtn = $('.allSearchBtn');
+
+      
+      $allSearchBtn.on('click', function(e){
+        e.preventDefault();
+        totalSearch.open($(this));
+      });
+    },
+    open: function (_this) {
+      var $totalBody = $('.totalBody');
+      var $tbSearch = $('.tbSearch');
+      var $searchResetBtn = $tbSearch.find('.searchResetBtn');
+      var $searchScrollBody = $('.searchScrollBody');
+      var $tbPopular = $('.tbPopular');
+      var $blind = $('.blind');
+
+      if(!_this.hasClass('active')) {
+        // $('body').addClass('noScroll');
+        _this.addClass('active');
+        $tbPopular.addClass('hidden');
+        $blind.addClass('active');
+        $totalBody.addClass('active').focus();
+        TweenLite.to($totalBody, 0.3, {onComplete:function() {
+          $blind.addClass('show');
+          $totalBody.addClass('show');
+          
+          // 레이어 팝업 외부 클릭 시 창닫기
+          // $(document).off().on('click', function (e){
+          //   if(totalBody.has(e.target).length === 0) {
+          //     layerPopup.close(_this, _target, _target_aria);
+          //   }
+          // });
+        }});
+
+        $tbSearch.find('input').on('change keyup paste', function() {
+          if($(this).val()) {
+            $(this).parent().addClass('btnShow');
+            $searchScrollBody.slideDown(200)
+
+            $searchResetBtn.on('click', function() {
+              $(this).siblings('input').val('').parent().removeClass('btnShow');
+              $searchScrollBody.slideUp(200)
+            });
+          } else {
+            $(this).parent().removeClass('btnShow');
+            $searchScrollBody.slideUp(200)
+          }
+        });
+
+      } else {
+        totalSearch.close(_this);
+      }
+      
+      
+      
+    },
+    close: function (_this) {
+      var $totalBody = $('.totalBody');
+      var $tbPopular = $('.tbPopular');
+      var $blind = $('.blind');
+      
+      // $('body').removeClass('noScroll');
+      _this.removeClass('active');
+      $tbPopular.removeClass('hidden');
+      $blind.removeClass('show');
+      $totalBody.removeClass('show');
+      TweenLite.to($totalBody, 0.3, {onComplete:function() {
+        $blind.removeClass('active');
+        $totalBody.removeClass('active');
+      }});
+    },
+  },
+
+
+
+
   common.init();
   layerPopup.init();
+  totalSearch.init();
 });
