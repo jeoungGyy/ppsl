@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+    <path style="fill:none" d="M0 0h64v64H0z"/>
+    <g data-name="그룹 8460">
+        <path data-name="패스 37009" d="M402.412 660.99v1.722a4 4 0 0 1-4 4h-34a4 4 0 0 1-4-4v-22a4 4 0 0 1 4-4h34a4 4 0 0 1 4 4" transform="translate(-349.412 -622.712)" style="stroke:#000;stroke-linecap:round;stroke-width:1.5px;fill:none"/>
+        <path data-name="선 811" transform="translate(18.5 51)" style="stroke-linejoin:round;stroke:#000;stroke-linecap:round;stroke-width:1.5px;fill:none" d="M0 0h28"/>
+        <g data-name="그룹 24853">
+            <path data-name="선 812" transform="translate(27 45)" style="stroke-linejoin:round;stroke:#000;stroke-linecap:round;stroke-width:1.5px;fill:none" d="M3 0 0 6"/>
+            <path data-name="선 813" transform="translate(35 45)" style="stroke-linejoin:round;stroke:#000;stroke-linecap:round;stroke-width:1.5px;fill:none" d="m0 0 3 6"/>
+        </g>
+        <path data-name="선 814" transform="translate(11 38)" style="stroke:#000;stroke-linecap:round;stroke-width:1.5px;fill:none" d="M0 0h42"/>
+    </g>
+    <g data-name="그룹 24809" transform="translate(22.238 20.752)">
+        <rect data-name="사각형 5426" width="40" height="14" rx="7" transform="translate(-.238 -.752)" style="fill:#366cc3"/>
+        <circle data-name="타원 1635" cx="2" cy="2" r="2" transform="translate(5.762 4.248)" style="fill:#fff"/>
+        <circle data-name="타원 1636" cx="2" cy="2" r="2" transform="translate(11.762 4.248)" style="fill:#fff"/>
+        <circle data-name="타원 1637" cx="2" cy="2" r="2" transform="translate(17.762 4.248)" style="fill:#fff"/>
+        <circle data-name="타원 1638" cx="2" cy="2" r="2" transform="translate(23.762 4.248)" style="fill:#fff"/>
+        <circle data-name="타원 1639" cx="2" cy="2" r="2" transform="translate(29.762 4.248)" style="fill:#fff"/>
+    </g>
+</svg>

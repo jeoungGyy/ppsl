@@ -111,6 +111,12 @@ str += '              <li><a href="#" data-menu="depth_7_2"><span>이용안내</
 str += '              <li><a href="#" data-menu="depth_7_3"><span>서비스 약관</span></a></li>';
 str += '            </ul>';
 str += '          </li>';
+str += '          <li style="display:none;"><a href="HO_00_02_01.html" data-menu="depth_8"><span>로그인</span></a>';
+str += '            <ul class="depth2">';
+str += '              <li><a href="HO_00_02_01.html" data-menu="depth_8_1"><span>1단계 본인인증 로그인</span></a></li>';
+str += '              <li><a href="HO_00_02_02.html" data-menu="depth_8_2"><span>2단계 인증 로그인</span></a></li>';
+str += '            </ul>';
+str += '          </li>';
 str += '        </ul>';
 str += '      </nav>';
 str += '      <div class="btnsWrap">';

@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<script src="../../include/head.js"></script> <!-- include: 공통 헤드 -->
+</head>
+
+<body>
+<div id="wrap">
+	<script src="../../include/header.js"></script> <!-- include: 공통 헤더 -->
+
+	<div class="container">
+		<div class="area">
+			<div class="wrap">
+				<div id="contentLink" class="contents">
+					<header class="contentsHeader">
+						<div class="title">
+							<h3>1단계 본인인증 로그인</h3>
+							<p>회원가입 없이 성명, 주민번호 및 간단한 본인인증으로 이어드림 연금 서비스를 이용하실 수 있습니다.</p>
+						</div>
+						<script src="../../include/location.js"></script> <!-- include: 공통 현재위치 -->
+					</header>
+
+					<div class="stepLogin">
+						<ul class="stepBody">
+							<li>
+								<button type="button" class="hp">
+									<span class="icon"><i></i></span>
+									<span class="text">휴대폰 본인인증</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" class="simple">
+									<span class="icon"><i></i></span>
+									<span class="text">간편인증</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" class="onepass">
+									<span class="icon"><i></i></span>
+									<span class="text">디지털 원패스</span>
+								</button>
+							</li>
+						</ul>
+						<ul class="guideText mt">
+							<li>입력된 정보는 본인확인 용도로만 사용됩니다.</li>
+						</ul>
+
+						<hr class="space onlyMobile">
+
+						<div class="step2Group">
+							<i></i>
+							<div>
+								<b>로그인 종류에 따른 접속 가능 안내</b>
+								<ul class="guideText">
+									<li>1단계 본인인증 로그인 : 상담메뉴 이용가능</li>
+									<li>2단계 인증 로그인 : 모든메뉴 이용가능</li>
+								</ul>
+							</div>
+							<button type="button" class="button h40 lineBlack step2Btn" onclick="location.href='HO_00_02_02.html'">2단계 인증서 로그인 하기</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="../../include/footer.js"></script> <!-- include: 공통 푸터 -->
+
+	<script>
+		var depth = [8, 1]; /* 현재메뉴 활성화 용: gnb에 있는 data-menu 값과 일치하게 해주세요. */
+	</script>
+</div>
+</body>
+</html>

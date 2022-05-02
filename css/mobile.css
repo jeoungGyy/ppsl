@@ -317,6 +317,21 @@ hr.space.style5 { margin: 8px -16px 32px;}
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 레이어
 **********************************************/
 
@@ -347,6 +362,29 @@ hr.space.style5 { margin: 8px -16px 32px;}
 
 
 
+
+
+
+
+
+
+
+
+
+/* 로그인
+**********************************************/
+
+.stepLogin .stepBody { display: block; background-color: inherit;}
+.stepLogin .stepBody li { flex: inherit; height: 80px;}
+.stepLogin .stepBody li button { flex-direction: inherit; justify-content: inherit; padding-left: 24px; background-color: rgba(54, 108, 195, 0.05);}
+.stepLogin .stepBody li .icon { display: inherit; width: auto; height: auto; margin: inherit; background-color: initial;}
+.stepLogin .stepBody li .icon i { width: 48px; height: 48px;}
+.stepLogin .stepBody li .text { margin: 0 0 0 16px; font-size: 16px;}
+.stepLogin .stepBody li ~ li { margin-top: 8px;}
+.stepLogin .stepBody li ~ li button::after { display: none;}
+.stepLogin .step2Group { display: block; height: inherit; margin-top: 0; padding-left: 0; border: none; border-radius: inherit;}
+.stepLogin .step2Group >div { margin-left: 0;}
+.stepLogin .step2Group .step2Btn { position: inherit; right: inherit; bottom: inherit; margin-top: 16px;}
 
 
 
