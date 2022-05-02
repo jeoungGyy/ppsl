@@ -374,6 +374,15 @@ hr.space.style5 { margin: 8px -16px 32px;}
 /* 로그인
 **********************************************/
 
+.stepLogin .minNunber { display: block; height: inherit; margin-top: 24px; padding: 24px 16px;}
+.stepLogin .minNunber b { font-size: 14px;}
+.stepLogin .minNunber .inputBody { margin: 8px 0;}
+.stepLogin .minNunber .inputBody span { width: 50%;}
+.stepLogin .flexText { justify-content: flex-end;}
+.stepLogin .flexText .guideText { display: none;}
+
+
+
 .stepLogin .stepBody { display: block; background-color: inherit;}
 .stepLogin .stepBody li { flex: inherit; height: 80px;}
 .stepLogin .stepBody li button { flex-direction: inherit; justify-content: inherit; padding-left: 24px; background-color: rgba(54, 108, 195, 0.05);}

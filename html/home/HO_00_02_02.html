@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<script src="../../include/head.js"></script> <!-- include: 공통 헤드 -->
+</head>
+
+<body>
+<div id="wrap">
+	<script src="../../include/header.js"></script> <!-- include: 공통 헤더 -->
+
+	<div class="container">
+		<div class="area">
+			<div class="wrap">
+				<div id="contentLink" class="contents">
+					<header class="contentsHeader">
+						<div class="title">
+							<h3>2단계 인증 로그인</h3>
+							<p>회원가입 없이 성명, 주민번호 및 간단한 본인인증으로 이어드림 연금 서비스를 이용하실 수 있습니다.</p>
+						</div>
+						<script src="../../include/location.js"></script> <!-- include: 공통 현재위치 -->
+					</header>
+
+					<div class="stepLogin">
+						<div class="minNunber">
+							<b>주민등록번호</b>
+							<div class="inputBody">
+								<span><input type="tel" title="주민등록번호 앞 6자리"></span>
+								<span><input type="tel" title="주민등록번호 뒤 7자리"></span>
+							</div>
+							<div class="groupBox">
+								<div class="checkboxBox">
+									<input type="checkbox" id="checkbox1" name="checkbox">
+									<label for="checkbox1">가상키보드(마우스) 사용</label>
+								</div>
+							</div>
+						</div>
+
+						<ul class="stepBody momt16">
+							<li>
+								<button type="button" class="public">
+									<span class="icon"><i></i></span>
+									<span class="text">공동인증서</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" class="finance">
+									<span class="icon"><i></i></span>
+									<span class="text">금융인증서</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" class="browser">
+									<span class="icon"><i></i></span>
+									<span class="text">브라우저인증서</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" class="onepass">
+									<span class="icon"><i></i></span>
+									<span class="text">디지털 원패스</span>
+								</button>
+							</li>
+						</ul>
+						<div class="flexText">
+							<ul class="guideText">
+								<li>인증서 로그인을 위해 주민등록번호를 확인 합니다.</li>
+								<li>입력된 주민등록번호는 공동인증용도로만 사용됩니다.</li>
+							</ul>
+							<a href="https://minwon.nps.or.kr/html/download/browserManual.pdf" class="lineButton" target="_blank"><span>브라우저인증서 로그인 안내</span><i class="arrowRight"></i></a>
+						</div>
+						
+
+						<hr class="space onlyMobile">
+
+						<div class="step2Group">
+							<i></i>
+							<div>
+								<b>로그인 종류에 따른 접속 가능 안내</b>
+								<ul class="guideText">
+									<li>1단계 본인인증 로그인 : 상담메뉴 이용가능</li>
+									<li>2단계 인증 로그인 : 모든메뉴 이용가능</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="../../include/footer.js"></script> <!-- include: 공통 푸터 -->
+
+	<script>
+		var depth = [8, 2]; /* 현재메뉴 활성화 용: gnb에 있는 data-menu 값과 일치하게 해주세요. */
+	</script>
+</div>
+</body>
+</html>
