@@ -336,18 +336,38 @@ $(document).ready(function () {
   totalSearch = {
     init: function () {
       var $allSearchBtn = $('.allSearchBtn');
-
+      var $detailTwBtn = $('.detailTwBtn');
+      var $tbSearch = $('.tbSearch');
+      var $searchResetBtn = $tbSearch.find('.searchResetBtn');
+      var $searchScrollBody = $('.searchScrollBody');
       
       $allSearchBtn.on('click', function(e){
         e.preventDefault();
         totalSearch.open($(this));
       });
+      $detailTwBtn.on('click', function(e){
+        e.preventDefault();
+        totalSearch.detailToggle($(this));
+      });
+
+      // 통합검색 인풋 글자 체크
+      $tbSearch.find('input').on('change keyup paste', function() {
+        if($(this).val()) {
+          $(this).parent().addClass('btnShow');
+          $searchScrollBody && $searchScrollBody.slideDown(200)
+
+          $searchResetBtn.on('click', function() {
+            $(this).siblings('input').val('').parent().removeClass('btnShow');
+            $searchScrollBody && $searchScrollBody.slideUp(200)
+          });
+        } else {
+          $(this).parent().removeClass('btnShow');
+          $searchScrollBody && $searchScrollBody.slideUp(200)
+        }
+      });
     },
     open: function (_this) {
       var $totalBody = $('.totalBody');
-      var $tbSearch = $('.tbSearch');
-      var $searchResetBtn = $tbSearch.find('.searchResetBtn');
-      var $searchScrollBody = $('.searchScrollBody');
       var $tbPopular = $('.tbPopular');
       var $blind = $('.blind');
 
@@ -366,21 +386,6 @@ $(document).ready(function () {
             totalSearch.close(_this);
           });
         }});
-
-        $tbSearch.find('input').on('change keyup paste', function() {
-          if($(this).val()) {
-            $(this).parent().addClass('btnShow');
-            $searchScrollBody.slideDown(200)
-
-            $searchResetBtn.on('click', function() {
-              $(this).siblings('input').val('').parent().removeClass('btnShow');
-              $searchScrollBody.slideUp(200)
-            });
-          } else {
-            $(this).parent().removeClass('btnShow');
-            $searchScrollBody.slideUp(200)
-          }
-        });
       } else {
         totalSearch.close(_this);
       }
@@ -399,6 +404,19 @@ $(document).ready(function () {
         $blind.removeClass('active');
         $totalBody.removeClass('active');
       }});
+    },
+    detailToggle: function (_this) {
+      var $detailTwBtn = $('.detailTwBtn');
+      var $twHiddenGroup = $('.twHiddenGroup');
+
+      _this.toggleClass('active');
+      if($detailTwBtn.hasClass('active')) {
+        _this.attr('title', '상세검색 열림');
+        $twHiddenGroup.slideDown(200);
+      } else {
+        _this.attr('title', '상세검색 닫힘');
+        $twHiddenGroup.slideUp(200);
+      }
     },
   },
 

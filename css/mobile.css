@@ -188,7 +188,7 @@ hr.space.style5 { margin: 8px -16px 32px;}
 
 
 
-.totalBody { top: 72px;}
+.totalBody { position: absolute; top: 72px;}
 .totalBody .tbArea { width: 100%; padding: 0 16px;}
 .tbPopular { display: block; padding-bottom: 25px;}
 .tbPopular .popularBtns { margin-left: 0;}

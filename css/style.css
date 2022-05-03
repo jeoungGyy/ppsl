@@ -589,10 +589,12 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .totalWrap .twGroup .twSearch .searchResetBtn { right: 56px;}
 .totalWrap .twGroup .twSearch .tbBtn { right: 16px;}
 .totalWrap .twGroup .detailTwBtn { display: flex; align-items: center; justify-content: center; width: 138px; height: 48px; margin-left: 8px; color: #fff; border: solid 1px #fff;}
-.totalWrap .twGroup .detailTwBtn i { display: block; width: 16px; height: 16px; margin-left: 16px; background: url(../images/common/ico_arrow_down_w.svg) no-repeat center/cover;}
+.totalWrap .twGroup .detailTwBtn i { display: block; width: 16px; height: 16px; margin-left: 16px; background: url(../images/common/ico_arrow_down_w.svg) no-repeat center/cover; transition: transform .2s;}
+.totalWrap .twGroup .detailTwBtn.active i { transform: rotate(180deg);}
 .totalWrap .twGroup .groupBox { margin-left: 16px;}
 .totalWrap .twGroup .groupBox label { font-size: 14px; color: #fff;}
 .totalWrap .tbPopular .popularBtns button { color: #fff;}
+.totalWrap .twHiddenGroup { display: none;}
 .totalWrap .twList { margin-top: 40px; padding: 40px 0; border-top: 1px solid #fff; border-bottom: 1px solid #fff;}
 .totalWrap .twList .twSpacelist { display: flex; align-items: center;}
 .totalWrap .twList .twSpacelist b { display: block; padding: 0 40px 0 24px; color: #fff;}
@@ -617,6 +619,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .tbPopular b { display: flex; align-items: center; justify-content: center; width: 94px; height: 32px; font-size: 14px; color: #fff; background-color: #333; border-radius: 16px;}
 .tbPopular .popularBtns { flex: 1; margin-left: 24px;}
 .tbPopular .popularBtns button { display: inline-block; margin-right: 24px; font-size: 14px;}
+.tbPopular .popularBtns button:hover { text-decoration: underline;}
 .totalBody .searchScrollBody { display: none; padding: 16px 0 32px;}
 .totalBody .searchScroll { overflow-x: hidden; overflow-y: auto; height: 240px;}
 .totalBody .searchScroll::-webkit-scrollbar { width: 5px;}
