@@ -104,7 +104,7 @@ body.noScroll { overflow: hidden;}
 .contentsHeader .location button.shareBtn:hover i { background: url(../images/common/ico_share_w.svg) no-repeat center/cover;}
 
 /* 푸터 */
-.footer { height: 200px; margin-top: 40px; background-color: #767676;}
+.footer { height: 100px; margin-top: 40px; background-color: #333;}
 
 
 /* 공통 STYLE
@@ -820,6 +820,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .twListBody { }
 .twListBody { margin-top: 64px;}
 .twListBody .twlTitle { font-size: 19px; line-height: 36px;}
+.twListBody .modifiBody p { margin-top: 8px; font-size: 14px;}
 .twListBody .twlTab { display: flex; align-items: center; margin-top: 24px;}
 .twListBody .twlTab li { flex: 1;}
 .twListBody .twlTab li ~ li { margin-left: -1px;}
@@ -839,11 +840,19 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .twListBody .twlConBox >li >a .depth span { font-size: 14px;}
 .twListBody .twlConBox >li >a .depth span ~ span { position: relative; margin-left: 4px; padding-left: 20px;}
 .twListBody .twlConBox >li >a .depth span ~ span::after { content: ''; display: inline-block; position: absolute; left: 0; top: -1px; width: 16px; height: 16px; text-indent: -9999rem; background: url(../images/common/ico_bc_arrow.svg) no-repeat center/16px 16px;}
+.twListBody .twlConBox >li >a .depth span:last-child { font-weight: 700;}
 .twListBody .twlConBox >li >a h4 { margin-top: 16px; font-size: 17px; line-height: 21px;}
 .twListBody .twlConBox >li >a p { margin-top: 16px; line-height: 25px;}
+.twListBody .twlConBox >li .fileForm { margin-top: 18px;}
+.twListBody .twlConBox >li .fileForm ul li a { display: block; line-height: 21px;}
+.twListBody .twlConBox >li .fileForm ul li a .file { display: inline-block; width: 24px; height: 24px; text-indent: -99999px; vertical-align: middle; background: url(../images/common/ico_attach.svg) no-repeat center/cover;}
+.twListBody .twlConBox >li .fileForm ul li ~ li { margin-top: 4px;}
 .twListBody .twlConBox >li:hover { background-color: #f4f7fc;}
-
-
+.twListBody .twlConBox >li.empty { border-bottom: none;}
+.twListBody .twlConBox >li.empty:hover { background-color: inherit;}
+.twListBody .twlConBox >li.empty .box { display: flex; align-items: center; justify-content: center; width: 96px; height: 96px; margin: 0 auto; background-color: #f4f7fc; border-radius: 50%;}
+.twListBody .twlConBox >li.empty .box i { display: block; width: 64px; height: 64px; background: url(../images/common/ico_search_none.svg) no-repeat center/cover;}
+.twListBody .twlConBox >li.empty p { margin-top: 24px; font-size: 19px; font-weight: 700; text-align: center;}
 
 
 
