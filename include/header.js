@@ -120,7 +120,7 @@ str += '          </li>';
 str += '        </ul>';
 str += '      </nav>';
 str += '      <div class="btnsWrap">';
-str += '        <button type="button" class="allSearchBtn"><i>통합검색</i></button>';
+str += '        <button type="button" class="allSearchBtn" title="통합검색 메뉴 열기"><i>통합검색</i></button>';
 str += '        <button type="button" class="layerLink allMenuBtn" aria-controls="allMenu_pop"><i>전체 메뉴</i></button>';
 str += '      </div>';
 str += '    </div>';
@@ -142,4 +142,3 @@ str += '</div>';
 
 
 document.write(str);
-

@@ -353,7 +353,7 @@ $(document).ready(function () {
 
       if(!_this.hasClass('active')) {
         // $('body').addClass('noScroll');
-        _this.addClass('active');
+        _this.addClass('active').attr('title', '통합검색 메뉴 닫기');
         $tbPopular.addClass('hidden');
         $blind.addClass('active');
         $totalBody.addClass('active').focus();
@@ -362,11 +362,9 @@ $(document).ready(function () {
           $totalBody.addClass('show');
           
           // 레이어 팝업 외부 클릭 시 창닫기
-          // $(document).off().on('click', function (e){
-          //   if(totalBody.has(e.target).length === 0) {
-          //     layerPopup.close(_this, _target, _target_aria);
-          //   }
-          // });
+          $blind.on('click', function (e){
+            totalSearch.close(_this);
+          });
         }});
 
         $tbSearch.find('input').on('change keyup paste', function() {
@@ -383,21 +381,17 @@ $(document).ready(function () {
             $searchScrollBody.slideUp(200)
           }
         });
-
       } else {
         totalSearch.close(_this);
       }
-      
-      
-      
     },
     close: function (_this) {
       var $totalBody = $('.totalBody');
       var $tbPopular = $('.tbPopular');
       var $blind = $('.blind');
-      
+
       // $('body').removeClass('noScroll');
-      _this.removeClass('active');
+      _this.removeClass('active').attr('title', '통합검색 메뉴 열기');;
       $tbPopular.removeClass('hidden');
       $blind.removeClass('show');
       $totalBody.removeClass('show');
