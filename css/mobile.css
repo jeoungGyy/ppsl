@@ -396,6 +396,43 @@ hr.space.style5 { margin: 8px -16px 32px;}
 
 
 
+/* 메인
+**********************************************/
+
+.mainWrap { padding: 0;}
+.mainBody { display: block;}
+.mainBody .linksWrap { width: 100%; min-height: inherit; height: 400px; padding: 61px 0 0; text-align: center; border-radius: 0;}
+.mainBody .linksWrap .lwLinks { display: none;}
+.mainBody .lwLinks { margin-top: 0; padding: 32px 0 16px; text-align: center; background-color: #f7f7f7;}
+.mainBody .lwLinks::after { display: none;}
+.mainBody .lwLinks ul { margin: 8px auto 0;}
+.mainBody .lwLinks ul li { margin: 16px;}
+.mainBody .linksWrap .lwTitle .lwTitText { font-size: 14px;}
+.mainBody .linksWrap .lwTitle h2 { font-size: 42px; line-height: 59px;}
+.mainBody .linksWrap .lwTitle .lwSubText { font-size: 12px;}
+.mainBody .linksWrap .deco1 { right: -87px; top: -23px; z-index: 3; width: 447px; height: 360px; background: url(../images/home/home_spring_01_m.svg) no-repeat center/cover;}
+.mainBody .linksWrap .deco2 { display: none;}
+.mainBody .linksWrap .deco3 { right: 50%; bottom: -256px; z-index: 1; width: 613px; height: 598px; margin-right: -265px; background: url(../images/home/home_img_m.png) no-repeat center/cover;}
+.mainBody .contentWrap { width: 100%; padding: 32px 16px 0;}
+.mainFooter { margin-top: 24px; padding: 0 16px; border: none; border-radius: 0;}
+.mainFooter ul { flex-wrap: wrap; margin: -4px;}
+.mainFooter ul li { width: calc(33.33% - 8px); margin: 4px;}
+.mainFooter ul li a { flex-direction: column; height: 104px; text-align: center; background-color: #f7f7f7; border-radius: 16px;}
+.mainFooter ul li a .mfDiv { margin: 4px 0 0;}
+
+
+.mFooterCon { margin-top: 40px; padding-bottom: 0; border-top: 1px solid #dbdbdb;}
+.mFooterCon .area { padding: 40px 16px;}
+.mFooterCon .fLinks { flex-wrap: wrap; margin-top: -8px; padding-top: 0;}
+.mFooterCon .fLinks a { margin-top: 8px;}
+.mFooterCon .fSNS { position: inherit; right: inherit; top: inherit; margin-top: 16px;}
+.mFooterCon .fSNS .t select { flex: 1;}
+.mFooterCon .fSNS .b { justify-content: inherit; margin-top: 16px;}
+.mFooterCon .address p span { display: block;}
+.mFooterCon .address p span ~ span { margin: 9px 0 0;}
+.mFooterCon .address p ~ p { margin-top: 21px;}
+
+
 
 
 

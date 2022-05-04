@@ -1,0 +1,314 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<script src="../../include/head.js"></script> <!-- include: 공통 헤드 -->
+</head>
+
+<body>
+<div id="wrap">
+	<script src="../../include/header.js"></script> <!-- include: 공통 헤더 -->
+
+	<div class="container">
+		<div class="area">
+			<div id="contentLink" class="contents">
+				<div class="mainWrap">
+					<div class="mainBody">
+						<div class="linksWrap">
+							<div class="lwTitle">
+								<p class="lwTitText">연금을 <b>하나로!</b> 행복을 <b>두배로!!</b></p>
+								<h2><span>이어드림</span>연금</h2>
+								<span class="lwSubText">국민연금과 직역연금 사이 연금제도가 이어 줍니다.</span>
+							</div>
+							<div class="onlyPC">
+								<div class="lwLinks">
+									<h3>나의 연금연계는 얼마일까?</h3>
+									<ul>
+										<li>
+											<a href="#" class="link1">
+												<span class="roundWhiteBox"><i></i></span>
+												<span class="text">연금연계제도</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="link2">
+												<span class="roundWhiteBox"><i></i></span>
+												<span class="text">상담신청</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="link3">
+												<span class="roundWhiteBox"><i></i></span>
+												<span class="text">상담FAQ</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="link4">
+												<span class="roundWhiteBox"><i></i></span>
+												<span class="text">예상연금조회</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="link5">
+												<span class="roundWhiteBox"><i></i></span>
+												<span class="text">연계신청</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="link6">
+												<span class="roundWhiteBox"><i></i></span>
+												<span class="text">지급청구</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="mDeco deco1"></div>
+							<div class="mDeco deco2"></div>
+							<div class="mDeco deco3"></div>
+						</div>
+
+						<div class="onlyMobile">
+							<div class="lwLinks">
+								<h3>나의 연금연계는 얼마일까?</h3>
+								<ul>
+									<li>
+										<a href="#" class="link1">
+											<span class="roundWhiteBox"><i></i></span>
+											<span class="text">연금연계제도</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="link2">
+											<span class="roundWhiteBox"><i></i></span>
+											<span class="text">상담신청</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="link3">
+											<span class="roundWhiteBox"><i></i></span>
+											<span class="text">상담FAQ</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="link4">
+											<span class="roundWhiteBox"><i></i></span>
+											<span class="text">예상연금조회</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="link5">
+											<span class="roundWhiteBox"><i></i></span>
+											<span class="text">연계신청</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="link6">
+											<span class="roundWhiteBox"><i></i></span>
+											<span class="text">지급청구</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="contentWrap">
+							<div class="cwPop">
+								<h3>팝업존</h3>
+								<div class="cwBody">
+									<div class="slide">
+										<div class="slidesjs-slide">
+											<a href="#"><img src="../../images/home/main_notice1.png" alt="책자 안내 - 2021년 공적연금 연계제도 책자 안내"></a>
+										</div>
+										<div class="slidesjs-slide">
+											<a href="#"><img src="../../images/home/main_notice2.png" alt="이미지에 삽입 된 글자가 들어갑니다."></a>
+										</div>
+										<div class="slidesjs-slide">
+											<a href="#"><img src="../../images/home/main_notice3.png" alt="이미지에 삽입 된 글자가 들어갑니다."></a>
+										</div>
+									</div>
+									<div class="cwTotal">
+										<b class="current">1</b> /
+										<span class="total"></span>
+									</div>
+
+
+									<script>
+										$(document).ready(function(){
+											var $slide = $('.slide');
+											var $cwTotal = $('.cwTotal');
+
+											$slide.slidesjs({
+												height: 328,
+												play: {active: true, auto: true, effect: "slide", interval: 6000, restartDelay: 9000, swap: true},
+												effect : {
+													slide : { speed : 600}
+												},
+												navigation: {active: true, effect: "slide"},
+												pagination: {active: true, effect: "slide"},
+												callback: {
+													loaded: function(number) {
+														$slide.find('.slidesjs-previous').text('이전');
+														$slide.find('.slidesjs-next').text('다음');
+														$slide.find('.slidesjs-play').text('시작');
+														$slide.find('.slidesjs-stop').text('정지');
+														
+														var slideLength = $('.slidesjs-slide').length;
+														$cwTotal.find('.total').text(slideLength);
+													},
+													complete: function(number) {
+														$cwTotal.find('.current').text(number);
+													}
+												}
+											});
+											$('.slide a.slidesjs-play').click(function() {$('.slide a.slidesjs-stop').focus();});
+											$('.slide a.slidesjs-stop').click(function() {$('.slide a.slidesjs-play').focus();});
+										});
+									</script>
+								</div>
+							</div>
+							<div class="cwCov">
+								<h3>고객편의</h3>
+								<div class="cwBody">
+									<a href="#">1:1상담<span><i></i></span></a>
+									<a href="#">전화상담신청<span><i></i></span></a>
+									<a href="#">자료실<span><i></i></span></a>
+									<a href="#">증명서발급<span><i></i></span></a>
+								</div>
+							</div>
+							<div class="cwSeo">
+								<a href="#">
+									<h3><span>예상연금 조회</span></h3>
+									<p>연금연계를 얼마나 받을 수<br>있는지 알려드립니다.</p>
+								</a>
+							</div>
+							<div class="cwNot">
+								<div class="cwnTab">
+									<button type="button" class="active">공지사항</button>
+									<button type="button">연금연계소식</button>
+									<button type="button">자료실</button>
+								</div>
+								<div class="target cwBody">
+									<!-- 공지사항 -->
+									<div class="targetGroup">
+										<span class="init">연금연계</span>
+										<p class="cwTitle">국민연금과 직역연금의 연계에 관한 법률 [시행 2022. 2. 18.] [법률... <i class="new" title="신규 글">N</i></p> <!-- IE11 문제로 CSS로 두줄처리 불가합니다. 스크립트로 처리부탁드립니다. -->
+										<span class="cwDate">2022. 02.17</span>
+										<div class="etc">
+											<span class="etcInit">별정우체국연금</span>
+											<span class="etcTitle ellipsis">별정우체국 전산작업에 따른 공적연금연계 별정우체국 전산작업에 따른</span>
+										</div>
+									</div>
+									<!-- //공지사항 -->
+								</div>
+
+								<a href="#" class="cwnMoreBtn"><i>더보기</i></a>
+							</div>
+						</div>
+					</div>
+					<div class="mainFooter">
+						<ul>
+							<li>
+								<a href="#" target="_blank" class="mfMohw">
+									<i></i>
+									<div class="mfDiv">
+										<b class="colorBlue">120</b>
+										<span>보건복지부</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank" class="mfNps">
+									<i></i>
+									<div class="mfDiv">
+										<b class="colorBlue">1355</b>
+										<span>국민연금</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank" class="mfGeps">
+									<i></i>
+									<div class="mfDiv">
+										<b class="colorBlue">1588-4321</b>
+										<span>공무원연금</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank" class="mfTp">
+									<i></i>
+									<div class="mfDiv">
+										<b class="colorBlue">1588-4110</b>
+										<span>사학연금</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank" class="mfMps">
+									<i></i>
+									<div class="mfDiv">
+										<b class="colorBlue">02-3146-6471</b>
+										<span>군인연금</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank" class="mfPopa">
+									<i></i>
+									<div class="mfDiv">
+										<b class="colorBlue">02-3278-7700</b>
+										<span>별정우체국연금</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<footer class="mFooterCon">
+		<div class="area">
+			<div class="fLinks">
+				<a href="https://www.nps.or.kr/jsppage/members/personal_policy_com.jsp" class="colorBlue" target="_blank">개인정보처리방침</a>
+				<a href="#">홈페이지이용안내</a>
+				<a href="#">서비스약관</a>
+				<a href="#">찾아오시는길</a>
+			</div>
+			<div class="fSNS">
+				<div class="t">
+					<select title="관련사이트 선택" class="linkUrl">
+						<option value="">관련사이트 바로가기</option>
+						<option value="http://www.mohw.go.kr ">보건복지부</option>
+						<option value="http://www.nps.or.kr">국민연금공단</option>
+						<option value="http://www.geps.or.kr">공무원연금공단</option>
+						<option value="http://www.ktpf.or.kr">사립학교교직원연금공단</option>
+						<option value="https://www.mps.mil.kr">국방부 군인연금</option>
+						<option value="http://www.popa.or.kr">별정우체국연금관리단</option>
+						<option value="http://csa.nps.or.kr">국민연금 노후준비서비스</option>
+						<option value="http://100lifeplan.fss.or.kr">금융감독원 통합연금포탈</option>
+					</select>
+					<button type="button" class="fSNSBtn">이동</button>
+				</div>
+				<div class="b">
+					<a href="#" class="kakao" target="_blank"><i>카카오톡</i></a>
+					<a href="#" class="facebook" target="_blank"><i>페이스북</i></a>
+					<a href="#" class="twitter" target="_blank"><i>트위터</i></a>
+					<a href="#" class="instagram" target="_blank"><i>인스타그램</i></a>
+				</div>
+			</div>
+			<div class="address">
+				<p>
+					<span>[제도정책] 세종특별자치시 도움4로 13 보건복지부 (정부세종청사 10동)</span>
+					<span>[시스템 운영] 전북 전주시 덕진구 기자로 180(만성동) 국민연금</span>
+				</p>
+				<p>Copyright (C) by ppsl All right reserved.</p>
+			</div>
+		</div>
+	</footer>
+</div>
+</body>
+</html>
