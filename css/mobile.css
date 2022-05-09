@@ -578,7 +578,8 @@ hr.space.style5 { margin: 8px -16px 32px;}
 	.skipnav,
   .header,
   .footer,
-	.wrap .lnbBody { display: none;}
+	.wrap .lnbBody,
+  .contentsHeader .location { display: none;}
   .tableBody table { width: calc(100% + 3px); margin-left: -2px;}
 }
 
