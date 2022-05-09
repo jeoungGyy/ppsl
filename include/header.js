@@ -62,7 +62,7 @@ str += '              <li><a href="../consultation/HO_02_05_01.html" data-menu="
 str += '              <li><a href="../consultation/HO_02_06.html" data-menu="depth_2_6"><span>반납금 모의계산</span></a>';
 str += '            </ul>';
 str += '          </li>';
-str += '          <li><a href="../apply/HO_02_06_01.html" data-menu="depth_3"><span>신청</span></a>';
+str += '          <li><a href="../apply/HO_03_01_01.html" data-menu="depth_3"><span>신청</span></a>';
 str += '            <ul class="depth2">';
 str += '              <li><a href="../apply/HO_03_01_01.html" data-menu="depth_3_1"><span>연계신청</span></a></li>';
 str += '              <li><a href="../apply/HO_03_02_01.html" data-menu="depth_3_2"><span>신청정보변경</span></a></li>';

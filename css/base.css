@@ -107,4 +107,3 @@ table td { vertical-align: middle;}
 .ellipsis { overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
 .hidden {	display:none;}
 .invisible { position: relative; z-index: -1; display: inline-block; overflow: hidden; height: 1px; width: 1px; border: 0; clip: rect(1px, 1px, 1px, 1px); clip-path: inset(50%); word-break: initial; word-wrap: initial;}
-

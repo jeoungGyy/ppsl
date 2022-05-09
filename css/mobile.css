@@ -1,4 +1,4 @@
-@media all and (max-width:767px){
+@media screen and (max-width:567px){
 
 /* 공통 구조
 **********************************************/
@@ -553,3 +553,36 @@ hr.space.style5 { margin: 8px -16px 32px;}
 
 
 }
+
+
+
+@page {
+	size: A4;
+	margin: 20px;
+}
+@media print {
+
+	* {
+		-webkit-print-color-adjust: exact;
+		print-color-adjust: exact;
+  }
+  html, body {
+		width: 210mm;
+		height: 297mm;
+		background: #fff;
+	}
+  
+	.area,
+	.wrap .contents { width: 780px;}
+  .wrap { margin: 0; padding: 0;}
+	.skipnav,
+  .header,
+  .footer,
+	.wrap .lnbBody { display: none;}
+  .tableBody table { width: calc(100% + 3px); margin-left: -2px;}
+}
+
+
+
+
+
