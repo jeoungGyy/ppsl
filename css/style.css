@@ -804,12 +804,13 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .mainBody .cwPop { position: relative;}
 .mainBody .contentWrap .cwPop .cwBody { position: relative; margin-top: -16px;}
 .mainBody .cwPop .slide { position: relative; padding-top: 26px;}
-.mainBody .cwPop .slide >a { position: absolute; top: -2px; display: block; width: 16px; height: 16px; text-indent: -99999px;}
+.mainBody .cwPop .slide >a { display: block; position: absolute; top: -2px; width: 16px; height: 16px; text-indent: -99999px;}
 .mainBody .cwPop .slide >a.slidesjs-previous { right: 40px; background: url(../images/common/ico_arrow_left.svg) no-repeat center/cover;}
 .mainBody .cwPop .slide >a.slidesjs-next { right: 0; background: url(../images/common/ico_arrow_right.svg) no-repeat center/cover;}
 .mainBody .cwPop .slide >a.slidesjs-play { right: 20px; background: url(../images/common/ico_play_indi.svg) no-repeat center/cover;}
 .mainBody .cwPop .slide >a.slidesjs-stop { right: 20px; background: url(../images/common/ico_stop.svg) no-repeat center/cover;}
 .mainBody .cwPop .slide img { width: 100%; height: auto;}
+.mainBody .cwPop .slide .slidesjs-slide a { display: block;}
 .mainBody .cwPop .slidesjs-pagination { display: none;}
 .mainBody .cwPop .cwTotal { position: absolute; right: 64px; top: 0; font-size: 14px; color: #767676;}
 .mainBody .cwPop .cwTotal .current { font-size: 14px;}
@@ -837,7 +838,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .mainBody .cwNot .cwnTab button:hover { color: #333;}
 .mainBody .cwNot .targetGroup { padding: 25px 24px; border: solid 1px #dbdbdb; border-radius: 16px;}
 .mainBody .cwNot .targetGroup .init { display: inline-block; height: 20px; padding: 0 8px; font-size: 12px; color: #fff; line-height: 20px; background-color: #366cc3; border-radius: 10px;}
-.mainBody .cwNot .targetGroup .cwTitle { margin-top: 10px; line-height: 24px;}
+.mainBody .cwNot .targetGroup .cwTitle { display: block; margin-top: 10px; line-height: 24px;}
 .mainBody .cwNot .targetGroup .cwTitle .new { display: inline-block; width: 16px; height: 16px; margin-top: -2px; font-family: "Montserrat"; font-size: 10px; font-weight: 600; font-style: normal; color: #fff; text-align: center; line-height: 17px; vertical-align: middle; background-color: #fc676c; border-radius: 4px;}
 .mainBody .cwNot .targetGroup .cwDate { display: block; margin-top: 13px; font-size: 14px; color: #767676;}
 .mainBody .cwNot .targetGroup .etc { display: flex; align-items: center; margin-top: 18px; padding-top: 17px; border-top: solid 1px #dbdbdb;}
