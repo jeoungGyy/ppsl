@@ -73,6 +73,7 @@ select { height: 40px; padding: 0 40px 0 16px; font-family: "NanumBarunGothic"; 
 select:hover { border-color: #333;}
 select[disabled] { color: #959595; border-color: #dbdbdb; background: #f7f7f7 url(../images/common/ico_dropdown_disable.svg) no-repeat right 16px top 12px/16px 16px;}
 select::-ms-expand { display: none;} /* 화살표 없애기 for IE10, 11*/
+select.lineBlack { border-color: #333;}
 input[type=submit] { border:0; cursor:pointer; -webkit-appearance: none;}
 input[type=file],
 input[type=text],

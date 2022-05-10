@@ -6,6 +6,7 @@ $(document).ready(function () {
 		init: function () {
 			common.initial();
 			common.groupBox();
+			common.selectBox();
 			common.searchReset();
 			common.menu();
 			common.menu_active();
@@ -51,6 +52,17 @@ $(document).ready(function () {
       $('.groupBox input').iCheck({
         checkboxClass: 'icheckbox',
         radioClass: 'iradio',
+      });
+		},
+     /* 셀렉트박스 */
+		selectBox: function () {
+      var select = $('select');
+      select.change(function() {
+        var _result = $(this).val();
+        if(_result) {
+          $(this).addClass('lineBlack');
+          console.log($(this))
+        }
       });
 		},
     /* 인풋 글자 체크 */
