@@ -127,10 +127,12 @@ body.noScroll { overflow: hidden;}
 
 /* 글꼴 */
 .fontMontserrat { font-family: 'Montserrat', "NanumBarunGothic"; font-weight: 400;}
-.fontEliceDigital { font-family: 'EliceDigitalBaeum-Bd', "NanumBarunGothic";}
+.fontEliceDigital { font-family: 'EliceDigitalBaeum', "NanumBarunGothic";}
 #wrap .fontSize14 { font-size: 14px;}
 #wrap .fontSize16 { font-size: 16px;}
 #wrap .wNormal { font-weight: 400;}
+#wrap .lh24 { line-height: 24px;}
+
 .subText { margin-top: 8px; font-size: 14px;}
 .requireBody { display: flex; align-items: center; justify-content: space-between;}
 .requireBody .requireText { margin-top: 0;}
@@ -209,6 +211,7 @@ hr.space { margin: 40px 0; height: 1px; background-color: #dbdbdb;}
 .btnsGroup button ~ button { margin-left: 8px;}
 
 /* 셀렉트 박스 */
+select.wp100 { width: 100%;}
 select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 8px;}
 
 /* 체크박스, 라디오 박스 */
@@ -265,7 +268,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 /* searchBody */
 .searchBody { margin-top: 40px; padding: 24px 48px 24px 0; background-color: #f7f7f7;}
 .searchBody .controlBox { display: flex;}
-.searchBody .controlBox li { display: flex; align-items: baseline;}
+.searchBody .controlBox li { display: flex; align-items: center;}
 .searchBody .controlBox li label { width: 92px; padding-left: 48px; font-weight: 700;}
 .searchBody .controlBox li label.w2 { width: 106px;}
 .searchBody .controlBox li label.w3 { width: 120px;}
@@ -435,6 +438,12 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 /* paragraphGroup */
 .paragraphGroup p { line-height: 24px;}
 .paragraphGroup p ~ p { margin-top: 20px;}
+
+/* 탭 */
+.aTab { display: flex; align-items: center; margin-top: 40px;}
+.aTab li { width: 50%;}
+.aTab li a { display: flex; align-items: center; justify-content: center; height: 48px; border: 1px solid #dbdbdb;}
+.aTab li a.active { color: #fff; border-color: #366cc3; background-color: #366cc3;}
 
 /* loading */
 .load8 { overflow: hidden;}
@@ -1033,6 +1042,24 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .twListBody .twlConBox >li.empty .box { display: flex; align-items: center; justify-content: center; width: 96px; height: 96px; margin: 0 auto; background-color: #f4f7fc; border-radius: 50%;}
 .twListBody .twlConBox >li.empty .box i { display: block; width: 64px; height: 64px; background: url(../images/common/ico_search_none.svg) no-repeat center/cover;}
 .twListBody .twlConBox >li.empty p { margin-top: 24px; font-size: 19px; font-weight: 700; text-align: center;}
+
+
+
+
+
+
+/* 마이페이지
+**********************************************/
+
+/* 예상연금/반납금 */
+.roundMyBox { margin-top: 40px; padding: 32px 48px; background-color: rgba(54, 108, 195, 0.05); border-radius: 8px;}
+.roundMyBox .name { display: flex; align-items: center; align-items: flex-end;}
+.roundMyBox .name .fontEliceDigital { position: relative; font-size: 24px; font-weight: 700;}
+.roundMyBox .name .fontEliceDigital::after { content: ''; display: block; position: absolute; left: 0; bottom: -5px; width: 100%; height: 14px; background-color: rgba(54, 108, 195, 0.1);}
+.roundMyBox .name .text { margin-left: 2px;}
+.roundMyBox p { margin-top: 20px; font-size: 14px; line-height: 21px;}
+
+
 
 
 

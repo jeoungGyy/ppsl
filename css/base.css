@@ -34,18 +34,18 @@
 @font-face {
 	font-family: 'EliceDigitalBaeum';
 	font-weight: 400;
-	src: local("EliceDigitalBaeum-Regular"),
-	url(../fonts/EliceDigitalBaeum/EliceDigitalBaeum_Regular.woff2) format('woff2'),
-	url(../fonts/EliceDigitalBaeum/EliceDigitalBaeum_Regular.woff) format('woff'),
-	url(../fonts/EliceDigitalBaeum/EliceDigitalBaeum_Regular.ttf) format('truetype');
+	src: local("EliceDigitalBaeumRegular"),
+	url(../fonts/EliceDigitalBaeum/EliceDigitalBaeumRegular.woff2) format('woff2'),
+	url(../fonts/EliceDigitalBaeum/EliceDigitalBaeumRegular.woff) format('woff'),
+	url(../fonts/EliceDigitalBaeum/EliceDigitalBaeumRegular.ttf) format('truetype');
 }
 @font-face {
 	font-family: 'EliceDigitalBaeum';
 	font-weight: 700;
-	src: local("EliceDigitalBaeum-Bd"),
-	url(../fonts/EliceDigitalBaeum/EliceDigitalBaeum-Bd.woff2) format('woff2'),
-	url(../fonts/EliceDigitalBaeum/EliceDigitalBaeum-Bd.woff) format('woff'),
-	url(../fonts/EliceDigitalBaeum/EliceDigitalBaeum-Bd.ttf) format('truetype');
+	src: local("EliceDigitalBaeumBold"),
+	url(../fonts/EliceDigitalBaeum/EliceDigitalBaeumBold.woff2) format('woff2'),
+	url(../fonts/EliceDigitalBaeum/EliceDigitalBaeumBold.woff) format('woff'),
+	url(../fonts/EliceDigitalBaeum/EliceDigitalBaeumBold.ttf) format('truetype');
 }
 
 html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,pre,a,main,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strong,sub,sup,var,b,u,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td, header, article, section, aside, nav, figure, figcaption, adress, textarea, input[type=text], input[type=password], input[type=file], input[type=email], input[type=tel] {

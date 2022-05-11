@@ -1,0 +1,352 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<script src="../../include/head.js"></script> <!-- include: 공통 헤드 -->
+</head>
+
+<body>
+<div id="wrap">
+	<script src="../../include/header.js"></script> <!-- include: 공통 헤더 -->
+
+	<div class="container">
+		<div class="area">
+			<div class="wrap">
+				<div class="lnbBody">
+					<h2></h2>
+					<nav class="lnb">
+					</nav>
+				</div>
+
+				<div id="contentLink" class="contents">
+					<header class="contentsHeader">
+						<div class="title">
+							<h3>예상연금조회</h3>
+							<p>나의 예상연금을 조회 할 수 있습니다.</p>
+						</div>
+						<script src="../../include/location.js"></script> <!-- include: 공통 현재위치 -->
+					</header>
+
+					<!-- 탭영역 -->
+					<!-- PC -->
+					<div class="onlyPC">
+						<ul class="aTab">
+							<li><a href="#" class="active"><span class="invisible">현재 단계</span>예상연계연금조회</a></li>
+							<li><a href="#">상세연금조회</a></li>
+						</ul>
+					</div>
+					<!-- //PC -->
+
+					<!-- mobile -->
+					<div class="onlyMobile">
+						<select class="wp100 momt24" title="예상연금조회 메뉴 이동">
+							<option>예상연계연금조회</option>
+							<option>상세연금조회</option>
+						</select>
+					</div>
+					<!-- //mobile -->
+					<!-- //탭영역 -->
+
+					<div class="roundMyBox">
+						<div class="name">
+							<div class="fontEliceDigital colorBlue">홍길동</div>
+							<span class="text">님 환영합니다.</span>
+						</div>
+						<p>
+							고객님은 현재 소득으로 만60세까지 국민연금을 납부하실 경우 연계연금을 아래와 같이 수령할 것으로 예상됩니다.<br>
+							단, 국민연금의 상실 또는 납부예외중인 경우는 현재 납부한 내역으로만 예상연금을 산정 하였습니다.
+						</p>
+					</div>
+
+					<hr class="space style3 onlyMobile">
+
+					<div class="m_toggleArea">
+						<button class="flexLeft spaceBetween toggleGroup pcmt40 active" title="확장됨">
+							<b class="defaultH4">현재가치로 보기</b>
+							<span class="toggleBtn onlyMobile"><i>현재가치로 보기 토글</i></span>
+						</button>
+						<div class="target boardBody">
+							<!-- PC -->
+							<div class="whTableBody mt2 onlyPC">
+								<table>
+									<caption>예상연금조회 현재가치로 보기</caption>
+									<colgroup>
+										<col style="width: 210px;">
+										<col style="width: 160px;">
+										<col>
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row" colspan="2">예상 연계연금액(현재가치기준)</th>
+											<td>매월 0,000,000원(연 000,000원) / 총연계기간 00년 00개월</td>
+										</tr>
+										<tr>
+											<th id="b" rowspan="2">연계퇴직연금(사학)</th>
+											<th id="b1">예상연금액</th>
+											<td headers="b b1">000,000,000원 ( 0000년 00월 부터 )</td>
+										</tr>
+										<tr>
+											<th id="b2">총(예상)재직기간</th>
+											<td headers="b b2">000,000,000원 ( 0000년 00월 부터 )</td>
+										</tr>
+										<tr>
+											<th id="c" rowspan="2">연계노령연금</th>
+											<th id="c1">예상연금액</th>
+											<td headers="c c1">000,000,000원 ( 0000년 00월 부터 )</td>
+										</tr>
+										<tr>
+											<th id="c2">총(예상)재직기간</th>
+											<td headers="c c2">00년 00월 ( 000개월 )</td>
+										</tr>
+										<tr>
+											<th id="d" rowspan="2">연계퇴직 유족연금(사학)</th>
+											<th id="d1">예상연금액</th>
+											<td headers="d d1">000,000,000원</td>
+										</tr>
+										<tr>
+											<th id="d2">지급사유발생일</th>
+											<td headers="d d2">사망일 기준</td>
+										</tr>
+										<tr>
+											<th id="e" rowspan="2">연계노령 유족연금</th>
+											<th id="e1">예상연금액</th>
+											<td headers="e e1">000,000,000원</td>
+										</tr>
+										<tr>
+											<th id="e2">지급사유발생일</th>
+											<td headers="e e2">사망일 기준</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- //PC -->
+
+
+							<!-- Mobile -->
+							<div class="onlyMobile m_tableBody noBorder">
+								<ul class="mListMulti">
+									<li>
+										<div class="groupBox">
+											<p class="fontSize14">예상 연계연금액(현재가치기준)</p>
+											<h5 class="defaultH5 lh24 momt8">매월 0,000,000원(연 000,000원) / <br>총연계기간 00년 00개월</h5>
+										</div>
+										<ul class="grayBoxList">
+											<li>
+												<div class="titleStyle">
+													<div class="flexLeft flexEnd">
+														<h6 class="name">연계퇴직연금(사학)</h6>
+													</div>
+												</div>
+												
+												<ul class="msList">
+													<li class="lineBreak">
+														<span>예상연금액</span>
+														<b>000,000,000원<br>
+															( 0000년 00월 부터 )</b>
+													</li>
+													<li>
+														<span>총(예상)재직기간</span>
+														<b>00 년 00 월<br>
+															( 000 개월 )</b>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<div class="titleStyle">
+													<div class="flexLeft flexEnd">
+														<h6 class="name">연계노령연금</h6>
+													</div>
+												</div>
+												
+												<ul class="msList">
+													<li class="lineBreak">
+														<span>예상연금액</span>
+														<b>000,000,000원<br>
+															( 0000년 00월 부터 )</b>
+													</li>
+													<li>
+														<span>총(예상)재직기간</span>
+														<b>00 년 00 월<br>
+															( 000 개월 )</b>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<div class="titleStyle">
+													<div class="flexLeft flexEnd">
+														<h6 class="name">연계퇴직 유족연금(사학)</h6>
+													</div>
+												</div>
+												
+												<ul class="msList">
+													<li class="lineBreak">
+														<span>예상연금액</span>
+														<b>000,000,000원</b>
+													</li>
+													<li>
+														<span>지급사유발생일</span>
+														<b>사망일 기준</b>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<div class="titleStyle">
+													<div class="flexLeft flexEnd">
+														<h6 class="name">연계노령 유족연금</h6>
+													</div>
+												</div>
+												
+												<ul class="msList">
+													<li class="lineBreak">
+														<span>예상연금액</span>
+														<b>000,000,000원</b>
+													</li>
+													<li>
+														<span>지급사유발생일</span>
+														<b>사망일 기준</b>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<!-- //Mobile -->
+
+							<div class="btnsGroup flexEnd momb32">
+								<button type="button" class="button h48 blue">연금계산내역 확인하기</button>
+							</div>
+						</div>
+					</div>
+
+					<hr class="space style2">
+
+					<div class="pcmt40 m_toggleArea">
+						<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+							<b class="defaultH4">연금계산내역 결과</b>
+							<span class="toggleBtn onlyMobile"><i>연금계산내역 결과 토글</i></span>
+						</button>
+						<div class="target targetHidden boardBody">
+							<!-- PC -->
+							<div class="whTableBody mt2 onlyPC">
+								<table>
+									<caption>예상연금조회 연금계산내역 결과</caption>
+									<colgroup>
+										<col style="width: 180px;">
+										<col style="width: 125px;">
+										<col style="width: 220px;">
+										<col style="width: 125px;">
+										<col>
+									</colgroup>
+									<tbody>
+										<tr>
+											<th id="i">연계퇴직연금(사학)</th>
+											<th id="i1">총 재직기간</th>
+											<td headers="i i1">000개월</td>
+											<th id="i2">기준소득월액</th>
+											<td headers="i i2">000,000원</td>
+										</tr>
+										<tr>
+											<th id="j" rowspan="3">연계노령연금</th>
+											<th id="j1">총가입개월</th>
+											<td headers="j j1">000개월</td>
+											<th id="j2">총납부보험료</th>
+											<td headers="j j2">000,000원</td>
+										</tr>
+										<tr>
+											<th id="j3">지급율</th>
+											<td headers="j j3">00%</td>
+											<th id="j4">기본연금액</th>
+											<td headers="j j4">000,000원</td>
+										</tr>
+										<tr>
+											<th id="j5">A값</th>
+											<td headers="j j5">000,000원</td>
+											<th id="j6">B값</th>
+											<td headers="j j6">000,000원</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- //PC -->
+
+
+							<!-- Mobile -->
+							<div class="onlyMobile m_tableBody noBorder">
+								<ul class="mList">
+									<li>
+										<div class="roundBoxGray">
+											<div class="boxGray">
+												<b>연계퇴직연금(사학)</b>
+											</div>
+											
+											<ul class="msList bdt">
+												<li>
+													<label>총 재직기간</label>
+													<b>000 개월</b>
+												</li>
+												<li>
+													<label>기준소득월액</label>
+													<b>000,000원</b>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="roundBoxGray">
+											<div class="boxGray">
+												<b>연계노령연금</b>
+											</div>
+											
+											<ul class="msList bdt">
+												<li>
+													<label>총가입개월</label>
+													<b>000 개월</b>
+												</li>
+												<li>
+													<label>총납부보험료</label>
+													<b>000,000원</b>
+												</li>
+												<li>
+													<label>지급율</label>
+													<b>00%</b>
+												</li>
+												<li>
+													<label>기본연금액</label>
+													<b>000,000원</b>
+												</li>
+												<li>
+													<label>A값</label>
+													<b>000,000원</b>
+												</li>
+												<li>
+													<label>B값</label>
+													<b>000,000원</b>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!-- //Mobile -->
+							<ul class="guideText mt">
+								<li>A 값 : 연금 수급직전 3년간 가입자 전체의 평균 소득월액의 평균액</li>
+								<li>B 값 : 가입자 개인의 가입기간중 표준소득월액을 현재가치로 재평가한 평균액</li>
+							</ul>
+						</div>
+					</div>
+
+					<script src="../../include/evaluation.js"></script> <!-- include: 공통 평가 -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="../../include/footer.js"></script> <!-- include: 공통 푸터 -->
+
+	<script>
+		var depth = [6, 2, 1]; /* 현재메뉴 활성화 용: gnb에 있는 data-menu 값과 일치하게 해주세요. */
+	</script>
+</div>
+</body>
+</html>
