@@ -52,6 +52,7 @@
 #wrap .pcmt40 { margin-top: 0;}
 
 #wrap .m_ml0 { margin-left: 0;}
+#wrap .momt0 { margin-top: 0px;}
 #wrap .momt8 { margin-top: 8px;}
 #wrap .momt16 { margin-top: 16px;}
 #wrap .momt24 { margin-top: 24px;}
@@ -332,8 +333,13 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .m_hTableBody >li .dateSelect select { flex: 1;}
 .m_hTableBody >li .dateSelect .other { width: 20px; text-align: right;}
 .m_hTableBody >li .dateSelect .other + select { margin-left: 12px;}
+.m_hTableBody >li .calendarBlock { padding-right: 18px;}
+.m_hTableBody >li .calendarBlock .calendarBody ~ .calendarBody { margin-top: 4px;}
+.m_hTableBody >li .calendarBlock .calendarBody:first-child { position: relative;}
+.m_hTableBody >li .calendarBlock .calendarBody:first-child::after { content: '~'; display: block; position: absolute; right: -16px; top: 14px;}
 
 .m_hTableBody >li.empty { text-align: center;}
+.m_hTableBody.pdb { padding-bottom: 24px;}
 
 /* m_xBtnBody */
 .m_xBtnBody { margin-top: 8px;}
@@ -560,7 +566,7 @@ hr.space.style5 { margin: 8px -16px 32px;}
 /* 예상연금/반납금 */
 .roundMyBox { padding: 24px 32px;}
 
-
+.lineGroupBox { margin: 0 -16px; padding: 16px 16px 0; border-top: 12px solid #f7f7f7;}
 
 
 

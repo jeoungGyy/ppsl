@@ -265,6 +265,12 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .flexBtnOne button,
 .flexBtnOne .other { margin-left: 4px;}
 
+/* calendarFlex */
+.calendarFlex { display: flex; align-items: center; flex: 1;}
+.calendarFlex .calendarBody { position: relative; flex: 1;}
+.calendarFlex .calendarBody ~ .calendarBody { margin-left: 20px;}
+.calendarFlex .calendarBody ~ .calendarBody::after { content: '~'; display: block; position: absolute; left: -15px; top: 50%; color: #5a5a5a; line-height: 1; margin-top: -7px;}
+
 /* searchBody */
 .searchBody { margin-top: 40px; padding: 24px 48px 24px 0; background-color: #f7f7f7;}
 .searchBody .controlBox { display: flex;}
@@ -294,10 +300,6 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .searchBody .controlBox li.wp70 { width: 70%;}
 .searchBody .controlBox.flexWrap { flex-wrap: wrap; margin-top: -16px;}
 .searchBody .controlBox.flexWrap li { margin-top: 16px;}
-.searchBody .controlBox.flexWrap li .flex1 { display: flex; align-items: center; flex: 1;}
-.searchBody .controlBox.flexWrap li .flex1 .calendarBody { position: relative; flex: 1;}
-.searchBody .controlBox.flexWrap li .flex1 .calendarBody ~ .calendarBody { margin-left: 20px;}
-.searchBody .controlBox.flexWrap li .flex1 .calendarBody ~ .calendarBody::after { content: '~'; display: block; position: absolute; left: -15px; top: 13px; color: #5a5a5a;}
 .searchBody.pl48 { padding-left: 48px;}
 
 /* controlBody */
@@ -442,7 +444,9 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 /* 탭 */
 .aTab { display: flex; align-items: center; margin-top: 40px;}
 .aTab li { width: 50%;}
+.aTab li button,
 .aTab li a { display: flex; align-items: center; justify-content: center; height: 48px; border: 1px solid #dbdbdb;}
+.aTab li button.active,
 .aTab li a.active { color: #fff; border-color: #366cc3; background-color: #366cc3;}
 
 /* loading */
@@ -521,6 +525,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .tableBody table td select { width: 100%; height: 32px; font-size: 14px; background-position: right 16px top 7px;}
 .tableBody table td .calendarBody button { width: 32px; height: 32px;}
 .tableBody table td .block { display: block; text-align: left;}
+.tableBody table td .twinCalendar {}
 .tableBody table td.empty { padding: 40px 0;}
 .tableBody table tr.off { background-color: #f7f7f7;}
 .tableBody table tr.off .colorBlue { color: inherit !important;}
@@ -1059,6 +1064,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .roundMyBox .name .text { margin-left: 2px;}
 .roundMyBox p { margin-top: 20px; font-size: 14px; line-height: 21px;}
 
+.lineGroupBox { padding-top: 16px; border-top: 1px solid #333;}
 
 
 

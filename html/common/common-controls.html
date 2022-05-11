@@ -159,6 +159,20 @@
 
 	<br><br><br>
 
+	<h3>calendarFlex</h3>
+	<div>
+		<div class="calendarFlex">
+			<div class="calendarBody" role="application">
+				<input type="text" class="jQdate" title="수령일 시작일 선택" readonly placeholder="날짜선택">
+			</div>
+			<div class="calendarBody" role="application">
+				<input type="text" class="jQdate" title="수령일 종료일 선택" readonly placeholder="날짜선택">
+			</div>
+		</div>
+	</div>
+
+	<br><br><br>
+
 	<h3>searchBody</h3>
 	<div>
 		<div class="searchBody m_toggleArea">
@@ -350,12 +364,12 @@
 				</li>
 				<li class="wp60">
 					<label class="w2">수령일</label>
-					<div class="flex1">
+					<div class="calendarFlex">
 						<div class="calendarBody" role="application">
-							<input type="text" class="jQdate" title="첫번째 출생(입양)일자 선택" readonly placeholder="날짜선택">
+							<input type="text" class="jQdate" title="수령일 시작일 선택" readonly placeholder="날짜선택">
 						</div>
 						<div class="calendarBody" role="application">
-							<input type="text" class="jQdate" title="첫번째 출생(입양)일자 선택" readonly placeholder="날짜선택">
+							<input type="text" class="jQdate" title="수령일 종료일 선택" readonly placeholder="날짜선택">
 						</div>
 					</div>
 				</li>
@@ -1272,115 +1286,31 @@
 					</div>
 					<button type="button" class="listRemove"><i>첫번째 부양가족 삭제</i></button>
 				</li>
+			</ul>
+			<br><br>
+			<ul class="m_xBtnBody momt0">
 				<li>
-					<ul class="m_hTableBody">
+					<ul class="m_hTableBody pdb">
 						<li>
-							<label>이름 <span class="colorOrange">*</span></label>
-							<div>
-								<input type="text" title="두번째 부양가족 이름 입력" required placeholder="실명입력">
+							<label>가입기간</label>
+							<div class="calendarBlock">
+								<div class="calendarBody" role="application">
+									<input type="text" class="jQdate hasDatepicker" title="첫번째 가입기간 시작일 선택" readonly="" placeholder="날짜선택" id="dp1652252923739"><button type="button" class="ui-datepicker-trigger">달력선택</button>
+								</div>
+								<div class="calendarBody" role="application">
+									<input type="text" class="jQdate hasDatepicker" title="첫번째 가입기간 종료일 선택" readonly="" placeholder="날짜선택" id="dp1652252923740"><button type="button" class="ui-datepicker-trigger">달력선택</button>
+								</div>
 							</div>
 						</li>
 						<li>
-							<label>주민번호 <span class="colorOrange">*</span></label>
-							<div>
-								<input type="tel" title="두번째 부양가족 주민번호 입력" required placeholder="13자리 주민번호 입력">
-							</div>
-						</li>
-						<li>
-							<label>관계 <span class="colorOrange">*</span></label>
-							<div>
-								<select title="두번째 부양가족 관계선택">
-									<option>관계선택</option>
-									<option>남편</option>
-									<option>남편(사실혼)</option>
-									<option>처</option>
-									<option>처(사실혼)</option>
-									<option>자녀의 부</option>
-									<option>자녀의 부(양부)</option>
-									<option>자녀의 모</option>
-									<option>자녀의 모(양모)</option>
-								</select>
-							</div>
-						</li>
-						<li>
-							<label>장애여부 <span class="colorOrange">*</span></label>
-							<div class="roundBoxGray">
-								<ul class="groupBox flexLeft">
-									<li>
-										<div class="radioBox">
-											<input type="radio" id="m_testRadio12_1" name="m_testRadio12" required title="두번째 부양가족 장애 선택">
-											<label for="m_testRadio12_1">장애</label>
-										</div>
-									</li>
-									<li>
-										<div class="radioBox">
-											<input type="radio" id="m_testRadio12_2" name="m_testRadio12" required title="두번째 부양가족 비장애 선택">
-											<label for="m_testRadio12_2">비장애</label>
-										</div>
-									</li>
-								</ul>
+							<label>기준 소득월액</label>
+							<div class="flexBtnOne">
+								<input type="text" title="첫번째 기준 소득월액 입력">
+								<span class="other">원</span>
 							</div>
 						</li>
 					</ul>
-					<div class="bottomStyle">
-						<button type="button" class="m_button" disabled>확인</button>
-					</div>
-					<button type="button" class="listRemove"><i>두번째 부양가족 삭제</i></button>
-				</li>
-				<li>
-					<ul class="m_hTableBody">
-						<li>
-							<label>이름 <span class="colorOrange">*</span></label>
-							<div>
-								<input type="text" title="세번째 부양가족 이름 입력" required placeholder="실명입력">
-							</div>
-						</li>
-						<li>
-							<label>주민번호 <span class="colorOrange">*</span></label>
-							<div>
-								<input type="tel" title="세번째 부양가족 주민번호 입력" required placeholder="13자리 주민번호 입력">
-							</div>
-						</li>
-						<li>
-							<label>관계 <span class="colorOrange">*</span></label>
-							<div>
-								<select title="세번째 부양가족 관계선택">
-									<option>관계선택</option>
-									<option>남편</option>
-									<option>남편(사실혼)</option>
-									<option>처</option>
-									<option>처(사실혼)</option>
-									<option>자녀의 부</option>
-									<option>자녀의 부(양부)</option>
-									<option>자녀의 모</option>
-									<option>자녀의 모(양모)</option>
-								</select>
-							</div>
-						</li>
-						<li>
-							<label>장애여부 <span class="colorOrange">*</span></label>
-							<div class="roundBoxGray">
-								<ul class="groupBox flexLeft">
-									<li>
-										<div class="radioBox">
-											<input type="radio" id="m_testRadio13_1" name="m_testRadio13" required title="세번째 부양가족 장애 선택">
-											<label for="m_testRadio13_1">장애</label>
-										</div>
-									</li>
-									<li>
-										<div class="radioBox">
-											<input type="radio" id="m_testRadio13_2" name="m_testRadio13" required title="세번째 부양가족 비장애 선택">
-											<label for="m_testRadio13_2">비장애</label>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</li>
-					</ul>
-					<div class="bottomStyle">
-						<span class="text">확인됨</span>
-					</div>
-					<button type="button" class="listRemove"><i>세번째 부양가족 삭제</i></button>
+					<button type="button" class="listRemove"><i>첫번째 향후 소득 및 가입기간 삭제</i></button>
 				</li>
 			</ul>
 

@@ -1,0 +1,359 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<script src="../../include/head.js"></script> <!-- include: 공통 헤드 -->
+</head>
+
+<body>
+<div id="wrap">
+	<script src="../../include/header.js"></script> <!-- include: 공통 헤더 -->
+
+	<div class="container">
+		<div class="area">
+			<div class="wrap">
+				<div class="lnbBody">
+					<h2></h2>
+					<nav class="lnb">
+					</nav>
+				</div>
+
+				<div id="contentLink" class="contents">
+					<header class="contentsHeader">
+						<div class="title">
+							<h3>예상연금조회</h3>
+							<p>나의 예상연금을 조회 할 수 있습니다.</p>
+						</div>
+						<script src="../../include/location.js"></script> <!-- include: 공통 현재위치 -->
+					</header>
+
+					<!-- 탭영역 -->
+					<!-- PC -->
+					<div class="onlyPC">
+						<ul class="aTab">
+							<li><a href="HO_06_02_01_01.html"><span class="invisible">현재 단계</span>예상연계연금조회</a></li>
+							<li><a href="HO_06_02_01_02_01.html" class="active">상세연금조회</a></li>
+						</ul>
+					</div>
+					<!-- //PC -->
+
+					<!-- mobile -->
+					<div class="onlyMobile">
+						<select class="wp100 momt24" title="예상연금조회 메뉴 이동">
+							<option>예상연계연금조회</option>
+							<option>상세연금조회</option>
+						</select>
+					</div>
+					<!-- //mobile -->
+					<!-- //탭영역 -->
+
+					<div class="setpBodyStyle">
+						<ul class="stepByStyle">
+							<li class="active">
+								<span class="invisible">현재 단계</span>
+								<span class="iconRound"><i></i></span>
+								<span class="text">조건 설정 및 소득 입력</span>
+							</li>
+							<li>
+								<span class="iconRound"><i></i></span>
+								<span class="text">입력내용 확인</span>
+							</li>
+							<li>
+								<span class="iconRound"><i></i></span>
+								<span class="text">결과 및 비교조회</span>
+							</li>
+						</ul>
+						<span class="line"></span>
+					</div>
+
+					<div class="proposalBody">
+						<div class="subFill pcmt40 momt24">
+							<h4 class="defaultH4">연계노령연금</h4>
+						</div>
+
+						<div class="pcmt24 m_toggleArea">
+							<button class="flexLeft spaceBetween toggleGroup active" title="확장됨">
+								<b class="defaultH5">향후 소득 및 가입기간 추가</b>
+								<span class="toggleBtn onlyMobile"><i>향후 소득 및 가입기간 추가 토글</i></span>
+							</button>
+							<div class="target">
+								<!-- PC -->
+								<div class="onlyPC">
+									<div class="tableBody padding12 vaTop">
+										<table>
+											<caption>향후 소득 및 가입기간 추가 : 선택, 가입기간, 기준 소득월액으로 구성</caption>
+											<colgroup>
+												<col style="width: 75px;">
+												<col style="width: 415px;">
+												<col>
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col">선택</th>
+													<th scope="col">가입기간</th>
+													<th scope="col">기준 소득월액</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>
+														<div class="groupBox single">
+															<input type="checkbox" name="wCheckbox" title="첫번째 향후 소득 및 가입기간 선택">
+														</div>
+													</td>
+													<td>
+														<div class="calendarFlex">
+															<div class="calendarBody" role="application">
+																<input type="text" class="jQdate" title="첫번째 가입기간 시작일 선택" readonly placeholder="날짜선택">
+															</div>
+															<div class="calendarBody" role="application">
+																<input type="text" class="jQdate" title="첫번째 가입기간 종료일 선택" readonly placeholder="날짜선택">
+															</div>
+														</div>
+													</td>
+													<td>
+														<div class="flexBtnOne">
+															<input type="text" title="첫번째 기준 소득월액 입력">
+															<span class="other">원</span>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="groupBox single">
+															<input type="checkbox" name="wCheckbox" title="두번째 향후 소득 및 가입기간 선택">
+														</div>
+													</td>
+													<td>
+														<div class="calendarFlex">
+															<div class="calendarBody" role="application">
+																<input type="text" class="jQdate" title="두번째 가입기간 시작일 선택" readonly placeholder="날짜선택">
+															</div>
+															<div class="calendarBody" role="application">
+																<input type="text" class="jQdate" title="두번째 가입기간 종료일 선택" readonly placeholder="날짜선택">
+															</div>
+														</div>
+													</td>
+													<td>
+														<div class="flexBtnOne">
+															<input type="text" title="두번째 기준 소득월액 입력">
+															<span class="other">원</span>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="tableFooterControl flexLeft alignCenter justifyRight">
+										<button type="button" class="button h24 lineBlack">입력항목삭제</button>
+										<button type="button" class="button h24 lineBlack">입력항목추가</button>
+									</div>
+								</div>
+								<!-- //PC -->
+
+								<!-- Mobile -->
+								<div class="onlyMobile">
+									<ul class="m_xBtnBody momt0">
+										<li>
+											<ul class="m_hTableBody pdb">
+												<li>
+													<label>가입기간</label>
+													<div class="calendarBlock">
+														<div class="calendarBody" role="application">
+															<input type="text" class="jQdate" title="첫번째 가입기간 시작일 선택" readonly placeholder="날짜선택">
+														</div>
+														<div class="calendarBody" role="application">
+															<input type="text" class="jQdate" title="첫번째 가입기간 종료일 선택" readonly placeholder="날짜선택">
+														</div>
+													</div>
+												</li>
+												<li>
+													<label>기준 소득월액</label>
+													<div class="flexBtnOne">
+														<input type="text" title="첫번째 기준 소득월액 입력">
+														<span class="other">원</span>
+													</div>
+												</li>
+											</ul>
+											<button type="button" class="listRemove"><i>첫번째 향후 소득 및 가입기간 삭제</i></button>
+										</li>
+										<li>
+											<ul class="m_hTableBody pdb">
+												<li>
+													<label>가입기간</label>
+													<div class="calendarBlock">
+														<div class="calendarBody" role="application">
+															<input type="text" class="jQdate" title="두번째 가입기간 시작일 선택" readonly placeholder="날짜선택">
+														</div>
+														<div class="calendarBody" role="application">
+															<input type="text" class="jQdate" title="두번째 가입기간 종료일 선택" readonly placeholder="날짜선택">
+														</div>
+													</div>
+												</li>
+												<li>
+													<label>기준 소득월액</label>
+													<div class="flexBtnOne">
+														<input type="text" title="두번째 기준 소득월액 입력">
+														<span class="other">원</span>
+													</div>
+												</li>
+											</ul>
+											<button type="button" class="listRemove"><i>두번째 향후 소득 및 가입기간 삭제</i></button>
+										</li>
+									</ul>
+
+									<div class="listAdd">
+										<button type="button" class="lineButton"><span>추가</span><i class="icoPlus"></i></button>
+									</div>
+								</div>
+								<!-- //Mobile -->
+							</div>
+						</div>
+
+						<hr class="space style2 onlyMobile">
+
+						<div class="pcmt40 m_toggleArea">
+							<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+								<b class="defaultH5">부양가족 연금대상 선택</b>
+								<span class="toggleBtn onlyMobile"><i>부양가족 연금대상 선택 토글</i></span>
+							</button>
+							<div class="target targetHidden">
+								<!-- PC -->
+								<div class="onlyPC">
+									<div class="hTableBody">
+										<table>
+											<caption>부양가족 연금대상 선택 : 부모, 배우자, 자녀로 구성</caption>
+											<colgroup>
+												<col style="width: 210px;">
+												<col>
+											</colgroup>
+											<tbody>
+												<tr>
+													<th>부모</th>
+													<td>
+														<div class="mw200">
+															<select title="부모 선택">
+																<option>0명</option>
+															</select>
+														</div>
+														<div class="requireText">
+															<i></i>
+															<span>수급당시 60세 이상 또는 장애2급이상인 경우(배우자 부모 포함)</span>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th>배우자</th>
+													<td>
+														<ul class="groupBox flexLeft">
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio11_1" name="testRadio11" required title="첫번째 부양가족 장애 선택">
+																	<label for="testRadio11_1">없음</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio11_2" name="testRadio11" required title="첫번째 부양가족 비장애 선택">
+																	<label for="testRadio11_2">있음</label>
+																</div>
+															</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th>자녀</th>
+													<td>
+														<div class="mw200">
+															<select title="자녀 선택">
+																<option>0명</option>
+															</select>
+														</div>
+														<div class="requireText">
+															<i></i>
+															<span>수급당시 19세 미만 또는 장애2급이상인 경우(배우자 혼인전 얻은 자녀포함)</span>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<!-- //PC -->
+
+								<!-- Mobile -->
+								<div class="onlyMobile">
+									<ul class="m_hTableBody">
+										<li>
+											<label>부모</label>
+											<div>
+												<select title="부모 선택">
+													<option>0명</option>
+												</select>
+												<div class="requireText">
+													<i></i>
+													<span>수급당시 60세 이상 또는 장애2급이상인 경우(배우자 부모 포함)</span>
+												</div>
+											</div>
+										</li>
+										<li>
+											<label>배우자</label>
+											<div class="roundBoxGray">
+												<ul class="groupBox flexLeft">
+													<li>
+														<div class="checkboxBox">
+															<input type="checkbox" id="m_testRadio11_1" name="m_testRadio11" required>
+															<label for="m_testRadio11_1">없음</label>
+														</div>
+													</li>
+													<li>
+														<div class="checkboxBox">
+															<input type="checkbox" id="m_testRadio11_2" name="m_testRadio11" required>
+															<label for="m_testRadio11_2">있음</label>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<label>자녀</label>
+											<div>
+												<select title="자녀 선택">
+													<option>0명</option>
+												</select>
+												<div class="requireText">
+													<i></i>
+													<span>수급당시 19세 미만 또는 장애2급이상인 경우(배우자 혼인전 얻은 자녀포함)</span>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<!-- //Mobile -->
+							</div>
+						</div>
+
+						<div class="lineGroupBox pcmt40">
+							<ul class="guideText">
+								<li>“예상 연금연계조회＂를 계속 하려면 “다음＂을 클릭하세요</li>
+							</ul>
+							<div class="btnsGroup flexEnd m_mt0">
+								<button type="button" class="button h48 blue">다음</button>
+							</div>
+						</div>
+					</div>
+
+					<script src="../../include/evaluation.js"></script> <!-- include: 공통 평가 -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="../../include/footer.js"></script> <!-- include: 공통 푸터 -->
+
+	<script>
+		var depth = [6, 2, 1]; /* 현재메뉴 활성화 용: gnb에 있는 data-menu 값과 일치하게 해주세요. */
+	</script>
+</div>
+</body>
+</html>
