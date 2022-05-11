@@ -61,7 +61,6 @@ $(document).ready(function () {
         var _result = $(this).val();
         if(_result) {
           $(this).addClass('lineBlack');
-          console.log($(this))
         }
       });
 		},
