@@ -170,11 +170,15 @@ $(document).ready(function () {
 						var lnb_title = $(this).parents(".depth2").siblings("a").text();
 						var lnb_clone = $(this).parents(".depth2").clone();
             var lnb_title_clone2 = $(this).parents(".depth2").siblings("a").clone();
-            // var lnb_title_clone3 = $(this).parents(".depth3").siblings("a").clone();
+            var lnb_title_clone3 = $(this).parents(".depth3").siblings("a").clone();
             var this_clone = $(this).clone();
 
 						$lnbBody.find("h2").text(lnb_title).siblings(".lnb").append(lnb_clone);
-						$location.append(lnb_title_clone2).append(this_clone);
+            if(_depth.length == 3) {
+              $location.append(lnb_title_clone2).append(lnb_title_clone3).append(this_clone);
+            } else {
+              $location.append(lnb_title_clone2).append(this_clone);
+            }
 
 						//페이지타이틀
 						$title.text("공적연금연계제도 - "+lnb_title+" - "+ $(this).text());
