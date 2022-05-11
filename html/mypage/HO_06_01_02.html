@@ -1,0 +1,307 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<script src="../../include/head.js"></script> <!-- include: 공통 헤드 -->
+</head>
+
+<body>
+<div id="wrap">
+	<script src="../../include/header.js"></script> <!-- include: 공통 헤더 -->
+
+	<div class="container">
+		<div class="area">
+			<div class="wrap">
+				<div class="lnbBody">
+					<h2></h2>
+					<nav class="lnb">
+					</nav>
+				</div>
+
+				<div id="contentLink" class="contents">
+					<header class="contentsHeader">
+						<div class="title">
+							<h3>연금수령현황</h3>
+							<p>나의 연금수령 현황을 확인 할 수 있습니다.</p>
+						</div>
+						<script src="../../include/location.js"></script> <!-- include: 공통 현재위치 -->
+					</header>
+
+					<div class="searchBody m_toggleArea">
+						<!-- onlyMobile -->
+						<div class="onlyMobile">
+							<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+								<b class="defaultH5">검색조건</b>
+								<span class="toggleBtn"><i>연금수령현황 검색조건 토글</i></span>
+							</button>
+						</div>
+						<!-- //onlyMobile -->
+
+						<ul class="controlBox flexWrap target">
+							<li class="wp40">
+								<label for="temp01" class="w3">기관</label>
+								<select id="temp01">
+									<option>전체</option>
+								</select>
+							</li>
+							<li class="wp60">
+								<label class="w2">수령일</label>
+								<div class="flex1">
+									<div class="calendarBody" role="application">
+										<input type="text" class="jQdate" title="첫번째 출생(입양)일자 선택" readonly placeholder="날짜선택">
+									</div>
+									<div class="calendarBody" role="application">
+										<input type="text" class="jQdate" title="첫번째 출생(입양)일자 선택" readonly placeholder="날짜선택">
+									</div>
+								</div>
+							</li>
+							<li class="wp40">
+								<label for="temp03" class="w3">연금구분</label>
+								<select id="temp03">
+									<option>전체</option>
+								</select>
+							</li>
+							<li class="wp60 justifyRight alignCenter">
+								<button type="button" class="button h40 lineBlack"><span>초기화</span></button>
+								<button type="button" class="button h40 black"><i class="searchIcon"></i><span>검색</span></button>
+							</li>
+						</ul>
+					</div>
+
+					<div class="boardBody">
+						<!-- PC -->
+						<div class="tableBody mt onlyPC">
+							<table>
+								<caption>연금수령현황 : 번호, 근무기관, 연금종류, 연금수령일, 실수령액, 가산액, 공제액, 산정액으로 구성</caption>
+								<colgroup>
+									<col style="width: 60px;">
+									<col>
+									<col style="width: 130px;">
+									<col style="width: 130px;">
+									<col style="width: 125px;">
+									<col style="width: 70px;">
+									<col style="width: 70px;">
+									<col style="width: 125px;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">번호</th>
+										<th scope="col">근무기관</th>
+										<th scope="col">연금종류</th>
+										<th scope="col">연금수령일</th>
+										<th scope="col">실수령액</th>
+										<th scope="col">가산액</th>
+										<th scope="col">공제액</th>
+										<th scope="col">산정액</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>4</td>
+										<td>국민연금공단</td>
+										<td>연계노령연금</td>
+										<td>2020-09-25</td>
+										<td class="textRight">1,349,560원</td>
+										<td class="textRight">0원</td>
+										<td class="textRight">0원</td>
+										<td class="textRight">1,349,560원</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>공무원연금공단</td>
+										<td>연계퇴직연금</td>
+										<td>2020-09-25</td>
+										<td class="textRight">1,349,560원</td>
+										<td class="textRight">0원</td>
+										<td class="textRight">0원</td>
+										<td class="textRight">1,349,560원</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>국민연금공단</td>
+										<td>연계퇴직연금</td>
+										<td>2020-09-25</td>
+										<td class="textRight">1,349,560원</td>
+										<td class="textRight">0원</td>
+										<td class="textRight">0원</td>
+										<td class="textRight">1,349,560원</td>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>국민연금공단</td>
+										<td>연계노령연금</td>
+										<td>2020-09-25</td>
+										<td class="textRight">1,349,560원</td>
+										<td class="textRight">0원</td>
+										<td class="textRight">0원</td>
+										<td class="textRight">1,349,560원</td>
+									</tr>
+									<tr>
+										<td class="empty" colspan="8">데이터가 없습니다.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- //PC -->
+
+						<!-- Mobile -->
+						<div class="onlyMobile m_tableBody momt24 noBorder">
+							<ul class="mList">
+								<li>
+									<div class="roundBoxGray">
+										<h6 class="fontDefault colorBlue">국민연금공단</h6>
+										<div class="flexLeft">
+											<b class="listDate fontSize16">연계노령연금</b>
+										</div>
+										
+										<ul class="msList bdt">
+											<li>
+												<label>연금수령일</label>
+												<b>2020-09-25</b>
+											</li>
+											<li>
+												<label>실수령액</label>
+												<b>1,349,560원</b>
+											</li>
+											<li>
+												<label>가산액</label>
+												<b>0원</b>
+											</li>
+											<li>
+												<label>공제액</label>
+												<b>0원</b>
+											</li>
+											<li>
+												<label>산정액</label>
+												<b>1,349,560원</b>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="roundBoxGray">
+										<h6 class="fontDefault colorBlue">공무원연금공단</h6>
+										<div class="flexLeft">
+											<b class="listDate fontSize16">연계노령연금</b>
+										</div>
+										
+										<ul class="msList bdt">
+											<li>
+												<label>연금수령일</label>
+												<b>2020-09-25</b>
+											</li>
+											<li>
+												<label>실수령액</label>
+												<b>1,349,560원</b>
+											</li>
+											<li>
+												<label>가산액</label>
+												<b>0원</b>
+											</li>
+											<li>
+												<label>공제액</label>
+												<b>0원</b>
+											</li>
+											<li>
+												<label>산정액</label>
+												<b>1,349,560원</b>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="roundBoxGray">
+										<h6 class="fontDefault colorBlue">국민연금공단</h6>
+										<div class="flexLeft">
+											<b class="listDate fontSize16">연계노령연금</b>
+										</div>
+										
+										<ul class="msList bdt">
+											<li>
+												<label>연금수령일</label>
+												<b>2020-09-25</b>
+											</li>
+											<li>
+												<label>실수령액</label>
+												<b>1,349,560원</b>
+											</li>
+											<li>
+												<label>가산액</label>
+												<b>0원</b>
+											</li>
+											<li>
+												<label>공제액</label>
+												<b>0원</b>
+											</li>
+											<li>
+												<label>산정액</label>
+												<b>1,349,560원</b>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="roundBoxGray">
+										<h6 class="fontDefault colorBlue">국민연금공단</h6>
+										<div class="flexLeft">
+											<b class="listDate fontSize16">연계노령연금</b>
+										</div>
+										
+										<ul class="msList bdt">
+											<li>
+												<label>연금수령일</label>
+												<b>2020-09-25</b>
+											</li>
+											<li>
+												<label>실수령액</label>
+												<b>1,349,560원</b>
+											</li>
+											<li>
+												<label>가산액</label>
+												<b>0원</b>
+											</li>
+											<li>
+												<label>공제액</label>
+												<b>0원</b>
+											</li>
+											<li>
+												<label>산정액</label>
+												<b>1,349,560원</b>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="empty">
+									데이터가 없습니다.
+								</li>
+							</ul>
+						</div>
+						<!-- //Mobile -->
+
+						<div class="pageNumber">
+							<a href="#" class="first"><i>처음 페이지</i></a>
+							<a href="#" class="prev"><i>이전 페이지</i></a>
+							<a href="#" class="active">1</a>
+							<a href="#">2</a>
+							<a href="#">3</a>
+							<a href="#">4</a>
+							<a href="#">5</a>
+							<a href="#" class="next"><i>다음 페이지</i></a>
+							<a href="#" class="last"><i>마지막 페이지</i></a>
+						</div>
+					</div>
+
+					<script src="../../include/evaluation.js"></script> <!-- include: 공통 평가 -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="../../include/footer.js"></script> <!-- include: 공통 푸터 -->
+
+	<script>
+		var depth = [6, 1, 2]; /* 현재메뉴 활성화 용: gnb에 있는 data-menu 값과 일치하게 해주세요. */
+	</script>
+</div>
+</body>
+</html>

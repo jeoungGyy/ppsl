@@ -81,6 +81,8 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .searchBody .toggleGroup .toggleBtn { margin-right: 6px;}
 .searchBody .controlBox { display: none; flex-wrap: wrap; padding: 16px;}
 .searchBody .controlBox li label { width: 45px; padding-left: 0;}
+.searchBody .controlBox li label.w2,
+.searchBody .controlBox li label.w3 { width: 73px; padding-left: 0;}
 .searchBody .controlBox li ~ li { margin-top: 8px;}
 .searchBody .controlBox li .twin select:first-child { margin-left: 0;}
 .searchBody .controlBox li.pl4 { padding-left: 0;}
@@ -92,6 +94,9 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .searchBody .controlBox li.wp70 { width: 100%;}
 .searchBody .controlBox.flexWrap { margin-top: -8px;}
 .searchBody .controlBox.flexWrap li { margin-top: 8px;}
+.searchBody .controlBox.flexWrap li .flex1 { flex-direction: column;}
+.searchBody .controlBox.flexWrap li .flex1 .calendarBody { width: 100%;}
+.searchBody .controlBox.flexWrap li .flex1 .calendarBody ~ .calendarBody { margin: 8px 0 0 0;}
 .searchBody.pl48 { padding-left: 0;}
 
 /* controlBody */
