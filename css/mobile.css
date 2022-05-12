@@ -251,10 +251,14 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .mListMulti >li { padding: 24px 16px; border: 1px solid #dbdbdb; border-radius: 8px;}
 .mListMulti >li ~ li { margin-top: 16px;}
 .mListMulti >li .roundBoxGray { padding: 24px 16px; font-size: 14px; background-color: #f7f7f7; border-radius: 8px;}
-.mListMulti >li .roundBoxGray >.flexLeft { margin-top: 8px;}
+/* .mListMulti >li .roundBoxGray >.flexLeft { margin-top: 8px;}
 .mListMulti >li .roundBoxGray >.flexLeft .listDate { display: inline-block; font-size: 14px; line-height: 21px;}
 .mListMulti >li .roundBoxGray >.flexLeft .listText { display: inline-block; font-size: 16px; line-height: 21px;}
-.mListMulti >li .roundBoxGray >.flexLeft .roundText { display: flex; align-items: center; justify-content: center; width: 64px; height: 24px; font-size: 12px; border: 1px solid #333; border-radius: 12px;}
+.mListMulti >li .roundBoxGray >.flexLeft .roundText { display: flex; align-items: center; justify-content: center; width: 64px; height: 24px; font-size: 12px; border: 1px solid #333; border-radius: 12px;} */
+.mListMulti >li .flexLeft { margin-top: 8px;}
+.mListMulti >li .flexLeft .listDate { display: inline-block; font-size: 14px; line-height: 21px;}
+.mListMulti >li .flexLeft .listText { display: inline-block; font-size: 16px; line-height: 21px;}
+.mListMulti >li .flexLeft .roundText { display: flex; align-items: center; justify-content: center; width: 64px; height: 24px; font-size: 12px; border: 1px solid #333; border-radius: 12px;}
 .mListMulti >li .roundBoxGray.sp { padding: 16px;}
 .mListMulti >li .roundBoxGray.mt { margin-top: 16px;}
 .mListMulti >li .groupBox label { font-weight: 700;}

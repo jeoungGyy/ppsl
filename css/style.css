@@ -170,7 +170,7 @@ hr.space { margin: 40px 0; height: 1px; background-color: #dbdbdb;}
 .button { display: inline-flex; align-items: center; justify-content: center; padding: 0 16px; transition: background-color .2s ease-in-out, border-color .2s ease-in-out;;}
 .button.h48 { min-width: 96px; min-height: 48px; height: 48px; padding: 0 24px;}
 .button.h40 { min-width: 80px; min-height: 40px; height: 40px;}
-.button.h32 { min-height: 32px; height: 32px; font-size: 14px;}
+.button.h32 { min-width: 60px; min-height: 32px; height: 32px; font-size: 14px;}
 .button.h24 { min-height: 24px; height: 24px; font-size: 14px;}
 .button[disabled] { color: #959595 !important; border-color: #dbdbdb !important; background-color: #f7f7f7 !important; cursor: not-allowed;}
 .button.black { color: #fff; background-color: #333;}
@@ -259,7 +259,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .guideText.blue li::before { background-color: #366cc3;}
 
 /* flexBtn* */
-.flexBtnOne { display: flex; align-items: center;}
+.flexBtnOne { display: flex !important; align-items: center;}
 .flexBtnOne input,
 .flexBtnOne a { flex: 1; width: 100%;}
 .flexBtnOne button,
@@ -298,6 +298,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .searchBody .controlBox li.wp40 { width: 40%;}
 .searchBody .controlBox li.wp60 { width: 60%;}
 .searchBody .controlBox li.wp70 { width: 70%;}
+.searchBody .controlBox li.flex1 { flex: 1;}
 .searchBody .controlBox.flexWrap { flex-wrap: wrap; margin-top: -16px;}
 .searchBody .controlBox.flexWrap li { margin-top: 16px;}
 .searchBody.pl48 { padding-left: 48px;}
