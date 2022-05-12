@@ -1,0 +1,296 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<script src="../../include/head.js"></script> <!-- include: 공통 헤드 -->
+</head>
+
+<body>
+<div id="wrap">
+	<script src="../../include/header.js"></script> <!-- include: 공통 헤더 -->
+
+	<div class="container">
+		<div class="area">
+			<div class="wrap">
+				<div class="lnbBody">
+					<h2></h2>
+					<nav class="lnb">
+					</nav>
+				</div>
+
+				<div id="contentLink" class="contents">
+					<header class="contentsHeader">
+						<div class="title">
+							<h3>증명서발급요청</h3>
+							<p>신청 및 청구한 증명서를 보시고 증명서 발급을 요청 하실 수 있습니다.</p>
+						</div>
+						<script src="../../include/location.js"></script> <!-- include: 공통 현재위치 -->
+					</header>
+
+					<div class="searchBody m_toggleArea">
+						<!-- onlyMobile -->
+						<div class="onlyMobile">
+							<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+								<b class="defaultH5">검색조건</b>
+								<span class="toggleBtn"><i>증명서발급요청 검색조건 토글</i></span>
+							</button>
+						</div>
+						<!-- //onlyMobile -->
+			
+						<ul class="controlBox target">
+							<li class="wp40">
+								<label for="temp01" class="w2">기관</label>
+								<select id="temp01">
+									<option>전체</option>
+									<option>국민연금공단</option>
+									<option>공무원연금공단</option>
+									<option>사립학교교직원연금공단</option>
+									<option>국방부군인연금</option>
+									<option>별정우체국연금관리단</option>
+								</select>
+							</li>
+							<li class="wp60">
+								<label for="temp02" class="w2">증명서</label>
+								<select id="temp02">
+									<option>전체</option>
+									<option>반납금 납부고지서</option>
+									<option>반납금납부내역</option>
+									<option>반납금납부완료 안내문</option>
+									<option>반납금 납부방법 변경결과 안내문</option>
+									<option>연계취하 예정 안내문</option>
+									<option>연계취하 안내문</option>
+									<option>반납금반환청구 안내문</option>
+									<option>수급증서</option>
+								</select>
+							</li>
+							<li class="justifyRight alignCenter">
+								<button type="button" class="button h40 black"><i class="searchIcon"></i><span>검색</span></button>
+							</li>
+						</ul>
+					</div>
+
+					<div class="boardBody">
+						<div class="controlBody">
+							<b>총 123,456건</b>
+							<div class="control">
+								<select class="select h32" title="목록 갯수 선택">
+									<option>10개씩 보기</option>
+									<option>20개씩 보기</option>
+									<option>30개씩 보기</option>
+								</select>
+								<button type="button" class="button h32 black">확인</button>
+							</div>
+						</div>
+
+						<!-- PC -->
+						<div class="tableBody onlyPC">
+							<table>
+								<caption>연금수령현황 : 번호, 신청기관, 포털접수번호, 접수일, 발급증명서, 상태로 구성</caption>
+								<colgroup>
+									<col style="width: 65px;">
+									<col style="width: 165px;">
+									<col style="width: 180px;">
+									<col style="width: 145px;">
+									<col>
+									<col style="width: 100px;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">번호</th>
+										<th scope="col">신청기관</th>
+										<th scope="col">포털접수번호</th>
+										<th scope="col">접수일</th>
+										<th scope="col">발급증명서</th>
+										<th scope="col">상태</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>5</td>
+										<td>연금연계</td>
+										<td>0000000000000</td>
+										<td>YYYY-MM-DD</td>
+										<td class="textLeft">반납금납부고지서</td>
+										<td>접수중</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>별정우체국연금</td>
+										<td>0000000000000</td>
+										<td>YYYY-MM-DD</td>
+										<td class="textLeft">반납금 납부방법 변경결과 안내문</td>
+										<td>접수중</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>별정우체국연금</td>
+										<td>0000000000000</td>
+										<td>YYYY-MM-DD</td>
+										<td class="textLeft">반납금 납부방법 변경결과 안내문</td>
+										<td>접수중</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>연금연계</td>
+										<td>0000000000000</td>
+										<td>YYYY-MM-DD</td>
+										<td class="textLeft">반납금납부고지서</td>
+										<td>접수중</td>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>연금연계</td>
+										<td>0000000000000</td>
+										<td>YYYY-MM-DD</td>
+										<td class="textLeft">반납금납부고지서</td>
+										<td>접수중</td>
+									</tr>
+									<tr>
+										<td class="empty" colspan="6">데이터가 없습니다.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- //PC -->
+
+						<!-- Mobile -->
+						<div class="onlyMobile m_tableBody noBorder">
+							<ul class="mList mt">
+								<li>
+									<div class="roundBoxGray">
+										<h6 class="fontDefault colorBlue">연금연계</h6>
+										<div class="flexLeft spaceBetween">
+											<b class="fontSize16">반납급납부고지서</b>
+											<div class="roundText">접수중</div>
+										</div>
+										
+										<ul class="msList bdt">
+											<li>
+												<label>신청기관</label>
+												<b>연금연계</b>
+											</li>
+											<li>
+												<label>접수일</label>
+												<b>YYYY-MM-DD</b>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="roundBoxGray">
+										<h6 class="fontDefault colorBlue">연금연계</h6>
+										<div class="flexLeft spaceBetween">
+											<b class="fontSize16">반납급납부고지서</b>
+											<div class="roundText">접수중</div>
+										</div>
+										
+										<ul class="msList bdt">
+											<li>
+												<label>신청기관</label>
+												<b>연금연계</b>
+											</li>
+											<li>
+												<label>접수일</label>
+												<b>YYYY-MM-DD</b>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="roundBoxGray">
+										<h6 class="fontDefault colorBlue">연금연계</h6>
+										<div class="flexLeft spaceBetween">
+											<b class="fontSize16">반납급납부고지서</b>
+											<div class="roundText">접수중</div>
+										</div>
+										
+										<ul class="msList bdt">
+											<li>
+												<label>신청기관</label>
+												<b>연금연계</b>
+											</li>
+											<li>
+												<label>접수일</label>
+												<b>YYYY-MM-DD</b>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="roundBoxGray">
+										<h6 class="fontDefault colorBlue">연금연계</h6>
+										<div class="flexLeft spaceBetween">
+											<b class="fontSize16">반납급납부고지서</b>
+											<div class="roundText">접수중</div>
+										</div>
+										
+										<ul class="msList bdt">
+											<li>
+												<label>신청기관</label>
+												<b>연금연계</b>
+											</li>
+											<li>
+												<label>접수일</label>
+												<b>YYYY-MM-DD</b>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="roundBoxGray">
+										<h6 class="fontDefault colorBlue">연금연계</h6>
+										<div class="flexLeft spaceBetween">
+											<b class="fontSize16">반납급납부고지서</b>
+											<div class="roundText">접수중</div>
+										</div>
+										
+										<ul class="msList bdt">
+											<li>
+												<label>신청기관</label>
+												<b>연금연계</b>
+											</li>
+											<li>
+												<label>접수일</label>
+												<b>YYYY-MM-DD</b>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="empty">
+									데이터가 없습니다.
+								</li>
+							</ul>
+						</div>
+						<!-- //Mobile -->
+
+						<div class="pageNumber">
+							<a href="#" class="first"><i>처음 페이지</i></a>
+							<a href="#" class="prev"><i>이전 페이지</i></a>
+							<a href="#" class="active">1</a>
+							<a href="#">2</a>
+							<a href="#">3</a>
+							<a href="#">4</a>
+							<a href="#">5</a>
+							<a href="#" class="next"><i>다음 페이지</i></a>
+							<a href="#" class="last"><i>마지막 페이지</i></a>
+						</div>
+
+						<div class="btnsGroup flexEnd">
+							<button type="button" class="button h48 blue" onclick="location.href='HO_06_03_02.html'">증명서발급등록</button>
+						</div>
+					</div>
+
+					<script src="../../include/evaluation.js"></script> <!-- include: 공통 평가 -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="../../include/footer.js"></script> <!-- include: 공통 푸터 -->
+
+	<script>
+		var depth = [6, 3]; /* 현재메뉴 활성화 용: gnb에 있는 data-menu 값과 일치하게 해주세요. */
+	</script>
+</div>
+</body>
+</html>
