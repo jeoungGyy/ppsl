@@ -515,6 +515,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .tableBody { overflow: hidden; margin-top: 8px; border-top: 2px solid #333;}
 .tableBody table { width: calc(100% + 2px); margin-left: -1px;}
 .tableBody table th { padding: 12px 0; border-left: 1px solid #dbdbdb; background-color: #f7f7f7;}
+.tableBody table th.bdt { border-top: 1px solid #dbdbdb;}
 .tableBody table th .sortBtn i { display: inline-block; width: 16px; height: 16px; margin-top: -4px; vertical-align: middle; background: url(../images/common/ico_dropdown.svg) no-repeat center/cover;}
 .tableBody table th .sortBtn.asc i { transform: rotate(180deg);}
 .tableBody table td { padding: 12px 12px; text-align: center; line-height: 24px; border: 1px solid #dbdbdb; transition: background-color .2s ease-in-out;}

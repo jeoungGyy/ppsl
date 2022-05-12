@@ -21,7 +21,7 @@
 				<div id="contentLink" class="contents">
 					<header class="contentsHeader">
 						<div class="title">
-							<h3>연금수령현황</h3>
+							<h3>반납금현황</h3>
 							<p>나의 연금수령 현황을 확인 할 수 있습니다.</p>
 						</div>
 						<script src="../../include/location.js"></script> <!-- include: 공통 현재위치 -->
@@ -32,7 +32,7 @@
 						<div class="onlyMobile">
 							<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
 								<b class="defaultH5">검색조건</b>
-								<span class="toggleBtn"><i>연금수령현황 검색조건 토글</i></span>
+								<span class="toggleBtn"><i>반납금현황 검색조건 토글</i></span>
 							</button>
 						</div>
 						<!-- //onlyMobile -->
@@ -72,69 +72,88 @@
 						<!-- PC -->
 						<div class="tableBody mt onlyPC">
 							<table>
-								<caption>연금수령현황 : 번호, 근무기관, 연금종류, 연금수령일, 실수령액, 가산액, 공제액, 산정액으로 구성</caption>
+								<caption>반납금현황 : 번호, 연금기관, 회차, 납부마감일, 원금, 이자, 연체료, 수납일, 수납액, 최종산정이율로 구성</caption>
 								<colgroup>
-									<col style="width: 60px;">
+									<col style="width: 70px;">
 									<col>
-									<col style="width: 130px;">
-									<col style="width: 130px;">
-									<col style="width: 125px;">
 									<col style="width: 70px;">
-									<col style="width: 70px;">
-									<col style="width: 125px;">
+									<col style="width: 140px;"> 
+									<col style="width: 150px;">
+									<col style="width: 150px;">
+									<col style="width: 150px;">
 								</colgroup>
 								<thead>
 									<tr>
-										<th scope="col">번호</th>
-										<th scope="col">근무기관</th>
-										<th scope="col">연금종류</th>
-										<th scope="col">연금수령일</th>
-										<th scope="col">실수령액</th>
-										<th scope="col">가산액</th>
-										<th scope="col">공제액</th>
-										<th scope="col">산정액</th>
+										<th scope="col" rowspan="2">번호</th>
+										<th scope="col" rowspan="2">연금기관</th>
+										<th scope="col" rowspan="2">회차</th>
+										<th scope="col" rowspan="2">납부마감일</th>
+										<th id="s1">원금</th>
+										<th id="s2">이자</th>
+										<th id="s3">연체료</th>
+									</tr>
+									<tr>
+										<th id="s4" class="bdt">수납일</th>
+										<th id="s5" class="bdt">수납액</th>
+										<th id="s6" class="bdt">최종산정이율</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
-										<td>4</td>
-										<td>국민연금공단</td>
-										<td>연계노령연금</td>
-										<td>2020-09-25</td>
-										<td class="textRight">1,349,560원</td>
-										<td class="textRight">0원</td>
-										<td class="textRight">0원</td>
-										<td class="textRight">1,349,560원</td>
+										<td rowspan="2">4</td>
+										<td rowspan="2">사학연금</td>
+										<td rowspan="2">999</td>
+										<td rowspan="2">2020-09-25</td>
+										<td headers="s1" class="textRight">1,349,560원</td>
+										<td headers="s2" class="textRight">1,349,560원</td>
+										<td headers="s3" class="textRight">1,349,560원</td>
 									</tr>
 									<tr>
-										<td>3</td>
-										<td>공무원연금공단</td>
-										<td>연계퇴직연금</td>
-										<td>2020-09-25</td>
-										<td class="textRight">1,349,560원</td>
-										<td class="textRight">0원</td>
-										<td class="textRight">0원</td>
-										<td class="textRight">1,349,560원</td>
+										<td headers="s4" class="textRight">1,349,560원</td>
+										<td headers="s5" class="textRight">1,349,560원</td>
+										<td headers="s6" class="textRight">0.0</td>
 									</tr>
 									<tr>
-										<td>2</td>
-										<td>국민연금공단</td>
-										<td>연계퇴직연금</td>
-										<td>2020-09-25</td>
-										<td class="textRight">1,349,560원</td>
-										<td class="textRight">0원</td>
-										<td class="textRight">0원</td>
-										<td class="textRight">1,349,560원</td>
+										<td rowspan="2">3</td>
+										<td rowspan="2">사학연금</td>
+										<td rowspan="2">999</td>
+										<td rowspan="2">2020-09-25</td>
+										<td headers="s1" class="textRight">1,349,560원</td>
+										<td headers="s2" class="textRight">1,349,560원</td>
+										<td headers="s3" class="textRight">1,349,560원</td>
 									</tr>
 									<tr>
-										<td>1</td>
-										<td>국민연금공단</td>
-										<td>연계노령연금</td>
-										<td>2020-09-25</td>
-										<td class="textRight">1,349,560원</td>
-										<td class="textRight">0원</td>
-										<td class="textRight">0원</td>
-										<td class="textRight">1,349,560원</td>
+										<td headers="s4" class="textRight">1,349,560원</td>
+										<td headers="s5" class="textRight">1,349,560원</td>
+										<td headers="s6" class="textRight">0.0</td>
+									</tr>
+									<tr>
+										<td rowspan="2">2</td>
+										<td rowspan="2">사학연금</td>
+										<td rowspan="2">999</td>
+										<td rowspan="2">2020-09-25</td>
+										<td headers="s1" class="textRight">1,349,560원</td>
+										<td headers="s2" class="textRight">1,349,560원</td>
+										<td headers="s3" class="textRight">1,349,560원</td>
+									</tr>
+									<tr>
+										<td headers="s4" class="textRight">1,349,560원</td>
+										<td headers="s5" class="textRight">1,349,560원</td>
+										<td headers="s6" class="textRight">0.0</td>
+									</tr>
+									<tr>
+										<td rowspan="2">1</td>
+										<td rowspan="2">사학연금</td>
+										<td rowspan="2">999</td>
+										<td rowspan="2">2020-09-25</td>
+										<td headers="s1" class="textRight">1,349,560원</td>
+										<td headers="s2" class="textRight">1,349,560원</td>
+										<td headers="s3" class="textRight">1,349,560원</td>
+									</tr>
+									<tr>
+										<td headers="s4" class="textRight">1,349,560원</td>
+										<td headers="s5" class="textRight">1,349,560원</td>
+										<td headers="s6" class="textRight">0.0</td>
 									</tr>
 									<tr>
 										<td class="empty" colspan="8">데이터가 없습니다.</td>
@@ -149,124 +168,168 @@
 							<ul class="mList">
 								<li>
 									<div class="roundBoxGray">
-										<h6 class="fontDefault colorBlue">국민연금공단</h6>
 										<div class="flexLeft">
 											<b class="listDate fontSize16">연계노령연금</b>
 										</div>
 										
 										<ul class="msList bdt">
 											<li>
-												<label>연금수령일</label>
+												<label>회차</label>
+												<b>99</b>
+											</li>
+											<li>
+												<label>납부마감일</label>
 												<b>2020-09-25</b>
 											</li>
 											<li>
-												<label>실수령액</label>
+												<label>원금</label>
 												<b>1,349,560원</b>
 											</li>
 											<li>
-												<label>가산액</label>
-												<b>0원</b>
-											</li>
-											<li>
-												<label>공제액</label>
-												<b>0원</b>
-											</li>
-											<li>
-												<label>산정액</label>
+												<label>이자</label>
 												<b>1,349,560원</b>
+											</li>
+											<li>
+												<label>연체료</label>
+												<b>1,349,560원</b>
+											</li>
+											<li>
+												<label>수납일</label>
+												<b>2020-09-25</b>
+											</li>
+											<li>
+												<label>수납액</label>
+												<b>1,349,560원</b>
+											</li>
+											<li>
+												<label>최종산정이율</label>
+												<b>0.0</b>
 											</li>
 										</ul>
 									</div>
 								</li>
 								<li>
 									<div class="roundBoxGray">
-										<h6 class="fontDefault colorBlue">공무원연금공단</h6>
 										<div class="flexLeft">
 											<b class="listDate fontSize16">연계노령연금</b>
 										</div>
 										
 										<ul class="msList bdt">
 											<li>
-												<label>연금수령일</label>
+												<label>회차</label>
+												<b>99</b>
+											</li>
+											<li>
+												<label>납부마감일</label>
 												<b>2020-09-25</b>
 											</li>
 											<li>
-												<label>실수령액</label>
+												<label>원금</label>
 												<b>1,349,560원</b>
 											</li>
 											<li>
-												<label>가산액</label>
-												<b>0원</b>
-											</li>
-											<li>
-												<label>공제액</label>
-												<b>0원</b>
-											</li>
-											<li>
-												<label>산정액</label>
+												<label>이자</label>
 												<b>1,349,560원</b>
+											</li>
+											<li>
+												<label>연체료</label>
+												<b>1,349,560원</b>
+											</li>
+											<li>
+												<label>수납일</label>
+												<b>2020-09-25</b>
+											</li>
+											<li>
+												<label>수납액</label>
+												<b>1,349,560원</b>
+											</li>
+											<li>
+												<label>최종산정이율</label>
+												<b>0.0</b>
 											</li>
 										</ul>
 									</div>
 								</li>
 								<li>
 									<div class="roundBoxGray">
-										<h6 class="fontDefault colorBlue">국민연금공단</h6>
 										<div class="flexLeft">
 											<b class="listDate fontSize16">연계노령연금</b>
 										</div>
 										
 										<ul class="msList bdt">
 											<li>
-												<label>연금수령일</label>
+												<label>회차</label>
+												<b>99</b>
+											</li>
+											<li>
+												<label>납부마감일</label>
 												<b>2020-09-25</b>
 											</li>
 											<li>
-												<label>실수령액</label>
+												<label>원금</label>
 												<b>1,349,560원</b>
 											</li>
 											<li>
-												<label>가산액</label>
-												<b>0원</b>
-											</li>
-											<li>
-												<label>공제액</label>
-												<b>0원</b>
-											</li>
-											<li>
-												<label>산정액</label>
+												<label>이자</label>
 												<b>1,349,560원</b>
+											</li>
+											<li>
+												<label>연체료</label>
+												<b>1,349,560원</b>
+											</li>
+											<li>
+												<label>수납일</label>
+												<b>2020-09-25</b>
+											</li>
+											<li>
+												<label>수납액</label>
+												<b>1,349,560원</b>
+											</li>
+											<li>
+												<label>최종산정이율</label>
+												<b>0.0</b>
 											</li>
 										</ul>
 									</div>
 								</li>
 								<li>
 									<div class="roundBoxGray">
-										<h6 class="fontDefault colorBlue">국민연금공단</h6>
 										<div class="flexLeft">
 											<b class="listDate fontSize16">연계노령연금</b>
 										</div>
 										
 										<ul class="msList bdt">
 											<li>
-												<label>연금수령일</label>
+												<label>회차</label>
+												<b>99</b>
+											</li>
+											<li>
+												<label>납부마감일</label>
 												<b>2020-09-25</b>
 											</li>
 											<li>
-												<label>실수령액</label>
+												<label>원금</label>
 												<b>1,349,560원</b>
 											</li>
 											<li>
-												<label>가산액</label>
-												<b>0원</b>
-											</li>
-											<li>
-												<label>공제액</label>
-												<b>0원</b>
-											</li>
-											<li>
-												<label>산정액</label>
+												<label>이자</label>
 												<b>1,349,560원</b>
+											</li>
+											<li>
+												<label>연체료</label>
+												<b>1,349,560원</b>
+											</li>
+											<li>
+												<label>수납일</label>
+												<b>2020-09-25</b>
+											</li>
+											<li>
+												<label>수납액</label>
+												<b>1,349,560원</b>
+											</li>
+											<li>
+												<label>최종산정이율</label>
+												<b>0.0</b>
 											</li>
 										</ul>
 									</div>
