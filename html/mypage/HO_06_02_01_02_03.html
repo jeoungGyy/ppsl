@@ -1,0 +1,272 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<script src="../../include/head.js"></script> <!-- include: 공통 헤드 -->
+</head>
+
+<body>
+<div id="wrap">
+	<script src="../../include/header.js"></script> <!-- include: 공통 헤더 -->
+
+	<div class="container">
+		<div class="area">
+			<div class="wrap">
+				<div class="lnbBody">
+					<h2></h2>
+					<nav class="lnb">
+					</nav>
+				</div>
+
+				<div id="contentLink" class="contents">
+					<header class="contentsHeader">
+						<div class="title">
+							<h3>예상연금조회</h3>
+							<p>나의 예상연금을 조회 할 수 있습니다.</p>
+						</div>
+						<script src="../../include/location.js"></script> <!-- include: 공통 현재위치 -->
+					</header>
+
+					<!-- 탭영역 -->
+					<!-- PC -->
+					<div class="onlyPC">
+						<ul class="aTab">
+							<li><a href="HO_06_02_01_01.html">예상연계연금조회</a></li>
+							<li><a href="HO_06_02_01_02_01.html" class="active"><span class="invisible">현재 단계</span>상세연금조회</a></li>
+						</ul>
+					</div>
+					<!-- //PC -->
+
+					<!-- mobile -->
+					<div class="onlyMobile">
+						<select class="wp100 momt24" title="예상연금조회 메뉴 이동">
+							<option>예상연계연금조회</option>
+							<option>상세연금조회</option>
+						</select>
+					</div>
+					<!-- //mobile -->
+					<!-- //탭영역 -->
+
+					<div class="setpBodyStyle">
+						<ul class="stepByStyle">
+							<li>
+								<span class="iconRound bgBlue"><i></i></span>
+								<span class="text">조건 설정 및 소득 입력</span>
+							</li>
+							<li>
+								<span class="iconRound bgBlue"><i></i></span>
+								<span class="text">입력내용 확인</span>
+							</li>
+							<li class="active">
+								<span class="invisible">현재 단계</span>
+								<span class="iconRound"><i></i></span>
+								<span class="text">결과 및 비교조회</span>
+							</li>
+						</ul>
+						<span class="line"></span>
+					</div>
+
+					<hr class="space style3 onlyMobile">
+
+					<div class="proposalBody">
+						<div class="pcmt40 m_toggleArea">
+							<button class="flexLeft spaceBetween toggleGroup active" title="확장됨">
+								<b class="defaultH4">조회결과</b>
+								<span class="toggleBtn onlyMobile"><i>조회결과 토글</i></span>
+							</button>
+							<div class="target">
+								<div class="whTableBody mt2 m_scoll">
+									<table>
+										<caption>예상연금조회 조회결과</caption>
+										<colgroup>
+											<col>
+											<col style="width: 160px;">
+											<col style="width: 290px;">
+											<col style="width: 290px;">
+										</colgroup>
+										<tbody>
+											<tr>
+												<th scope="col" colspan="2">연계퇴직연금</th>
+												<th id="ga">수정전 현재가치</th>
+												<th id="gb">수정후 현재가치</th>
+											</tr>
+											<tr>
+												<th id="gc" colspan="2" class="textLeft">연금연계금액</th>
+												<td headers="ga gc">매월 000,000 원 (연 00,000,000 원)</td>
+												<td headers="gb gc">매월 000,000 원 (연 00,000,000 원)</td>
+											</tr>
+											<tr>
+												<th id="gd" rowspan="2" class="textLeft">연계퇴직연금(사학)</th>
+												<th id="gd1" class="textLeft">연금 수급개시연월</th>
+												<td headers="ga gd gd1">YYYY 년 MM 월</td>
+												<td headers="gb gd gd1">YYYY 년 MM 월</td>
+											</tr>
+											<tr>
+												<th id="gd2" class="textLeft">연금연계금액</th>
+												<td headers="ga gd gd2">매월 000,000 원 (연 00,000,000 원)</td>
+												<td headers="gb gd gd2">매월 000,000 원 (연 00,000,000 원)</td>
+											</tr>
+											<tr>
+												<th id="ge" rowspan="2" class="textLeft">연계노령연금</th>
+												<th id="ge1" class="textLeft">연금 수급개시연월</th>
+												<td headers="ga ge ge1">YYYY 년 MM 월</td>
+												<td headers="gb ge ge1">YYYY 년 MM 월</td>
+											</tr>
+											<tr>
+												<th id="ge2" class="textLeft">연금연계금액</th>
+												<td headers="ga ge ge2">매월 000,000 원 (연 00,000,000 원)</td>
+												<td headers="gb ge ge2">매월 000,000 원 (연 00,000,000 원)</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<ul class="guideText mt onlyMobile">
+									<li>해당 표를 좌,우로 움직여서 자세한 내용을 확인 하세요.</li>
+								</ul>
+							</div>
+						</div>
+
+						<hr class="space style2 onlyMobile">
+
+						<div class="pcmt40 m_toggleArea">
+							<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+								<b class="defaultH5">연금계산내역 결과</b>
+								<span class="toggleBtn onlyMobile"><i>연금계산내역 결과 토글</i></span>
+							</button>
+							<div class="target targetHidden">
+								<p class="subText">고객님의 예상연금액 연금계산내역입니다.</p>
+								<!-- PC -->
+								<div class="onlyPC">
+									<div class="whTableBody mt3">
+										<table>
+											<caption>예상연금조회 연금계산내역 결과</caption>
+											<colgroup>
+												<col>
+												<col style="width: 190px;">
+												<col style="width: 200px;">
+												<col style="width: 140px;">
+												<col style="width: 200px;">
+											</colgroup>
+											<tbody>
+												<tr>
+													<th id="ya" class="textLeft">연계퇴직연금(사학)</th>
+													<th id="ya1" class="textLeft">총 재직기간</th>
+													<td headers="ya ya1">000개월</td>
+													<th id="ya2" class="textLeft">기준소득월액</th>
+													<td headers="ya ya2">000,000원</td>
+												</tr>
+												<tr>
+													<th id="yb" rowspan="4" class="textLeft">연계노령연금</th>
+													<th id="yb1" class="textLeft">총가입개월</th>
+													<td headers="yb yb1">000개월</td>
+													<th id="yb2" class="textLeft">총납부보험료</th>
+													<td headers="yb yb2">000,000원</td>
+												</tr>
+												<tr>
+													<th id="yb3" class="textLeft">지급율</th>
+													<td headers="yb yb3">00%</td>
+													<th id="yb4" class="textLeft">기본연금액</th>
+													<td headers="yb yb4">000,000원</td>
+												</tr>
+												<tr>
+													<th id="yb5" class="textLeft">A값</th>
+													<td headers="yb yb5">000,000원</td>
+													<th id="yb6" class="textLeft">B값</th>
+													<td headers="yb yb6">000,000원</td>
+												</tr>
+												<tr>
+													<th id="yb7" class="textLeft">부양가족연금액(연간)</th>
+													<td headers="yb yb7" colspan="3">000,000원</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<!-- //PC -->
+
+								<!-- Mobile -->
+								<div class="onlyMobile">
+									<div class="m_tableBody noBorder">
+										<ul class="mList mt">
+											<li>
+												<div class="roundBoxGray">
+													<div class="boxGray">
+														<b>연계퇴직연금(사학)</b>
+													</div>
+													<ul class="msList bdt">
+														<li>
+															<label>총 재직기간</label>
+															<b>000 개월</b>
+														</li>
+														<li>
+															<label>기준소득월액</label>
+															<b>000,000원</b>
+														</li>
+													</ul>
+												</div>
+											</li>
+											<li>
+												<div class="roundBoxGray">
+													<div class="boxGray">
+														<b>연계노령연금</b>
+													</div>
+													<ul class="msList bdt">
+														<li>
+															<label>총가입개월</label>
+															<b>000 개월</b>
+														</li>
+														<li>
+															<label>총납부보험료</label>
+															<b>000,000원</b>
+														</li>
+														<li>
+															<label>지급율</label>
+															<b>00%</b>
+														</li>
+														<li>
+															<label>기본연금액</label>
+															<b>000,000원</b>
+														</li>
+														<li>
+															<label>A값</label>
+															<b>000,000원</b>
+														</li>
+														<li>
+															<label>B값</label>
+															<b>000,000원</b>
+														</li>
+														<li>
+															<label>부양가족연금액(연간)</label>
+															<b>000,000원</b>
+														</li>
+													</ul>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<!-- //Mobile -->
+
+								<ul class="guideText mt">
+									<li>A 값 : 연금 수급직전 3년간 가입자 전체의 평균 소득월액의 평균액</li>
+									<li>B 값 : 가입자 개인의 가입기간중 표준소득월액을 현재가치로 재평가한 평균액</li>
+									<li>부양가족연금액은 “수급권 취득 당시를 기준으로 하여 부양가족 연금대상자로 인정된 경우에 연금액에 포함되어 지급됩니다.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<script src="../../include/evaluation.js"></script> <!-- include: 공통 평가 -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="../../include/footer.js"></script> <!-- include: 공통 푸터 -->
+
+	<script>
+		var depth = [6, 2, 1]; /* 현재메뉴 활성화 용: gnb에 있는 data-menu 값과 일치하게 해주세요. */
+	</script>
+</div>
+</body>
+</html>

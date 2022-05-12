@@ -525,7 +525,6 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .tableBody table td select { width: 100%; height: 32px; font-size: 14px; background-position: right 16px top 7px;}
 .tableBody table td .calendarBody button { width: 32px; height: 32px;}
 .tableBody table td .block { display: block; text-align: left;}
-.tableBody table td .twinCalendar {}
 .tableBody table td.empty { padding: 40px 0;}
 .tableBody table tr.off { background-color: #f7f7f7;}
 .tableBody table tr.off .colorBlue { color: inherit !important;}
@@ -626,6 +625,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .whTableBody { overflow: hidden; border-top: 2px solid #333;}
 .whTableBody table { width: calc(100% + 1px); margin-left: -1px;}
 .whTableBody table th { padding: 24px 0; line-height: 24px; border-left: 1px solid #dbdbdb; border-bottom: 1px solid #dbdbdb; background-color: #f7f7f7;}
+.whTableBody table th.textLeft { padding: 0 10px 0 24px;}
 .whTableBody table td { padding: 13px 16px; line-height: 24px; border-left: 1px solid #dbdbdb; border-bottom: 1px solid #dbdbdb;}
 .whTableBody table td input[type=text],
 .whTableBody table td input[type=tel] { height: 32px;}
@@ -637,6 +637,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .whTableBody table td.sameTh { font-weight: 700; text-align: center; background-color: #f7f7f7;}
 .whTableBody.mt { margin-top: 24px;}
 .whTableBody.mt2 { margin-top: 8px;}
+.whTableBody.mt3 { margin-top: 16px;}
 .whTableBody.padding16 table th { padding: 16px 0;}
 
 /* pageNumber */

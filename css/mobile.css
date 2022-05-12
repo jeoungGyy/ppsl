@@ -185,14 +185,11 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .totalWrap .twGroup .detailTwBtn { margin: 8px 0 0 0; width: 100%;}
 .totalWrap .twGroup .groupBox { display: flex; justify-content: flex-end; margin: 8px 0 0 0;}
 .totalWrap .twGroup .tbPopular { margin-top: 4px;}
-
 .totalWrap .twList { margin-top: 32px; padding: 32px 0;}
 .totalWrap .twList .twSpacelist { display: block;}
 .totalWrap .twList .twSpacelist b { padding: 0;}
 .totalWrap .twList .twSpacelist .groupBox { flex-wrap: wrap;}
 .totalWrap .twList .twSpacelist .groupBox li { margin-top: 8px;}
-
-
 
 .totalBody { position: absolute; top: 72px;}
 .totalBody .tbArea { width: 100%; padding: 0 16px;}
@@ -200,8 +197,9 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .tbPopular .popularBtns { margin-left: 0;}
 .tbPopular .popularBtns button { margin-top: 16px;}
 
-
-
+/* PC용 테이블에 스크롤 추가 */
+.m_scoll { overflow-x: scroll; overflow-y: hidden; -webkit-overflow-scrolling:touch;}
+.m_scoll table { width: 912px;}
 
 
 
