@@ -588,14 +588,11 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .hTableBody table td .dateSelect .other + select { margin-left: 16px;}
 .hTableBody table td .combine { display: flex; align-items: center;}
 .hTableBody table td .combine select { width: 100px; margin-left: 8px;}
-
-
 .hTableBody table td .gubun { display: flex;}
 .hTableBody table td .gubun .groupBox:first-child { width: 230px;}
 .hTableBody table td .gubun .flexH { display: flex; align-items: center; height: 40px;}
 .hTableBody table td .gubun .calendarBody { margin-left: 16px;}
 .hTableBody table td .gubun .calendarBody input { width: 200px;}
-
 .hTableBody table td .twin { display: flex;}
 .hTableBody table td .twin select,
 .hTableBody table td .twin input { flex: 1; margin-right: 4px;}
@@ -605,8 +602,6 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .hTableBody table td input,
 .hTableBody table td select { width: 100%;}
 .hTableBody table td + th { border-left: 1px solid #dbdbdb;}
-
-
 
 .hTableBody table td .mw200,
 .hTableBody table td .mw260 { display: flex; align-items: center;}

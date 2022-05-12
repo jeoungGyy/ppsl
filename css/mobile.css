@@ -292,6 +292,8 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .m_hTableBody >li .roundBoxGray { padding: 16px; background-color: #f7f7f7; border-radius: 8px;}
 .m_hTableBody >li .roundBoxGray.block li ~ li { margin-top: 16px;}
 .m_hTableBody >li .roundBoxGray.widePd { padding: 24px 16px;}
+.m_hTableBody >li .roundBoxGray >.flexLeft .roundText { display: flex; align-items: center; justify-content: center; min-width: 64px; height: 24px; padding: 0 10px; font-size: 12px; border: 1px solid #333; border-radius: 12px;}
+.m_hTableBody >li .roundBoxGray >.flexLeft .roundText.blueLine { color: #366cc3; border-color: #366cc3;}
 .m_hTableBody >li .post input { flex: 1; margin-right: 4px;}
 .m_hTableBody >li .address input { display: block; margin-top: 8px;}
 .m_hTableBody >li .phone { gap: 17px;}
@@ -331,6 +333,7 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .m_hTableBody >li .calendarBlock .calendarBody ~ .calendarBody { margin-top: 4px;}
 .m_hTableBody >li .calendarBlock .calendarBody:first-child { position: relative;}
 .m_hTableBody >li .calendarBlock .calendarBody:first-child::after { content: '~'; display: block; position: absolute; right: -16px; top: 14px;}
+.m_hTableBody >li 
 
 .m_hTableBody >li.empty { text-align: center;}
 .m_hTableBody.pdb { padding-bottom: 24px;}
