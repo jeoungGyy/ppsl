@@ -535,6 +535,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .tableBody table td table td { padding: 10px 13px;}
 .tableBody table td table td input[type=text],
 .tableBody table td table td select { width: 100%;}
+.tableBody table tfoot td { background-color: #F4F7FC;}
 .tableBody table.vaTop td { vertical-align: top;}
 .tableBody a .new { display: inline-flex; justify-content: center; align-items: center; width: 28px; height: 16px; margin: -2px 0 0 4px; font-size: 8px; font-weight: 700; font-style: normal; color: #ee0700; vertical-align: middle; border: 1px solid #ee0700;}
 .tableBody a .secret { display: inline-block; width: 16px; height: 16px; margin-top: -2px; text-indent: -99999px; vertical-align: middle; background: url(../images/common/ico_private.svg) no-repeat center/cover;}
@@ -631,6 +632,8 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .whTableBody table td input[type=tel] { height: 32px;}
 .whTableBody table td .in  span { display: block;}
 .whTableBody table td .in  span ~ span { margin-top: 8px;}
+.whTableBody table td .ml { margin-left: 8px;}
+.whTableBody table td .ml2 { margin-left: 16px;}
 /* .whTableBody table td .defaultBtn { display: flex; align-items: center;}
 .whTableBody table td .defaultBtn input { flex: 1;} */
 .whTableBody table td .flexBtnOne .other { min-width: 37px; margin-left: 4px; text-align: right;}

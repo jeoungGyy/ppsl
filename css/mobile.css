@@ -143,9 +143,6 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .setpBodyStyle .stepByStyle li.active >span.text { display: block; position: absolute; left: 50%; bottom: -22px; width: max-content; transform: translateX(-50%);}
 .setpBodyStyle .line { left: 63px; right: 63px;}
 
-/* overflowY */
-.overflowY { scroll-behavior:smooth;}
-
 /* roundBox */
 .roundBox { margin-top: 24px;}
 .roundBox.m_marginDefault { margin-top: 0;}
@@ -216,22 +213,30 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .m_tableBody .roundBoxGray >.flexLeft .roundText { display: flex; align-items: center; justify-content: center; min-width: 64px; height: 24px; padding: 0 10px; font-size: 12px; border: 1px solid #333; border-radius: 12px;}
 .m_tableBody .roundBoxGray >.flexLeft .roundText.blueLine { color: #366cc3; border-color: #366cc3;}
 .m_tableBody .roundBoxGray >.flexLeft.mt0 { margin-top: 0;}
+.m_tableBody .roundBoxGray >.flexBetween { display: flex; align-items: center; justify-content: space-between;}
+.m_tableBody .roundBoxGray >.flexBetween b { font-size: 16px;}
 .m_tableBody .roundBoxGray .tooltipBtn { position: absolute; right: 13px; top: 13px;}
 .m_tableBody .roundBoxGray.sp { padding: 16px;}
 .m_tableBody .roundBoxGray.mt { margin-top: 16px;}
+.m_tableBody .roundBoxGray.totalBg { background-color: #F4F7FC;}
 .m_tableBody .mList >li .groupBox label { font-weight: 700;}
 .m_tableBody .mList >li.empty { text-align: center;}
 .m_tableBody .mList.mt { margin-top: 8px;}
-.msList { margin-top: 16px; font-size: 14px;}
-.msList >li { display: flex; align-items: center; justify-content: space-between;}
+#wrap .msList { margin-top: 16px; font-size: 14px;}
+.msList >li { display: flex; align-items: baseline; justify-content: space-between;}
 .msList >li ~ li { margin-top: 12px;}
-.msList >li b { line-height: 21px;}
-.msList >li.block { display: block;}
-.msList >li.block >* { display: block;}
-.msList >li.block >.mt { margin-top: 8px;}
-.msList >li.lineBreak { margin-top: 16px; padding-top: 16px; border-top: 1px solid #dbdbdb;}
-.msList.bdt { padding-top: 16px; border-top: 1px solid #dbdbdb;}
-.msList.mt0 { margin-top: 0;}
+#wrap .msList >li b { line-height: 21px;}
+#wrap .msList >li select { width: 100%;}
+#wrap .msList >li span + b { text-align: right;}
+#wrap .msList >li.block { display: block;}
+#wrap .msList >li.block >* { display: block;}
+#wrap .msList >li.block >.mt { margin-top: 8px;}
+#wrap .msList >li.block .selectPatten { display: flex; align-items: center; margin-top: 16px;}
+#wrap .msList >li.block .selectPatten .ml { margin-left: 8px;}
+#wrap .msList >li.block .selectPatten .ml2 { margin-left: 16px;}
+#wrap .msList >li.lineBreak { margin-top: 16px; padding-top: 16px; border-top: 1px solid #dbdbdb;}
+#wrap .msList.bdt { padding-top: 16px; border-top: 1px solid #dbdbdb;}
+#wrap .msList.mt0 { margin-top: 0;}
 .fileList li { margin-top: 8px;}
 .fileList li a { font-weight: 700; line-height: 21px;}
 .m_tableBody .boxGray { display: flex; align-items: center; background-color: #f7f7f7;}
@@ -270,16 +275,7 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .mListMulti >li.off { background-color: #f7f7f7;}
 .mListMulti >li.off .roundBoxGray { border: solid 1px #dbdbdb;}
 .mListMulti >li.off .colorBlue { color: #333 !important;}
-.mListMulti .msList { margin-top: 16px; font-size: 14px;}
-.mListMulti .msList li { display: flex; align-items: baseline; justify-content: space-between;}
-.mListMulti .msList li span + b { text-align: right; line-height: 21px;}
-.mListMulti .msList li ~ li { margin-top: 12px;}
-.mListMulti .msList li select { width: 100%;}
-.mListMulti .msList li.block { display: block;}
-.mListMulti .msList li.block >* { display: block;}
-.mListMulti .msList li.block >.mt { margin-top: 8px;}
-.mListMulti .msList li.lineBreak { margin-top: 16px; padding-top: 16px; border-top: 1px solid #dbdbdb;}
-.mListMulti .msList.mt0 { margin-top: 0;}
+
 
 /* m_hTableBody */
 .m_hTableBody >li ~ li { margin-top: 24px;}

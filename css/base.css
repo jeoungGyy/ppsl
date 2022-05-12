@@ -65,6 +65,8 @@ body {
 	font-weight: 400;
 	color:#333;
 	-webkit-text-size-adjust: none;
+	scroll-behavior: smooth;
+
 }
 
 a:link,
