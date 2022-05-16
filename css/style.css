@@ -445,10 +445,41 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 /* 탭 */
 .aTab { display: flex; align-items: center; margin-top: 40px;}
 .aTab li { width: 50%;}
-.aTab li button,1
+.aTab li button,
 .aTab li a { display: flex; align-items: center; justify-content: center; height: 48px; border: 1px solid #dbdbdb;}
 .aTab li button.active,
 .aTab li a.active { color: #fff; border-color: #366cc3; background-color: #366cc3;}
+
+/* 라운드 블루 박스 */
+.roundMyBox { margin-top: 40px; padding: 32px 48px; background-color: rgba(54, 108, 195, 0.05); border-radius: 8px;}
+.roundMyBox .name { display: flex; align-items: flex-end;}
+.roundMyBox .name .fontEliceDigital { position: relative; font-size: 24px; font-weight: 700;}
+.roundMyBox .name .fontEliceDigital::after { content: ''; display: block; position: absolute; left: 0; bottom: -5px; width: 100%; height: 14px; background-color: rgba(54, 108, 195, 0.1);}
+.roundMyBox .name .text { margin-left: 2px;}
+.roundMyBox .name.center .text { font-family: 'EliceDigitalBaeum', "NanumBarunGothic"; font-size: 24px;}
+.roundMyBox p { margin-top: 20px; font-size: 14px; line-height: 21px;}
+.roundMyBox p.fontSize16 { line-height: 24px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* loading */
 .load8 { overflow: hidden; position: fixed; z-index: 1000; top: 0; right: 0; bottom: 0; left: 0; padding: 10px; background: rgba(0,0,0,0.4); outline: none;}
@@ -475,7 +506,10 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
   }
 }
 
-
+/* blind */
+.blind { display: none; position: fixed; left: 0; top: 0; z-index: 80; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); opacity: 0; transition: opacity .3s;}
+.blind.active { display: block;}
+.blind.show { opacity: 1;}
 
 
 
@@ -682,13 +716,6 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .totalBody .searchScroll button { padding: 4px 0; line-height: 24px;}
 .totalBody.active { display: block;}
 .totalBody.show { transform: translateY(0);}
-
-
-
-/* blind */
-.blind { display: none; position: fixed; left: 0; top: 0; z-index: 80; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); opacity: 0; transition: opacity .3s;}
-.blind.active { display: block;}
-.blind.show { opacity: 1;}
 
 
 
@@ -932,6 +959,81 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 
 
 
+/* 안내
+**********************************************/
+
+/* 제도소개 */
+.guideFigure img { width: 100%; height: auto;}
+
+.basisInfo .basisList >li ~ li { border-top: 1px solid #dbdbdb;}
+.basisInfo .basisList >li { display: flex; align-items: flex-start; padding: 40px 0;}
+.basisInfo .basisList >li .title { width: 232px; padding-left: 32px;}
+.basisInfo .basisList >li .title .number { display: block; font-weight: 700; color: #959595;}
+.basisInfo .basisList >li .title .text { display: block; margin-top: 8px; line-height: 24px;}
+.basisInfo .basisList >li .title .bold { font-size: 19px;}
+.basisInfo .basisList >li .con { flex: 1;}
+.basisInfo .basisList >li .con .p { line-height: 24px;}
+.basisInfo .basisList >li .con .body { display: flex; align-items: center;}
+.basisInfo .basisList >li .con .body .round { display: flex; align-items: center; justify-content: center; flex-direction: column; background-color: #f7f7f7;}
+.basisInfo .basisList >li .con .body .round .t { font-size: 14px;}
+.basisInfo .basisList >li .con .body .round >div { display: flex; align-items: flex-end; justify-content: center; margin-top: 8px;}
+.basisInfo .basisList >li .con .body .round >div b { font-size: 19px; font-weight: 700;}
+.basisInfo .basisList >li .con .body .round ~ .round { margin-left: 16px;}
+.basisInfo .basisList >li .con .body .r1 { width: 112px; height: 112px; border-radius: 50%;}
+.basisInfo .basisList >li .con .body .r2 { width: 328px; height: 112px; border-radius: 56px;}
+.basisInfo .basisList >li .con .inline li { display: flex; align-items: center;}
+.basisInfo .basisList >li .con .inline li .t { width: 336px;}
+.basisInfo .basisList >li .con .inline li .b { padding-left: 24px; background: url(../images/guide/ico_arrow_map.svg) no-repeat;}
+.basisInfo .basisList >li .con .inline li .b b { font-size: 19px; font-weight: 700;}
+.basisInfo .basisList >li .con .inline li ~ li { margin-top: 16px;}
+.basisInfo .basisList >li .con .history li { display: flex; align-items: center;}
+.basisInfo .basisList >li .con .history li .hDate { width: 120px;}
+.basisInfo .basisList >li .con .history li .text { flex: 1;}
+.basisInfo .basisList >li .con .history li ~ li { margin-top: 16px;}
+
+.basisInfo .workBody { display: flex; align-items: center; height: 344px; border-top: 1px solid #333; border-bottom: 1px solid #333;}
+.basisInfo .work { position: relative; height: 264px;}
+.basisInfo .work dt { display: flex; align-items: center; justify-content: center; position: absolute; font-size: 19px; font-weight: 700; color: #fff; border-radius: 50%;}
+.basisInfo .work dt.ico1 { left: 32px; top: 0; width: 184px; height: 184px; background-color: #366CC3;}
+.basisInfo .work dt.ico1::after { content: ''; display: block; position: absolute; right: -16px; top: 21px; width: 48px; height: 9px; background: url(../images/guide/ico_arrow_blue.svg) no-repeat center/cover;}
+.basisInfo .work dt.ico2 { left: 140px; bottom: 0; width: 144px; height: 144px; background-color: rgba(54, 145, 249, 0.8);}
+.basisInfo .work dt.ico2::after { content: ''; display: block; position: absolute; right: -44px; top: 50%; width: 48px; height: 9px; margin-top: -4px; background: url(../images/guide/ico_arrow_skyBlue.svg) no-repeat center/cover;}
+.basisInfo .work dd b { line-height: 24px;}
+.basisInfo .work dd p { margin-top: 16px; font-size: 14px; line-height: 21px;}
+.basisInfo .work dd.text1 { padding: 15px 0 0 260px;}
+.basisInfo .work dd.text2 { margin-top: 75px; padding-left: 350px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 신청
 **********************************************/
 
@@ -1039,13 +1141,6 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 **********************************************/
 
 /* 예상연금/반납금 */
-.roundMyBox { margin-top: 40px; padding: 32px 48px; background-color: rgba(54, 108, 195, 0.05); border-radius: 8px;}
-.roundMyBox .name { display: flex; align-items: center; align-items: flex-end;}
-.roundMyBox .name .fontEliceDigital { position: relative; font-size: 24px; font-weight: 700;}
-.roundMyBox .name .fontEliceDigital::after { content: ''; display: block; position: absolute; left: 0; bottom: -5px; width: 100%; height: 14px; background-color: rgba(54, 108, 195, 0.1);}
-.roundMyBox .name .text { margin-left: 2px;}
-.roundMyBox p { margin-top: 20px; font-size: 14px; line-height: 21px;}
-
 .lineGroupBox { padding-top: 16px; border-top: 1px solid #333;}
 
 

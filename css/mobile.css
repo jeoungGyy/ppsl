@@ -194,9 +194,24 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .tbPopular .popularBtns { margin-left: 0;}
 .tbPopular .popularBtns button { margin-top: 16px;}
 
+/* 라운드 블루 박스 */
+.roundMyBox .name { align-items: baseline;}
+.roundMyBox .name .fontEliceDigital { margin-top: -1px; font-size: 19px;}
+.roundMyBox .name.center .text { font-size: 19px;}
+
+
+
 /* PC용 테이블에 스크롤 추가 */
 .m_scoll { overflow-x: scroll; overflow-y: hidden; -webkit-overflow-scrolling:touch;}
 .m_scoll table { width: 912px;}
+
+
+
+
+
+
+
+
 
 
 
@@ -472,6 +487,50 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .stepLogin .step2Group { display: block; height: inherit; margin-top: 0; padding-left: 0; border: none; border-radius: inherit;}
 .stepLogin .step2Group >div { margin-left: 0;}
 .stepLogin .step2Group .step2Btn { position: inherit; right: inherit; bottom: inherit; margin-top: 16px;}
+
+
+/* 안내
+**********************************************/
+
+/* 제도소개 */
+.guideFigure {}
+.guideFigure img { width: 328px; height: auto;}
+
+.basisInfo .basisList { margin-top: 15px;}
+.basisInfo .basisList >li { display: block; padding: 25px 0;}
+.basisInfo .basisList >li .title { width: inherit; padding-left: 0;}
+.basisInfo .basisList >li .con { margin-top: 16px;}
+.basisInfo .basisList >li .con .body { flex-wrap: wrap; justify-content: center;}
+.basisInfo .basisList >li .con .body .round ~ .round { margin-left: 0;}
+.basisInfo .basisList >li .con .body .r1 ~ .r1 { margin-left: 16px;}
+.basisInfo .basisList >li .con .body .r2 { width: 100%; margin-top: 8px;}
+.basisInfo .basisList >li .con .inline li { display: block;}
+.basisInfo .basisList >li .con .inline li .t { line-height: 24px;}
+.basisInfo .basisList >li .con .inline li .b { margin-top: 3px;}
+.basisInfo .basisList >li .con .history li { display: block;}
+.basisInfo .basisList >li .con .history li .hDate { display: block; width: inherit;}
+.basisInfo .basisList >li .con .history li .text { display: block; margin-top: 8px;}
+
+.basisInfo .work { height: inherit; padding: 40px 0;}
+.basisInfo .work dt { display: block; position: inherit; font-family: "NanumBarunGothic"; color: #333; border-radius: inherit;}
+.basisInfo .work dt.ico1 { left: inherit; top: inherit; width: inherit; height: inherit; background-color: #fff;}
+.basisInfo .work dt.ico1::after { display: none;}
+.basisInfo .work dt.ico2 { left: inherit; bottom: inherit; width: inherit; height: inherit; margin-top: 24px; background-color: #fff;}
+.basisInfo .work dt.ico2::after { display: none;}
+.basisInfo .work dd { margin-top: 17px;}
+.basisInfo .work dd.text1 { padding: 0;}
+.basisInfo .work dd.text2 { margin-top: 0; padding: 0;}
+.basisInfo .workBody { height: inherit;}
+
+
+
+
+
+
+
+
+
+
 
 
 

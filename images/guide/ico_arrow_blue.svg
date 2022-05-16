@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="10.002" viewBox="0 0 50 10.002">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #366cc3;
+        stroke: #fff;
+        stroke-width: 2px;
+      }
+
+      .cls-2, .cls-5 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #366cc3;
+        stroke-dasharray: 2 2;
+      }
+
+      .cls-3 {
+        fill: #ccc;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="arrow_" data-name="arrow " transform="translate(-115 -55)">
+    <g id="타원_1358" data-name="타원 1358" class="cls-1" transform="translate(117 57)">
+      <circle class="cls-4" cx="3" cy="3" r="3"/>
+      <circle class="cls-5" cx="3" cy="3" r="4"/>
+    </g>
+    <path id="dot" class="cls-2" d="M0,0H16" transform="translate(126.081 60.5)"/>
+    <path id="arrow" class="cls-3" d="M18790.918,18776H18775v-1h15.918v-4l7,4.5-7,4.5Z" transform="translate(-18632.918 -18715)"/>
+  </g>
+</svg>
