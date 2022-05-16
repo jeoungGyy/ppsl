@@ -1,0 +1,583 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<script src="../../include/head.js"></script> <!-- include: 공통 헤드 -->
+</head>
+
+<body>
+<div id="wrap">
+	<script src="../../include/header.js"></script> <!-- include: 공통 헤더 -->
+
+	<div class="container">
+		<div class="area">
+			<div class="wrap">
+				<div class="lnbBody">
+					<h2></h2>
+					<nav class="lnb">
+					</nav>
+				</div>
+
+				<div id="contentLink" class="contents">
+					<header class="contentsHeader">
+						<div class="title">
+							<h3>연계연금제도</h3>
+							<p>공적연금연계제도란?</p>
+						</div>
+						<script src="../../include/location.js"></script> <!-- include: 공통 현재위치 -->
+					</header>
+
+					<ul class="aTab">
+						<li><a href="HO_01_01_02_01.html">연계연금</a></li>
+						<li><a href="HO_01_01_02_02.html">국민연금</a></li>
+						<li><a href="HO_01_01_02_03.html" class="active">직역연금 일반</a></li>
+					</ul>
+
+					<ul class="acoList">
+						<li>
+							<button type="button" id="header_1" class="accordionBtn active" aria-controls="panel_1" title="확장됨"> <!-- id, aria-controls 값과 (아래) -->
+								<span class="invisible">현재 단계</span>
+								<span class="qText">교원</span>
+							</button>
+							<div id="panel_1" class="accopanel paragraphGroup" aria-labelledby="header_1" style="display: block;"> <!-- id, aria-labelledby 값이 서로 같게 맞춰주세요. -->
+								<p>사립학교법 제54조의 규정에 의하여 그 임명에 관하여 관할청에 보고된 자를 말한다.</p>
+							</div>
+						</li>
+						<li>
+							<button type="button" id="header_2" class="accordionBtn" aria-controls="panel_2" title="축소됨">
+								<span class="qText">군인</span>
+							</button>
+							<div id="panel_2" class="accopanel paragraphGroup" aria-labelledby="header_2">
+								<p>군인연금법의 적용을 받는 군인을 가리키며,병역법에 의한 현역병이나 원에 의하지 않고 임용된 부사관은 제외된다.</p>
+							</div>
+						</li>
+						<li>
+							<button type="button" id="header_3" class="accordionBtn" aria-controls="panel_3" title="축소됨">
+								<span class="qText">별정우체국 직원</span>
+							</button>
+							<div id="panel_3" class="accopanel paragraphGroup" aria-labelledby="header_3">
+								<p>
+									별정우체국장과 별정우체국법에 따른 소관사무를 수행하기 위해 지식경제부령에 의해 별정우체국에 채용되어 근무하는 자를 말한다.<br>
+									※ 별정우체국 :지식경제부장관의 지정을 받아 자기의 부담으로 청사 기타 시설을 갖추고 국가로부터 위임받은 체신업무를 수행하는 우체국
+								</p>
+							</div>
+						</li>
+						<li>
+							<button type="button" id="header_4" class="accordionBtn" aria-controls="panel_4" title="축소됨">
+								<span class="qText">직역연금</span>
+							</button>
+							<div id="panel_4" class="accopanel paragraphGroup" aria-labelledby="header_4">
+								<p>공무원연금법,사립학교교직원연금법,군인연금법 및 별정우체국법에 의해 지급되는 연금으로 각 연금법의 가입자 또는 가입자의 유족을 대상으로 한다.</p>
+							</div>
+						</li>
+						<li>
+							<button type="button" id="header_5" class="accordionBtn" aria-controls="panel_5" title="축소됨">
+								<span class="qText">대리인</span>
+							</button>
+							<div id="panel_5" class="accopanel paragraphGroup" aria-labelledby="header_5">
+								<p>대리권을 가지고 본인을 대신하여 의사표시를 하거나,의사표시를 받을 권한이 있는 사람을 말한다.</p>
+							</div>
+						</li>
+						<li>
+							<button type="button" id="header_6" class="accordionBtn" aria-controls="panel_6" title="축소됨">
+								<span class="qText">유족</span>
+							</button>
+							<div id="panel_6" class="accopanel paragraphGroup" aria-labelledby="header_6">
+								<p>1.공무원(교직원,군인 및 별정우체국 직원 포함)또는 공무원이었던 자의 사망 당시 그에 의하여 부양되고 있던 배우자,자녀,부모,손자녀,조부모 등에서 유족급여를 받을 수 있는 자로 유족의 범위는 각 연금법에서 정한다.</p>
+							</div>
+						</li>
+						<li>
+							<button type="button" id="header_7" class="accordionBtn" aria-controls="panel_7" title="축소됨">
+								<span class="qText">퇴직</span>
+							</button>
+							<div id="panel_7" class="accopanel paragraphGroup" aria-labelledby="header_7">
+								<p>면직·사직 기타 사망외의 사유로 인한 모든 해직을 말함.다만,공무원의 자격이 소멸된 날 또는 그 다음날에 다시 자격을 취득하고 이 법에 의한 퇴직급여 및 퇴직수당을 수
+									령하지 아니한 경우에는 예외로 한다.</p>
+							</div>
+						</li>
+						<li>
+							<button type="button" id="header_8" class="accordionBtn" aria-controls="panel_8" title="축소됨">
+								<span class="qText">퇴직급여 재직기간</span>
+							</button>
+							<div id="panel_8" class="accopanel paragraphGroup" aria-labelledby="header_8">
+								<p>
+									각 직역연금법에 따라 제급여를 산정할 때 급여 지급율을 결정하는 요소이며,기본재직기간에 특례기간을 더하여 산정하며 최고 36년만 인정한다.<br>
+									1.기본 재직기간 :임명한 날이 속하는 달부터 퇴직한 날의 전날 (또는 사망한 날이 속하는 달)까지하되 연월수에 의해 산정한다.<br>
+									2.특례기간 :합산재직기간,임용전 병역복무기간,소급통산기간을 말한다.
+								</p>
+							</div>
+						</li>
+						<li>
+							<button type="button" id="header_9" class="accordionBtn" aria-controls="panel_9" title="축소됨">
+								<span class="qText">퇴직수당 재직기간</span>
+							</button>
+							<div id="panel_9" class="accopanel paragraphGroup" aria-labelledby="header_9">
+								<p>
+									[공무원,사학,별정우체국연금]<br>
+									1.기본재직기간으로 산정하되,'91.10.01부터 발생한 휴직(상병휴직,입대휴직,고용휴직,노조전임휴직,육아휴직제외),직위해제 정직기간에 대하여 그 기간의 1/2감축한다.<br>
+									2.퇴직수당 지급시 재직기간으로 퇴직급여재직기간에서 휴직기간(상병휴직,입대휴직,고용휴직,노조전임휴직,육아휴직제외),직위해제기간,정직기간 및 강등에 따라 직무에 종사하지 못하는 기간은 그 기간의 2분의 1을 각각 뺀 기간을 말한다.
+								</p>
+								<p>
+									[군인연금]<br>
+									군인연금법 제5조(복무기간의 계산)에서 퇴직수당 지급과 관련하여 복무기간을 계산할 때에는 각 호의 사유로 인한 휴직을 제외한 휴직기간,직위해제기간 및 정직기간은 그 기간의 2분의 1을 각각 뺀다.<br>
+									1.공무상 부상 또는 질병으로 인한 휴직<br>
+									2.국제기구,외국기관,국내외 대학 또는 국내외 연구기관에 임시채용됨으로 인한 휴직<br>
+									3.자녀의 양육 또는 여성군인의 임신이나 출산으로 인한 휴직<br>
+									4.그 밖에 법률에 따른 의무를 수행하기 위한 휴직
+								</p>
+							</div>
+						</li>
+						<li>
+							<button type="button" id="header_10" class="accordionBtn" aria-controls="panel_10" title="축소됨">
+								<span class="qText">급여액 산정기초</span>
+							</button>
+							<div id="panel_10" class="accopanel paragraphGroup" aria-labelledby="header_10">
+								<p>급여의 사유가 발생한 날(퇴직으로 급여의 사유가 발생하거나 퇴직후에 급여의 사유가 발생한 경우에는 퇴직한 날의 전날로 함)이 속하는 달의 보수월액을 기초로 하며,급
+									여의 종류에 따라 최종기준소득월액 (또는 최종보수월액)또는 평균기준소득월액(또는 3년평균보수월액)을 말한다.</p>
+							</div>
+						</li>
+						<li>
+							<button type="button" id="header_11" class="accordionBtn" aria-controls="panel_11" title="축소됨">
+								<span class="qText">합산제도</span>
+							</button>
+							<div id="panel_11" class="accopanel paragraphGroup" aria-labelledby="header_11">
+								<p>공무원,군인 또는 사립학교교직원이 퇴직한 후 공무원,군인,사립학교교직원으로 다시 임용되어,원하는 경우 퇴직당시 수령했던 퇴직급여액에 일정 이자를 가산하여 반납
+									(합산반납금이라고 함)하도록 하고 종전 재직기간을 현 재직기간에 합산하여 주는 제도이다.</p>
+							</div>
+						</li>
+						<li>
+							<button type="button" id="header_12" class="accordionBtn" aria-controls="panel_12" title="축소됨">
+								<span class="qText">임용전 군복무기간 산입</span>
+							</button>
+							<div id="panel_12" class="accopanel paragraphGroup" aria-labelledby="header_12">
+								<p>
+									1.임용되기 전의 병역법에 의한 현역병 또는 지원에 의하지 아니하고 임용된 하사관의 복무기간 (방위소집에 의하여 실역에 복무한 기간을 포함)으로 소급기여금을 납부하게 하고 재직기간에 가산하여 주는 제도이다.<br>
+									2.사병산입기간,임용전병역복무기간 또는 군소급이라고도 한다.
+								</p>
+							</div>
+						</li>
+						<li>
+							<button type="button" id="header_13" class="accordionBtn" aria-controls="panel_13" title="축소됨">
+								<span class="qText">소급통산</span>
+							</button>
+							<div id="panel_13" class="accopanel paragraphGroup" aria-labelledby="header_13">
+								<p>
+									1.연금법 적용전의 재직기간에 대해 본인이 원할 경우 해당 기간만큼의 소급기여금을 납부하게 하고,소급하여 법 적용을 받을 수 있도록 재직기간에 가산하여 주는 제도이다.<br>
+									2.동일한 신분기간이면서 제도적용시점의 차이에 따라 연금혜택을 받지 못하는 기간을 소급하여인정하기 위한 특례제도이다.
+								</p>
+							</div>
+						</li>
+						<li>
+							<button type="button" id="header_14" class="accordionBtn" aria-controls="panel_14" title="축소됨">
+								<span class="qText">공적연금 과세제도</span>
+							</button>
+							<div id="panel_14" class="accopanel paragraphGroup" aria-labelledby="header_14">
+								<p>02.1.1일 시행(소득세법 '00.12.29 개정)되어 '02년부터 근로소득 연말정산시 연도중에 납부한 기여금에대해 소득공제 혜택을 주는 대신 퇴직으로 발생하는 퇴직소득(연금소득)에 대해 과세하는 제도이다.</p>
+							</div>
+						</li>
+						<li>
+							<button type="button" id="header_15" class="accordionBtn" aria-controls="panel_15" title="축소됨">
+								<span class="qText">기여금(부담금)</span>
+							</button>
+							<div id="panel_15" class="accopanel paragraphGroup" aria-labelledby="header_15">
+								<p>
+									1.기여금은 퇴직급여,유족급여 등 연금급여에 소용되는 비용으로서 임용된 날이 속하는 달로부터 퇴직한 날의 전날 또는 사망한 날이 속하는 달까지 가입자가 월별로 납부하는 금액이다.<br>
+									2.사학연금과 별정우체국연금에서는 본인이 부담하는 기여금을 개인부담금이라고도 한다.<br>
+									3.일반기여금(부담금),소급기여금(부담금),합산반납금이 있다.
+								</p>
+							</div>
+						</li>
+						<li>
+							<button type="button" id="header_16" class="accordionBtn" aria-controls="panel_16" title="축소됨">
+								<span class="qText">부담금</span>
+							</button>
+							<div id="panel_16" class="accopanel paragraphGroup" aria-labelledby="header_16">
+								<p>급여지급에 소요되는 비용으로 국가나 지방자치단체,법인 등에서 부담하는 금액으로 사용자부담금 또는 국가부담금이라고도 한다.</p>
+							</div>
+						</li>
+						<li>
+							<button type="button" id="header_17" class="accordionBtn" aria-controls="panel_17" title="축소됨">
+								<span class="qText">일밤기여금(부담금)</span>
+							</button>
+							<div id="panel_17" class="accopanel paragraphGroup" aria-labelledby="header_17">
+								<p>임용된 날이 속하는 달부터 퇴직한 날의 전날 또는 사망한 날이 속하는 달까지 매월 납부하는 기여금으로 개인부담금이라고도 한다.</p>
+							</div>
+						</li>
+						<li>
+							<button type="button" id="header_18" class="accordionBtn" aria-controls="panel_18" title="축소됨">
+								<span class="qText">소급기여금(부담금)</span>
+							</button>
+							<div id="panel_18" class="accopanel paragraphGroup" aria-labelledby="header_18">
+								<p>소급통산 승인을 받아 납부하는 기여금,임용전 군복무기간산입 승인을 받아 납부하는 기여금,보수미지급 휴직 복직 후 납부하는 기여금을 말한다.</p>
+							</div>
+						</li>
+						<li>
+							<button type="button" id="header_19" class="accordionBtn" aria-controls="panel_19" title="축소됨">
+								<span class="qText">합산반납금</span>
+							</button>
+							<div id="panel_19" class="accopanel paragraphGroup" aria-labelledby="header_19">
+								<p>과거 재직기간의 합산을 받아 납부하는 반납금을 말한다.</p>
+							</div>
+						</li>
+						<li>
+							<button type="button" id="header_20" class="accordionBtn" aria-controls="panel_20" title="축소됨">
+								<span class="qText">연금개시연령</span>
+							</button>
+							<div id="panel_20" class="accopanel" aria-labelledby="header_20">
+								<div class="paragraphGroup">
+									<p>
+										1.연금을 받게되는 시점에서의 연령을 말한다.<br>
+										2.퇴직연금의 지급시기는 65세 또는 정년이나 근무상한연령을 60세미만으로 정한 경우 그 정년 또는근무상한 연령이 되었을 때부터 5년이 경과한 때 퇴직하거나 퇴직후 정년연령에 도달하는 경우 연금을지급하게 되어있다.<br>
+										* 다만,'96.1.1.부터 '09.12.31.사이 임용된 공무원은 퇴직연도별로 정한 해당연령에 도달한 때부터 지급
+									</p>
+								</div>
+								<div class="tableBody m_scoll">
+									<table>
+										<caption>연금개시연령 : 연도, 개시연령, 연도, 개시연령으로 구성</caption>
+										<colgroup>
+											<col>
+											<col style="width: 25%;">
+											<col style="width: 25%;">
+											<col style="width: 25%;">
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col" class="textCenter">연도</th>
+												<th scope="col" class="textCenter">개시연령</th>
+												<th scope="col" class="textCenter">연도</th>
+												<th scope="col" class="textCenter">개시연령</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>‘16~’21년</td>
+												<td>60세</td>
+												<td>‘27~’29년</td>
+												<td>63세</td>
+											</tr>
+											<tr>
+												<td>‘12~’23년</td>
+												<td>61세</td>
+												<td>‘30~’32년</td>
+												<td>64세</td>
+											</tr>
+											<tr>
+												<td>‘24~’26년</td>
+												<td>62세</td>
+												<td>‘33년~</td>
+												<td>65세</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<br>
+								<div class="paragraphGroup">
+									<p>
+										3.다만,2000년 법개정당시를 기준으로 1996.1.1이전에 임용된 공무원에 한하여 아래와 같이 예외조항을 두고 있으며,먼저 적용되는 요건에 따라 연금개시연령이 결정된다.<br>
+										가.법 개정당시 재직기간이 20년 미달된 경우 미달된 기간의 2배를 재직하고 퇴직하는 경우는 퇴직월 익월부터 지급(20년미달2배근무)한다.<br>
+										나.퇴직연도에 따라 지급연령이 있는데 2001년부터 매2년마다 1세씩 증가하여 2020년이후에는 60세가 되면 연금을 지급(개시연령도달)한다.
+									</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<button type="button" id="header_21" class="accordionBtn" aria-controls="panel_21" title="축소됨">
+								<span class="qText">기준소득월액</span>
+							</button>
+							<div id="panel_21" class="accopanel paragraphGroup" aria-labelledby="header_21">
+								<p>기여금 및 급여산정의 기준이 되는 것으로서 일정기간 재직하고 얻은 소득에서 비과세소득을 제외한 금액의 연지급합계액을 12개월로 평균한 금액이다.</p>
+							</div>
+						</li>
+						<li>
+							<button type="button" id="header_22" class="accordionBtn" aria-controls="panel_22" title="축소됨">
+								<span class="qText">기준소득월액</span>
+							</button>
+							<div id="panel_22" class="accopanel paragraphGroup" aria-labelledby="header_22">
+								<p>
+									재직기간중 매년 기준소득월액을 공무원보수인상률 등을 고려하여 대통령령으로 정하는 바에 따라 급여의 사유가 발생한 날의 현재가치로 환산한 후 합한 금액을 재직기간으로 나눈 금액을 말한다.<br>
+									다만,퇴직연금,조기퇴직연금 및 유족연금 산정의 기초가 되는 평균기준소득월액은 급여의 사유가 발생한 당시의 평균기준소득월액을 공무원보수인상율 등을 고려하여 대통령령이 정하는 바에 따라 연금지급이 시작되는 시점의 현재가치로 환산한 금액을 말한다.
+								</p>
+							</div>
+						</li>
+						<li>
+							<button type="button" id="header_23" class="accordionBtn" aria-controls="panel_23" title="축소됨">
+								<span class="qText">보수월액</span>
+							</button>
+							<div id="panel_23" class="accopanel paragraphGroup" aria-labelledby="header_23">
+								<p>공무원(사학,군인 및 별정우체국 포함)의 직급과 재직기간에 따라 지급되는 월급여액으로서 봉급과 상여금의 연지급액을 12로 평균한 액 및 대통령령으로 정하는 수당액을
+									합한 액을 말한다.</p>
+							</div>
+						</li>
+						<li>
+							<button type="button" id="header_24" class="accordionBtn" aria-controls="panel_24" title="축소됨">
+								<span class="qText">3년 평균 보수월액</span>
+							</button>
+							<div id="panel_24" class="accopanel paragraphGroup" aria-labelledby="header_24">
+								<p>급여의 사유가 발생한 날(퇴직으로 급여의 사유가 발생하거나 퇴직후에 급여의 사유가 발생한 경우에는 퇴직한 날의 전날을 말한다.이하 같다)이 속하는 달부터 소급하여 3년
+									간(재직기간이 3년 미만인 경우에는 그 재직기간을 말한다)의 보수월액을 공무원보수인상률 등을 고려하여 대통령령이 정하는 바에 따라 급여의 사유가 발생한 날의 현재가치
+									로 환산한 후 이를 합한 금액을 해당 월수로 나눈 금액을 말한다.</p>
+							</div>
+						</li>
+						<li>
+							<button type="button" id="header_25" class="accordionBtn" aria-controls="panel_25" title="축소됨">
+								<span class="qText">퇴직급여</span>
+							</button>
+							<div id="panel_25" class="accopanel paragraphGroup" aria-labelledby="header_25">
+								<p>민간에서의 국민연금성격의 급여로,공무원의 퇴직 또는 사망에 의해 지급하는 급여이다.퇴직급여와 유족급여가 있다.</p>
+							</div>
+						</li>
+						<li>
+							<button type="button" id="header_26" class="accordionBtn" aria-controls="panel_26" title="축소됨">
+								<span class="qText">퇴직수당</span>
+							</button>
+							<div id="panel_26" class="accopanel paragraphGroup" aria-labelledby="header_26">
+								<p>
+									민간에서의 퇴직금성격의 급여로,공무원이 1년 이상 재직하고 퇴직 또는 사망한 때 지급하는 급여이다.<br>
+									퇴직수당재직기간 및 최종기준소득월액(또는 보수월액)에 대통령령으로 정하는 비율을 곱한 금액으로 한다.
+								</p>
+							</div>
+						</li>
+					</ul>
+
+					<h4 class="defaultF24 pcmt40 momt40">급여의 종류</h4>
+					<ol class="acoStepList">
+						<li>
+							<h5 class="defaultH5">1. 장기급여</h5>
+							<ol>
+								<li>
+									<span>가. 퇴직급여</span>
+									<ul class="acoList">
+										<li>
+											<button type="button" id="header1-1_1" class="accordionBtn" aria-controls="panel1-1_1" title="축소됨">
+												<span class="qText">퇴직연금</span>
+											</button>
+											<div id="panel1-1_1" class="accopanel paragraphGroup" aria-labelledby="header1-1_1">
+												<p>
+													10년* 이상 재직하고 퇴직한 자에게 연금이 개시되는 시점부터 사망시까지 종신토록 매월 연금 지급한다.<br>
+													* 2016.1.1.이전 퇴직자,군인연금 퇴직자는 20년
+												</p>
+											</div>
+										</li>
+										<li>
+											<button type="button" id="header1-1_2" class="accordionBtn" aria-controls="panel1-1_2" title="축소됨">
+												<span class="qText">조기퇴직연금</span>
+											</button>
+											<div id="panel1-1_2" class="accopanel paragraphGroup" aria-labelledby="header1-1_2">
+												<p>
+													10년* 이상 재직하고 퇴직한 자가 연금개시 연령에 도달하기 전,조기에 연금을 지급받기를 원할 때 사망시까지 감액된 연금액으로 매월 지급지급연령에 미달되는 연수에 따라 매년 5%씩 감액하여 당해 퇴직연금의 75~95% 상담금액지급한다.<br>
+													* 2016.1.1.이전 퇴직자,군인연금 퇴직자는 20년
+												</p>
+											</div>
+										</li>
+										<li>
+											<button type="button" id="header1-1_3" class="accordionBtn" aria-controls="panel1-1_3" title="축소됨">
+												<span class="qText">퇴직연금공제일시금</span>
+											</button>
+											<div id="panel1-1_3" class="accopanel paragraphGroup" aria-labelledby="header1-1_3">
+												<p>
+													10년* 이상 재직하고 퇴직한 공무원이 10년을 초과하는 재직기간 중 일부 기간을 일시금으로 지급받고자 할 때 지급한다.<br>
+													* 2016.1.1.이전 퇴직자,군인연금 퇴직자는 20년
+												</p>
+											</div>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<span>나. 유족연금</span>
+									<ul class="acoList">
+										<li>
+											<button type="button" id="header1-2_1" class="accordionBtn" aria-controls="panel1-2_1" title="축소됨">
+												<span class="qText">퇴직연금일시금</span>
+											</button>
+											<div id="panel1-2_1" class="accopanel paragraphGroup" aria-labelledby="header1-2_1">
+												<p>
+													10년* 이상 재직하고 퇴직한 공무원이 퇴직연금 수급에 갈음하여 일시금으로 지급받고자 할때 지급한다.<br>
+													* 2016.1.1.이전 퇴직자,군인연금 퇴직자는 20년
+												</p>
+											</div>
+										</li>
+										<li>
+											<button type="button" id="header1-2_2" class="accordionBtn" aria-controls="panel1-2_2" title="축소됨">
+												<span class="qText">퇴직일시금</span>
+											</button>
+											<div id="panel1-2_2" class="accopanel paragraphGroup" aria-labelledby="header1-2_2">
+												<p>
+													공무원이 10년* 미만 재직하고 퇴직한 때 일시금으로 지급한다.<br>
+													* 2016.1.1.이전 퇴직자,군인연금 퇴직자는 20년
+												</p>
+											</div>
+										</li>
+										<li>
+											<button type="button" id="header1-2_3" class="accordionBtn" aria-controls="panel1-2_3" title="축소됨">
+												<span class="qText">유족연금</span>
+											</button>
+											<div id="panel1-2_3" class="accopanel paragraphGroup" aria-labelledby="header1-2_3">
+												<p>
+													10년* 이상 재직한 자가 재직중 사망한 때,퇴직연금 또는 조기 퇴직연금 수급자가 사망한 때 ,장해연금 수급자가 사망한 때 매월 지급한다.<br>
+													* 2016.1.1.이전 퇴직자,군인연금 퇴직자는 20년
+												</p>
+											</div>
+										</li>
+										<li>
+											<button type="button" id="header1-2_4" class="accordionBtn" aria-controls="panel1-2_4" title="축소됨">
+												<span class="qText">유족연금일시금</span>
+											</button>
+											<div id="panel1-2_4" class="accopanel paragraphGroup" aria-labelledby="header1-2_4">
+												<p>
+													10년* 이상 재직한 자가 재직중에 사망한 때 유족이 원하는 경우 유족연금에 갈하여 일시금으로 지급한다.<br>
+													* 2016.1.1.이전 퇴직자,군인연금 퇴직자는 20년
+												</p>
+											</div>
+										</li>
+										<li>
+											<button type="button" id="header1-2_5" class="accordionBtn" aria-controls="panel1-2_5" title="축소됨">
+												<span class="qText">유족일시금</span>
+											</button>
+											<div id="panel1-2_5" class="accopanel paragraphGroup" aria-labelledby="header1-2_5">
+												<p>
+													10년* 미만 재직한 자가 재직중에 사망한 때 일시금으로 지급한다.<br>
+													* 2016.1.1.이전 퇴직자,군인연금 퇴직자는 20년
+												</p>
+											</div>
+										</li>
+										<li>
+											<button type="button" id="header1-2_6" class="accordionBtn" aria-controls="panel1-2_6" title="축소됨">
+												<span class="qText">유족연금부가금</span>
+											</button>
+											<div id="panel1-2_6" class="accopanel paragraphGroup" aria-labelledby="header1-2_6">
+												<p>
+													10년 이상 재직한 자가 재직중 사망한 때 유족이 급여를 연금으로 신청시 유족연금과는 별도로 추가 지급한다.<br>
+													* 2016.1.1.이전 퇴직자,군인연금 퇴직자는 20년
+												</p>
+											</div>
+										</li>
+										<li>
+											<button type="button" id="header1-2_7" class="accordionBtn" aria-controls="panel1-2_7" title="축소됨">
+												<span class="qText">유족연금특별부가금</span>
+											</button>
+											<div id="panel1-2_7" class="accopanel paragraphGroup" aria-labelledby="header1-2_7">
+												<p>
+													퇴직연금 또는 조기퇴직연금 수급자가 퇴직 후 3년 이내에 사망한 때 유족연금과는 별도로 지급한다.<br>
+													* 2016.1.1.이전 퇴직자,군인연금 퇴직자는 20년
+												</p>
+											</div>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<span>다. 퇴직수당</span>
+									<ul class="acoList">
+										<li>
+											<button type="button" id="header1-3_1" class="accordionBtn" aria-controls="panel1-3_1" title="축소됨">
+												<span class="qText">퇴직수당</span>
+											</button>
+											<div id="panel1-3_1" class="accopanel paragraphGroup" aria-labelledby="header1-3_1">
+												<p>공무원이 1년 이상 재직하고 퇴직 또는 사망한 때에는 재직기간에 따라 기준소득월액의 6.5~39%에상당하는 금액을 퇴직급여 또는 유족급여
+													와는 별도로 퇴직수당을 받을 수 있다.('91.10.1시행)</p>
+											</div>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<span>라. 재해보상급여</span>
+									<ul class="acoList">
+										<li>
+											<button type="button" id="header1-4_1" class="accordionBtn" aria-controls="panel1-4_1" title="축소됨">
+												<span class="qText">장해연금</span>
+											</button>
+											<div id="panel1-4_1" class="accopanel paragraphGroup" aria-labelledby="header1-4_1">
+												<p>공무상 질병,부상으로 인하여 장해상태로 되어 퇴직한 때 또는 퇴직 후 그 질병 또는 부상으로 장해상태로 된 때 장해등급에 딸 사망할 때까지 매월지급 * 퇴직급여와 병급하여 지급한다.</p>
+											</div>
+										</li>
+										<li>
+											<button type="button" id="header1-4_2" class="accordionBtn" aria-controls="panel1-4_2" title="축소됨">
+												<span class="qText">장해보상금</span>
+											</button>
+											<div id="panel1-4_2" class="accopanel paragraphGroup" aria-labelledby="header1-4_2">
+												<p>장해연금에 갈음하여 5년분의 장해연금액을 일시금으로 지급 * 퇴직급여와 병급하여 지급한다.</p>
+											</div>
+										</li>
+										<li>
+											<button type="button" id="header1-4_3" class="accordionBtn" aria-controls="panel1-4_3" title="축소됨">
+												<span class="qText">유족보상금</span>
+											</button>
+											<div id="panel1-4_3" class="accopanel paragraphGroup" aria-labelledby="header1-4_3">
+												<p>공무원이 공무상 질병 또는 부상으로 인하여 재직중에 사망하거나,퇴직 후 3년 이내에 그 질병 또는 부상으로 인해 사망한 때 지급한다.</p>
+											</div>
+										</li>
+									</ul>
+								</li>
+							</ol>
+						</li>
+						<li>
+							<h5 class="defaultH5">2. 단기급여</h5>
+							<ol>
+								<li>
+									<span>가. 요양급여</span>
+									<ul class="acoList">
+										<li>
+											<button type="button" id="header2-1_1" class="accordionBtn" aria-controls="panel2-1_1" title="축소됨">
+												<span class="qText">공무상요양비</span>
+											</button>
+											<div id="panel2-1_1" class="accopanel paragraphGroup" aria-labelledby="header2-1_1">
+												<p>공무상 질병 또는 부상에 대하여 공단으로부터 공무상요양(연장)승인을 받아 요양기관에서 요양을 한 떄 실제 요양기간 2년(730일)범위 안에
+													서 소요되는 비용을 정부(국가 또는 지방자치단체)에서 지급한다.</p>
+											</div>
+										</li>
+										<li>
+											<button type="button" id="header2-1_2" class="accordionBtn" aria-controls="panel2-1_2" title="축소됨">
+												<span class="qText">공무상 요양일시금</span>
+											</button>
+											<div id="panel2-1_2" class="accopanel paragraphGroup" aria-labelledby="header2-1_2">
+												<p>공무상 요양 승인을 받고 2년 (730일)간 치료하였으나,완치되지 않는 경우 향후 1년간의 범위안에서 요양에 소용될 예정 진료비가 일시에 지급
+													한다.</p>
+											</div>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<span>나. 부조급여</span>
+									<ul class="acoList">
+										<li>
+											<button type="button" id="header2-2_1" class="accordionBtn" aria-controls="panel2-2_1" title="축소됨">
+												<span class="qText">재해부조금</span>
+											</button>
+											<div id="panel2-2_1" class="accopanel paragraphGroup" aria-labelledby="header2-2_1">
+												<p>재산(주택)이 수재,화재 기타 재해로 인하여 소실 유실 파괸되어 손해를 입은 때 재해의 정보에 따라 지급한다.</p>
+											</div>
+										</li>
+										<li>
+											<button type="button" id="header2-2_2" class="accordionBtn" aria-controls="panel2-2_2" title="축소됨">
+												<span class="qText">사망조위금</span>
+											</button>
+											<div id="panel2-2_2" class="accopanel paragraphGroup" aria-labelledby="header2-2_2">
+												<p>
+													배우자,부모,부양한 배우자의 부모 또는 자녀가 사망한 경우에 사망 당시 기준소득월액의 100분의 65에 상당하는 금액을 지급하고,본인이 사망한 경우에는 사망당시 기준소득월액의 100분의 195에 상당하는 금액을 지급하며,지급대상자가 다수인 경우에도 1인에게 지급(우선순위에의함)한다.<br>
+													* 지급대상이 아닌 경우<br>
+													- 조부모,손자녀등 사망 /계부모 또는 계조부모 사망<br>
+													- 부양하지 않던 배우자의 직계존속 사망
+												</p>
+											</div>
+										</li>
+									</ul>
+								</li>
+							</ol>
+						</li>
+						<li>
+					</ol>
+					
+
+					<script src="../../include/evaluation.js"></script> <!-- include: 공통 평가 -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="../../include/footer.js"></script> <!-- include: 공통 푸터 -->
+
+	<script>
+		var depth = [1, 1, 2]; /* 현재메뉴 활성화 용: gnb에 있는 data-menu 값과 일치하게 해주세요. */
+	</script>
+</div>
+</body>
+</html>
