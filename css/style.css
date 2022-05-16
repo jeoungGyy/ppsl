@@ -444,9 +444,10 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 
 /* 탭 */
 .aTab { display: flex; align-items: center; margin-top: 40px;}
-.aTab li { width: 50%;}
+.aTab li { flex: 1;}
 .aTab li button,
 .aTab li a { display: flex; align-items: center; justify-content: center; height: 48px; border: 1px solid #dbdbdb;}
+.aTab li ~ li a { border-left: none;}
 .aTab li button.active,
 .aTab li a.active { color: #fff; border-color: #366cc3; background-color: #366cc3;}
 
@@ -460,10 +461,14 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .roundMyBox p { margin-top: 20px; font-size: 14px; line-height: 21px;}
 .roundMyBox p.fontSize16 { line-height: 24px;}
 
-
-
-
-
+/* FAQ 아코디언 */
+.acoList { margin-top: 40px; border-top: 2px solid #333;}
+.acoList li { border-bottom: 1px solid #dbdbdb;}
+.acoList li button { display: block; position: relative; width: 100%; padding: 18px 24px; font-weight: 700; text-align: left; line-height: 24px;}
+.acoList li button::after { content: ''; display: block; position: absolute; right: 24px; top: 50%; width: 16px; height: 16px; margin-top: -8px; background: url(../images/common/ico_arrow_down.svg) no-repeat center/cover;}
+.acoList li .accopanel { display: none; padding: 32px; background-color: #f4f7fc;}
+.acoList li button.active { color: #366cc3;}
+.acoList li button.active::after { transform: rotate(180deg);}
 
 
 
@@ -983,7 +988,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .basisInfo .basisList >li .con .body .r2 { width: 328px; height: 112px; border-radius: 56px;}
 .basisInfo .basisList >li .con .inline li { display: flex; align-items: center;}
 .basisInfo .basisList >li .con .inline li .t { width: 336px;}
-.basisInfo .basisList >li .con .inline li .b { padding-left: 24px; background: url(../images/guide/ico_arrow_map.svg) no-repeat;}
+.basisInfo .basisList >li .con .inline li .b { padding-left: 24px; background: url(../images/information/ico_arrow_map.svg) no-repeat;}
 .basisInfo .basisList >li .con .inline li .b b { font-size: 19px; font-weight: 700;}
 .basisInfo .basisList >li .con .inline li ~ li { margin-top: 16px;}
 .basisInfo .basisList >li .con .history li { display: flex; align-items: center;}
@@ -995,9 +1000,9 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .basisInfo .work { position: relative; height: 264px;}
 .basisInfo .work dt { display: flex; align-items: center; justify-content: center; position: absolute; font-size: 19px; font-weight: 700; color: #fff; border-radius: 50%;}
 .basisInfo .work dt.ico1 { left: 32px; top: 0; width: 184px; height: 184px; background-color: #366CC3;}
-.basisInfo .work dt.ico1::after { content: ''; display: block; position: absolute; right: -16px; top: 21px; width: 48px; height: 9px; background: url(../images/guide/ico_arrow_blue.svg) no-repeat center/cover;}
+.basisInfo .work dt.ico1::after { content: ''; display: block; position: absolute; right: -16px; top: 21px; width: 48px; height: 9px; background: url(../images/information/ico_arrow_blue.svg) no-repeat center/cover;}
 .basisInfo .work dt.ico2 { left: 140px; bottom: 0; width: 144px; height: 144px; background-color: rgba(54, 145, 249, 0.8);}
-.basisInfo .work dt.ico2::after { content: ''; display: block; position: absolute; right: -44px; top: 50%; width: 48px; height: 9px; margin-top: -4px; background: url(../images/guide/ico_arrow_skyBlue.svg) no-repeat center/cover;}
+.basisInfo .work dt.ico2::after { content: ''; display: block; position: absolute; right: -44px; top: 50%; width: 48px; height: 9px; margin-top: -4px; background: url(../images/information/ico_arrow_skyBlue.svg) no-repeat center/cover;}
 .basisInfo .work dd b { line-height: 24px;}
 .basisInfo .work dd p { margin-top: 16px; font-size: 14px; line-height: 21px;}
 .basisInfo .work dd.text1 { padding: 15px 0 0 260px;}

@@ -434,6 +434,34 @@ $(document).ready(function () {
       }
     },
   },
+  /* 아코디언 */
+  accodion = {
+		init: function () {
+			var $accordionBtn = $('.accordionBtn');
+			
+			$accordionBtn.off().on({
+				'click': function() {
+					var _target = $("#" + $(this).attr("aria-controls"));
+					accodion.open(this, _target);
+				},
+			});
+		},
+		open: function (_this, _target) {
+			var $accordionBtn = $('.accordionBtn');
+			var $accopanel = $('.accopanel');
+
+			if(_target.css('display') === "none") {
+				$accopanel.slideUp(200).attr('tabindex', -1);
+				_target.slideDown(200).attr('tabindex', 0);
+
+				TweenLite.to(_target, .2, {onComplete:function() {
+					$accordionBtn.removeClass('active').attr({'aria-expanded': false, 'title': '축소됨'}).find('.invisible').remove();
+					$(_this).addClass('active').attr({'aria-expanded': true, 'title': '확장됨'}).prepend('<span class="invisible">현재 단계</span>');
+				}});
+			}
+		},
+	}
+
 
 
 
@@ -441,4 +469,5 @@ $(document).ready(function () {
   common.init();
   layerPopup.init();
   totalSearch.init();
+  accodion.init();
 });

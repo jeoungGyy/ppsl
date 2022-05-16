@@ -199,6 +199,17 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .roundMyBox .name .fontEliceDigital { margin-top: -1px; font-size: 19px;}
 .roundMyBox .name.center .text { font-size: 19px;}
 
+/* FAQ 아코디언 */
+.acoList { margin-top: 26px;}
+.acoList li button { padding: 18px 16px;}
+.acoList li .accopanel { padding: 24px 16px;}
+
+
+
+
+
+
+
 
 
 /* PC용 테이블에 스크롤 추가 */
@@ -493,8 +504,7 @@ hr.space.style5 { margin: 8px -16px 32px;}
 **********************************************/
 
 /* 제도소개 */
-.guideFigure {}
-.guideFigure img { width: 328px; height: auto;}
+.guideFigure img { width: 328px; height: auto; margin: 0 auto;}
 
 .basisInfo .basisList { margin-top: 15px;}
 .basisInfo .basisList >li { display: block; padding: 25px 0;}
