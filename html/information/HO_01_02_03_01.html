@@ -1,0 +1,233 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<script src="../../include/head.js"></script> <!-- include: 공통 헤드 -->
+</head>
+
+<body>
+<div id="wrap">
+	<script src="../../include/header.js"></script> <!-- include: 공통 헤더 -->
+
+	<div class="container">
+		<div class="area">
+			<div class="wrap">
+				<div class="lnbBody">
+					<h2></h2>
+					<nav class="lnb">
+					</nav>
+				</div>
+
+				<div id="contentLink" class="contents">
+					<header class="contentsHeader">
+						<div class="title">
+							<h3>연금종류 및 청구</h3>
+							<p>청구가능한 연금종류 및 절차를 알 수 있습니다.</p>
+						</div>
+						<script src="../../include/location.js"></script> <!-- include: 공통 현재위치 -->
+					</header>
+
+					<ul class="aTab alignWrap step2">
+						<li><a href="HO_01_02_03_01.html" class="active">연금종류</a></li>
+						<li><a href="HO_01_02_03_02.html">청구</a></li>
+						<li><a href="HO_01_02_03_03.html">급여산정방법</a></li>
+						<li><a href="HO_01_02_03_04.html">중복급여조정</a></li>
+					</ul>
+
+					<h4 class="defaultF24 pcmt40 momt24">연계급여</h4>
+					<h5 class="defaultH5 mt24">연계급여</h5>
+					<ol class="normalList indet mt16">
+						<li>1. 연계노령연금 (국민연금공단)</li>
+						<li>2. 연계퇴직연금 (직역연금기관)</li>
+						<li>3. 연계노령유족연금 (국민연금공단)</li>
+						<li>4. 연계노령퇴직연금 (직역연금기관)</li>
+					</ol>
+
+					<h5 class="defaultH5 mt24">연계급여별 내용</h5>
+					<ol>
+						<li class="mt16">
+							<span>1. 연계노령연금</span>
+							<div class="tableBody mt2 m_scoll">
+								<table>
+									<caption>연계노령연금 : 연계기간, 지급액, 급여산정기초로 구성</caption>
+									<colgroup>
+										<col>
+										<col style="width: 33.33%;">
+										<col style="width: 33.33%;">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col" class="textCenter">연계기간</th>
+											<th scope="col" class="textCenter">지급액</th>
+											<th scope="col" class="textCenter">급여산정기초</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>가입기간 10년이상</td>
+											<td>국민연금법에 따른 노령연금액</td>
+											<td rowspan="2">기본연금액</td>
+										</tr>
+										<tr>
+											<td>가입기간 1년이상 10년 미만</td>
+											<td>기본연금액 X 가입기간 / 20</td>
+										</tr>
+										<tr>
+											<td>1년 미만</td>
+											<td>반환일시금+영 제7조이자</td>
+											<td>국민연금법에 따른 노령연금액</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</li>
+						<li class="mt24">
+							<span>2. 연계퇴직연금</span>
+							<div class="whTableBody mt3 padding12 tac m_scoll">
+								<table>
+									<caption>연계급여별 - 연계퇴직연금</caption>
+									<colgroup>
+										<col style="width: 55px;">
+										<col style="width: 80px;">
+										<col style="width: 95px;">
+										<col>
+										<col style="width: 300px;">
+									</colgroup>
+									<thead>
+										<th id="aa" colspan="3">연계기간</th>
+										<th id="ab">지급액</th>
+										<th id="ac">급여산정기초</th>
+									</thead>
+									<tbody>
+										<tr>
+											<th id="aa1" rowspan="2" class="tdStyle">종전<br>기간</th>
+											<th id="aa2" rowspan="2" class="tdStyle">1기간<sup class="sup">주1</sup></th>
+											<th id="aa3" class="tdStyle">재직기간<br>20년 이상</th>
+											<td headers="ab aa1 aa2 aa3">
+												(평균소득월액 X 50 / 100) + <br>
+												(평균보수월액 X 20년초과재직연수 X 2 / 100)
+											</td>
+											<td headers="ac aa1 aa2" rowspan="2">평균보수월액</td>
+										</tr>
+										<tr>
+											<th id="aa4" class="tdStyle">재직기간<br>20년 미만</th>
+											<td headers="ab aa1 aa2 aa4">평균보수월액 X 2% X 재직연수</td>
+										</tr>
+										<tr>
+											<th id="aa5" rowspan="2" class="tdStyle">이후<br>기간</th>
+											<th id="aa6" colspan="2" class="tdStyle">2기간<sup class="sup">주2</sup></th>
+											<td headers="ab aa5 aa6">평균기준소득월액 X 직역연금법상 재직(복무기간 매 1년당 평균기준소득월엑에 곱하는 비율 X 직역재직기간 X 직역연금법상 부칙에 따른재직(복무기간별 비율)</td>
+											<td headers="ac aa5 aa6">
+												평균기준소득월액 및 소득재분배 평균기준소득월액<br>
+												*30년 초과의 경우 소득재분배 미적용
+											</td>
+										</tr>
+										<tr>
+											<th id="aa7" colspan="2" class="tdStyle">3기간<sup class="sup">주3</sup></th>
+											<td headers="ab aa5 aa7">소득재분배 평균기준소득월액 X 직역연금법상(재직)복무기간 매 1년당평균기준소득월액에 곱하는 비율 X 직역연금법상 부칙에 따른재직(복무)기간별 비율</td>
+											<td headers="ac aa5 aa7"></td>
+										</tr>
+										<tr>
+											<th id="aa8" colspan="3" class="tdStyle">1년 미만</th>
+											<td headers="ab aa8">퇴직일시금 + 여제8조이자</td>
+											<td headers="ac aa8">최종보수월액 최종기준소득월액</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<ul class="smallList">
+								<li>주1) [1기간] 공무원·사학연금법('09.12.31까지), 별정우체국법('11.5.31까지), 군인연금법('13.6.30까지) 급여 산정 기간</li>
+								<li>주2) [2기간] 공무원·사학연금법('10.1.1~'15.12.31), 별정우체국법('11.6.1~'15.12.31), 군인연금법('13.7.1~개정 전까지) 급여 산정 기간</li>
+								<li>주3) [3기간] 공무원·사학연금법·별정우체국법('16년부터만)해당되는 급여 산정  기간</li>
+							</ul>
+						</li>
+						<li class="mt24">
+							<span>3. 연계노령유족연금</span>
+							<div class="tableBody mt2 m_scoll">
+								<table>
+									<caption>연계노령유족연금 : 지급요건, 지급액, 급여산정기초로 구성</caption>
+									<colgroup>
+										<col>
+										<col style="width: 33.33%;">
+										<col style="width: 33.33%;">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col" class="textCenter">지급요건</th>
+											<th scope="col" class="textCenter">지급액</th>
+											<th scope="col" class="textCenter">급여산정기초</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>가입기간 10년 이상인 연계노령연금수급권자사망시</td>
+											<td>
+												20년이상 : 기본연금액60%+부양가족연금액<br>
+												10년~20년미만 : 기본연금액50%|부양가족연금액
+											</td>
+											<td rowspan="2">기본연금액</td>
+										</tr>
+										<tr>
+											<td>가입기간 10년 미만인 연계노령연금 수급권자 사망시</td>
+											<td>기본연금액의 40% X 가입기간/10</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</li>
+						<li class="mt24">
+							<span>4. 연계퇴직 유족연금</span>
+							<div class="tableBody mt2 m_scoll">
+								<table>
+									<caption>연계퇴직 유족연금 : 지급요건, 지급액, 급여산정기초로 구성</caption>
+									<colgroup>
+										<col>
+										<col style="width: 33.33%;">
+										<col style="width: 33.33%;">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col" class="textCenter">지급요건</th>
+											<th scope="col" class="textCenter">지급액</th>
+											<th scope="col" class="textCenter">급여산정기초</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>연계퇴직연금수급자 사망시</td>
+											<td>연계퇴직연금의 60/100</td>
+											<td>연계퇴직연금액</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</li>
+					</ol>
+
+					<h5 class="defaultH5 mt24">연계급여 미발생</h5>
+					<ul class="normalList mt16">
+						<li>
+							미발생 사유
+							<ul class="bletList mt16">
+								<li class="blet">연계신청자가 수급개시연령이 되었으나 최소 연계기간을 충족하는 것이 불가능한 경우(법 제19조제1항제1호)</li>
+								<li class="blet">최소 연계기간이 10년 미만인 상태에서 국적상실하거나 국외이주 하는 경우(법 제19조제1항제2호)</li>
+								<li class="blet">연계신청자가 연계급여 수급요건을 채우지 못한 상태에서 사망한 경우(법 제19조2)</li>
+							</ul>
+						</li>
+					</ul>
+					
+
+					<script src="../../include/evaluation.js"></script> <!-- include: 공통 평가 -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="../../include/footer.js"></script> <!-- include: 공통 푸터 -->
+
+	<script>
+		var depth = [1, 2, 3]; /* 현재메뉴 활성화 용: gnb에 있는 data-menu 값과 일치하게 해주세요. */
+	</script>
+</div>
+</body>
+</html>

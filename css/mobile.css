@@ -198,6 +198,15 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .tbPopular .popularBtns { margin-left: 0;}
 .tbPopular .popularBtns button { margin-top: 16px;}
 
+/* 탭 */
+.aTab.alignWrap { flex-wrap: wrap;}
+.aTab.step2 li { flex: inherit; width: 50%;}
+.aTab.step2 li:nth-child(3) { border-left: 1px solid #dbdbdb;}
+.aTab.step2 li:nth-child(n + 3) a { border-top: none;}
+.aTab.step3 li { flex: inherit; width: calc(100% / 3);}
+.aTab.step3 li:nth-child(4) { border-left: 1px solid #dbdbdb;}
+.aTab.step3 li:nth-child(n + 4) a { border-top: none;}
+
 /* 라운드 블루 박스 */
 .roundMyBox .name { align-items: baseline;}
 .roundMyBox .name .fontEliceDigital { margin-top: -1px; font-size: 19px;}
