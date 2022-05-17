@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="832" height="180" viewBox="0 0 832 180">
+    <g data-name="퇴직일시금 수령">
+        <g data-name="타원 497" style="stroke:#366cc3;fill:#f4f7fc">
+            <circle cx="90" cy="90" r="90" style="stroke:none"/>
+            <circle cx="90" cy="90" r="89.5" style="fill:none"/>
+        </g>
+        <text data-name="퇴직일시금 수령" transform="translate(36 83)" style="font-family:EliceDigitalBaeum-Bd,Elice DigitalBaeum;font-size:24px;fill:#366cc3"><tspan x="0" y="0">퇴직일시금</tspan><tspan x="0" y="36">수령</tspan></text>
+    </g>
+    <path data-name="선 1597" transform="translate(220.5 90.5)" style="fill:none;stroke:#366cc3" d="M0 0h304"/>
+    <path data-name="패스 81118" d="m1371 1185 14 14-14 14" transform="translate(-890.5 -1108.5)" style="stroke-linecap:round;stroke-width:2px;fill:none;stroke:#366cc3"/>
+    <path d="M0 0h29" transform="translate(189.334 90.5)" style="stroke-dasharray:2 2;stroke:#ccc;fill:none"/>
+    <g data-name="타원 1358" transform="translate(176 87)" style="stroke:#fff;stroke-width:3px;fill:#366cc3">
+        <circle cx="3.5" cy="3.5" r="3.5" style="stroke:none"/>
+        <circle cx="3.5" cy="3.5" r="5" style="fill:none"/>
+    </g>
+    <g>
+        <text data-name="반납금 납부신청도 함께 신청" transform="translate(221 115)" style="font-size:16px;fill:#3691f9;font-family:EliceDigitalBaeum-Bd,Elice DigitalBaeum"><tspan x="0" y="0">반납금</tspan><tspan y="0" style="font-family:EliceDigitalBaeum,Elice DigitalBaeum;fill:#366cc3"> </tspan><tspan y="0" style="fill:#333;font-family:EliceDigitalBaeum,Elice DigitalBaeum">납부신청</tspan><tspan y="0" style="font-size:14px;fill:#333;font-family:EliceDigitalBaeum,Elice DigitalBaeum">도 함께 신청</tspan></text>
+        <text data-name="직역기관 퇴직시 수령한 퇴직급여에 대해" transform="translate(221 81)" style="font-size:14px;fill:#333;font-family:EliceDigitalBaeum,Elice DigitalBaeum"><tspan x="0" y="0">직역기관 퇴직시 수령한 퇴직급여에 대해</tspan></text>
+    </g>
+    <g transform="translate(-620 -970)">
+        <rect width="146" height="36" rx="18" transform="translate(841 1103)" style="fill:#5ea7fa"/>
+        <text data-name="퇴직일시금 + 이자" transform="translate(914 1127)" style="fill:#fff;font-size:14px;font-family:EliceDigitalBaeum,Elice DigitalBaeum"><tspan x="-52.353" y="0">퇴직일시금 + 이자</tspan></text>
+        <g data-name="arrow">
+            <path data-name="dot" d="M0 0h10" transform="rotate(90 -109.75 980.25)" style="stroke:#3691f9;stroke-dasharray:2 2;fill:none"/>
+        </g>
+    </g>
+    <g data-name="그룹 54108">
+        <g data-name="사각형 26348" transform="translate(516 2)" style="stroke:rgba(54,108,195,.5);stroke-dasharray:2 2;fill:none">
+            <rect width="316" height="176" rx="88" style="stroke:none"/>
+            <rect x=".5" y=".5" width="315" height="175" rx="87.5" style="fill:none"/>
+        </g>
+        <g transform="translate(-558 -978)">
+            <circle data-name="타원 234" cx="80" cy="80" r="80" transform="translate(1082 988)" style="fill:#366cc3"/>
+            <text data-name="연계신청" transform="translate(1113 1077)" style="font-size:19px;fill:#fff;font-family:EliceDigitalBaeum-Bd,Elice DigitalBaeum"><tspan x="0" y="0">연계신청</tspan></text>
+        </g>
+        <g data-name="반납금 납부신청" transform="translate(-590 -978)">
+            <circle data-name="타원 496" cx="80" cy="80" r="80" transform="translate(1254 988)" style="opacity:.8;fill:#3691f9"/>
+            <text data-name="반납금 납부신청" transform="translate(1300 1062)" style="font-size:19px;fill:#fff;font-family:EliceDigitalBaeum-Bd,Elice DigitalBaeum"><tspan x="0" y="0">반납금</tspan><tspan x="0" y="29">납부신청</tspan></text>
+        </g>
+    </g>
+</svg>

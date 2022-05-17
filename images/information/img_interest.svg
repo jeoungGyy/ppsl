@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="848" height="120" viewBox="0 0 848 120">
+    <path style="fill:none" d="M0 0h848v120H0z"/>
+    <g data-name="2">
+        <path transform="rotate(-90 52 19.5)" style="stroke-width:2px;stroke:#dbdbdb;fill:none" d="M0 0v784"/>
+        <text transform="translate(128 99)" style="fill:#333;font-size:14px;font-family:NanumBarunGothic"><tspan x="-18.732" y="0">지급일</tspan></text>
+        <text transform="translate(417 99)" style="fill:#333;font-size:14px;font-family:NanumBarunGothic"><tspan x="-18.732" y="0">접수일</tspan></text>
+        <text data-name="분할납부가 끝나는 달" transform="translate(719 99)" style="fill:#333;font-size:14px;font-family:NanumBarunGothic"><tspan x="-59.332" y="0">분할납부가 끝나는 달</tspan></text>
+        <g transform="translate(-598 -343.667)">
+            <path data-name="선 1593" transform="rotate(-90 572.834 -157.667)" style="stroke:#3691f9;stroke-width:2px;fill:none" d="M0 0v280"/>
+            <rect width="280" height="48" rx="8" transform="translate(730 361.667)" style="fill:#d6e9fe"/>
+            <text data-name="반납이자" transform="translate(870 392.667)" style="font-size:16px;font-family:EliceDigitalBaeum-Bd,Elice DigitalBaeum;fill:#366cc3"><tspan x="-29.12" y="0">반납이자</tspan></text>
+            <g data-name="line">
+                <g data-name="타원 1358" transform="rotate(90 302.666 714.334)" style="stroke:#fff;stroke-width:3px;fill:#3691f9">
+                    <circle cx="3.5" cy="3.5" r="3.5" style="stroke:none"/>
+                    <circle cx="3.5" cy="3.5" r="5" style="fill:none"/>
+                </g>
+                <path d="M0 0h52" transform="rotate(90 325.916 687.584)" style="stroke-dasharray:2 2;stroke:#3691f9;fill:none"/>
+            </g>
+            <g data-name="line">
+                <path data-name="dot" d="M0 0h52" transform="rotate(90 182.416 544.084)" style="stroke-dasharray:2 2;stroke:#3691f9;fill:none"/>
+                <g data-name="타원 1358" transform="rotate(90 159.166 570.834)" style="stroke:#fff;stroke-width:3px;fill:#3691f9">
+                    <circle cx="3.5" cy="3.5" r="3.5" style="stroke:none"/>
+                    <circle cx="3.5" cy="3.5" r="5" style="fill:none"/>
+                </g>
+            </g>
+        </g>
+        <g transform="translate(-216 -345)">
+            <path data-name="선 1596" transform="rotate(-90 535.5 -119)" style="stroke:#16a5a3;stroke-width:2px;fill:none" d="M0 0v280"/>
+            <rect data-name="img" width="280" height="48" rx="8" transform="translate(654 363)" style="fill:#d0eded"/>
+            <text data-name="분할이자" transform="translate(794 394)" style="fill:#16a5a3;font-size:16px;font-family:EliceDigitalBaeum-Bd,Elice DigitalBaeum"><tspan x="-29.12" y="0">분할이자</tspan></text>
+            <g data-name="line">
+                <g data-name="타원 1358" transform="rotate(90 120.5 533.5)" style="fill:#16a5a3;stroke:#fff;stroke-width:3px">
+                    <circle cx="3.5" cy="3.5" r="3.5" style="stroke:none"/>
+                    <circle cx="3.5" cy="3.5" r="5" style="fill:none"/>
+                </g>
+                <path data-name="dot" d="M0 0h52" transform="rotate(90 143.75 506.75)" style="stroke:#16a5a3;stroke-dasharray:2 2;fill:none"/>
+            </g>
+            <g data-name="line">
+                <g data-name="타원 1358" transform="rotate(90 264 677)" style="fill:#16a5a3;stroke:#fff;stroke-width:3px">
+                    <circle cx="3.5" cy="3.5" r="3.5" style="stroke:none"/>
+                    <circle cx="3.5" cy="3.5" r="5" style="fill:none"/>
+                </g>
+                <path data-name="dot" d="M0 0h52" transform="rotate(90 287.25 650.25)" style="stroke:#16a5a3;stroke-dasharray:2 2;fill:none"/>
+            </g>
+        </g>
+    </g>
+</svg>

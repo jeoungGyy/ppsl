@@ -157,6 +157,7 @@ body.noScroll { overflow: hidden;}
 #wrap .pcmt24 { margin-top: 24px;}
 #wrap .pcmt40 { margin-top: 40px;}
 
+#wrap .mt0 { margin-top: 0;}
 #wrap .mt8 { margin-top: 8px;}
 #wrap .mt16 { margin-top: 16px;}
 #wrap .mt24 { margin-top: 24px;}
@@ -271,13 +272,16 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 /* normalList */
 .normalList li { line-height: 24px;}
 .normalList li ~ li { margin-top: 8px;}
+.normalList.indet li { padding-left: 18px; text-indent: -18px;}
 
 /* bletList */
-.bletList >li { position: relative; padding-left: 15px; line-height: 24px;}
+.bletList >li { line-height: 24px;}
 .bletList >li ~ li { margin-top: 8px;}
-.bletList >li::after { content: ''; display: block; position: absolute; left: 0; top: 10px; width: 6px; height: 1px; background-color: #333;}
-.bletList >li ul li { position: relative; margin-top: 8px; padding-left: 12px; color: #767676; line-height: 24px;}
-.bletList >li ul li::after { content: ''; display: block; position: absolute; left: 0; top: 9px; width: 4px; height: 4px; background-color: #767676; border-radius: 50%;}
+.bletList >li ul li { margin-top: 8px; line-height: 24px;}
+.bletList li.blet { position: relative; padding-left: 15px;}
+.bletList li.blet::after { content: ''; display: block; position: absolute; left: 0; top: 10px; width: 6px; height: 1px; background-color: #333;}
+.bletList li.bletRound { position: relative; padding-left: 12px; color: #767676;}
+.bletList li.bletRound::after { content: ''; display: block; position: absolute; left: 0; top: 9px; width: 4px; height: 4px; background-color: #767676; border-radius: 50%;}
 
 /* flexBtn* */
 .flexBtnOne { display: flex !important; align-items: center;}
@@ -1074,13 +1078,18 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .acoStepList >li >ol >li:first-child { margin-top: 8px;}
 .acoStepList >li >ol >li .acoList { margin-top: 18px;}
 
+/* 신청/청구 안내 */
+.requestFigure {}
+.requestFigure { padding: 40px; background-color: #f4f7fc; border-radius: 8px;}
+.requestFigure img { width: 100%; height: auto;}
 
+.lineRoundBox { margin-top: 16px; padding: 24px 32px; border: 1px solid #dbdbdb; border-radius: 8px;}
 
+.paymentRound { display: flex; margin-top: 16px; padding-bottom: 28px; border: 1px solid #9ab5e1; border-radius: 8px;}
+.paymentRound span { width: 50%;}
+.paymentRound span img { width: 100%; height: auto; vertical-align: top;}
 
-
-
-
-
+.imgW img { width: 100%; height: auto;}
 
 
 

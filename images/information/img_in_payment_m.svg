@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="326" height="120" viewBox="0 0 326 120">
+  <g id="분할납부" transform="translate(-806 -1230)">
+    <g id="title">
+      <path id="사각형_26358" data-name="사각형 26358" d="M8,0H318a8,8,0,0,1,8,8V40a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V8A8,8,0,0,1,8,0Z" transform="translate(806 1230)" fill="#f4f7fc"/>
+      <text id="분할납부-2" data-name="분할납부" transform="translate(969 1257)" fill="#366cc3" font-size="16" font-family="EliceDigitalBaeum-Bd, Elice DigitalBaeum"><tspan x="-29.12" y="0">분할납부</tspan></text>
+    </g>
+    <g id="img_pay_02_m" transform="translate(-17 -13)">
+      <g id="그룹_54116" data-name="그룹 54116">
+        <rect id="사각형_26354" data-name="사각형 26354" width="108" height="48" rx="24" transform="translate(838 1311)" fill="#366cc3"/>
+        <text id="퇴직급여액" transform="translate(856 1341)" fill="#fff" font-size="14" font-family="EliceDigitalBaeum, Elice DigitalBaeum"><tspan x="0" y="0">퇴직급여액</tspan></text>
+      </g>
+      <g id="그룹_54114" data-name="그룹 54114">
+        <rect id="사각형_26355" data-name="사각형 26355" width="108" height="48" rx="24" transform="translate(932 1311)" fill="#3691f9" opacity="0.8"/>
+        <text id="반납이자" transform="translate(987 1341)" fill="#fff" font-size="14" font-family="EliceDigitalBaeum, Elice DigitalBaeum"><tspan x="-25.48" y="0">반납이자</tspan></text>
+      </g>
+      <g id="그룹_54115" data-name="그룹 54115" transform="translate(92)">
+        <g id="사각형_26355-2" data-name="사각형 26355" transform="translate(930 1307)" fill="none" stroke="#16a5a3" stroke-width="1" stroke-dasharray="2 2" opacity="0.5">
+          <rect width="116" height="56" rx="28" stroke="none"/>
+          <rect x="0.5" y="0.5" width="115" height="55" rx="27.5" fill="none"/>
+        </g>
+        <rect id="사각형_26378" data-name="사각형 26378" width="108" height="48" rx="24" transform="translate(934 1311)" fill="#16a5a3" opacity="0.8"/>
+        <text id="분할이자" transform="translate(988 1340)" fill="#fff" font-size="14" font-family="EliceDigitalBaeum, Elice DigitalBaeum"><tspan x="-25.48" y="0">분할이자</tspan></text>
+      </g>
+      <path id="_" data-name="+" d="M18008.33,12334.331v-2.667h-2.662a.667.667,0,1,1,0-1.334h2.662v-2.662a.667.667,0,1,1,1.334,0v2.662h2.672a.667.667,0,0,1,0,1.334h-2.672v2.667a.667.667,0,1,1-1.334,0Z" transform="translate(-17070 -10995.999)" fill="#fff"/>
+      <path id="_2" data-name="+" d="M18008.33,12334.331v-2.667h-2.662a.667.667,0,1,1,0-1.334h2.662v-2.662a.667.667,0,1,1,1.334,0v2.662h2.672a.667.667,0,0,1,0,1.334h-2.672v2.667a.667.667,0,1,1-1.334,0Z" transform="translate(-16976 -10995.999)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

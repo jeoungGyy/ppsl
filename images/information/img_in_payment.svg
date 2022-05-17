@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="456" height="157" viewBox="0 0 456 157">
+  <g id="분할납부" transform="translate(-792 -1230)">
+    <g id="title">
+      <path id="사각형_26358" data-name="사각형 26358" d="M0,0H448a8,8,0,0,1,8,8V56a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(792 1230)" fill="#f4f7fc"/>
+      <text id="분할납부-2" data-name="분할납부" transform="translate(1021 1267)" fill="#366cc3" font-size="19" font-family="EliceDigitalBaeum-Bd, Elice DigitalBaeum"><tspan x="-34.58" y="0">분할납부</tspan></text>
+    </g>
+    <g id="img_pay_02" transform="translate(-19 9)">
+      <g id="사각형_26354" data-name="사각형 26354" transform="translate(1089 1306)" fill="none" stroke="#16a5a3" stroke-width="1" stroke-dasharray="3 3" opacity="0.5">
+        <rect width="160" height="72" rx="36" stroke="none"/>
+        <rect x="0.5" y="0.5" width="159" height="71" rx="35.5" fill="none"/>
+      </g>
+      <rect id="사각형_26365" data-name="사각형 26365" width="152" height="64" rx="32" transform="translate(837 1310)" fill="#366cc3"/>
+      <rect id="사각형_26355" data-name="사각형 26355" width="152" height="64" rx="32" transform="translate(965 1310)" fill="#3691f9" opacity="0.8"/>
+      <rect id="사각형_26362" data-name="사각형 26362" width="152" height="64" rx="32" transform="translate(1093 1310)" fill="#16a5a3" opacity="0.8"/>
+      <path id="_" data-name="+" d="M18010,12338v-4h-4a1,1,0,0,1,0-2h4v-4a1,1,0,1,1,2,0v4h4a1,1,0,0,1,0,2h-4v4a1,1,0,1,1-2,0Z" transform="translate(-17034 -10991)" fill="#fff"/>
+      <path id="_2" data-name="+" d="M18010,12338v-4h-4a1,1,0,0,1,0-2h4v-4a1,1,0,1,1,2,0v4h4a1,1,0,0,1,0,2h-4v4a1,1,0,1,1-2,0Z" transform="translate(-16905 -10991)" fill="#fff"/>
+      <text id="퇴직급여액" transform="translate(877 1348)" fill="#fff" font-size="16" font-family="EliceDigitalBaeum, Elice DigitalBaeum"><tspan x="0" y="0">퇴직급여액</tspan></text>
+      <text id="반납이자" transform="translate(1041 1348)" fill="#fff" font-size="16" font-family="EliceDigitalBaeum, Elice DigitalBaeum"><tspan x="-29.12" y="0">반납이자</tspan></text>
+      <text id="분할이자" transform="translate(1169 1348)" fill="#fff" font-size="16" font-family="EliceDigitalBaeum, Elice DigitalBaeum"><tspan x="-29.12" y="0">분할이자</tspan></text>
+    </g>
+    <g id="img_ring" transform="translate(1017 1328) rotate(-90)">
+      <g id="타원_1358" data-name="타원 1358" transform="translate(21 2)" fill="#ccc" stroke="#fff" stroke-width="2">
+        <circle cx="2.5" cy="2.5" r="2.5" stroke="none"/>
+        <circle cx="2.5" cy="2.5" r="3.5" fill="none"/>
+      </g>
+      <circle id="타원_1358-2" data-name="타원 1358" cx="4.5" cy="4.5" r="4.5" transform="translate(38)" fill="#fff"/>
+      <circle id="타원_1358-3" data-name="타원 1358" cx="2.5" cy="2.5" r="2.5" transform="translate(40 2)" fill="#366cc3"/>
+      <path id="dot" d="M0,0H10" transform="translate(27.667 4.5)" fill="none" stroke="#dbdbdb" stroke-width="1" stroke-dasharray="2 2"/>
+    </g>
+  </g>
+</svg>

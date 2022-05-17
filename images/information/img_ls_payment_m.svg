@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="326" height="112" viewBox="0 0 326 112">
+  <g id="일시납부" transform="translate(-806 -1230)">
+    <g id="title">
+      <path id="사각형_26358" data-name="사각형 26358" d="M8,0H318a8,8,0,0,1,8,8V40a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V8A8,8,0,0,1,8,0Z" transform="translate(806 1230)" fill="#f4f7fc"/>
+      <text id="일시납부-2" data-name="일시납부" transform="translate(969 1257)" fill="#366cc3" font-size="16" font-family="EliceDigitalBaeum-Bd, Elice DigitalBaeum"><tspan x="-29.12" y="0">일시납부</tspan></text>
+    </g>
+    <g id="img_pay_01_m" transform="translate(-17 -17)">
+      <rect id="사각형_26354" data-name="사각형 26354" width="160" height="48" rx="24" transform="translate(838 1311)" fill="#366cc3"/>
+      <rect id="사각형_26355" data-name="사각형 26355" width="160" height="48" rx="24" transform="translate(974 1311)" fill="#3691f9" opacity="0.8"/>
+      <path id="_" data-name="+" d="M18008.334,12334.331v-2.667h-2.666a.665.665,0,1,1,0-1.329h2.666v-2.667a.667.667,0,1,1,1.334,0v2.667h2.668a.665.665,0,0,1,0,1.329h-2.668v2.667a.667.667,0,1,1-1.334,0Z" transform="translate(-17022 -10995.999)" fill="#fff"/>
+      <text id="퇴직급여액" transform="translate(886 1341)" fill="#fff" font-size="14" font-family="EliceDigitalBaeum, Elice DigitalBaeum"><tspan x="0" y="0">퇴직급여액</tspan></text>
+      <text id="반납이자" transform="translate(1054 1341)" fill="#fff" font-size="14" font-family="EliceDigitalBaeum, Elice DigitalBaeum"><tspan x="-25.48" y="0">반납이자</tspan></text>
+    </g>
+  </g>
+</svg>
