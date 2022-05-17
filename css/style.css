@@ -153,8 +153,14 @@ body.noScroll { overflow: hidden;}
 
 /* Margin */
 #wrap .pcmt8 { margin-top: 8px;}
+#wrap .pcmt16 { margin-top: 16px;}
 #wrap .pcmt24 { margin-top: 24px;}
 #wrap .pcmt40 { margin-top: 40px;}
+
+#wrap .mt8 { margin-top: 8px;}
+#wrap .mt16 { margin-top: 16px;}
+#wrap .mt24 { margin-top: 24px;}
+#wrap .mt40 { margin-top: 40px;}
 
 /* 색상 */
 .colorBlue { color: #366cc3 !important;}
@@ -166,6 +172,9 @@ body.noScroll { overflow: hidden;}
 /* hr */
 hr.space { margin: 40px 0; height: 1px; background-color: #dbdbdb;}
 
+/* 기타등등 */
+.bLine { color: #333; border-bottom: 1px solid #333;}
+.bLink img { margin: -2px 0 0 2px; vertical-align: middle;}
 
 /* 버튼 */
 .button { display: inline-flex; align-items: center; justify-content: center; padding: 0 16px; transition: background-color .2s ease-in-out, border-color .2s ease-in-out;;}
@@ -258,6 +267,17 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .guideText.mt { margin-top: 16px;}
 .guideText.blue li { color: #366cc3;}
 .guideText.blue li::before { background-color: #366cc3;}
+
+/* normalList */
+.normalList li { line-height: 24px;}
+.normalList li ~ li { margin-top: 8px;}
+
+/* bletList */
+.bletList >li { position: relative; padding-left: 15px; line-height: 24px;}
+.bletList >li ~ li { margin-top: 8px;}
+.bletList >li::after { content: ''; display: block; position: absolute; left: 0; top: 10px; width: 6px; height: 1px; background-color: #333;}
+.bletList >li ul li { position: relative; margin-top: 8px; padding-left: 12px; color: #767676; line-height: 24px;}
+.bletList >li ul li::after { content: ''; display: block; position: absolute; left: 0; top: 9px; width: 4px; height: 4px; background-color: #767676; border-radius: 50%;}
 
 /* flexBtn* */
 .flexBtnOne { display: flex !important; align-items: center;}
@@ -451,6 +471,10 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .aTab li ~ li a { border-left: none;}
 .aTab li button.active,
 .aTab li a.active { color: #fff; border-color: #366cc3; background-color: #366cc3;}
+.aTab.alignWrap { flex-wrap: wrap;}
+.aTab.alignWrap li { flex: inherit; width: calc(100% / 3);}
+.aTab.alignWrap li:nth-child(4) { border-left: 1px solid #dbdbdb;}
+.aTab.alignWrap li:nth-child(n + 4) a { border-top: none;}
 
 /* 라운드 블루 박스 */
 .roundMyBox { margin-top: 40px; padding: 32px 48px; background-color: rgba(54, 108, 195, 0.05); border-radius: 8px;}
@@ -461,6 +485,42 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .roundMyBox .name.center .text { font-family: 'EliceDigitalBaeum', "NanumBarunGothic"; font-size: 24px;}
 .roundMyBox p { margin-top: 20px; font-size: 14px; line-height: 21px;}
 .roundMyBox p.fontSize16 { line-height: 24px;}
+.roundMyBox .wBoxList { margin-top: 16px; padding: 24px; background-color: #fff; border-radius: 8px;}
+.roundMyBox .wBoxList li { display: flex; align-items: center;}
+.roundMyBox .wBoxList li ~ li { margin-top: 8px;}
+.roundMyBox .wBoxList li .subT { padding-right: 24px; background: url(../images/information/ico_arrow_map.svg) no-repeat right -1px;}
+.roundMyBox .wBoxList li >span { margin-left: 8px;}
+.roundMyBox .totalBox { display: flex; justify-content: space-between;}
+.roundMyBox .totalBox { margin-top: 24px;}
+.roundMyBox .totalBox >div { flex: 1;}
+.roundMyBox .totalBox >div ~ div { margin-left: 24px;}
+.roundMyBox .totalBox .t { display: flex; align-items: center; justify-content: center; min-height: 88px; color: #fff; text-align: center; line-height: 24px; border-radius: 16px 16px 0 0;}
+.roundMyBox .totalBox .t .fontEliceDigital { display: block; margin-top: 2px; font-size: 19px; line-height: 29px;}
+.roundMyBox .totalBox .t.bgBlue { background-color: #366cc3;}
+.roundMyBox .totalBox .t.bgSkyblue { background-color: #3691f9;}
+.roundMyBox .totalBox .b { display: flex; align-items: center; justify-content: center; height: 88px; text-align: center; line-height: 24px; border: 1px dashed; background-color: #fff; border-radius: 0 0 16px 16px;}
+.roundMyBox .totalBox .b b { display: block; margin-top: 2px; font-size: 19px; line-height: 29px;}
+.roundMyBox .totalBox .b.lineBlue { border-color: #366cc3;}
+.roundMyBox .totalBox .b.lineSkyblue { border-color: #3691f9;}
+
+/* 라운드 회색 박스 */
+.grayBoxR { padding: 24px 32px; background-color: #F7F7F7; border-radius: 8px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* FAQ 아코디언 */
 .acoList { margin-top: 40px; border-top: 2px solid #333;}
@@ -1008,8 +1068,6 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .basisInfo .work dd.text1 { padding: 15px 0 0 260px;}
 .basisInfo .work dd.text2 { margin-top: 75px; padding-left: 350px;}
 
-
-.acoStepList {}
 .acoStepList >li ~ li { margin-top: 40px;}
 .acoStepList >li:first-child { margin-top: 24px;}
 .acoStepList >li >ol >li ~ li { margin-top: 24px;}

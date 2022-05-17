@@ -47,6 +47,9 @@
 .requireBody .requireText { margin-top: 5px;}
 .requireBody .btn { display: flex; justify-content: flex-end;}
 
+/* Heading */
+.defaultF24 { font-size: 19px;}
+
 /* Margin */
 #wrap .pcmt24 { margin-top: 0;}
 #wrap .pcmt40 { margin-top: 0;}
@@ -199,6 +202,15 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .roundMyBox .name { align-items: baseline;}
 .roundMyBox .name .fontEliceDigital { margin-top: -1px; font-size: 19px;}
 .roundMyBox .name.center .text { font-size: 19px;}
+.roundMyBox .wBoxList li { display: block;}
+.roundMyBox .wBoxList li .subT { display: inline-block;}
+.roundMyBox .wBoxList li >span { display: block; margin: 8px 0 0; line-height: 24px;}
+.roundMyBox .totalBox { display: block;}
+.roundMyBox .totalBox >div ~ div { margin: 16px 0 0;}
+.roundMyBox .totalBox .t { padding: 16px 0;}
+
+/* 라운드 회색 박스 */
+.grayBoxR { padding: 24px 16px;}
 
 /* FAQ 아코디언 */
 .acoList { margin-top: 26px;}
@@ -635,7 +647,7 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .searchBody .controlBox.m_baseline li { align-items: baseline;}
 
 /* 예상연금/반납금 */
-.roundMyBox { padding: 24px 32px;}
+.roundMyBox { padding: 24px;}
 
 .lineGroupBox { margin: 0 -16px; padding: 16px 16px 0; border-top: 12px solid #f7f7f7;}
 
