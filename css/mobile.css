@@ -48,7 +48,7 @@
 .requireBody .btn { display: flex; justify-content: flex-end;}
 
 /* Heading */
-.defaultF24 { font-size: 19px;}
+.defaultF24 { font-size: 19px; line-height: 29px;}
 
 /* Margin */
 #wrap .pcmt24 { margin-top: 0;}
