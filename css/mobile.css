@@ -223,8 +223,8 @@ hr.space.style5 { margin: 8px -16px 32px;}
 
 /* FAQ 아코디언 */
 .acoList { margin-top: 26px;}
-.acoList li button { padding: 18px 16px;}
-.acoList li .accopanel { padding: 24px 16px;}
+.acoList >li button { padding: 18px 16px;}
+.acoList >li .accopanel { padding: 24px 16px;}
 
 
 

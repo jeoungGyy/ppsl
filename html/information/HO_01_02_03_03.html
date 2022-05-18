@@ -1,0 +1,610 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<script src="../../include/head.js"></script> <!-- include: 공통 헤드 -->
+</head>
+
+<body>
+<div id="wrap">
+	<script src="../../include/header.js"></script> <!-- include: 공통 헤더 -->
+
+	<div class="container">
+		<div class="area">
+			<div class="wrap">
+				<div class="lnbBody">
+					<h2></h2>
+					<nav class="lnb">
+					</nav>
+				</div>
+
+				<div id="contentLink" class="contents">
+					<header class="contentsHeader">
+						<div class="title">
+							<h3>연금종류 및 청구</h3>
+							<p>청구가능한 연금종류 및 절차를 알 수 있습니다.</p>
+						</div>
+						<script src="../../include/location.js"></script> <!-- include: 공통 현재위치 -->
+					</header>
+
+					<ul class="aTab alignWrap step2">
+						<li><a href="HO_01_02_03_01.html">연금종류</a></li>
+						<li><a href="HO_01_02_03_02.html">청구</a></li>
+						<li><a href="HO_01_02_03_03.html" class="active">급여산정방법</a></li>
+						<li><a href="HO_01_02_03_04.html">중복급여조정</a></li>
+					</ul>
+
+					<ul class="acoList">
+						<li>
+							<button type="button" id="header_1" class="accordionBtn active" aria-controls="panel_1" title="확장됨"> <!-- id, aria-controls 값과 (아래) -->
+								<span class="invisible">현재 단계</span>
+								<span class="qText">연계노령연금(법제11조)</span>
+							</button>
+							<div id="panel_1" class="accopanel" aria-labelledby="header_1" style="display: block;"> <!-- id, aria-labelledby 값이 서로 같게 맞춰주세요. -->
+								<h5 class="defaultH5">연계노령연금( <a href="//www.law.go.kr/법령/국민연금과직역연금의연계에관한법률/제11조" class="bLink" target="_blank"><span class="bLine">법제11조</span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a> )</h5>
+								<ul class="guideText font16">
+									<li class="mt16">
+										<b>노령연금 수급권이 발생한경우(가입기간 10년이상)</b>
+										<ul class="bletList">
+											<li class="blet">국민연금법에 의해 계산된 노령연금액</li>
+											<li class="blet">국민연금법 <a href="//www.law.go.kr/법령/국민연금법/제61조" class="bLink" target="_blank"><span class="bLine">제61조</span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a> 및 <a href="//www.law.go.kr/법령/국민연금법/제63조" class="bLink" target="_blank"><span class="bLine">제63조</span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a>, <a href="//www.law.go.kr/법령/국민연금법/제51조" class="bLink" target="_blank"><span class="bLine">제51조제2항-제2항</span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a>, <a href="#" class="bLink" target="_blank"><span class="bLine">제52조</span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a> 등</li>
+											<li class="blet">대상 : 국민연금 가입기간 10년 미만</li>
+											<li class="blet">연금액 : 기본금액 X 가입기간/20(가입기간 중 1년 미만인 월수는 매 1개월을 12분의 1년으로 계산)</li>
+										</ul>
+									</li>
+									<li class="mt24">
+										<b>노령연금 수급권이 발생하지 않은 경우(가입기간 1년 이상~10년 미만)</b>
+									</li>
+									<li class="mt24">
+										<b>국민연금 가입기간이 1년 미만인 경우( <a href="#" class="bLink" target="_blank"><span class="bLine">법 제4조제2항</span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a> )</b>
+										<ul class="bletList">
+											<li class="blet">대상 : 연계기간이 20년 이상인 연금가입자 중 국민연금 가입기간이 1년 미만인 국민</li>
+											<li class="blet">산정금액 : 국민연금법에 따른 반환일시금 + <a href="//www.law.go.kr/법령/국민연금과직역연금의연계에관한법률시행령" class="bLink" target="_blank"><span class="bLine">영 제7조 </span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a> 이자</li>
+										</ul>
+									</li>
+									<li class="mt24">
+										<b>반환일시금 이자( <a href="//www.law.go.kr/법령/국민연금과직역연금의연계에관한법률시행령" class="bLink" target="_blank"><span class="bLine">영 제7조 </span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a> )</b>
+										<ul class="bletList">
+											<li class="blet">연계노령연금 지급연령이 된 날이 속하는 달까지의 이자： <a href="//www.law.go.kr/법령/국민연금법시행령/제50조" class="bLink" target="_blank"><span class="bLine">국민연금법 시행령 제 50조</span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a> 에따라 산정</li>
+											<li class="blet">
+												연계노령연금 지급연령 이후의 이자율 : 
+												<ul>
+													<li class="bletRound">연계노령 지급연령이 된 날이 속하는 달의 다음달부터 연계노령연금의 지급사유가 있는 날이 속하는 달까지의 개월 수에 그 기간 동안의 해당 연도마다 1월 1일 현재 전국은행이 적용하는 1년 만기 정기예금금리의 평균금리적용</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<button type="button" id="header_2" class="accordionBtn" aria-controls="panel_2" title="축소됨">
+								<span class="qText">연계퇴직연금(법제12조)</span>
+							</button>
+							<div id="panel_2" class="accopanel" aria-labelledby="header_2">
+								<h5 class="defaultH5">연계퇴직연금( <a href="//www.law.go.kr/법령/국민연금과직역연금의연계에관한법률/제12조" class="bLink" target="_blank"><span class="bLine">법 제12조</span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a> )</h5>
+								<ul class="guideText font16">
+									<li class="mt16">
+										<b>퇴직연금(퇴역연금)의 수급권이 발생한경우</b>
+										<ul class="bletList">
+											<li class="blet">직역연금법에 따라 계산된 퇴직연금액이나 퇴역연금</li>
+										</ul>
+									</li>
+									<li class="mt24">
+										<b>퇴직(퇴역)연금 수급권이 발생하지 않은 경우(재직기간 1년 이상~10년 미만,단 군인은 1년 이상 ~20년 미만)</b>
+										<ul class="bletList">
+											<li class="blet">대상：직역연금 재직기간이 10년 미만,군인연금은 20년 미만 (공무원·사학·별정우체국법('16년도부터)만 해당되는 급여산정기간)</li>
+											<li class="blet">
+												연금액：평균 소득월액 X 지급률(1년당 2%)X 재직기간 (1년 미만인 월수는 매 1개월을 12분의 1년으로 계산)<br>
+												※ 퇴직일시금 수급권자가 연계퇴직연금 수급권자가 된 경우 퇴직일시금을 지급하지 않음
+											</li>
+										</ul>
+									</li>
+									<li class="mt24">
+										<b>직역연금 재직기간이 1년 미만인 경우(법 제5조제2항)</b>
+										<ul class="bletList">
+											<li class="blet">대상 : 연계기간이 20년 이상인 연금가입자 중 직역연금 재직기간이 1년 미만인 공무원,사립학교교직원,군인 및 별정우체국직원</li>
+											<li class="blet">
+												산정금액
+												<ul>
+													<li class="bletRound">퇴직일시금을 지급받지 않고 연계신청을 한 경우 : 직역연금법에 따른 퇴직일시금 + <a href="//www.law.go.kr/법령/국민연금과직역연금의연계에관한법률시행령/제8조" class="bLink" target="_blank"><span class="bLine">영제8조</span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a> 이자</li>
+													<li class="bletRound">퇴직일시금을 반납하고 연계신청을 한 경우：반납금에 이자를 가산한 금액(퇴직일시금+이자)+ 영 제8조 이자</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li class="mt24">
+										<b>퇴직일시금 등에 대한 이자</b>
+										<ul class="bletList">
+											<li class="blet">퇴직일시금을 지급받지 않고 연계신청을 한 경우 : 퇴직일시금+이자</li>
+											<li class="blet">퇴직한 전날이 속하는 달의 다음달부터 연계급여의 지급사유가 있는 날이 속하는 달까지 개월 수에 해당 연도마다 1월 1일 현재 전국은행이 적용하는 1년 만기 정기예금금리의 평균금리 적용(복리 계산)</li>
+											<li class="blet">퇴직일시금을 반납하고 연계신청을 한 경우 :(퇴직일시금+이자)+이자</li>
+											<li class="blet">반납금 등을 낸 날(분할 납부의 경우에는 마지막으로 분할 납부한 날)이 속하는 달의 다음 달부터 연계급여의 지급사유가 있는 날이 속하는 달까지 개월 수에 해당 연도마다 1월 1일 현재 전국은행이 적용하는 1년 만기 정기예금금리의 평균금리 적용(복리로 계산)</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<button type="button" id="header_3" class="accordionBtn" aria-controls="panel_3" title="축소됨">
+								<span class="qText">연계노령유족연금(법제14조)</span>
+							</button>
+							<div id="panel_3" class="accopanel" aria-labelledby="header_3">
+								<h5 class="defaultH5">연계노령유족연금( <a href="//www.law.go.kr/법령/국민연금과직역연금의연계에관한법률/제14조" class="bLink" target="_blank"><span class="bLine">법 제14조</span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a> )</h5>
+								<ul class="guideText font16">
+									<li class="mt16">
+										<b>연계노령유족연금의 지급사유 ( <a href="//www.law.go.kr/법령/국민연금과직역연금의연계에관한법률/제13조" class="bLink" target="_blank"><span class="bLine">법 제13조</span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a> )</b>
+										<ul class="bletList mt8">
+											<li class="blet">연계노령연금 수급권자의 사망</li>
+										</ul>
+									</li>
+									<li class="mt24">
+										<b>연계노령유족연금 수급권자 ( <a href="//www.law.go.kr/법령/국민연금과직역연금의연계에관한법률/제13조" class="bLink" target="_blank"><span class="bLine">법 제13조</span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a> )</b>
+										<ul class="bletList mt8">
+											<li class="blet">수급권자：국민연금법상 유족</li>
+											<li class="blet">유족연금 수급권 발생 시기 :연계노령연금 수급권자가 사망한 날이 속하는 다음 달부터</li>
+										</ul>
+									</li>
+									<li class="mt24">
+										<b>연계노령유족연금액 ( <a href="//www.law.go.kr/법령/국민연금과직역연금의연계에관한법률/제14조" class="bLink" target="_blank"><span class="bLine">법 제14조</span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a> )</b>
+										<ul class="bletList mt8">
+											<li class="blet">
+												가입기간이 10년 이상인 연계노령연금 수급자가 사망한 경우 : 국민연금법에 따른 유족연금액
+												
+												<div class="tableBody mlm27 m_scoll">
+													<table>
+														<caption>가입기간이 10년 이상인 연계노령연금 수급자가 사망한 경우 : 가입기간, 연계노령유족연금액으로 구성</caption>
+														<colgroup>
+															<col style="width: 30%;">
+															<col>
+														</colgroup>
+														<thead>
+															<tr>
+																<th scope="col" class="textCenter">가입기간</th>
+																<th scope="col" class="textCenter">연계노령유족연금액</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>10년 이상 20년 미만</td>
+																<td>기본연금액의 50%+ 부양가족연금액</td>
+															</tr>
+															<tr>
+																<td>20년 이상</td>
+																<td>기본연금액의 60%+ 부양가족연금액</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</li>
+											<li class="blet mt16">
+												가입기간이 10년 미만인 연계노령연금 수급자가 사망한 경우 : 10년미만 가입자에 대한 유족연금액(부양가족연금 제외)에 국민연금 가입기간을 10으로 나눈 비율로 적용한 금액
+												
+												<div class="tableBody mlm27 m_scoll">
+													<table>
+														<caption>가입기간이 10년 미만인 연계노령연금 수급자가 사망한 경우 : 가입기간, 연계노령유족연금액으로 구성</caption>
+														<colgroup>
+															<col style="width: 30%;">
+															<col>
+														</colgroup>
+														<thead>
+															<tr>
+																<th scope="col" class="textCenter">가입기간</th>
+																<th scope="col" class="textCenter">연계노령유족연금액</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>10년 미만</td>
+																<td>기본연금액의 40%X 가입기간/10</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<button type="button" id="header_4" class="accordionBtn" aria-controls="panel_4" title="축소됨">
+								<span class="qText">연계퇴직유족연금(법제15조)</span>
+							</button>
+							<div id="panel_4" class="accopanel" aria-labelledby="header_4">
+								<h5 class="defaultH5">연계퇴직유족연금( <a href="//www.law.go.kr/법령/국민연금과직역연금의연계에관한법률/제15조" class="bLink" target="_blank"><span class="bLine">법 제15조</span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a> )</h5>
+								<ul class="guideText font16">
+									<li class="mt16">
+										<b>연계퇴직유족연금액</b>
+										<ul class="bletList mt8">
+											<li class="blet">연계퇴직유족연금의 지급사유( <a href="//www.law.go.kr/법령/국민연금과직역연금의연계에관한법률/제13조" class="bLink" target="_blank"><span class="bLine">법 제13조</span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a> ): 연계퇴직연금 수급권자의 사망</li>
+										</ul>
+									</li>
+									<li class="mt24">
+										<b>연계퇴직유족 수급권자 ( <a href="//www.law.go.kr/법령/국민연금과직역연금의연계에관한법률/제13조" class="bLink" target="_blank"><span class="bLine">법 제13조</span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a> )</b>
+										<ul class="bletList mt8">
+											<li class="blet">연계퇴직유족연금 수급권자 : 각 직역연금법 상 유족 (각 직역연금법 제2조 또는 제3조)</li>
+											<li class="blet">유족연금 수급권 발생 시기 : 연계퇴직연금 수급권자가 사망한 날이 속하는 다음 달부터</li>
+										</ul>
+									</li>
+									<li class="mt24">
+										<b>연계퇴직유족연금액 ( <a href="//www.law.go.kr/법령/국민연금과직역연금의연계에관한법률/제15조" class="bLink" target="_blank"><span class="bLine">법 제15조</span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a> )</b>
+										<ul class="bletList mt8">
+											<li class="blet">
+												연계퇴직유족연금액 :연계퇴직연금액 x 직역연금법에 따른 유족연금 비율
+												
+												<div class="tableBody mlm27 m_scoll">
+													<table>
+														<caption>연계퇴직유족연금액 : 구분, 공무원연금법, 사학연금법, 군인연금법, 별정우체국법으로 구성</caption>
+														<colgroup>
+															<col>
+															<col style="width: 17%;">
+															<col style="width: 30%;">
+															<col style="width: 23%;">
+															<col style="width: 20%;">
+														</colgroup>
+														<thead>
+															<tr>
+																<th scope="col" class="textCenter">구분</th>
+																<th scope="col" class="textCenter">공무원연금법</th>
+																<th scope="col" class="textCenter">사학연금법</th>
+																<th scope="col" class="textCenter">군인연금법</th>
+																<th scope="col" class="textCenter">별정우체국법</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>관련조항</td>
+																<td><a href="//www.law.go.kr/법령/공무원연금법/제55조" class="bLink" target="_blank"><span class="bLine">제55조 제1항 </span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a></td>
+																<td>
+																	<a href="//www.law.go.kr/법령/사학연금법/제42조" class="bLink" target="_blank"><span class="bLine">제42조</span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a><br>
+																	( 공무원연금법 <a href="//www.law.go.kr/법령/공무원연금법/제55조" class="bLink" target="_blank"><span class="bLine">제 55조 제1항</span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a> )
+																</td>
+																<td><a href="//www.law.go.kr/법령/군인연금법/제26조" class="bLink" target="_blank"><span class="bLine">제 26조 제 2항 제 1호</span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a></td>
+																<td><a href="//www.law.go.kr/법령/별정우체국법/제25조" class="bLink" target="_blank"><span class="bLine">제25조의 3제4항</span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a></td>
+															</tr>
+															<tr>
+																<td>유족연금비율</td>
+																<td>60%</td>
+																<td>60%</td>
+																<td>60%</td>
+																<td>60%</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</li>
+											<li class="blet mt16">직역연금 재직기간이 1년이상 20년미만인 연계퇴직연금 수급권자가 사망한 경우에 그 유족에게 직역연금법상의 유족일시금,유족연금부가금,유족연금특별부가금을 지급하지 않음.</li>
+											<li class="blet">2009.12.31일 공무원연금법 및 사립학교교직원 연금법 개정에 의하여 해당 직역기관 신규자가 사망한 경우의 유족연금비율은 60%임.</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<button type="button" id="header_5" class="accordionBtn" aria-controls="panel_5" title="축소됨">
+								<span class="qText">수급권자의사망에 의한 급여정산(법제17조)</span>
+							</button>
+							<div id="panel_5" class="accopanel" aria-labelledby="header_5">
+								<h5 class="defaultH5">수급권자의사망에의한 급여정산 ( <a href="//www.law.go.kr/법령/국민연금과직역연금의연계에관한법률/제17조" class="bLink" target="_blank"><span class="bLine">법 제17조</span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a> )</h5>
+								<ul class="guideText font16">
+									<li class="mt16">
+										<b>연계노령연금 및 연계퇴직연금 수급권자 사망</b>
+										<ul class="bletList mt8">
+											<li class="blet">급여지급청구를 하였으나 지급받기 전 수급권자가 사망한 경우 그 금액</li>
+											<li class="blet">연금을 수급 중 해당월분 지급일 전에 수급자가 사망한 경우 그 금액</li>
+											<li class="blet">수급권자가 급여지급 청구를 하지 않고 사망한 경우 지급기간 동안의 금액</li>
+										</ul>
+									</li>
+									<li class="mt24">
+										<b>연계노령연금,연계노령유족연금</b>
+										<ul class="bletList mt8">
+											<li class="blet">국민연금법상 미지급급여 청구권자에게 지급 ( 국민연금법 <a href="//www.law.go.kr/법령/국민연금법/제55조" class="bLink" target="_blank"><span class="bLine">제55조</span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a> )</li>
+										</ul>
+									</li>
+									<li class="mt24">
+										<b>연계퇴직연금,연계퇴직유족연금</b>
+										<ul class="bletList mt8">
+											<li class="blet">연계퇴직유족연금 수급권자에게 지급 → 해당 직역연금법상 유족</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<button type="button" id="header_6" class="accordionBtn" aria-controls="panel_6" title="축소됨">
+								<span class="qText">연계급여미발생시처리(법 제19조,제19조의 2)</span>
+							</button>
+							<div id="panel_6" class="accopanel" aria-labelledby="header_6">
+								<div>
+									<b>연계급여미발생시처리(<a href="//www.law.go.kr/법령/국민연금과직역연금의연계에관한법률/제19조" class="bLink" target="_blank"><span class="bLine">법 제19조,제19조의 2</span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a>)</b>
+								</div>
+								<h5 class="defaultH5 mt16">수급권자의사망에의한 급여정산 ( <a href="//www.law.go.kr/법령/국민연금과직역연금의연계에관한법률/제17조" class="bLink" target="_blank"><span class="bLine">법 제17조</span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a> )</h5>
+								<ul class="guideText font16">
+									<li class="mt16">
+										<b>연계급여 미발생 사유</b>
+										<ul class="bletList mt8">
+											<li class="blet">수급연령에 도달한 자가 최소 연계기간을 충족하지 못했을 때</li>
+											<li class="blet">
+												수급연령을 넘어 직역에서 퇴직한 자가 최소 연계기간을 충족하지 못했을 때<br>
+												*반납금 또는 추납보험료를 납부하여 연계노령연금 및 연계퇴직연금을 지급받으려는 경우는 제외
+											</li>
+											<li>최소 연계기간을 충족하지 못하고 수급연령 전에 사망한 때</li>
+											<li>최소 연계기간을 충족했으나 수급연령 전에 사망한 때</li>
+											<li>60세가 넘어 임의계속가입하여 국민연금 반납․추납 중 임의계속가입을 탈퇴하였으나 최소 연계기간을 충족하지 못했을 때</li>
+										</ul>
+									</li>
+									<li class="mt24">
+										<b>최소 연계기간</b>
+										<ul class="bletList mt8">
+											<li class="blet">직역 기관에서 퇴직일이 ’16년 1월 2일 이후인 경우 → 10년</li>
+											<li class="blet">직역 기관에서 퇴직일이 ’16년 1월 1일 이전인 경우 → 20년</li>
+											<li class="blet">연계기간에 군인연금 복무기간이 포함된 경우 → 20년</li>
+										</ul>
+									</li>
+									<li class="mt24">
+										<b>수급연령</b>
+										
+										<div class="tableBody mlm15 m_scoll">
+											<table>
+												<caption>수급연령 : 출생년도, 1953~1956, 1957~1960, 1961~1964, 1965~1968, 1969년 이후로 구성</caption>
+												<colgroup>
+													<col>
+													<col style="width: 16.66%;">
+													<col style="width: 16.66%;">
+													<col style="width: 16.66%;">
+													<col style="width: 16.66%;">
+													<col style="width: 16.66%;">
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col" class="textCenter">출생년도</th>
+														<th scope="col" class="textCenter">1953~1956</th>
+														<th scope="col" class="textCenter">1957~1960</th>
+														<th scope="col" class="textCenter">1961~1964</th>
+														<th scope="col" class="textCenter">1965~1968</th>
+														<th scope="col" class="textCenter">1969년 이후</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>연령</td>
+														<td>61세 </td>
+														<td>62세 </td>
+														<td>63세 </td>
+														<td>64세 </td>
+														<td>65세 </td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<ul class="bletList mt16">
+											<li class="blet">
+												연계급여 미발생 사유일 및 기간 이자계산 종료일
+
+												<div class="tableBody mlm27 m_scoll">
+													<table>
+														<caption>연계급여 미발생 사유일 및 기간 이자계산 종료일 : 사유, 이자계산종료일로 구성</caption>
+														<colgroup>
+															<col>
+															<col style="width: 33.33%;">
+															<col style="width: 33.33%;">
+														</colgroup>
+														<thead>
+															<tr>
+																<th scope="col" class="textCenter">사유</th>
+																<th scope="col" class="textCenter"></th>
+																<th scope="col" class="textCenter">이자계산종료일</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>65세 도달</td>
+																<td>65세 생일</td>
+																<td>65세 도달일(65세 생일 전일)</td>
+															</tr>
+															<tr>
+																<td>사망(퇴직) </td>
+																<td>사망일 또는 사망 추정일(퇴직일 전일) </td>
+																<td>사유일</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</li>
+											<li class="blet mt16">
+												사유와 확인 서류
+
+												<div class="tableBody mlm27 m_scoll">
+													<table>
+														<caption>사유와 확인 서류 : 사유, 구비서류로 구성</caption>
+														<colgroup>
+															<col style="width: 30%;">
+															<col>
+														</colgroup>
+														<thead>
+															<tr>
+																<th scope="col" class="textCenter">사유</th>
+																<th scope="col" class="textCenter">구비서류</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>65세도달</td>
+																<td>신분증</td>
+															</tr>
+															<tr>
+																<td>사망(퇴직)</td>
+																<td class="textLeft">
+																	<ul class="bletList">
+																		<li class="blet">사망자의 폐쇄 등록부에 관한 가족관계증명서</li>
+																		<li class="blet">필요시 생계유지 확인 관련 서류(퇴직을 확인 하 수 있는 서류)</li>
+																	</ul>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<button type="button" id="header_7" class="accordionBtn" aria-controls="panel_7" title="축소됨">
+								<span class="qText">연계급여미발생시처리(법제19조)</span>
+							</button>
+							<div id="panel_7" class="accopanel" aria-labelledby="header_7">
+								<div>
+									<b>연계급여미발생시처리(<a href="//www.law.go.kr/법령/국민연금과직역연금의연계에관한법률/제19조" class="bLink" target="_blank"><span class="bLine">법 제19조</span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a>)</b>
+								</div>
+								<ul class="bletList mt8">
+									<li class="blet">
+										국민연금법상 반환일시금 ( <a href="//www.law.go.kr/법령/국민연금과직역연금의연계에관한법률시행령/제7조" class="bLink" target="_blank"><span class="bLine">영 제7조</span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a> )
+
+										<div class="tableBody mlm15 m_scoll">
+											<table>
+												<caption>국민연금법상 반환일시금 영 제7조 : 구분, 이자계신기간, 이자율로 구성</caption>
+												<colgroup>
+													<col style="width: 20%;">
+													<col>
+													<col style="width: 25%;">
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col" class="textCenter">구분</th>
+														<th scope="col" class="textCenter">이자계신기간</th>
+														<th scope="col" class="textCenter">이자율</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><a href="//www.law.go.kr/법령/국민연금과직역연금의연계에관한법률시행령/제7조" class="bLink" target="_blank"><span class="bLine">영 제7조의1</span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a></td>
+														<td>보험료 납부일이 속한 다음 달부터 지급연령이 된 날이 속하는 달까지의 이자는 국민연금법 시행령 제50조에 따라 산정</td>
+														<td>3년 만기 정기예금*</td>
+													</tr>
+													<tr>
+														<td><a href="//www.law.go.kr/법령/국민연금과직역연금의연계에관한법률시행령/제7조" class="bLink" target="_blank"><span class="bLine">영 제7조의2</span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a></td>
+														<td>연계노령연금의 지급연령이 된 날이 속하는 달의 다음 달부터 연계급여의 미발생사유가 있는 날이 속하는 달까지의 개월 수</td>
+														<td>1년 만기 정기예금<br>(단기,평균 금리)</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</li>
+									<li class="blet">
+										연계신청을 하였으나 연계급여 수급요건을 충족하지 못한 상태에서 사망하는 경우 그 유족 등에게 지급해야 할 급여를 지급<br>
+										*2015.4.16.전에 납부한 연금보험료(반납금 및 추납보험료 포함)에 대하여는 2015.4월부터 3년만기 정기예금 이자율을 적용(2015.3월까지는 가입이력에 따라 3년 또는 1년만기 정기예금이자율 적용)
+									</li>
+								</ul>
+								<ul class="guideText font16 mt24">
+									<li>
+										<b>연계급여 미발생 시 처리 - 직역연금( <a href="//www.law.go.kr/법령/국민연금과직역연금의연계에관한법률/제19조" class="bLink" target="_blank"><span class="bLine">법 제19조</span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a> )</b>
+										<ul class="bletList mt8">
+											<li class="blet">
+												퇴직일시금을 지급받지 않고 연계를 신청한 경우 (퇴직일시금 + <a href="//www.law.go.kr/법령/국민연금과직역연금의연계에관한법률시행령/제8조" class="bLink" target="_blank"><span class="bLine">영 제8조</span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a> )
+
+												<div class="tableBody mlm27 m_scoll">
+													<table>
+														<caption>퇴직일시금을 지급받지 않고 연계를 신청한 경우 : 구분, 이자계신기간, 이자율로 구성</caption>
+														<colgroup>
+															<col style="width: 20%;">
+															<col>
+															<col style="width: 25%;">
+														</colgroup>
+														<thead>
+															<tr>
+																<th scope="col" class="textCenter">구분</th>
+																<th scope="col" class="textCenter">이자계신기간</th>
+																<th scope="col" class="textCenter">이자율</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td><a href="//www.law.go.kr/법령/국민연금과직역연금의연계에관한법률시행령/제8조" class="bLink" target="_blank"><span class="bLine">영 제8조의</span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a> 이자</td>
+																<td>퇴직일 전일이 속한 달의 다음달부터 연계급여 지급 사유가 있는 날 또는 미발생 사유가 있는 날이 속한 달까지</td>
+																<td>1년 만기 정기예금<br>(복리,평균 금리)</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</li>
+											<li class="blet mt16">
+												반납금등을 납부하고 연계를 신청한 경우 (퇴직일시금 + 이자) + <a href="//www.law.go.kr/법령/국민연금과직역연금의연계에관한법률시행령/제8조" class="bLink" target="_blank"><span class="bLine">영 제8조</span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a>
+
+												<div class="tableBody mlm27 m_scoll">
+													<table>
+														<caption>반납금등을 납부하고 연계를 신청한 경우 : 구분, 이자계신기간, 이자율로 구성</caption>
+														<colgroup>
+															<col style="width: 20%;">
+															<col>
+															<col style="width: 25%;">
+														</colgroup>
+														<thead>
+															<tr>
+																<th scope="col" class="textCenter">구분</th>
+																<th scope="col" class="textCenter">이자계신기간</th>
+																<th scope="col" class="textCenter">이자율</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td><a href="//www.law.go.kr/법령/국민연금과직역연금의연계에관한법률시행령/제8조" class="bLink" target="_blank"><span class="bLine">영 제8조의</span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a> 이자</td>
+																<td>반납금등을 마지막으로 반납한 날이 속하는 달의 다음 달부터 연 계급여의 지급사유가 있는 날 또는 미발생 사유가 있는 날이 속하는 달까지</td>
+																<td>1년 만기 정기예금*<br>(복리,평균 금리)</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</li>
+										</ul>
+									</li>
+									<li class="mt24">
+										<b>반환금액(연금보험료 등)청구권자</b>
+
+										<div class="tableBody mlm15 m_scoll">
+											<table>
+												<caption>반환금액(연금보험료 등)청구권자 : 사유, 청구권자로 구성</caption>
+												<colgroup>
+													<col style="width: 35%;">
+													<col>
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col" class="textCenter">사유</th>
+														<th scope="col" class="textCenter">청구권자</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>65세 도달</td>
+														<td>연금 가입자(대리인 청구 가능)</td>
+													</tr>
+													<tr>
+														<td>사망(퇴직)</td>
+														<td>유족</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+
+					<script src="../../include/evaluation.js"></script> <!-- include: 공통 평가 -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="../../include/footer.js"></script> <!-- include: 공통 푸터 -->
+
+	<script>
+		var depth = [1, 2, 3]; /* 현재메뉴 활성화 용: gnb에 있는 data-menu 값과 일치하게 해주세요. */
+	</script>
+</div>
+</body>
+</html>

@@ -265,15 +265,16 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .lineSpace >span span ~ span { margin-left: 4px;}
 
 /* guideText */
-.guideText li { position: relative; padding-left: 12px; font-size: 14px; line-height: 21px;}
-.guideText li::before { content: ''; position: absolute; left: 0; top: 8px; width: 4px; height: 4px; background-color: #333;}
-.guideText li ~ li { margin-top: 4px;}
-.guideText li .ml { margin-left: 16px;}
-.guideText li .etcColorRed { color: #fc0606;}
-.guideText li.colorBlue::before { background-color: #366cc3;}
+.guideText >li { position: relative; padding-left: 12px; font-size: 14px; line-height: 21px;}
+.guideText >li::before { content: ''; position: absolute; left: 0; top: 8px; width: 4px; height: 4px; background-color: #333;}
+.guideText >li ~ li { margin-top: 4px;}
+.guideText >li .ml { margin-left: 16px;}
+.guideText >li .etcColorRed { color: #fc0606;}
+.guideText >li.colorBlue::before { background-color: #366cc3;}
 .guideText.mt { margin-top: 16px;}
-.guideText.blue li { color: #366cc3;}
-.guideText.blue li::before { background-color: #366cc3;}
+.guideText.blue >li { color: #366cc3;}
+.guideText.blue >li::before { background-color: #366cc3;}
+.guideText.font16 >li { font-size: 16px;}
 
 /* normalList */
 .normalList li { line-height: 24px;}
@@ -533,12 +534,12 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 
 /* FAQ 아코디언 */
 .acoList { margin-top: 40px; border-top: 2px solid #333;}
-.acoList li { border-bottom: 1px solid #dbdbdb;}
-.acoList li button { display: block; position: relative; width: 100%; padding: 18px 24px; font-weight: 700; text-align: left; line-height: 24px;}
-.acoList li button::after { content: ''; display: block; position: absolute; right: 24px; top: 50%; width: 16px; height: 16px; margin-top: -8px; background: url(../images/common/ico_arrow_down.svg) no-repeat center/cover;}
-.acoList li .accopanel { display: none; padding: 32px; background-color: #f4f7fc;}
-.acoList li button.active { color: #366cc3;}
-.acoList li button.active::after { transform: rotate(180deg);}
+.acoList >li { border-bottom: 1px solid #dbdbdb;}
+.acoList >li button { display: block; position: relative; width: 100%; padding: 18px 24px; font-weight: 700; text-align: left; line-height: 24px;}
+.acoList >li button::after { content: ''; display: block; position: absolute; right: 24px; top: 50%; width: 16px; height: 16px; margin-top: -8px; background: url(../images/common/ico_arrow_down.svg) no-repeat center/cover;}
+.acoList >li .accopanel { display: none; padding: 32px; background-color: #f4f7fc;}
+.acoList >li button.active { color: #366cc3;}
+.acoList >li button.active::after { transform: rotate(180deg);}
 
 
 
@@ -598,7 +599,6 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 
 /* 테이블
 **********************************************/
-
 
 /* tableBody */
 .tableBody { overflow: hidden; margin-top: 8px; border-top: 2px solid #333;}
