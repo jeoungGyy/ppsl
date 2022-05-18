@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="550" height="96" viewBox="0 0 550 96">
+    <g data-name="사각형 26374" style="fill:#f4f7fc;stroke:#333">
+        <rect width="240" height="96" rx="48" style="stroke:none"/>
+        <rect x=".5" y=".5" width="239" height="95" rx="47.5" style="fill:none"/>
+    </g>
+    <text data-name="신고인" transform="translate(34 42)" style="font-size:16px;font-family:EliceDigitalBaeum,Elice DigitalBaeum;fill:#333"><tspan x="0" y="0">신고인</tspan></text>
+    <text data-name="신고서 제출" transform="translate(34 69)" style="font-size:19px;font-family:EliceDigitalBaeum-Bd,Elice DigitalBaeum;fill:#333"><tspan x="0" y="0">신고서 제출</tspan></text>
+    <g transform="translate(-406 -984)">
+        <rect data-name="사각형 26374" width="240" height="96" rx="48" transform="translate(716 984)" style="fill:#366cc3"/>
+        <g data-name="text">
+            <text data-name="연금관리기관" transform="translate(750 1026)" style="fill:#fff;font-size:16px;font-family:EliceDigitalBaeum,Elice DigitalBaeum"><tspan x="0" y="0">연금관리기관</tspan></text>
+            <text data-name="신고서 접수 및 확인" transform="translate(750 1053)" style="fill:#fff;font-size:19px;font-family:EliceDigitalBaeum-Bd,Elice DigitalBaeum"><tspan x="0" y="0">신고서 접수 및 확인</tspan></text>
+        </g>
+    </g>
+    <g>
+        <path data-name="선 1597" transform="translate(251.5 48.5)" style="stroke:#a5a5a5;fill:none" d="M0 0h47.332"/>
+        <path data-name="다각형 12" d="M6.5 0 13 7H0z" transform="rotate(90 128.75 170.75)" style="fill:#a5a5a5"/>
+        <g data-name="타원 1358" transform="translate(236 45)" style="stroke:#fff;stroke-width:3px;fill:#333">
+            <circle cx="3.5" cy="3.5" r="3.5" style="stroke:none"/>
+            <circle cx="3.5" cy="3.5" r="5" style="fill:none"/>
+        </g>
+    </g>
+</svg>
