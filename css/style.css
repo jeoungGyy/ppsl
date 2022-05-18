@@ -716,6 +716,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .whTableBody table th { padding: 24px 0; line-height: 24px; border-left: 1px solid #dbdbdb; border-bottom: 1px solid #dbdbdb; background-color: #f7f7f7;}
 .whTableBody table th.textLeft { padding: 0 10px 0 24px;}
 .whTableBody table th.tdStyle { font-weight: 400; background-color: #fff;}
+.whTableBody table td.bgGray { background-color: #f7f7f7;}
 .whTableBody table td { padding: 13px 16px; line-height: 24px; border-left: 1px solid #dbdbdb; border-bottom: 1px solid #dbdbdb;}
 .whTableBody table td input[type=text],
 .whTableBody table td input[type=tel] { height: 32px;}
