@@ -1081,7 +1081,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .basisInfo .work dt.ico2 { left: 140px; bottom: 0; width: 144px; height: 144px; background-color: rgba(54, 145, 249, 0.8);}
 .basisInfo .work dt.ico2::after { content: ''; display: block; position: absolute; right: -44px; top: 50%; width: 48px; height: 9px; margin-top: -4px; background: url(../images/information/ico_arrow_skyBlue.svg) no-repeat center/cover;}
 .basisInfo .work dd b { line-height: 24px;}
-.basisInfo .work dd p { margin-top: 16px; font-size: 14px; line-height: 21px;}
+.basisInfo .work dd p { margin-top: 16px; font-size: 14px; line-height: 21px; color: #767676;}
 .basisInfo .work dd.text1 { padding: 15px 0 0 260px;}
 .basisInfo .work dd.text2 { margin-top: 75px; padding-left: 350px;}
 
