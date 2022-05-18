@@ -235,9 +235,10 @@ hr.space.style5 { margin: 8px -16px 32px;}
 
 
 /* PC용 테이블에 스크롤 추가 */
-.m_scoll { overflow-x: scroll; overflow-y: hidden; -webkit-overflow-scrolling:touch;}
+.m_scoll { overflow-x: scroll; overflow-y: hidden; padding-bottom: 8px; -webkit-overflow-scrolling:touch;}
 .m_scoll table { width: 912px;}
-
+.m_scoll::-webkit-scrollbar { height: 4px;}
+.m_scoll::-webkit-scrollbar-thumb { border-radius: 4px; background-color: #959595;}
 
 
 
@@ -438,13 +439,14 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .applyPostLayer .postSearchBox .twin select { width: 100%; margin: 0;}
 .applyPostLayer .postSearchBox .twin select ~ select { margin-top: 8px;}
 
+/* 설문조사 */
+.layerSurveyBody { width: 100%; max-height: 600px;}
 
+.surveyLayer .surveyGuide { flex-direction: column; padding: 15px 24px;}
+.surveyLayer .textGroup .text { line-height: 29px;}
 
-
-
-
-
-
+.surveyLayer .textCompleteGroup .text { font-size: 16px; line-height: 24px;}
+.surveyLayer .textCompleteGroup .subText { font-size: 14px; line-height: 21px;} 
 
 
 
@@ -555,8 +557,6 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .basisInfo .workBody { height: inherit;}
 
 /* 신청/청구 안내 */
-.requestFigure {}
-
 .lineRoundBox { padding: 24px 16px;}
 
 .paymentRound { display: block; padding-bottom: 0; border: none; border-radius: 0;}

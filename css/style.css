@@ -807,7 +807,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 /* 레이어
 **********************************************/
 
-.layerPopup { display: none; position: fixed; z-index: 1000; top: 0; right: 0; bottom: 0; left: 0; padding: 10px; background: rgba(0,0,0,0.4); outline: none; opacity: 0; transition: opacity .3s;}
+.layerPopup { display: none; position: fixed; z-index: 1000; top: 0; right: 0; bottom: 0; left: 0; padding: 0 16px; background: rgba(0,0,0,0.7); outline: none; opacity: 0; transition: opacity .3s;}
 .layerPopup::after { content: ""; display: inline-block; height: 100%; vertical-align: middle;}
 .layerPopup.active { display: block;}
 .layerPopup.show { opacity: 1;}
@@ -836,6 +836,40 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .layerPopup .gnb .depth3 >li >a::before { content: ''; display: block; width: 2px; height: 2px; position: absolute; left: 0; top: 6px; background-color: #5a5a5a;}
 .layerPopup .gnb .depth3 >li:first-child { margin-top: 16px;}
 .layerPopup .gnb .depth3 >li ~ li { margin-top: 8px;}
+
+/* 설문조사 */
+.layerSurveyBody { overflow: hidden; position:relative; left:50%; top:50%; width: 384px; text-align: center; vertical-align: middle; background: #F4F7FC; border-radius: 8px; transform: translate(-50%, -50%);}
+.layerSurveyBody .layerContent { padding: 64px 16px 183px; background: url(../images/common/img_survey.svg) no-repeat left bottom/380px 160px;}
+.layerSurveyBody .tt { font-size: 19px; color: #000; line-height: 29px;}
+.layerSurveyBody .title { font-size: 28px; font-weight: 700; line-height: 42px;}
+.layerSurveyBody .tb { margin-top: 16px; padding: 0 49px; line-height: 24px;}
+.layerSurveyBody .button { width: 160px; margin-top: 24px;}
+.layerSurveyBody .layerClose { right: 24px;}
+
+.surveyLayer .surveyGuide { display: flex; align-items: center; padding: 32px 55px; background-color: rgba(54, 108, 195, 0.05); border-radius: 8px;}
+.surveyLayer .surveyGuide .icon { width: 64px; height: 64px; background: url(../images/common/ico_survey.svg) no-repeat center/cover;}
+.surveyLayer .textGroup { flex: 1; text-align: center;}
+.surveyLayer .textGroup .text { font-size: 24px; line-height: 36px;}
+.surveyLayer .textGroup .subText { margin-top: 8px; font-size: 14px; color: #767676; line-height: 21px;}
+.surveyLayer .surveyList >li {}
+.surveyLayer .surveyList >li { padding: 24px 0;}
+.surveyLayer .surveyList >li ~ li { border-top: 1px solid #DBDBDB;}
+.surveyLayer .surveyList >li .title { font-weight: 700; line-height: 24px;}
+.surveyLayer .surveyList >li .inputOne { margin-top: 8px;}
+.surveyLayer .surveyList >li .inputOne input { width: 100%;}
+.surveyLayer .surveyList >li .groupBox .radioBox { display: block; height: initial; min-height: 20px;}
+.surveyLayer .surveyList >li .groupBox li { margin-top: 8px;}
+.surveyLayer .surveyList >li .groupBox li label { line-height: 24px;}
+.surveyLayer .surveyList >li .groupBox li label img { max-width: 100%; height: auto;}
+.surveyLayer .surveyList >li .groupBox li .icheckbox,
+.surveyLayer .surveyList >li .groupBox li .iradio { top: 0;}
+
+.surveyLayer .surveyComplete .round { display: flex; align-items: center; justify-content: center; width: 96px; height: 96px; margin: 0 auto; background-color: #F4F7FC; border-radius: 50%;}
+.surveyLayer .surveyComplete .round .icon { width: 64px; height: 64px; background: url(../images/common/ico_survey.svg) no-repeat center/cover;}
+.surveyLayer .textCompleteGroup { margin-top: 16px; text-align: center;}
+.surveyLayer .textCompleteGroup .text { font-size: 19px; color: #000; line-height: 29px;}
+.surveyLayer .textCompleteGroup .subText { margin-top: 8px; line-height: 24px;} 
+
 
 /* 우편번호 검색 */
 .applyPostLayer .postTitle .b { display: block; margin-top: 8px; font-size: 14px; color: #767676;}
@@ -1092,7 +1126,6 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .acoStepList >li >ol >li .acoList { margin-top: 18px;}
 
 /* 신청/청구 안내 */
-.requestFigure {}
 .requestFigure { padding: 40px; background-color: #f4f7fc; border-radius: 8px;}
 .requestFigure img { width: 100%; height: auto;}
 
