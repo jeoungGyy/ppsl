@@ -49,7 +49,7 @@ str += '                  <li><a href="../information/HO_01_03_02.html" data-men
 str += '                </ul>';
 str += '              </li>';
 str += '              <li><a href="../information/HO_01_04_01.html" data-menu="depth_1_4"><span>상담사례</span></a></li>';
-str += '              <li><a href="../information/HO_01_05_01.html" data-menu="depth_1_5"><span>찾아오시는길</span></a></li>';
+str += '              <li><a href="../information/HO_01_05_01.html" data-menu="depth_1_5"><span>지사찾기</span></a></li>';
 str += '            </ul>';
 str += '          </li>';
 str += '          <li><a href="../consultation/HO_02_01_01.html" data-menu="depth_2"><span>상담</span></a>';

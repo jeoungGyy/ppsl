@@ -714,7 +714,9 @@ hr.space.style5 { margin: 8px -16px 32px;}
   .header,
   .footer,
 	.wrap .lnbBody,
-  .contentsHeader .location { display: none;}
+  .contentsHeader .location,
+	.aside,
+	.mFooterCon { display: none;}
   .tableBody table { width: calc(100% + 3px); margin-left: -2px;}
 }
 
