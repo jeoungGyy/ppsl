@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+    <path style="fill:none" d="M0 0h64v64H0z"/>
+    <g data-name="그룹 24867" transform="translate(12 15)">
+        <path data-name="패스 37010" d="M323.252 539.082v-10a4 4 0 0 0-4-4h-32a4 4 0 0 0-4 4v28a4 4 0 0 0 4 4h21" transform="translate(-283.252 -525.082)" style="stroke-linecap:round;stroke:#000;stroke-width:1.5px;fill:none"/>
+        <path data-name="선 1576" transform="translate(0 10)" style="stroke:#000;stroke-width:1.5px;fill:none" d="M0 0h40"/>
+        <path data-name="선 1577" transform="translate(7 18)" style="stroke-linecap:round;stroke:#000;stroke-width:1.5px;fill:none" d="M0 0h10"/>
+        <path data-name="선 1578" transform="translate(7 22)" style="stroke-linecap:round;stroke:#000;stroke-width:1.5px;fill:none" d="M0 0h12"/>
+        <circle data-name="타원 1642" cx="1" cy="1" r="1" transform="translate(5 4)"/>
+        <circle data-name="타원 1643" cx="1" cy="1" r="1" transform="translate(9 4)"/>
+        <circle data-name="타원 1644" cx="1" cy="1" r="1" transform="translate(13 4)"/>
+    </g>
+    <g data-name="그룹 24911" transform="translate(9.971 3.641)">
+        <circle cx="11" cy="11" r="11" transform="translate(28.029 28.359)" style="fill:#366cc3"/>
+        <path data-name="합치기 2" d="M-14541.972-1251.14a1 1 0 0 1 1-1 1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1zm0-3v-7a1 1 0 0 1 1-1 1 1 0 0 1 1 1v7a1 1 0 0 1-1 1 1 1 0 0 1-1-1z" transform="translate(14580 1295.499)" style="fill:#fff"/>
+    </g>
+</svg>

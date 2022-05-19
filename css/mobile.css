@@ -433,6 +433,14 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .layerBody .overflowY { margin-right: 0; padding-right: 0; max-height: 424px;}
 .layerClose { right: 16px; top: 20px;}
 
+/* 공통 */
+.layerPopup .textCompleteGroup .text { font-size: 16px; line-height: 24px;}
+.layerPopup .textCompleteGroup .sub { font-size: 14px;}
+
+/* 시스템 점검 안내 */
+.systemLayer .grayRoundBox dt { font-size: 14px;}
+.systemLayer .grayRoundBox dd { font-size: 14px;}
+
 /* 우편번호 검색 */
 .applyPostLayer .postSearchBox { padding: 16px;}
 .applyPostLayer .postSearchBox .twin { display: block; margin: 0;}
@@ -448,11 +456,12 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .surveyLayer .textCompleteGroup .text { font-size: 16px; line-height: 24px;}
 .surveyLayer .textCompleteGroup .subText { font-size: 14px; line-height: 21px;} 
 
-
-
-
-
-
+/* 404페이지 */
+.errorPage { width: 100%; padding: 0 16px;}
+.errorPage .textCompleteGroup { margin-top: 24px;}
+.errorPage .textCompleteGroup .text { font-size: 19px; line-height: 29px;}
+.errorPage .textCompleteGroup .sub { margin-top: 16px; padding: 0; font-size: 14px;}
+.errorPage .btns { margin-top: 24px;}
 
 
 

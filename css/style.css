@@ -820,6 +820,17 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .layerClose { position: absolute; right: 40px; top: 24px; font-size: 13px; color: #fff;}
 .layerClose i { display: block; width: 24px; height: 24px; text-indent: -99999px; background: url(../images/common/ico_close2.svg) no-repeat center/cover;}
 
+/* 공통 */
+.surveyComplete .round { display: flex; align-items: center; justify-content: center; width: 96px; height: 96px; margin: 0 auto; background-color: #F4F7FC; border-radius: 50%;}
+.surveyComplete .round .icon { width: 64px; height: 64px;}
+.surveyComplete .round .icon1 { background: url(../images/common/ico_survey.svg) no-repeat center/cover;}
+.surveyComplete .round .icon2 { background: url(../images/common/ico_browser_set.svg) no-repeat center/cover;}
+.surveyComplete .round .icon3 { background: url(../images/common/ico_search_none.svg) no-repeat center/cover;}
+.surveyComplete .round .icon4 { background: url(../images/common/ico_browser_error.svg) no-repeat center/cover;}
+.textCompleteGroup { margin-top: 16px; text-align: center;}
+.textCompleteGroup .text { font-size: 19px; color: #000; line-height: 29px;}
+.textCompleteGroup .sub { margin-top: 8px; padding: 0 60px; line-height: 24px;} 
+
 /* 전체 메뉴 */
 #allMenu_pop { padding: 0; background-color: #fff;}
 #allMenu_pop .layerClose { top: -39px;}
@@ -864,11 +875,12 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .surveyLayer .surveyList >li .groupBox li .icheckbox,
 .surveyLayer .surveyList >li .groupBox li .iradio { top: 0;}
 
-.surveyLayer .surveyComplete .round { display: flex; align-items: center; justify-content: center; width: 96px; height: 96px; margin: 0 auto; background-color: #F4F7FC; border-radius: 50%;}
-.surveyLayer .surveyComplete .round .icon { width: 64px; height: 64px; background: url(../images/common/ico_survey.svg) no-repeat center/cover;}
-.surveyLayer .textCompleteGroup { margin-top: 16px; text-align: center;}
-.surveyLayer .textCompleteGroup .text { font-size: 19px; color: #000; line-height: 29px;}
-.surveyLayer .textCompleteGroup .subText { margin-top: 8px; line-height: 24px;} 
+/* 시스템 점검 안내 */
+.systemLayer {}
+.systemLayer .grayRoundBox { margin-top: 24px; padding: 24px 16px; background-color: #F7F7F7; border-radius: 8px;}
+.systemLayer .grayRoundBox dt { font-weight: 700;}
+.systemLayer .grayRoundBox dd { margin-top: 8px; font-weight: 700;}
+.systemLayer .grayRoundBox dd + dt { margin-top: 16px;}
 
 
 /* 우편번호 검색 */
@@ -883,11 +895,13 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .consultationPWLayer .pwInput { margin-top: 16px;}
 .consultationPWLayer .pwInput input { width: 100%;}
 
-
-
-
-
-
+/* 404페이지 */
+.errorPage { position: absolute; left: 50%; top: 50%; width: 900px; transform: translate(-50%, -50%);}
+.errorPage .textCompleteGroup { margin-top: 32px;}
+.errorPage .textCompleteGroup .text { font-size: 28px; line-height: 42px;}
+.errorPage .textCompleteGroup .sub { margin-top: 24px; padding: 0;}
+.errorPage .btns { display: flex; align-items: center; justify-content: center; margin-top: 32px;}
+.errorPage .btns .button { margin: 0 4px;}
 
 
 

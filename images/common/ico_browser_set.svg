@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+    <path style="fill:none" d="M0 0h64v64H0z"/>
+    <g data-name="그룹 24867" transform="translate(12 15)">
+        <path data-name="패스 37010" d="M323.252 539.082v-10a4 4 0 0 0-4-4h-32a4 4 0 0 0-4 4v28a4 4 0 0 0 4 4h21" transform="translate(-283.252 -525.082)" style="stroke-linecap:round;stroke:#000;stroke-width:1.5px;fill:none"/>
+        <path data-name="선 1576" transform="translate(0 10)" style="stroke:#000;stroke-width:1.5px;fill:none" d="M0 0h40"/>
+        <path data-name="선 1577" transform="translate(7 18)" style="stroke-linecap:round;stroke:#000;stroke-width:1.5px;fill:none" d="M0 0h10"/>
+        <path data-name="선 1578" transform="translate(7 22)" style="stroke-linecap:round;stroke:#000;stroke-width:1.5px;fill:none" d="M0 0h12"/>
+        <circle data-name="타원 1642" cx="1" cy="1" r="1" transform="translate(5 4)"/>
+        <circle data-name="타원 1643" cx="1" cy="1" r="1" transform="translate(9 4)"/>
+        <circle data-name="타원 1644" cx="1" cy="1" r="1" transform="translate(13 4)"/>
+    </g>
+    <path data-name="빼기 8" d="M12.186 22H9.741a1.224 1.224 0 0 1-1.222-1.222V20a1.224 1.224 0 0 0-.819-1.153 1.222 1.222 0 0 0-1.394.245l-.5.5a1.222 1.222 0 0 1-1.736 0L2.346 17.87a1.215 1.215 0 0 1-.361-.87 1.23 1.23 0 0 1 .361-.868l.5-.5a1.223 1.223 0 0 0 .245-1.393 1.226 1.226 0 0 0-1.149-.819h-.72A1.224 1.224 0 0 1 0 12.2V9.753a1.224 1.224 0 0 1 1.222-1.222h.734A1.221 1.221 0 0 0 3.1 7.712a1.223 1.223 0 0 0-.24-1.393l-.5-.5a1.222 1.222 0 0 1 0-1.736l1.747-1.736a1.221 1.221 0 0 1 1.735 0l.5.5a1.222 1.222 0 0 0 1.393.244 1.224 1.224 0 0 0 .819-1.148v-.721A1.224 1.224 0 0 1 9.778 0h2.444a1.224 1.224 0 0 1 1.222 1.222v.722a1.221 1.221 0 0 0 .843 1.161 1.223 1.223 0 0 0 1.393-.245l.5-.5a1.224 1.224 0 0 1 1.736 0l1.735 1.748a1.215 1.215 0 0 1 .362.868 1.23 1.23 0 0 1-.362.868l-.5.5a1.225 1.225 0 0 0-.244 1.394 1.221 1.221 0 0 0 1.148.818h.721A1.224 1.224 0 0 1 22 9.779v2.48a1.224 1.224 0 0 1-1.222 1.222h-.794a1.324 1.324 0 0 0-.9 2.212l.5.5a1.224 1.224 0 0 1 0 1.736l-1.724 1.723a1.231 1.231 0 0 1-.868.362 1.215 1.215 0 0 1-.868-.362l-.5-.5a1.324 1.324 0 0 0-2.212.9v.721A1.224 1.224 0 0 1 12.186 22zM11 8a3 3 0 1 0 3 3 3 3 0 0 0-3-3z" style="fill:#366cc3" transform="translate(38 32)"/>
+</svg>
