@@ -1,6 +1,5 @@
 var str = '';
 
-
 str += '<aside class="aside">';
 str += '  <ul class="asideNav">';
 str += '    <li>';
@@ -35,11 +34,6 @@ str += '      </a>';
 str += '    </li>';
 str += '  </ul>';
 str += '</aside>';
-str += '	<footer class="footer">';
-str += '		<div class="area">';
-str += '		    <p>푸터</p>';
-str += '		</div>';
-str += '	</footer>';
 
 
 document.write(str);

@@ -226,8 +226,8 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .acoList >li button { padding: 18px 16px;}
 .acoList >li .accopanel { padding: 24px 16px;}
 
-
-
+/* 퀵메뉴 */
+.aside { display: none;}
 
 
 
