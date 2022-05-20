@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="292" height="189" viewBox="0 0 292 189">
+    <g>
+        <rect data-name="사각형 26374" width="168" height="48" rx="24" style="fill:#366cc3"/>
+        <text data-name="상담신청" transform="translate(24 30)" style="font-size:14px;font-family:EliceDigitalBaeum-Bd,Elice DigitalBaeum;fill:#fff"><tspan x="0" y="0">상담신청</tspan></text>
+        <g data-name="사각형 26374" style="stroke:#366cc3;fill:#f4f7fc" transform="translate(124)">
+            <rect width="168" height="48" rx="24" style="stroke:none"/>
+            <rect x=".5" y=".5" width="167" height="47" rx="23.5" style="fill:none"/>
+        </g>
+        <text data-name="접수" transform="translate(148 30)" style="font-size:14px;font-family:EliceDigitalBaeum-Bd,Elice DigitalBaeum;fill:#366cc3"><tspan x="0" y="0">접수</tspan></text>
+    </g>
+    <g transform="translate(0 71)">
+        <rect data-name="사각형 26374" width="168" height="48" rx="24" style="fill:#366cc3"/>
+        <text data-name="연금기관 담당자" transform="translate(24 30)" style="font-size:14px;font-family:EliceDigitalBaeum-Bd,Elice DigitalBaeum;fill:#fff"><tspan x="0" y="0">연금기관 담당자</tspan></text>
+        <g data-name="사각형 26374" style="stroke:#366cc3;fill:#f4f7fc" transform="translate(124)">
+            <rect width="168" height="48" rx="24" style="stroke:none"/>
+            <rect x=".5" y=".5" width="167" height="47" rx="23.5" style="fill:none"/>
+        </g>
+        <text data-name="검토 후 답변" transform="translate(148 30)" style="font-size:14px;font-family:EliceDigitalBaeum-Bd,Elice DigitalBaeum;fill:#366cc3"><tspan x="0" y="0">검토 후 답변</tspan></text>
+    </g>
+    <g transform="translate(-716 -843)">
+        <rect data-name="사각형 26374" width="292" height="48" rx="24" transform="translate(716 984)" style="fill:#3691f9"/>
+        <text data-name="고객 답변 확인" transform="translate(862 1014)" style="font-size:14px;font-family:EliceDigitalBaeum-Bd,Elice DigitalBaeum;fill:#fff"><tspan x="-41.37" y="0">고객 답변 확인</tspan></text>
+    </g>
+    <path data-name="선 1597" transform="rotate(90 44.75 101.75)" style="fill:none;stroke:#366cc3" d="M0 0h7.5"/>
+    <path data-name="다각형 12" d="M4.5 0 9 5H0z" transform="rotate(180 75.5 33.25)" style="fill:#366cc3"/>
+    <g data-name="타원 1358" transform="rotate(90 51.25 97.75)" style="stroke:#fff;stroke-width:2px;fill:#366cc3">
+        <circle cx="2.5" cy="2.5" r="2.5" style="stroke:none"/>
+        <circle cx="2.5" cy="2.5" r="3.5" style="fill:none"/>
+    </g>
+    <g data-name="arrow">
+        <path data-name="선 1597" transform="rotate(90 9.75 136.75)" style="fill:none;stroke:#366cc3" d="M0 0h7.5"/>
+        <path data-name="다각형 12" d="M4.5 0 9 5H0z" transform="rotate(180 75.5 68.25)" style="fill:#366cc3"/>
+        <g data-name="타원 1358" transform="rotate(90 16.25 132.75)" style="stroke:#fff;stroke-width:2px;fill:#366cc3">
+            <circle cx="2.5" cy="2.5" r="2.5" style="stroke:none"/>
+            <circle cx="2.5" cy="2.5" r="3.5" style="fill:none"/>
+        </g>
+    </g>
+</svg>
