@@ -14,6 +14,9 @@
 /* lnbBody */
 .wrap .lnbBody { display: none;}
 
+/* 푸터 */
+.mFooterCon .mfBody { padding: 32px 16px;}
+.mFooterCon .fSNS { right: 16px;}
 
 
 /* 메인

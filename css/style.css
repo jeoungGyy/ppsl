@@ -131,7 +131,46 @@ body.noScroll { overflow: hidden;}
 .contentsHeader .location button.shareBtn:hover i { background: url(../images/common/ico_share_w.svg) no-repeat center/cover;}
 
 /* 푸터 */
-.footer { height: 100px; margin-top: 40px; background-color: #333;}
+.mFooterCon .ftLinks { margin-top: 79px; padding: 21px 0; border-top: 1px solid #dbdbdb; border-bottom: 1px solid #dbdbdb;}
+.mFooterCon .ftLinks .area { display: flex; align-items: center;}
+.mFooterCon .ftLinks .area a { display: flex; align-items: center; justify-content: center; width: calc(100% / 6); color: #767676;}
+.mFooterCon .ftLinks .area a i { display: block; width: 40px; height: 40px; margin-right: 16px;}
+.mFooterCon .ftLinks .area a i.icon1 { background: url(../images/common/ci_mohw_gray.svg) no-repeat center/cover;}
+.mFooterCon .ftLinks .area a i.icon2 { background: url(../images/common/ci_nps_gray.svg) no-repeat center/cover;}
+.mFooterCon .ftLinks .area a i.icon3 { background: url(../images/common/ci_geps_gray.svg) no-repeat center/cover;}
+.mFooterCon .ftLinks .area a i.icon4 { background: url(../images/common/ci_tp_gray.svg) no-repeat center/cover;}
+.mFooterCon .ftLinks .area a i.icon5 { background: url(../images/common/ci_mps_gray.png) no-repeat center/cover;}
+.mFooterCon .ftLinks .area a i.icon6 { background: url(../images/common/ci_popa_gray.png) no-repeat center/cover;}
+.mFooterCon .ftLinks .area a >div b { display: block;  font-size: 14px; font-weight: 700;}
+.mFooterCon .ftLinks .area a >div span { display: block; margin-top: 4px; font-size: 14px;}
+.mFooterCon .ftLinks .area a ~ a { position: relative;}
+.mFooterCon .ftLinks .area a ~ a::after { content: ''; display: block; position: absolute; left: 0; top: 50%; width: 4px; height: 4px; margin-top: -2px; background-color: #dbdbdb; border-radius: 50%;}
+
+.mFooterCon .mfBody { position: relative; padding: 32px 16px;}
+.mFooterCon .fLinks { display: flex; align-items: center; padding-top: 6px;}
+.mFooterCon .fLinks a { display: block; margin-right: 24px; font-size: 14px;}
+.mFooterCon .fLinks a img { vertical-align: middle;}
+.mFooterCon .fSNS { position: absolute; right: 0; top: 32px;}
+.mFooterCon .fSNS .t { display: flex; align-items: center;}
+.mFooterCon .fSNS .t select { font-size: 14px;}
+.mFooterCon .fSNS .t .fSNSBtn { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; font-size: 14px; border: solid 1px #dbdbdb; border-left: none;}
+.mFooterCon .fSNS .b { display: flex; align-items: flex-start; justify-content: flex-end; margin-top: 8px;}
+.mFooterCon .fSNS .b a { display: block;}
+.mFooterCon .fSNS .b a ~ a { margin-left: 4px;}
+.mFooterCon .fSNS .b a i { display: block; width: 32px; height: 32px; text-indent: -99999px;}
+.mFooterCon .fSNS .b a.kakao i { background: url(../images/common/ico_kakaotalk_footer.svg) no-repeat center/cover;}
+.mFooterCon .fSNS .b a.facebook i { background: url(../images/common/ico_facebook_footer.svg) no-repeat center/cover;}
+.mFooterCon .fSNS .b a.twitter i { background: url(../images/common/ico_twitter_footer.svg) no-repeat center/cover;}
+.mFooterCon .fSNS .b a.instagram i { background: url(../images/common/ico_insta_footer.svg) no-repeat center/cover;}
+.mFooterCon .fSNS .b a.wa { margin-left: 24px;}
+.mFooterCon .fSNS .b a.wa i { width: 48px; height: 40px; background: url(../images/common/wa_mark.png) no-repeat center/cover;}
+
+.mFooterCon .address { margin-top: 24px;}
+.mFooterCon .address p { font-size: 14px; line-height: 21px;}
+.mFooterCon .address p ~ p { margin-top: 12px;}
+.mFooterCon .address p span ~ span { margin-left: 8px;}
+
+
 
 
 /* 공통 STYLE
@@ -1055,30 +1094,11 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .mainFooter ul li a.mfPopa i { height: 33px; background: url(../images/home/ci_popa.png) no-repeat center/cover;}
 .mainFooter ul li a .mfDiv { margin-left: 16px;}
 
-
-.mFooterCon { position: relative; margin-top: 24px; padding-bottom: 20px;}
-.mFooterCon .fLinks { display: flex; align-items: center; padding-top: 6px;}
-.mFooterCon .fLinks a { display: block; margin-right: 24px; font-size: 14px;}
-.mFooterCon .fSNS { position: absolute; right: 0; top: 0;}
-.mFooterCon .fSNS .t { display: flex; align-items: center;}
-.mFooterCon .fSNS .t select { font-size: 14px;}
-.mFooterCon .fSNS .t .fSNSBtn { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; font-size: 14px; border: solid 1px #dbdbdb; border-left: none;}
-.mFooterCon .fSNS .b { display: flex; align-items: center; justify-content: flex-end; margin-top: 8px;}
-.mFooterCon .fSNS .b a { display: block;}
-.mFooterCon .fSNS .b a ~ a { margin-left: 4px;}
-.mFooterCon .fSNS .b a i { display: block; width: 32px; height: 32px; text-indent: -99999px;}
-.mFooterCon .fSNS .b a.kakao i { background: url(../images/common/ico_kakaotalk_footer.svg) no-repeat center/cover;}
-.mFooterCon .fSNS .b a.facebook i { background: url(../images/common/ico_facebook_footer.svg) no-repeat center/cover;}
-.mFooterCon .fSNS .b a.twitter i { background: url(../images/common/ico_twitter_footer.svg) no-repeat center/cover;}
-.mFooterCon .fSNS .b a.instagram i { background: url(../images/common/ico_insta_footer.svg) no-repeat center/cover;}
-
-.mFooterCon .address { margin-top: 20px;}
-.mFooterCon .address p { font-size: 14px; line-height: 21px;}
-.mFooterCon .address p ~ p { margin-top: 14px;}
-.mFooterCon .address p span ~ span { margin-left: 8px;}
-
-
-
+/* 메인만 사용 */
+.main .header { box-shadow: none;}
+.main .mFooterCon .ftLinks { display: none;}
+.main .mFooterCon .mfBody { padding-top: 24px;}
+.main .mFooterCon .fSNS { top: 24px;}
 
 
 
@@ -1322,7 +1342,21 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 
 
 
-/* 콘텐츠 명
+/* 약관 및 방침
 **********************************************/
 
-/* 하위 콘텐츠 명 */
+/* 서비스 약관 */
+.asheader { margin-top: 40px; font-size: 24px; line-height: 36px;}
+.asList >li { margin-top: 24px;}
+.asList >li p { margin-top: 16px; line-height: 24px;}
+.mainNum { margin-top: 16px;}
+.mainNum >li { padding-left: 18px; text-indent: -18px; line-height: 24px;}
+.mainNum >li ~ li { margin-top: 8px;}
+.subNum >li { margin-top: 8px; padding-left: 0; text-indent: 0; line-height: 24px;}
+
+
+
+
+
+
+

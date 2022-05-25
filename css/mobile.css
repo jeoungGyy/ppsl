@@ -35,6 +35,27 @@
 .contentsHeader .location button.printBtn { display: none;}
 .contentsHeader .location button.shareBtn { margin-left: 16px;}
 
+/* 푸터 */
+.mFooterCon .ftLinks { margin-top: 40px; padding: 32px 16px 0; border-bottom: none;}
+.mFooterCon .ftLinks .area { flex-wrap: wrap; margin: -8px 0 0 -8px;}
+.mFooterCon .ftLinks .area a { flex-direction: column; width: calc(100% / 3 - 8px); margin: 8px 0 0 8px; padding: 12px 0; border: 1px solid #dbdbdb; border-radius: 16px;}
+.mFooterCon .ftLinks .area a i { margin-right: 0;}
+.mFooterCon .ftLinks .area a ~ a::after { display: none;}
+.mFooterCon .ftLinks .area a >div { text-align: center;}
+.mFooterCon .ftLinks .area a >div b { font-size: 13px;}
+
+.mFooterCon .mfBody { padding: 32px 16px;}
+.mFooterCon .fLinks { flex-wrap: wrap; margin-top: -8px; padding-top: 0;}
+.mFooterCon .fLinks a { margin-top: 8px;}
+.mFooterCon .fSNS { position: inherit; right: inherit; top: inherit; margin-top: 16px;}
+.mFooterCon .ftLinks .area a >div b { margin-top: 4px;}
+.mFooterCon .fSNS .t select { flex: 1;}
+.mFooterCon .fSNS .b { justify-content: inherit; margin-top: 16px;}
+.mFooterCon .address { margin-top: 16px;}
+.mFooterCon .address p span { display: block;}
+.mFooterCon .address p span ~ span { margin: 8px 0 0;}
+.mFooterCon .address p ~ p { margin-top: 16px;}
+
 
 /* 공통 STYLE
 **********************************************/
@@ -529,17 +550,8 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .mainFooter ul li a { flex-direction: column; height: 104px; text-align: center; background-color: #f7f7f7; border-radius: 16px;}
 .mainFooter ul li a .mfDiv { margin: 4px 0 0;}
 
-
-.mFooterCon { margin-top: 40px; padding-bottom: 0; border-top: 1px solid #dbdbdb;}
-.mFooterCon .area { padding: 40px 16px;}
-.mFooterCon .fLinks { flex-wrap: wrap; margin-top: -8px; padding-top: 0;}
-.mFooterCon .fLinks a { margin-top: 8px;}
-.mFooterCon .fSNS { position: inherit; right: inherit; top: inherit; margin-top: 16px;}
-.mFooterCon .fSNS .t select { flex: 1;}
-.mFooterCon .fSNS .b { justify-content: inherit; margin-top: 16px;}
-.mFooterCon .address p span { display: block;}
-.mFooterCon .address p span ~ span { margin: 9px 0 0;}
-.mFooterCon .address p ~ p { margin-top: 21px;}
+/* 메인만 사용 */
+.main .mFooterCon .fSNS { top: inherit;}
 
 
 

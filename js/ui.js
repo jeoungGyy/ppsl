@@ -4,46 +4,13 @@ $(document).ready(function () {
     mobile_size: 767,
 
 		init: function () {
-			common.initial();
-			common.groupBox();
+      common.groupBox();
 			common.selectBox();
 			common.searchReset();
 			common.menu();
 			common.menu_active();
 			common.calendar();
-			// common.header_slider();
-			// common.aside_scroll();
-			// common.family_site();
-		},
-    /* 초기화 */
-		initial: function () {
-      var fired = [];
-      var $controlBox = $(".searchBody .controlBox");
-      var $targetHidden = $(".targetHidden");
-
-      $(window).off().on('resize', function () {
-        if ($(this).width() <= 767 && !fired[0]) {
-          fired[0] = true;
-          fired[1] = false;
-
-          /* 모바일 토글 버튼 slideDownUp */
-          var $toggleGroup = $('button.toggleGroup');
-          $toggleGroup.off().on('click', function() {
-            if($(this).parents('.m_toggleArea').find('.target').css('display') === "none") {
-              $(this).addClass('active').attr({'title': '확장됨'}).parents('.m_toggleArea').find('.target').slideDown(200);
-            } else {
-              $(this).removeClass('active').attr({'title': '축소됨'}).parents('.m_toggleArea').find('.target').slideUp(200);
-            }
-          });
-        }
-        else if ($(this).width() >= 768 && !fired[1]) {
-          fired[0] = false;
-          fired[1] = true;
-
-          $controlBox.removeAttr('style');
-          $targetHidden.removeAttr('style');
-        }
-      }).trigger("resize");
+			common.initial();
 		},
     /* 라디오, 체크박스 */
 		groupBox: function () {
@@ -295,6 +262,45 @@ $(document).ready(function () {
         return true;
       }); // keydown
 		},
+    /* 초기화 */
+		initial: function () {
+      var fired = [];
+      var $controlBox = $(".searchBody .controlBox");
+      var $targetHidden = $(".targetHidden");
+
+      $(window).off().on('resize', function () {
+        if ($(this).width() <= 767 && !fired[0]) {
+          fired[0] = true;
+          fired[1] = false;
+
+          console.log('모바일');
+
+          /* 모바일 토글 버튼 slideDownUp */
+          var $toggleGroup = $('button.toggleGroup');
+          $toggleGroup.off().on('click', function() {
+            if($(this).parents('.m_toggleArea').find('.target').css('display') === "none") {
+              $(this).addClass('active').attr({'title': '확장됨'}).parents('.m_toggleArea').find('.target').slideDown(200);
+            } else {
+              $(this).removeClass('active').attr({'title': '축소됨'}).parents('.m_toggleArea').find('.target').slideUp(200);
+            }
+          });
+        }
+        else if ($(this).width() >= 768 && !fired[1]) {
+          fired[0] = false;
+          fired[1] = true;
+
+          console.log('피씨');
+
+          $controlBox.removeAttr('style');
+          $targetHidden.removeAttr('style');
+
+          /* LNB depth3 display:none 제거 */
+          var $lnbTag = $('.lnb .depth2 >li >a.active');
+
+          $lnbTag.next().removeAttr('style');
+        }
+      }).trigger("resize");
+		},
 	},
   
 
@@ -368,7 +374,8 @@ $(document).ready(function () {
       $depth1Link.on('click', function(e) {
         e.preventDefault();
         $depth2.hide();
-        $(this).next().show();
+        $depth1Link.removeClass("active");
+        $(this).addClass('active').next().show();
       });
     },
   },
