@@ -20,7 +20,6 @@ $(document).ready(function () {
       var fired = [];
       var $controlBox = $(".searchBody .controlBox");
       var $targetHidden = $(".targetHidden");
-      
 
       $(window).off().on('resize', function () {
         if ($(this).width() <= 767 && !fired[0]) {
@@ -30,7 +29,6 @@ $(document).ready(function () {
           /* 모바일 토글 버튼 slideDownUp */
           var $toggleGroup = $('button.toggleGroup');
           $toggleGroup.off().on('click', function() {
-            console.log(1)
             if($(this).parents('.m_toggleArea').find('.target').css('display') === "none") {
               $(this).addClass('active').attr({'title': '확장됨'}).parents('.m_toggleArea').find('.target').slideDown(200);
             } else {
@@ -86,7 +84,9 @@ $(document).ready(function () {
 			var $gnb = $header.find(".gnb");
 			var $depth1 = $(".gnb .depth1");
 			var $depth2 = $(".gnb .depth2");
+      var $megaMenuBg = $(".megaMenuBg");
       var $subMenuBlind = $(".subMenuBlind");
+      var $blind = $('.blind');
       var menu_change = Boolean;
 
       $(".header .gnb, .subMenuBlind").on({
@@ -118,16 +118,25 @@ $(document).ready(function () {
           var _menu_height_value = Math.max.apply(null, _menu_height);
           $depth1.addClass('active');
           $depth2.height(_menu_height_value);
-          $subMenuBlind.height(_menu_height_value);
-          TweenMax.to($header, 0.1, { height: _menu_height_value + 104, onComplete:function() {
+          $megaMenuBg.height(_menu_height_value + 69).addClass('active');;
+          $subMenuBlind.height(_menu_height_value + 70);
+          $blind.addClass('active');
+          TweenMax.to($header, 0.1, { height: _menu_height_value + 174, onComplete:function() {
+            $header.addClass('active');
             $depth1.addClass('show');
+            $blind.addClass('show');
+            $megaMenuBg.addClass('show');
           }});
         } else {
           $subMenuBlind.height('');
           $depth1.removeClass('show');
           $depth2.height('');
+          $blind.removeClass('show');
+          $megaMenuBg.removeClass('show active');
           TweenMax.to($header, 0.1, { height: '', onComplete:function() {
+            $header.removeClass('active');
             $depth1.removeClass('active');
+            $blind.removeClass('active');
           }});
         }
       }
@@ -138,6 +147,12 @@ $(document).ready(function () {
 					$(this).addClass("menu_exist");
 				}
 			});
+
+
+
+
+      
+
 		},
 		/* 메뉴 활성화 */
 		menu_active: function () {
@@ -301,6 +316,7 @@ $(document).ready(function () {
         var gnb_clone = $(".gnb").clone();
         var $allMenu = $(".allMenu");
         $allMenu.append(gnb_clone);
+        $(document).width() <= 767 && layerPopup.mobile();
       }
 
       $('body').addClass('noScroll');
@@ -344,6 +360,16 @@ $(document).ready(function () {
         _this = null;
         _target = null;
       }});
+    },
+    mobile: function () {
+      /* 모바일 depth1 링크 제거 */
+      var $depth1Link = $('.allMenu .depth1 >li >a');
+      var $depth2 = $('.allMenu .depth2');
+      $depth1Link.on('click', function(e) {
+        e.preventDefault();
+        $depth2.hide();
+        $(this).next().show();
+      });
     },
   },
 

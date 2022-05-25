@@ -13,12 +13,16 @@
 .moHeader .global h1 a img { width: 188px; height: 36px; vertical-align: middle;}
 .moHeader .global .searchBtn i { display: block; width: 32px; height: 32px; text-indent: -99999px; background: url(../images/common/ico_search.svg) no-repeat center/cover;}
 .moHeader .global .allMenuBtn i { display: block; width: 32px; height: 32px; text-indent: -99999px; background: url(../../images/common/ico_menu.svg) no-repeat center/cover;} */
-.header { position: relative; height: 72px; padding-top: 0;}
+.header { position: relative; height: 72px !important; padding-top: 0;}
 .header .global { display: none;}
-.gnb { display: none;}
-.header .menu h1 a { padding-bottom: 0;}
 .header .menu .area { justify-content: space-between; height: 72px;}
+.header .menu h1 a { padding-bottom: 0;}
 .header .menu h1 a img { width: 188px; height: 36px; vertical-align: middle;}
+.header .menu .gnb,
+.header .menu .megaMenuBg,
+.header .menu .megaMenuBg.active,
+.header .menu .subMenuBlind { display: none;}
+
 
 /* wrap */
 .wrap { display: block; margin-top: 40px; padding: 0 16px;}
@@ -436,6 +440,40 @@ hr.space.style5 { margin: 8px -16px 32px;}
 /* 공통 */
 .layerPopup .textCompleteGroup .text { font-size: 16px; line-height: 24px;}
 .layerPopup .textCompleteGroup .sub { font-size: 14px;}
+
+/* 전체 메뉴 */
+#allMenu_pop .full { display: flex; flex-direction: column; position: absolute;	top: 0;	bottom: 0; width: 100%;}
+.layerPopup .sitemapHeader {}
+.layerPopup .sitemapHeader { align-items: center; height: 72px; padding: 0 16px; color: #fff; background-color: #343e68; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);}
+.layerPopup .sitemapHeader h2 { font-size: 19px;}
+.layerPopup .sitemapHeader .loginName { color: #fff;}
+.layerPopup .sitemapHeader .loginSpace { display: flex; align-items: center; margin-top: 8px; font-size: 12px;}
+.layerPopup .sitemapHeader .loginSpace .time { display: flex; align-items: center; justify-content: center; height: 18px; margin-left: 4px; padding: 0 8px; color: #fff; background-color: rgba(255, 255, 255, 0.5); border-radius: 4px;}
+.layerPopup .sitemapHeader .loginSpace .timeExtensionBtn { display: flex; align-items: center; justify-content: center; height: 18px; margin-left: 4px; padding: 0 8px; color: #333; background-color: #fff; border-radius: 4px;}
+#allMenu_pop .layerClose { top: -52px;}
+#allMenu_pop .layerClose i { width: 32px; height: 32px;  background: url(../images/common/ico_close_w.svg) no-repeat center/cover;}
+.allMenu_pop { flex: 1;}
+.allMenu_pop .allMenu { height: 100%;}
+.allMenu_pop .gnb { flex: initial; height: 100%; padding-top: 0;}
+.allMenu_pop .gnb .depth1 { display: block; position: relative; height: 100%;}
+.allMenu_pop .gnb .depth1 >li { position: initial; width: 100%; padding-right: 24px;}
+.allMenu_pop .gnb .depth1 >li ~ li { margin-left: 0;}
+.allMenu_pop .gnb .depth1 >li >a { justify-content: initial; width: 120px; height: 64px; padding-left: 16px; font-size: 16px; color: #333; background-color: #f7f7f7;}
+.allMenu_pop .gnb .depth1 >li >a +.depth2 { right: 24px;}
+.allMenu_pop .gnb .depth1 >li >a.active { color: #fff; background-color: #366cc3;}
+.allMenu_pop .gnb .depth1 >li >a.active >span::after { display: none;}
+.allMenu_pop .gnb .depth1 >li >a.active +.depth2 { display: block;}
+.allMenu_pop .gnb .depth1::after { content: ''; display: block; width: 120px; height: 100%; background-color: #f7f7f7;}
+.allMenu_pop .gnb .depth2 { display: none; left: 144px; top: 0; margin-top: 16px; padding-left: 0;}
+.allMenu_pop .gnb .depth2 >li { margin-top: 0; border-bottom: 1px solid #dbdbdb;}
+.allMenu_pop .gnb .depth2 >li >a { display: flex; align-items: center; position: relative; z-index: 1; height: 48px;}
+.allMenu_pop .gnb .depth2 >li >a.menu_exist::before { content: ''; position: absolute; right: 0; top: 16px; width: 16px; height: 16px; background: url(../images/common/ico_arrow_down.svg) no-repeat center/cover;}
+.allMenu_pop .gnb .depth3 { position: relative; z-index: 1; margin-top: 0; padding: 8px 16px; background-color: #f7f7f7;}
+.allMenu_pop .gnb .depth3 >li:first-child { margin-top: 0;}
+
+
+
+
 
 /* 시스템 점검 안내 */
 .systemLayer .grayRoundBox dt { font-size: 14px;}

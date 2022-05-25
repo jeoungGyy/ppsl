@@ -3,6 +3,9 @@
 확인 URL: https://jeounggyy.github.io/ppsl/html/guide/ia.html
 
 
+### 05-25
+- [공통] 메뉴 수정
+
 ### 05-19
 - [레이어] 시스템 점검 안내 등록
 - [레이어] 처리지사 담당자 등록
