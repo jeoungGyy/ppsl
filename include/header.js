@@ -23,7 +23,7 @@ str += '    </div>';
 str += '  </div>';
 str += '  <div class="menu">';
 str += '    <div class="area">';
-str += '      <h1><a href="#"><img src="../../images/common/ci.svg" alt="공적연금연계제도"></a></h1>';
+str += '      <h1><a href="../home/HO_00_01_01.html"><img src="../../images/common/ci.svg" alt="공적연금연계제도"></a></h1>';
 str += '      <nav id="menuLink" class="gnb">';
 str += '        <ul class="depth1">';
 str += '          <li><a href="../information/HO_01_01_01.html" data-menu="depth_1"><span>안내</span></a>';
