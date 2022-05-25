@@ -212,6 +212,7 @@ body.noScroll { overflow: hidden;}
 .requireText.success { color: #366cc3;}
 .requireText.success i { background: url(../images/common/ico_success.svg) no-repeat center/cover;}
 
+
 /* Heading */
 .defaultH4 { font-size: 19px;}
 .defaultH5 { font-size: 16px;}
@@ -490,7 +491,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .setpBodyStyle { overflow: hidden; position: relative; margin-top: 40px; padding: 24px 50px; background-color: #f4f7fc; border-radius: 8px;}
 .setpBodyStyle .stepByStyle { display: flex; justify-content: space-between; position: relative; z-index: 2; margin: 0 -4px;}
 .setpBodyStyle .stepByStyle li { display: flex; flex-direction: column; align-items: center; position: relative; margin: 0 4px; text-align: center; background-color: #f4f7fc;}
-.setpBodyStyle .stepByStyle li .iconRound { display: flex; align-items: center; justify-content: center; width: 32px; height: 32px;}
+.setpBodyStyle .stepByStyle li .iconRound { display: flex; align-items: center; width: 32px; height: 32px;}
 .setpBodyStyle .stepByStyle li .iconRound i { display: block; width: 16px; height: 16px; margin: 0 auto; background-color: #dbdbdb; border-radius: 50%;}
 .setpBodyStyle .stepByStyle li .iconRound.bgBlue i { background-color: #366cc3;}
 .setpBodyStyle .stepByStyle li span.text { display: block; margin-top: 8px; font-size: 14px;}
@@ -1280,6 +1281,8 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .etcBleuBox { margin-top: 8px; padding: 24px; background-color: #f4f7fc; border-radius: 8px;}
 .etcBleuBox p { margin-top: 8px; font-size: 14px; line-height: 24px;}
 
+.ieListHack { margin-top: -14px;}
+.ieListHack li { display: inline-block; margin: 14px 24px 0 0;}
 
 
 
