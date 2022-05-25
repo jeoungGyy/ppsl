@@ -49,7 +49,6 @@ str += '                  <li><a href="../information/HO_01_03_02.html" data-men
 str += '                </ul>';
 str += '              </li>';
 str += '              <li><a href="../information/HO_01_04_01.html" data-menu="depth_1_4"><span>상담사례</span></a></li>';
-str += '              <li><a href="../information/HO_01_05_01.html" data-menu="depth_1_5"><span>지사찾기</span></a></li>';
 str += '            </ul>';
 str += '          </li>';
 str += '          <li><a href="../consultation/HO_02_01_01.html" data-menu="depth_2"><span>상담</span></a>';
@@ -108,6 +107,7 @@ str += '            <ul class="depth2">';
 str += '              <li><a href="#" data-menu="depth_7_1"><span>개인정보처리방침</span></a></li>';
 str += '              <li><a href="#" data-menu="depth_7_2"><span>이용안내</span></a></li>';
 str += '              <li><a href="../home/HO_00_06_01.html" data-menu="depth_7_3"><span>서비스 약관</span></a></li>';
+str += '              <li><a href="../home/HO_00_06_02.html" data-menu="depth_7_4"><span>지사찾기</span></a></li>';
 str += '            </ul>';
 str += '          </li>';
 str += '          <li style="display:none !important;"><a href="../home/HO_00_02_01.html" data-menu="depth_8"><span>로그인</span></a>';

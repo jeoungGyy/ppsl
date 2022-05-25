@@ -464,7 +464,6 @@ hr.space.style5 { margin: 8px -16px 32px;}
 
 /* 전체 메뉴 */
 #allMenu_pop .full { display: flex; flex-direction: column; position: absolute;	top: 0;	bottom: 0; width: 100%;}
-.layerPopup .sitemapHeader {}
 .layerPopup .sitemapHeader { align-items: center; height: 72px; padding: 0 16px; color: #fff; background-color: #343e68; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);}
 .layerPopup .sitemapHeader h2 { font-size: 19px;}
 .layerPopup .sitemapHeader .loginName { color: #fff;}
@@ -727,6 +726,28 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .roundMyBox { padding: 24px;}
 
 .lineGroupBox { margin: 0 -16px; padding: 16px 16px 0; border-top: 12px solid #f7f7f7;}
+
+
+/* 약관 및 방침
+**********************************************/
+
+/* 서비스 약관 */
+.asheader.first { margin-top: 24px;}
+
+/* 지사찾기 */
+.mapBody { margin-top: 24px;}
+
+.branchList >li { padding: 24px 0;}
+.branchList >li dl { display: block;}
+.branchList >li dt { width: inherit;}
+.branchList >li dd { margin-top: 16px;}
+.branchList >li dd .blSub >li { display: block;}
+.branchList >li .lB { width: 96px; height: 96px;}
+.branchList >li .rB >div:first-child { margin-top: 16px;}
+
+
+
+
 
 
 
