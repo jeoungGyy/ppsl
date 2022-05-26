@@ -22,7 +22,7 @@
 					</header>
 
 					<div class="mapBody">
-						가로 세로 100% * 400px
+						<div id="map" style="width:100%; height:400px;"></div>
 					</div>
 					
 					<ul class="branchList">
@@ -129,6 +129,14 @@
 
 	<script>
 		var depth = [7, 4]; /* 현재메뉴 활성화 용: gnb에 있는 data-menu 값과 일치하게 해주세요. */
+
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(37.47474861795069, 126.88513398005033),
+			level: 3
+		};
+
+		var map = new kakao.maps.Map(container, options);
 	</script>
 </div>
 </body>

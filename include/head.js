@@ -20,6 +20,7 @@ str += '<link rel="stylesheet" href="../../css/jquery-ui.css">';
 str += '<link rel="stylesheet" href="../../css/style.css">';
 str += '<link rel="stylesheet" href="../../css/tablet.css">';
 str += '<link rel="stylesheet" href="../../css/mobile.css">';
+str += '<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=77f8029a27679861176ea9c74a450042"></script>';
 str += '<script src="../../js/jquery-1.12.4.min.js"></script>';
 str += '<script src="../../js/jquery-ui.js"></script>';
 str += '<script src="../../js/jquery.slides.min.js"></script>';
