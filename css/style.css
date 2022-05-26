@@ -34,7 +34,7 @@ body.noScroll { overflow: hidden;}
 .header .menu { position: relative;}
 .header .menu .area { display: flex; align-items: center; z-index: 100; height: 64px;}
 .header .menu h1 { width: 215px;}
-.header .menu h1 a { display: inline-block; padding-bottom: 6px;}
+.header .menu h1 a { display: inline-block;}
 .header .menu h1 a img { width: 208px; height: 40px; vertical-align: middle;}
 
 .header .menu .megaMenuBg { display: none; position: absolute; left: 0; top: 65px; z-index: 98; width: 230px; background: url(../images/common/mega_menu_bg.png) no-repeat right bottom; opacity: 0; transition: opacity .5s linear;}
@@ -65,7 +65,7 @@ body.noScroll { overflow: hidden;}
 .gnb .depth1 { display: flex;
   justify-content: flex-end;}
 .gnb .depth1 >li { position: relative; width: 144px;}
-.gnb .depth1 >li:last-child { width: 130px;}
+.gnb .depth1 >li:nth-child(6) { width: 130px;}
 .gnb .depth1 >li >a { display: flex; align-items: center; height: 64px; font-size: 18px; font-weight: 700; text-align: center;}
 .gnb .depth1 >li >a >span { display: flex; align-items: center; position: relative; height: 100%;}
 .gnb .depth1 >li >a:hover,
