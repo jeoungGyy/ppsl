@@ -202,10 +202,10 @@ $(document).ready(function () {
         nextText: '다음 달',
         monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
         monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
-        dayNames: ['MON', 'THE', 'WED', 'THU', 'FRI', 'SAT', 'SUN'],
-        dayNamesShort: ['MON', 'THE', 'WED', 'THU', 'FRI', 'SAT', 'SUN'],
-        dayNamesMin: ['MON', 'THE', 'WED', 'THU', 'FRI', 'SAT', 'SUN'],
-        firstDay: 1,
+        dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+        dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+        dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+        firstDay: 7,
         changeYear: true,
         changeMonth: true,
         yearRange: '-100:+10',
@@ -217,6 +217,9 @@ $(document).ready(function () {
           setTimeout(function() {
             $('#ui-datepicker-div').css('top', _inputOffset.top + 36);
           });
+        },
+        onSelect: function( date ) {
+          date && $(this).next().addClass('active');
         },
         onClose: function() {
           visible = false;
@@ -240,22 +243,22 @@ $(document).ready(function () {
       
       $date.on("keydown", function(e) {
         if (! visible) return true;
-        var key = e.keyCode;
-        var date, day, month, year, $datepicker;
-        $datepicker = $(this).datepicker("widget");
+          var key = e.keyCode;
+          var date, day, month, year, $datepicker;
+          $datepicker = $(this).datepicker("widget");
         
         if (key >= 37 && key <= 40 && ! e.ctrlKey) {
-        e.ctrlKey = true;
-        $date.trigger (e);
-        return false;
+          e.ctrlKey = true;
+          $date.trigger (e);
+         return false;
         } // if
         
         if (key >= 33 && key <=40) {
-        day = $datepicker.find(".ui-state-hover").text();
-        month = $datepicker.find(".ui-datepicker-month").text();
-        year = $datepicker.find(".ui-datepicker-year").text();
-        date = new Date (year + " " + month + " " + day);
-        return false;
+          day = $datepicker.find(".ui-state-hover").text();
+          month = $datepicker.find(".ui-datepicker-month").text();
+          year = $datepicker.find(".ui-datepicker-year").text();
+          date = new Date (year + " " + month + " " + day);
+          return false;
         } // if
 
         return true;
