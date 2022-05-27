@@ -296,6 +296,24 @@ hr.space { margin: 40px 0; height: 1px; background-color: #dbdbdb;}
 .btnsGroup.pdt0 { padding-top: 0;}
 .btnsGroup >div { display: flex;}
 .btnsGroup button ~ button { margin-left: 8px;}
+.btnsGroup .etcTip { position: relative;}
+.btnsGroup .etcTip .text { display: flex; align-items: center; justify-content: center; position: absolute; right: 0; top: -53px; width: 230px; padding: 10px 0; font-size: 14px; color: #767676; border: 1px solid #dbdbdb; background-color: #fff; border-radius: 8px;}
+.btnsGroup .etcTip .text::before { content: ''; 
+  position: absolute; right: 25px; bottom: -11px;
+  width: 0px;
+  height: 0px;
+  border-top: 10px solid #dbdbdb;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+}
+.btnsGroup .etcTip .text::after { content: ''; 
+  position: absolute; right: 25px; bottom: -9px;
+  width: 0px;
+  height: 0px;
+  border-top: 10px solid #fff;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+}
 
 /* 셀렉트 박스 */
 select.wp100 { width: 100%;}
