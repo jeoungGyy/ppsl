@@ -57,7 +57,7 @@ $(document).ready(function () {
       var $blind = $('.blind');
       var menu_change = Boolean;
 
-      $(".header .gnb, .subMenuBlind").on({
+      $(".header .gnb, .subMenuBlind, .megaMenuBg").on({
         "mouseenter": function () {
           setTimeout(menuchk, 300);
           menu_change = true;
@@ -89,7 +89,7 @@ $(document).ready(function () {
           $megaMenuBg.height(_menu_height_value + 69).addClass('active');;
           $subMenuBlind.height(_menu_height_value + 70);
           $blind.addClass('active');
-          TweenMax.to($header, 0.1, { height: _menu_height_value + 174, onComplete:function() {
+          TweenMax.to($header, 0, { height: _menu_height_value + 174, onComplete:function() {
             $header.addClass('active');
             $depth1.addClass('show');
             $blind.addClass('show');
@@ -101,7 +101,7 @@ $(document).ready(function () {
           $depth2.height('');
           $blind.removeClass('show');
           $megaMenuBg.removeClass('show active');
-          TweenMax.to($header, 0.1, { height: '', onComplete:function() {
+          TweenMax.to($header, 0, { height: '', onComplete:function() {
             $header.removeClass('active');
             $depth1.removeClass('active');
             $blind.removeClass('active');
@@ -115,12 +115,6 @@ $(document).ready(function () {
 					$(this).addClass("menu_exist");
 				}
 			});
-
-
-
-
-      
-
 		},
 		/* 메뉴 활성화 */
 		menu_active: function () {
@@ -269,7 +263,27 @@ $(document).ready(function () {
 		},
     /* Loaction SNS Button Toggle */
 		snsBtnToggle: function () {
-      var $shareBtn = $('.shareBtn')
+      var $shareBtn = $('.shareBtn');
+      var $snsBox = $('.snsBox');
+
+      $shareBtn.on("click", function () {
+        if($(this).hasClass('active')) {
+          $(this).removeClass('active').attr('title', '페이지 공유 닫힘');
+        } else {
+          $(this).addClass('active').attr('title', '페이지 공유 열림');;
+
+          $snsBox.find("li:last-child").on("keydown", function (e) {
+            var _keyCode = e.keyCode || e.which;
+
+            if(_keyCode === 9) {
+              if(!e.shiftKey) {
+                e.preventDefault();
+                $shareBtn .focus();
+              }
+            }
+          });
+        };
+      });
 		},
     /* 초기화 */
 		initial: function () {
@@ -346,6 +360,7 @@ $(document).ready(function () {
             if(_keyCode === 9) {
               if(!e.shiftKey) {
                 e.preventDefault();
+                console.log(_target)
                 _target.focus();
               }
             }

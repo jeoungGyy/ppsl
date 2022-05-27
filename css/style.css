@@ -11,7 +11,7 @@ body.noScroll { overflow: hidden;}
 .skipnav a:focus { top: 0;}
 
 /* header */
-.header { position: fixed; left: 0; top: 0; z-index: 100; width: 100%; height: 104px; padding-top: 8px; background-color: #fff; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08); transition: height .2s ease-in-out;}
+.header { position: fixed; left: 0; top: 0; z-index: 100; width: 100%; height: 104px; padding-top: 8px; background-color: #fff; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08); transition: height .15s linear;}
 .header .global .area { display: flex; align-items: center; justify-content: flex-end; height: 32px;}
 .header .global .area >div { display: flex; align-items: center;}
 .header .global span { padding-top: 2px; font-size: 12px;}
@@ -62,15 +62,15 @@ body.noScroll { overflow: hidden;}
 
 
 .gnb { flex: 1;}
-.gnb .depth1 { display: flex;
-  justify-content: flex-end;}
+.gnb .depth1 { display: flex; justify-content: flex-end;}
 .gnb .depth1 >li { position: relative; width: 144px;}
 .gnb .depth1 >li:nth-child(6) { width: 130px;}
 .gnb .depth1 >li >a { display: flex; align-items: center; height: 64px; font-size: 18px; font-weight: 700; text-align: center;}
 .gnb .depth1 >li >a >span { display: flex; align-items: center; position: relative; height: 100%;}
 .gnb .depth1 >li >a:hover,
 .gnb .depth1 >li >a.active { color: #366cc3;}
-.gnb .depth1 >li >a.active >span::after { content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 4px; border-bottom: 4px solid #366cc3;}
+.gnb .depth1 >li >a:hover >span::after,
+.gnb .depth1 >li >a.active >span::after { content: ''; position: absolute; left: 0; bottom: -1px; width: 100%; height: 4px; border-bottom: 4px solid #366cc3;}
 .gnb .depth2 { display: none; position: absolute; left: 0; top: 94px; font-size: 16px; opacity: 0; transition: opacity .3s ease-in-out;}
 .gnb .depth2 >li ~ li { margin-top: 20px;}
 .gnb .depth2 >li >a { line-height: 24px;}
@@ -129,15 +129,17 @@ body.noScroll { overflow: hidden;}
 .contentsHeader .location .printBtn:hover i { background: url(../images/common/ico_print_w.svg) no-repeat center/cover;}
 .contentsHeader .location .shareBtn { margin-left: 4px;}
 .contentsHeader .location .shareBtn i { background: url(../images/common/ico_share.svg) no-repeat center/cover;}
-.contentsHeader .location .shareBtn.active i,
 .contentsHeader .location .shareBtn:hover i { background: url(../images/common/ico_share_w.svg) no-repeat center/cover;}
-.contentsHeader .location .shareBtn.active { border-color: #366cc3; background-color: #366cc3;}
-
 .contentsHeader .location .snsBox { position: relative;}
-.contentsHeader .location .snsBox .snsLinks { display: ; position: absolute; right: 0; top: 40px; width: 110px; height: 154px; padding: 22px 0 0 12px; background: url(../images/common/sns_border.svg) no-repeat center;}
+.contentsHeader .location .snsBox .snsLinks { display: none; position: absolute; right: 0; top: 40px; width: 110px; height: 154px; padding: 22px 0 0 12px; background: url(../images/common/sns_border.svg) no-repeat center;}
 .contentsHeader .location .snsLinks ul li img { margin-right: 8px;}
 .contentsHeader .location .snsLinks ul li ~ li { margin-top: 8px;}
 .contentsHeader .location .snsLinks ul li .sBtn { display: flex; align-items: center; font-size: 12px;}
+.contentsHeader .location .snsLinks .snsLinkClose {}
+
+.contentsHeader .location .shareBtn.active { border-color: #366cc3; background-color: #366cc3;}
+.contentsHeader .location .shareBtn.active i { background: url(../images/common/ico_sns_close_w.svg) no-repeat center/cover;}
+.contentsHeader .location .shareBtn.active +.snsLinks { display: block;}
 
 
 
