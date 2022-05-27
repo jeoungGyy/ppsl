@@ -3,6 +3,9 @@
 확인 URL: https://jeounggyy.github.io/ppsl/html/guide/ia.html
 
 
+### 05-27
+- HO_04_01_01 콘텐츠 수정
+
 ### 05-25
 - [공통] 메뉴 수정
 - [공통] 푸터 수정

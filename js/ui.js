@@ -211,6 +211,7 @@ $(document).ready(function () {
         dayNamesShort: ['MON', 'THE', 'WED', 'THU', 'FRI', 'SAT', 'SUN'],
         dayNamesMin: ['MON', 'THE', 'WED', 'THU', 'FRI', 'SAT', 'SUN'],
         firstDay: 1,
+        // changeYear: true,
         showMonthAfterYear: true,
         beforeShow: function(input) {
           visible = true;

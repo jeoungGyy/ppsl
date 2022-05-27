@@ -1238,16 +1238,16 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .targetBody .targetOff .textGroup { text-align: center;}
 .targetBody .targetOff .textGroup h4 span { font-size: 24px;}
 .targetBody .targetOff .textGroup h4 span.normal { font-size: 16px; font-weight: 400;}
-.targetBody .targetOff .textGroup h4 span.text { position: relative; margin: 0 -2px; padding: 0 2px;}
+.targetBody .targetOff .textGroup h4 span.text { position: relative; margin: 0 -2px; padding: 0 2px; font-weight: 700;}
 .targetBody .targetOff .textGroup h4 span.text::before { content: ''; display: block; position: absolute; left: 0; bottom: 0; width: 100%; height: 14px; background-color: #333; opacity: 0.1;}
 .targetBody .targetOff .textGroup p { margin-top: 12px; font-size: 14px; color: #767676; line-height: 21px;}
 .targetBody .targetOff .textGroup .btn { margin-top: 24px;}
 .targetBody .targetOn { display: flex; justify-content: center; margin-top: 40px; padding: 32px 0; background-color: #f4f7fc; border-radius: 8px;}
 .targetBody .targetOn .icon { width: 64px; height: 64px; background: url(../images/common/ico_application.svg) no-repeat center/cover;}
-.targetBody .targetOn .textGroup { text-align: center;}
+.targetBody .targetOn .textGroup { padding-top: 4px; text-align: center;}
 .targetBody .targetOn .textGroup h4 span { font-size: 24px;}
 .targetBody .targetOn .textGroup h4 span.normal { font-size: 16px; font-weight: 400;}
-.targetBody .targetOn .textGroup h4 span.text { position: relative; color: #366cc3;}
+.targetBody .targetOn .textGroup h4 span.text { position: relative; font-weight: 700; color: #366cc3;}
 .targetBody .targetOn .textGroup h4 span.text::before { content: ''; display: block; position: absolute; left: 0; bottom: 0; width: 100%; height: 14px; background-color: #366cc3; opacity: 0.1;}
 .targetBody .targetOn .textGroup .button { margin-top: 24px;}
 .targetBody .sameStyle { margin-top: 40px;}
