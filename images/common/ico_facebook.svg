@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g>
+        <circle data-name="타원 1736" cx="12" cy="12" r="12" style="fill:#1c5cad"/>
+        <path d="M1.361 12h2.618V5.949h1.826L6 3.923H3.979V2.769c0-.478.1-.667.6-.667H6V0H4.187C2.24 0 1.361.792 1.361 2.308v1.615H0v2.051h1.361z" transform="translate(9 6)" style="fill:#fff"/>
+    </g>
+</svg>

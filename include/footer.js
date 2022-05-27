@@ -1,6 +1,5 @@
 var str = '';
 
-
 str += '<aside class="aside">';
 str += '  <ul class="asideNav">';
 str += '    <li>';

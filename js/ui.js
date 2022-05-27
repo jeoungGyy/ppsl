@@ -10,6 +10,7 @@ $(document).ready(function () {
 			common.menu();
 			common.menu_active();
 			common.calendar();
+			common.snsBtnToggle();
 			common.initial();
 		},
     /* 라디오, 체크박스 */
@@ -211,7 +212,10 @@ $(document).ready(function () {
         dayNamesShort: ['MON', 'THE', 'WED', 'THU', 'FRI', 'SAT', 'SUN'],
         dayNamesMin: ['MON', 'THE', 'WED', 'THU', 'FRI', 'SAT', 'SUN'],
         firstDay: 1,
-        // changeYear: true,
+        changeYear: true,
+        changeMonth: true,
+        yearRange: '-100:+10',
+        hideIfNoPrevNext: true,
         showMonthAfterYear: true,
         beforeShow: function(input) {
           visible = true;
@@ -262,6 +266,10 @@ $(document).ready(function () {
 
         return true;
       }); // keydown
+		},
+    /* Loaction SNS Button Toggle */
+		snsBtnToggle: function () {
+      var $shareBtn = $('.shareBtn')
 		},
     /* 초기화 */
 		initial: function () {

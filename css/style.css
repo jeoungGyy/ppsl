@@ -120,16 +120,27 @@ body.noScroll { overflow: hidden;}
 .contentsHeader .location .locationDepth a:hover span { border-bottom: 1px solid #767676;}
 .contentsHeader .location .locationDepth a:last-child span { font-weight: 700; color: #333;}
 .contentsHeader .location .locationDepth a:last-child:hover span { border-bottom: 1px solid #333;}
-.contentsHeader .location button { display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; border: solid 1px #dbdbdb; border-radius: 50%;}
-.contentsHeader .location button i { display: block; width: 24px; height: 24px; text-indent: -99999px;}
-.contentsHeader .location button:hover { border-color: #366cc3; background-color: #366cc3;}
-.contentsHeader .location button:hover i { background-position-y: -24px;}
-.contentsHeader .location button.printBtn { margin-left: 16px;}
-.contentsHeader .location button.printBtn i { background: url(../images/common/ico_print.svg) no-repeat center/cover;}
-.contentsHeader .location button.printBtn:hover i { background: url(../images/common/ico_print_w.svg) no-repeat center/cover;}
-.contentsHeader .location button.shareBtn { margin-left: 4px;}
-.contentsHeader .location button.shareBtn i { background: url(../images/common/ico_share.svg) no-repeat center/cover;}
-.contentsHeader .location button.shareBtn:hover i { background: url(../images/common/ico_share_w.svg) no-repeat center/cover;}
+.contentsHeader .location .mBtn { display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; border: solid 1px #dbdbdb; border-radius: 50%;}
+.contentsHeader .location .mBtn i { display: block; width: 24px; height: 24px; text-indent: -99999px;}
+.contentsHeader .location .mBtn:hover { border-color: #366cc3; background-color: #366cc3;}
+.contentsHeader .location .mBtn:hover i { background-position-y: -24px;}
+.contentsHeader .location .printBtn { margin-left: 16px;}
+.contentsHeader .location .printBtn i { background: url(../images/common/ico_print.svg) no-repeat center/cover;}
+.contentsHeader .location .printBtn:hover i { background: url(../images/common/ico_print_w.svg) no-repeat center/cover;}
+.contentsHeader .location .shareBtn { margin-left: 4px;}
+.contentsHeader .location .shareBtn i { background: url(../images/common/ico_share.svg) no-repeat center/cover;}
+.contentsHeader .location .shareBtn.active i,
+.contentsHeader .location .shareBtn:hover i { background: url(../images/common/ico_share_w.svg) no-repeat center/cover;}
+.contentsHeader .location .shareBtn.active { border-color: #366cc3; background-color: #366cc3;}
+
+.contentsHeader .location .snsBox { position: relative;}
+.contentsHeader .location .snsBox .snsLinks { display: ; position: absolute; right: 0; top: 40px; width: 110px; height: 154px; padding: 22px 0 0 12px; background: url(../images/common/sns_border.svg) no-repeat center;}
+.contentsHeader .location .snsLinks ul li img { margin-right: 8px;}
+.contentsHeader .location .snsLinks ul li ~ li { margin-top: 8px;}
+.contentsHeader .location .snsLinks ul li .sBtn { display: flex; align-items: center; font-size: 12px;}
+
+
+
 
 /* 푸터 */
 .mFooterCon .ftLinks { margin-top: 79px; padding: 21px 0; border-top: 1px solid #dbdbdb; border-bottom: 1px solid #dbdbdb;}
@@ -452,8 +463,8 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .ui-datepicker td:last-child.ui-datepicker-week-end a { color: #ee0700;}
 .ui-state-default, 
 .ui-widget-content .ui-state-default { display: flex; align-items: center; justify-content: center; width: 28px; height: 28px; margin: 0 auto; font-size: 14px; font-family: 'Montserrat', "NanumBarunGothic"; font-weight: 400; color: #333; text-align: center; border: none; border-radius: 50%;}
-.ui-datepicker .ui-datepicker-prev { left: -6px; cursor: pointer;}
-.ui-datepicker .ui-datepicker-next { right: -6px; cursor: pointer;}
+.ui-datepicker .ui-datepicker-prev { display: none; left: -6px; cursor: pointer;}
+.ui-datepicker .ui-datepicker-next { display: none; right: -6px; cursor: pointer;}
 .ui-datepicker .ui-datepicker-prev span,
 .ui-datepicker .ui-datepicker-next span { display: block; width: 16px; height: 16px;}
 .ui-datepicker .ui-datepicker-prev span { background: url(../images/common/ico_arrow_left.svg) no-repeat center/cover;}
@@ -467,6 +478,10 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .ui-widget-header .ui-state-focus {	border: none;	font-weight: inherit;	color: inherit;}
 .ui-datepicker .ui-datepicker-prev-hover,
 .ui-datepicker .ui-datepicker-next-hover { top: 2px;}
+.ui-datepicker .ui-datepicker-title { margin: 0;}
+.ui-datepicker .ui-datepicker-title select { height: 32px; font-size: 14px;}
+.ui-datepicker .ui-datepicker-title .ui-datepicker-month { margin-left: 4px;}
+
 
 
 /* viewBody */
