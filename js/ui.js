@@ -172,11 +172,14 @@ $(document).ready(function () {
 			if ($(window).width() > common.mobile_size && !fired[0]) {
 				$lnbBody.find(".menu_exist").attr('title', '메뉴 축소');
 				$lnbBody.find(".menu_exist.arrow").attr('title', '메뉴 확장');
+        setTimeout(function() {
+          $lnbBody.find(".menu_exist.active").next().slideDown(200);
+        }, 10);
 				$lnbBody.find(".menu_exist").on("click", function(e){
 					e.preventDefault();
 					if(!$(this).hasClass("arrow")) {
-						$lnbBody.find(".menu_exist").removeClass("arrow").attr('title', '메뉴 축소').siblings("ul").slideUp(100);
-						$(this).addClass("arrow").attr('title', '메뉴 확장').siblings("ul").slideDown(100);
+						$lnbBody.find(".menu_exist").removeClass("arrow active").attr('title', '메뉴 축소').siblings("ul").slideUp(200);
+						$(this).addClass("arrow active").attr('title', '메뉴 확장').siblings("ul").slideDown(200);
 					}
 				});
 			}
@@ -271,20 +274,25 @@ $(document).ready(function () {
 
       $shareBtn.on("click", function () {
         if($(this).hasClass('active')) {
-          $(this).removeClass('active').attr('title', '페이지 공유 닫힘');
+          $(this).removeClass('show');
+          TweenLite.to(0, {onComplete:function() {
+            $shareBtn.removeClass('active').attr('title', '페이지 공유 닫힘');
+          }});
         } else {
-          $(this).addClass('active').attr('title', '페이지 공유 열림');;
-
-          $snsBox.find("li:last-child").on("keydown", function (e) {
-            var _keyCode = e.keyCode || e.which;
-
-            if(_keyCode === 9) {
-              if(!e.shiftKey) {
-                e.preventDefault();
-                $shareBtn .focus();
+          $(this).addClass('active');
+          TweenLite.to(0, {onComplete:function() {
+            $shareBtn.addClass('show').attr('title', '페이지 공유 열림');
+            $snsBox.find("li:last-child").on("keydown", function (e) {
+              var _keyCode = e.keyCode || e.which;
+  
+              if(_keyCode === 9) {
+                if(!e.shiftKey) {
+                  e.preventDefault();
+                  $shareBtn .focus();
+                }
               }
-            }
-          });
+            });
+          }});
         };
       });
 		},
