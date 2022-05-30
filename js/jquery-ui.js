@@ -8208,6 +8208,10 @@ $.extend(Datepicker.prototype, {
 							$.datepicker._adjustDate(event.target, -7, "D");
 						}
 						handled = event.ctrlKey || event.metaKey;
+						if (event.originalEvent.ctrlKey) {
+							$.datepicker._adjustDate(event.target, (event.ctrlKey &&
+								-$.datepicker._get(inst, "stepMonths")), "Y");
+						}
 						break; // -1 week on ctrl or command +up
 				case 39: if (event.ctrlKey || event.metaKey) {
 							$.datepicker._adjustDate(event.target, (isRTL ? -1 : +1), "D");
@@ -8225,6 +8229,10 @@ $.extend(Datepicker.prototype, {
 							$.datepicker._adjustDate(event.target, +7, "D");
 						}
 						handled = event.ctrlKey || event.metaKey;
+						if (event.originalEvent.ctrlKey) {
+							$.datepicker._adjustDate(event.target, (event.ctrlKey &&
+								+$.datepicker._get(inst, "stepMonths")), "Y");
+						}
 						break; // +1 week on ctrl or command +down
 				default: handled = false;
 			}
@@ -9417,7 +9425,7 @@ $.extend(Datepicker.prototype, {
 				for (; year <= endYear; year++) {
 					inst.yearshtml += "<option value='" + year + "'" +
 						(year === drawYear ? " selected='selected'" : "") +
-						">" + year + "</option>";
+						">" + year + "년</option>";
 				}
 				inst.yearshtml += "</select>";
 

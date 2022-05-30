@@ -187,7 +187,7 @@ $(document).ready(function () {
       left / right : move by day
       up / down : move by week
       page up / down : move by month
-      control + page up / down : move by year
+      control + up / down : move by year
       control + home : move to current date
       enter : close datepicker and select currently highlighted date and place it in the input field ready for editing
       */

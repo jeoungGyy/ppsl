@@ -482,9 +482,9 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .ui-datepicker .ui-datepicker-prev-hover,
 .ui-datepicker .ui-datepicker-next-hover { top: 2px;}
 .ui-datepicker .ui-datepicker-title { display: flex; align-items: center; margin: 0; padding: 0 25px;}
-.ui-datepicker .ui-datepicker-title select { height: 32px; font-size: 14px;}
+.ui-datepicker .ui-datepicker-title select { height: 32px; padding-right: 35px; font-size: 14px; background-position: right 12px top 50%;}
 .ui-datepicker .ui-datepicker-title .ui-datepicker-year { flex: 1;}
-.ui-datepicker .ui-datepicker-title .ui-datepicker-month { width: 88px; margin-left: 4px;}
+.ui-datepicker .ui-datepicker-title .ui-datepicker-month { width: 85px; margin-left: 4px;}
 .ui-datepicker table { margin: 6px 0 2px;}
 
 
