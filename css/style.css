@@ -771,12 +771,12 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .hTableBody table td .phone select + span,
 .hTableBody table td .phone span ~ span { position: relative; margin-left: 25px;}
 .hTableBody table td .phone select + span::before,
-.hTableBody table td .phone span ~ span::before { content: ''; display: block; position: absolute; left: -16px; top: 18px; width: 7px; height: 2px; background-color: #333;}
+.hTableBody table td .phone span ~ span::before { content: ''; display: block; position: absolute; left: -16px; top: 20px; width: 7px; height: 1px; background-color: #333;}
 /* .hTableBody table td .phone input { width: 100%;} */
 .hTableBody table td .phone .button { margin-left: 6px;}
 .hTableBody table td .email input { width: 200px;}
 .hTableBody table td .email span { position: relative; margin-left: 33px;}
-.hTableBody table td .email span::before { content: '@'; position: absolute; left: -25px; top: 13px;}
+.hTableBody table td .email span::before { content: '@'; position: absolute; left: -25px; top: 10px;}
 .hTableBody table td .email select { width: 200px; margin-left: 4px;}
 .hTableBody table td .textarea { border: solid 1px #dbdbdb;}
 .hTableBody table td .textarea textarea { border: none;}
@@ -804,6 +804,8 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .hTableBody table td .twin { display: flex;}
 .hTableBody table td .twin select,
 .hTableBody table td .twin input { flex: 1; margin-right: 4px;}
+.hTableBody table td .default input { width: inherit;}
+.hTableBody table td .default .other { margin-left: 4px;}
 .hTableBody table td .spcemt { margin-top: 8px;}
 .hTableBody table td .defaultBtn input { width: 400px;}
 .hTableBody table td .defaultBtn .button { margin-left: 4px;}
