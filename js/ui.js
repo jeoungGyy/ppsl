@@ -275,24 +275,25 @@ $(document).ready(function () {
       $shareBtn.on("click", function () {
         if($(this).hasClass('active')) {
           $(this).removeClass('show');
-          TweenLite.to(0, {onComplete:function() {
+          setTimeout(function() {
             $shareBtn.removeClass('active').attr('title', '페이지 공유 닫힘');
-          }});
+          }, 500);
         } else {
           $(this).addClass('active');
-          TweenLite.to(0, {onComplete:function() {
+          setTimeout(function() {
             $shareBtn.addClass('show').attr('title', '페이지 공유 열림');
-            $snsBox.find("li:last-child").on("keydown", function (e) {
-              var _keyCode = e.keyCode || e.which;
-  
-              if(_keyCode === 9) {
-                if(!e.shiftKey) {
-                  e.preventDefault();
-                  $shareBtn .focus();
-                }
+          }, 10);
+          
+          $snsBox.find("li:last-child").on("keydown", function (e) {
+            var _keyCode = e.keyCode || e.which;
+
+            if(_keyCode === 9) {
+              if(!e.shiftKey) {
+                e.preventDefault();
+                $shareBtn .focus();
               }
-            });
-          }});
+            }
+          });
         };
       });
 		},

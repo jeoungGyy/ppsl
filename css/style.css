@@ -134,7 +134,7 @@ body.noScroll { overflow: hidden;}
 .contentsHeader .location .shareBtn i { background: url(../images/common/ico_share.svg) no-repeat center/cover;}
 .contentsHeader .location .shareBtn:hover i { background: url(../images/common/ico_share_w.svg) no-repeat center/cover;}
 .contentsHeader .location .snsBox { position: relative;}
-.contentsHeader .location .snsBox .snsLinks { display: none; position: absolute; right: 0; top: 40px; width: 110px; height: 154px; padding: 22px 0 0 12px; background: url(../images/common/sns_border.svg) no-repeat center; opacity: 0; transition: opacity .4s;}
+.contentsHeader .location .snsBox .snsLinks { display: none; position: absolute; right: 0; top: 40px; z-index: 1; width: 110px; height: 154px; padding: 22px 0 0 12px; background: url(../images/common/sns_border.svg) no-repeat center; opacity: 0; transition: opacity .6s;}
 .contentsHeader .location .snsLinks ul li img { margin-right: 8px;}
 .contentsHeader .location .snsLinks ul li ~ li { margin-top: 8px;}
 .contentsHeader .location .snsLinks ul li .sBtn { display: flex; align-items: center; font-size: 12px;}
