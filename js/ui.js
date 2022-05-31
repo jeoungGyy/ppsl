@@ -46,6 +46,26 @@ $(document).ready(function () {
         }
       });
 		},
+    /* BODY 확대, 축소 */
+    zoom: function(v) {
+      var tempSize = this.size;
+      if (v == 0) {
+        this.size = 1.0;
+      } else {
+        tempSize += v * 0.1;
+      }
+      
+      if (tempSize < 0.8 || tempSize > 3.0) {
+        return;
+      }else{
+        this.size = tempSize;
+      }
+      
+      $('body').css('-ms-transform','scale(' + this.size + ')');
+      $('body').css('-webkit-transform','scale(' + this.size + ')');
+      $('body').css('-moz-transform','scale(' + this.size + ')');
+      $('body').css('-o-transform','scale(' + this.size + ')');
+    },
 		/* 메뉴 */
 		menu: function () {
       var $header = $(".header");
@@ -415,7 +435,6 @@ $(document).ready(function () {
       });
     },
   },
-
   /* 통합검색 */
   totalSearch = {
     init: function () {
