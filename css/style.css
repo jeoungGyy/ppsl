@@ -1080,7 +1080,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .mainBody .contentWrap .cwBody { margin-top: 10px;}
 
 .wrap-slide-box { position: relative;}
-.wrap-slide-box .swiper-container { width: 100%; height: 100%; margin: 0 auto; overflow: hidden;}
+.wrap-slide-box .swiper-container { overflow: hidden; width: 100%; height: 100%; margin: 0 auto; padding: 1px;}
 .wrap-slide-box .swiper-slide { display: flex; justify-content: center; align-items: center; flex-wrap: nowrap; flex-direction: column;}
 .wrap-slide-box .swiper-button-prev, 
 .wrap-slide-box .swiper-container-rtl .swiper-button-next { left: inherit; right: 40px; top: -26px; width: 16px; height: 16px; margin-top: 0; background: url(../images/common/ico_arrow_left.svg) no-repeat center/cover;}
