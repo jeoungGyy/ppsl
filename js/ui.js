@@ -428,8 +428,12 @@ $(document).ready(function () {
     },
     mobile: function () {
       /* 모바일 depth1 링크 제거 */
-      var $depth1Link = $('.allMenu .depth1 >li >a');
+      var $depth1 = $('.allMenu .depth1');
+      var $depth1Link = $depth1.find('>li >a');
+      var $depth1Firsth = $depth1.find('>li:first-child .depth2');
       var $depth2 = $('.allMenu .depth2');
+
+      $depth1Firsth.show();
       $depth1Link.on('click', function(e) {
         e.preventDefault();
         $depth2.hide();

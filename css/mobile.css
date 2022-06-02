@@ -22,6 +22,8 @@
 .header .menu .megaMenuBg,
 .header .menu .megaMenuBg.active,
 .header .menu .subMenuBlind { display: none;}
+.gnb .depth1 >li >a:hover >span::after,
+.gnb .depth1 >li >a.active >span::after { display: none;}
 
 
 /* wrap */
@@ -49,7 +51,7 @@
 .mFooterCon .fLinks a { margin-top: 8px;}
 .mFooterCon .fSNS { position: inherit; right: inherit; top: inherit; margin-top: 16px;}
 .mFooterCon .ftLinks .area a >div b { margin-top: 4px;}
-.mFooterCon .fSNS .t select { flex: 1;}
+.mFooterCon .fSNS .t select { flex: 1; width: 100%;}
 .mFooterCon .fSNS .b { justify-content: inherit; margin-top: 16px;}
 .mFooterCon .address { margin-top: 16px;}
 .mFooterCon .address p span { display: block;}
