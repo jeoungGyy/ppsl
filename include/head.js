@@ -17,13 +17,14 @@ str += '<meta property="og:image" content="http://www.ppsl.or.kr/image/ppsl/por/
 str += '<meta property="og:url" content="http://www.ppsl.or.kr">';
 str += '<link rel="stylesheet" href="../../css/base.css">';
 str += '<link rel="stylesheet" href="../../css/jquery-ui.css">';
+str += '<link rel="stylesheet" href="../../css/swiper4.5.1.css">';
 str += '<link rel="stylesheet" href="../../css/style.css">';
 str += '<link rel="stylesheet" href="../../css/tablet.css">';
 str += '<link rel="stylesheet" href="../../css/mobile.css">';
 str += '<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=77f8029a27679861176ea9c74a450042"></script>';
 str += '<script src="../../js/jquery-1.12.4.min.js"></script>';
 str += '<script src="../../js/jquery-ui.js"></script>';
-str += '<script src="../../js/jquery.slides.min.js"></script>';
+str += '<script src="../../js/swiper4.5.1.js"></script>';
 str += '<script src="../../js/gsap.min.js"></script>';
 str += '<script src="../../js/icheck.js"></script>';
 str += '<script src="../../js/ui.js"></script>';
