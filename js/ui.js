@@ -395,7 +395,6 @@ $(document).ready(function () {
             if(_keyCode === 9) {
               if(!e.shiftKey) {
                 e.preventDefault();
-                console.log(_target)
                 _target.focus();
               }
             }
@@ -430,14 +429,22 @@ $(document).ready(function () {
       /* 모바일 depth1 링크 제거 */
       var $depth1 = $('.allMenu .depth1');
       var $depth1Link = $depth1.find('>li >a');
-      var $depth1Firsth = $depth1.find('>li:first-child .depth2');
-      var $depth2 = $('.allMenu .depth2');
+      var $depth1First = $depth1.find('>li:first-child .depth2');
+      var $depth2 = $depth1.find('.depth2');
 
-      $depth1Firsth.show();
+      $depth1First.show()
+      $depth1Link.filter('.active').each(function(i) {
+        console.log($(this).attr("data-menu"))
+        if($(this).attr("data-menu") === 'depth_1' ||  $(this).attr("data-menu") === 'depth_8') { 
+          return false;
+        }
+        $depth1First.hide()
+      });
+
       $depth1Link.on('click', function(e) {
         e.preventDefault();
-        $depth2.hide();
         $depth1Link.removeClass("active");
+        $depth2.hide();
         $(this).addClass('active').next().show();
       });
     },

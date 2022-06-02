@@ -480,6 +480,7 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .allMenu_pop .gnb .depth1 { display: block; position: relative; height: 100%;}
 .allMenu_pop .gnb .depth1 >li { position: initial; width: 100%; padding-right: 24px;}
 .allMenu_pop .gnb .depth1 >li ~ li { margin-left: 0;}
+/* .allMenu_pop .gnb .depth1 >li:first-child .depth2 { display: block;} */
 .allMenu_pop .gnb .depth1 >li >a { justify-content: initial; width: 120px; height: 64px; padding-left: 16px; font-size: 16px; color: #333; background-color: #f7f7f7;}
 .allMenu_pop .gnb .depth1 >li >a +.depth2 { right: 24px;}
 .allMenu_pop .gnb .depth1 >li >a.active { color: #fff; background-color: #366cc3;}
