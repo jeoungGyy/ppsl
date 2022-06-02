@@ -3,6 +3,9 @@
 확인 URL: https://jeounggyy.github.io/ppsl/html/guide/ia.html
 
 
+### 06-02
+- [공통] zoom 추가
+
 ### 05-27
 - HO_04_01_01 콘텐츠 수정
 

@@ -16,8 +16,8 @@ str += '        <span>로그인 유지</span> <span class="time">29:59</span> <b
 str += '      </div>';
 str += '      <div class="textSpace">';
 str += '        <span>화면크기</span>';
-str += '        <button type="button" class="fontSize increaseBtn"><i>확대</i></button>';
-str += '        <button type="button" class="fontSize decreaseBtn"><i>축소</i></button>';
+str += '        <button type="button" class="fontSize increaseBtn" onclick="active.zoom(1)"><i>확대</i></button>';
+str += '        <button type="button" class="fontSize decreaseBtn" onclick="active.zoom(-1)"><i>축소</i></button>';
 str += '      </div>';
 str += '    </div>';
 str += '  </div>';
