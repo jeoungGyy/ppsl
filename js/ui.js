@@ -346,10 +346,8 @@ $(document).ready(function () {
       var tempSize = this.size;
       
       if (v == 0) {
-        console.log(1)
         this.size = 1.0;
       } else {
-        console.log(tempSize)
         tempSize += v * 0.1;
       }
       
