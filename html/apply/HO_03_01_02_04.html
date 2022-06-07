@@ -1,0 +1,742 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<script src="../../include/head.js"></script> <!-- include: 공통 헤드 -->
+</head>
+
+<body>
+<div id="wrap">
+	<script src="../../include/header.js"></script> <!-- include: 공통 헤더 -->
+
+	<div class="container">
+		<div class="area">
+			<div class="wrap">
+				<div class="lnbBody">
+					<h2></h2>
+					<nav class="lnb">
+					</nav>
+				</div>
+
+				<div id="contentLink" class="contents">
+					<header class="contentsHeader">
+						<div class="title">
+							<h3>연계신청 등록</h3>
+							<p>연계신청은 다음 단계로 이루어집니다.</p>
+						</div>
+						<script src="../../include/location.js"></script> <!-- include: 공통 현재위치 -->
+					</header>
+
+					<div class="proposalBody">
+						<div class="setpBodyStyle">
+							<ul class="stepByStyle">
+								<li>
+									<span class="iconRound bgBlue"><i></i></span>
+									<span class="text">신청인정보 입력</span>
+								</li>
+								<li>
+									<span class="iconRound bgBlue"><i></i></span>
+									<span class="text">연금가입내역 확인</span>
+								</li>
+								<li class="active">
+									<span class="invisible">현재 단계</span>
+									<span class="iconRound"><i></i></span>
+									<span class="text">연계신청 완료</span>
+								</li>
+							</ul>
+							<span class="line"></span>
+						</div>
+
+						<hr class="space style3 onlyMobile">
+
+						<!-- 신청인정보 입력 -->
+						<div class="m_toggleArea">
+							<div class="onlyMobile">
+								<button class="flexLeft spaceBetween toggleGroup active" title="확장됨">
+									<b class="defaultH4">신청인 정보입력</b>
+									<span class="toggleBtn onlyMobile"><i>신청인 정보입력 토글</i></span>
+								</button>
+							</div>
+							<div class="target">
+								<!-- PC -->
+								<div class="onlyPC">
+									<div class="subFill pcmt40">
+										<h4 class="defaultH4">신청인 정보입력</h4>
+										<span><span class="colorOrange">*</span> 필수 입력 항목</span>
+									</div>
+
+									<div class="hTableBody">
+										<table>
+											<caption>신청인 정보입력 : 이름, 주민등록번호, 휴대폰번호, 자택전화, 주소, 이메일로 구성</caption>
+											<colgroup>
+												<col style="width: 162px;">
+												<col>
+											</colgroup>
+											<tbody>
+												<tr>
+													<th scope="row">이름 <span class="colorOrange">*</span></th>
+													<td>김공단</td>
+												</tr>
+												<tr>
+													<th scope="row">주민등록번호 <span class="colorOrange">*</span></th>
+													<td>000000-*******</td>
+												</tr>
+												<tr>
+													<th scope="row">휴대전화 <span class="colorOrange">*</span></th>
+													<td>010-1234-1234</td>
+												</tr>
+												<tr>
+													<th scope="row">전화번호</th>
+													<td>02-1234-5678</td>
+												</tr>
+												<tr>
+													<th scope="row">주소 <span class="colorOrange">*</span></th>
+													<td>
+														<span>1234</span>
+														<p class="mt8">전북 전주시 만성동 77 국민연금공단</p>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">이메일 <span class="colorOrange">*</span></th>
+													<td>aaa@gmail.com</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<!-- //PC -->
+
+								<!-- Mobile -->
+								<div class="onlyMobile">
+									<ul class="m_hTableBody">
+										<li>
+											<div class="boxGray">
+												<b>김공단</b>
+												<span class="num">801210-*******</span>
+											</div>
+										</li>
+										<li>
+											<label>휴대전화 <span class="colorOrange">*</span></label>
+											<div>010-1234-1234</div>
+										</li>
+										<li>
+											<label>전화번호</label>
+											<div>02-1234-5678</div>
+										</li>
+										<li>
+											<label>주소 <span class="colorOrange">*</span></label>
+											<div>
+												<span>1234</span>
+												<p class="mt8">전북 전주시 만성동 77 국민연금공단</p>
+											</div>
+										</li>
+										<li>
+											<label>이메일 <span class="colorOrange">*</span></label>
+											<div>
+												aaa@gmail.com
+											</div>
+										</li>
+									</ul>
+								</div>
+								<!-- //Mobile -->
+							</div>
+						</div>
+						<!-- //신청인정보 입력 -->
+
+						<hr class="space style2 onlyMobile">
+
+						<!-- 연금가입내역 확인 -->
+						<div class="m_toggleArea">
+							<div class="onlyMobile">
+								<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+									<b class="defaultH4">연금가입내역 확인</b>
+									<span class="toggleBtn onlyMobile"><i>연금가입내역 토글</i></span>
+								</button>
+							</div>
+
+							<div class="target targetHidden">
+								<!-- PC -->
+								<div class="onlyPC">
+									<div class="subFill pcmt40">
+										<h4 class="defaultH4">연금가입내역 확인</h4>
+									</div>
+									
+									<div class="tableBody">
+										<table>
+											<caption>연금가입내역 확인 : 선택, 연금기관, 기간 구분, 상세내역로 구성</caption>
+											<colgroup>
+												<col style="width: 64px;">
+												<col style="width: 112px;">
+												<col style="width: 128px;">
+												<col>
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col">선택</th>
+													<th scope="col">연금기관</th>
+													<th scope="col">기간 구분</th>
+													<th scope="col">상세내역</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>
+														<div class="groupBox single">
+															<input type="checkbox" name="checkbox" title="첫번째 연금가입내역 선택">
+														</div>
+													</td>
+													<td>국민연금공단</td>
+													<td>가입기간</td>
+													<td>
+														<span class="block">2년 6월  ( YYYY - MM - DD ~ YYYY - MM - DD )</span>
+														<table>
+															<caption>첫번째 연금가입내역 상세내역 : 연계신청가능 월수, 퇴직일시금 수령, 반납금 납부방법, 반납금 납부횟수로 구성</caption>
+															<colgroup>
+																<col style="width: 25%;">
+																<col style="width: 25%;">
+																<col style="width: 25%;">
+																<col>
+															</colgroup>
+															<thead>
+																<tr>
+																	<th><span class="colorBlue">연계신청가능 월수</span></th>
+																	<th>퇴직일시금 수령</th>
+																	<th>반납금 납부방법</th>
+																	<th>반납금 납부횟수</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td><span class="colorBlue">30</span></td>
+																	<td>미수령</td>
+																	<td>-</td>
+																	<td>-</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+												<tr class="off">
+													<td></td>
+													<td>공무원연금</td>
+													<td>재직기간<br>
+														(사학연금으로 합산)</td>
+													<td>
+														<span class="block">2년 6월  ( YYYY - MM - DD ~ YYYY - MM - DD )</span>
+														<table>
+															<caption>두번째 연금가입내역 상세내역 : 연계신청가능 월수, 퇴직일시금 수령, 반납금 납부방법, 반납금 납부횟수로 구성</caption>
+															<colgroup>
+																<col style="width: 25%;">
+																<col style="width: 25%;">
+																<col style="width: 25%;">
+																<col>
+															</colgroup>
+															<thead>
+																<tr>
+																	<th><span class="colorBlue">연계신청가능 월수</span></th>
+																	<th>퇴직일시금 수령</th>
+																	<th>반납금 납부방법</th>
+																	<th>반납금 납부횟수</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td><span class="colorBlue">30</span></td>
+																	<td>미수령</td>
+																	<td class="vat">
+																		<select title="반납금 납부방법 선택" disabled>
+																			<option disabled selected>선택</option>
+																			<option>텍스트</option>
+																		</select>
+																	</td>
+																	<td class="vat">
+																		<select title="반납금 납부횟수 선택" disabled>
+																			<option disabled selected>선택</option>
+																			<option>텍스트</option>
+																		</select>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="groupBox single">
+															<input type="checkbox" name="checkbox" title="세번째 연금가입내역 선택">
+														</div>
+													</td>
+													<td>사립학교 교직원연금공단</td>
+													<td>재직기간</td>
+													<td>
+														<span class="block">2년 6월  ( YYYY - MM - DD ~ YYYY - MM - DD )</span>
+														<table>
+															<caption>세번째 연금가입내역 상세내역 : 연계신청가능 월수, 퇴직일시금 수령, 반납금 납부방법, 반납금 납부횟수로 구성</caption>
+															<colgroup>
+																<col style="width: 25%;">
+																<col style="width: 25%;">
+																<col style="width: 25%;">
+																<col>
+															</colgroup>
+															<thead>
+																<tr>
+																	<th><span class="colorBlue">연계신청가능 월수</span></th>
+																	<th>퇴직일시금 수령</th>
+																	<th>반납금 납부방법</th>
+																	<th>반납금 납부횟수</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td><span class="colorBlue">30</span></td>
+																	<td>수령</td>
+																	<td class="vat">
+																		<select title="반납금 납부방법 선택">
+																			<option disabled selected>선택</option>
+																			<option>텍스트</option>
+																		</select>
+																		<div class="requireText">
+																			<i></i>
+																			<span>선택해주세요.</span>
+																		</div>
+																	</td>
+																	<td class="vat">
+																		<select title="반납금 납부횟수 선택" disabled>
+																			<option disabled selected>선택</option>
+																			<option>텍스트</option>
+																		</select>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="groupBox single">
+															<input type="checkbox" name="checkbox" title="네번째 연금가입내역 선택">
+														</div>
+													</td>
+													<td>별정우체국 연금</td>
+													<td>재직기간</td>
+													<td>
+														<span class="block">2년 6월  ( YYYY - MM - DD ~ YYYY - MM - DD )</span>
+														<table>
+															<caption>네번째 연금가입내역 상세내역 : 연계신청가능 월수, 퇴직일시금 수령, 반납금 납부방법, 반납금 납부횟수로 구성</caption>
+															<colgroup>
+																<col style="width: 25%;">
+																<col style="width: 25%;">
+																<col style="width: 25%;">
+																<col>
+															</colgroup>
+															<thead>
+																<tr>
+																	<th><span class="colorBlue">연계신청가능 월수</span></th>
+																	<th>퇴직일시금 수령</th>
+																	<th>반납금 납부방법</th>
+																	<th>반납금 납부횟수</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td><span class="colorBlue">30</span></td>
+																	<td>수령</td>
+																	<td class="vat">
+																		<select title="반납금 납부방법 선택">
+																			<option disabled selected>선택</option>
+																			<option>텍스트</option>
+																		</select>
+																		<div class="requireText success">
+																			<i></i>
+																			<span>선택되었습니다.</span>
+																		</div>
+																	</td>
+																	<td class="vat">
+																		<select title="반납금 납부횟수 선택">
+																			<option disabled selected>선택</option>
+																			<option>텍스트</option>
+																		</select>
+																		<div class="requireText">
+																			<i></i>
+																			<span>선택해주세요.</span>
+																		</div>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<!-- //PC -->
+
+								<!-- Mobile -->
+								<div class="onlyMobile">
+									<ul class="mListMulti">
+										<li class="active"> <!-- 체크박스 체크시 active 추가 -->
+											<div class="groupBox">
+												<div class="checkboxBox">
+													<input type="checkbox" id="m_chechbox1" name="m_checkbox" title="첫번째 연금가입내역 선택" checked>
+													<label for="m_chechbox1">공무원연금</label>
+												</div>
+											</div>
+											<div class="roundBoxGray sp mt">
+												<span>가입기간</span>
+												<div class="flexLeft spaceBetween">
+													<b class="listDate">2년 6월<br>( YYYY - MM - DD ~ YYYY - MM - DD )</b>
+												</div>
+											</div>
+											<ul class="msList">
+												<li>
+													<span class="colorBlue">연계신청가능 월수</span>
+													<b class="colorBlue">30</b>
+												</li>
+												<li>
+													<span>퇴직일시금 수령</span>
+													<b>미수령</b>
+												</li>
+												<li class="block lineBreak">
+													<b>반납금 납부방법</b>
+													<span class="mt">-</span>
+												</li>
+												<li class="block">
+													<b>반납금 납부횟수</b>
+													<span class="mt">-</span>
+												</li>
+											</ul>
+										</li>
+										<li class="off">
+											<div class="groupBox">
+												<h5 class="defaultH5">공무원연금</h5>
+											</div>
+											<div class="roundBoxGray sp mt">
+												<span>재직기간(사학연금으로합산)</span>
+												<div class="flexLeft spaceBetween">
+													<b class="listDate">2년 6월<br>( YYYY - MM - DD ~ YYYY - MM - DD )</b>
+												</div>
+											</div>
+											<ul class="msList">
+												<li>
+													<span class="colorBlue">연계신청가능 월수</span>
+													<b class="colorBlue">30</b>
+												</li>
+												<li>
+													<span>퇴직일시금 수령</span>
+													<b>수령</b>
+												</li>
+												<li class="block lineBreak">
+													<b>반납금 납부방법</b>
+													<span class="mt">
+														<select title="반납금 납부방법 선택" disabled>
+															<option disabled selected>선택</option>
+															<option>텍스트</option>
+														</select>
+													</span>
+												</li>
+												<li class="block">
+													<b>반납금 납부횟수</b>
+													<span class="mt">
+														<select title="반납금 납부횟수 선택" disabled>
+															<option disabled selected>선택</option>
+															<option>텍스트</option>
+														</select>
+													</span>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<div class="groupBox">
+												<div class="checkboxBox">
+													<input type="checkbox" id="m_chechbox1" name="m_checkbox" title="세번째 연금가입내역 선택">
+													<label for="m_chechbox1">사립학교교직원연금공단</label>
+												</div>
+											</div>
+											<div class="roundBoxGray sp mt">
+												<span>재직기간</span>
+												<div class="flexLeft spaceBetween">
+													<b class="listDate">2년 6월<br>( YYYY - MM - DD ~ YYYY - MM - DD )</b>
+												</div>
+											</div>
+											<ul class="msList">
+												<li>
+													<span class="colorBlue">연계신청가능 월수</span>
+													<b class="colorBlue">30</b>
+												</li>
+												<li>
+													<span>퇴직일시금 수령</span>
+													<b>수령</b>
+												</li>
+												<li class="block lineBreak">
+													<b>반납금 납부방법</b>
+													<span class="mt">
+														<select title="반납금 납부방법 선택">
+															<option disabled selected>선택</option>
+															<option>텍스트</option>
+														</select>
+													</span>
+													<div class="requireText">
+														<i></i>
+														<span>선택해주세요.</span>
+													</div>
+												</li>
+												<li class="block">
+													<b>반납금 납부횟수</b>
+													<span class="mt">
+														<select title="반납금 납부횟수 선택" disabled>
+															<option disabled selected>선택</option>
+															<option>텍스트</option>
+														</select>
+													</span>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<div class="groupBox">
+												<div class="checkboxBox">
+													<input type="checkbox" id="m_chechbox1" name="m_checkbox" title="네번째 연금가입내역 선택">
+													<label for="m_chechbox1">별정우체국 연금</label>
+												</div>
+											</div>
+											<div class="roundBoxGray sp mt">
+												<span>재직기간</span>
+												<div class="flexLeft spaceBetween">
+													<b class="listDate">2년 6월<br>( YYYY - MM - DD ~ YYYY - MM - DD )</b>
+												</div>
+											</div>
+											<ul class="msList">
+												<li>
+													<span class="colorBlue">연계신청가능 월수</span>
+													<b class="colorBlue">30</b>
+												</li>
+												<li>
+													<span>퇴직일시금 수령</span>
+													<b>수령</b>
+												</li>
+												<li class="block lineBreak">
+													<b>반납금 납부방법</b>
+													<span class="mt">
+														<select title="반납금 납부방법 선택">
+															<option disabled selected>선택</option>
+															<option>텍스트</option>
+														</select>
+													</span>
+													<div class="requireText success">
+														<i></i>
+														<span>선택되었습니다.</span>
+													</div>
+												</li>
+												<li class="block">
+													<b>반납금 납부횟수</b>
+													<span class="mt">
+														<select title="반납금 납부횟수 선택">
+															<option disabled selected>선택</option>
+															<option>텍스트</option>
+														</select>
+													</span>
+													<div class="requireText">
+														<i></i>
+														<span>선택해주세요.</span>
+													</div>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<!-- //Mobile -->
+
+								<div class="requireText">
+									<i></i>
+									<span>연계신청 할 2개 이상 기관을 선택 해 주세요.</span>
+								</div>
+								<div class="requireText error">
+									<i></i>
+									<span>연계신청 할 2개 이상 기관을 선택 해 주세요.</span>
+								</div>
+								<div class="requireText success">
+									<i></i>
+									<span>연계신청 할 2개 이상 기관이 선택되었습니다.</span>
+								</div>
+							</div>
+						</div>
+						<!-- //연금가입내역 확인 -->
+
+						<hr class="space style2 onlyMobile">
+
+						<!-- 연계신청 완료 -->
+						<div class="m_toggleArea">
+							<div class="onlyPC">
+								<div class="flexLeft spaceBetween toggleGroup pcmt40">
+									<b class="defaultH4">국민연금자격취득일</b>
+								</div>
+							</div>
+							<div class="onlyMobile">
+								<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+									<b class="defaultH4">국민연금자격취득일</b>
+									<span class="toggleBtn onlyMobile"><i>국민연금자격취득일 토글</i></span>
+								</button>
+							</div>
+							<div class="target targetHidden m_pb0">
+								<div class="dateGroup otherStyle3 pdB0">
+									<div class="head">
+										<b>국민연금 가입자 자격을 취득한 날짜</b>
+										<div class="flexLeft alignCenter">
+											<button type="button" class="tooltipBtn" aria-describedby="tooltip1"><i class="icon">도움말</i></button>
+											<span>YYYY - MM - DD</span>
+										</div>
+									</div>
+									<div class="body">
+										<p>「국민연금과 직역연금의 연계신청에 관한 법률 시행규칙」 제2조에 따라 위와 같이 신청합니다.</p>
+										<div class="in">
+											<span>신청일 : <b>YYYY - MM - DD</b></span>
+											<span>신청인 : <b>김공단</b></span>
+										</div>
+										<div class="he">
+											<button type="button" class="tooltipBtn" aria-describedby="tooltip2"><i class="icon">도움말</i></button>
+											<select title="연금관리기관 선택">
+												<option disabled selected>선택</option>
+												<option>텍스트</option>
+											</select>
+											<span>귀하</span>
+										</div>
+									</div>
+								</div>
+								<div class="roundBox">
+									<h4>행정정보이용 동의서</h4>
+									<div class="default">
+										<p>본인은 이 건 사무처리;와 관련하여 “전자정부밥”제 22조의2 규정에 따라 이용기관의 담당자가 전자적으로 본인의 정보를 이용하는 것에 동의합니다.</p>
+									</div>
+								</div>
+								<ul class="groupBox inlineGroupBox momb32">
+									<li>
+										<div class="radioBox">
+											<input type="radio" id="radio21_1" name="radio21">
+											<label for="radio21_1">동의 합니다.</label>
+										</div>
+									</li>
+									<li>
+										<div class="radioBox">
+											<input type="radio" id="radio21_2" name="radio21">
+											<label for="radio21_2">미동의 합니다.</label>
+										</div>
+									</li>
+								</ul>
+							</div>
+
+							<div class="btnsGroup flexEnd bdt mt m_mt0">
+								<button type="button" class="button h48 gray">이전</button>
+								<button type="button" class="button h48 blue layerLink" aria-controls="applyGuideLayer">완료</button>
+							</div>
+						</div>
+						<!-- //연계신청 완료 -->
+
+						<script src="../../include/evaluation.js"></script> <!-- include: 공통 평가 -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- 레이어 -->
+		<div id="applyGuideLayer" class="layerPopup" role="dialog" aria-modal="true" aria-labelledby="applyGuideLayerTitle" tabindex="0">
+			<div class="layerBody small applyGuideLayer">
+				<h5 id="applyGuideLayerTitle" class="layerTitle">안내</h5>
+				<div class="layerContent">
+					<div class="paragraphGroup">
+						<p>
+							연계신청을 한 경우에는 원칙적으로 취소/철회할 수 없습니다.
+						</p>
+						<p>
+							다만, 아래 2가지 경우는 가능합니다.<br>
+							1)신청 후 접수 중 일때 연계신청접수 취소 가능합니다.<br>
+							2)연계신청 처리결과 통보서가 도달하기 전에는 철회 가능합니다.
+						</p>
+					</div>
+				</div>
+				<button type="button" class="layerClose"><i>창 닫기</i></button>
+			</div>
+		</div>
+
+		<div id="applyPostLayer" class="layerPopup" role="dialog" aria-modal="true" aria-labelledby="applyPostLayerTitle" tabindex="0">
+			<div class="layerBody normal applyPostLayer">
+				<h5 id="applyPostLayerTitle" class="layerTitle">우편번호 검색</h5>
+				<div class="layerContent">
+					<div class="overflowY" tabindex="0">
+						<div class="postTitle">
+							<span class="t">시도, 시군구 및 도로명을 입력해 주세요. </span>
+							<span class="b">예) 수문길, 중대로 9길</span>
+						</div>
+						<div class="postSearchBox">
+							<div class="twin">
+								<select title="시/도 선택">
+									<option disabled selected>선택</option>
+									<option>텍스트</option>
+								</select>
+								<select title="시/군/구 선택">
+									<option disabled selected>선택</option>
+									<option>텍스트</option>
+								</select>
+							</div>
+							<div class="flexBtnOne">
+								<input type="text" title="우편번호 검색" placeholder="우편번호 검색">
+								<button type="button" class="button h40 black">검색</button>
+							</div>
+						</div>
+
+						<div class="postNumber">
+							<span>총 15건</span>
+						</div>
+						<div class="tableBody">
+							<table>
+								<caption>우편번호 검색 : 주소(도로명), 우편번호로 구성</caption>
+								<colgroup>
+									<col>
+									<col style="width: 104px;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">주소(도로명)</th>
+										<th scope="col">우편번호</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="textLeft"><button type="button">서울특별시 서초구 반포대로 75 (서초동)</button></td>
+										<td>006670</td>
+									</tr>
+									<tr>
+										<td class="textLeft"><button type="button">서울특별시 서초구 반포대로 33 (서초동, 성진개발빌딩)</button></td>
+										<td>006710</td>
+									</tr>
+									<tr>
+										<td class="textLeft"><button type="button">서울특별시 서초구 반포대로 5 (서초동, 승정빌딩2)</button></td>
+										<td>06656</td>
+									</tr>
+									<tr>
+										<td class="empty" colspan="2">자료가 없습니다. 다른 검색조건을 선택해주세요.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<ul class="guideText mt">
+							<li>도로명주소가 검색되지 않는 경우는 행정안전부 새주소안내 시스템<br>
+								(http://www.juso.go.kr)에서 확인하시기 바랍니다.</li>
+						</ul>
+					</div>
+				</div>
+				<button type="button" class="layerClose"><i>창 닫기</i></button>
+			</div>
+		</div>
+		<!-- //레이어 -->
+	</div>
+
+	<script src="../../include/footer.js"></script> <!-- include: 공통 푸터 -->
+
+	<script>
+		var depth = [3, 1]; /* 현재메뉴 활성화 용: gnb에 있는 data-menu 값과 일치하게 해주세요. */
+	</script>
+</div>
+</body>
+</html>

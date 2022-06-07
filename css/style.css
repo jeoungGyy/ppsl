@@ -735,7 +735,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .tableBody table td .calendarBody button { width: 32px; height: 32px;}
 .tableBody table td .block { display: block; text-align: left;}
 .tableBody table td.empty { padding: 40px 0;}
-.tableBody table tr.off { background-color: #f7f7f7;}
+.tableBody table tr.off td { background-color: #f7f7f7;}
 .tableBody table tr.off .colorBlue { color: inherit !important;}
 .tableBody table td table { margin-top: 8px; border-top: 2px solid #333;}
 .tableBody table td table th:first-child { border-left: none;}
