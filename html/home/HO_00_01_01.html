@@ -365,11 +365,11 @@
 								autoPlayBtn.addEventListener('click', function (e) {
 									autoPlayState = autoPlayBtn.getAttribute('aria-pressed');
 									if (autoPlayState === 'false') {
-										$('.wrap-autoplay-control > button').text('일시정지');
+										autoPlayBtn.innerText='시작';
 										autoPlayBtn.setAttribute('aria-pressed', 'true');
 										thisSlide.autoplay.stop();
 									} else if (autoPlayState === 'true') {
-										$('.wrap-autoplay-control > button').text('시작');
+										autoPlayBtn.innerText='일시정지';
 										autoPlayBtn.setAttribute('aria-pressed', 'false');
 										thisSlide.autoplay.start();
 									};
