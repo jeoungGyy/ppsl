@@ -15,23 +15,22 @@
 		<li>left / right : move by day</li>
 		<li>up / down : move by week</li>
 		<li>page up / down : move by month</li>
-		<li>control + page up / down : move by year</li>
+		<li>control + up / down : move by year</li>
 		<li>control + home : move to current date</li>
 		<li>enter : close datepicker and select currently highlighted date and place it in the input field ready for editing</li>
 	</ul>
+	<br>
 	
-	<div role="application">
-		<label for="date">Choose a date:</label>
-		<input type="text" class="jQdate" readonly>
+	<div class="calendarBody" role="application">
+		<input type="text" class="jQdate" title="세번째 출생(입양)일자 선택" readonly placeholder="날짜선택">
 	</div>
-	
-	<button>Submit</button>
 
 	<br><br><br>
 	
 	<h3>기타등등</h3>
 	<div>
 		<a href="http://www.law.go.kr/법령/국민연금법/제9조" class="bLink" target="_blank"><span class="bLine">제8조</span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a>
+		<br><br>
 		<div>
 			<span class="supBody"><span>1기간</span><sup class="sup">주1</sup></span>
 		</div>
@@ -41,11 +40,46 @@
 	
 	<h3>버튼</h3>
 	<div>
-		<button type="button" class="button h48 black">h48</button>
-		<button type="button" class="button h40 blue">h40</button>
-		<button type="button" class="button h40 gray">h40</button>
-		<button type="button" class="button h32 lineBlack">h32</button>
-		<button type="button" class="button h24 lineBlack">h24</button>
+		<table style="width: 500px;">
+			<thead>
+				<tr>
+					<th>h48</th>
+					<th>h40</th>
+					<th>h32</th>
+					<th>h24</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><button type="button" class="button h48 black">black</button></td>
+					<td><button type="button" class="button h40 black">black</button></td>
+					<td><button type="button" class="button h32 black">black</button></td>
+					<td><button type="button" class="button h24 black">black</button></td>
+				</tr>
+				<tr>
+					<td><button type="button" class="button h48 blue">blue</button></td>
+					<td><button type="button" class="button h40 blue">blue</button></td>
+					<td><button type="button" class="button h32 blue">blue</button></td>
+					<td><button type="button" class="button h24 blue">blue</button></td>
+				</tr>
+				<tr>
+					<td><button type="button" class="button h48 gray">gray</button></td>
+					<td><button type="button" class="button h40 gray">gray</button></td>
+					<td><button type="button" class="button h32 gray">gray</button></td>
+					<td><button type="button" class="button h24 gray">gray</button></td>
+				</tr>
+				<tr>
+					<td><button type="button" class="button h48 lineBlack">lineBlack</button></td>
+					<td><button type="button" class="button h40 lineBlack">lineBlack</button></td>
+					<td><button type="button" class="button h32 lineBlack">lineBlack</button></td>
+					<td><button type="button" class="button h24 lineBlack">lineBlack</button></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<br><br>
+		<h4>기타</h4>
+		<br>
 		<button type="button" class="button h40 black"><span class="dsBlock">텍스트</span><i class="arrowRight"></i></button>
 		<button type="button" class="button h40 lineBlack"><span class="dsBlock">텍스트</span><i class="arrowRightSmall"></i></button>
 		<button type="button" class="button h40 lineBlack"><span class="dsBlock">텍스트</span><i class="icoDownload2"></i></button>
@@ -93,32 +127,32 @@
 		<ul class="groupBox">
 			<li>
 				<div class="radioBox">
-					<input type="radio" id="radio1" name="radio" checked>
-					<label for="radio1">매우만족</label>
+					<input type="radio" id="radio1_1" name="radio" checked>
+					<label for="radio1_1">매우만족</label>
 				</div>
 			</li>
 			<li>
 				<div class="radioBox">
-					<input type="radio" id="radio2" name="radio">
-					<label for="radio2">만족</label>
+					<input type="radio" id="radio2_1" name="radio">
+					<label for="radio2_1">만족</label>
 				</div>
 			</li>
 			<li>
 				<div class="radioBox">
-					<input type="radio" id="radio3" name="radio">
-					<label for="radio3">보통</label>
+					<input type="radio" id="radio3_1" name="radio">
+					<label for="radio3_1">보통</label>
 				</div>
 			</li>
 			<li>
 				<div class="radioBox">
-					<input type="radio" id="radio4" name="radio">
-					<label for="radio4">불만족</label>
+					<input type="radio" id="radio4_1" name="radio">
+					<label for="radio4_1">불만족</label>
 				</div>
 			</li>
 			<li>
 				<div class="radioBox">
-					<input type="radio" id="radio5" name="radio">
-					<label for="radio5">매우 불만족</label>
+					<input type="radio" id="radio5_1" name="radio">
+					<label for="radio5_1">매우 불만족</label>
 				</div>
 			</li>
 		</ul>
