@@ -1,8 +1,8 @@
 var str = '';
 
 str += '<nav class="skipnav">';
-str += '  <a href="#contentLink">본문 바로가기</a>';
 str += '  <a href="#menuLink">메뉴 바로가기</a>';
+str += '  <a href="#contentLink">본문 바로가기</a>';
 str += '</nav>';
 str += '';
 str += '<header class="header">';
