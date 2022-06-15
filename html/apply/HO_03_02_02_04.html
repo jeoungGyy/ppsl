@@ -21,21 +21,21 @@
 				<div id="contentLink" class="contents">
 					<header class="contentsHeader">
 						<div class="title">
-							<h3>연계신청 상세조회</h3>
-							<p>신청단계는 다음과 같습니다.</p>
+							<h3>신청정보변경</h3>
+							<p>신청인 정보( 연락처, 주소, 이메일)와  퇴직일시금 수령 하신 경우 반납금 납부 방법, 납부횟수 변경 가능하십니다.</p>
 						</div>
 						<script src="../../include/location.js"></script> <!-- include: 공통 현재위치 -->
 					</header>
 
-					<div class="pcmt40 momt24">
-						<ul class="guideText blue">
-							<li>연계신청을 한 경우 원칙적으로 취하 할 수 없습니다.</li>
-							<li>연계신청 후 접수중일 경우 신청접수취소 가능합니다.</li>
-						</ul>
-					</div>
-
-					<div class="stepBody mt">
+					<ul class="guideText blue pcmt40 momt24">
+						<li>연계신청을 한 경우 원칙적으로 취하 할 수 없습니다.</li>
+						<li>연계신청 후 접수중일 경우  신청접수취소 가능합니다.</li>
+					</ul>
+					<div class="stepBody">
 						<!-- 1단계 -->
+						<div class="stepByTxt">
+							접수번호 : <b class="colorBlue">1234568888</b>
+						</div>
 						<ul class="stepBy">
 							<li class="active">
 								<span class="invisible">현재 단계</span>
@@ -63,12 +63,14 @@
 
 					<!-- 대상자 -->
 					<div class="targetBody">
-						<div class="pcmt40">
+
+						<!-- 완료 -->
+						<div class="targetComplete sameStyle">
 							<!-- PC -->
 							<div class="onlyPC">
 								<div class="tableBody">
 									<table>
-										<caption>연계신청 상세조회 : 접수방법, 접수번호, 접수일, 내용, 구분, 상태, 처리지사로 구성</caption>
+										<caption>연계신청 완료 : 접수방법, 접수번호, 접수일, 내용, 구분, 상태, 처리지사로 구성</caption>
 										<colgroup>
 											<col style="width: 105px;">
 											<col>
@@ -92,18 +94,28 @@
 										<tbody>
 											<tr>
 												<td>인터넷</td>
-												<td>2009101000040</td>
-												<td>2006.03.01</td>
-												<td>연계노령연금</td>
+												<td>009101000040</td>
+												<td>2006-03-01</td>
+												<td>연계신청서</td>
 												<td>-</td>
-												<td>접수중</td>
-												<td><button type="button" class="button h24 lineBlack">확인</button></td>
+												<td>기관심사중</td>
+												<td><button type="button" class="button h24 lineBlack layerLink">확인</button></td>
+											</tr>
+											<tr>
+												<td>인터넷</td>
+												<td>009101000040</td>
+												<td>2006-03-01</td>
+												<td>연계신청서</td>
+												<td>-</td>
+												<td><span class="colorBlue">처리완료</span></td>
+												<td><button type="button" class="button h24 lineBlack layerLink">확인</button></td>
 											</tr>
 										</tbody>
 									</table>
 								</div>
 							</div>
 							<!-- //PC -->
+
 							<!-- Mobile -->
 							<div class="onlyMobile m_tableBody mt noBorder">
 								<ul class="mList">
@@ -112,29 +124,53 @@
 											<h6 class="fontDefault">접수번호</h6>
 											<div class="flexLeft spaceBetween">
 												<b class="listDate colorBlue">2009101000040</b>
-												<div class="roundText">접수중</div>
+												<div class="roundText">기관심사중</div>
 											</div>
 											
 											<ul class="msList bdt">
 												<li>
-													<label>접수방법</label>
-													<b>인터넷</b>
-												</li>
-												<li>
 													<label>접수일</label>
-													<b>2006.03.01</b>
+													<b>2006-03-01</b>
 												</li>
 												<li>
 													<label>내용</label>
-													<b>연계노령연금</b>
+													<b>연계신청서</b>
 												</li>
 												<li>
-													<label>수급정보</label>
-													<b>2016.04.30</b>
+													<label>구분</label>
+													<b>-</b>
 												</li>
 												<li>
 													<label>처리지사</label>
-													<button type="button" class="button h24 lineBlack">조회</button>
+													<button type="button" class="button h24 lineBlack layerLink">확인</button>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="roundBoxGray">
+											<h6 class="fontDefault">접수번호</h6>
+											<div class="flexLeft spaceBetween">
+												<b class="listDate colorBlue">2009101000040</b>
+												<div class="roundText blueLine">처리완료</div>
+											</div>
+											
+											<ul class="msList bdt">
+												<li>
+													<label>접수일</label>
+													<b>2006-03-01</b>
+												</li>
+												<li>
+													<label>내용</label>
+													<b>연계신청서</b>
+												</li>
+												<li>
+													<label>구분</label>
+													<b>-</b>
+												</li>
+												<li>
+													<label>처리지사</label>
+													<button type="button" class="button h24 lineBlack layerLink">확인</button>
 												</li>
 											</ul>
 										</div>
@@ -147,6 +183,7 @@
 								<li>접수중 단계에서 연계신청 접수 취소 가능합니다. <button type="button" class="lineButton"><span>신청접수 취소</span><i class="arrowRight"></i></button></li>
 							</ul>
 						</div>
+						<!-- //완료 -->
 					</div>
 					<!-- //대상자 -->
 
@@ -596,7 +633,7 @@
 												<span>신청인 : <b>김공단</b></span>
 											</div>
 											<div class="sign3">
-												<b>국민연금공단</b> <span>이사장 귀하</span>
+												<b>사립학교교직원 연금공단</b> <span>이사장 귀하</span>
 											</div>
 										</div>
 									</div>
@@ -606,13 +643,8 @@
 						</div>
 						<!-- //국민연금과 직역연금의 연계신청서 -->
 
-						<div class="btnsGroup flexEnd m_styleOther bdt mt">
-							<button type="button" class="button h48 gray">이전</button>
-							<button type="button" class="button h48 blue">법률 시행규칙 양식 출력</button>
-						</div>
+						<script src="../../include/evaluation.js"></script> <!-- include: 공통 평가 -->
 					</div>
-
-					<script src="../../include/evaluation.js"></script> <!-- include: 공통 평가 -->
 				</div>
 			</div>
 		</div>
@@ -621,7 +653,7 @@
 	<script src="../../include/footer.js"></script> <!-- include: 공통 푸터 -->
 
 	<script>
-		var depth = [3, 1]; /* 현재메뉴 활성화 용: gnb에 있는 data-menu 값과 일치하게 해주세요. */
+		var depth = [3, 2]; /* 현재메뉴 활성화 용: gnb에 있는 data-menu 값과 일치하게 해주세요. */
 	</script>
 </div>
 </body>

@@ -274,7 +274,7 @@ hr.space { margin: 40px 0; height: 1px; background-color: #dbdbdb;}
 .button.h40 { min-width: 80px; min-height: 40px; height: 40px;}
 .button.h32 { min-width: 60px; min-height: 32px; height: 32px; font-size: 14px;}
 .button.h24 { min-height: 24px; height: 24px; font-size: 14px;}
-.button[disabled] { color: #959595 !important; border-color: #dbdbdb !important; background-color: #f7f7f7 !important; cursor: not-allowed;}
+.button[disabled] { color: #959595 !important; border-color: #EAEAEA !important; background-color: #EAEAEA !important; cursor: not-allowed;}
 .button.black { color: #fff; background-color: #333;}
 .button.black:hover, 
 .button.black:active { background-color: #000;}
@@ -353,6 +353,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .icheckbox.checked::before { background: url(../images/common/ico_checkbox_w.svg) no-repeat center/cover;}
 .icheckbox.disabled { border-color: #dbdbdb;}
 .icheckbox.disabled::before { background: url(../images/common/ico_checkbox_d.svg) no-repeat center/cover;}
+.icheckbox.disabled + label { cursor: inherit;}
 
 .radioBox { display: flex; align-items: center; position: relative; height: 20px; padding-left: 28px;}
 .radioBox label { cursor: pointer;}
@@ -372,7 +373,6 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .guideText >li { position: relative; padding-left: 12px; font-size: 14px; line-height: 21px;}
 .guideText >li::before { content: ''; position: absolute; left: 0; top: 8px; width: 4px; height: 4px; background-color: #333;}
 .guideText >li ~ li { margin-top: 4px;}
-.guideText >li .ml { margin-left: 16px;}
 .guideText >li .etcColorRed { color: #fc0606;}
 .guideText >li.colorBlue::before { background-color: #366cc3;}
 .guideText.mt { margin-top: 16px;}
@@ -514,12 +514,13 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 /* evaluationBody */
 .evaluationBody { display: flex; align-items: center; justify-content: space-between; margin-top: 80px; padding: 33px 48px 32px; border: 1px solid #dbdbdb; border-top: 1px solid #333;}
 .evaluationBody .context { flex: 1;}
+.evaluationBody .context p { line-height: 24px;}
 .evaluationBody .context .groupBox { display: flex; align-items: center; margin-top: 17px;}
 .evaluationBody .context .groupBox li { margin-right: 32px;}
 .evaluationBody .btn { width: 80px;}
 
 /* stepBody */
-.stepBody { overflow: hidden; margin-top: 40px;}
+.stepBody { overflow: hidden; margin-top: 24px;}
 .stepBody .stepBy { display: flex; margin: 0 -20px;}
 .stepBody .stepBy li { display: flex; align-items: baseline; justify-content: center; flex: 1; position: relative; height: 56px; margin: 0 20px; padding-top: 18px; border: 1px solid #dbdbdb; border-radius: 8px;}
 .stepBody .stepBy li >span { display: block; font-weight: 600;}
@@ -527,6 +528,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .stepBody .stepBy li ~ li::before { content: ''; display: block; position: absolute; left: -28px; top: 50%; width: 16px; height: 16px; margin-top: -8px; background: url(../images/common/ico_bc_arrow.svg) no-repeat center/cover;}
 .stepBody .stepBy li.active { color: #fff; border: 1px solid #366cc3; background-color: #366cc3;}
 .stepBody.mt { margin-top: 24px;}
+.stepByTxt { margin-bottom: 8px; font-size: 14px;}
 
 .setpBodyStyle { overflow: hidden; position: relative; margin-top: 40px; padding: 24px 50px; background-color: #f4f7fc; border-radius: 8px;}
 .setpBodyStyle .stepByStyle { display: flex; justify-content: space-between; position: relative; z-index: 2; margin: 0 -4px;}
@@ -561,13 +563,14 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .inlineGroupBox li ~ li { margin-left: 32px;}
 
 /* tooltipBtn */
-.tooltipBtn { margin: -2px 4px 0 4px;}
+.tooltipBtn { display: flex; align-items: center; margin: -2px 4px 0 4px;}
 .tooltipBtn i { display: inline-block; width: 24px; height: 24px; text-indent: -99999px; background: url(../images/common/ico_help.svg) no-repeat center/cover;}
 
 /* dateGroup */
 .dateGroup { margin-top: 9px; border-top: 2px solid #333; border-bottom: 1px solid #333;}
 .dateGroup .head { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #dbdbdb;}
-.dateGroup .head b { padding: 16px 24px; background-color: #f7f7f7;}
+.dateGroup .head b { padding: 23px 24px; border-right: 1px solid #DBDBDB ; background-color: #f7f7f7;}
+.dateGroup .head .flexLeft { padding-right: 16px;}
 .dateGroup .body { padding: 40px 0; text-align: center;} 
 .dateGroup .body p { line-height: 24px;}
 .dateGroup .body .in { margin-top: 24px;}
@@ -581,11 +584,16 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .dateGroup.otherStyle .body { padding-bottom: 0;}
 .dateGroup.otherStyle2 { margin-top: 0; border: none;}
 .dateGroup.otherStyle3 { border-bottom: none;}
+.dateGroup.otherStyle4 { border-bottom: none;}
+.dateGroup.otherStyle4 .head { justify-content: inherit;}
+.dateGroup.otherStyle4 .head b { display: flex; align-items: center; margin-right: 16px; padding-right: 60px;}
 .dateGroup.pdB0 .body { padding-bottom: 0;}
 
 /* paragraphGroup */
 .paragraphGroup p { line-height: 24px;}
 .paragraphGroup p ~ p { margin-top: 20px;}
+
+.paragraphGroup.lhSmall p ~ p { margin-top: 16px;}
 
 /* 탭 */
 .aTab { display: flex; align-items: center; margin-top: 40px;}
@@ -624,6 +632,8 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .roundMyBox .totalBox .b.lineSkyblue { border-color: #3691f9;}
 
 /* 라운드 회색 박스 */
+.grayBoxS { padding: 24px 16px; font-size: 14px; background-color: #F7F7F7; border-radius: 8px;}
+.grayBoxS .paragraphGroup p { line-height: 21px;}
 .grayBoxR { padding: 24px 32px; background-color: #F7F7F7; border-radius: 8px;}
 
 
@@ -735,15 +745,6 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .tableBody table td .calendarBody button { width: 32px; height: 32px;}
 .tableBody table td .block { display: block; text-align: left;}
 .tableBody table td.empty { padding: 40px 0;}
-.tableBody table tr.off td { background-color: #f7f7f7;}
-.tableBody table tr.off .colorBlue { color: inherit !important;}
-.tableBody table td table { margin-top: 8px; border-top: 2px solid #333;}
-.tableBody table td table th:first-child { border-left: none;}
-.tableBody table td table td:first-child { border-left: none;}
-.tableBody table td table td:last-child { border-right: none;}
-.tableBody table td table td { padding: 10px 13px;}
-.tableBody table td table td input[type=text],
-.tableBody table td table td select { width: 100%;}
 .tableBody table tfoot td { background-color: #F4F7FC;}
 .tableBody table.vaTop td { vertical-align: top;}
 .tableBody a .new { display: inline-flex; justify-content: center; align-items: center; width: 28px; height: 16px; margin: -2px 0 0 4px; font-size: 8px; font-weight: 700; font-style: normal; color: #ee0700; vertical-align: middle; border: 1px solid #ee0700;}
@@ -757,6 +758,14 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .tableBody.padding12 table td { padding: 12px;}
 .tableBody.color333 th,
 .tableBody.color333 td { color: #333;}
+.tableBody.notBorder table { border-bottom: 1px solid #dbdbdb;}
+.tableBody.notBorder table td { border: initial; border-top: 1px solid #dbdbdb; border-left: 1px solid #dbdbdb;}
+.tableBody.notBorder table tr.off td { border: inherit; border-top: 1px dashed #dbdbdb; border-left: 1px solid #dbdbdb; background-color: #f7f7f7;}
+/* .tableBody.notBorder table tr.off .colorBlue { color: inherit !important;} */
+.tableBody.notBorder table tr.off.subOff td { border-top: 1px solid #dbdbdb;}
+.tableBody.notBorder table tr.bgPurple td { background-color: #F4F7FC;}
+
+
 .tableFooterControl { height: 48px; padding-right: 12px; background-color: #f7f7f7;}
 .tableFooterControl button ~ button { margin-left: 8px;}
 
@@ -766,8 +775,8 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .hTableBody table td { padding: 12px 15px; line-height: 24px; border-left: 1px solid #dbdbdb; border-bottom: 1px solid #dbdbdb;}
 .hTableBody table td .post input { width: 120px;}
 .hTableBody table td .post button { margin-left: 4px;}
-.hTableBody table td .address input:first-child { width: 70%;}
-.hTableBody table td .address input:last-child { width: 30%; margin-left: 4px;}
+.hTableBody table td .address input:first-child { width: 64%;}
+.hTableBody table td .address input:last-child { width: 36%; margin-left: 4px;}
 .hTableBody table td .address.mt { margin-top: 6px;}
 .hTableBody table td .phone select,
 .hTableBody table td .phone span { width: 120px;}
@@ -949,6 +958,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .textCompleteGroup { margin-top: 16px; text-align: center;}
 .textCompleteGroup .text { font-size: 19px; color: #000; line-height: 29px;}
 .textCompleteGroup .sideText { margin-top: 8px; padding: 0 60px; line-height: 24px;} 
+.lineBreakeBorder { margin-top: 24px; padding-top: 24px; border-top: 1px solid #DBDBDB;}
 
 /* 전체 메뉴 */
 #allMenu_pop { padding: 0; background-color: #fff;}
@@ -1278,17 +1288,22 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 **********************************************/
 
 /* 연계신청 */
-.targetBody .targetOff { display: flex; justify-content: center; margin-top: 40px; padding: 32px 0; background-color: #f7f7f7; border-radius: 8px;}
-.targetBody .targetOff .icon { width: 64px; height: 64px; background: url(../images/common/ico_notapplication.svg) no-repeat center/cover;}
-.targetBody .targetOff .textGroup { text-align: center;}
-.targetBody .targetOff .textGroup h4 span { font-size: 24px;}
-.targetBody .targetOff .textGroup h4 span.normal { font-size: 16px; font-weight: 400;}
-.targetBody .targetOff .textGroup h4 span.text { position: relative; margin: 0 -2px; padding: 0 2px; font-weight: 700;}
-.targetBody .targetOff .textGroup h4 span.text::before { content: ''; display: block; position: absolute; left: 0; bottom: 0; width: 100%; height: 14px; background-color: #333; opacity: 0.1;}
-.targetBody .targetOff .textGroup p { margin-top: 12px; font-size: 14px; color: #767676; line-height: 21px;}
-.targetBody .targetOff .textGroup .btn { margin-top: 24px;}
+.targetBody .targetOff { margin-top: 40px; padding: 32px 120px; background-color: #f7f7f7; border-radius: 8px;}
+.targetBody .targetOff .toBody { display: flex; justify-content: center; align-items: center;}
+.targetBody .targetOff .toBody >.icon { width: 64px; height: 64px; background: url(../images/common/ico_notapplication.svg) no-repeat center/cover;}
+.targetBody .targetOff .toBody .textGroup { text-align: center;}
+.targetBody .targetOff .toBody .textGroup h4 span { font-size: 24px;}
+.targetBody .targetOff .toBody .textGroup h4 span.normal { font-size: 16px; font-weight: 400;}
+.targetBody .targetOff .toBody .textGroup h4 span.text { position: relative; margin: 0 -2px; padding: 0 2px; font-weight: 700;}
+.targetBody .targetOff .toBody .textGroup h4 span.text::before { content: ''; display: block; position: absolute; left: 0; bottom: 0; width: 100%; height: 14px; background-color: #333; opacity: 0.1;}
+.targetBody .targetOff .toBody .textGroup p { margin-top: 12px; font-size: 14px; color: #767676; line-height: 21px;}
+.targetBody .targetOff .toBody .textGroup .btn { margin-top: 24px;}
+.targetBody .targetOff .subLight { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; margin-top: 16px; padding-top: 16px; font-size: 14px; border-top: 1px solid #DBDBDB;}
+.targetBody .targetOff .subLight .tooltipBtn { margin: -2px 8px 0;}
+.targetBody .targetOff .subLight .tooltipBtn .colorBlue { margin-right: 4px;}
+
 .targetBody .targetOn { display: flex; justify-content: center; margin-top: 40px; padding: 32px 0; background-color: #f4f7fc; border-radius: 8px;}
-.targetBody .targetOn .icon { width: 64px; height: 64px; background: url(../images/common/ico_application.svg) no-repeat center/cover;}
+.targetBody .targetOn >.icon { width: 64px; height: 64px; background: url(../images/common/ico_application.svg) no-repeat center/cover;}
 .targetBody .targetOn .textGroup { padding-top: 4px; text-align: center;}
 .targetBody .targetOn .textGroup h4 span { font-size: 24px;}
 .targetBody .targetOn .textGroup h4 span.normal { font-size: 16px; font-weight: 400;}
@@ -1297,6 +1312,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .targetBody .targetOn .textGroup .button { margin-top: 24px;}
 .targetBody .sameStyle { margin-top: 40px;}
 .targetBody .sameStyle .tableBody { margin-top: 0;}
+.targetBody .gtm .lineButton { margin-left: 16px;}
 
 .agreeBody { margin-top: 40px;}
 
@@ -1308,9 +1324,11 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .proposalBody .flexGroup dl { display: flex; align-items: center; border: 1px solid #dbdbdb;}
 .proposalBody .flexGroup dl dt { padding: 11px 24px 10px; font-weight: 700; border-right: 1px solid #dbdbdb; background-color: #f7f7f7;}
 .proposalBody .flexGroup dl dd { padding: 11px 17px 10px;}
-.proposalBody h4.deText { margin-top: 24px; font-size: 24px; text-align: center;}
+.proposalBody h4.deText { font-size: 24px; text-align: center;}
 .proposalBody .sign1 { margin-top: 40px; padding-top: 40px; text-align: center; border-top: 1px solid #dbdbdb;}
 .proposalBody .sign2 { margin-top: 40px; text-align: center;}
+.proposalBody .sign3 { margin-top: 40px; font-size: 19px; text-align: center;}
+.proposalBody .sign3 .p ~ .p { margin-top: 8px;}
 .proposalBody .text1 { margin-top: 24px; padding-left: 24px;}
 .proposalBody .text1 p { margin-top: 16px;}
 

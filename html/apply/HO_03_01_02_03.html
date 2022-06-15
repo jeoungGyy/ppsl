@@ -47,430 +47,374 @@
 							<span class="line"></span>
 						</div>
 
-						<hr class="space style3 onlyMobile">
+						<hr class="space style onlyMobile">
 
 						<!-- 연금가입내역 확인 -->
 						<div class="m_toggleArea">
-							<div class="onlyMobile">
-								<button class="flexLeft spaceBetween toggleGroup active" title="확장됨">
-									<b class="defaultH4">연금가입내역 확인</b>
-									<span class="toggleBtn onlyMobile"><i>연금가입내역 토글</i></span>
-								</button>
+							<div class="toggleGroupNot">
+								<h4 class="defaultH4 pcmt40">연금가입내역 확인</h4>
 							</div>
 
-							<div class="target">
-								<!-- PC -->
-								<div class="onlyPC">
-									<div class="subFill pcmt40">
-										<h4 class="defaultH4">연금가입내역 확인</h4>
-									</div>
-									
-									<div class="tableBody">
-										<table>
-											<caption>연금가입내역 확인 : 선택, 연금기관, 기간 구분, 상세내역로 구성</caption>
-											<colgroup>
-												<col style="width: 64px;">
-												<col style="width: 112px;">
-												<col style="width: 128px;">
-												<col>
-											</colgroup>
-											<thead>
-												<tr>
-													<th scope="col">선택</th>
-													<th scope="col">연금기관</th>
-													<th scope="col">기간 구분</th>
-													<th scope="col">상세내역</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>
-														<div class="groupBox single">
-															<input type="checkbox" name="checkbox" title="첫번째 연금가입내역 선택">
-														</div>
-													</td>
-													<td>국민연금공단</td>
-													<td>가입기간</td>
-													<td>
-														<span class="block">2년 6월  ( YYYY - MM - DD ~ YYYY - MM - DD )</span>
-														<table>
-															<caption>첫번째 연금가입내역 상세내역 : 연계신청가능 월수, 퇴직일시금 수령, 반납금 납부방법, 반납금 납부횟수로 구성</caption>
-															<colgroup>
-																<col style="width: 25%;">
-																<col style="width: 25%;">
-																<col style="width: 25%;">
-																<col>
-															</colgroup>
-															<thead>
-																<tr>
-																	<th><span class="colorBlue">연계신청가능 월수</span></th>
-																	<th>퇴직일시금 수령</th>
-																	<th>반납금 납부방법</th>
-																	<th>반납금 납부횟수</th>
-																</tr>
-															</thead>
-															<tbody>
-																<tr>
-																	<td><span class="colorBlue">30</span></td>
-																	<td>미수령</td>
-																	<td>-</td>
-																	<td>-</td>
-																</tr>
-															</tbody>
-														</table>
-													</td>
-												</tr>
-												<tr class="off">
-													<td></td>
-													<td>공무원연금</td>
-													<td>재직기간<br>
-														(사학연금으로 합산)</td>
-													<td>
-														<span class="block">2년 6월  ( YYYY - MM - DD ~ YYYY - MM - DD )</span>
-														<table>
-															<caption>두번째 연금가입내역 상세내역 : 연계신청가능 월수, 퇴직일시금 수령, 반납금 납부방법, 반납금 납부횟수로 구성</caption>
-															<colgroup>
-																<col style="width: 25%;">
-																<col style="width: 25%;">
-																<col style="width: 25%;">
-																<col>
-															</colgroup>
-															<thead>
-																<tr>
-																	<th><span class="colorBlue">연계신청가능 월수</span></th>
-																	<th>퇴직일시금 수령</th>
-																	<th>반납금 납부방법</th>
-																	<th>반납금 납부횟수</th>
-																</tr>
-															</thead>
-															<tbody>
-																<tr>
-																	<td><span class="colorBlue">30</span></td>
-																	<td>미수령</td>
-																	<td class="vat">
-																		<select title="반납금 납부방법 선택" disabled>
-																			<option disabled selected>선택</option>
-																			<option>텍스트</option>
-																		</select>
-																	</td>
-																	<td class="vat">
-																		<select title="반납금 납부횟수 선택" disabled>
-																			<option disabled selected>선택</option>
-																			<option>텍스트</option>
-																		</select>
-																	</td>
-																</tr>
-															</tbody>
-														</table>
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<div class="groupBox single">
-															<input type="checkbox" name="checkbox" title="세번째 연금가입내역 선택">
-														</div>
-													</td>
-													<td>사립학교 교직원연금공단</td>
-													<td>재직기간</td>
-													<td>
-														<span class="block">2년 6월  ( YYYY - MM - DD ~ YYYY - MM - DD )</span>
-														<table>
-															<caption>세번째 연금가입내역 상세내역 : 연계신청가능 월수, 퇴직일시금 수령, 반납금 납부방법, 반납금 납부횟수로 구성</caption>
-															<colgroup>
-																<col style="width: 25%;">
-																<col style="width: 25%;">
-																<col style="width: 25%;">
-																<col>
-															</colgroup>
-															<thead>
-																<tr>
-																	<th><span class="colorBlue">연계신청가능 월수</span></th>
-																	<th>퇴직일시금 수령</th>
-																	<th>반납금 납부방법</th>
-																	<th>반납금 납부횟수</th>
-																</tr>
-															</thead>
-															<tbody>
-																<tr>
-																	<td><span class="colorBlue">30</span></td>
-																	<td>수령</td>
-																	<td class="vat">
-																		<select title="반납금 납부방법 선택">
-																			<option disabled selected>선택</option>
-																			<option>텍스트</option>
-																		</select>
-																		<div class="requireText">
-																			<i></i>
-																			<span>선택해주세요.</span>
-																		</div>
-																	</td>
-																	<td class="vat">
-																		<select title="반납금 납부횟수 선택" disabled>
-																			<option disabled selected>선택</option>
-																			<option>텍스트</option>
-																		</select>
-																	</td>
-																</tr>
-															</tbody>
-														</table>
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<div class="groupBox single">
-															<input type="checkbox" name="checkbox" title="네번째 연금가입내역 선택">
-														</div>
-													</td>
-													<td>별정우체국 연금</td>
-													<td>재직기간</td>
-													<td>
-														<span class="block">2년 6월  ( YYYY - MM - DD ~ YYYY - MM - DD )</span>
-														<table>
-															<caption>네번째 연금가입내역 상세내역 : 연계신청가능 월수, 퇴직일시금 수령, 반납금 납부방법, 반납금 납부횟수로 구성</caption>
-															<colgroup>
-																<col style="width: 25%;">
-																<col style="width: 25%;">
-																<col style="width: 25%;">
-																<col>
-															</colgroup>
-															<thead>
-																<tr>
-																	<th><span class="colorBlue">연계신청가능 월수</span></th>
-																	<th>퇴직일시금 수령</th>
-																	<th>반납금 납부방법</th>
-																	<th>반납금 납부횟수</th>
-																</tr>
-															</thead>
-															<tbody>
-																<tr>
-																	<td><span class="colorBlue">30</span></td>
-																	<td>수령</td>
-																	<td class="vat">
-																		<select title="반납금 납부방법 선택">
-																			<option disabled selected>선택</option>
-																			<option>텍스트</option>
-																		</select>
-																		<div class="requireText success">
-																			<i></i>
-																			<span>선택되었습니다.</span>
-																		</div>
-																	</td>
-																	<td class="vat">
-																		<select title="반납금 납부횟수 선택">
-																			<option disabled selected>선택</option>
-																			<option>텍스트</option>
-																		</select>
-																		<div class="requireText">
-																			<i></i>
-																			<span>선택해주세요.</span>
-																		</div>
-																	</td>
-																</tr>
-															</tbody>
-														</table>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-								<!-- //PC -->
-
-								<!-- Mobile -->
-								<div class="onlyMobile">
-									<ul class="mListMulti">
-										<li class="active"> <!-- 체크박스 체크시 active 추가 -->
-											<div class="groupBox">
-												<div class="checkboxBox">
-													<input type="checkbox" id="m_chechbox1" name="m_checkbox" title="첫번째 연금가입내역 선택" checked>
-													<label for="m_chechbox1">공무원연금</label>
-												</div>
-											</div>
-											<div class="roundBoxGray sp mt">
-												<span>가입기간</span>
-												<div class="flexLeft spaceBetween">
-													<b class="listDate">2년 6월<br>( YYYY - MM - DD ~ YYYY - MM - DD )</b>
-												</div>
-											</div>
-											<ul class="msList">
-												<li>
-													<span class="colorBlue">연계신청가능 월수</span>
-													<b class="colorBlue">30</b>
-												</li>
-												<li>
-													<span>퇴직일시금 수령</span>
-													<b>미수령</b>
-												</li>
-												<li class="block lineBreak">
-													<b>반납금 납부방법</b>
-													<span class="mt">-</span>
-												</li>
-												<li class="block">
-													<b>반납금 납부횟수</b>
-													<span class="mt">-</span>
-												</li>
-											</ul>
-										</li>
-										<li class="off">
-											<div class="groupBox">
-												<h5 class="defaultH5">공무원연금</h5>
-											</div>
-											<div class="roundBoxGray sp mt">
-												<span>재직기간(사학연금으로합산)</span>
-												<div class="flexLeft spaceBetween">
-													<b class="listDate">2년 6월<br>( YYYY - MM - DD ~ YYYY - MM - DD )</b>
-												</div>
-											</div>
-											<ul class="msList">
-												<li>
-													<span class="colorBlue">연계신청가능 월수</span>
-													<b class="colorBlue">30</b>
-												</li>
-												<li>
-													<span>퇴직일시금 수령</span>
-													<b>수령</b>
-												</li>
-												<li class="block lineBreak">
-													<b>반납금 납부방법</b>
-													<span class="mt">
-														<select title="반납금 납부방법 선택" disabled>
-															<option disabled selected>선택</option>
-															<option>텍스트</option>
-														</select>
-													</span>
-												</li>
-												<li class="block">
-													<b>반납금 납부횟수</b>
-													<span class="mt">
-														<select title="반납금 납부횟수 선택" disabled>
-															<option disabled selected>선택</option>
-															<option>텍스트</option>
-														</select>
-													</span>
-												</li>
-											</ul>
-										</li>
-										<li>
-											<div class="groupBox">
-												<div class="checkboxBox">
-													<input type="checkbox" id="m_chechbox1" name="m_checkbox" title="세번째 연금가입내역 선택">
-													<label for="m_chechbox1">사립학교교직원연금공단</label>
-												</div>
-											</div>
-											<div class="roundBoxGray sp mt">
-												<span>재직기간</span>
-												<div class="flexLeft spaceBetween">
-													<b class="listDate">2년 6월<br>( YYYY - MM - DD ~ YYYY - MM - DD )</b>
-												</div>
-											</div>
-											<ul class="msList">
-												<li>
-													<span class="colorBlue">연계신청가능 월수</span>
-													<b class="colorBlue">30</b>
-												</li>
-												<li>
-													<span>퇴직일시금 수령</span>
-													<b>수령</b>
-												</li>
-												<li class="block lineBreak">
-													<b>반납금 납부방법</b>
-													<span class="mt">
-														<select title="반납금 납부방법 선택">
-															<option disabled selected>선택</option>
-															<option>텍스트</option>
-														</select>
-													</span>
+							<!-- PC -->
+							<div class="onlyPC">
+								<div class="tableBody notBorder">
+									<table>
+										<caption>연금가입내역 확인 : 선택, 연금기관, 재직기간 합산, 가입•재직(복무) 기간, 연계신청 가능 개월수, 퇴직일시금 수령, 반납금 납부방법, 반납금 납부횟수로 구성</caption>
+										<colgroup>
+											<col style="width: 65px;">
+											<col>
+											<col style="width: 125px;">
+											<col style="width: 170px;">
+											<col style="width: 140px;">
+											<col style="width: 140px;">
+											<col style="width: 140px;">
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col" rowspan="2">선택</th>
+												<th scope="col" rowspan="2">연금기관</th>
+												<th scope="col" rowspan="2">재직기간 합산</th>
+												<th id="listA" colspan="4">가입•재직(복무) 기간</th>
+											</tr>
+											<tr>
+												<th id="listB" class="bdt"><b class="colorBlue">연계신청 가능 개월수</b></th>
+												<th id="listC" class="bdt">퇴직일시금 수령</th>
+												<th id="listD" class="bdt">반납금 납부방법</th>
+												<th id="listE" class="bdt">반납금 납부횟수</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td rowspan="2">
+													<div class="groupBox single">
+														<input type="checkbox" name="checkbox" title="첫번째 연금가입내역 선택">
+													</div>
+												</td>
+												<td rowspan="2" class="textLeft">국민연금공단</td>
+												<td rowspan="2"></td>
+												<td headers="listA" colspan="4">2년 6월  ( YYYY - MM - DD ~ YYYY - MM - DD )</td>
+											</tr>
+											<tr>
+												<td headers="listB"><span class="colorBlue">30</span></td>
+												<td headers="listC">미수령</td>
+												<td headers="listD" class="vat">-</td>
+												<td headers="listE" class="vat">-</td>
+											</tr>
+											<tr>
+												<td rowspan="2">
+													<div class="groupBox single">
+														<input type="checkbox" name="checkbox" title="두번째 연금가입내역 선택">
+													</div>
+												</td>
+												<td rowspan="2" class="textLeft">사립학교교직원 연금공단</td>
+												<td rowspan="2"></td>
+												<td headers="listA" colspan="4">2년 6월  ( YYYY - MM - DD ~ YYYY - MM - DD )</td>
+											</tr>
+											<tr>
+												<td headers="listB"><span class="colorBlue">45</span></td>
+												<td headers="listC">수령</td>
+												<td headers="listD" class="vat">
+													<select title="반납금 납부방법 선택">
+														<option disabled selected>선택</option>
+														<option>텍스트</option>
+													</select>
 													<div class="requireText">
 														<i></i>
 														<span>선택해주세요.</span>
 													</div>
-												</li>
-												<li class="block">
-													<b>반납금 납부횟수</b>
-													<span class="mt">
-														<select title="반납금 납부횟수 선택" disabled>
-															<option disabled selected>선택</option>
-															<option>텍스트</option>
-														</select>
-													</span>
-												</li>
-											</ul>
-										</li>
-										<li>
-											<div class="groupBox">
-												<div class="checkboxBox">
-													<input type="checkbox" id="m_chechbox1" name="m_checkbox" title="네번째 연금가입내역 선택">
-													<label for="m_chechbox1">별정우체국 연금</label>
-												</div>
-											</div>
-											<div class="roundBoxGray sp mt">
-												<span>재직기간</span>
-												<div class="flexLeft spaceBetween">
-													<b class="listDate">2년 6월<br>( YYYY - MM - DD ~ YYYY - MM - DD )</b>
-												</div>
-											</div>
-											<ul class="msList">
-												<li>
-													<span class="colorBlue">연계신청가능 월수</span>
-													<b class="colorBlue">30</b>
-												</li>
-												<li>
-													<span>퇴직일시금 수령</span>
-													<b>수령</b>
-												</li>
-												<li class="block lineBreak">
-													<b>반납금 납부방법</b>
-													<span class="mt">
-														<select title="반납금 납부방법 선택">
-															<option disabled selected>선택</option>
-															<option>텍스트</option>
-														</select>
-													</span>
+												</td>
+												<td headers="listE" class="vat">
+													<select title="반납금 납부횟수 선택" disabled>
+														<option disabled selected>선택</option>
+														<option>텍스트</option>
+													</select>
+												</td>
+											</tr>
+											<tr class="off">
+												<td rowspan="2">
+													<img src="../../images/common/ico_p.svg" alt="두번째 연금가입내역의 첫번째 내역">
+												</td>
+												<td rowspan="2" class="textLeft">공무원연금</td>
+												<td rowspan="2">사학연금으로 합산</td>
+												<td headers="listA" colspan="4">2년 6월  ( YYYY - MM - DD ~ YYYY - MM - DD )</td>
+											</tr>
+											<tr class="off subOff">
+												<td headers="listB"><span class="colorBlue">0</span></td>
+												<td headers="listC">수령</td>
+												<td headers="listD" class="vat">-</td>
+												<td headers="listE" class="vat">-</td>
+											</tr>
+											<tr class="off">
+												<td rowspan="2">
+													<img src="../../images/common/ico_p.svg" alt="두번째 연금가입내역의 두번째 내역">
+												</td>
+												<td rowspan="2" class="textLeft">공무원연금</td>
+												<td rowspan="2">사학연금으로 합산</td>
+												<td headers="listA" colspan="4">2년 6월  ( YYYY - MM - DD ~ YYYY - MM - DD )</td>
+											</tr>
+											<tr class="off subOff">
+												<td headers="listB"><span class="colorBlue">0</span></td>
+												<td headers="listC">수령</td>
+												<td headers="listD" class="vat">-</td>
+												<td headers="listE" class="vat">-</td>
+											</tr>
+											<tr>
+												<td rowspan="2">
+													<div class="groupBox single">
+														<input type="checkbox" name="checkbox" title="세번째 연금가입내역 선택">
+													</div>
+												</td>
+												<td rowspan="2" class="textLeft">별정우체국 연금</td>
+												<td rowspan="2"></td>
+												<td headers="listA" colspan="4">2년 6월  ( YYYY - MM - DD ~ YYYY - MM - DD )</td>
+											</tr>
+											<tr>
+												<td headers="listB"><span class="colorBlue">22</span></td>
+												<td headers="listC">수령</td>
+												<td headers="listD" class="vat">
+													<select title="반납금 납부방법 선택">
+														<option disabled selected>선택</option>
+														<option>텍스트</option>
+													</select>
 													<div class="requireText success">
 														<i></i>
 														<span>선택되었습니다.</span>
 													</div>
-												</li>
-												<li class="block">
-													<b>반납금 납부횟수</b>
-													<span class="mt">
-														<select title="반납금 납부횟수 선택">
-															<option disabled selected>선택</option>
-															<option>텍스트</option>
-														</select>
-													</span>
+												</td>
+												<td headers="listE" class="vat">
+													<select title="반납금 납부횟수 선택">
+														<option disabled selected>선택</option>
+														<option>텍스트</option>
+													</select>
 													<div class="requireText">
 														<i></i>
 														<span>선택해주세요.</span>
 													</div>
-												</li>
-											</ul>
-										</li>
-									</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
-								<!-- //Mobile -->
+							</div>
+							<!-- //PC -->
 
-								<div class="requireText">
-									<i></i>
-									<span>연계신청 할 2개 이상 기관을 선택 해 주세요.</span>
-								</div>
-								<div class="requireText error">
-									<i></i>
-									<span>연계신청 할 2개 이상 기관을 선택 해 주세요.</span>
-								</div>
-								<div class="requireText success">
-									<i></i>
-									<span>연계신청 할 2개 이상 기관이 선택되었습니다.</span>
-								</div>
+							<!-- Mobile -->
+							<div class="onlyMobile">
+								<ul class="mListMulti">
+									<li class="active"> <!-- 체크박스 체크시 active 추가 -->
+										<div class="groupBox">
+											<div class="checkboxBox">
+												<input type="checkbox" id="m_chechbox1" name="m_checkbox" title="첫번째 연금가입내역 선택" checked>
+												<label for="m_chechbox1">국민연금</label>
+											</div>
+										</div>
+										<div class="roundBoxGray sp mt">
+											<span>가입기간</span>
+											<div class="flexLeft spaceBetween">
+												<b class="listDate">2년 6월<br>( YYYY - MM - DD ~ YYYY - MM - DD )</b>
+											</div>
+										</div>
+										<ul class="msList">
+											<li>
+												<span class="colorBlue">연계신청가능 월수</span>
+												<b class="colorBlue">30</b>
+											</li>
+											<li>
+												<span>퇴직일시금 수령</span>
+												<b>미수령</b>
+											</li>
+											<li>
+												<b>반납금 납부방법</b>
+												<span>-</span>
+											</li>
+											<li>
+												<b>반납금 납부횟수</b>
+												<span>-</span>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<div class="groupBox">
+											<div class="checkboxBox">
+												<input type="checkbox" id="m_chechbox2" name="m_checkbox" title="두번째 연금가입내역 선택">
+												<label for="m_chechbox2">사립학교교직원연금공단</label>
+											</div>
+										</div>
+										<div class="roundBoxGray sp mt">
+											<span>재직(복무) 기간</span>
+											<div class="flexLeft spaceBetween">
+												<b class="listDate">2년 6월<br>( YYYY - MM - DD ~ YYYY - MM - DD )</b>
+											</div>
+										</div>
+										<ul class="msList">
+											<li>
+												<span class="colorBlue">연계신청가능 월수</span>
+												<b class="colorBlue">45</b>
+											</li>
+											<li>
+												<span>퇴직일시금 수령</span>
+												<b>수령</b>
+											</li>
+											<li class="block lineBreak">
+												<b>반납금 납부방법</b>
+												<span class="mt">
+													<select title="반납금 납부방법 선택">
+														<option disabled selected>선택</option>
+														<option>텍스트</option>
+													</select>
+												</span>
+												<div class="requireText">
+													<i></i>
+													<span>선택해주세요.</span>
+												</div>
+											</li>
+											<li class="block">
+												<b>반납금 납부횟수</b>
+												<span class="mt">
+													<select title="반납금 납부횟수 선택" disabled>
+														<option disabled selected>선택</option>
+														<option>텍스트</option>
+													</select>
+												</span>
+											</li>
+										</ul>
+
+										<ul class="grayBoxList momt16">
+											<li>
+												<div class="flexLeft">
+													<span class="treeIco"><img src="../../images/common/ico_p.svg" alt="두번째 연금가입내역의 첫번째 내역"></span>
+													<h6 class="name">공무원연금</h6>
+												</div>
+												<div class="roundBoxGray border sp mt">
+													<span>재직기간(사학연금으로합산)</span>
+													<div class="flexLeft spaceBetween">
+														<b class="listDate">2년 6월<br>( YYYY - MM - DD ~ YYYY - MM - DD )</b>
+													</div>
+												</div>
+												
+												<ul class="msList">
+													<li>
+														<label class="colorBlue">연계신청 가능 개월수</label>
+														<b class="colorBlue">0</b>
+													</li>
+													<li>
+														<label>퇴직일시금 수령</label>
+														<b>수령</b>
+													</li>
+													<li>
+														<label>반납금 납부방법</label>
+														<b>-</b>
+													</li>
+													<li>
+														<label>반납금 납부횟수</label>
+														<b>-</b>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<div class="flexLeft">
+													<span class="treeIco"><img src="../../images/common/ico_p.svg" alt="두번째 연금가입내역의 두번째 내역"></span>
+													<h6 class="name">공무원연금</h6>
+												</div>
+												<div class="roundBoxGray border sp mt">
+													<span>재직기간(사학연금으로합산)</span>
+													<div class="flexLeft spaceBetween">
+														<b class="listDate">2년 6월<br>( YYYY - MM - DD ~ YYYY - MM - DD )</b>
+													</div>
+												</div>
+												
+												<ul class="msList">
+													<li>
+														<label class="colorBlue">연계신청 가능 개월수</label>
+														<b class="colorBlue">0</b>
+													</li>
+													<li>
+														<label>퇴직일시금 수령</label>
+														<b>수령</b>
+													</li>
+													<li>
+														<label>반납금 납부방법</label>
+														<b>-</b>
+													</li>
+													<li>
+														<label>반납금 납부횟수</label>
+														<b>-</b>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<div class="groupBox">
+											<div class="checkboxBox">
+												<input type="checkbox" id="m_chechbox3" name="m_checkbox" title="세번째 연금가입내역 선택">
+												<label for="m_chechbox3">별정우체국 연금</label>
+											</div>
+										</div>
+										<div class="roundBoxGray sp mt">
+											<span>재직기간</span>
+											<div class="flexLeft spaceBetween">
+												<b class="listDate">2년 6월<br>( YYYY - MM - DD ~ YYYY - MM - DD )</b>
+											</div>
+										</div>
+										<ul class="msList">
+											<li>
+												<span class="colorBlue">연계신청가능 월수</span>
+												<b class="colorBlue">22</b>
+											</li>
+											<li>
+												<span>퇴직일시금 수령</span>
+												<b>수령</b>
+											</li>
+											<li class="block lineBreak">
+												<b>반납금 납부방법</b>
+												<span>
+													<select title="반납금 납부방법 선택">
+														<option disabled selected>선택</option>
+														<option>텍스트</option>
+													</select>
+												</span>
+												<div class="requireText success">
+													<i></i>
+													<span>선택되었습니다.</span>
+												</div>
+											</li>
+											<li class="block">
+												<b>반납금 납부횟수</b>
+												<span>
+													<select title="반납금 납부횟수 선택">
+														<option disabled selected>선택</option>
+														<option>텍스트</option>
+													</select>
+												</span>
+												<div class="requireText">
+													<i></i>
+													<span>선택해주세요.</span>
+												</div>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<!-- //Mobile -->
+
+							<div class="requireText">
+								<i></i>
+								<span>연계신청 할 2개 이상 기관을 선택 해 주세요.</span>
+							</div>
+							<div class="requireText error">
+								<i></i>
+								<span>연계신청 할 2개 이상 기관을 선택 해 주세요.</span>
+							</div>
+							<div class="requireText success">
+								<i></i>
+								<span>연계신청 할 2개 이상 기관이 선택되었습니다.</span>
 							</div>
 						</div>
 						<!-- //연금가입내역 확인 -->
 
-						<hr class="space style2 onlyMobile">
-
-						<div class="btnsGroup flexEnd m_mt0">
+						<div class="btnsGroup flexEnd m_styleOther momt32">
 							<button type="button" class="button h48 gray">이전</button>
-							<button type="button" class="button h48 blue" disabled>다음</button>
 							<button type="button" class="button h48 blue">다음</button>
 						</div>
 

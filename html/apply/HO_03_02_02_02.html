@@ -21,34 +21,185 @@
 				<div id="contentLink" class="contents">
 					<header class="contentsHeader">
 						<div class="title">
-							<h3>연계신청 등록</h3>
-							<p>연계신청은 다음 단계로 이루어집니다.</p>
+							<h3>신청정보변경</h3>
+							<p>신청인 정보( 연락처, 주소, 이메일)와  퇴직일시금 수령 하신 경우 반납금 납부 방법, 납부횟수 변경 가능하십니다.</p>
 						</div>
 						<script src="../../include/location.js"></script> <!-- include: 공통 현재위치 -->
 					</header>
 
-					<div class="proposalBody">
-						<div class="setpBodyStyle">
-							<ul class="stepByStyle">
+					<ul class="guideText blue pcmt40 momt24">
+						<li>연계신청을 한 경우 원칙적으로 취하 할 수 없습니다.</li>
+						<li>연계신청 후 접수중일 경우  신청접수취소 가능합니다.</li>
+					</ul>
+					<div class="stepBody">
+						<!-- 1단계 -->
+						<div class="stepByTxt">
+							접수번호 : <b class="colorBlue">1234568888</b>
+						</div>
+						<ul class="stepBy">
+							<li class="active">
+								<span class="invisible">현재 단계</span>
+								<span class="fontMontserrat">01</span>
+								<span class="fontEliceDigital text">접수<span class="m_block">중</span></span>
+							</li>
+							<li>
+								<span class="fontMontserrat">02</span>
+								<span class="fontEliceDigital text">접수<span class="m_block">완료</span></span>
+							</li>
+							<li>
+								<span class="fontMontserrat">03</span>
+								<span class="fontEliceDigital text">기관<span class="m_block">심사중</span></span>
+							</li>
+							<li>
+								<span class="fontMontserrat">04</span>
+								<span class="fontEliceDigital text">처리<span class="m_block">완료</span></span>
+							</li>
+						</ul>
+						<ul class="guideText mt">
+							<li>접수기관에서 연금담당자가 확인하시면 접수완료로 변경됩니다.</li>
+						</ul>
+						<!-- //1단계 -->
+					</div>
+
+					<!-- 대상자 -->
+					<div class="targetBody">
+						<!-- 완료 -->
+						<div class="targetComplete sameStyle">
+							<!-- PC -->
+							<div class="onlyPC">
+								<div class="tableBody">
+									<table>
+										<caption>연계신청 완료 : 접수방법, 접수번호, 접수일, 내용, 구분, 상태, 처리지사로 구성</caption>
+										<colgroup>
+											<col style="width: 105px;">
+											<col>
+											<col style="width: 130px;">
+											<col style="width: 145px;">
+											<col style="width: 110px;">
+											<col style="width: 140px;">
+											<col style="width: 120px;">
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">접수방법</th>
+												<th scope="col">접수번호</th>
+												<th scope="col">접수일</th>
+												<th scope="col">내용</th>
+												<th scope="col">구분</th>
+												<th scope="col">상태</th>
+												<th scope="col">처리지사</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>인터넷</td>
+												<td>009101000040</td>
+												<td>2006-03-01</td>
+												<td>연계신청서</td>
+												<td>-</td>
+												<td>기관심사중</td>
+												<td><button type="button" class="button h24 lineBlack layerLink">확인</button></td>
+											</tr>
+											<tr>
+												<td>인터넷</td>
+												<td>009101000040</td>
+												<td>2006-03-01</td>
+												<td>연계신청서</td>
+												<td>-</td>
+												<td><span class="colorBlue">처리완료</span></td>
+												<td><button type="button" class="button h24 lineBlack layerLink">확인</button></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!-- //PC -->
+
+							<!-- Mobile -->
+							<div class="onlyMobile m_tableBody mt noBorder">
+								<ul class="mList">
+									<li>
+										<div class="roundBoxGray">
+											<h6 class="fontDefault">접수번호</h6>
+											<div class="flexLeft spaceBetween">
+												<b class="listDate colorBlue">2009101000040</b>
+												<div class="roundText">기관심사중</div>
+											</div>
+											
+											<ul class="msList bdt">
+												<li>
+													<label>접수방법</label>
+													<b>인터넷</b>
+												</li>
+												<li>
+													<label>접수일</label>
+													<b>2006-03-01</b>
+												</li>
+												<li>
+													<label>내용</label>
+													<b>연계신청서</b>
+												</li>
+												<li>
+													<label>구분</label>
+													<b>-</b>
+												</li>
+												<li>
+													<label>처리지사</label>
+													<button type="button" class="button h24 lineBlack layerLink">확인</button>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="roundBoxGray">
+											<h6 class="fontDefault">접수번호</h6>
+											<div class="flexLeft spaceBetween">
+												<b class="listDate colorBlue">2009101000040</b>
+												<div class="roundText blueLine">처리완료</div>
+											</div>
+											
+											<ul class="msList bdt">
+												<li>
+													<label>접수방법</label>
+													<b>인터넷</b>
+												</li>
+												<li>
+													<label>접수일</label>
+													<b>2006-03-01</b>
+												</li>
+												<li>
+													<label>내용</label>
+													<b>연계신청서</b>
+												</li>
+												<li>
+													<label>구분</label>
+													<b>-</b>
+												</li>
+												<li>
+													<label>처리지사</label>
+													<button type="button" class="button h24 lineBlack layerLink">확인</button>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!-- //Mobile -->
+
+							<ul class="guideText mt gtm">
 								<li>
-									<span class="iconRound bgBlue"><i></i></span>
-									<span class="text">신청인정보 입력</span>
-								</li>
-								<li>
-									<span class="iconRound bgBlue"><i></i></span>
-									<span class="text">연금가입내역 확인</span>
-								</li>
-								<li class="active">
-									<span class="invisible">현재 단계</span>
-									<span class="iconRound"><i></i></span>
-									<span class="text">연계신청 완료</span>
+									접수중 단계에서 연계신청 접수 취소 가능합니다.
+									<button type="button" class="lineButton"><span>신청접수 취소</span><i class="arrowRight"></i></button>
 								</li>
 							</ul>
-							<span class="line"></span>
 						</div>
+						<!-- //완료 -->
+					</div>
+					<!-- //대상자 -->
 
-						<hr class="space style3 onlyMobile">
+					<hr class="space style3">
 
+					<div class="proposalBody">
 						<!-- 신청인정보 입력 -->
 						<div class="m_toggleArea">
 							<div class="onlyMobile">
@@ -488,8 +639,7 @@
 									<div class="head">
 										<b>국민연금 가입자 자격을 취득한 날짜</b>
 										<div class="flexLeft alignCenter">
-											<button type="button" class="tooltipBtn m_ml0"><i class="icon">도움말</i></button>
-											<span>YYYY - MM - DD</span>
+											<span>1998-05-10</span>
 										</div>
 									</div>
 									<div class="body">
@@ -498,172 +648,27 @@
 											<span>신청일 : <b>YYYY - MM - DD</b></span>
 											<span>신청인 : <b>김공단</b></span>
 										</div>
-									</div>
-								</div>
-								<div class="dateGroup otherStyle4 pdB0 pcmt40 momt24 m_dBlock">
-									<div class="head">
-										<b>접수기관 <button type="button" class="tooltipBtn"><i class="icon">도움말</i></button></b>
-										<ul class="groupBox inlineGroupBox mt0">
-											<li>
-												<div class="radioBox">
-													<input type="radio" id="radio1_1" name="radio1">
-													<label for="radio1_1">국민연금공단</label>
-												</div>
-											</li>
-											<li>
-												<div class="radioBox">
-													<input type="radio" id="radio1_2" name="radio1">
-													<label for="radio1_2">공무원연금공단</label>
-												</div>
-											</li>
-											<li>
-												<div class="radioBox">
-													<input type="radio" id="radio1_3" name="radio1">
-													<label for="radio1_3">사립학교교직원연금공단</label>
-												</div>
-											</li>
-										</ul>
-									</div>
-									<ul class="guideText mt">
-										<li>대표기관은 기본적으로 최종 근무지가 기본 선택되어 있습니다.</li>
-										<li>변경을 원하시면 해당 기관을 선택 해 주십시오.</li>
-										<li>한곳을 선택하셔도 연계신청 내용은  신청기관에 모두 공유 됩니다.</li>
-									</ul>
-								</div>
-								<div class="roundBox">
-									<h4>행정정보이용 동의서</h4>
-									<div class="default">
-										<p>본인은 이 건 사무처리;와 관련하여 “전자정부밥”제 22조의2 규정에 따라 이용기관의 담당자가 전자적으로 본인의 정보를 이용하는 것에 동의합니다.</p>
-									</div>
-								</div>
-								<ul class="groupBox inlineGroupBox">
-									<li>
-										<div class="radioBox">
-											<input type="radio" id="radio21_1" name="radio21">
-											<label for="radio21_1">동의 합니다.</label>
+										<div class="sign3">
+											<b>국민연금공단</b> <span>이사장 귀하</span>
 										</div>
-									</li>
-									<li>
-										<div class="radioBox">
-											<input type="radio" id="radio21_2" name="radio21">
-											<label for="radio21_2">미동의 합니다.</label>
-										</div>
-									</li>
-								</ul>
+									</div>
+								</div>
 							</div>
 						</div>
 						<!-- //연계신청 완료 -->
 
-						<div class="btnsGroup flexEnd m_styleOther bdt mt">
-							<button type="button" class="button h48 gray">취소</button>
-							<button type="button" class="button h48 blue layerLink" aria-controls="applyGuideLayer">완료</button>
-						</div>
-
 						<script src="../../include/evaluation.js"></script> <!-- include: 공통 평가 -->
 					</div>
+					
 				</div>
 			</div>
 		</div>
-
-
-
-		<!-- 레이어 -->
-		<div id="applyGuideLayer" class="layerPopup" role="dialog" aria-modal="true" aria-labelledby="applyGuideLayerTitle" tabindex="0">
-			<div class="layerBody small applyGuideLayer">
-				<h5 id="applyGuideLayerTitle" class="layerTitle">안내</h5>
-				<div class="layerContent">
-					<div class="paragraphGroup">
-						<p>
-							연계신청을 한 경우에는 원칙적으로 취소/철회할 수 없습니다.
-						</p>
-						<p>
-							다만, 아래 2가지 경우는 가능합니다.<br>
-							1)신청 후 접수 중 일때 연계신청접수 취소 가능합니다.<br>
-							2)연계신청 처리결과 통보서가 도달하기 전에는 철회 가능합니다.
-						</p>
-					</div>
-				</div>
-				<button type="button" class="layerClose"><i>창 닫기</i></button>
-			</div>
-		</div>
-
-		<div id="applyPostLayer" class="layerPopup" role="dialog" aria-modal="true" aria-labelledby="applyPostLayerTitle" tabindex="0">
-			<div class="layerBody normal applyPostLayer">
-				<h5 id="applyPostLayerTitle" class="layerTitle">우편번호 검색</h5>
-				<div class="layerContent">
-					<div class="overflowY" tabindex="0">
-						<div class="postTitle">
-							<span class="t">시도, 시군구 및 도로명을 입력해 주세요. </span>
-							<span class="b">예) 수문길, 중대로 9길</span>
-						</div>
-						<div class="postSearchBox">
-							<div class="twin">
-								<select title="시/도 선택">
-									<option disabled selected>선택</option>
-									<option>텍스트</option>
-								</select>
-								<select title="시/군/구 선택">
-									<option disabled selected>선택</option>
-									<option>텍스트</option>
-								</select>
-							</div>
-							<div class="flexBtnOne">
-								<input type="text" title="우편번호 검색" placeholder="우편번호 검색">
-								<button type="button" class="button h40 black">검색</button>
-							</div>
-						</div>
-
-						<div class="postNumber">
-							<span>총 15건</span>
-						</div>
-						<div class="tableBody">
-							<table>
-								<caption>우편번호 검색 : 주소(도로명), 우편번호로 구성</caption>
-								<colgroup>
-									<col>
-									<col style="width: 104px;">
-								</colgroup>
-								<thead>
-									<tr>
-										<th scope="col">주소(도로명)</th>
-										<th scope="col">우편번호</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td class="textLeft"><button type="button">서울특별시 서초구 반포대로 75 (서초동)</button></td>
-										<td>006670</td>
-									</tr>
-									<tr>
-										<td class="textLeft"><button type="button">서울특별시 서초구 반포대로 33 (서초동, 성진개발빌딩)</button></td>
-										<td>006710</td>
-									</tr>
-									<tr>
-										<td class="textLeft"><button type="button">서울특별시 서초구 반포대로 5 (서초동, 승정빌딩2)</button></td>
-										<td>06656</td>
-									</tr>
-									<tr>
-										<td class="empty" colspan="2">자료가 없습니다. 다른 검색조건을 선택해주세요.</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<ul class="guideText mt">
-							<li>도로명주소가 검색되지 않는 경우는 행정안전부 새주소안내 시스템<br>
-								(http://www.juso.go.kr)에서 확인하시기 바랍니다.</li>
-						</ul>
-					</div>
-				</div>
-				<button type="button" class="layerClose"><i>창 닫기</i></button>
-			</div>
-		</div>
-		<!-- //레이어 -->
 	</div>
 
 	<script src="../../include/footer.js"></script> <!-- include: 공통 푸터 -->
 
 	<script>
-		var depth = [3, 1]; /* 현재메뉴 활성화 용: gnb에 있는 data-menu 값과 일치하게 해주세요. */
+		var depth = [3, 2]; /* 현재메뉴 활성화 용: gnb에 있는 data-menu 값과 일치하게 해주세요. */
 	</script>
 </div>
 </body>

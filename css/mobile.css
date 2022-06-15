@@ -82,9 +82,11 @@
 #wrap .pcmt40 { margin-top: 0;}
 
 #wrap .m_ml0 { margin-left: 0;}
+#wrap .m_ml8 { margin-left: 8px;}
 #wrap .momt0 { margin-top: 0px;}
 #wrap .momt8 { margin-top: 8px;}
 #wrap .momt16 { margin-top: 16px;}
+#wrap .momt20 { margin-top: 20px;}
 #wrap .momt24 { margin-top: 24px;}
 #wrap .momt32 { margin-top: 32px;}
 #wrap .momt40 { margin-top: 40px;}
@@ -103,8 +105,13 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .btnsGroup { padding-top: 24px;}
 .btnsGroup.m_bdt { border-top: 1px solid #333;}
 .btnsGroup.m_styleOther { margin: 0 -15px !important; padding: 24px 16px 0; border-top: 12px solid #f7f7f7;}
+.btnsGroup.m_styleOther.momt32 { margin-top: 32px !important;}
 #wrap .btnsGroup.m_mt0 { margin-top: 0;}
 .btnsGroup.m_mb32 { margin-bottom: 32px;}
+
+
+/* guideText */
+.guideText >li .mlBlock { display: block; margin: 8px 0 0;}
 
 /* searchBody */
 .searchBody { margin-top: 24px; padding: 0; border: solid 1px #dbdbdb; background-color: #fff;}
@@ -188,16 +195,23 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .toggleGroup .toggleBtn i { display: inline-block; width: 16px; height: 16px; text-indent: -99999px; vertical-align: middle; background: url(../images/common/ico_arrow_down.svg) no-repeat center/cover;}
 .toggleGroup.active .toggleBtn i { transform: rotate(-180deg);}
 .targetHidden { display: none;}
+.toggleGroupNot { display: flex; align-items: center; height: 64px;}
 
 /* dateGroup */
 .dateGroup { margin-top: 0; border: none;}
 .dateGroup .head { flex-direction: column; align-items: inherit; padding: 24px 16px; border-bottom: none; background-color: #f7f7f7; border-radius: 8px;}
 .dateGroup .head b { padding: 0;}
-.dateGroup .head .flexLeft { margin-top: 8px;}
+.dateGroup .head .flexLeft { margin-top: 8px; font-weight: 700;}
 .dateGroup .body { padding: 32px 0;}
 .dateGroup .body .in { margin-top: 21px;}
 .dateGroup .body .he { display: flex;}
 .dateGroup .body .he select { flex: 1;}
+.dateGroup.m_line .head { border: 1px solid #DBDBDB; background-color: #fff;}
+.dateGroup.m_line .head b { font-weight: 400; border-right: none; background-color: #fff;}
+.dateGroup.m_dBlock .head { margin: -24px -16px; background-color: #fff;}
+.dateGroup.m_dBlock .head b { margin-bottom: 8px; border-right: none; background-color: #fff;}
+.dateGroup.m_dBlock .inlineGroupBox { flex-wrap: wrap; padding: 0 16px 16px; background-color: #f7f7f7; border-radius: 8px;}
+.dateGroup.m_dBlock .inlineGroupBox li { margin: 16px 32px 0 0;}
 
 /* m_roundGray */
 .m_roundGray { padding: 24px 15px 24px 16px; font-size: 14px; background-color: #f7f7f7; border-radius: 8px;}
@@ -281,7 +295,7 @@ hr.space.style5 { margin: 8px -16px 32px;}
 
 /* m_tableBody */
 .m_tableBody { padding: 24px 16px; border: 1px solid #dbdbdb; border-radius: 8px;}
-.m_tableBody .mList >li ~ li { margin-top: 8px;}
+.mList >li ~ li { margin-top: 8px;}
 .m_tableBody .mList >li h6 { font-size: 14px;}
 .m_tableBody .roundBoxGray { position: relative; padding: 24px 16px; font-size: 14px; background-color: #f7f7f7; border-radius: 8px;}
 .m_tableBody .roundBoxGray >.flexLeft { margin-top: 8px;}
@@ -296,7 +310,7 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .m_tableBody .roundBoxGray.mt { margin-top: 16px;}
 .m_tableBody .roundBoxGray.totalBg { background-color: #F4F7FC;}
 .m_tableBody .mList >li .groupBox label { font-weight: 700;}
-.m_tableBody .mList >li.empty { text-align: center;}
+.m_tableBody .mList >li.empty { padding: 40px 0; text-align: center;}
 .m_tableBody .mList.mt { margin-top: 8px;}
 #wrap .msList { margin-top: 16px; font-size: 14px;}
 .msList >li { display: flex; align-items: baseline; justify-content: space-between;}
@@ -327,10 +341,8 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .mListMulti >li { padding: 24px 16px; border: 1px solid #dbdbdb; border-radius: 8px;}
 .mListMulti >li ~ li { margin-top: 16px;}
 .mListMulti >li .roundBoxGray { padding: 24px 16px; font-size: 14px; background-color: #f7f7f7; border-radius: 8px;}
-/* .mListMulti >li .roundBoxGray >.flexLeft { margin-top: 8px;}
-.mListMulti >li .roundBoxGray >.flexLeft .listDate { display: inline-block; font-size: 14px; line-height: 21px;}
-.mListMulti >li .roundBoxGray >.flexLeft .listText { display: inline-block; font-size: 16px; line-height: 21px;}
-.mListMulti >li .roundBoxGray >.flexLeft .roundText { display: flex; align-items: center; justify-content: center; width: 64px; height: 24px; font-size: 12px; border: 1px solid #333; border-radius: 12px;} */
+.roundBoxGray >.flexLeft .treeIco { margin-right: 8px;}
+.roundBoxGray.border { border: solid 1px #dbdbdb;}
 .mListMulti >li .flexLeft { margin-top: 8px;}
 .mListMulti >li .flexLeft .listDate { display: inline-block; font-size: 14px; line-height: 21px;}
 .mListMulti >li .flexLeft .listText { display: inline-block; font-size: 16px; line-height: 21px;}
@@ -339,8 +351,10 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .mListMulti >li .roundBoxGray.mt { margin-top: 16px;}
 .mListMulti >li .groupBox label { font-weight: 700;}
 .mListMulti >li .grayBoxList >li { margin-top: 8px; padding: 24px 16px; background-color: #f7f7f7; border-radius: 8px;}
+.mListMulti >li .grayBoxList >li .treeIco { margin-right: 8px;}
+.mListMulti >li .grayBoxList >li .flexLeft { margin-top: 0;}
 .mListMulti >li .grayBoxList >li .mt { display: block; margin-top: 8px;}
-.mListMulti >li .titleStyle .flexLeft h6 { font-size: 16px;}
+.mListMulti >li .grayBoxList .flexLeft h6 { font-size: 16px;}
 .mListMulti >li .titleStyle .flexLeft span { position: relative; margin-left: 12px; padding-left: 12px; font-size: 14px;}
 .mListMulti >li .titleStyle .flexLeft span::before { content: ''; display: block; position: absolute; left: 0; top: 0; width: 1px; height: 12px; background-color: #ccc;}
 .mListMulti >li .titleStyle .text { margin-top: 12px; font-size: 14px; line-height: 21px;}
@@ -366,9 +380,10 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .m_hTableBody >li input[type=email],
 .m_hTableBody >li input[type=password],
 .m_hTableBody >li select { width: 100%;}
-.m_hTableBody >li .boxGray { display: flex; align-items: center; height: 67px; padding-left: 16px; background-color: #f7f7f7; border-radius: 8px;}
+.m_hTableBody >li .boxGray { display: flex; align-items: center; position: relative; height: 67px; padding-left: 16px; background-color: #f7f7f7; border-radius: 8px;}
 .m_hTableBody >li .boxGray .num { position: relative; margin-left: 12px; padding-left: 12px; font-size: 14px;}
 .m_hTableBody >li .boxGray .num::before { content: ''; display: block; position: absolute; left: 0; top: 0; width: 1px; height: 12px; background-color: #ccc;}
+.m_hTableBody >li .boxGray .required { position: absolute; right: 16px; top: 16px;}
 .m_hTableBody >li .roundBoxGray { padding: 16px; background-color: #f7f7f7; border-radius: 8px;}
 .m_hTableBody >li .roundBoxGray.block li ~ li { margin-top: 16px;}
 .m_hTableBody >li .roundBoxGray.widePd { padding: 24px 16px;}
@@ -413,7 +428,6 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .m_hTableBody >li .calendarBlock .calendarBody ~ .calendarBody { margin-top: 4px;}
 .m_hTableBody >li .calendarBlock .calendarBody:first-child { position: relative;}
 .m_hTableBody >li .calendarBlock .calendarBody:first-child::after { content: '~'; display: block; position: absolute; right: -16px; top: 14px;}
-.m_hTableBody >li 
 
 .m_hTableBody >li.empty { text-align: center;}
 .m_hTableBody.pdb { padding-bottom: 24px;}
@@ -655,12 +669,21 @@ hr.space.style5 { margin: 8px -16px 32px;}
 **********************************************/
 
 /* 연계신청 */
-.targetBody .targetOff { flex-direction: column; margin-top: 24px; padding: 16px 0 24px;}
+.targetBody .targetOff { margin-top: 24px; padding: 16px 16px 24px;}
+.targetBody .targetOff .toBody { flex-direction: column;}
 .targetBody .targetOff .icon { margin: 0 auto;}
 .targetBody .textGroup h4 { margin-top: 8px; font-weight: 400; line-height: 29px;}
 .targetBody .textGroup h4 span.normal { display: block;}
 .targetBody .textGroup h4 span.text { display: inline-block; font-size: 19px;}
 .targetBody .targetOff .textGroup .btn { margin-top: 16px;}
+.targetBody .targetOff .subLight { justify-content: inherit;}
+.targetBody .targetOff .subLight b { display: block; width: 100%;}
+.targetBody .targetOff .subLight .tooltipBtn { margin: 8px 16px 0 0;}
+
+
+
+
+
 .targetBody .targetOn { flex-direction: column; margin-top: 24px; padding: 16px 0 24px;}
 .targetBody .targetOn .icon { margin: 0 auto;}
 .targetBody .targetOn .textGroup h4 { margin-top: 8px;}
@@ -668,6 +691,11 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .targetBody .targetOn .textGroup .button { margin-top: 16px;}
 .targetBody .targetCancel { margin-top: 24px;} 
 .targetBody .targetComplete { margin-top: 24px;}
+.targetBody .gtm .lineButton { display: block; margin: 8px 0 0;}
+
+.flexOther { flex-wrap: wrap; justify-content: flex-end;}
+.flexOther .defaultH4 { width: 100%;}
+.flexOther >span { display: block; margin-top: 20px;}
 
 .agreeBody { margin-top: 24px;}
 .agreeBody .btnsGroup { margin-top: 32px;}
