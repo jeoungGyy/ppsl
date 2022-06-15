@@ -687,6 +687,7 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .targetBody .targetOn { flex-direction: column; margin-top: 24px; padding: 16px 0 24px;}
 .targetBody .targetOn .icon { margin: 0 auto;}
 .targetBody .targetOn .textGroup h4 { margin-top: 8px;}
+.targetBody .targetOff .toBody .textGroup h4 span,
 .targetBody .targetOn .textGroup h4 span.text { font-size: 19px;}
 .targetBody .targetOn .textGroup .button { margin-top: 16px;}
 .targetBody .targetCancel { margin-top: 24px;} 
