@@ -212,6 +212,7 @@ body.noScroll { overflow: hidden;}
 #wrap .fontSize14 { font-size: 14px;}
 #wrap .fontSize16 { font-size: 16px;}
 #wrap .wNormal { font-weight: 400;}
+#wrap .lh21 { line-height: 21px;}
 #wrap .lh24 { line-height: 24px;}
 #wrap .lh32 { line-height: 32px;}
 
@@ -219,7 +220,7 @@ body.noScroll { overflow: hidden;}
 .requireBody { display: flex; align-items: center; justify-content: space-between;}
 .requireBody .requireText { margin-top: 0;}
 .requireBody .btn { margin-top: 8px;}
-.requireText { display: flex; margin-top: 5px; font-size: 12px; color: #767676; text-align: left; line-height: 18px;}
+.requireText { display: flex !important; margin-top: 5px; font-size: 12px; color: #767676; text-align: left; line-height: 18px;}
 .requireText i { display: inline-block; width: 16px; height: 16px; margin: 0 4px 0 0; vertical-align: middle;}
 .requireText i { background: url(../images/common/ico_caption.svg) no-repeat center/cover;}
 .requireText.error { color: #ee0700;}
@@ -291,6 +292,7 @@ hr.space { margin: 40px 0; height: 1px; background-color: #dbdbdb;}
 .button.lineBlack { border: 1px solid #333; background-color: #fff;}
 .button.lineBlack:hover,
 .button.lineBlack:active { color: #366cc3; border-color: #366cc3;}
+.button.lineBlack[disabled] { background-color: #f7f7f7 !important;}
 .button.lineWhite { color: #fff; border: 1px solid #fff;}
 
 .button .dsBlock { vertical-align: middle; line-height: 24px;}
