@@ -37,18 +37,16 @@ body.noScroll { overflow: hidden;}
 .header .menu h1 a { display: inline-block;}
 .header .menu h1 a img { width: 208px; height: 40px; vertical-align: middle;}
 
-.header .menu .megaMenuBg { display: none; position: absolute; left: 0; top: 65px; z-index: 98; width: 230px; background: url(../images/common/mega_menu_bg.png) no-repeat right bottom; opacity: 0; transition: opacity .8s linear;}
-.header .menu .megaMenuBg::after { content: ''; display: block; position: absolute; right: 230px; top: 0; width: 1000px; height: 100%; background-color: #f4f7fc;}
+.header .menu .megaMenuBg { display: none; position: absolute; left: 0; top: 65px; z-index: 98; width: 230px;  opacity: 0; transition: opacity .7s linear;}
 .header .menu .megaMenuBg .mmText { padding: 64px 0 0 36px;}
 .header .menu .megaMenuBg .mmText p { font-size: 19px; line-height: 29px;}
 .header .menu .megaMenuBg.active { display: block;}
 .header .menu .megaMenuBg.show { opacity: 1;}
 
 
-
-
-
-.header .menu .subMenuBlind { position: absolute; left: 0; top: 64px; z-index: 99; width: 100%; height: 0; background-color: transparent;}
+.header .menu .subMenuBlind { position: absolute; left: 0; top: 65px; z-index: 99; width: 100%; height: 0; background-color: transparent; transition: height .4s;}
+.header .menu .subMenuBlind::before { content: ''; display: block; position: absolute; left: 50%; width: 1200px; height: 100%; margin-left: -1750px; background-color: #f4f7fc;}
+.header .menu .subMenuBlind::after { content: ''; display: block; position: absolute; left: 50%; width: 1200px; height: 100%; margin-left: -600px; background: transparent url(../images/common/mega_menu_bg.png) no-repeat left bottom;}
 .header .btnsWrap { display: flex; align-items: center;}
 .header .btnsWrap button i { display: block; width: 32px; height: 32px; text-indent: -99999px;}
 .header .btnsWrap .allSearchBtn i { background: url(../images/common/ico_search.svg) no-repeat center/cover;}
@@ -215,6 +213,7 @@ body.noScroll { overflow: hidden;}
 #wrap .fontSize16 { font-size: 16px;}
 #wrap .wNormal { font-weight: 400;}
 #wrap .lh24 { line-height: 24px;}
+#wrap .lh32 { line-height: 32px;}
 
 .subText { margin-top: 8px; font-size: 14px;}
 .requireBody { display: flex; align-items: center; justify-content: space-between;}
@@ -234,6 +233,10 @@ body.noScroll { overflow: hidden;}
 .defaultH5 { font-size: 16px;}
 .defaultH5.mt { margin-top: 24px;}
 .defaultF24 { font-size: 24px;}
+.defaultH4.bletSquare,
+.defaultH5.bletSquare { position: relative; padding-left: 12px;}
+.defaultH4.bletSquare::after,
+.defaultH5.bletSquare::after { content: ''; display: block; position: absolute; left: 0; top: 5px; width: 4px; height: 4px; background-color: #333;}
 
 /* Margin */
 #wrap .pcmt8 { margin-top: 8px;}
@@ -247,6 +250,7 @@ body.noScroll { overflow: hidden;}
 #wrap .mt16 { margin-top: 16px;}
 #wrap .mt24 { margin-top: 24px;}
 #wrap .mt40 { margin-top: 40px;}
+#wrap .mt44 { margin-top: 44px;}
 #wrap .mlm15 { margin-left: -15px;}
 #wrap .mlm27 { margin-left: -27px;}
 
@@ -312,24 +316,15 @@ hr.space { margin: 40px 0; height: 1px; background-color: #dbdbdb;}
 .btnsGroup.pdt0 { padding-top: 0;}
 .btnsGroup >div { display: flex;}
 .btnsGroup button ~ button { margin-left: 8px;}
-.btnsGroup .etcTip { position: relative;}
-.btnsGroup .etcTip .text { display: flex; align-items: center; justify-content: center; position: absolute; right: 0; top: -53px; width: 230px; padding: 10px 0; font-size: 14px; color: #767676; border: 1px solid #dbdbdb; background-color: #fff; border-radius: 8px;}
-.btnsGroup .etcTip .text::before { content: ''; 
-  position: absolute; right: 25px; bottom: -11px;
-  width: 0px;
-  height: 0px;
-  border-top: 10px solid #dbdbdb;
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
-}
-.btnsGroup .etcTip .text::after { content: ''; 
-  position: absolute; right: 25px; bottom: -9px;
-  width: 0px;
-  height: 0px;
-  border-top: 10px solid #fff;
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
-}
+.btnsGroup .etcTip { position: relative; margin-top: 50px;}
+.btnsGroup .etcTip .text { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; position: absolute; right: 0; bottom: 66px; width: 180px; padding: 10px 0; font-size: 14px; color: #767676; border: 1px solid #DBDBDB; background-color: #fff; border-radius: 8px;}
+.btnsGroup .etcTip .text b { display: block;}
+.btnsGroup .etcTip .text b ~ b { margin-top: 8px;}
+.btnsGroup .etcTip .text::before { content: ''; position: absolute; right: 16px; bottom: -11px; width: 0px; height: 0px; border-top: 10px solid #DBDBDB; border-left: 7px solid transparent; border-right: 7px solid transparent; }
+.btnsGroup .etcTip .text::after { content: ''; position: absolute; right: 16px; bottom: -9px; width: 0px; height: 0px; border-top: 10px solid #fff; border-left: 7px solid transparent; border-right: 7px solid transparent;}
+.btnsGroup .etcTip.active .text { border-color: #366CC3;}
+.btnsGroup .etcTip.active .text::before { border-top-color: #366CC3;}
+
 
 /* 셀렉트 박스 */
 select.wp100 { width: 100%;}
@@ -396,6 +391,13 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .bletList li.blet::after { content: ''; display: block; position: absolute; left: 0; top: 10px; width: 6px; height: 1px; background-color: #333;}
 .bletList li.bletRound { position: relative; padding-left: 12px; color: #767676;}
 .bletList li.bletRound::after { content: ''; display: block; position: absolute; left: 0; top: 9px; width: 4px; height: 4px; background-color: #767676; border-radius: 50%;}
+
+.bletListSquare >li { position: relative; padding-left: 12px; font-size: 14px; line-height: 21px;}
+.bletListSquare >li::after { content: ''; display: block; position: absolute; left: 0; top: 7px; width: 4px; height: 4px; background-color: #333;}
+.bletListSquare >li ~ li { margin-top: 8px;}
+.bletListSquare >li .bLink { margin-left: 16px;}
+
+.bletListSquare >li ul li { margin-top: 8px; font-size: 14px; color: #767676; line-height: 21px;}
 
 /* flexBtn* */
 .flexBtnOne { display: flex !important; align-items: center;}
@@ -482,8 +484,8 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .ui-state-focus,
 .ui-widget-content .ui-state-focus,
 .ui-widget-header .ui-state-focus {	border: none;	font-weight: inherit;	color: inherit;}
-.ui-datepicker .ui-datepicker-prev-hover,
-.ui-datepicker .ui-datepicker-next-hover { top: 2px;}
+/* .ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover { top: 2px;} */
 .ui-datepicker .ui-datepicker-title { display: flex; align-items: center; margin: 0; padding: 0 25px;}
 .ui-datepicker .ui-datepicker-title select { height: 32px; padding-right: 35px; font-size: 14px; background-position: right 12px top 50%;}
 .ui-datepicker .ui-datepicker-title .ui-datepicker-year { flex: 1;}
@@ -563,8 +565,8 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .inlineGroupBox li ~ li { margin-left: 32px;}
 
 /* tooltipBtn */
-.tooltipBtn { display: flex; align-items: center; margin: -2px 4px 0 4px;}
-.tooltipBtn i { display: inline-block; width: 24px; height: 24px; text-indent: -99999px; background: url(../images/common/ico_help.svg) no-repeat center/cover;}
+.tooltipBtn { margin: -2px 4px 0 4px;}
+.tooltipBtn i { display: inline-block; width: 24px; height: 24px; text-indent: -99999px; vertical-align: middle; background: url(../images/common/ico_help.svg) no-repeat center/cover;}
 
 /* dateGroup */
 .dateGroup { margin-top: 9px; border-top: 2px solid #333; border-bottom: 1px solid #333;}
@@ -771,7 +773,8 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 
 /* hTableBody */
 .hTableBody { overflow: hidden; margin-top: 8px; border-top: 2px solid #333;}
-.hTableBody table th { padding: 21px 0 21px 24px; text-align: left; line-height: 24px; border-bottom: 1px solid #dbdbdb; background-color: #f7f7f7;}
+.hTableBody table th { padding: 21px 10px 21px 24px; text-align: left; line-height: 24px; border-bottom: 1px solid #dbdbdb; background-color: #f7f7f7;}
+.hTableBody table th .smallText { display: block; margin-top: 4px; font-size: 14px; font-weight: 400; line-height: 21px;}
 .hTableBody table td { padding: 12px 15px; line-height: 24px; border-left: 1px solid #dbdbdb; border-bottom: 1px solid #dbdbdb;}
 .hTableBody table td .post input { width: 120px;}
 .hTableBody table td .post button { margin-left: 4px;}
@@ -1340,15 +1343,18 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 /* 연계연금청구 */
 .proposalBody .subFill { display: flex; align-items: center; justify-content: space-between; margin-top: 24px;}
 .proposalBody .subFill >span { font-size: 14px;}
+.proposalBody .subFill.bbt { padding-bottom: 16px; border-bottom: 1px solid #333;}
+.proposalBody .subFillBody { padding-bottom: 16px; border-bottom: 1px solid #333;}
+.proposalBody .subFillBody >p { margin-top: 8px; font-size: 14px; line-height: 21px;}
+
 .etcCheckbox { position: absolute; right: 0; top: -27px;}
-.etcBleuBox { margin-top: 8px; padding: 24px; background-color: #f4f7fc; border-radius: 8px;}
-.etcBleuBox p { margin-top: 8px; font-size: 14px; line-height: 24px;}
 
 .ieListHack { margin-top: -14px;}
 .ieListHack li { display: inline-block; margin: 14px 24px 0 0;}
 
+.purpleBox { display: flex; align-items: center; justify-content: center; padding: 16px; background-color: rgba(54, 108, 195, 0.05); border-radius: 8px;}
 
-
+.borderRound { padding: 24px; border: 1px solid #DBDBDB; border-radius: 8px;}
 
 
 

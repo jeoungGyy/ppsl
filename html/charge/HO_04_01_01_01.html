@@ -211,67 +211,8 @@
 									<li>자세한 사항은 관련  지사로 문의하시기 바랍니다.</li>
 								</ul>
 							</div>
-	
-							<div>
-								<div class="targetOff alignCenter">
-									<i class="icon"></i>
-									<div class="textGroup">
-										<h4>고객님께서는 현재 <span class="fontEliceDigital text">재직중</span>이십니다.</h4>
-									</div>
-								</div>
-							</div>
 						</div>
 						<!-- //#연계급여청구 - 단계별 프로그레스바 정의 :E -->
-						
-						<!-- #연계급여청구 - 단계별 프로그레스바 정의 :A -->
-						<div>
-							<div class="targetOn">
-								<i class="icon"></i>
-								<div class="textGroup">
-									<h4><span class="normal">고객님께서는</span> <span class="fontEliceDigital text">연계 노령/퇴직연금 청구 대상자</span><span class="normal">입니다.</span></h4>
-									<button type="button" class="button h40 black" onclick="location.href='HO_04_01_02_01'"><span class="dsBlock">연계 노령/퇴직연금 청구</span><i class="arrowRight"></i></button>
-								</div>
-							</div>
-							<ul class="guideText mt">
-								<li>제출서류가 필요한 경우 주소지의 지사 담당자가 연락을 드릴 예정이며, 우편  또는 방문을 통해 지사로 제출하시기 바랍니다.</li>
-								<li>자세한 사항은 관련  지사로 문의하시기 바랍니다.</li>
-							</ul>
-						</div>
-						
-						<div>
-							<div class="targetOn">
-								<i class="icon"></i>
-								<div class="textGroup">
-									<h4><span class="normal">고객님께서는</span> <span class="fontEliceDigital text">연계 노령연금 청구 대상자</span> 입니다.</h4>
-									<button type="button" class="button h40 black" onclick="location.href='HO_04_01_02_01'"><span class="dsBlock">연계 노령연금 청구</span><i class="arrowRight"></i></button>
-								</div>
-							</div>
-							<ul class="guideText mt">
-								<li>제출서류가 필요한 경우 주소지의 지사 담당자가 연락을 드릴 예정이며, 우편  또는 방문을 통해 지사로 제출하시기 바랍니다.</li>
-								<li>자세한 사항은 관련  지사로 문의하시기 바랍니다.</li>
-							</ul>
-						</div>
-						<!-- //#연계급여청구 - 단계별 프로그레스바 정의 :A -->
-
-						<!-- #연계급여청구 - 단계별 프로그레스바 정의 :B -->
-						<div>
-							<div class="targetOff alignCenter">
-								<i class="icon"></i>
-								<div class="textGroup">
-									<h4><span class="normal">고객님께서는 이미</span> <span class="fontEliceDigital text">연계 노령/퇴직연금 청구 하셨습니다.</span></h4>
-								</div>
-							</div>
-						</div>
-
-						<div>
-							<div class="targetOff alignCenter">
-								<i class="icon"></i>
-								<div class="textGroup">
-									<h4><span class="normal">고객님께서는 이미</span> <span class="fontEliceDigital text">연계 노령 연금/연계퇴직연금</span> <span class="fontEliceDigital text">청구 하셨습니다.</span></h4>
-								</div>
-							</div>
-						</div>
-						<!-- //#연계급여청구 - 단계별 프로그레스바 정의 :B -->
 
 						<div class="pcmt40">
 							<!-- PC -->
@@ -280,13 +221,13 @@
 									<table>
 										<caption>연계급여 청구 : 접수방법, 접수번호, 접수일, 내용, 수급정보, 상태, 처리지사로 구성</caption>
 										<colgroup>
-											<col style="width: 104px;">
+											<col style="width: 105px;">
 											<col>
-											<col style="width: 124px;">
-											<col style="width: 144px;">
-											<col style="width: 124px;">
-											<col style="width: 124px;">
-											<col style="width: 124px;">
+											<col style="width: 130px;">
+											<col style="width: 145px;">
+											<col style="width: 110px;">
+											<col style="width: 140px;">
+											<col style="width: 120px;">
 										</colgroup>
 										<thead>
 											<tr>
@@ -306,8 +247,17 @@
 												<td>2006.03.01</td>
 												<td>연계노령연금</td>
 												<td>2016.04.30</td>
-												<td><span class="colorBlue">처리완료</span></td>
-												<td><button type="button" class="button h24 lineBlack">조회</button></td>
+												<td><span class="colorBlue">처리완료</span></td><!-- 처리완료만 글자색이 파란색입니다. -->
+												<td><button type="button" class="button h24 lineBlack">확인</button></td>
+											</tr>
+											<tr>
+												<td>인터넷</td>
+												<td>2009101000040</td>
+												<td>2006.03.01</td>
+												<td>연계퇴직연금</td>
+												<td>-</td>
+												<td>접수중</td>
+												<td><button type="button" class="button h24 lineBlack">확인</button></td>
 											</tr>
 										</tbody>
 									</table>
@@ -344,7 +294,39 @@
 												</li>
 												<li>
 													<label>처리지사</label>
-													<button type="button" class="button h24 lineBlack">조회</button>
+													<button type="button" class="button h24 lineBlack">확인</button>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="roundBoxGray">
+											<h6 class="fontDefault">접수번호</h6>
+											<div class="flexLeft spaceBetween">
+												<b class="listDate colorBlue">2009101000040</b>
+												<div class="roundText">접수중</div>
+											</div>
+											
+											<ul class="msList bdt">
+												<li>
+													<label>접수방법</label>
+													<b>인터넷</b>
+												</li>
+												<li>
+													<label>접수일</label>
+													<b>2006.03.01</b>
+												</li>
+												<li>
+													<label>내용</label>
+													<b>연계노령연금</b>
+												</li>
+												<li>
+													<label>수급정보</label>
+													<b>2016.04.30</b>
+												</li>
+												<li>
+													<label>처리지사</label>
+													<button type="button" class="button h24 lineBlack">확인</button>
 												</li>
 											</ul>
 										</div>
@@ -358,85 +340,331 @@
 
 					<hr class="space">
 
-					<div class="flexLeft flexEnd">
-						<h4 class="defaultH4">연계신청이력</h4>
-						<span class="subDate">조회일 : 2022.03.10</span>
-					</div>
+					<h4 class="defaultH4">연계 신청한 연금 가입내용 </h4>
 					<p class="subText">연계급여청구는 연계신청을 기반으로 이루어 집니다.</p>
-					<div>
-						<!-- PC -->
-						<div class="onlyPC">
-							<div class="tableBody mt2">
-								<table>
-									<caption>연계신청이력 : 기관, 연계기간, 연계급여청구로 구성</caption>
-									<colgroup>
-										<col style="width: 33.33%;">
-										<col>
-										<col style="width: 33.33%;">
-									</colgroup>
-									<thead>
-										<tr>
-											<th scope="col">기관</th>
-											<th scope="col">연계기간</th>
-											<th scope="col">연계급여청구</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>국민연금</td>
-											<td>5년1개월</td>
-											<td>처리완료</td>
-										</tr>
-										<tr>
-											<td>공무원연금</td>
-											<td>5년1개월</td>
-											<td>가능</td>
-										</tr>
-										<tr>
-											<td>사립학교 교직원 연금</td>
-											<td>-(합산)</td>
-											<td>-</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td><b>연계기간합계</b></td>
-											<td colspan="2"><b>10년2개월</b></td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-						</div>
-						<!-- //PC -->
+					<p class="fontSize14 colorGray pcmt16 momt8">조회일 : 2022.03.10</p>
 
-						<!-- Mobile -->
-						<div class="onlyMobile m_tableBody mt noBorder">
-							<ul class="mListMulti ">
-								<li>
-									<div class="spaceBetweenStyle">
-										<span>연계기간합계</span>
-										<b>10년 2개월</b>
-									</div>
-									
-									<ul class="msList">
-										<li class="lineBreak">
-											<span>국민연금</span>
-											<b>5년 1개월 / 처리완료</b>
-										</li>
-										<li>
-											<span>공무원연금</span>
-											<b>5년 1개월 / <span class="colorBlue">가능</span></b>
-										</li>
-										<li>
-											<span>군인연사립학교 교직원 연금금</span>
-											<b>-(합산)</b>
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</div>
-						<!-- //Mobile -->
+					<div class="purpleBox mt16">
+						<b>총 연계기간 <span class="colorBlue">11년 4개월</span></b>
 					</div>
+
+					<!-- PC -->
+					<div class="onlyPC">
+						<div class="tableBody mt44">
+							<table>
+								<caption>국민연금 가입재직이력 : 선택, 연금 종류, 재직기간 합산, 연계기간, 가입·재직(복무) 기간, 연계급여청구로 구성</caption>
+								<colgroup>
+									<col style="width: 65px;">
+									<col>
+									<col style="width: 145px;">
+									<col style="width: 115px;">
+									<col style="width: 270px;">
+									<col style="width: 110px;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">선택</th>
+										<th scope="col">연금 종류</th>
+										<th scope="col">재직기간 합산</th>
+										<th scope="col">연계기간</th>
+										<th scope="col">가입·재직(복무) 기간</th>
+										<th scope="col">연계급여청구</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td></td>
+										<td class="textLeft">국민연금</td>
+										<td>-</td>
+										<td>5년1개월</td>
+										<td>yyyy-mm-dd ~ yyyy-mm-dd</td>
+										<td><span class="colorGray">불가</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="tableBody notBorder mt24">
+							<table>
+								<caption>직역연금 합산 : 선택, 연금 종류, 재직기간 합산, 연계기간, 가입·재직(복무) 기간, 연계급여청구로 구성</caption>
+								<colgroup>
+									<col style="width: 65px;">
+									<col>
+									<col style="width: 145px;">
+									<col style="width: 115px;">
+									<col style="width: 270px;">
+									<col style="width: 110px;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">선택</th>
+										<th scope="col">연금 종류</th>
+										<th scope="col">재직기간 합산</th>
+										<th scope="col">연계기간</th>
+										<th scope="col">가입·재직(복무) 기간</th>
+										<th scope="col">연계급여청구</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td></td>
+										<td class="textLeft">공무원연금</td>
+										<td>-</td>
+										<td>5년1개월</td>
+										<td>yyyy-mm-dd ~ yyyy-mm-dd</td>
+										<td><span class="colorGray">불가</span></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="textLeft">공무원연금</td>
+										<td>-</td>
+										<td>5년1개월</td>
+										<td>yyyy-mm-dd ~ yyyy-mm-dd</td>
+										<td><span class="colorGray">불가</span></td>
+									</tr>
+									<tr class="off">
+										<td><img src="../../images/common/ico_p.svg" alt="공무원연금의 첫번째 내역"></td>
+										<td class="textLeft">사립학교 교직원 연금</td>
+										<td>공무원연금으로 합산</td>
+										<td>0개월 <button type="button" class="tooltipBtn"><i class="icon">도움말</i></button></td>
+										<td>yyyy-mm-dd ~ yyyy-mm-dd</td>
+										<td>-</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="tableBody mt24">
+							<table>
+								<caption>직역연금1 : 선택, 연금 종류, 재직기간 합산, 연계기간, 가입·재직(복무) 기간, 연계급여청구로 구성</caption>
+								<colgroup>
+									<col style="width: 65px;">
+									<col>
+									<col style="width: 145px;">
+									<col style="width: 115px;">
+									<col style="width: 270px;">
+									<col style="width: 110px;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">선택</th>
+										<th scope="col">연금 종류</th>
+										<th scope="col">재직기간 합산</th>
+										<th scope="col">연계기간</th>
+										<th scope="col">가입·재직(복무) 기간</th>
+										<th scope="col">연계급여청구</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td></td>
+										<td class="textLeft">별정우체국 직원연금</td>
+										<td>-</td>
+										<td>1년1개월</td>
+										<td>yyyy-mm-dd ~ yyyy-mm-dd</td>
+										<td><span class="colorBlue">처리완료</span></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="textLeft">별정우체국 직원연금</td>
+										<td>-</td>
+										<td>1년1개월</td>
+										<td>yyyy-mm-dd ~ yyyy-mm-dd</td>
+										<td><span class="colorBlue">가능</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="tableBody mt24">
+							<table>
+								<caption>직역연금2 : 선택, 연금 종류, 재직기간 합산, 연계기간, 가입·재직(복무) 기간, 연계급여청구로 구성</caption>
+								<colgroup>
+									<col style="width: 65px;">
+									<col>
+									<col style="width: 145px;">
+									<col style="width: 115px;">
+									<col style="width: 270px;">
+									<col style="width: 110px;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">선택</th>
+										<th scope="col">연금 종류</th>
+										<th scope="col">재직기간 합산</th>
+										<th scope="col">연계기간</th>
+										<th scope="col">가입·재직(복무) 기간</th>
+										<th scope="col">연계급여청구</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td></td>
+										<td class="textLeft">사립학교 교직원 연금</td>
+										<td>-</td>
+										<td>1년1개월</td>
+										<td>yyyy-mm-dd ~ yyyy-mm-dd</td>
+										<td>청구접수</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<!-- //PC -->
+
+					<!-- Mobile -->
+					<div class="onlyMobile">
+						<!-- 국민연금 가입재직이력 -->
+						<ul class="mListMulti momt16">
+							<li>
+								<h5 class="defaultH5">국민연금</h5>
+								<div class="roundBoxGray sp mt">
+									<span>가입·재직(복무) 기간</span>
+									<div class="flexLeft">
+										<b class="listDate">YYYY-MM-DD ~ YYYY-MM-DD</b>
+									</div>
+								</div>
+								
+								<ul class="msList">
+									<li>
+										<span>연계기간</span>
+										<b>5년 1개월</b>
+									</li>
+									<li>
+										<span>연계급여청구</span>
+										<b><span class="colorBlue">처리완료</span></b>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<!-- //국민연금 가입재직이력 -->
+
+						<!-- 직역연금 합산 -->
+						<ul class="mListMulti momt16">
+							<li>
+								<h5 class="defaultH5">공무원연금</h5>
+								<div class="roundBoxGray sp mt">
+									<span>가입·재직(복무) 기간</span>
+									<div class="flexLeft">
+										<b class="listDate">YYYY-MM-DD ~ YYYY-MM-DD</b>
+									</div>
+								</div>
+								
+								<ul class="msList">
+									<li>
+										<span>연계기간</span>
+										<b>5년 1개월</b>
+									</li>
+									<li>
+										<span>연계급여청구</span>
+										<b><span class="colorGray">불가</span></b>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<div class="groupBox">
+									<div class="checkboxBox">
+										<input type="checkbox" id="m_chechbox2" name="m_checkbox" title="두번째 연금가입내역 선택">
+										<label for="m_chechbox2">공무원연금 </label>
+									</div>
+								</div>
+								<div class="roundBoxGray sp mt">
+									<span>가입·재직(복무) 기간</span>
+									<div class="flexLeft">
+										<b class="listDate">YYYY-MM-DD ~ YYYY-MM-DD</b>
+									</div>
+								</div>
+								<ul class="msList">
+									<li>
+										<span>연계기간</span>
+										<b>3년1개월</b>
+									</li>
+									<li>
+										<span>연계급여청구</span>
+										<b class="colorBlue">가능</b>
+									</li>
+								</ul>
+
+								<ul class="grayBoxList momt16">
+									<li>
+										<div class="flexLeft">
+											<span class="treeIco"><img src="../../images/common/ico_p.svg" alt="두번째 연금가입내역의 첫번째 내역"></span>
+											<h6 class="name">사립학교 교직원 연금</h6>
+										</div>
+										<div class="roundBoxGray border sp mt">
+											<span>가입·재직(복무) 기간</span>
+											<div class="flexLeft">
+												<b class="listDate">YYYY-MM-DD ~ YYYY-MM-DD</b>
+											</div>
+										</div>
+										
+										<ul class="msList">
+											<li>
+												<label>연계기간</label>
+												<b>0개월 <button type="button" class="tooltipBtn"><i class="icon">도움말</i></button></b>
+											</li>
+											<li>
+												<label>연계급여청구</label>
+												<b>-</b>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<!-- //직역연금 합산 -->
+
+						<!-- 직역연금1 -->
+						<ul class="mListMulti momt16">
+							<li>
+								<h5 class="defaultH5">별정우체국 직원연금</h5>
+								<div class="roundBoxGray sp mt">
+									<span>가입·재직(복무) 기간</span>
+									<div class="flexLeft">
+										<b class="listDate">YYYY-MM-DD ~ YYYY-MM-DD</b>
+									</div>
+								</div>
+								
+								<ul class="msList">
+									<li>
+										<span>연계기간</span>
+										<b>1년 1개월</b>
+									</li>
+									<li>
+										<span>연계급여청구</span>
+										<b><span class="colorBlue">처리완료</span></b>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<!-- //직역연금1 -->
+
+						<!-- 직역연금2 -->
+						<ul class="mListMulti momt16">
+							<li>
+								<h5 class="defaultH5">사립학교 교직원 연금</h5>
+								<div class="roundBoxGray sp mt">
+									<span>가입·재직(복무) 기간</span>
+									<div class="flexLeft">
+										<b class="listDate">YYYY-MM-DD ~ YYYY-MM-DD</b>
+									</div>
+								</div>
+								
+								<ul class="msList">
+									<li>
+										<span>연계기간</span>
+										<b>1년 1개월</b>
+									</li>
+									<li>
+										<span>연계급여청구</span>
+										<b>청구접수</b>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<!-- //직역연금2 -->
+					</div>
+					<!-- //Mobile -->
 
 					<script src="../../include/evaluation.js"></script> <!-- include: 공통 평가 -->
 				</div>

@@ -3,6 +3,9 @@
 확인 URL: https://jeounggyy.github.io/ppsl/html/guide/ia.html
 
 
+### 06-17
+- [청구] 전체적인 코딩 수정
+
 ### 06-15
 - [신청] 전체적인 코딩 수정
 

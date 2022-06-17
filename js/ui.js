@@ -87,7 +87,7 @@ $(document).ready(function () {
           $depth1.addClass('active');
           $depth2.height(_menu_height_value);
           $megaMenuBg.height(_menu_height_value + 69).addClass('active');;
-          $subMenuBlind.height(_menu_height_value + 70);
+          $subMenuBlind.height(_menu_height_value + 69);
           $blind.addClass('active');
           TweenMax.to($header, 0, { height: _menu_height_value + 174, onComplete:function() {
             $header.addClass('active');

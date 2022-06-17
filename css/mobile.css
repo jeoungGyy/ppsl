@@ -77,20 +77,28 @@
 /* Heading */
 .defaultF24 { font-size: 19px; line-height: 29px;}
 
+
 /* Margin */
+#wrap .pcmt8 { margin-top: 0;}
+#wrap .pcmt16 { margin-top: 0;}
 #wrap .pcmt24 { margin-top: 0;}
 #wrap .pcmt40 { margin-top: 0;}
+
 
 #wrap .m_ml0 { margin-left: 0;}
 #wrap .m_ml8 { margin-left: 8px;}
 #wrap .momt0 { margin-top: 0px;}
 #wrap .momt8 { margin-top: 8px;}
+#wrap .momt12 { margin-top: 12px;}
 #wrap .momt16 { margin-top: 16px;}
 #wrap .momt20 { margin-top: 20px;}
 #wrap .momt24 { margin-top: 24px;}
 #wrap .momt32 { margin-top: 32px;}
 #wrap .momt40 { margin-top: 40px;}
 #wrap .momb32 { margin-bottom: 32px !important;}
+
+/* 색상 */
+.m_colorBlue { color: #366cc3 !important;}
 
 /* hr */
 hr.space { margin: 32px -16px; height: 12px; background-color: #f7f7f7;}
@@ -112,6 +120,9 @@ hr.space.style5 { margin: 8px -16px 32px;}
 
 /* guideText */
 .guideText >li .mlBlock { display: block; margin: 8px 0 0;}
+
+/* bletList */
+.bletListSquare >li .bLink { display: block; margin-left: 0;}
 
 /* searchBody */
 .searchBody { margin-top: 24px; padding: 0; border: solid 1px #dbdbdb; background-color: #fff;}
@@ -310,12 +321,13 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .m_tableBody .roundBoxGray.mt { margin-top: 16px;}
 .m_tableBody .roundBoxGray.totalBg { background-color: #F4F7FC;}
 .m_tableBody .mList >li .groupBox label { font-weight: 700;}
-.m_tableBody .mList >li.empty { padding: 40px 0; text-align: center;}
+.m_tableBody .mList >li.empty { text-align: center;}
 .m_tableBody .mList.mt { margin-top: 8px;}
 #wrap .msList { margin-top: 16px; font-size: 14px;}
 .msList >li { display: flex; align-items: baseline; justify-content: space-between;}
 .msList >li ~ li { margin-top: 12px;}
 #wrap .msList >li b { line-height: 21px;}
+#wrap .msList >li input[type=text],
 #wrap .msList >li select { width: 100%;}
 #wrap .msList >li span + b { text-align: right;}
 #wrap .msList >li.block { display: block;}
@@ -333,17 +345,19 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .m_tableBody .boxGray b { font-size: 16px;}
 .m_tableBody .boxGray .num { position: relative; margin-left: 12px; padding-left: 12px; font-size: 16px;}
 .m_tableBody .boxGray .num::before { content: ''; display: block; position: absolute; left: 0; top: 0; width: 1px; height: 12px; background-color: #ccc;}
-
 .m_tableBody.mt { margin-top: 16px;}
 .m_tableBody.mt2 { margin-top: 24px;}
 .m_tableBody.noBorder { padding: 0; border: none;}
 
 .mListMulti >li { padding: 24px 16px; border: 1px solid #dbdbdb; border-radius: 8px;}
-.mListMulti >li ~ li { margin-top: 16px;}
+/* .mListMulti >li ~ li { margin-top: 16px;} */
+.mListMulti >li ~ li { margin-top: 8px;} /* HO_04_01_02_02_05_M_02펼침 */
 .mListMulti >li .roundBoxGray { padding: 24px 16px; font-size: 14px; background-color: #f7f7f7; border-radius: 8px;}
+.mListMulti >li .roundBoxGraySmall { padding: 16px; font-size: 14px; background-color: #f7f7f7; border-radius: 8px;}
+.mListMulti >li .roundBoxGraySmall .flexLeft { margin-top: 0;}
 .roundBoxGray >.flexLeft .treeIco { margin-right: 8px;}
 .roundBoxGray.border { border: solid 1px #dbdbdb;}
-.mListMulti >li .flexLeft { margin-top: 8px;}
+/* .mListMulti >li .flexLeft { margin-top: 8px;} */
 .mListMulti >li .flexLeft .listDate { display: inline-block; font-size: 14px; line-height: 21px;}
 .mListMulti >li .flexLeft .listText { display: inline-block; font-size: 16px; line-height: 21px;}
 .mListMulti >li .flexLeft .roundText { display: flex; align-items: center; justify-content: center; width: 64px; height: 24px; font-size: 12px; border: 1px solid #333; border-radius: 12px;}
@@ -352,7 +366,6 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .mListMulti >li .groupBox label { font-weight: 700;}
 .mListMulti >li .grayBoxList >li { margin-top: 8px; padding: 24px 16px; background-color: #f7f7f7; border-radius: 8px;}
 .mListMulti >li .grayBoxList >li .treeIco { margin-right: 8px;}
-.mListMulti >li .grayBoxList >li .flexLeft { margin-top: 0;}
 .mListMulti >li .grayBoxList >li .mt { display: block; margin-top: 8px;}
 .mListMulti >li .grayBoxList .flexLeft h6 { font-size: 16px;}
 .mListMulti >li .titleStyle .flexLeft span { position: relative; margin-left: 12px; padding-left: 12px; font-size: 14px;}
@@ -375,6 +388,7 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .m_hTableBody >li ~ li { margin-top: 24px;}
 .m_hTableBody >li >label,
 .m_hTableBody >li >div >label { display: block; margin-bottom: 8px; font-size: 14px; font-weight: 700;}
+.m_hTableBody >li >label .smallText { display: block; margin-top: 4px; font-weight: 400; line-height: 21px;}
 .m_hTableBody >li input[type=text],
 .m_hTableBody >li input[type=tel],
 .m_hTableBody >li input[type=email],
@@ -673,7 +687,7 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .targetBody .targetOff .toBody { flex-direction: column;}
 .targetBody .targetOff .icon { margin: 0 auto;}
 .targetBody .textGroup h4 { margin-top: 8px; font-weight: 400; line-height: 29px;}
-.targetBody .textGroup h4 span.normal { display: block;}
+.targetBody .textGroup h4 span.normal { display: block; line-height: 24px;}
 .targetBody .textGroup h4 span.text { display: inline-block; font-size: 19px;}
 .targetBody .targetOff .textGroup .btn { margin-top: 16px;}
 .targetBody .targetOff .subLight { justify-content: inherit;}
@@ -725,11 +739,19 @@ hr.space.style5 { margin: 8px -16px 32px;}
 /* 연계연금청구 */
 .proposalBody .subFill { height: 51px; margin: 24px -16px 0; padding: 0 16px; background-color: #f7f7f7;}
 .proposalBody .subFill .defaultH4 { font-size: 16px;}
+.proposalBody .subFill.bbt { padding-bottom: 0; border-bottom: none;}
+.proposalBody .subFillBody { margin: 0 -16px; padding: 16px; border-bottom: none; background-color: #F7F7F7;}
+.proposalBody .subFillBody .flexLeft .defaultH4 { font-size: 16px;}
+.proposalBody .subFillBody .flexLeft span { font-size: 14px;}
+
 .etcCheckbox { position: inherit; right: inherit; top: inherit; margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid #dbdbdb;}
 .listAdd button { justify-content: center; width: 100%; padding-top: 16px;}
-.etcBleuBox { margin-top: 0;}
 .listDownload { display: flex; align-items: center; justify-content: space-between; height: 51px; margin-top: 24px; padding: 0 16px; background-color: #f7f7f7; border-radius: 8px;}
 .listDownload .icon { display: block; width: 24px; height: 24px; background: url(../images/common/ico_download2.svg) no-repeat center/cover;}
+
+.purpleBox { font-size: 14px;}
+
+.borderRound { padding: 24px 16px;}
 
 /* 수급계좌변경 */
 .subDateBody { display: flex; justify-content: flex-end; margin-bottom: 16px;}

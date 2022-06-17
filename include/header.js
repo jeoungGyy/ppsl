@@ -72,7 +72,7 @@ str += '          <li><a href="../charge/HO_04_01_01_01.html" data-menu="depth_4
 str += '            <ul class="depth2">';
 str += '              <li><a href="../charge/HO_04_01_01_01.html" data-menu="depth_4_1"><span>연계연금청구</span></a></li>';
 str += '              <li><a href="../charge/HO_04_02_01.html" data-menu="depth_4_2"><span>수급계좌변경</span></a></li>';
-str += '              <li><a href="../charge/HO_04_03_01.html" data-menu="depth_4_3"><span>상태조회</span></a></li>';
+str += '              <li><a href="../charge/HO_04_03_01.html" data-menu="depth_4_3"><span>청구상태조회</span></a></li>';
 str += '            </ul>';
 str += '          </li>';
 str += '          <li><a href="../inform/HO_05_01_01.html" data-menu="depth_5"><span>알림</span></a>';

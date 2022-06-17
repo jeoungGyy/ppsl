@@ -58,24 +58,28 @@
 
 					<div class="proposalBody">
 						<h4 class="deText pcmt40 momt32">연계노령퇴직연금 <span class="m_block">청구 신청서</span></h4>
-						<div class="subFill">
+						<div class="subFill bbt pcmt40 momt24">
 							<h4 class="defaultH4">연계퇴직청구 정보</h4>
 							<span><span class="colorOrange">*</span> 필수 입력 항목</span>
 						</div>
 						
-						<div class="pcmt24 m_toggleArea">
-							<button class="flexLeft spaceBetween toggleGroup active" title="확장됨">
-								<b class="defaultH5">형벌사항</b>
-								<span class="toggleBtn onlyMobile"><i>형벌사항 토글</i></span>
-							</button>
+						<div class="m_toggleArea">
+							<div class="onlyMobile">
+								<button class="flexLeft spaceBetween toggleGroup active" title="확장됨">
+									<b class="defaultH5">형벌사항</b>
+									<span class="toggleBtn onlyMobile"><i>형벌사항 토글</i></span>
+								</button>
+							</div>
 							<div class="target">
 								<!-- PC -->
 								<div class="onlyPC">
+									<h5 class="defaultH5 bletSquare pcmt40">형벌사항</h5>
+									<h5 class="defaultH5 pcmt16">공무원 연금</h5>
 									<div class="hTableBody">
 										<table>
-											<caption>형벌사항 : 형벌사항으로 구성</caption>
+											<caption>형벌사항 공무원 연금 : 형벌사항으로 구성</caption>
 											<colgroup>
-												<col style="width: 130px;">
+												<col style="width: 170px;">
 												<col>
 											</colgroup>
 											<tbody>
@@ -101,12 +105,45 @@
 											</tbody>
 										</table>
 									</div>
+
+									<h5 class="defaultH5 pcmt24">사립학교 교직원 연금</h5>
+									<div class="hTableBody">
+										<table>
+											<caption>형벌사항 사립학교 교직원 연금 : 형벌사항으로 구성</caption>
+											<colgroup>
+												<col style="width: 170px;">
+												<col>
+											</colgroup>
+											<tbody>
+												<tr>
+													<th scope="row" id="radioLabel3">형벌사항 <span class="colorOrange">*</span></th>
+													<td>
+														<ul class="groupBox flexLeft" role="radiogroup" aria-labelledby="radioLabel3">
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio3_1" name="testRadio3">
+																	<label for="testRadio3_1">있음</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio3_2" name="testRadio3">
+																	<label for="testRadio3_2">없음</label>
+																</div>
+															</li>
+														</ul>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
 								</div>
 								<!-- //PC -->
 
 								<!-- Mobile -->
 								<div class="onlyMobile">
-									<ul class="m_hTableBody">
+									<h5 class="defaultH5">공무원 연금</h5>
+									<ul class="m_hTableBody momt16">
 										<li>
 											<label>형벌사항 <span class="colorOrange">*</span></label>
 											<div class="roundBoxGray">
@@ -127,30 +164,90 @@
 											</div>
 										</li>
 									</ul>
+
+									<h5 class="defaultH5 momt24">사립학교 교직원 연금</h5>
+									<ul class="m_hTableBody momt16">
+										<li>
+											<label>형벌사항 <span class="colorOrange">*</span></label>
+											<div class="roundBoxGray">
+												<ul class="groupBox flexLeft">
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_testRadio3_1" name="m_testRadio3">
+															<label for="m_testRadio3_1">있음</label>
+														</div>
+													</li>
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_testRadio3_2" name="m_testRadio3">
+															<label for="m_testRadio3_2">없음</label>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
 								</div>
 								<!-- //Mobile -->
 
 								<ul class="guideText mt">
 									<li>형벌사항은 연금기관에서 확인 후 문의 연락 드릴 수 있습니다.</li>
+									<li>&quot;형벌사항&quot;란에는 &quot;[ ]있음, [ ]없음&quot; 중에서 해당 사항의 [ ] 안에 &quot;√&quot;표시를 한 후 재직 중의 사유(직무와 관련되지 않은 경우 또는 퇴직 후 발생한 경우도 포함)로 수사진행 중 또는 형사재판 계류 중이거나 금고 이상의 형이 확정된 경우 등과 같은 형벌사항이 있는 경우와 금품 및 향응 수수, 공금의 횡령·유용으로 해임된 경우에는 해당되는 사항에 표시하십시오.</li>
 								</ul>
 							</div>
 						</div>
 
-						<hr class="space style2 onlyMobile">
+						<hr class="space style2">
 
 						<div class="pcmt24 m_toggleArea">
-							<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
-								<b class="defaultH5">대부사항</b>
-								<span class="toggleBtn onlyMobile"><i>대부사항 토글</i></span>
-							</button>
+							<div class="onlyMobile">
+								<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+									<b class="defaultH5">대부사항</b>
+									<span class="toggleBtn onlyMobile"><i>대부사항 토글</i></span>
+								</button>
+							</div>
 							<div class="target targetHidden">
 								<!-- PC -->
 								<div class="onlyPC">
+									<h5 class="defaultH5 bletSquare">대부사항</h5>
+									<h5 class="defaultH5 pcmt24">공무원 연금</h5>
 									<div class="hTableBody">
 										<table>
-											<caption>대부사항 : 대부사항, 기관선택, 대부종류, 상환액, 상환방법, 분할상환, 할부기간으로 구성</caption>
+											<caption>대부사항 공무원 연금 : 대부사항으로 구성</caption>
 											<colgroup>
-												<col style="width: 130px;">
+												<col style="width: 170px;">
+												<col>
+											</colgroup>
+											<tbody>
+												<tr>
+													<th scope="row" id="radioLabel22">대부사항 <span class="colorOrange">*</span></th>
+													<td>
+														<ul class="groupBox flexLeft" role="radiogroup" aria-labelledby="radioLabel22">
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio22_1" name="testRadio22">
+																	<label for="testRadio22_1">있음</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio22_2" name="testRadio22">
+																	<label for="testRadio22_2">없음</label>
+																</div>
+															</li>
+														</ul>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+									<h5 class="defaultH5 pcmt24">사립학교 교직원 연금</h5>
+									<div class="hTableBody">
+										<table>
+											<caption>대부사항 사립학교 교직원 연금 : 대부사항, 해당 대부사항으로 구성</caption>
+											<colgroup>
+												<col style="width: 170px;">
 												<col>
 											</colgroup>
 											<tbody>
@@ -174,110 +271,117 @@
 													</td>
 												</tr>
 												<tr>
-													<th scope="row">기관선택 <span class="colorOrange">*</span></th>
+													<th scope="row" id="checkboxLabel2">형벌사항 <span class="colorOrange">*</span></th>
 													<td>
-														<div class="mw200">
-															<select title="기관 선택">
-																<option disabled selected>기관선택</option>
-																<option>공무원연금공단</option>
-																<option>사립학교교직원연금공단</option>
-																<option>국방부군인연금</option>
-																<option>별정우체국연금관리단</option>
-															</select>
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<th scope="row">대부종류 <span class="colorOrange">*</span></th>
-													<td>
-														<div class="mw200">
-															<select title="대부종류 선택">
-																<option disabled selected>대부종류 선택</option>
-																<option>연금대부</option>
-																<option>대여장학금</option>
-																<option>은행신용대출</option>
-																<option>국고학자금 대여</option>
-																<option>국고대여학자금</option>
-																<option>경조사비</option>
-																<option>전세자금</option>
-																<option>그밖의 대부</option>
-																<option>대여학자금</option>
-															</select>
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<th scope="row">상환액 <span class="colorOrange">*</span></th>
-													<td>
-														<div class="mw200">
-															<input type="tel" title="상환액 입력" placeholder="상환액 입력"> <span class="other">원(이백만원)</span>
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<th scope="row" id="radioLabel3">상환방법 <span class="colorOrange">*</span></th>
-													<td>
-														<ul class="groupBox flexLeft" role="radiogroup" aria-labelledby="radioLabel3">
+														<ul class="groupBox flexLeft" role="group" aria-labelledby="checkboxLabel2">
 															<li>
-																<div class="radioBox">
-																	<input type="radio" id="testRadio3_1" name="testRadio3">
-																	<label for="testRadio3_1">일시</label>
+																<div class="checkboxBox">
+																	<input type="checkbox" id="testCheckbox2_1" name="testCheckbox2">
+																	<label for="testCheckbox2_1">대부항목A</label>
 																</div>
 															</li>
 															<li>
-																<div class="radioBox">
-																	<input type="radio" id="testRadio3_2" name="testRadio3">
-																	<label for="testRadio3_2">분할</label>
+																<div class="checkboxBox">
+																	<input type="checkbox" id="testCheckbox2_2" name="testCheckbox2">
+																	<label for="testCheckbox2_2">대부항목B</label>
 																</div>
 															</li>
 														</ul>
 													</td>
 												</tr>
+											</tbody>
+										</table>
+										<div class="requireText">
+											<i></i>
+											<span>중복선택 가능합니다. (한 개 이상 선택)</span>
+										</div>
+									</div>
+
+									<div class="hTableBody pcmt24">
+										<table>
+											<caption>대부사항 상세정보 : 대부항목, 상환액, 상환방법, 분할상환, 할부기간으로 구성</caption>
+											<colgroup>
+												<col style="width: 170px;">
+												<col>
+											</colgroup>
+											<tbody>
 												<tr>
-													<th scope="row" id="radioLabel4">분할상환 <span class="colorOrange">*</span></th>
+													<th scope="row">대부항목 <span class="colorOrange">*</span></th>
+													<td>대부항목B</td>
+												</tr>
+												<tr>
+													<th scope="row">상환액 <span class="colorOrange">*</span></th>
+													<td>
+														<div class="default">
+															<input type="text" title="상환액 입력" placeholder="상환액을 입력해주세요.">
+															<span class="other">원(원)</span>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row" id="radioLabel4">상환방법 <span class="colorOrange">*</span></th>
 													<td>
 														<ul class="groupBox flexLeft" role="radiogroup" aria-labelledby="radioLabel4">
 															<li>
 																<div class="radioBox">
 																	<input type="radio" id="testRadio4_1" name="testRadio4">
-																	<label for="testRadio4_1">전액</label>
+																	<label for="testRadio4_1">일시</label>
 																</div>
 															</li>
 															<li>
 																<div class="radioBox">
 																	<input type="radio" id="testRadio4_2" name="testRadio4">
-																	<label for="testRadio4_2">일부</label>
-																</div>
-															</li>
-															<li>
-																<div class="radioBox">
-																	<input type="radio" id="testRadio4_3" name="testRadio4">
-																	<label for="testRadio4_3">할부</label>
+																	<label for="testRadio4_2">분할</label>
 																</div>
 															</li>
 														</ul>
 													</td>
 												</tr>
 												<tr>
-													<th scope="row" id="radioLabel5">할부기간</th>
+													<th scope="row" id="radioLabel5">분할상환 <span class="colorOrange">*</span></th>
 													<td>
 														<ul class="groupBox flexLeft" role="radiogroup" aria-labelledby="radioLabel5">
 															<li>
 																<div class="radioBox">
 																	<input type="radio" id="testRadio5_1" name="testRadio5">
-																	<label for="testRadio5_1">1년</label>
+																	<label for="testRadio5_1">전액</label>
 																</div>
 															</li>
 															<li>
 																<div class="radioBox">
 																	<input type="radio" id="testRadio5_2" name="testRadio5">
-																	<label for="testRadio5_2">2년</label>
+																	<label for="testRadio5_2">일부</label>
 																</div>
 															</li>
 															<li>
 																<div class="radioBox">
 																	<input type="radio" id="testRadio5_3" name="testRadio5">
-																	<label for="testRadio5_3">3년</label>
+																	<label for="testRadio5_3">할부</label>
+																</div>
+															</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row" id="radioLabel6">할부기간 <span class="colorOrange">*</span></th>
+													<td>
+														<ul class="groupBox flexLeft" role="radiogroup" aria-labelledby="radioLabel6">
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio6_1" name="testRadio6">
+																	<label for="testRadio6_1">1년</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio6_2" name="testRadio6">
+																	<label for="testRadio6_2">2년</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio6_3" name="testRadio6">
+																	<label for="testRadio6_3">3년</label>
 																</div>
 															</li>
 														</ul>
@@ -291,7 +395,31 @@
 
 								<!-- Mobile -->
 								<div class="onlyMobile">
-									<ul class="m_hTableBody">
+									<h5 class="defaultH5">공무원 연금</h5>
+									<ul class="m_hTableBody momt16">
+										<li>
+											<label>대부사항 <span class="colorOrange">*</span></label>
+											<div class="roundBoxGray">
+												<ul class="groupBox flexLeft">
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_testRadio22_1" name="m_testRadio22">
+															<label for="m_testRadio22_1">있음</label>
+														</div>
+													</li>
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_testRadio22_2" name="m_testRadio22">
+															<label for="m_testRadio22_2">없음</label>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+
+									<h5 class="defaultH5 momt24">사립학교 교직원 연금</h5>
+									<ul class="m_hTableBody momt16">
 										<li>
 											<label>대부사항 <span class="colorOrange">*</span></label>
 											<div class="roundBoxGray">
@@ -312,199 +440,282 @@
 											</div>
 										</li>
 										<li>
-											<label>기관선택 <span class="colorOrange">*</span></label>
-											<div>
-												<select title="기관 선택">
-													<option disabled selected>기관선택</option>
-													<option>공무원연금공단</option>
-													<option>사립학교교직원연금공단</option>
-													<option>국방부군인연금</option>
-													<option>별정우체국연금관리단</option>
-												</select>
+											<label>해당 대부사항 <span class="colorOrange">*</span></label>
+											<div class="roundBoxGray">
+												<ul class="groupBox flexLeft">
+													<li>
+														<div class="checkboxBox">
+															<input type="checkbox" id="m_testCheckbox2_1" name="m_testCheckbox2">
+															<label for="m_testCheckbox2_1">대부항목A</label>
+														</div>
+													</li>
+													<li>
+														<div class="checkboxBox">
+															<input type="checkbox" id="m_testCheckbox2_2" name="m_testCheckbox2">
+															<label for="m_testCheckbox2_2">대부항목B</label>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<div class="requireText">
+												<i></i>
+												<span>중복선택 가능합니다. (한 개 이상 선택)</span>
 											</div>
 										</li>
+									</ul>
+
+									<ul class="mListMulti momt16">
 										<li>
-											<label>대부종류 <span class="colorOrange">*</span></label>
-											<div>
-												<select title="대부종류 선택">
-													<option disabled selected>대부종류 선택</option>
-													<option>연금대부</option>
-													<option>대여장학금</option>
-													<option>은행신용대출</option>
-													<option>국고학자금 대여</option>
-													<option>국고대여학자금</option>
-													<option>경조사비</option>
-													<option>전세자금</option>
-													<option>그밖의 대부</option>
-													<option>대여학자금</option>
-												</select>
-											</div>
-										</li>
-										<li>
-											<label>상환액 <span class="colorOrange">*</span></label>
-											<div>
-												<div class="flexBtnOne">
-													<input type="tel" title="상환액 입력" placeholder="상환액 입력">
-													<span class="other">원</span>
+											<div class="roundBoxGraySmall">
+												<div class="flexLeft spaceBetween">
+													<span class="fontSize14">대부항목</span>
+													<b class="fontSize14">대부항목B</b>
 												</div>
-												<div class="momt8">(이백만원)</div>
 											</div>
-										</li>
-										<li>
-											<label>상환방법 <span class="colorOrange">*</span></label>
-											<div class="roundBoxGray">
-												<ul class="groupBox flexLeft">
-													<li>
-														<div class="radioBox">
-															<input type="radio" id="m_testRadio3_1" name="m_testRadio3">
-															<label for="m_testRadio3_1">일시</label>
-														</div>
-													</li>
-													<li>
-														<div class="radioBox">
-															<input type="radio" id="m_testRadio3_2" name="m_testRadio3">
-															<label for="m_testRadio3_2">분할</label>
-														</div>
-													</li>
-												</ul>
-											</div>
-										</li>
-										<li>
-											<label>분할상환 <span class="colorOrange">*</span></label>
-											<div class="roundBoxGray">
-												<ul class="groupBox flexLeft">
-													<li>
-														<div class="radioBox">
-															<input type="radio" id="m_testRadio4_1" name="m_testRadio4">
-															<label for="m_testRadio4_1">전액</label>
-														</div>
-													</li>
-													<li>
-														<div class="radioBox">
-															<input type="radio" id="m_testRadio4_2" name="m_testRadio4">
-															<label for="m_testRadio4_2">일부</label>
-														</div>
-													</li>
-													<li>
-														<div class="radioBox">
-															<input type="radio" id="m_testRadio4_3" name="m_testRadio4">
-															<label for="m_testRadio4_3">할부</label>
-														</div>
-													</li>
-												</ul>
-											</div>
-										</li>
-										<li>
-											<label>할부기간</label>
-											<div class="roundBoxGray">
-												<ul class="groupBox flexLeft">
-													<li>
-														<div class="radioBox">
-															<input type="radio" id="m_testRadio5_1" name="m_testRadio5">
-															<label for="m_testRadio5_1">1년</label>
-														</div>
-													</li>
-													<li>
-														<div class="radioBox">
-															<input type="radio" id="m_testRadio5_2" name="m_testRadio5">
-															<label for="m_testRadio5_2">2년</label>
-														</div>
-													</li>
-													<li>
-														<div class="radioBox">
-															<input type="radio" id="m_testRadio5_3" name="m_testRadio5">
-															<label for="m_testRadio5_3">3년</label>
-														</div>
-													</li>
-												</ul>
-											</div>
+
+											<ul class="msList momt16">
+												<li class="block">
+													<b>상환액 <span class="colorOrange">*</span></b>
+													<div class="flexBtnOne momt8">
+														<input type="text" title="상환액 입력" placeholder="상환액을 입력해주세요."><span class="other">원</span>
+													</div>
+													<div class="momt8">
+														(원)
+													</div>
+												</li>
+												<li class="block momt24">
+													<b>상환방법 <span class="colorOrange">*</span></b>
+													<div class="roundBoxGraySmall momt8">
+														<ul class="groupBox flexLeft">
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="m_testRadio4_1" name="m_testRadio4">
+																	<label for="m_testRadio4_1">매우만족</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="m_testRadio4_2" name="m_testRadio4">
+																	<label for="m_testRadio4_2">만족</label>
+																</div>
+															</li>
+														</ul>
+													</div>
+												</li>
+												<li class="block momt24">
+													<b>분할상환 <span class="colorOrange">*</span></b>
+													<div class="roundBoxGraySmall momt8">
+														<ul class="groupBox flexLeft">
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="m_testRadio5_1" name="m_testRadio5">
+																	<label for="m_testRadio5_1">전액</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="m_testRadio5_2" name="m_testRadio5">
+																	<label for="m_testRadio5_2">일부</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="m_testRadio5_3" name="m_testRadio5">
+																	<label for="m_testRadio5_3">할부</label>
+																</div>
+															</li>
+														</ul>
+													</div>
+												</li>
+												<li class="block momt24">
+													<b>할부기간</b>
+													<div class="roundBoxGraySmall momt8">
+														<ul class="groupBox flexLeft">
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="m_testRadio6_1" name="m_testRadio6">
+																	<label for="m_testRadio6_1">1년</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="m_testRadio6_2" name="m_testRadio6">
+																	<label for="m_testRadio6_2">2년</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="m_testRadio6_3" name="m_testRadio6">
+																	<label for="m_testRadio6_3">3년</label>
+																</div>
+															</li>
+														</ul>
+													</div>
+												</li>
+											</ul>
 										</li>
 									</ul>
 								</div>
 								<!-- //Mobile -->
 
 								<ul class="guideText mt">
-									<li>"지급계좌"란에는 지급받으려는 금융기관의 계좌번호를 적되, 반드시 입출금이 가능한 계좌여야 합니다.</li>
-									<li>공무원연금에서 대부금을 미상환한 경우의 연금 지급계좌는 대부 금융기관과 같아야 합니다.</li>
-									<li>입출금이 가능한 본인 명의의 계좌만 등록 가능합니다.</li>
+									<li>&quot;대부사항&quot;란에는 대부금 잔액이 있는 경우 &quot;[ ]있음, [ ]없음&quot; 중에서 해당 사항의 [ ] 안에 &quot;√&quot;표시를 한 후 대부 종류와 상환방법을 적으십시오.</li>
 								</ul>
 							</div>
 						</div>
 
-						<hr class="space style2 onlyMobile">
+						<hr class="space style2">
 
-						<div class="pcmt24 m_toggleArea">
-							<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
-								<b class="defaultH5">퇴직사유</b>
-								<span class="toggleBtn onlyMobile"><i>퇴직사유 토글</i></span>
-							</button>
+						<div class="m_toggleArea">
+							<div class="onlyMobile">
+								<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+									<b class="defaultH5">퇴직사유</b>
+									<span class="toggleBtn onlyMobile"><i>퇴직사유 토글</i></span>
+								</button>
+							</div>
 							<div class="target targetHidden">
 								<!-- PC -->
 								<div class="onlyPC">
+									<h5 class="defaultH5 bletSquare">퇴직사유</h5>
+									<h5 class="defaultH5 pcmt16">공무원 연금</h5>
 									<div class="hTableBody">
 										<table>
-											<caption>퇴직사유 : 해당 퇴직사유로 구성</caption>
+											<caption>퇴직사유 공무원 연금 : 퇴직사유로 구성</caption>
 											<colgroup>
-												<col style="width: 130px;">
-												<col style="width: auto;">
+												<col style="width: 170px;">
+												<col>
 											</colgroup>
 											<tbody>
 												<tr>
-													<th scope="row" id="radioLabel6">해당<br> 퇴직사유</th>
+													<th scope="row" id="radioLabel7">퇴직사유 <span class="colorOrange">*</span></th>
 													<td>
-														<ul class="groupBox ieListHack" role="radiogroup" aria-labelledby="radioLabel6">
+														<ul class="groupBox ieListHack" role="radiogroup" aria-labelledby="radioLabel7">
 															<li>
 																<div class="radioBox">
-																	<input type="radio" id="testRadio6_1" name="testRadio6">
-																	<label for="testRadio6_1">의원면직</label>
+																	<input type="radio" id="testRadio7_1" name="testRadio6">
+																	<label for="testRadio7_1">의원면직</label>
 																</div>
 															</li>
 															<li>
 																<div class="radioBox">
-																	<input type="radio" id="testRadio6_2" name="testRadio6">
-																	<label for="testRadio6_2">명예퇴직</label>
+																	<input type="radio" id="testRadio7_2" name="testRadio6">
+																	<label for="testRadio7_2">명예퇴직</label>
 																</div>
 															</li>
 															<li>
 																<div class="radioBox">
-																	<input type="radio" id="testRadio6_3" name="testRadio6">
-																	<label for="testRadio6_3">정년퇴직</label>
+																	<input type="radio" id="testRadio7_3" name="testRadio6">
+																	<label for="testRadio7_3">정년퇴직</label>
 																</div>
 															</li>
 															<li>
 																<div class="radioBox">
-																	<input type="radio" id="testRadio6_4" name="testRadio6">
-																	<label for="testRadio6_4">당연퇴직</label>
+																	<input type="radio" id="testRadio7_4" name="testRadio6">
+																	<label for="testRadio7_4">당연퇴직</label>
 																</div>
 															</li>
 															<li>
 																<div class="radioBox">
-																	<input type="radio" id="testRadio6_5" name="testRadio6">
-																	<label for="testRadio6_5">직권면직</label>
+																	<input type="radio" id="testRadio7_5" name="testRadio6">
+																	<label for="testRadio7_5">직권면직</label>
 																</div>
 															</li>
 															<li>
 																<div class="radioBox">
-																	<input type="radio" id="testRadio6_6" name="testRadio6">
-																	<label for="testRadio6_6">해임</label>
+																	<input type="radio" id="testRadio7_6" name="testRadio6">
+																	<label for="testRadio7_6">해임</label>
 																</div>
 															</li>
 															<li>
 																<div class="radioBox">
-																	<input type="radio" id="testRadio6_7" name="testRadio6">
-																	<label for="testRadio6_7">파면</label>
+																	<input type="radio" id="testRadio7_7" name="testRadio6">
+																	<label for="testRadio7_7">파면</label>
 																</div>
 															</li>
 															<li>
 																<div class="radioBox">
-																	<input type="radio" id="testRadio6_8" name="testRadio6">
-																	<label for="testRadio6_8">복무기간 만료</label>
+																	<input type="radio" id="testRadio7_8" name="testRadio6">
+																	<label for="testRadio7_8">복무기간 만료</label>
 																</div>
 															</li>
 															<li>
 																<div class="radioBox">
-																	<input type="radio" id="testRadio6_9" name="testRadio6">
-																	<label for="testRadio6_9">기타</label>
+																	<input type="radio" id="testRadio7_9" name="testRadio6">
+																	<label for="testRadio7_9">기타</label>
+																</div>
+															</li>
+														</ul>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+									<h5 class="defaultH5 pcmt24">사립학교 교직원 연금</h5>
+									<div class="hTableBody">
+										<table>
+											<caption>퇴직사유 사립학교 교직원 연금 : 퇴직사유로 구성</caption>
+											<colgroup>
+												<col style="width: 170px;">
+												<col>
+											</colgroup>
+											<tbody>
+												<tr>
+													<th scope="row" id="radioLabel8">퇴직사유 <span class="colorOrange">*</span></th>
+													<td>
+														<ul class="groupBox ieListHack" role="radiogroup" aria-labelledby="radioLabel8">
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio8_1" name="testRadio6">
+																	<label for="testRadio8_1">의원면직</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio8_2" name="testRadio6">
+																	<label for="testRadio8_2">명예퇴직</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio8_3" name="testRadio6">
+																	<label for="testRadio8_3">정년퇴직</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio8_4" name="testRadio6">
+																	<label for="testRadio8_4">당연퇴직</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio8_5" name="testRadio6">
+																	<label for="testRadio8_5">직권면직</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio8_6" name="testRadio6">
+																	<label for="testRadio8_6">해임</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio8_7" name="testRadio6">
+																	<label for="testRadio8_7">파면</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio8_8" name="testRadio6">
+																	<label for="testRadio8_8">복무기간 만료</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio8_9" name="testRadio6">
+																	<label for="testRadio8_9">기타</label>
 																</div>
 															</li>
 														</ul>
@@ -518,63 +729,129 @@
 
 								<!-- Mobile -->
 								<div class="onlyMobile">
-									<ul class="m_hTableBody">
+									<h5 class="defaultH5">공무원 연금</h5>
+									<ul class="m_hTableBody momt16">
 										<li>
-											<label>대부사항 <span class="colorOrange">*</span></label>
+											<label>퇴직사유 <span class="colorOrange">*</span></label>
 											<div class="roundBoxGray">
 												<ul class="groupBox flexLeft flexWrap">
 													<li>
 														<div class="radioBox">
-															<input type="radio" id="m_testRadio6_1" name="m_testRadio6">
-															<label for="m_testRadio6_1">의원면직</label>
+															<input type="radio" id="m_testRadio7_1" name="m_testRadio7">
+															<label for="m_testRadio7_1">의원면직</label>
 														</div>
 													</li>
 													<li>
 														<div class="radioBox">
-															<input type="radio" id="m_testRadio6_2" name="m_testRadio6">
-															<label for="m_testRadio6_2">명예퇴직</label>
+															<input type="radio" id="m_testRadio7_2" name="m_testRadio7">
+															<label for="m_testRadio7_2">명예퇴직</label>
 														</div>
 													</li>
 													<li>
 														<div class="radioBox">
-															<input type="radio" id="m_testRadio6_3" name="m_testRadio6">
-															<label for="m_testRadio6_3">정년퇴직</label>
+															<input type="radio" id="m_testRadio7_3" name="m_testRadio7">
+															<label for="m_testRadio7_3">정년퇴직</label>
 														</div>
 													</li>
 													<li>
 														<div class="radioBox">
-															<input type="radio" id="m_testRadio6_4" name="m_testRadio6">
-															<label for="m_testRadio6_4">당연퇴직</label>
+															<input type="radio" id="m_testRadio7_4" name="m_testRadio7">
+															<label for="m_testRadio7_4">당연퇴직</label>
 														</div>
 													</li>
 													<li>
 														<div class="radioBox">
-															<input type="radio" id="m_testRadio6_5" name="m_testRadio6">
-															<label for="m_testRadio6_5">직권면직</label>
+															<input type="radio" id="m_testRadio7_5" name="m_testRadio7">
+															<label for="m_testRadio7_5">직권면직</label>
 														</div>
 													</li>
 													<li>
 														<div class="radioBox">
-															<input type="radio" id="m_testRadio6_6" name="m_testRadio6">
-															<label for="m_testRadio6_6">해임</label>
+															<input type="radio" id="m_testRadio7_6" name="m_testRadio7">
+															<label for="m_testRadio7_6">해임</label>
 														</div>
 													</li>
 													<li>
 														<div class="radioBox">
-															<input type="radio" id="m_testRadio6_7" name="m_testRadio6">
-															<label for="m_testRadio6_7">파면</label>
+															<input type="radio" id="m_testRadio7_7" name="m_testRadio7">
+															<label for="m_testRadio7_7">파면</label>
 														</div>
 													</li>
 													<li>
 														<div class="radioBox">
-															<input type="radio" id="m_testRadio6_8" name="m_testRadio6">
-															<label for="m_testRadio6_8">복무기간 만료</label>
+															<input type="radio" id="m_testRadio7_8" name="m_testRadio7">
+															<label for="m_testRadio7_8">복무기간 만료</label>
 														</div>
 													</li>
 													<li>
 														<div class="radioBox">
-															<input type="radio" id="m_testRadio6_9" name="m_testRadio6">
-															<label for="m_testRadio6_9">기타</label>
+															<input type="radio" id="m_testRadio7_9" name="m_testRadio7">
+															<label for="m_testRadio7_9">기타</label>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+
+									<h5 class="defaultH5 momt24">사립학교 교직원 연금</h5>
+									<ul class="m_hTableBody momt16">
+										<li>
+											<label>퇴직사유 <span class="colorOrange">*</span></label>
+											<div class="roundBoxGray">
+												<ul class="groupBox flexLeft flexWrap">
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_testRadio8_1" name="m_testRadio8">
+															<label for="m_testRadio8_1">의원면직</label>
+														</div>
+													</li>
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_testRadio8_2" name="m_testRadio8">
+															<label for="m_testRadio8_2">명예퇴직</label>
+														</div>
+													</li>
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_testRadio8_3" name="m_testRadio8">
+															<label for="m_testRadio8_3">정년퇴직</label>
+														</div>
+													</li>
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_testRadio8_4" name="m_testRadio8">
+															<label for="m_testRadio8_4">당연퇴직</label>
+														</div>
+													</li>
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_testRadio8_5" name="m_testRadio8">
+															<label for="m_testRadio8_5">직권면직</label>
+														</div>
+													</li>
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_testRadio8_6" name="m_testRadio8">
+															<label for="m_testRadio8_6">해임</label>
+														</div>
+													</li>
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_testRadio8_7" name="m_testRadio8">
+															<label for="m_testRadio8_7">파면</label>
+														</div>
+													</li>
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_testRadio8_8" name="m_testRadio8">
+															<label for="m_testRadio8_8">복무기간 만료</label>
+														</div>
+													</li>
+													<li>
+														<div class="radioBox">
+															<input type="radio" id="m_testRadio8_9" name="m_testRadio8">
+															<label for="m_testRadio8_9">기타</label>
 														</div>
 													</li>
 												</ul>
@@ -583,6 +860,373 @@
 									</ul>
 								</div>
 								<!-- //Mobile -->
+							</div>
+						</div>
+
+						<hr class="space style2">
+
+						<div class="m_toggleArea">
+							<div class="onlyMobile">
+								<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+									<b class="defaultH5">첨부파일</b>
+									<span class="toggleBtn onlyMobile"><i>첨부파일 토글</i></span>
+								</button>
+							</div>
+
+							<div class="target targetHidden">
+								<!-- PC -->
+								<div class="onlyPC">
+									<h5 class="defaultH5 bletSquare">첨부파일</h5>
+									<h5 class="defaultH5 pcmt16">공무원 연금</h5>
+									<div class="hTableBody">
+										<table>
+											<caption>첨부파일 공무원 연금 : 연금소득자소득공제신고서 1부, 징계 사유를 확인할 수 있는 서류 사본 1부, 퇴직발령통지서 사본 1부, 급여액 산정서 1부, 직원급여카드 1부 및 인사기록카드 사본 1부, 퇴직소득원천징수영수증 사본 1부로 구성</caption>
+											<colgroup>
+												<col style="width: 350px;">
+												<col>
+											</colgroup>
+											<tbody>
+												<tr>
+													<th scope="row">연금소득자소득공제신고서 1부</th>
+													<td>
+														<div class="flexBtnOne">
+															<input type="text" title="연금소득자소득공제신고서 1부 등록" placeholder="등록해 주세요.">
+															<button type="button" class="button h40 lineBlack">찾기</button>
+														</div>
+														<div class="requireText">
+															<i></i>
+															<span>지금 등록 준비 되지 않으셨다면,  관할 지사로 우편이나 팩스로 전송하시기 바랍니다.</span>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">
+														징계 사유를 확인할 수 있는 서류 사본 1부
+														<span class="smallText">퇴직사유가 해임인 사람의 경우에만  제출</span>
+													</th>
+													<td>
+														<div class="flexBtnOne">
+															<a href="123456789.pdf" download>123456789.pdf</a>
+															<button type="button" class="button h40 lineBlack">삭제</button>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">
+														퇴직발령통지서 사본 1부
+														<span class="smallText">「공무원연금법」 제23조에 따른 재직기간을 연계한 경우에만 제출</span>
+													</th>
+													<td>
+														<div class="flexBtnOne">
+															<input type="text" title="퇴직발령통지서 사본 1부 등록" placeholder="등록해 주세요.">
+															<button type="button" class="button h40 lineBlack">찾기</button>
+														</div>
+														<div class="requireText">
+															<i></i>
+															<span>지금 등록 준비 되지 않으셨다면,  관할 지사로 우편이나 팩스로 전송하시기 바랍니다.</span>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">
+														급여액 산정서 1부
+														<span class="smallText">「군인연금법」 제16조에 따른 복무기간을 연계한 경우에만 제출</span>
+													</th>
+													<td>
+														<div class="flexBtnOne">
+															<input type="text" title="급여액 산정서 1부 등록" placeholder="등록해 주세요.">
+															<button type="button" class="button h40 lineBlack">찾기</button>
+														</div>
+														<div class="requireText">
+															<i></i>
+															<span>지금 등록 준비 되지 않으셨다면,  관할 지사로 우편이나 팩스로 전송하시기 바랍니다.</span>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">
+														직원급여카드 1부 및 인사기록카드 사본 1부
+														<span class="smallText">「별정우체국법」 제34조에 따른 재직기간을 연계한 경우에만 제출</span>
+													</th>
+													<td>
+														<div class="flexBtnOne">
+															<input type="text" title="직원급여카드 1부 및 인사기록카드 사본 1부 등록" placeholder="등록해 주세요.">
+															<button type="button" class="button h40 lineBlack">찾기</button>
+														</div>
+														<div class="requireText">
+															<i></i>
+															<span>지금 등록 준비 되지 않으셨다면,  관할 지사로 우편이나 팩스로 전송하시기 바랍니다.</span>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">
+														퇴직소득원천징수영수증 사본 1부
+														<span class="smallText">명예퇴직수당·조기퇴직수당 등 퇴직소득을 지급받은 사람의 경우에만 제출</span>
+													</th>
+													<td>
+														<div class="flexBtnOne">
+															<input type="text" title="퇴직소득원천징수영수증 사본 1부 등록" placeholder="등록해 주세요.">
+															<button type="button" class="button h40 lineBlack">찾기</button>
+														</div>
+														<div class="requireText">
+															<i></i>
+															<span>지금 등록 준비 되지 않으셨다면,  관할 지사로 우편이나 팩스로 전송하시기 바랍니다.</span>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+									<h5 class="defaultH5 pcmt24">사립학교 교직원 연금</h5>
+									<div class="hTableBody">
+										<table>
+											<caption>첨부파일 사립학교 교직원 연금 : 연금소득자소득공제신고서 1부, 징계 사유를 확인할 수 있는 서류 사본 1부, 퇴직발령통지서 사본 1부, 급여액 산정서 1부, 직원급여카드 1부 및 인사기록카드 사본 1부, 퇴직소득원천징수영수증 사본 1부로 구성</caption>
+											<colgroup>
+												<col style="width: 350px;">
+												<col>
+											</colgroup>
+											<tbody>
+												<tr>
+													<th scope="row">연금소득자소득공제신고서 1부</th>
+													<td>
+														<div class="flexBtnOne">
+															<input type="text" title="연금소득자소득공제신고서 1부 등록" placeholder="등록해 주세요.">
+															<button type="button" class="button h40 lineBlack">찾기</button>
+														</div>
+														<div class="requireText">
+															<i></i>
+															<span>지금 등록 준비 되지 않으셨다면,  관할 지사로 우편이나 팩스로 전송하시기 바랍니다.</span>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">
+														징계 사유를 확인할 수 있는 서류 사본 1부
+														<span class="smallText">퇴직사유가 해임인 사람의 경우에만  제출</span>
+													</th>
+													<td>
+														<div class="flexBtnOne">
+															<input type="text" title="징계 사유를 확인할 수 있는 서류 사본 1부 등록" placeholder="등록해 주세요.">
+															<button type="button" class="button h40 lineBlack">찾기</button>
+														</div>
+														<div class="requireText">
+															<i></i>
+															<span>지금 등록 준비 되지 않으셨다면,  관할 지사로 우편이나 팩스로 전송하시기 바랍니다.</span>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">
+														퇴직발령통지서 사본 1부
+														<span class="smallText">「공무원연금법」 제23조에 따른 재직기간을 연계한 경우에만 제출</span>
+													</th>
+													<td>
+														<div class="flexBtnOne">
+															<input type="text" title="퇴직발령통지서 사본 1부 등록" placeholder="등록해 주세요.">
+															<button type="button" class="button h40 lineBlack">찾기</button>
+														</div>
+														<div class="requireText">
+															<i></i>
+															<span>지금 등록 준비 되지 않으셨다면,  관할 지사로 우편이나 팩스로 전송하시기 바랍니다.</span>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">
+														급여액 산정서 1부
+														<span class="smallText">「군인연금법」 제16조에 따른 복무기간을 연계한 경우에만 제출</span>
+													</th>
+													<td>
+														<div class="flexBtnOne">
+															<input type="text" title="급여액 산정서 1부 등록" placeholder="등록해 주세요.">
+															<button type="button" class="button h40 lineBlack">찾기</button>
+														</div>
+														<div class="requireText">
+															<i></i>
+															<span>지금 등록 준비 되지 않으셨다면,  관할 지사로 우편이나 팩스로 전송하시기 바랍니다.</span>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">
+														직원급여카드 1부 및 인사기록카드 사본 1부
+														<span class="smallText">「별정우체국법」 제34조에 따른 재직기간을 연계한 경우에만 제출</span>
+													</th>
+													<td>
+														<div class="flexBtnOne">
+															<input type="text" title="직원급여카드 1부 및 인사기록카드 사본 1부 등록" placeholder="등록해 주세요.">
+															<button type="button" class="button h40 lineBlack">찾기</button>
+														</div>
+														<div class="requireText">
+															<i></i>
+															<span>지금 등록 준비 되지 않으셨다면,  관할 지사로 우편이나 팩스로 전송하시기 바랍니다.</span>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">
+														퇴직소득원천징수영수증 사본 1부
+														<span class="smallText">명예퇴직수당·조기퇴직수당 등 퇴직소득을 지급받은 사람의 경우에만 제출</span>
+													</th>
+													<td>
+														<div class="flexBtnOne">
+															<input type="text" title="퇴직소득원천징수영수증 사본 1부 등록" placeholder="등록해 주세요.">
+															<button type="button" class="button h40 lineBlack">찾기</button>
+														</div>
+														<div class="requireText">
+															<i></i>
+															<span>지금 등록 준비 되지 않으셨다면,  관할 지사로 우편이나 팩스로 전송하시기 바랍니다.</span>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<!-- //PC -->
+
+								<!-- Mobile -->
+								<div class="onlyMobile">
+									<h5 class="defaultH5">공무원 연금</h5>
+									<ul class="m_hTableBody momt16">
+										<li>
+											<label>연금소득자소득공제신고서 1부</label>
+											<div class="flexBtnOne">
+												<input type="text" title="연금소득자소득공제신고서 1부 등록" placeholder="등록해 주세요.">
+												<button type="button" class="button h40 lineBlack other">찾기</button>
+											</div>
+											<div class="requireText">
+												<i></i>
+												<span>지금 등록 준비 되지 않으셨다면,  관할 지사로 우편이나 팩스로 전송하시기 바랍니다.</span>
+											</div>
+										</li>
+										<li>
+											<label>징계 사유를 확인할 수 있는 서류 사본 1부<span class="smallText">퇴직사유가 해임인 사람의 경우에만  제출</span></label>
+											<div class="flexBtnOne">
+												<input type="text" title="징계 사유를 확인할 수 있는 서류 사본 1부 등록" placeholder="등록해 주세요.">
+												<button type="button" class="button h40 lineBlack other">찾기</button>
+											</div>
+										</li>
+										<li>
+											<label>퇴직발령통지서 사본 1부<span class="smallText">「공무원연금법」 제23조에 따른 재직기간을 연계한 경우에만 제출</span></label>
+											<div class="flexBtnOne">
+												<input type="text" title="퇴직발령통지서 사본 1부 등록" placeholder="등록해 주세요.">
+												<button type="button" class="button h40 lineBlack other">찾기</button>
+											</div>
+											<div class="requireText">
+												<i></i>
+												<span>지금 등록 준비 되지 않으셨다면,  관할 지사로 우편이나 팩스로 전송하시기 바랍니다.</span>
+											</div>
+										</li>
+										<li>
+											<label>급여액 산정서 1부 사본<span class="smallText">「군인연금법」 제16조에 따른 복무기간을 연계한 경우에만 제출</span></label>
+											<div class="flexBtnOne">
+												<input type="text" title="급여액 산정서 1부 등록" placeholder="등록해 주세요.">
+												<button type="button" class="button h40 lineBlack other">찾기</button>
+											</div>
+											<div class="requireText">
+												<i></i>
+												<span>지금 등록 준비 되지 않으셨다면,  관할 지사로 우편이나 팩스로 전송하시기 바랍니다.</span>
+											</div>
+										</li>
+										<li>
+											<label>직원급여카드 1부 및 인사기록카드 사본 1부<span class="smallText">「별정우체국법」 제34조에 따른 재직기간을 연계한 경우에만 제출</span></label>
+											<div class="flexBtnOne">
+												<input type="text" title="직원급여카드 1부 및 인사기록카드 사본 1부 등록" placeholder="등록해 주세요.">
+												<button type="button" class="button h40 lineBlack other">찾기</button>
+											</div>
+											<div class="requireText">
+												<i></i>
+												<span>지금 등록 준비 되지 않으셨다면,  관할 지사로 우편이나 팩스로 전송하시기 바랍니다.</span>
+											</div>
+										</li>
+										<li>
+											<label>퇴직소득원천징수영수증 사본 1부<span class="smallText">명예퇴직수당·조기퇴직수당 등 퇴직소득을 지급받은 사람의 경우에만 제출</span></label>
+											<div class="flexBtnOne">
+												<input type="text" title="퇴직소득원천징수영수증 사본 1부 등록" placeholder="등록해 주세요.">
+												<button type="button" class="button h40 lineBlack other">찾기</button>
+											</div>
+											<div class="requireText">
+												<i></i>
+												<span>지금 등록 준비 되지 않으셨다면,  관할 지사로 우편이나 팩스로 전송하시기 바랍니다.</span>
+											</div>
+										</li>
+									</ul>
+
+									<h5 class="defaultH5 momt24">사립학교 교직원 연금</h5>
+									<ul class="m_hTableBody momt16">
+										<li>
+											<label>연금소득자소득공제신고서 1부</label>
+											<div class="flexBtnOne">
+												<input type="text" title="연금소득자소득공제신고서 1부 등록" placeholder="등록해 주세요.">
+												<button type="button" class="button h40 lineBlack other">찾기</button>
+											</div>
+											<div class="requireText">
+												<i></i>
+												<span>지금 등록 준비 되지 않으셨다면,  관할 지사로 우편이나 팩스로 전송하시기 바랍니다.</span>
+											</div>
+										</li>
+										<li>
+											<label>징계 사유를 확인할 수 있는 서류 사본 1부<span class="smallText">퇴직사유가 해임인 사람의 경우에만  제출</span></label>
+											<div class="flexBtnOne">
+												<input type="text" title="징계 사유를 확인할 수 있는 서류 사본 1부 등록" placeholder="등록해 주세요.">
+												<button type="button" class="button h40 lineBlack other">찾기</button>
+											</div>
+										</li>
+										<li>
+											<label>퇴직발령통지서 사본 1부<span class="smallText">「공무원연금법」 제23조에 따른 재직기간을 연계한 경우에만 제출</span></label>
+											<div class="flexBtnOne">
+												<input type="text" title="퇴직발령통지서 사본 1부 등록" placeholder="등록해 주세요.">
+												<button type="button" class="button h40 lineBlack other">찾기</button>
+											</div>
+											<div class="requireText">
+												<i></i>
+												<span>지금 등록 준비 되지 않으셨다면,  관할 지사로 우편이나 팩스로 전송하시기 바랍니다.</span>
+											</div>
+										</li>
+										<li>
+											<label>급여액 산정서 1부 사본<span class="smallText">「군인연금법」 제16조에 따른 복무기간을 연계한 경우에만 제출</span></label>
+											<div class="flexBtnOne">
+												<input type="text" title="급여액 산정서 1부 등록" placeholder="등록해 주세요.">
+												<button type="button" class="button h40 lineBlack other">찾기</button>
+											</div>
+											<div class="requireText">
+												<i></i>
+												<span>지금 등록 준비 되지 않으셨다면,  관할 지사로 우편이나 팩스로 전송하시기 바랍니다.</span>
+											</div>
+										</li>
+										<li>
+											<label>직원급여카드 1부 및 인사기록카드 사본 1부<span class="smallText">「별정우체국법」 제34조에 따른 재직기간을 연계한 경우에만 제출</span></label>
+											<div class="flexBtnOne">
+												<input type="text" title="직원급여카드 1부 및 인사기록카드 사본 1부 등록" placeholder="등록해 주세요.">
+												<button type="button" class="button h40 lineBlack other">찾기</button>
+											</div>
+											<div class="requireText">
+												<i></i>
+												<span>지금 등록 준비 되지 않으셨다면,  관할 지사로 우편이나 팩스로 전송하시기 바랍니다.</span>
+											</div>
+										</li>
+										<li>
+											<label>퇴직소득원천징수영수증 사본 1부<span class="smallText">명예퇴직수당·조기퇴직수당 등 퇴직소득을 지급받은 사람의 경우에만 제출</span></label>
+											<div class="flexBtnOne">
+												<input type="text" title="퇴직소득원천징수영수증 사본 1부 등록" placeholder="등록해 주세요.">
+												<button type="button" class="button h40 lineBlack other">찾기</button>
+											</div>
+											<div class="requireText">
+												<i></i>
+												<span>지금 등록 준비 되지 않으셨다면,  관할 지사로 우편이나 팩스로 전송하시기 바랍니다.</span>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<!-- //Mobile -->
+
+								<ul class="guideText mt">
+									<li>해당되는 항목에  파일을  첨부해 주세요.</li>
+									<li>기관에서 확인을 위해 전화 및 문자 메시지를 보낼 수도 있습니다.</li>
+								</ul>
 							</div>
 						</div>
 
