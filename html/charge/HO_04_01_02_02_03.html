@@ -403,29 +403,6 @@
 											</tbody>
 										</table>
 									</div>
-
-									<div class="hTableBody">
-										<table>
-											<caption>부양가족 연금 지급대상자 혼인신고증명서 등록 : 혼인신고증명서로 구성</caption>
-											<colgroup>
-												<col style="width: 160px;">
-												<col>
-											</colgroup>
-											<tbody>
-												<tr>
-													<th>혼인신고증명서</th>
-													<td>
-														<input type="text" title="혼인관계증명서 등록" placeholder="등록해 주세요." style="width: 62%;">
-														<button type="button" class="button h40 lineBlack">찾기</button>
-														<div class="requireText">
-															<i></i>
-															<span>지금 등록 준비 되지 않으셨다면,  관할 지사로 우편이나 팩스로 전송하시기 바랍니다.</span>
-														</div>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
 								</div>
 								<!-- //PC -->
 
@@ -647,6 +624,73 @@
 									<button type="button" class="button h24 lineBlack">선택삭제</button>
 									<button type="button" class="button h24 lineBlack">행추가</button>
 								</div>
+
+								<!-- PC -->
+								<div class="onlyPC">
+									<div class="hTableBody">
+										<table>
+											<caption>부양가족 연금 지급대상자 혼인신고증명서 등록 : 혼인신고증명서로 구성</caption>
+											<colgroup>
+												<col style="width: 160px;">
+												<col>
+											</colgroup>
+											<tbody>
+												<tr>
+													<th>혼인신고증명서</th>
+													<td>
+														<input type="text" title="첫번째 혼인관계증명서 등록" placeholder="등록해 주세요." style="width: 62%;">
+														<button type="button" class="button h40 lineBlack">찾기</button>
+														<div class="requireText">
+															<i></i>
+															<span>지금 등록 준비 되지 않으셨다면,  관할 지사로 우편이나 팩스로 전송하시기 바랍니다.</span>
+														</div>
+
+
+														<input type="text" title="두번째 혼인관계증명서 등록" placeholder="등록해 주세요." value="첨부파일명" readonly style="width: 62%;">
+														<button type="button" class="button h40 lineBlack">삭제</button>
+														<div class="requireText success">
+															<i></i>
+															<span>등록되었습니다.</span>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<!-- //PC -->
+
+								<!-- Mobile -->
+								<div class="onlyMobile">
+									<ul class="mListMulti momt8">
+										<li>
+											<ul class="msList mt0">
+												<li class="block">
+													<b>혼인신고증명서</b>
+													<div class="flexBtnOne mt">
+														<input type="text" title="첫번째 혼인관계증명서 등록" placeholder="등록해 주세요.">
+														<button type="button" class="button h40 lineBlack">찾기</button>
+													</div>
+													<div class="flexBtnOne mt">
+														<input type="text" title="두번째 혼인관계증명서 등록" placeholder="등록해 주세요." value="첨부파일명" readonly>
+														<button type="button" class="button h40 lineBlack">삭제</button>
+													</div>
+													<div class="requireText">
+														<i></i>
+														<span>지금 등록 준비 되지 않으셨다면,  관할 지사로 우편이나 팩스로 전송하시기 바랍니다.</span>
+													</div>
+													<div class="requireText success">
+														<i></i>
+														<span>등록되었습니다.</span>
+													</div>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<!-- //Mobile -->
+
+								
 
 								<ul class="guideText mt">
 									<li>"부양가족연금 지급대상자"란에는 연계노령연금 수급권자에 의해 생계를 유지하고 있던 사람 중에서 다음에 해당하는 사람을 적으십시오(국민연금 가입기간이 10년 이상인 경우에만 해당합니다).</li>
