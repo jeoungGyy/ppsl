@@ -650,10 +650,13 @@ hr.space.style5 { margin: 8px -16px 32px;}
 /* 신고/절차안내 */
 .infoDownLoad { margin-top: 24px;}
 
-
-
-
-
+/* 지사찾기 */
+.branchSeList { padding-top: 0;}
+.branchSeList >li { width: 100%; margin-top: 17px; padding: 8px 16px 0;}
+.branchSeList >li:first-child { margin-top: 24px;}
+.branchSeList >li figure { display: flex; align-items: center; margin-bottom: 16px; padding-bottom: 8px; text-align: left;}
+.branchSeList >li figure img { width: 48px; height: 48px; margin-right: 8px;}
+.branchSeList >li a { margin: 25px -16px 0;}
 
 
 
