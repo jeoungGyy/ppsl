@@ -1,38 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="292" height="189" viewBox="0 0 292 189">
-    <g>
-        <rect data-name="사각형 26374" width="168" height="48" rx="24" style="fill:#366cc3"/>
-        <text data-name="상담신청" transform="translate(24 30)" style="font-size:14px;font-family:EliceDigitalBaeum-Bd,Elice DigitalBaeum;fill:#fff"><tspan x="0" y="0">상담신청</tspan></text>
-        <g data-name="사각형 26374" style="stroke:#366cc3;fill:#f4f7fc" transform="translate(124)">
-            <rect width="168" height="48" rx="24" style="stroke:none"/>
-            <rect x=".5" y=".5" width="167" height="47" rx="23.5" style="fill:none"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="190" viewBox="0 0 280 190">
+  <g id="img_consult_m" transform="translate(-607 -938)">
+    <g id="상담신청" transform="translate(607 938)">
+      <rect id="사각형_26374" data-name="사각형 26374" width="280" height="48" rx="24" fill="#366cc3"/>
+      <text id="상담신청-2" data-name="상담신청" transform="translate(24 30)" fill="#fff" font-size="14" font-family="EliceDigitalBaeum-Bd, Elice DigitalBaeum"><tspan x="0" y="0">상담신청</tspan></text>
+      <g id="접수" transform="translate(112)">
+        <g id="사각형_26374-2" data-name="사각형 26374" transform="translate(28)" fill="#f4f7fc" stroke="#366cc3" stroke-width="1">
+          <rect width="140" height="48" rx="24" stroke="none"/>
+          <rect x="0.5" y="0.5" width="139" height="47" rx="23.5" fill="none"/>
         </g>
-        <text data-name="접수" transform="translate(148 30)" style="font-size:14px;font-family:EliceDigitalBaeum-Bd,Elice DigitalBaeum;fill:#366cc3"><tspan x="0" y="0">접수</tspan></text>
+        <text id="접수-2" data-name="접수" transform="translate(52 30)" fill="#366cc3" font-size="14" font-family="EliceDigitalBaeum-Bd, Elice DigitalBaeum"><tspan x="0" y="0">접수</tspan></text>
+      </g>
     </g>
-    <g transform="translate(0 71)">
-        <rect data-name="사각형 26374" width="168" height="48" rx="24" style="fill:#366cc3"/>
-        <text data-name="연금기관 담당자" transform="translate(24 30)" style="font-size:14px;font-family:EliceDigitalBaeum-Bd,Elice DigitalBaeum;fill:#fff"><tspan x="0" y="0">연금기관 담당자</tspan></text>
-        <g data-name="사각형 26374" style="stroke:#366cc3;fill:#f4f7fc" transform="translate(124)">
-            <rect width="168" height="48" rx="24" style="stroke:none"/>
-            <rect x=".5" y=".5" width="167" height="47" rx="23.5" style="fill:none"/>
+    <g id="연금기관담당자" transform="translate(607 1010)">
+      <rect id="사각형_26374-3" data-name="사각형 26374" width="280" height="48" rx="24" fill="#366cc3"/>
+      <text id="연금기관_담당자" data-name="연금기관 담당자" transform="translate(24 30)" fill="#fff" font-size="14" font-family="EliceDigitalBaeum-Bd, Elice DigitalBaeum"><tspan x="0" y="0">연금기관 담당자</tspan></text>
+      <g id="검토후답변" transform="translate(112)">
+        <g id="사각형_26374-4" data-name="사각형 26374" transform="translate(28)" fill="#f4f7fc" stroke="#366cc3" stroke-width="1">
+          <rect width="140" height="48" rx="24" stroke="none"/>
+          <rect x="0.5" y="0.5" width="139" height="47" rx="23.5" fill="none"/>
         </g>
-        <text data-name="검토 후 답변" transform="translate(148 30)" style="font-size:14px;font-family:EliceDigitalBaeum-Bd,Elice DigitalBaeum;fill:#366cc3"><tspan x="0" y="0">검토 후 답변</tspan></text>
+        <text id="검토_후_답변" data-name="검토 후 답변" transform="translate(52 30)" fill="#366cc3" font-size="14" font-family="EliceDigitalBaeum-Bd, Elice DigitalBaeum"><tspan x="0" y="0">검토 후 답변</tspan></text>
+      </g>
     </g>
-    <g transform="translate(-716 -843)">
-        <rect data-name="사각형 26374" width="292" height="48" rx="24" transform="translate(716 984)" style="fill:#3691f9"/>
-        <text data-name="고객 답변 확인" transform="translate(862 1014)" style="font-size:14px;font-family:EliceDigitalBaeum-Bd,Elice DigitalBaeum;fill:#fff"><tspan x="-41.37" y="0">고객 답변 확인</tspan></text>
+    <g id="고객답변확인" transform="translate(-109 96)">
+      <rect id="사각형_26374-5" data-name="사각형 26374" width="280" height="48" rx="24" transform="translate(716 984)" fill="#3691f9"/>
+      <text id="고객_답변_확인" data-name="고객 답변 확인" transform="translate(862 1014)" fill="#fff" font-size="14" font-family="EliceDigitalBaeum-Bd, Elice DigitalBaeum"><tspan x="-41" y="0">고객 답변 확인</tspan></text>
     </g>
-    <path data-name="선 1597" transform="rotate(90 44.75 101.75)" style="fill:none;stroke:#366cc3" d="M0 0h7.5"/>
-    <path data-name="다각형 12" d="M4.5 0 9 5H0z" transform="rotate(180 75.5 33.25)" style="fill:#366cc3"/>
-    <g data-name="타원 1358" transform="rotate(90 51.25 97.75)" style="stroke:#fff;stroke-width:2px;fill:#366cc3">
-        <circle cx="2.5" cy="2.5" r="2.5" style="stroke:none"/>
-        <circle cx="2.5" cy="2.5" r="3.5" style="fill:none"/>
+    <g id="arrow" transform="translate(1919.336 179) rotate(90)">
+      <line id="선_1597" data-name="선 1597" x2="7.5" transform="translate(816 1166.836)" fill="none" stroke="#366cc3" stroke-width="1"/>
+      <path id="다각형_12" data-name="다각형 12" d="M4.5,0,9,5H0Z" transform="translate(825.5 1162.336) rotate(90)" fill="#366cc3"/>
+      <g id="타원_1358" data-name="타원 1358" transform="translate(805.5 1164.336)" fill="#366cc3" stroke="#fff" stroke-width="2">
+        <circle cx="2.5" cy="2.5" r="2.5" stroke="none"/>
+        <circle cx="2.5" cy="2.5" r="3.5" fill="none"/>
+      </g>
     </g>
-    <g data-name="arrow">
-        <path data-name="선 1597" transform="rotate(90 9.75 136.75)" style="fill:none;stroke:#366cc3" d="M0 0h7.5"/>
-        <path data-name="다각형 12" d="M4.5 0 9 5H0z" transform="rotate(180 75.5 68.25)" style="fill:#366cc3"/>
-        <g data-name="타원 1358" transform="rotate(90 16.25 132.75)" style="stroke:#fff;stroke-width:2px;fill:#366cc3">
-            <circle cx="2.5" cy="2.5" r="2.5" style="stroke:none"/>
-            <circle cx="2.5" cy="2.5" r="3.5" style="fill:none"/>
-        </g>
+    <g id="arrow-2" data-name="arrow" transform="translate(1919.336 249) rotate(90)">
+      <line id="선_1597-2" data-name="선 1597" x2="7.5" transform="translate(816 1166.836)" fill="none" stroke="#366cc3" stroke-width="1"/>
+      <path id="다각형_12-2" data-name="다각형 12" d="M4.5,0,9,5H0Z" transform="translate(825.5 1162.336) rotate(90)" fill="#366cc3"/>
+      <g id="타원_1358-2" data-name="타원 1358" transform="translate(805.5 1164.336)" fill="#366cc3" stroke="#fff" stroke-width="2">
+        <circle cx="2.5" cy="2.5" r="2.5" stroke="none"/>
+        <circle cx="2.5" cy="2.5" r="3.5" fill="none"/>
+      </g>
     </g>
+  </g>
 </svg>

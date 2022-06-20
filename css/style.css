@@ -219,7 +219,8 @@ body.noScroll { overflow: hidden;}
 .subText { margin-top: 8px; font-size: 14px;}
 .requireBody { display: flex; align-items: center; justify-content: space-between;}
 .requireBody .requireText { margin-top: 0;}
-.requireBody .btn { margin-top: 8px;}
+.requireBody .btn { position: relative; margin-top: 8px;}
+.requireBody .btn .copyTxt { display: flex; align-items: center; justify-content: center; position: absolute; right: 0; bottom: 32px; width: 140px; height: 36px; font-size: 14px; color: #fff; background-color: rgba(0, 0, 0, 0.7); border-radius: 18px;}
 .requireText { display: flex !important; margin-top: 5px; font-size: 12px; color: #767676; text-align: left; line-height: 18px;}
 .requireText i { display: inline-block; width: 16px; height: 16px; margin: 0 4px 0 0; vertical-align: middle;}
 .requireText i { background: url(../images/common/ico_caption.svg) no-repeat center/cover;}
@@ -737,6 +738,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .tableBody table { width: calc(100% + 2px); margin-left: -1px;}
 .tableBody table th { padding: 12px 0; border-left: 1px solid #dbdbdb; background-color: #f7f7f7;}
 .tableBody table th.bdt { border-top: 1px solid #dbdbdb;}
+.tableBody table th .sortBtn { font-weight: 700;}
 .tableBody table th .sortBtn i { display: inline-block; width: 16px; height: 16px; margin-top: -4px; vertical-align: middle; background: url(../images/common/ico_dropdown.svg) no-repeat center/cover;}
 .tableBody table th .sortBtn.asc i { transform: rotate(180deg);}
 .tableBody table td { padding: 12px 12px; text-align: center; line-height: 24px; border: 1px solid #dbdbdb; background-color: #fff; transition: background-color .2s ease-in-out;}
@@ -1287,10 +1289,17 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 **********************************************/
 
 /* 상담 */
-.consultRound { display: flex; align-items: center; justify-content: center; margin-top: 40px; padding: 32px 0 38px; background-color: #f4f7fc; border-radius: 8px;}
+.consultRound { display: flex; align-items: center; justify-content: center; margin-top: 40px; padding: 40px 0 38px; background-color: #f4f7fc; border-radius: 8px;}
 .consultRound img { max-width: 100%; height: auto;}
 
-
+/* 심사청구 */
+.branchChList { display: flex; align-items: center; margin: 16px 0 0 -8px;}
+.branchChList >li { width: calc(20% - 8px); margin-left: 8px;}
+.branchChList >li a { display: block; height: 114px; padding-top: 8px; text-align: center; background-color: #fff; border-radius: 8px;}
+.branchChList >li a figure img { width: 48px; height: 48px;}
+.branchChList >li a figure figcaption  { margin-top: 6px; font-size: 14px; font-weight: 700;}
+.branchChList >li a .linkArea { display: flex; align-items: center; justify-content: center; margin-top: 4px;}
+.branchChList >li a .linkArea span { font-size: 14px;}
 
 
 /* 신청

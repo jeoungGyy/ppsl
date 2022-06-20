@@ -667,10 +667,18 @@ hr.space.style5 { margin: 8px -16px 32px;}
 
 /* 상담 */
 .m_borderView { margin-top: 8px; padding: 24px 16px; border: solid 1px #dbdbdb; border-radius: 8px;}
-.m_borderView h4 { margin-top: 8px; line-height: 20px;}
+.m_borderView h4 { line-height: 20px;}
 
-.consultRound { margin-top: 24px; padding: 27px 24px 24px;}
+.consultRound { margin-top: 24px; padding: 24px;}
 
+/* 심사청구 */
+.branchChList { flex-wrap: wrap; margin-left: 0;}
+.branchChList >li { width: 100%; margin: 8px 0 0;}
+.branchChList >li a { display: flex; align-items: center; height: inherit; padding: 8px 12px; text-align: left;}
+.branchChList >li a figure { display: flex; align-items: center;}
+.branchChList >li a figure img { width: 32px; height: 32px; margin-right: 8px;}
+.branchChList >li a figure figcaption { margin: 0 4px 0 0;}
+.branchChList >li a .linkArea { margin-top: 0;}
 
 
 

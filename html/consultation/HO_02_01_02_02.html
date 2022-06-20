@@ -37,7 +37,7 @@
 					<div class="onlyPC">
 						<div class="hTableBody">
 							<table>
-								<caption>상담 : 상담구분, 기관구분, 지사, 작성자, 공개여부, 비밀번호, 비밀번호 확인, 휴대폰번호, 주소, 제목, 내용, 첨부파일로 구성</caption>
+								<caption>상담 : 기관구분, 지사, 작성자, 공개여부, 비밀번호, 비밀번호 확인, 휴대폰번호, 주소, 제목, 내용, 첨부파일로 구성</caption>
 								<colgroup>
 									<col style="width: 160px;">
 									<col style="width: 290px;">
@@ -45,40 +45,6 @@
 									<col>
 								</colgroup>
 								<tbody>
-									<tr>
-										<th scope="row">상담구분 <span class="colorOrange">*</span></th>
-										<td colspan="3">
-											<div class="gubun">
-												<div class="groupBox">
-													<div class="flexH">
-														<div class="radioBox">
-															<input type="radio" id="radio1_1" name="radio1" required>
-															<label for="radio1_1">1:1 상담</label>
-														</div>
-													</div>
-													<div class="requireText">
-														<i></i>
-														<span>상담내용을 남겨 주시면 답변드립니다.</span>
-													</div>
-												</div>
-												<div class="groupBox">
-													<div class="flexH">
-														<div class="radioBox">
-															<input type="radio" id="radio1_2" name="radio1" required>
-															<label for="radio1_2">전화상담 예약</label>
-														</div>
-														<div class="calendarBody" role="application">
-															<input type="text" class="jQdate" title="전화상담 예약 날짜 선택" readonly placeholder="날짜선택">
-														</div>
-													</div>
-													<div class="requireText">
-														<i></i>
-														<span>상담내용과 전화번호를 남겨 주시면 전화 드립니다.</span>
-													</div>
-												</div>
-											</div>
-										</td>
-									</tr>
 									<tr>
 										<th scope="row">기관구분 <span class="colorOrange">*</span></th>
 										<td>
@@ -284,6 +250,7 @@
 												</div>
 												<div class="btn">
 													<button type="button" class="button h24 lineBlack">복사하기</button>
+													<span class="copyTxt">복사되었습니다.</span>
 												</div>
 											</div>
 										</td>
@@ -335,32 +302,6 @@
 					<!-- Mobile -->
 					<div class="onlyMobile">
 						<ul class="m_hTableBody momt8">
-							<li>
-								<label>상담구분 <span class="colorOrange">*</span></label>
-								<div class="roundBoxGray widePd radioSet">
-									<ul class="groupBox">
-										<li>
-											<div class="radioBox">
-												<input type="radio" id="m_radio1_1" name="m_radio1" required>
-												<label for="m_radio1_1">1:1 상담</label>
-											</div>
-										</li>
-										<li>
-											<div class="radioBox">
-												<input type="radio" id="m_radio1_2" name="m_radio1" required>
-												<label for="m_radio1_2">전화상담 예약</label>
-											</div>
-											<div class="calendarBody" role="application">
-												<input type="text" class="jQdate" title="전화상담 예약 날짜 선택" readonly placeholder="날짜선택">
-											</div>
-										</li>
-									</ul>
-									<div class="requireText">
-										<i></i>
-										<span>상담내용을 남겨 주시면 답변드립니다.</span>
-									</div>
-								</div>
-							</li>
 							<li>
 								<label>기관구분 <span class="colorOrange">*</span></label>
 								<div>
@@ -579,6 +520,7 @@
 										</div>
 										<div class="btn">
 											<button type="button" class="button h24 lineBlack">복사하기</button>
+											<span class="copyTxt">복사되었습니다.</span>
 										</div>
 									</div>
 								</div>
