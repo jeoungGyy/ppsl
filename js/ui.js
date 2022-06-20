@@ -126,13 +126,6 @@ $(document).ready(function () {
 
 			if(typeof depth !== "undefined") {
 
-				/* 메인 헤더 라인 삭제 */
-				// if(depth === "main") {
-				// 	$header.addClass("no_line");
-
-				// 	return false;
-				// }
-
 				$.each($gnb.find("a"), function(index, item) {
 					var _item = $(this).attr("data-menu");
 					if(!_item) {
