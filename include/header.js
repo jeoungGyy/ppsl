@@ -88,7 +88,7 @@ str += '          <li><a href="../mypage/HO_06_01_01.html" data-menu="depth_6"><
 str += '            <ul class="depth2">';
 str += '              <li><a href="../mypage/HO_06_01_01.html" data-menu="depth_6_1"><span>나의현황</span></a>';
 str += '                <ul class="depth3">';
-str += '                  <li><a href="../mypage/HO_06_01_01.html" data-menu="depth_6_1_1"><span>신청청구현황</span></a></li>';
+str += '                  <li><a href="../mypage/HO_06_01_01.html" data-menu="depth_6_1_1"><span>신청/청구현황</span></a></li>';
 str += '                  <li><a href="../mypage/HO_06_01_02.html" data-menu="depth_6_1_2"><span>연금수령현황</span></a></li>';
 str += '                  <li><a href="../mypage/HO_06_01_03.html" data-menu="depth_6_1_3"><span>반납금현황</span></a></li>';
 str += '                </ul>';
@@ -100,15 +100,15 @@ str += '                  <li><a href="../mypage/HO_06_02_02_01.html" data-menu=
 str += '                </ul>';
 str += '              </li>';
 str += '              <li><a href="../mypage/HO_06_03_01.html" data-menu="depth_6_3"><span>증명서발급요청</span></a></li>';
-str += '              <li><a href="../mypage/HO_06_04_01.html" data-menu="depth_6_4"><span>증명서</span></a></li>';
+str += '              <li><a href="../mypage/HO_06_04_01.html" data-menu="depth_6_4"><span>증명서출력</span></a></li>';
 str += '            </ul>';
 str += '          </li>';
-str += '          <li style="display:none;"><a href="#" data-menu="depth_7"><span>약관 및 방침</span></a>';
+str += '          <li style="display:none;"><a href="#" data-menu="depth_7"><span>홈패이지 안내</span></a>';
 str += '            <ul class="depth2">';
 str += '              <li><a href="#" data-menu="depth_7_1"><span>개인정보처리방침</span></a></li>';
 str += '              <li><a href="#" data-menu="depth_7_2"><span>이용안내</span></a></li>';
-str += '              <li><a href="../home/HO_00_06_01.html" data-menu="depth_7_3"><span>서비스 약관</span></a></li>';
-str += '              <li><a href="../home/HO_00_06_02.html" data-menu="depth_7_4"><span>지사찾기</span></a></li>';
+str += '              <li><a href="../home/HO_07_03.html" data-menu="depth_7_3"><span>서비스 약관</span></a></li>';
+str += '              <li><a href="../home/HO_07_04.html" data-menu="depth_7_4"><span>찾아오시는길</span></a></li>';
 str += '            </ul>';
 str += '          </li>';
 str += '          <li style="display:none !important;"><a href="../home/HO_00_02_01.html" data-menu="depth_8"><span>로그인</span></a>';

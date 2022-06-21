@@ -330,10 +330,13 @@ hr.space.style5 { margin: 8px -16px 32px;}
 #wrap .msList >li input[type=text],
 #wrap .msList >li select { width: 100%;}
 #wrap .msList >li span + b { text-align: right;}
+#wrap .msList >li .tNT { display: flex !important; align-items: center;}
+#wrap .msList >li .tNT select { flex: 1; margin-left: 8px;}
+#wrap .msList >li .tNT .other { margin-left: 8px;}
 #wrap .msList >li.block { display: block;}
 #wrap .msList >li.block >* { display: block;}
 #wrap .msList >li.block >.mt { margin-top: 8px;}
-#wrap .msList >li.block .selectPatten { display: flex; align-items: center; margin-top: 16px;}
+#wrap .msList >li.block .selectPatten { display: flex; align-items: center;}
 #wrap .msList >li.block .selectPatten .ml { margin-left: 8px;}
 #wrap .msList >li.block .selectPatten .ml2 { margin-left: 16px;}
 #wrap .msList >li.lineBreak { margin-top: 16px; padding-top: 16px; border-top: 1px solid #dbdbdb;}
@@ -758,6 +761,7 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .purpleBox { font-size: 14px;}
 
 .borderRound { padding: 24px 16px;}
+.borderRound2 { padding: 24px 16px;}
 
 /* 수급계좌변경 */
 .subDateBody { display: flex; justify-content: flex-end; margin-bottom: 16px;}
@@ -786,6 +790,11 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .roundMyBox { padding: 24px;}
 
 .lineGroupBox { margin: 0 -16px; padding: 16px 16px 0; border-top: 12px solid #f7f7f7;}
+
+/* 증명서 */
+.certList { display: block;}
+.certList li { width: 100% !important;}
+.certList li a { padding: 12px; font-size: 14px;}
 
 
 /* 약관 및 방침
