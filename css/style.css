@@ -1043,7 +1043,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .errorPage { position: absolute; left: 50%; top: 50%; width: 900px; transform: translate(-50%, -50%);}
 .errorPage .textCompleteGroup { margin-top: 32px;}
 .errorPage .textCompleteGroup .text { font-size: 28px; line-height: 42px;}
-.errorPage .textCompleteGroup .sub { margin-top: 24px; padding: 0;}
+.errorPage .textCompleteGroup .sub { margin-top: 24px; padding: 0; line-height: 24px;}
 .errorPage .btns { display: flex; align-items: center; justify-content: center; margin-top: 32px;}
 .errorPage .btns .button { margin: 0 4px;}
 
