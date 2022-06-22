@@ -1069,19 +1069,19 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 
 .mainWrap { padding-top: 104px;}
 .mainBody { display: flex; justify-content: space-between;}
-.mainBody .linksWrap { overflow: hidden; position: relative; width: 66%; min-height: 736px; padding: 56px 0 0 53px; background-color: #f7f7f7; border-radius: 16px;}
+.mainBody .linksWrap { overflow: hidden; position: relative; width: 66%; min-height: 736px; padding: 64px 0 0 56px; background-color: #f7f7f7; border-radius: 16px;}
 .mainBody .linksWrap .lwTitle { position: relative; z-index: 5;}
-.mainBody .linksWrap .lwTitle .lwTitText { font-family: 'EliceDigitalBaeum'; font-weight: 400; font-size: 19px;}
-.mainBody .linksWrap .lwTitle h2 { margin-top: 4px; font-family: 'EliceDigitalBaeum'; font-size: 60px; font-weight: 700; line-height: 84px;}
+.mainBody .linksWrap .lwTitle .lwTitText { font-family: 'EliceDigitalBaeum'; font-weight: 400; font-size: 27px; line-height: 32px;}
+.mainBody .linksWrap .lwTitle h2 { font-family: 'EliceDigitalBaeum'; font-size: 44px; font-weight: 700; line-height: 84px;}
 .mainBody .linksWrap .lwTitle h2 span { color: #2f8af3;}
-.mainBody .linksWrap .lwTitle .lwSubText { display: block; font-family: 'EliceDigitalBaeum'; font-size: 18px; font-weight: 400;}
+.mainBody .linksWrap .lwTitle .lwSubText { display: block; font-family: 'EliceDigitalBaeum'; font-size: 19px; font-weight: 400; line-height: 29px;}
 .mainBody .lwLinks { position: relative; z-index: 5; margin-top: 40px; padding-top: 40px;}
 .mainBody .lwLinks::after { content: ''; position: absolute; left: 0; top: 0; width: 80px; height: 1px; background-color: #000;}
 .mainBody .lwLinks h3 { font-size: 19px;}
-.mainBody .lwLinks ul { display: flex; flex-wrap: wrap; width: 320px;}
-.mainBody .lwLinks ul li { margin: 32px 33px 0 0;}
+.mainBody .lwLinks ul { display: flex; flex-wrap: wrap; width: 320px; margin-left: -15px;}
+.mainBody .lwLinks ul li { width: 104px; margin: 32px 0 0 0; text-align: center;}
 .mainBody .lwLinks ul li a { display: block;}
-.mainBody .lwLinks ul li a .roundWhiteBox { display: flex; align-items: center; justify-content: center; width: 72px; height: 72px; background-color: #fff; border-radius: 50%; transition: background-color 0.4s, box-shadow 0.4s;}
+.mainBody .lwLinks ul li a .roundWhiteBox { display: flex; align-items: center; justify-content: center; width: 72px; height: 72px; margin: 0 auto; background-color: #fff; border-radius: 50%; transition: background-color 0.4s, box-shadow 0.4s;}
 .mainBody .lwLinks ul li a .roundWhiteBox i { display: block; width: 48px; height: 48px; transition: background 0.4s;}
 .mainBody .lwLinks ul li a .text { display: block; margin-top: 8px; font-size: 14px;}
 .mainBody .lwLinks ul li a:hover .roundWhiteBox { background-color: #2f8af3; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16);}
@@ -1098,9 +1098,9 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .mainBody .lwLinks ul li a.link6 .roundWhiteBox i { background: url(../images/home/ico_h_link_06.svg) no-repeat center/cover;}
 .mainBody .lwLinks ul li a.link6:hover .roundWhiteBox i { background: url(../images/home/ico_h_link_06_hover.svg) no-repeat center/cover;}
 .mainBody .linksWrap .mDeco { position: absolute;}
-.mainBody .linksWrap .deco1 { right: -80px; top: -23px; z-index: 3; width: 661px; height: 746px; background: url(../images/home/home_spring_01.svg) no-repeat center/cover;}
+.mainBody .linksWrap .deco1 { right: -80px; top: -18px; z-index: 3; width: 661px; height: 746px; background: url(../images/home/home_spring_01.svg) no-repeat center/cover;}
 .mainBody .linksWrap .deco2 { left: -24px; bottom: -30px; z-index: 2; width: 297px; height: 122px; background: url(../images/home/home_spring_02.svg) no-repeat center/cover;}
-.mainBody .linksWrap .deco3 { right: -138px; bottom: -398px; z-index: 1; width: 809px; height: 868px; background: url(../images/home/home_img.png) no-repeat center/cover;}
+.mainBody .linksWrap .deco3 { right: -176px; bottom: -398px; z-index: 1; width: 890px; height: 868px; background: url(../images/home/home_img.png) no-repeat center/cover;}
 .mainBody .contentWrap { width: 31%;}
 .mainBody .contentWrap h3 { font-size: 16px;}
 .mainBody .contentWrap .cwBody { margin-top: 10px;}
@@ -1161,10 +1161,10 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .mainFooter ul li a i { display: inline-block; width: 40px; height: 40px;}
 .mainFooter ul li a.mfMohw i { background: url(../images/home/ci_mohw.svg) no-repeat center/cover;}
 .mainFooter ul li a.mfNps i { background: url(../images/home/ci_nps.svg) no-repeat center/cover;}
-.mainFooter ul li a.mfGeps i { width: 38px; height: 25px; background: url(../images/home/ci_geps.png) no-repeat center/cover;}
+.mainFooter ul li a.mfGeps i { background: url(../images/home/ci_geps.svg) no-repeat center/cover;}
 .mainFooter ul li a.mfTp i { background: url(../images/home/ci_tp.svg) no-repeat center/cover;}
-.mainFooter ul li a.mfMps i { width: 36px; height: 32px; background: url(../images/home/ci_mps.png) no-repeat center/cover;}
-.mainFooter ul li a.mfPopa i { height: 33px; background: url(../images/home/ci_popa.png) no-repeat center/cover;}
+.mainFooter ul li a.mfMps i { background: url(../images/home/ci_mps.png) no-repeat center/cover;}
+.mainFooter ul li a.mfPopa i { background: url(../images/home/ci_popa.png) no-repeat center/cover;}
 .mainFooter ul li a .mfDiv { margin-left: 16px;}
 
 /* 메인만 사용 */

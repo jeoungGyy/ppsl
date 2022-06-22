@@ -86,7 +86,7 @@ str += '    <div class="fLinks">';
 str += '      <a href="https://www.nps.or.kr/jsppage/members/personal_policy_com.jsp" class="colorBlue" target="_blank">개인정보처리방침 <img src="../../images/common/ico_link_blue.svg" alt="새창 이동"></a>';
 str += '      <a href="../inform/HO_05_04_01.html">홈페이지이용안내</a>';
 str += '      <a href="../home/HO_07_01.html">서비스약관</a>';
-str += '      <a href="../home/HO_07_02.html">찾아오시는 길</a>';
+str += '      <a href="../home/HO_07_02.html">찾아오시는길</a>';
 str += '    </div>';
 str += '    <div class="fSNS">';
 str += '      <div class="t">';
