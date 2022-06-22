@@ -60,7 +60,6 @@ str += '              <li><a href="../consultation/HO_02_01_01.html" data-menu="
 str += '              <li><a href="../consultation/HO_02_02_01.html" data-menu="depth_2_2"><span>상담FAQ</span></a></li>';
 str += '              <li><a href="../consultation/HO_02_03_01.html" data-menu="depth_2_3"><span>전산문의</span></a></li>';
 str += '              <li><a href="../consultation/HO_02_04_01.html" data-menu="depth_2_4"><span>고객제안</span></a></li>';
-str += '              <li><a href="../consultation/HO_02_05_01.html" data-menu="depth_2_5"><span>심사청구</span></a></li>';
 str += '              <li><a href="../consultation/HO_02_06.html" data-menu="depth_2_6"><span>반납금 모의계산</span></a>';
 str += '            </ul>';
 str += '          </li>';
