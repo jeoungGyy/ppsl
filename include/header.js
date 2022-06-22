@@ -95,13 +95,8 @@ str += '                  <li><a href="../mypage/HO_06_01_02.html" data-menu="de
 str += '                  <li><a href="../mypage/HO_06_01_03.html" data-menu="depth_6_1_3"><span>반납금현황</span></a></li>';
 str += '                </ul>';
 str += '              </li>';
-str += '              <li><a href="../mypage/HO_06_02_01_01.html" data-menu="depth_6_2"><span>예상연금/반납금</span></a>';
-str += '                <ul class="depth3">';
-str += '                  <li><a href="../mypage/HO_06_02_01_01.html" data-menu="depth_6_2_1"><span>예상연금조회</span></a></li>';
-str += '                  <li><a href="../mypage/HO_06_02_02_01.html" data-menu="depth_6_2_2"><span>예상반납금조회</span></a></li>';
-str += '                </ul>';
-str += '              </li>';
-str += '              <li><a href="../mypage/HO_06_03_01.html" data-menu="depth_6_3"><span>증명서발급요청</span></a></li>';
+str += '              <li><a href="../mypage/HO_06_02_01_01.html" data-menu="depth_6_2"><span>예상연금조회</span></a></li>';
+str += '              <li><a href="../mypage/HO_06_02_02_01.html" data-menu="depth_6_3"><span>예상반납금조회</span></a></li>';
 str += '              <li><a href="../mypage/HO_06_04_01.html" data-menu="depth_6_4"><span>증명서출력</span></a></li>';
 str += '            </ul>';
 str += '          </li>';

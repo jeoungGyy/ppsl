@@ -7,58 +7,13 @@
 
 <body>
 <div id="wrap">
-	<script src="../../include/header.js"></script> <!-- include: 공통 헤더 -->
-
 	<div class="container">
-		<div class="area">
-			<div class="wrap">
-				<div class="lnbBody">
-					<h2>제목이 들어갑니다.</h2>
-					<nav class="lnb">
-					</nav>
-				</div>
 
-				<div id="contentLink" class="contents">
-					<header class="contentsHeader">
-						<div class="title">
-							<h3>증명서발급요청</h3>
-							<p>신청 및 청구한 증명서를 보시고 증명서 발급을 요청 하실 수 있습니다.</p>
-						</div>
-						<script src="../../include/location.js"></script> <!-- include: 공통 현재위치 -->
-					</header>
-
-					<div class="roundMyBox momt24">
-						<div class="name">
-							<div class="fontEliceDigital colorBlue">증명서발급요청</div>
-							<span class="text">은?</span>
-						</div>
-						<p>
-							민원인이 연계신청, 급여청구한 기관에 필요한 증명서 발급요청 하실 수 있습니다.<br>
-							수령방법은 <b>우편, 방문, 팩스</b> 방식으로 전달 받으실 수 있으며, 각 기관 대표 번호로 문의하시면 확인 받으실 수 있습니다.
-						</p>
-					</div>
-
-					<h4 class="defaultH4 pcmt40 momt24">요청 가능한 증명서</h4>
-					<ul class="certList">
-						<li><a href="#">반납금 납부고지서</a></li>
-						<li><a href="#">반납금납부내역</a></li>
-						<li><a href="#">반납금납부완료 안내문</a></li>
-						<li><a href="#">반납금 납부방법 변경결과 안내문</a></li>
-						<li><a href="#">연계취하 예정 안내문</a></li>
-						<li><a href="#">연계취하 안내문</a></li>
-						<li><a href="#">반납금반환청구 안내문</a></li>
-						<li><a href="#">수급증서</a></li>
-					</ul>
-
-					<script src="../../include/evaluation.js"></script> <!-- include: 공통 평가 -->
-				</div>
-			</div>
-		</div>
 
 		<!-- 레이어 -->
-		<div id="applyPostLayer" class="layerPopup" role="dialog" aria-modal="true" aria-labelledby="applyPostLayerTitle" tabindex="0">
+		<div id="applyPostLayer" class="layerPopup active show" role="dialog" aria-modal="true" aria-labelledby="applyPostLayerTitle" tabindex="0">
 			<div class="layerBody normal applyPostLayer">
-				<h5 id="applyPostLayerTitle" class="layerTitle">우편번호 검색</h5>
+				<h5 id="applyPostLayerTitle" class="layerTitle">지사찾기</h5>
 				<div class="layerContent">
 					<div class="overflowY" tabindex="0">
 						<div class="postTitle">
@@ -121,19 +76,18 @@
 							<li>도로명주소가 검색되지 않는 경우는 행정안전부 새주소안내 시스템<br>
 								(http://www.juso.go.kr)에서 확인하시기 바랍니다.</li>
 						</ul>
+						<div class="btnsGroup flexEnd mt2 pdt0">
+							<button type="button" class="button h40 gray">닫기</button>
+						</div>
 					</div>
 				</div>
 				<button type="button" class="layerClose"><i>창 닫기</i></button>
 			</div>
 		</div>
 		<!-- //레이어 -->
+
+
 	</div>
-
-	<script src="../../include/footer.js"></script> <!-- include: 공통 푸터 -->
-
-	<script>
-		var depth = [6, 4]; /* 현재메뉴 활성화 용: gnb에 있는 data-menu 값과 일치하게 해주세요. */
-	</script>
 </div>
 </body>
 </html>
