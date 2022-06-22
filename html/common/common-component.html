@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<script src="../../include/head.js"></script> <!-- include: 공통 헤드 -->
+	<style>
+		.a { display: flex; align-items: center; margin-top: 10px;}
+		.a button { margin-right: 5px;}
+		.a span { width: 110px;}
+		.b { margin-top: 10px;}
+	</style>
+</head>
+
+<body>
+<div id="wrap">
+	<script src="../../include/header.js"></script> <!-- include: 공통 헤더 -->
+
+	<div class="container">
+		<div class="area">
+			<div class="wrap">
+				<div id="contentLink" class="contents">
+
+					<h4>체크박스</h4>
+					<div class="a">
+						<ul class="groupBox flexLeft">
+							<li>
+								<div class="checkboxBox">
+									<input type="checkbox" id="checkbox1_1" name="checkbox">
+									<label for="checkbox1_1">텍스트</label>
+								</div>
+							</li>
+							<li>
+								<div class="checkboxBox">
+									<input type="checkbox" id="checkbox1_2" name="checkbox">
+									<label for="checkbox1_2">텍스트</label>
+								</div>
+							</li>
+							<li>
+								<div class="checkboxBox">
+									<input type="checkbox" id="checkbox1_3" name="checkbox">
+									<label for="checkbox1_3">텍스트</label>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<br><br>
+
+					<h4>라디오</h4>
+					<div class="a">
+						<ul class="groupBox flexLeft">
+							<li>
+								<div class="radioBox">
+									<input type="radio" id="radio1_1" name="radio">
+									<label for="radio1_1">텍스트</label>
+								</div>
+							</li>
+							<li>
+								<div class="radioBox">
+									<input type="radio" id="radio1_2" name="radio">
+									<label for="radio1_2">텍스트</label>
+								</div>
+							</li>
+							<li>
+								<div class="radioBox">
+									<input type="radio" id="radio1_3" name="radio">
+									<label for="radio1_3">텍스트</label>
+								</div>
+							</li>
+						</ul>
+					</div>
+					
+					<br><br><br>
+
+					<h4>인풋박스</h4>
+					<div class="b">
+						<input type="text" title="값" placeholder="내용">
+						<div class="requireText">
+							<i></i>
+							<span>일반메세지</span>
+						</div>
+						<div class="requireText error">
+							<i></i>
+							<span>에러메세지</span>
+						</div>
+						<div class="requireText success">
+							<i></i>
+							<span>성공메세지</span>
+						</div>
+					</div>
+
+					<br><br><br>
+
+					<h4>콤보박스</h4>
+					<div class="b">
+						<select title="값">
+							<option>선택</option>
+						</select>
+					</div>
+
+					<br><br><br>
+
+					<h4>레이어</h4>
+					<div class="b">
+						<button type="button" class="button h48 black layerLink" aria-controls="applyGuideLayer">레이어링크</button>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+
+
+		<!-- 레이어 -->
+		<div id="applyGuideLayer" class="layerPopup" role="dialog" aria-modal="true" aria-labelledby="applyGuideLayerTitle" tabindex="0">
+			<div class="layerBody small applyGuideLayer">
+				<h5 id="applyGuideLayerTitle" class="layerTitle">안내</h5>
+				<div class="layerContent">
+					<div class="overflowY" tabindex="0">
+						<div class="paragraphGroup">
+							<p>
+								연계신청을 한 경우에는 원칙적으로 취소/철회할 수 없습니다.
+							</p>
+							<p>
+								다만, 아래 2가지 경우는 가능합니다.<br>
+								1)신청 후 접수 중 일때 연계신청접수 취소 가능합니다.<br>
+								2)연계신청 처리결과 통보서가 도달하기 전에는 철회 가능합니다.
+							</p>
+						</div>
+					</div>
+					<div class="btnsGroup flexEnd mt2 pdt0">
+						<button type="button" class="button h40 gray">닫기</button>
+					</div>
+				</div>
+				<button type="button" class="layerClose"><i>창 닫기</i></button>
+			</div>
+		</div>
+		<!-- //레이어 -->
+	</div>
+
+	<script src="../../include/footer.js"></script> <!-- include: 공통 푸터 -->
+</div>
+</body>
+</html>

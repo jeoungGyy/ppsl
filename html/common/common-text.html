@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<script src="../../include/head.js"></script> <!-- include: 공통 헤드 -->
+	<style>
+		.a { display: flex; align-items: center; margin-top: 10px;}
+		.a button { margin-right: 5px;}
+		.a >span { width: 110px;}
+	</style>
+</head>
+
+<body>
+<div id="wrap">
+	<script src="../../include/header.js"></script> <!-- include: 공통 헤더 -->
+
+	<div class="container">
+		<div class="area">
+			<div class="wrap">
+				<div id="contentLink" class="contents">
+
+					<h4>버튼 종류</h4>
+					<div class="a">
+						<span>disabled</span>
+						<button type="button" class="button h48 black" disabled>disabled</button>
+						<button type="button" class="button h48 black">black</button>
+						<button type="button" class="button h48 blue">blue</button>
+						<button type="button" class="button h48 gray">gray</button>
+						<button type="button" class="button h48 lineBlack">lineBlack</button>
+					</div>
+					<div class="a">
+						<span>Height: 48px</span>
+						<button type="button" class="button h48 black" disabled>disabled</button>
+						<button type="button" class="button h48 black">black</button>
+						<button type="button" class="button h48 blue">blue</button>
+						<button type="button" class="button h48 gray">gray</button>
+						<button type="button" class="button h48 lineBlack">lineBlack</button>
+					</div>
+					<div class="a">
+						<span>Height: 40px</span>
+						<button type="button" class="button h40 black" disabled>disabled</button>
+						<button type="button" class="button h40 black">black</button>
+						<button type="button" class="button h40 blue">blue</button>
+						<button type="button" class="button h40 gray">gray</button>
+						<button type="button" class="button h40 lineBlack">lineBlack</button>
+					</div>
+					<div class="a">
+						<span>Height: 32px</span>
+						<button type="button" class="button h32 black" disabled>disabled</button>
+						<button type="button" class="button h32 black">black</button>
+						<button type="button" class="button h32 blue">blue</button>
+						<button type="button" class="button h32 gray">gray</button>
+						<button type="button" class="button h32 lineBlack">lineBlack</button>
+					</div>
+					<div class="a">
+						<span>Height: 24px</span>
+						<button type="button" class="button h24 black" disabled>disabled</button>
+						<button type="button" class="button h24 black">black</button>
+						<button type="button" class="button h24 blue">blue</button>
+						<button type="button" class="button h24 gray">gray</button>
+						<button type="button" class="button h24 lineBlack">lineBlack</button>
+					</div>
+					<div class="a">
+						<span>아이콘형</span>
+						<button type="button" class="button h40 black"><span class="dsBlock">텍스트</span><i class="arrowRight"></i></button>
+						<button type="button" class="button h40 lineBlack"><span class="dsBlock">텍스트</span><i class="arrowRightSmall"></i></button>
+						<button type="button" class="button h40 lineBlack"><span class="dsBlock">텍스트</span><i class="icoDownload2"></i></button>
+					</div>
+					<div class="a">
+						<span>글자형</span>
+						<button type="button" class="lineButton"><span>신청접수 취소</span><i class="arrowRight"></i></button>
+						<button type="button" class="lineButton"><span>추가</span><i class="icoPlus"></i></button>
+					</div>
+					
+					<br><br><br><br>
+					
+					<h4>테이블 안 상태값 글자 색상</h4>
+					<div class="tableBody">
+						<table>
+							<caption>연계급여 청구 : 접수방법, 접수번호, 접수일, 내용, 수급정보, 상태, 처리지사로 구성</caption>
+							<colgroup>
+								<col style="width: 105px;">
+								<col>
+								<col style="width: 130px;">
+								<col style="width: 145px;">
+								<col style="width: 110px;">
+								<col style="width: 140px;">
+								<col style="width: 120px;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">접수방법</th>
+									<th scope="col">접수번호</th>
+									<th scope="col">접수일</th>
+									<th scope="col">내용</th>
+									<th scope="col">수급정보</th>
+									<th scope="col">상태</th>
+									<th scope="col">처리지사</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>인터넷</td>
+									<td>2009101000040</td>
+									<td>2006.03.01</td>
+									<td>연계노령연금</td>
+									<td>2016.04.30</td>
+									<td><span class="colorBlue">처리완료</span></td>
+									<td><button type="button" class="button h24 lineBlack">확인</button></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<br>
+					<div class="lh32">
+						접수중<br>
+						신청접수<br>
+						청구접수<br>
+						접수취소<br>
+						접수완료<br>
+						기관심사중<br>
+						통지서발송<br>
+						기관심사완료<br>
+						최종확인완료<br>
+						<span class="colorGray">불가</span><br>
+						<span class="colorGray">불가(합산)</span><br>
+						<span class="colorBlue">가능</span><br>
+						<span class="colorBlue">처리완료</span><br>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="../../include/footer.js"></script> <!-- include: 공통 푸터 -->
+</div>
+</body>
+</html>
