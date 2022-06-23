@@ -110,9 +110,6 @@ $(document).ready(function () {
             $megaMenuBg.addClass('show');
           }});
         } else {
-         
-
-
           $subMenuBlind.height('');
           $depth1.removeClass('show');
           $depth2.height('');
