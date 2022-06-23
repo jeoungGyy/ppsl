@@ -57,6 +57,9 @@ $(document).ready(function () {
       var $blind = $('.blind');
       var menu_change = Boolean;
 
+      var $allSearchBtn = $(".allSearchBtn");
+      var $totalBody = $('.totalBody');
+
       $(".header .gnb, .subMenuBlind, .megaMenuBg").on({
         "mouseenter": function () {
           setTimeout(menuchk, 300);
@@ -80,6 +83,17 @@ $(document).ready(function () {
 
       function menuchk(){
         if(menu_change === true) {
+
+          /* 통합검색 열렸을 경우 닫기 */
+          if($allSearchBtn.hasClass("active")) {
+            $allSearchBtn.removeClass('active').attr('title', '통합검색 메뉴 열기');;
+            $totalBody.removeClass('show');
+            TweenLite.to($totalBody, 0.3, {onComplete:function() {
+              $totalBody.removeClass('active');
+            }});
+          }
+          
+          
           var _menu_height = $depth2.map(function () {
             return $(this).height();
           }).get();
@@ -96,6 +110,9 @@ $(document).ready(function () {
             $megaMenuBg.addClass('show');
           }});
         } else {
+         
+
+
           $subMenuBlind.height('');
           $depth1.removeClass('show');
           $depth2.height('');

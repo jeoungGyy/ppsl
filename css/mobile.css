@@ -802,6 +802,7 @@ hr.space.style5 { margin: 8px -16px 32px;}
 
 /* 서비스 약관 */
 .asheader.first { margin-top: 24px;}
+.asList >li { margin-top: 0;}
 
 /* 지사찾기 */
 .mapBody { margin-top: 24px;}

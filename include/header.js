@@ -150,7 +150,7 @@ str += '      <button type="button" class="searchResetBtn"><i>검색어 지우�
 str += '      <button type="button" class="tbBtn"><i>검색</i></button>';
 str += '    </div>';
 str += '    <div class="tbPopular">';
-str += '      <b>인기검색어</b>';
+str += '      <b>추천검색어</b>';
 str += '      <div class="popularBtns">';
 str += '        <button type="button">#1:1상담</button>';
 str += '        <button type="button">#연계연금제도</button>';
