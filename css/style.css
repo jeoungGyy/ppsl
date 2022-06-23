@@ -985,6 +985,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .allMenu_pop .gnb .depth1 >li { display: block !important; flex: 1;}
 .allMenu_pop .gnb .depth1 >li ~ li { margin-left: 24px;}
 .allMenu_pop .gnb .depth1 >li >a { justify-content: center; height: 56px; color: #fff; background-color: #366cc3;}
+.allMenu_pop .gnb .depth1 >li >a span::after { display: none;}
 .allMenu_pop .gnb .depth2 { display: block; top: initial; padding-left: 20px; font-size: 16px; opacity: 1;}
 .allMenu_pop .gnb .depth2 >li { margin-top: 24px;}
 .allMenu_pop .gnb .depth3 { display: block !important; margin-top: 0;}
