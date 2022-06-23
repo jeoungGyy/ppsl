@@ -32,16 +32,22 @@
 							<li>
 								<div class="checkboxBox">
 									<input type="checkbox" id="checkbox1_2" name="checkbox">
-									<label for="checkbox1_2">텍스트</label>
+									<label for="checkbox1_2">텍스트2</label>
 								</div>
 							</li>
 							<li>
 								<div class="checkboxBox">
 									<input type="checkbox" id="checkbox1_3" name="checkbox">
-									<label for="checkbox1_3">텍스트</label>
+									<label for="checkbox1_3">텍스트3</label>
 								</div>
 							</li>
 						</ul>
+					</div>
+					<div class="mt24">
+						<h5>label 없이 단독사용</h5>
+						<div class="groupBox single">
+							<input type="checkbox" name="checkbox" title="*** 선택">
+						</div>
 					</div>
 
 					<br><br>
@@ -58,13 +64,13 @@
 							<li>
 								<div class="radioBox">
 									<input type="radio" id="radio1_2" name="radio">
-									<label for="radio1_2">텍스트</label>
+									<label for="radio1_2">텍스트2</label>
 								</div>
 							</li>
 							<li>
 								<div class="radioBox">
 									<input type="radio" id="radio1_3" name="radio">
-									<label for="radio1_3">텍스트</label>
+									<label for="radio1_3">텍스트3</label>
 								</div>
 							</li>
 						</ul>
@@ -88,14 +94,38 @@
 							<span>성공메세지</span>
 						</div>
 					</div>
+					<div class="mt24">
+						<h5>인풋 값 리셋 버튼 추가</h5>
+						<div class="mt8">
+							<span class="searchReset"><input type="text" title="검색어 입력" placeholder="검색어를 입력하세요."><button type="button" class="searchResetBtn"><i>검색어 지우기</i></button></span>
+						</div>
+					</div>
 
 					<br><br><br>
 
 					<h4>콤보박스</h4>
 					<div class="b">
-						<select title="값">
-							<option>선택</option>
+						<select class="select" title="기관 선택">
+							<option disabled selected>기관전체</option>
+							<option>국민연금공단</option>
+							<option>공무원연금공단</option>
+							<option>사립학교교직원연금공단</option>
+							<option>국방부군인연금</option>
+							<option>별정우체국연금관리단</option>
 						</select>
+					</div>
+					<div class="mt24">
+						<h5>Height 32px인 경우</h5>
+						<div class="mt8">
+							<select class="select h32" title="기관 선택">
+								<option disabled selected>기관전체</option>
+								<option>국민연금공단</option>
+								<option>공무원연금공단</option>
+								<option>사립학교교직원연금공단</option>
+								<option>국방부군인연금</option>
+								<option>별정우체국연금관리단</option>
+							</select>
+						</div>
 					</div>
 
 					<br><br><br>

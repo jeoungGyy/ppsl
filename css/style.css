@@ -428,10 +428,10 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .searchBody .controlBox li .button { min-width: 89px; margin-left: 4px;}
 .searchBody .controlBox li .button span { margin-top: -2px;}
 .searchBody .controlBox li .button .searchIcon { display: inline-block; width: 24px; height: 24px; margin: -4px 4px 0 0; background: url(../images/common/ico_search_w_24.svg) no-repeat center/cover;}
-.searchBody .controlBox li .searchReset { flex: 1; position: relative;}
-.searchBody .controlBox li .searchReset .searchResetBtn { display: none; position: absolute; right: 16px; top: 12px; width: 16px; height: 16px;}
-.searchBody .controlBox li .searchReset .searchResetBtn i { display: block; width: 100%; height: 100%; text-indent: -99999px; background: url(../images/common/ico_clear.svg) no-repeat center/cover;}
-.searchBody .controlBox li .searchReset.btnShow .searchResetBtn { display: block;}
+.searchReset { flex: 1; display: inline-block; position: relative;}
+.searchReset .searchResetBtn { display: none; position: absolute; right: 16px; top: 12px; width: 16px; height: 16px;}
+.searchReset .searchResetBtn i { display: block; width: 100%; height: 100%; text-indent: -99999px; background: url(../images/common/ico_clear.svg) no-repeat center/cover;}
+.searchReset.btnShow .searchResetBtn { display: block;}
 .searchBody .controlBox li .twin { display: flex; align-items: center; width: 100%;}
 .searchBody .controlBox li .twin select { flex: 1;}
 .searchBody .controlBox li .twin .ml { margin-left: 4px;}
