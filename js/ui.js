@@ -66,8 +66,8 @@ $(document).ready(function () {
           menu_change = true;
         },
         "mouseleave": function () {
-          // setTimeout(menuchk, 300);
-          // menu_change = false;
+          setTimeout(menuchk, 300);
+          menu_change = false;
         }
       });
       $gnb.find(">ul li a").on({
