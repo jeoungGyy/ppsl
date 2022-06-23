@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
-    <path style="fill:none" d="M0 0h48v48H0z"/>
-    <path data-name="패스 81038" d="M8.04 5.75H3.271a2.5 2.5 0 1 1 0-5h32.958a2.5 2.5 0 1 1 0 5m0 0h-4.853M7.75.751h24v26a4 4 0 0 1-4 4h-16a4 4 0 0 1-4-4z" transform="translate(4.25 8.25)" style="stroke:#fff;stroke-width:1.5px;fill:none"/>
-    <path d="m0 0 1.962 5L4 0l2.264 5L8 0" transform="translate(20.001 21.251)" style="stroke-miterlimit:10;stroke-linecap:round;stroke-linejoin:round;stroke:#fff;stroke-width:1.5px;fill:none"/>
-    <path data-name="Path" d="M2.841.5h-2" transform="translate(17.659 22.751)" style="stroke-miterlimit:10;stroke-linecap:round;stroke-linejoin:round;stroke:#fff;stroke-width:1.5px;fill:none"/>
-    <path data-name="Path" d="M2.841.5h-2" transform="translate(26.658 22.751)" style="stroke-miterlimit:10;stroke-linecap:round;stroke-linejoin:round;stroke:#fff;stroke-width:1.5px;fill:none"/>
-    <path data-name="합치기 6" d="M-12619.746 16780.07a1.248 1.248 0 0 1 1.247-1.252 1.252 1.252 0 0 1 1.251 1.252 1.251 1.251 0 0 1-1.251 1.25 1.247 1.247 0 0 1-1.247-1.25zm0-14a1.246 1.246 0 0 1 1.247-1.25 1.25 1.25 0 0 1 1.251 1.25 1.25 1.25 0 0 1-1.251 1.25 1.246 1.246 0 0 1-1.247-1.25z" transform="translate(12642.247 -16749.57)" style="fill:#fff;stroke:transparent;stroke-miterlimit:10"/>
+<svg id="ico_h_link_06_hover" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <rect id="area" width="48" height="48" fill="none"/>
+  <g id="ic" transform="translate(-2.23 -0.841)">
+    <path id="패스_81078" data-name="패스 81078" d="M8.019,5.75H3.25a2.5,2.5,0,0,1,0-5H36.208a2.5,2.5,0,0,1,0,5m0,0H31.355M7.729.751h24v26a4,4,0,0,1-4,4h-16a4,4,0,0,1-4-4Z" transform="translate(6.48 9.09)" fill="none" stroke="#fff" stroke-width="1.5"/>
+    <path id="패스_81079" data-name="패스 81079" d="M15.481,13.251l1.961,5,2.038-5,2.264,5,1.736-5m-7.5,2h-2m11,0h-2" transform="translate(6.48 9.09)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="패스_81080" data-name="패스 81080" d="M18.23,23.25A1.248,1.248,0,0,1,19.474,22h0a1.251,1.251,0,1,1-1.247,1.256Zm0-15A1.247,1.247,0,0,1,19.472,7h0a1.251,1.251,0,0,1,1.251,1.248v0a1.251,1.251,0,0,1-1.25,1.25h0A1.247,1.247,0,0,1,18.23,8.256Z" transform="translate(6.48 9.09)" fill="#fff"/>
+  </g>
 </svg>

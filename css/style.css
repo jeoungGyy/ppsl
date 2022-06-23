@@ -1086,17 +1086,17 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .mainBody .lwLinks ul li a .text { display: block; margin-top: 8px; font-size: 14px;}
 .mainBody .lwLinks ul li a:hover .roundWhiteBox { background-color: #2f8af3; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16);}
 .mainBody .lwLinks ul li a.link1 .roundWhiteBox i { background: url(../images/home/ico_h_link_01.svg) no-repeat center/cover;}
-.mainBody .lwLinks ul li a.link1:hover .roundWhiteBox i { background: url(../images/home/ico_h_link_01_hover.svg) no-repeat center/cover;}
+.mainBody .lwLinks ul li a.link1:hover .roundWhiteBox i { background: url(../images/home/ico_h_link_01_hover.svg) no-repeat center/48px;}
 .mainBody .lwLinks ul li a.link2 .roundWhiteBox i { background: url(../images/home/ico_h_link_02.svg) no-repeat center/cover;}
-.mainBody .lwLinks ul li a.link2:hover .roundWhiteBox i { background: url(../images/home/ico_h_link_02_hover.svg) no-repeat center/cover;}
+.mainBody .lwLinks ul li a.link2:hover .roundWhiteBox i { background: url(../images/home/ico_h_link_02_hover.svg) no-repeat center/48px;}
 .mainBody .lwLinks ul li a.link3 .roundWhiteBox i { background: url(../images/home/ico_h_link_03.svg) no-repeat center/cover;}
-.mainBody .lwLinks ul li a.link3:hover .roundWhiteBox i { background: url(../images/home/ico_h_link_03_hover.svg) no-repeat center/cover;}
+.mainBody .lwLinks ul li a.link3:hover .roundWhiteBox i { background: url(../images/home/ico_h_link_03_hover.svg) no-repeat center/48px;}
 .mainBody .lwLinks ul li a.link4 .roundWhiteBox i { background: url(../images/home/ico_h_link_04.svg) no-repeat center/cover;}
-.mainBody .lwLinks ul li a.link4:hover .roundWhiteBox i { background: url(../images/home/ico_h_link_04_hover.svg) no-repeat center/cover;}
+.mainBody .lwLinks ul li a.link4:hover .roundWhiteBox i { background: url(../images/home/ico_h_link_04_hover.svg) no-repeat center/48px;}
 .mainBody .lwLinks ul li a.link5 .roundWhiteBox i { background: url(../images/home/ico_h_link_05.svg) no-repeat center/cover;}
-.mainBody .lwLinks ul li a.link5:hover .roundWhiteBox i { background: url(../images/home/ico_h_link_05_hover.svg) no-repeat center/cover;}
+.mainBody .lwLinks ul li a.link5:hover .roundWhiteBox i { background: url(../images/home/ico_h_link_05_hover.svg) no-repeat center/48px;}
 .mainBody .lwLinks ul li a.link6 .roundWhiteBox i { background: url(../images/home/ico_h_link_06.svg) no-repeat center/cover;}
-.mainBody .lwLinks ul li a.link6:hover .roundWhiteBox i { background: url(../images/home/ico_h_link_06_hover.svg) no-repeat center/cover;}
+.mainBody .lwLinks ul li a.link6:hover .roundWhiteBox i { background: url(../images/home/ico_h_link_06_hover.svg) no-repeat center/48px;}
 .mainBody .linksWrap .mDeco { position: absolute;}
 .mainBody .linksWrap .deco1 { right: -80px; top: -18px; z-index: 3; width: 661px; height: 746px; background: url(../images/home/home_spring_01.svg) no-repeat center/cover;}
 .mainBody .linksWrap .deco2 { left: -24px; bottom: -30px; z-index: 2; width: 297px; height: 122px; background: url(../images/home/home_spring_02.svg) no-repeat center/cover;}
