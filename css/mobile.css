@@ -312,7 +312,7 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .m_tableBody .mList >li h6 { font-size: 14px;}
 .m_tableBody .roundBoxGray { position: relative; padding: 24px 16px; font-size: 14px; background-color: #f7f7f7; border-radius: 8px;}
 .m_tableBody .roundBoxGray >.flexLeft { margin-top: 8px;}
-.m_tableBody .roundBoxGray >.flexLeft .listDate { display: inline-block; font-size: 14px; line-height: 21px;}
+.m_tableBody .roundBoxGray >.flexLeft .listDate { display: inline-block; font-size: 14px; line-height: 16px;}
 .m_tableBody .roundBoxGray >.flexLeft .roundText { display: flex; align-items: center; justify-content: center; min-width: 64px; height: 24px; padding: 0 10px; font-size: 12px; border: 1px solid #333; border-radius: 12px;}
 .m_tableBody .roundBoxGray >.flexLeft .roundText.blueLine { color: #366cc3; border-color: #366cc3;}
 .m_tableBody .roundBoxGray >.flexLeft.mt0 { margin-top: 0;}
@@ -322,6 +322,7 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .m_tableBody .roundBoxGray.sp { padding: 16px;}
 .m_tableBody .roundBoxGray.mt { margin-top: 16px;}
 .m_tableBody .roundBoxGray.totalBg { background-color: #F4F7FC;}
+.m_tableBody .mList >li .linkA b { border-bottom: 1px solid #366CC3;}
 .m_tableBody .mList >li .groupBox label { font-weight: 700;}
 .m_tableBody .mList >li.empty { text-align: center;}
 .m_tableBody .mList.mt { margin-top: 8px;}
@@ -484,7 +485,8 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .layerTitle { height: 48px;}
 .layerBody.small,
 .layerBody.normal,
-.layerBody.big { width: 100%;}
+.layerBody.big,
+.layerBody.giant { width: 100%;}
 .layerBody .overflowY { margin-right: 0; padding-right: 0; max-height: 424px;}
 .layerClose { right: 16px; top: 20px;}
 

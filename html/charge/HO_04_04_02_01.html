@@ -21,25 +21,28 @@
 				<div id="contentLink" class="contents">
 					<header class="contentsHeader">
 						<div class="title">
-							<h3>연계연금청구</h3>
-							<p>급여청구 신청 단계는 다음과 같습니다.</p>
+							<h3>청구상태조회</h3>
+							<p>신청한 연계급여청구의 청구 상태를 확인 할 수 있습니다.</p>
 						</div>
 						<script src="../../include/location.js"></script> <!-- include: 공통 현재위치 -->
 					</header>
 
-					<div class="stepBody mt">
-						<!-- 1단계 -->
+					<div class="stepBody pcmt40">
+						<!-- 3단계 -->
+						<div class="stepByTxt">
+							접수번호 : <b class="colorBlue">1234568888</b>
+						</div>
 						<ul class="stepBy">
 							<li class="active">
-								<span class="invisible">현재 단계</span>
 								<span class="fontMontserrat">01</span>
 								<span class="fontEliceDigital text">접수<span class="m_block">중</span></span>
 							</li>
-							<li>
+							<li class="active">
 								<span class="fontMontserrat">02</span>
 								<span class="fontEliceDigital text">접수<span class="m_block">완료</span></span>
 							</li>
-							<li>
+							<li class="active">
+								<span class="invisible">현재 단계</span>
 								<span class="fontMontserrat">03</span>
 								<span class="fontEliceDigital text">기관<span class="m_block">심사중</span></span>
 							</li>
@@ -49,9 +52,10 @@
 							</li>
 						</ul>
 						<ul class="guideText mt">
-							<li>접수기관에서 연금담당자가 확인하시면 접수완료로 변경됩니다.</li>
+							<li><span class="etcColorRed">국민연금공단, 공무원연금공단</span>에서 심사중에 있습니다.</li>
+							<li>심사는 정확한 확인을 위해 경우에 따라 4주 이상 소요 될수 있습니다.</li>
 						</ul>
-						<!-- //1단계 -->
+						<!-- //3단계 -->
 					</div>
 
 					<!-- 대상자 -->
@@ -61,15 +65,15 @@
 							<div class="onlyPC">
 								<div class="tableBody">
 									<table>
-										<caption>연계급여 청구 : 접수방법, 접수번호, 접수일, 내용, 수급정보, 상태, 처리지사로 구성</caption>
+										<caption>청구상태조회 : 접수방법, 접수번호, 접수일, 내용, 수급정보, 상태, 처리지사로 구성</caption>
 										<colgroup>
-											<col style="width: 105px;">
+											<col style="width: 90px;">
 											<col>
 											<col style="width: 130px;">
-											<col style="width: 145px;">
+											<col style="width: 160px;">
 											<col style="width: 130px;">
-											<col style="width: 130px;">
-											<col style="width: 120px;">
+											<col style="width: 114px;">
+											<col style="width: 100px;">
 										</colgroup>
 										<thead>
 											<tr>
@@ -87,9 +91,9 @@
 												<td>인터넷</td>
 												<td><a href="#" class="linkA">2009101000040</a></td>
 												<td>2006-03-01</td>
-												<td>연계노령연금</td>
+												<td>연계노령/퇴직연금</td>
 												<td>2006-03-01</td>
-												<td><span class="colorBlue">처리완료</span></td><!-- 처리완료만 글자색이 파란색입니다. -->
+												<td>기관심사중</td>
 												<td><button type="button" class="button h24 lineBlack">확인</button></td>
 											</tr>
 										</tbody>
@@ -105,7 +109,7 @@
 											<h6>접수번호</h6>
 											<div class="flexLeft spaceBetween">
 												<a href="#" class="linkA"><b class="listDate colorBlue">2009101000040</b></a>
-												<div class="roundText">접수중</div>
+												<div class="roundText">기관심사중</div>
 											</div>
 											
 											<ul class="msList bdt">
@@ -115,7 +119,7 @@
 												</li>
 												<li>
 													<label>접수일</label>
-													<b>2006.03.01</b>
+													<b>2006-03-01</b>
 												</li>
 												<li>
 													<label>내용</label>
@@ -123,7 +127,7 @@
 												</li>
 												<li>
 													<label>수급정보</label>
-													<b>2016.04.30</b>
+													<b>2006-03-01</b>
 												</li>
 												<li>
 													<label>처리지사</label>
@@ -1634,7 +1638,7 @@
 	<script src="../../include/footer.js"></script> <!-- include: 공통 푸터 -->
 
 	<script>
-		var depth = [4, 1]; /* 현재메뉴 활성화 용: gnb에 있는 data-menu 값과 일치하게 해주세요. */
+		var depth = [4, 4]; /* 현재메뉴 활성화 용: gnb에 있는 data-menu 값과 일치하게 해주세요. */
 	</script>
 </div>
 </body>

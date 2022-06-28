@@ -46,7 +46,26 @@
 					<div class="mt24">
 						<h5>label 없이 단독사용</h5>
 						<div class="groupBox single">
-							<input type="checkbox" name="checkbox" title="*** 선택">
+							<input type="checkbox" name="checkbox2" title="*** 선택">
+						</div>
+					</div>
+					<div class="mt24">
+						<h5>checked, disabled</h5>
+						<div class="a">
+							<ul class="groupBox flexLeft">
+								<li>
+									<div class="checkboxBox">
+										<input type="checkbox" id="checkbox2_1" name="checkbox3" checked>
+										<label for="checkbox2_1">텍스트</label>
+									</div>
+								</li>
+								<li>
+									<div class="checkboxBox">
+										<input type="checkbox" id="checkbox2_2" name="checkbox3" disabled>
+										<label for="checkbox2_2">텍스트2</label>
+									</div>
+								</li>
+							</ul>
 						</div>
 					</div>
 
@@ -75,12 +94,33 @@
 							</li>
 						</ul>
 					</div>
+					<div class="mt24">
+						<h5>checked, disabled</h5>
+						<div class="a">
+							<ul class="groupBox flexLeft">
+								<li>
+									<div class="radioBox">
+										<input type="radio" id="radio2_1" name="radio2" checked>
+										<label for="radio2_1">텍스트</label>
+									</div>
+								</li>
+								<li>
+									<div class="radioBox">
+										<input type="radio" id="radio2_2" name="radio2" disabled>
+										<label for="radio2_2">텍스트2</label>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
 					
 					<br><br><br>
 
 					<h4>인풋박스</h4>
 					<div class="b">
 						<input type="text" title="값" placeholder="내용">
+						<input type="text" title="값" placeholder="readonly" readonly>
+						<input type="text" title="값" placeholder="disabled" disabled>
 						<div class="requireText">
 							<i></i>
 							<span>일반메세지</span>
@@ -107,6 +147,15 @@
 					<div class="b">
 						<select class="select" title="기관 선택">
 							<option disabled selected>기관전체</option>
+							<option>국민연금공단</option>
+							<option>공무원연금공단</option>
+							<option>사립학교교직원연금공단</option>
+							<option>국방부군인연금</option>
+							<option>별정우체국연금관리단</option>
+						</select>
+
+						<select class="select" title="기관 선택" disabled>
+							<option disabled selected>disabled</option>
 							<option>국민연금공단</option>
 							<option>공무원연금공단</option>
 							<option>사립학교교직원연금공단</option>

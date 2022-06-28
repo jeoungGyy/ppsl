@@ -21,69 +21,64 @@
 				<div id="contentLink" class="contents">
 					<header class="contentsHeader">
 						<div class="title">
-							<h3>신청인정보변경</h3>
-							<p>신청인 정보(연락처, 주소, 이메일)와 퇴직일시금 수령 하신 경우 반납금 납부 방법, 납부횟수 변경 가능합니다.</p>
+							<h3>신청인 정보변경</h3>
+							<p>신청인의 연락처, 주소, 이메일 변경 가능합니다.</p>
 						</div>
 						<script src="../../include/location.js"></script> <!-- include: 공통 현재위치 -->
 					</header>
 
+					<hr class="space onlyMobile">
+					
+					<div class="surveyComplete pcmt40">
+						<span class="round"><i class="icon icon3"></i></span>
+						<div class="textCompleteGroup">
+							<h6 class="text">연계신청 내역이 없습니다.</h6>
+							<p class="sideText">
+								연계신청을 기반으로 정보변경 가능합니다.
+							</p>
+						</div>
+					</div>
+					
 					<!-- PC -->
 					<div class="onlyPC">
-						<h4 class="defaultH4 pcmt40">연계신청한 내역입니다.</h4>
-						<p class="subText">해당 내용을 선택하시면 정보변경 가능합니다.</p>
-						<div class="tableBody mt2">
+						<div class="flexLeft spaceBetween pcmt40">
+							<h4 class="defaultH4">신청인</h4>
+							<button type="button" class="button h24 lineBlack">수정</button>
+						</div>
+						<div class="hTableBody">
 							<table>
-								<caption>신청상태조회 : 접수방법, 접수번호, 접수일, 내용, 구분, 상태, 처리지사로 구성</caption>
+								<caption>신청인 : 성명, 주민등록번호, 휴대전화, 전화번호, 주소, 전자우편부소(e-mail)로 구성</caption>
 								<colgroup>
-									<col style="width: 104px;">
+									<col style="width: 208px;">
 									<col>
-									<col style="width: 144px;">
-									<col style="width: 144px;">
-									<col style="width: 120px;">
-									<col style="width: 136px;">
-									<col style="width: 124px;">
 								</colgroup>
-								<thead>
-									<tr>
-										<th scope="col">접수방법</th>
-										<th scope="col">접수번호</th>
-										<th scope="col">접수일</th>
-										<th scope="col">내용</th>
-										<th scope="col">구분</th>
-										<th scope="col">상태</th>
-										<th scope="col">처리지사</th>
-									</tr>
-								</thead>
 								<tbody>
 									<tr>
-										<td>인터넷</td>
-										<td><a href="HO_03_02_02_02.html">20183012000063</a></td>
-										<td>yyyy-mm-dd</td>
-										<td>연계신청접수취소</td>
-										<td>-</td>
-										<td>접수중</td>
-										<td><button type="button" class="button h24 lineBlack">확인</button></td>
+										<th scope="row">성명 <span class="colorOrange">*</span></th>
+										<td>홍길동</td>
 									</tr>
 									<tr>
-										<td>인터넷</td>
-										<td><a href="HO_03_02_02_02.html">20183012000439</a></td>
-										<td>yyyy-mm-dd</td>
-										<td>연계신청서</td>
-										<td>미해당</td>
-										<td>접수완료</td>
-										<td><button type="button" class="button h24 lineBlack">확인</button></td>
+										<th scope="row">주민등록번호 <span class="colorOrange">*</span></th>
+										<td>801210-*******</td>
 									</tr>
 									<tr>
-										<td>인터넷</td>
-										<td><a href="HO_03_02_02_02.html">20183012000439</a></td>
-										<td>yyyy-mm-dd</td>
-										<td>연계신청서</td>
-										<td>미해당</td>
-										<td><span class="colorBlue">처리완료</span></td>
-										<td><button type="button" class="button h24 lineBlack">확인</button></td>
+										<th scope="row">휴대전화 <span class="colorOrange">*</span></th>
+										<td>010-1234-1234</td>
 									</tr>
 									<tr>
-										<td class="empty" colspan="7">데이터가 없습니다.</td>
+										<th scope="row">전화번호</th>
+										<td>010-1234-1234</td>
+									</tr>
+									<tr>
+										<th scope="row">주소 <span class="colorOrange">*</span></th>
+										<td>
+											<span>1234</span>
+											<p class="mt8">전북 전주시 만성동 77 국민연금공단</p>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">전자우편부소(e-mail) <span class="colorOrange">*</span></th>
+										<td>aaa@gmail.com</td>
 									</tr>
 								</tbody>
 							</table>
@@ -92,71 +87,44 @@
 					<!-- //PC -->
 
 					<!-- Mobile -->
-					<div class="onlyMobile m_tableBody mt2 noBorder">
-						<ul class="mList">
+					<div class="onlyMobile">
+						<h4 class="defaultH4">신청인 정보입력</h4>
+						<div class="flexLeft justifyRight momt20">
+							<button type="button" class="button h24 lineBlack">수정</button>
+						</div>
+						<ul class="mListMulti momt8">
 							<li>
-								<div class="roundBoxGray">
-									<h6>접수번호</h6>
-									<div class="flexLeft spaceBetween">
-										<a href="HO_03_02_02_02.html"><b class="listDate colorBlue">2009101000040</b></a>
-										<div class="roundText">접수중</div>
-									</div>
-									
-									<ul class="msList bdt">
-										<li>
-											<label>접수방법</label>
-											<b>인터넷</b>
-										</li>
-										<li>
-											<label>접수일</label>
-											<b>2006-03-01</b>
-										</li>
-										<li>
-											<label>내용</label>
-											<b>연계신청서</b>
-										</li>
-										<li>
-											<label>구분</label>
-											<b>미해당</b>
-										</li>
-										<li>
-											<label>처리지사</label>
-											<button type="button" class="button h24 lineBlack">확인</button>
-										</li>
-									</ul>
-								</div>
-							</li>
-							<li>
-								<div class="roundBoxGray">
-									<h6>접수번호</h6>
-									<div class="flexLeft spaceBetween">
-										<a href="HO_03_02_02_02.html"><b class="listDate colorBlue">2009101000040</b></a>
-										<div class="roundText blueLine">처리완료</div>
-									</div>
-									
-									<ul class="msList bdt">
-										<li>
-											<label>접수방법</label>
-											<b>인터넷</b>
-										</li>
-										<li>
-											<label>접수일</label>
-											<b>2006-03-01</b>
-										</li>
-										<li>
-											<label>내용</label>
-											<b>연계신청서</b>
-										</li>
-										<li>
-											<label>구분</label>
-											<b>미해당</b>
-										</li>
-										<li>
-											<label>처리지사</label>
-											<button type="button" class="button h24 lineBlack">확인</button>
-										</li>
-									</ul>
-								</div>
+								<ul class="msList mt0">
+									<li>
+										<span>성명 <span class="colorOrange">*</span></span>
+										<b>홍길동</b>
+									</li>
+									<li>
+										<span>주민등록번호 <span class="colorOrange">*</span></span>
+										<b>000000-*******</b>
+									</li>
+									<li>
+										<span>휴대전화 <span class="colorOrange">*</span></span>
+										<b>010-1234-1234</b>
+									</li>
+									<li>
+										<span>전화번호</span>
+										<b>02-1234-5678</b>
+									</li>
+									<li class="lineBreak block">
+										<span>주소 <span class="colorOrange">*</span></span>
+										<div class="mt">
+											<div><b>1234</b></div>
+											<div><b>전북 전주시 만성동 77 국민연금공단</b></div>
+										</div>
+									</li>
+									<li class="lineBreak block">
+										<span>전자우편주소(e-mail) <span class="colorOrange">*</span></span>
+										<div class="mt">
+											<b>aaa@gmail.com</b>
+										</div>
+									</li>
+								</ul>
 							</li>
 						</ul>
 					</div>
