@@ -77,10 +77,10 @@
 /* Heading */
 .defaultF24 { font-size: 19px; line-height: 29px;}
 
-
 /* Margin */
 #wrap .pcmt8 { margin-top: 0;}
 #wrap .pcmt16 { margin-top: 0;}
+#wrap .pcmt20 { margin-top: 0;}
 #wrap .pcmt24 { margin-top: 0;}
 #wrap .pcmt40 { margin-top: 0;}
 
@@ -767,9 +767,15 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .borderRound { padding: 24px 16px;}
 .borderRound2 { padding: 24px 16px;}
 
-/* 수급계좌변경 */
+/* 수급계좌 정보변경 */
 .subDateBody { display: flex; justify-content: flex-end; margin-bottom: 16px;}
 .subDateBody .subDate { font-size: 14px; color: #767676;}
+
+.grayListBox { display: block; height: inherit; padding: 16px;}
+.grayListBox span { display: block;}
+.grayListBox span ~ span { margin: 8px 0 0 0; padding-left: 0;}
+.grayListBox span ~ span::after { display: none;}
+
 
 
 /* 통합검색

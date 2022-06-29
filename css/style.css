@@ -243,6 +243,7 @@ body.noScroll { overflow: hidden;}
 /* Margin */
 #wrap .pcmt8 { margin-top: 8px;}
 #wrap .pcmt16 { margin-top: 16px;}
+#wrap .pcmt20 { margin-top: 20px;}
 #wrap .pcmt24 { margin-top: 24px;}
 #wrap .pcmt40 { margin-top: 40px;}
 
@@ -1393,6 +1394,10 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .borderRound2 { padding: 24px 32px; border: 1px solid #DBDBDB; border-radius: 8px;}
 
 
+/* 수급계좌 정보변경 */
+.grayListBox { display: flex; align-items: center; height: 51px; padding: 0 32px; background-color: #F7F7F7; border-radius: 8px;}
+.grayListBox span ~ span { position: relative; margin-left: 24px; padding-left: 24px; font-weight: 700;}
+.grayListBox span ~ span::after { content: ''; display: block; position: absolute; left: 0; top: 0; width: 1px; height: 16px; background-color: #dbdbdb;}
 
 
 /* 통합검색

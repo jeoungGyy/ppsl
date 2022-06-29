@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<script src="../../include/head.js"></script> <!-- include: 공통 헤드 -->
+</head>
+
+<body>
+<div id="wrap">
+	<div class="container">
+
+
+		<!-- 레이어 -->
+		<div id="chargeAccountLayer" class="layerPopup active show" role="dialog" aria-modal="true" aria-labelledby="chargeAccountLayerTitle" tabindex="0">
+			<div class="layerBody giant chargeAccountLayer">
+				<h5 id="chargeAccountLayerTitle" class="layerTitle">변경할 수급계좌를 등록해 주세요</h5>
+				<div class="layerContent">
+					<div class="overflowY" tabindex="0">
+						<!-- 퇴직 수급계좌 변경 타이틀 -->
+						<h5 class="defaultH4"><span class="colorBlue">공무원연금</span> 수급계좌</h5>
+						<ul class="guideText mt">
+							<li>공무원연금에서 대부금을 미상환한 경우의 연금 수급계좌는 대부 금융기관과 같아야 합니다.</li>
+							<li>입출금이 가능한 본인 명의의 계좌만 등록 가능합니다.</li>
+						</ul>
+
+						<!-- 노령 수급계좌 변경 타이틀 -->
+						<h5 class="defaultH4"><span class="colorBlue">연계노령</span> 수급계좌</h5>
+						<ul class="guideText mt">
+							<li>일반계좌와 국민연금 급여수급전용계좌를 동시에 등록하면 185만원까지는 국민연금수급전용계좌로 우선 지급됩니다.</li>
+							<li>계좌변경 마감일(20일경)부터 국민연금 지급일(25일경)까지는 홈페이지로 계좌변경이 불가하며, 변경하고자 하시는 경우 국번없이 1355(유료)또는 지사로 문의하시기 바랍니다. 단, 계좌변경 마감일 이후부터 말일까지 변경하시는 경우에는 신청월 다음달부터 적용됩니다.</li>
+						</ul>
+
+						<div>
+							<!-- PC -->
+							<div class="onlyPC">
+								<h5 class="defaultH5 pcmt24">변경 전</h5>
+								<div class="hTableBody">
+									<table>
+										<caption>변경할 수급계좌 변경 전 : 계좌구분, 금융기관, 예금주, 계좌번호로 구성</caption>
+										<colgroup>
+											<col style="width: 170px;">
+											<col>
+										</colgroup>
+										<tbody>
+											<tr>
+												<th scope="row">계좌구분</th>
+												<td>일반계좌</td>
+											</tr>
+											<tr>
+												<th scope="row">금융기관 <span class="colorOrange">*</span></th>
+												<td>우리은행</td>
+											</tr>
+											<tr>
+												<th scope="row">예금주 <span class="colorOrange">*</span></th>
+												<td>홍길동</td>
+											</tr>
+											<tr>
+												<th scope="row">계좌번호 <span class="colorOrange">*</span></th>
+												<td>560015-89678-98</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+								<h5 class="defaultH5 colorBlue pcmt24">변경 후</h5>
+								<div class="hTableBody">
+									<table>
+										<caption>변경할 수급계좌 변경 후 : 계좌구분, 금융기관, 예금주, 계좌번호로 구성</caption>
+										<colgroup>
+											<col style="width: 170px;">
+											<col>
+										</colgroup>
+										<tbody>
+											<tr>
+												<th scope="row">계좌구분</th>
+												<td>일반계좌</td>
+											</tr>
+											<tr>
+												<th scope="row">금융기관 <span class="colorOrange">*</span></th>
+												<td>
+													<select>
+														<option>금융기관</option>
+													</select>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">예금주 <span class="colorOrange">*</span></th>
+												<td><input type="text" placeholder="예금주"></td>
+											</tr>
+											<tr>
+												<th scope="row">계좌번호 <span class="colorOrange">*</span></th>
+												<td>
+													<input type="text" placeholder="계좌번호">
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!-- //PC -->
+
+							<!-- Mobile -->
+							<div class="onlyMobile">
+								<ul class="m_hTableBody">
+									<li>
+										<label>계좌구분 <span class="colorOrange">*</span></label>
+										<div class="roundBoxGray block">
+											<ul class="groupBox">
+												<li>
+													<div class="radioBox">
+														<input type="radio" id="m_testRadio3" name="m_testRadio2">
+														<label for="m_testRadio3">일반계좌</label>
+													</div>
+												</li>
+												<li>
+													<div class="radioBox">
+														<input type="radio" id="m_testRadio4" name="m_testRadio2">
+														<label for="m_testRadio4">국민연금 안심통장</label>
+														<button type="button" class="tooltipBtn"><i class="icon">도움말</i></button>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<label>계좌정보 <span class="colorOrange">*</span></label>
+										<div>
+											<div class="twin">
+												<select title="금융기관 선택">
+													<option disabled selected>금융기관</option>
+													<option>텍스트</option>
+												</select>
+												<input type="text" title="예금주 입력" placeholder="예금주를 입력해주세요">
+											</div>
+											<div class="spcemt">
+												<div class="blockBtn">
+													<input type="text" title="계좌번호 입력" placeholder="계좌번호를 입력해주세요">
+													<button type="button" class="button h40 lineBlack">계좌정보 확인</button>
+												</div>
+												<div class="requireText">
+													<i></i>
+													<span>“-” 필수입력 예)123-456-789-01</span>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!-- //Mobile -->
+						</div>
+
+						<div class="btnsGroup flexEnd mt2 pdt0">
+							<button type="button" class="button h40 gray">취소</button>
+							<button type="button" class="button h40 blue">변경</button>
+						</div>
+					</div>
+					
+				</div>
+				<button type="button" class="layerClose"><i>창 닫기</i></button>
+			</div>
+		</div>
+		<!-- //레이어 -->
+
+
+	</div>
+</div>
+</body>
+</html>
