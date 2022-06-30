@@ -950,8 +950,10 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .tbPopular .popularBtns button:hover { text-decoration: underline;}
 .totalBody .searchScrollBody { display: none; padding: 16px 0 32px;}
 .totalBody .searchScroll { overflow-x: hidden; overflow-y: auto; height: 240px;}
-.totalBody .searchScroll::-webkit-scrollbar { width: 5px;}
-.totalBody .searchScroll::-webkit-scrollbar-thumb { border-radius: 4px; background-color: #959595;}
+@media (hover: hover) {
+  .totalBody .searchScroll::-webkit-scrollbar { width: 5px;}
+  .totalBody .searchScroll::-webkit-scrollbar-thumb { border-radius: 4px; background-color: #959595;}
+}
 .totalBody .searchScroll button { padding: 4px 0; line-height: 24px;}
 .totalBody.active { display: block;}
 .totalBody.show { transform: translateY(0);}
@@ -968,7 +970,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .layerPopup::after { content: ""; display: inline-block; height: 100%; vertical-align: middle;}
 .layerPopup.active { display: block;}
 .layerPopup.show { opacity: 1;}
-.layerBody { overflow: hidden; position:relative; left:50%; top:50%; max-height: 720px; padding: 8px 40px 32px; vertical-align: middle; background: #fff; border-radius: 8px; transform: translate(-50%, -50%);}
+.layerBody { position:relative; left:50%; top:50%; max-height: 720px; padding: 8px 40px 32px; vertical-align: middle; background: #fff; border-radius: 8px; transform: translate(-50%, -50%);}
 .layerBody.small { width: 384px;}
 .layerBody.normal { width: 588px;}
 .layerBody.big { width: 792px;}

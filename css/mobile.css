@@ -293,9 +293,10 @@ hr.space.style5 { margin: 8px -16px 32px;}
 /* PC용 테이블에 스크롤 추가 */
 .m_scoll { overflow-x: scroll; overflow-y: hidden; padding-bottom: 8px; -webkit-overflow-scrolling:touch;}
 .m_scoll table { width: 912px;}
-.m_scoll::-webkit-scrollbar { height: 4px;}
-.m_scoll::-webkit-scrollbar-thumb { border-radius: 4px; background-color: #959595;}
-
+@media (hover: hover) {
+	.m_scoll::-webkit-scrollbar { height: 4px;}
+	.m_scoll::-webkit-scrollbar-thumb { border-radius: 4px; background-color: #959595;}
+}
 
 
 
