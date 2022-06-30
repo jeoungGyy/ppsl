@@ -351,7 +351,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .icheckbox input { margin: 0; width: 20px; height: 20px;}
 .icheckbox.checked { border-color: #366cc3; background-color: #366cc3;}
 .icheckbox.checked::before { background: url(../images/common/ico_checkbox_w.svg) no-repeat center/cover;}
-.icheckbox.disabled { border-color: #dbdbdb;}
+.icheckbox.disabled { border-color: #dbdbdb; background-color: #f7f7f7;}
 .icheckbox.disabled::before { background: url(../images/common/ico_checkbox_d.svg) no-repeat center/cover;}
 .icheckbox.disabled + label { cursor: inherit;}
 
@@ -361,6 +361,8 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .iradio input { margin: 0; width: 20px; height: 20px;}
 .iradio.checked { border-color: #366cc3;}
 .iradio.checked::before { background-color: #366cc3;}
+.iradio.disabled { border-color: #dbdbdb;}
+.iradio.disabled::before { background-color: #eaeaea;}
 
 /* lineSpace */
 .lineSpace { display: flex; align-items: center;}
@@ -1337,8 +1339,9 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .targetBody .targetOff .toBody .textGroup h4 span.text::before { content: ''; display: block; position: absolute; left: 0; bottom: 0; width: 100%; height: 14px; background-color: #333; opacity: 0.1;}
 .targetBody .targetOff .toBody .textGroup p { margin-top: 12px; font-size: 14px; color: #767676; line-height: 21px;}
 .targetBody .targetOff .toBody .textGroup .btn { margin-top: 24px;}
-.targetBody .targetOff .subLight { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; margin-top: 16px; padding-top: 16px; font-size: 14px; border-top: 1px solid #DBDBDB;}
-.targetBody .targetOff .subLight .tooltipBtn { margin: -2px 8px 0;}
+.targetBody .targetOff .subLight { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; margin-top: 16px; padding-top: 8px; font-size: 14px; border-top: 1px solid #DBDBDB;}
+.targetBody .targetOff .subLight b { margin-top: 8px;}
+.targetBody .targetOff .subLight .tooltipBtn { margin: 8px 8px 0;}
 .targetBody .targetOff .subLight .tooltipBtn .colorBlue { margin-right: 4px;}
 
 .targetBody .targetOn { display: flex; justify-content: center; margin-top: 40px; padding: 32px 0; background-color: #f4f7fc; border-radius: 8px;}
