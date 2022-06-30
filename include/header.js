@@ -56,7 +56,7 @@ str += '            </ul>';
 str += '          </li>';
 str += '          <li><a href="../consultation/HO_02_01_01.html" data-menu="depth_2"><span>상담</span></a>';
 str += '            <ul class="depth2">';
-str += '              <li><a href="../consultation/HO_02_01_01.html" data-menu="depth_2_1"><span>상담</span></a></li>';
+str += '              <li><a href="../consultation/HO_02_01_01.html" data-menu="depth_2_1"><span>1:1상담</span></a></li>';
 str += '              <li><a href="../consultation/HO_02_02_01.html" data-menu="depth_2_2"><span>상담FAQ</span></a></li>';
 str += '              <li><a href="../consultation/HO_02_03_01.html" data-menu="depth_2_3"><span>전산문의</span></a></li>';
 str += '              <li><a href="../consultation/HO_02_04_01.html" data-menu="depth_2_4"><span>고객제안</span></a></li>';

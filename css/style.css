@@ -504,11 +504,11 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 
 /* viewBody */
 .viewBody { margin-top: 40px; padding-top: 40px; border-top: 2px solid #333;}
-.viewBody .notice { display: flex;}
+.viewBody .notice { display: flex; margin-bottom: 8px;}
 .viewBody .notice span { font-size: 14px;}
 .viewBody .notice span ~ span { position: relative; margin-left: 12px; padding-left: 12px;}
 .viewBody .notice span ~ span::before { content: ''; display: block; position: absolute; left: 0; top: 1px; width: 1px; height: 12px; background-color: #dbdbdb;}
-.viewBody h4 { margin-top: 8px; font-size: 20px; line-height: 30px;}
+.viewBody h4 { font-size: 20px; line-height: 30px;}
 .viewBody .lineSpace { margin-top: 16px;}
 .viewBody .fileForm { margin-top: 24px; padding: 15px 16px; font-size: 14px; border-top: 1px solid #dbdbdb; border-bottom: 1px solid #dbdbdb; background-color: #f7f7f7;}
 .viewBody .fileForm ul li a { display: inline-block; line-height: 21px;}
@@ -670,6 +670,9 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 /* 라운드 회색 박스 */
 .grayBoxS { padding: 24px 16px; font-size: 14px; background-color: #F7F7F7; border-radius: 8px;}
 .grayBoxS .paragraphGroup p { line-height: 21px;}
+.grayBoxS .gbsList li { margin-top: 8px;}
+.grayBoxS ~ .grayBoxS { margin-top: 8px;}
+
 .grayBoxR { padding: 24px 32px; background-color: #F7F7F7; border-radius: 8px;}
 
 
