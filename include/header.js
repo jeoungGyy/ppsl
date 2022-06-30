@@ -49,7 +49,7 @@ str += '                  <li><a href="../information/HO_01_03_02.html" data-men
 str += '                </ul>';
 str += '              </li>';
 str += '              <li><a href="../information/HO_01_04_01.html" data-menu="depth_1_4"><span>상담사례</span></a></li>';
-str += '              <li><a href="../information/HO_01_05_01.html" data-menu="depth_1_5"><span>지사소개</span></a></li>';
+str += '              <li><a href="../information/HO_01_05.html" data-menu="depth_1_5"><span>지사소개</span></a></li>';
 str += '              <li><a href="../information/HO_01_06.html" data-menu="depth_1_6"><span>심사청구 안내</span></a></li>';
 str += '              <li><a href="../information/HO_01_07.html" data-menu="depth_1_7"><span>증명서발급요청 안내</span></a></li>';
 str += '            </ul>';
@@ -63,9 +63,9 @@ str += '              <li><a href="../consultation/HO_02_04_01.html" data-menu="
 str += '              <li><a href="../consultation/HO_02_05.html" data-menu="depth_2_5"><span>반납금 모의계산</span></a>';
 str += '            </ul>';
 str += '          </li>';
-str += '          <li><a href="../apply/HO_03_01_02.html" data-menu="depth_3"><span>신청</span></a>';
+str += '          <li><a href="../apply/HO_03_01_01_01.html" data-menu="depth_3"><span>신청</span></a>';
 str += '            <ul class="depth2">';
-str += '              <li><a href="../apply/HO_03_01_02.html" data-menu="depth_3_1"><span>연계신청</span></a></li>';
+str += '              <li><a href="../apply/HO_03_01_01_01.html" data-menu="depth_3_1"><span>연계신청</span></a></li>';
 str += '              <li><a href="../apply/HO_03_02_01.html" data-menu="depth_3_2"><span>신청인 정보변경</span></a></li>';
 str += '              <li><a href="../apply/HO_03_03_01.html"" data-menu="depth_3_3"><span>반납금 정보변경</span></a></li>';
 str += '              <li><a href="../apply/HO_03_04_01.html" data-menu="depth_3_4"><span>신청상태조회</span></a></li>';
