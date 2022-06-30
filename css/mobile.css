@@ -171,9 +171,15 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .viewBody .lineSpace >span { display: block;}
 .viewBody .lineSpace >span ~ span { margin: 8px 0 0 0; padding-left: 0;}
 .viewBody .lineSpace >span ~ span::before { display: none;}
+.viewBody .lineSpace ~ .lineSpace { margin-top: 8px;}
 .viewBody .fileForm { margin-top: 16px;}
 .viewBody .article { padding: 24px 0;}
 .postGroup li .ellipsis { flex: 1;}
+
+.qnaHeader { display: block;}
+.qnaHeader .qnaCol { width: 32px; height: 32px; margin-bottom: 16px;}
+.qnaHeader .qnaCol img { width: 19px; height: auto;}
+.vbPurpleBox { padding: 24px 16px;}
 
 
 /* evaluationBody */
