@@ -565,8 +565,8 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 
 
 /* roundBox */
-.roundBox { overflow: hidden; margin-top: 40px; border: solid 1px #dbdbdb; border-radius: 8px;}
-.roundBox h4 { padding: 14px 24px; font-size: 16px; border-bottom: solid 1px #dbdbdb; background-color: #f7f7f7;}
+.roundBox { margin-top: 40px; border: solid 1px #dbdbdb; border-radius: 8px;}
+.roundBox h4 { padding: 14px 24px; font-size: 16px; border-bottom: solid 1px #dbdbdb; background-color: #f7f7f7; border-radius: 8px 8px 0 0;}
 .roundBox .overflowY { height: 152px; margin: 23px 8px 23px 24px; font-size: 14px; line-height: 21px;}
 .roundBox .overflowY >p ~ p { margin-top: 20px;}
 .roundBox .overflowY .styleGray { color: #767676;}
