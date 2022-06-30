@@ -221,13 +221,13 @@ $(document).ready(function () {
         yearRange: '-100:+10',
         hideIfNoPrevNext: true,
         showMonthAfterYear: true,
-        beforeShow: function(input) {
-          visible = true;
-          var _inputOffset = $(input).offset()
-          setTimeout(function() {
-            $('#ui-datepicker-div').css('top', _inputOffset.top + 36);
-          });
-        },
+        // beforeShow: function(input) {
+        //   visible = true;
+        //   var _inputOffset = $(input).offset()
+        //   setTimeout(function() {
+        //     $('#ui-datepicker-div').css('top', _inputOffset.top + 36);
+        //   });
+        // },
         onSelect: function( date ) {
           date && $(this).next().addClass('active');
         },

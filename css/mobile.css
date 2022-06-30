@@ -45,6 +45,8 @@
 .mFooterCon .ftLinks .area a ~ a::after { display: none;}
 .mFooterCon .ftLinks .area a >div { text-align: center;}
 .mFooterCon .ftLinks .area a >div b { font-size: 13px;}
+.mFooterCon .ftLinks .area a i.icon5 { background: url(../images/common/ci_mps_gray@2x.png) no-repeat center/cover;}
+.mFooterCon .ftLinks .area a i.icon6 { background: url(../images/common/ci_popa_gray@2x.png) no-repeat center/cover;}
 
 .mFooterCon .mfBody { padding: 32px 16px;}
 .mFooterCon .fLinks { flex-wrap: wrap; margin-top: -8px; padding-top: 0;}
@@ -576,12 +578,14 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .mainBody .linksWrap .deco2 { display: none;}
 .mainBody .linksWrap .deco3 { right: 50%; bottom: -271px; z-index: 1; width: 613px; height: 598px; margin-right: -265px; background: url(../images/home/home_img_m@2x.png) no-repeat center/cover;}
 .mainBody .contentWrap { width: 100%; padding: 32px 16px 0;}
+.mainBody .cwSeo a::after { background: url(../images/home/banner_img_01@2x.png) no-repeat center/cover;}
 .mainFooter { margin-top: 24px; padding: 0 16px; border: none; border-radius: 0;}
 .mainFooter ul { flex-wrap: wrap; margin: -4px;}
 .mainFooter ul li { width: calc(33.33% - 8px); margin: 4px;}
 .mainFooter ul li a { flex-direction: column; height: 104px; text-align: center; background-color: #f7f7f7; border-radius: 16px;}
 .mainFooter ul li a .mfDiv { margin: 4px 0 0;}
-
+.mainFooter ul li a.mfMps i { background: url(../images/home/ci_mps@2x.png) no-repeat center/cover;}
+.mainFooter ul li a.mfPopa i { background: url(../images/home/ci_popa@2x.png) no-repeat center/cover;}
 /* 메인만 사용 */
 .main .mFooterCon .fSNS { top: inherit;}
 

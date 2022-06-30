@@ -556,8 +556,13 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 
 /* overflowY */
 .overflowY { overflow-x: hidden; overflow-y: scroll;}
-.overflowY::-webkit-scrollbar { width: 4px;}
-.overflowY::-webkit-scrollbar-thumb { border-radius: 4px; background-color: #959595;}
+
+@media (hover: hover) {
+  .overflowY::-webkit-scrollbar { width: 4px;}
+  .overflowY::-webkit-scrollbar-thumb { border-radius: 4px; background-color: #959595;}
+}
+
+
 
 /* roundBox */
 .roundBox { overflow: hidden; margin-top: 40px; border: solid 1px #dbdbdb; border-radius: 8px;}
