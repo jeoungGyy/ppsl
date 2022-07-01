@@ -526,7 +526,7 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .allMenu_pop .gnb .depth1 >li >a.active >span::after { display: none;}
 .allMenu_pop .gnb .depth1 >li >a.active +.depth2 { display: block;}
 .allMenu_pop .gnb .depth1::after { content: ''; display: block; width: 120px; height: 100%; background-color: #f7f7f7;}
-.allMenu_pop .gnb .depth2 { display: none; left: 144px; top: 0; margin-top: 16px; padding-left: 0;}
+.allMenu_pop .gnb .depth2 { display: none; overflow-x: hidden; overflow-y: auto; left: 144px; top: 0; max-height: calc(100vh - 110px); margin-top: 16px; padding-left: 0;}
 .allMenu_pop .gnb .depth2 >li { margin-top: 0; border-bottom: 1px solid #dbdbdb;}
 .allMenu_pop .gnb .depth2 >li >a { display: flex; align-items: center; position: relative; z-index: 1; height: 48px;}
 .allMenu_pop .gnb .depth2 >li >a.menu_exist::before { content: ''; position: absolute; right: 0; top: 16px; width: 16px; height: 16px; background: url(../images/common/ico_arrow_down.svg) no-repeat center/cover;}
