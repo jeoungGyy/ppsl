@@ -98,7 +98,7 @@ str += '                </ul>';
 str += '              </li>';
 str += '              <li><a href="../mypage/HO_06_02_01_01.html" data-menu="depth_6_2"><span>예상연금조회</span></a></li>';
 str += '              <li><a href="../mypage/HO_06_02_02_01.html" data-menu="depth_6_3"><span>예상반납금조회</span></a></li>';
-str += '              <li><a href="../mypage/HO_06_04_01.html" data-menu="depth_6_4"><span>증명서출력</span></a></li>';
+str += '              <li><a href="../mypage/HO_06_03_01.html" data-menu="depth_6_4"><span>증명서출력</span></a></li>';
 str += '            </ul>';
 str += '          </li>';
 str += '          <li style="display:none;"><a href="#" data-menu="depth_7"><span>홈패이지 안내</span></a>';
