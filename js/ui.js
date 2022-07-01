@@ -345,7 +345,7 @@ $(document).ready(function () {
 		},
 	},
 
-
+  /* 화면 확대/축소 */
   active = {
     /* BODY 확대, 축소 */
     size : 1.0,
@@ -367,8 +367,6 @@ $(document).ready(function () {
       $('body').css('zoom', this.size);
     },
   },
-  
-
   /* 레이어 팝업 */
   layerPopup = {
     init: function () {
@@ -570,10 +568,6 @@ $(document).ready(function () {
 			}
 		},
 	}
-
-
-
-
 
   common.init();
   layerPopup.init();
