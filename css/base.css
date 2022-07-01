@@ -103,7 +103,7 @@ ul, ol { list-style:none;}
 hr { margin: 0; padding: 0; border: none;}
 legend,
 caption { overflow: hidden; width: 0; height: 0; padding: 0; text-indent: -99999px; line-height: 0;}
-table { table-layout: fixed; width: 100%; border-collapse: collapse; border-spacing: 0; empty-cells:show;}
+table { width: 100%; border-collapse: collapse; border-spacing: 0; empty-cells:show;}
 table th,
 table td { vertical-align: middle;}
 
