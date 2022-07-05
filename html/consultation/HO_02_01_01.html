@@ -142,12 +142,7 @@
 									</tr>
 									<tr>
 										<td class="mobileVisible">3</td>
-										<!--
-											비밀글이 있을경우:
-											class="layerLink"와 aria-controls="consultationPWLayer" 넣어주세요.
-											layerLink 클래스에 e.preventDefault(); 적용되어 있습니다.
-										-->
-										<td class="textLeft"><a href="HO_02_01_03.html" class="layerLink" aria-controls="consultationPWLayer"><span>전화상담 받고 싶습니다.</span> <i class="new" title="신규 글">NEW</i> <i class="secret" title="비밀 글">비밀 글</i></a></td>
+										<td class="textLeft"><a href="HO_02_01_03.html"><span>전화상담 받고 싶습니다.</span> <i class="new" title="신규 글">NEW</i></a></td>
 										<td class="mobileVisible"></td>
 										<td class="mobileVisible">홍길*</td>
 										<td class="mobileVisible">별정우체국연금</td>
@@ -165,7 +160,7 @@
 									</tr>
 									<tr>
 										<td class="mobileVisible">1</td>
-										<td class="textLeft"><a href="HO_02_01_03.html" class="layerLink" aria-controls="consultationPWLayer"><span>1:1 상담 받고 싶습니다.</span> <i class="secret" title="비밀 글">비밀 글</i></a></td>
+										<td class="textLeft"><a href="HO_02_01_03.html"><span>1:1 상담 받고 싶습니다.</span></a></td>
 										<td class="mobileVisible"><i class="file">첨부파일</i></td>
 										<td class="mobileVisible">홍길*</td>
 										<td class="mobileVisible">국민연금</td>
@@ -200,29 +195,6 @@
 				</div>
 			</div>
 		</div>
-
-
-
-		<!-- 레이어 -->
-		<div id="consultationPWLayer" class="layerPopup" role="dialog" aria-modal="true" aria-labelledby="consultationPWLayerTitle" tabindex="0">
-			<div class="layerBody small consultationPWLayer">
-				<h5 id="consultationPWLayerTitle" class="layerTitle">비밀번호 확인</h5>
-				<div class="layerContent">
-					<div class="postTitle">
-						<span class="t">등록 시 작성한 비밀번호를 입력해주세요.</span>
-					</div>
-					<div class="pwInput">
-						<input type="password" title="비밀번호입력해 주세요." placeholder="비밀번호입력해 주세요.">
-					</div>
-					<div class="btnsGroup flexEnd mt2 pdt0">
-						<button type="button" class="button h40 gray">취소</button>
-						<button type="button" class="button h40 blue">확인</button>
-					</div>
-				</div>
-				<button type="button" class="layerClose"><i>창 닫기</i></button>
-			</div>
-		</div>
-		<!-- //레이어 -->
 	</div>
 
 	<script src="../../include/footer.js"></script> <!-- include: 공통 푸터 -->
