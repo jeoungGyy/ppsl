@@ -56,9 +56,6 @@ body.noScroll { overflow: hidden;}
 
 .header.active .menu { border-bottom: 1px solid #dbdbdb;}
 
-
-
-
 .gnb { flex: 1;}
 .gnb .depth1 { display: flex; justify-content: flex-end;}
 .gnb .depth1 >li { position: relative; width: 144px;}

@@ -4,9 +4,12 @@
 **********************************************/
 
 .area { width: 100%;}
+
 /* header */
 .header .global,
 .header .menu { padding: 0 16px;}
+.gnb .depth1 >li { width: 16%;}
+.gnb .depth1 >li:nth-child(6) { width: 20%;}
 
 /* wrap */
 .wrap { padding: 104px 16px 0;}
