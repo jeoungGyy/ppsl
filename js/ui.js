@@ -11,6 +11,7 @@ $(document).ready(function () {
 			common.menu_active();
 			common.calendar();
 			common.snsBtnToggle();
+			common.family_site();
 			common.initial();
 		},
     /* 라디오, 체크박스 */
@@ -303,6 +304,20 @@ $(document).ready(function () {
           });
         };
       });
+		},
+    /* 패밀리 사이트 */
+    family_site: function () {
+			var $linkUrl = $(".linkUrl");
+			var $fSNSBtn = $(".fSNSBtn");
+
+			$linkUrl.on("change",  function(){
+				var _value = $(this).val();
+				if(_value !== "") {
+					$fSNSBtn.attr({"href": _value, "target": "_blank"});
+				} else {
+					$fSNSBtn.attr({"href": "javascript:void(0);", "target": ""});
+				}
+			});
 		},
     /* 초기화 */
 		initial: function () {

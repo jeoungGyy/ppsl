@@ -101,7 +101,7 @@ str += '          <option value="http://www.popa.or.kr">별정우체국연금관
 str += '          <option value="http://csa.nps.or.kr">국민연금 노후준비서비스</option>';
 str += '          <option value="http://100lifeplan.fss.or.kr">금융감독원 통합연금포탈</option>';
 str += '        </select>';
-str += '        <button type="button" class="fSNSBtn">이동</button>';
+str += '        <a href="javascript:void(0);" class="fSNSBtn" title="새창 이동">이동</a>';
 str += '      </div>';
 str += '      <div class="b">';
 str += '        <a href="#" class="kakao" target="_blank"><i>카카오톡</i></a>';
