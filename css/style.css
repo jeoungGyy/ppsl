@@ -698,25 +698,28 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .acoList >li button.active { color: #366cc3;}
 .acoList >li button.active::after { transform: rotate(180deg);}
 
-/* 퀵메뉴 */
-.aside { position: fixed; right: 24px; top: 280px; z-index: 1;}
-.asideNav { display: flex; align-items: flex-end; justify-content: center; flex-direction: column;}
-.asideNav li ~ li { margin-top: 4px;}
-.asideNav li a { display: flex; align-items: center; justify-content: center; overflow: hidden; width: 48px; height: 48px; white-space: nowrap; border: solid 1px #dbdbdb; background-color: #fff; border-radius: 24px; transition: width .3s, border-color .3s, background-color .3s;}
-.asideNav li a b { display: block; width: 0; font-size: 14px; opacity: 0;}
-.asideNav li a .icon { display: block; width: 24px; height: 24px; transition: background .3s;}
-.asideNav li a .icon1 { background: url(../images/common/ico_q_link_01.svg) no-repeat center/cover;}
-.asideNav li a .icon2 { background: url(../images/common/ico_q_link_02.svg) no-repeat center/cover;}
-.asideNav li a .icon3 { background: url(../images/common/ico_q_link_03.svg) no-repeat center/cover;}
-.asideNav li a .icon4 { background: url(../images/common/ico_q_link_04.svg) no-repeat center/cover;}
-.asideNav li a .icon5 { background: url(../images/common/ico_q_link_05.svg) no-repeat center/cover;}
-.asideNav li a:hover { width: 136px; padding: 0 11px 0 16px; border-color: #366cc3; background-color: #366cc3;}
-.asideNav li a:hover b { flex: 1; width: inherit; color: #fff; opacity: 1;}
-.asideNav li a:hover .icon1 { background: url(../images/common/ico_q_link_01_hover.svg) no-repeat center/cover;}
-.asideNav li a:hover .icon2 { background: url(../images/common/ico_q_link_02_hover.svg) no-repeat center/cover;}
-.asideNav li a:hover .icon3 { background: url(../images/common/ico_q_link_03_hover.svg) no-repeat center/cover;}
-.asideNav li a:hover .icon4 { background: url(../images/common/ico_q_link_04_hover.svg) no-repeat center/cover;}
-.asideNav li a:hover .icon5 { background: url(../images/common/ico_q_link_05_hover.svg) no-repeat center/cover;}
+/* 퀵메뉴 (피씨에서만 보이도록 수정) */
+@media (pointer:fine) {
+  .aside { position: fixed; right: 24px; top: 280px; z-index: 1;}
+  .asideNav { display: flex; align-items: flex-end; justify-content: center; flex-direction: column;}
+  .asideNav li ~ li { margin-top: 4px;}
+  .asideNav li a { display: flex; align-items: center; justify-content: center; overflow: hidden; width: 48px; height: 48px; white-space: nowrap; border: solid 1px #dbdbdb; background-color: #fff; border-radius: 24px; transition: width .3s, border-color .3s, background-color .3s;}
+  .asideNav li a b { display: block; width: 0; font-size: 14px; opacity: 0;}
+  .asideNav li a .icon { display: block; width: 24px; height: 24px; transition: background .3s;}
+  .asideNav li a .icon1 { background: url(../images/common/ico_q_link_01.svg) no-repeat center/cover;}
+  .asideNav li a .icon2 { background: url(../images/common/ico_q_link_02.svg) no-repeat center/cover;}
+  .asideNav li a .icon3 { background: url(../images/common/ico_q_link_03.svg) no-repeat center/cover;}
+  .asideNav li a .icon4 { background: url(../images/common/ico_q_link_04.svg) no-repeat center/cover;}
+  .asideNav li a .icon5 { background: url(../images/common/ico_q_link_05.svg) no-repeat center/cover;}
+  .asideNav li a:hover { width: 136px; padding: 0 11px 0 16px; border-color: #366cc3; background-color: #366cc3;}
+  .asideNav li a:hover b { flex: 1; width: inherit; color: #fff; opacity: 1;}
+  .asideNav li a:hover .icon1 { background: url(../images/common/ico_q_link_01_hover.svg) no-repeat center/cover;}
+  .asideNav li a:hover .icon2 { background: url(../images/common/ico_q_link_02_hover.svg) no-repeat center/cover;}
+  .asideNav li a:hover .icon3 { background: url(../images/common/ico_q_link_03_hover.svg) no-repeat center/cover;}
+  .asideNav li a:hover .icon4 { background: url(../images/common/ico_q_link_04_hover.svg) no-repeat center/cover;}
+  .asideNav li a:hover .icon5 { background: url(../images/common/ico_q_link_05_hover.svg) no-repeat center/cover;}
+}
+
 
 
 
