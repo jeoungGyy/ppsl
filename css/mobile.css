@@ -319,6 +319,7 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .m_tableBody { padding: 24px 16px; border: 1px solid #dbdbdb; border-radius: 8px;}
 .mList >li ~ li { margin-top: 8px;}
 .m_tableBody .mList >li h6 { font-size: 14px;}
+.m_tableBody .mList >li h6 img { margin: -3px 3px 0 0; vertical-align: middle;}
 .m_tableBody .roundBoxGray { position: relative; padding: 24px 16px; font-size: 14px; background-color: #f7f7f7; border-radius: 8px;}
 .m_tableBody .roundBoxGray >.flexLeft { margin-top: 8px;}
 .m_tableBody .roundBoxGray >.flexLeft .listDate { display: inline-block; font-size: 14px; line-height: 16px;}
