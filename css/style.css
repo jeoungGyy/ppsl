@@ -375,6 +375,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .guideText >li ~ li { margin-top: 4px;}
 .guideText >li .etcColorRed { color: #fc0606;}
 .guideText >li.colorBlue::before { background-color: #366cc3;}
+.guideText >li ul li { margin-top: 8px; line-height: 21px;}
 .guideText.mt { margin-top: 16px;}
 .guideText.blue >li { color: #366cc3;}
 .guideText.blue >li::before { background-color: #366cc3;}
@@ -675,7 +676,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .grayBoxR { padding: 24px 32px; background-color: #F7F7F7; border-radius: 8px;}
 
 
-
+.purpleBoxR { padding: 28px 24px; font-size: 14px; line-height: 21px; background-color: #F4F7FC; border-radius: 8px;}
 
 
 

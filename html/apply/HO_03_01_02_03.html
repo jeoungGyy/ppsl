@@ -647,10 +647,21 @@
 								<span>연계신청 할 2개 이상 기관이 선택되었습니다.</span>
 							</div>
 
-							<ul class="guideText mt16">
-								<li>최소연계 기간 <span class="colorBlue">10</span>년</li>
-								<li>최소연계 기간 <span class="colorBlue">10</span>년</li>
-							</ul>
+							<!-- 선택 전 -->
+							<div class="purpleBoxR mt16">
+								<p>재직이력을 선택하시면 최소연계기간을 확인 하실 수 있습니다. <button type="button" class="tooltipBtn layerLink" aria-controls="connectionLeastLayer"><i class="icon">도움말</i></button></p>
+							</div>
+							<!-- //선택 전 -->
+
+							<!-- 선택 후 -->
+							<div class="purpleBoxR mt16">
+								<p>재직이력을 선택하시면 최소연계기간을 확인 하실 수 있습니다. <button type="button" class="tooltipBtn layerLink" aria-controls="connectionLeastLayer"><i class="icon">도움말</i></button></p>
+								<div>
+									<h5 class="defaultH5 pcmt20 momt18">최소연계 기간 <span class="colorBlue">10</span>년</h5>
+									<p class="mt8 colorGray">재직기간별로 적용받는 최소 연계기간이 다릅니다.</p>
+								</div>
+							</div>
+							<!-- //선택 후 -->
 						</div>
 						<!-- //연금가입내역 확인 -->
 
@@ -664,6 +675,51 @@
 				</div>
 			</div>
 		</div>
+
+
+		<!-- 레이어 -->
+		<div id="connectionLeastLayer" class="layerPopup" role="dialog" aria-modal="true" aria-labelledby="connectionLeastLayerTitle" tabindex="0">
+			<div class="layerBody normal connectionLeastLayer">
+				<h5 id="connectionLeastLayerTitle" class="layerTitle">최소연계기간 안내</h5>
+				<div class="layerContent">
+					<div class="overflowY" tabindex="0">
+						<div class="grayBoxS">
+							<b class="titile fontSize16">연계대상 기간에 <span class="colorBlue">1개</span>의 직역연금 재직기간이 존재</b>
+							<ul class="guideText mt16">
+								<li>군인연금 포함 : 20년</li>
+								<li>
+									군인연금 미포함
+									<ul>
+										<li>- 퇴직일 2016년1월2일 이전 : 10년</li>
+										<li>- 퇴직일 2016년1월2일 이후 : 20년</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+
+						<div class="grayBoxS">
+							<b class="titile fontSize16">연계대상 기간에 <span class="colorBlue">2개 이상</span>의 직역연금 재직기간이 존재</b>
+							<ul class="guideText mt16">
+								<li>군인연금 포함 : 20년</li>
+								<li>
+									군인연금 미포함
+									<ul>
+										<li>- 퇴직일 2016년1월2일 이전 : 10년</li>
+										<li>- 퇴직일 2016년1월2일 이후 : 20년</li>
+										<li>- 퇴직일 상이 : 최소연계기간 상이</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="btnsGroup flexEnd mt2 pdt0">
+						<button type="button" class="button h40 blue">확인</button>
+					</div>
+				</div>
+				<button type="button" class="layerClose"><i>창 닫기</i></button>
+			</div>
+		</div>
+		<!-- //레이어 -->
 	</div>
 
 	<script src="../../include/footer.js"></script> <!-- include: 공통 푸터 -->

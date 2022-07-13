@@ -93,6 +93,7 @@
 #wrap .momt8 { margin-top: 8px;}
 #wrap .momt12 { margin-top: 12px;}
 #wrap .momt16 { margin-top: 16px;}
+#wrap .momt18 { margin-top: 18px;}
 #wrap .momt20 { margin-top: 20px;}
 #wrap .momt24 { margin-top: 24px;}
 #wrap .momt32 { margin-top: 32px;}
@@ -282,6 +283,8 @@ hr.space.style5 { margin: 8px -16px 32px;}
 
 /* 라운드 회색 박스 */
 .grayBoxR { padding: 24px 16px;}
+
+.purpleBoxR { padding: 20px 16px;}
 
 /* FAQ 아코디언 */
 .acoList { margin-top: 26px;}
