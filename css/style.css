@@ -264,6 +264,7 @@ body.noScroll { overflow: hidden;}
 
 /* hr */
 hr.space { margin: 40px 0; height: 1px; background-color: #dbdbdb;}
+hr.space2 { margin: 25px 0; height: 1px; background-color: #dbdbdb;}
 
 /* 기타등등 */
 .bLine { color: #333; border-bottom: 1px solid #333;}
