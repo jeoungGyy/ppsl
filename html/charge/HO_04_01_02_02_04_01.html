@@ -243,9 +243,9 @@
 											</tbody>
 										</table>
 									</div>
-									<div class="hTableBody pcmt24">
+									<div class="hTableBody">
 										<table>
-											<caption>대부사항 상세정보 : 대부항목, 상환액, 상환방법, 분할상환, 할부기간으로 구성</caption>
+											<caption>대부사항 공무원 연금 상세정보 : 대부항목, 상환액, 상환방법, 분할상환, 할부기간으로 구성</caption>
 											<colgroup>
 												<col style="width: 170px;">
 												<col>
@@ -253,14 +253,18 @@
 											<tbody>
 												<tr>
 													<th scope="row">대부항목 <span class="colorOrange">*</span></th>
-													<td>대부항목B</td>
+													<td>대여학자금</td>
 												</tr>
 												<tr>
 													<th scope="row">상환액 <span class="colorOrange">*</span></th>
 													<td>
 														<div class="default">
-															<input type="text" title="상환액 입력" placeholder="상환액을 입력해주세요.">
+															<input type="tel" title="상환액 입력" placeholder="상환액을 입력해주세요.">
 															<span class="other">원(원)</span>
+														</div>
+														<div class="requireText mt8">
+															<i></i>
+															<span>상환금액을 입력해 주세요.</span>
 														</div>
 													</td>
 												</tr>
@@ -277,16 +281,19 @@
 															<li>
 																<div class="radioBox">
 																	<input type="radio" id="testRadio4_2" name="testRadio4">
-																	<label for="testRadio4_2">분할</label>
+																	<label for="testRadio4_2">분할(무이자)</label>
 																</div>
 															</li>
+														</ul>
+														<ul class="guideText pcmt16">
+															<li>퇴직 다음달 부터 연금이 바 개시되지 않은 경우 일시상환만 가능</li>
 														</ul>
 													</td>
 												</tr>
 												<tr>
 													<th scope="row" id="radioLabel5">분할상환 <span class="colorOrange">*</span></th>
 													<td>
-														<ul class="groupBox flexLeft" role="radiogroup" aria-labelledby="radioLabel5">
+														<ul class="groupBox flexLeft pcmt12" role="radiogroup" aria-labelledby="radioLabel5">
 															<li>
 																<div class="radioBox">
 																	<input type="radio" id="testRadio5_1" name="testRadio5">
@@ -297,14 +304,12 @@
 																<div class="radioBox">
 																	<input type="radio" id="testRadio5_2" name="testRadio5">
 																	<label for="testRadio5_2">일부</label>
+																	<div class="hiddenDiv">(분할상환 희망금 <input type="tel" title="상환액 입력" placeholder="상환액을 입력해주세요." style="width: 200px;">원(원)</div>
 																</div>
 															</li>
-															<li>
-																<div class="radioBox">
-																	<input type="radio" id="testRadio5_3" name="testRadio5">
-																	<label for="testRadio5_3">할부</label>
-																</div>
-															</li>
+														</ul>
+														<ul class="guideText pcmt20">
+															<li>일부 상환일 경우 희망금액을 초과 하는 금액은 일시공제</li>
 														</ul>
 													</td>
 												</tr>
@@ -331,6 +336,10 @@
 																</div>
 															</li>
 														</ul>
+														<div class="requireText pcmt8">
+															<i></i>
+															<span>할부기간을 선택해 주세요.</span>
+														</div>
 													</td>
 												</tr>
 											</tbody>
@@ -368,23 +377,54 @@
 													</td>
 												</tr>
 												<tr>
-													<th scope="row" id="checkboxLabel2">형벌사항 <span class="colorOrange">*</span></th>
+													<th scope="row" id="checkboxLabel2">해당 대부사항 <span class="colorOrange">*</span></th>
 													<td>
 														<ul class="groupBox flexLeft" role="group" aria-labelledby="checkboxLabel2">
 															<li>
 																<div class="checkboxBox">
 																	<input type="checkbox" id="testCheckbox2_1" name="testCheckbox2">
-																	<label for="testCheckbox2_1">대부항목A</label>
+																	<label for="testCheckbox2_1">생활자금대여</label>
 																</div>
 															</li>
 															<li>
 																<div class="checkboxBox">
 																	<input type="checkbox" id="testCheckbox2_2" name="testCheckbox2">
-																	<label for="testCheckbox2_2">대부항목B</label>
+																	<label for="testCheckbox2_2">국고학자금 대여</label>
 																</div>
 															</li>
 														</ul>
+														<div class="requireText pcmt8">
+															<i></i>
+															<span>중복선택 가능합니다. (한 개 이상 선택)</span>
+														</div>
 													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="hTableBody">
+										<table>
+											<caption>대부사항 사립학교 교직원 연금 상세정보 : 대부항목, 상환액, 상환방법으로 구성</caption>
+											<colgroup>
+												<col style="width: 170px;">
+												<col>
+											</colgroup>
+											<tbody>
+												<tr>
+													<th scope="row" id="radioLabel2">대부항목 <span class="colorOrange">*</span></th>
+													<td>국고학자금 대여</td>
+												</tr>
+												<tr>
+													<th scope="row" id="checkboxLabel2">상환액 <span class="colorOrange">*</span></th>
+													<td>
+														<div class="mw260">
+															<input type="tel" title="상환액 입력" placeholder="상환액을 입력해주세요."> <span class="other">원(원)</span>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row" id="radioLabel2">상환방법 <span class="colorOrange">*</span></th>
+													<td>일시</td>
 												</tr>
 											</tbody>
 										</table>
@@ -395,18 +435,49 @@
 									</div>
 									<!-- //사립학교 교직원 연금 -->
 
-									<!-- 별정우체국  -->
-									<div>별정우체국</div>
-									<!-- //별정우체국  -->
+									<!-- 별정우체국 연금 -->
+									<h5 class="defaultH5 pcmt24">별정우체국 연금</h5>
+									<div class="hTableBody">
+										<table>
+											<caption>대부사항 별정우체국 연금 : 대부사항으로 구성</caption>
+											<colgroup>
+												<col style="width: 170px;">
+												<col>
+											</colgroup>
+											<tbody>
+												<tr>
+													<th scope="row" id="radioLabel2">대부사항 <span class="colorOrange">*</span></th>
+													<td>해당사항 없음</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<!-- //별정우체국 연금 -->
 
 									<!-- 군인 연금 -->
-									<div>군인 연금</div>
+									<h5 class="defaultH5 pcmt24">군인 연금</h5>
+									<div class="hTableBody">
+										<table>
+											<caption>대부사항 군인 연금 : 대부사항으로 구성</caption>
+											<colgroup>
+												<col style="width: 170px;">
+												<col>
+											</colgroup>
+											<tbody>
+												<tr>
+													<th scope="row" id="radioLabel2">대부사항 <span class="colorOrange">*</span></th>
+													<td>해당사항 없음</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
 									<!-- //군인 연금 -->
 								</div>
 								<!-- //PC -->
 
 								<!-- Mobile -->
 								<div class="onlyMobile">
+									<!-- 공무원 연금 -->
 									<h5 class="defaultH5">공무원 연금</h5>
 									<ul class="m_hTableBody momt16">
 										<li>
@@ -429,7 +500,115 @@
 											</div>
 										</li>
 									</ul>
+									<ul class="mListMulti momt8">
+										<li>
+											<div class="roundBoxGraySmall">
+												<div class="flexLeft spaceBetween">
+													<span class="fontSize14">대부항목 <span class="colorOrange">*</span></span>
+													<b class="fontSize14">대부항목B</b>
+												</div>
+											</div>
 
+											<ul class="msList momt16">
+												<li class="block">
+													<b>상환액 <span class="colorOrange">*</span></b>
+													<div class="flexBtnOne momt8">
+														<input type="tel" title="상환액 입력" placeholder="상환액을 입력해주세요."><span class="other">원</span>
+													</div>
+													<div class="momt8 textRight">
+														(원)
+													</div>
+													<div class="requireText mt8">
+														<i></i>
+														<span>상환금액을 입력해 주세요.</span>
+													</div>
+												</li>
+												<li class="block momt24">
+													<b>상환방법 <span class="colorOrange">*</span></b>
+													<div class="roundBoxGraySmall momt8">
+														<ul class="groupBox flexLeft">
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="m_testRadio4_1" name="m_testRadio4">
+																	<label for="m_testRadio4_1">일시</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="m_testRadio4_2" name="m_testRadio4">
+																	<label for="m_testRadio4_2">분할(무이자)</label>
+																</div>
+															</li>
+														</ul>
+													</div>
+													<ul class="guideText momt8">
+														<li>퇴직 다음달 부터 연금이 바 개시되지 않은 경우 일시상환만 가능</li>
+													</ul>
+												</li>
+												<li class="block momt24">
+													<b>분할상환 <span class="colorOrange">*</span></b>
+													<div class="roundBoxGraySmall momt8 radioSet">
+														<ul class="groupBox">
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="m_testRadio5_1" name="m_testRadio5">
+																	<label for="m_testRadio5_1">전액</label>
+																</div>
+															</li>
+															<li class="momt8">
+																<div class="radioBox">
+																	<input type="radio" id="m_testRadio5_2" name="m_testRadio5">
+																	<label for="m_testRadio5_2">일부 (분할상환 희망금</label>
+																</div>
+																<div class="momt8 flexBtnOne" style="padding-left: 30px;">
+																	<input type="tel" title="상환액 입력" placeholder="상환액을 입력해주세요.">
+																	<span class="other">원</span>
+																</div>
+																<div class="momt8 textRight">
+																	(원)
+																</div>
+															</li>
+														</ul>
+													</div>
+													<ul class="guideText momt8">
+														<li>일부 상환일 경우 희망금액을 초과 하는 금액은 일시공제</li>
+													</ul>
+												</li>
+												<li class="block momt24">
+													<b>할부기간 <span class="colorOrange">*</span></b>
+													<div class="roundBoxGraySmall momt8">
+														<ul class="groupBox flexLeft">
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="m_testRadio6_1" name="m_testRadio6">
+																	<label for="m_testRadio6_1">1년</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="m_testRadio6_2" name="m_testRadio6">
+																	<label for="m_testRadio6_2">2년</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="m_testRadio6_3" name="m_testRadio6">
+																	<label for="m_testRadio6_3">3년</label>
+																</div>
+															</li>
+														</ul>
+														<div class="requireText mt8">
+															<i></i>
+															<span>할부기간을 선택해 주세요.</span>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</li>
+									</ul>
+									<!-- //공무원 연금 -->
+
+									<!-- 사립학교 교직원 연금 -->
 									<h5 class="defaultH5 momt24">사립학교 교직원 연금</h5>
 									<ul class="m_hTableBody momt16">
 										<li>
@@ -458,115 +637,81 @@
 													<li>
 														<div class="checkboxBox">
 															<input type="checkbox" id="m_testCheckbox2_1" name="m_testCheckbox2">
-															<label for="m_testCheckbox2_1">대부항목A</label>
+															<label for="m_testCheckbox2_1">생활자금대여</label>
 														</div>
 													</li>
 													<li>
 														<div class="checkboxBox">
 															<input type="checkbox" id="m_testCheckbox2_2" name="m_testCheckbox2">
-															<label for="m_testCheckbox2_2">대부항목B</label>
+															<label for="m_testCheckbox2_2">국고학자금 대여</label>
 														</div>
 													</li>
 												</ul>
-											</div>
-											<div class="requireText">
-												<i></i>
-												<span>중복선택 가능합니다. (한 개 이상 선택)</span>
+												<div class="requireText momt8">
+													<i></i>
+													<span>중복선택 가능합니다. (한 개 이상 선택)</span>
+												</div>
 											</div>
 										</li>
 									</ul>
 
-									<ul class="mListMulti momt16">
+									<ul class="mListMulti momt8">
 										<li>
 											<div class="roundBoxGraySmall">
 												<div class="flexLeft spaceBetween">
-													<span class="fontSize14">대부항목</span>
-													<b class="fontSize14">대부항목B</b>
+													<span class="fontSize14">대부항목 <span class="colorOrange">*</span></span>
+													<b class="fontSize14">국고학자금 대여</b>
 												</div>
 											</div>
 
-											<ul class="msList momt16">
+											<ul class="msList">
 												<li class="block">
 													<b>상환액 <span class="colorOrange">*</span></b>
 													<div class="flexBtnOne momt8">
-														<input type="text" title="상환액 입력" placeholder="상환액을 입력해주세요."><span class="other">원</span>
+														<input type="tel" title="상환액 입력" placeholder="상환액을 입력해주세요."><span class="other">원</span>
 													</div>
-													<div class="momt8">
+													<div class="momt8 textRight">
 														(원)
+													</div>
+													<div class="requireText mt8">
+														<i></i>
+														<span>상환금액을 입력해 주세요.</span>
 													</div>
 												</li>
 												<li class="block momt24">
 													<b>상환방법 <span class="colorOrange">*</span></b>
 													<div class="roundBoxGraySmall momt8">
-														<ul class="groupBox flexLeft">
-															<li>
-																<div class="radioBox">
-																	<input type="radio" id="m_testRadio4_1" name="m_testRadio4">
-																	<label for="m_testRadio4_1">매우만족</label>
-																</div>
-															</li>
-															<li>
-																<div class="radioBox">
-																	<input type="radio" id="m_testRadio4_2" name="m_testRadio4">
-																	<label for="m_testRadio4_2">만족</label>
-																</div>
-															</li>
-														</ul>
-													</div>
-												</li>
-												<li class="block momt24">
-													<b>분할상환 <span class="colorOrange">*</span></b>
-													<div class="roundBoxGraySmall momt8">
-														<ul class="groupBox flexLeft">
-															<li>
-																<div class="radioBox">
-																	<input type="radio" id="m_testRadio5_1" name="m_testRadio5">
-																	<label for="m_testRadio5_1">전액</label>
-																</div>
-															</li>
-															<li>
-																<div class="radioBox">
-																	<input type="radio" id="m_testRadio5_2" name="m_testRadio5">
-																	<label for="m_testRadio5_2">일부</label>
-																</div>
-															</li>
-															<li>
-																<div class="radioBox">
-																	<input type="radio" id="m_testRadio5_3" name="m_testRadio5">
-																	<label for="m_testRadio5_3">할부</label>
-																</div>
-															</li>
-														</ul>
-													</div>
-												</li>
-												<li class="block momt24">
-													<b>할부기간</b>
-													<div class="roundBoxGraySmall momt8">
-														<ul class="groupBox flexLeft">
-															<li>
-																<div class="radioBox">
-																	<input type="radio" id="m_testRadio6_1" name="m_testRadio6">
-																	<label for="m_testRadio6_1">1년</label>
-																</div>
-															</li>
-															<li>
-																<div class="radioBox">
-																	<input type="radio" id="m_testRadio6_2" name="m_testRadio6">
-																	<label for="m_testRadio6_2">2년</label>
-																</div>
-															</li>
-															<li>
-																<div class="radioBox">
-																	<input type="radio" id="m_testRadio6_3" name="m_testRadio6">
-																	<label for="m_testRadio6_3">3년</label>
-																</div>
-															</li>
-														</ul>
+														일시
 													</div>
 												</li>
 											</ul>
 										</li>
 									</ul>
+									<!-- 사립학교 교직원 연금 -->
+
+									<!-- 별정우체국 연금 -->
+									<h5 class="defaultH5 momt24">별정우체국 연금</h5>
+									<ul class="m_hTableBody momt16">
+										<li>
+											<label>대부사항 <span class="colorOrange">*</span></label>
+											<div class="roundBoxGray">
+												해당사항 없음
+											</div>
+										</li>
+									</ul>
+									<!-- //별정우체국 연금 -->
+
+									<!-- 군인 연금 -->
+									<h5 class="defaultH5 momt24">군인 연금</h5>
+									<ul class="m_hTableBody momt16">
+										<li>
+											<label>대부사항 <span class="colorOrange">*</span></label>
+											<div class="roundBoxGray">
+												해당사항 없음
+											</div>
+										</li>
+									</ul>
+									<!-- //군인 연금 -->
 								</div>
 								<!-- //Mobile -->
 

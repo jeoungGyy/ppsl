@@ -239,6 +239,7 @@ body.noScroll { overflow: hidden;}
 
 /* Margin */
 #wrap .pcmt8 { margin-top: 8px;}
+#wrap .pcmt12 { margin-top: 12px;}
 #wrap .pcmt16 { margin-top: 16px;}
 #wrap .pcmt20 { margin-top: 20px;}
 #wrap .pcmt24 { margin-top: 24px;}
@@ -772,7 +773,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 
 /* tableBody */
 .tableBody { overflow: hidden; margin-top: 8px; border-top: 2px solid #333;}
-.tableBody table { width: calc(100% + 2px); margin-left: -1px;}
+.tableBody table { width: calc(100% + 2px); margin-left: -1px; border-bottom: 1px solid #dbdbdb;}
 .tableBody table th { padding: 12px 0; border-left: 1px solid #dbdbdb; background-color: #f7f7f7;}
 .tableBody table th.bdt { border-top: 1px solid #dbdbdb;}
 .tableBody table th .sortBtn { font-weight: 700;}
@@ -857,7 +858,8 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .hTableBody table td .dateSelect .other + select { margin-left: 16px;}
 .hTableBody table td .combine { display: flex; align-items: center;}
 .hTableBody table td .combine select { width: 100px; margin-left: 8px;}
-
+.hTableBody table td .hiddenDiv { margin-left: 5px;}
+.hTableBody table td .hiddenDiv input { margin: 0 5px;}
 
 .hTableBody table td .yearM select { width: 130px;}
 .hTableBody table td .yearM .other { margin-left: 8px;}
@@ -889,7 +891,8 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .hTableBody table td .mw200 select { width: 200px;}
 .hTableBody table td .mw260 input,
 .hTableBody table td .mw260 select { width: 260px;}
-.hTableBody table td .mw200 .other { margin-left: 4px;}
+.hTableBody table td .mw200 .other,
+.hTableBody table td .mw260 .other { margin-left: 4px;}
 .hTableBody table td .mw220 { max-width: 220px;}
 .hTableBody table td .mw404 { max-width: 404px;}
 .hTableBody table td .mw528 { max-width: 528px;}
