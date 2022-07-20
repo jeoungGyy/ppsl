@@ -196,11 +196,34 @@
 					<hr class="space">
 
 					<h4 class="defaultH4">연계반납금 예측결과</h4>
-					<!-- PC -->
 					<div class="onlyPC">
+					<!-- PC -->
+						<!-- 일시납 -->
 						<div class="hTableBody">
 							<table>
-								<caption>퇴직일시금 수령 사항 입력 : 퇴직일시금 수령액, 퇴직일시금 수령일, 예상연계 신청일, 반납금 납부 방법으로 구성</caption>
+								<caption>연계반납금 예측결과 일시납 : 최초일시 반납금, 이자율으로 구성</caption>
+								<colgroup>
+									<col style="width: 170px;">
+									<col>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">최초일시 반납금</th>
+										<td class="textRight">10,000,000 원</td>
+									</tr>
+									<tr>
+										<th scope="row">이자율</th>
+										<td class="textRight">1,000 원</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- //일시납 -->
+
+						<!-- 분할납부 -->
+						<div class="hTableBody">
+							<table>
+								<caption>연계반납금 예측결과 분할납부 : 최초일시 반납금, 분할회수, 반납금총액, 분할이자, 납부기간, 최초납부액, 매월납부액으로 구성</caption>
 								<colgroup>
 									<col style="width: 170px;">
 									<col style="width: 30%;">
@@ -233,11 +256,33 @@
 								</tbody>
 							</table>
 						</div>
+						<!-- //분할납부 -->
 					</div>
 					<!-- //PC -->
 
 					<!-- Mobile -->
 					<div class="onlyMobile">
+						<!-- 일시납 -->
+						<ul class="mListMulti momt24">
+							<li>
+								<div>
+									<span class="single">최초일시 반납금</span>
+									<div class="momt8">
+										<b>10,000,000</b> <span>원</span>
+									</div>
+								</div>
+								
+								<ul class="msList">
+									<li class="lineBreak">
+										<span>이자율</span>
+										<b>10,000,000 원</b>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<!-- //일시납 -->
+
+						<!-- 분할납부 -->
 						<ul class="mListMulti momt24">
 							<li>
 								<div>
@@ -275,6 +320,7 @@
 								</ul>
 							</li>
 						</ul>
+						<!-- //분할납부 -->
 					</div>
 					<!-- //Mobile -->
 

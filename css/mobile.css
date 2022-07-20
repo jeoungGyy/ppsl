@@ -284,6 +284,7 @@ hr.space.style5 { margin: 8px -16px 32px;}
 
 /* 라운드 회색 박스 */
 .grayBoxR { padding: 24px 16px;}
+.grayBoxS .whiteBox table { width: 100%;}
 
 .purpleBoxR { padding: 20px 16px;}
 
