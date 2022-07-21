@@ -89,6 +89,16 @@ input[type=email]:hover,
 input[type=password]:hover { border-color: #333;}
 input[readonly],
 input[disabled] { color: #959595; background-color:#f7f7f7;}
+input[type=file]:required:not(:placeholder-shown),
+input[type=text]:required:not(:placeholder-shown),
+input[type=tel]:required:not(:placeholder-shown),
+input[type=email]:required:not(:placeholder-shown),
+input[type=password]:required:not(:placeholder-shown) { border-color: #ee0700;}
+input[type=file]:required:valid,
+input[type=text]:required:valid,
+input[type=tel]:required:valid,
+input[type=email]:required:valid,
+input[type=password]:required:valid { border-color: #333;}
 input.error { border-color: #ee0700;}
 input.success { border-color: #366cc3;}
 button { border:0 none; padding:0; margin:0; font-family: "NanumBarunGothic"; font-size:100%; color:#111; vertical-align:middle; background:transparent; cursor:pointer;}
