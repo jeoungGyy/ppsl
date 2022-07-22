@@ -592,6 +592,10 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .mainBody .linksWrap .deco3 { right: 50%; bottom: -271px; z-index: 1; width: 613px; height: 598px; margin-right: -265px; background: url(../images/home/home_img_m@2x.png) no-repeat center/cover;}
 .mainBody .contentWrap { width: 100%; padding: 32px 16px 0;}
 .mainBody .cwSeo a::after { background: url(../images/home/banner_img_01@2x.png) no-repeat center/cover;}
+.mainBody .linksWrap .nDeco1 { background: url(../images/home/KakaoTalk_20220722_092255496_02.png) no-repeat center/cover;}
+.mainBody .linksWrap .nDeco2 { background: url(../images/home/KakaoTalk_20220722_093540372.png) no-repeat center/cover;}
+
+
 .mainFooter { margin-top: 24px; padding: 0 16px; border: none; border-radius: 0;}
 .mainFooter ul { flex-wrap: wrap; margin: -4px;}
 .mainFooter ul li { width: calc(33.33% - 8px); margin: 4px;}
