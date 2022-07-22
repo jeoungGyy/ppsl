@@ -89,11 +89,11 @@ input[type=email]:hover,
 input[type=password]:hover { border-color: #333;}
 input[readonly],
 input[disabled] { color: #959595; background-color:#f7f7f7;}
-input[type=file]:required:not(:placeholder-shown),
+/* input[type=file]:required:not(:placeholder-shown),
 input[type=text]:required:not(:placeholder-shown),
 input[type=tel]:required:not(:placeholder-shown),
 input[type=email]:required:not(:placeholder-shown),
-input[type=password]:required:not(:placeholder-shown) { border-color: #ee0700;}
+input[type=password]:required:not(:placeholder-shown) { border-color: #ee0700;} */
 input[type=file]:required:valid,
 input[type=text]:required:valid,
 input[type=tel]:required:valid,
