@@ -1198,7 +1198,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .wrap-slide-box .swiper-pagination-number .current { font-size: 14px;}
 .wrap-slide-box .swiper-pagination-number .total { font-size: 14px;}
 .wrap-slide-box a { display: block;}
-.wrap-slide-box a img { width: 100%; height: auto;}
+.wrap-slide-box a img { width: 100% !important; height: 100% !important;}
 
 .mainBody .contentWrap .cwPop { padding-top: 4px;}
 
