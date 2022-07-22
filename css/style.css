@@ -1203,7 +1203,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 
 .mainBody .contentWrap .cwPop { padding-top: 4px;}
 
-.mainBody .cwCov { margin-top: 28px;}
+.mainBody .cwCov { margin-top: 25px;}
 .mainBody .contentWrap .cwCov .cwBody { display: flex; flex-wrap: wrap; margin: 6px -4px -4px;}
 .mainBody .cwCov .cwBody a { display: flex; align-items: center; position: relative; width: calc(50% - 8px); height: 56px; margin: 4px; padding-left: 24px; font-size: 14px; background-color: #f7f7f7; border-radius: 8px;}
 .mainBody .cwCov .cwBody a span { display: flex; align-items: center; justify-content: center; position: absolute; right: 24px; top: 50%; width: 16px; height: 16px; margin-top: -8px; background-color: #a5a5a5; border-radius: 50%;}
