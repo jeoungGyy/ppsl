@@ -11,7 +11,8 @@ $(document).ready(function () {
 			common.menu_active();
 			common.calendar();
 			common.snsBtnToggle();
-			common.family_site();
+			common.familySite();
+			common.inputStyle();
 			common.initial();
 		},
     /* 라디오, 체크박스 */
@@ -306,7 +307,7 @@ $(document).ready(function () {
       });
 		},
     /* 패밀리 사이트 */
-    family_site: function () {
+    familySite: function () {
 			var $linkUrl = $(".linkUrl");
 			var $fSNSBtn = $(".fSNSBtn");
 
@@ -318,6 +319,14 @@ $(document).ready(function () {
 					$fSNSBtn.attr({"href": "javascript:void(0);", "target": ""});
 				}
 			});
+		},
+    /* input file 스타일 */
+    inputStyle: function () {
+      var fileTarget = $('.inputFile'); 
+      fileTarget.on('change', function(){ // 값이 변경되면
+        var _curent = $(this).val();
+        $(this).parent().find(".inputText").val(_curent);
+      }); 
 		},
     /* 초기화 */
 		initial: function () {

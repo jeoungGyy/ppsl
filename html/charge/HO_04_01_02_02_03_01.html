@@ -629,17 +629,21 @@
 								<div class="onlyPC">
 									<div class="hTableBody">
 										<table>
-											<caption>부양가족 연금 지급대상자 혼인신고증명서 등록 : 혼인신고증명서로 구성</caption>
+											<caption>부양가족 연금 지급대상자 증명서 등록 : 혼인신고증명서(상세), 가족관계증명서로 구성</caption>
 											<colgroup>
 												<col style="width: 160px;">
 												<col>
 											</colgroup>
 											<tbody>
 												<tr>
-													<th>혼인신고증명서 <span class="colorOrange">*</span></th>
+													<th>혼인신고증명서<br>(상세) <span class="colorOrange">*</span></th>
 													<td>
-														<input type="text" title="혼인관계증명서 등록" placeholder="등록해 주세요." style="width: 62%;">
-														<button type="button" class="button h40 lineBlack">찾기</button>
+														<div class="fileStyle">
+															<input type="text" class="inputText" title="혼인관계증명서 등록" placeholder="등록해 주세요." readonly style="width: 62%;">
+															<input type="file" id="textFile" class="inputFile">
+															<label for="textFile" class="labelBtn" role="button" tabindex="0">찾기</label>
+														</div>
+														
 														<div class="requireText">
 															<i></i>
 															<span>지금 등록 준비 되지 않으셨다면,  관할 지사로 우편이나 팩스로 전송하시기 바랍니다.</span>
@@ -647,6 +651,29 @@
 
 
 														<input type="text" title="혼인관계증명서 등록" placeholder="등록해 주세요." value="첨부파일명" readonly style="width: 62%;">
+														<button type="button" class="button h40 lineBlack">삭제</button>
+														<div class="requireText success">
+															<i></i>
+															<span>등록되었습니다.</span>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th>가족관계증명서 <span class="colorOrange">*</span></th>
+													<td>
+														<div class="fileStyle">
+															<input type="text" class="inputText" title="가족관계증명서 등록" placeholder="등록해 주세요." readonly style="width: 62%;">
+															<input type="file" id="textFile2" class="inputFile">
+															<label for="textFile2" class="labelBtn" role="button" tabindex="0">찾기</label>
+														</div>
+														
+														<div class="requireText">
+															<i></i>
+															<span>지금 등록 준비 되지 않으셨다면,  관할 지사로 우편이나 팩스로 전송하시기 바랍니다.</span>
+														</div>
+
+
+														<input type="text" title="가족관계증명서 등록" placeholder="등록해 주세요." value="첨부파일명" readonly style="width: 62%;">
 														<button type="button" class="button h40 lineBlack">삭제</button>
 														<div class="requireText success">
 															<i></i>
@@ -666,13 +693,34 @@
 										<li>
 											<ul class="msList mt0">
 												<li class="block">
-													<b>혼인신고증명서 <span class="colorOrange">*</span></b>
-													<div class="flexBtnOne mt">
-														<input type="text" title="혼인관계증명서 등록" placeholder="등록해 주세요.">
-														<button type="button" class="button h40 lineBlack">찾기</button>
+													<b>혼인신고증명서(상세) <span class="colorOrange">*</span></b>
+													<div class="flexBtnOne mt fileStyle">
+														<input type="text" class="inputText" title="혼인관계증명서 등록" placeholder="등록해 주세요." readonly>
+														<input type="file" id="m_textFile" class="inputFile">
+														<label for="m_textFile" class="labelBtn" role="button" tabindex="0">찾기</label>
 													</div>
 													<div class="flexBtnOne mt">
 														<input type="text" title="혼인관계증명서 등록" placeholder="등록해 주세요." value="첨부파일명" readonly>
+														<button type="button" class="button h40 lineBlack">삭제</button>
+													</div>
+													<div class="requireText">
+														<i></i>
+														<span>지금 등록 준비 되지 않으셨다면,  관할 지사로 우편이나 팩스로 전송하시기 바랍니다.</span>
+													</div>
+													<div class="requireText success">
+														<i></i>
+														<span>등록되었습니다.</span>
+													</div>
+												</li>
+												<li class="block">
+													<b>가족관계증명서 <span class="colorOrange">*</span></b>
+													<div class="flexBtnOne mt fileStyle">
+														<input type="text" class="inputText" title="가족관계증명서 등록" placeholder="등록해 주세요." readonly>
+														<input type="file" id="m_textFile2" class="inputFile">
+														<label for="m_textFile2" class="labelBtn" role="button" tabindex="0">찾기</label>
+													</div>
+													<div class="flexBtnOne mt">
+														<input type="text" title="가족관계증명서 등록" placeholder="등록해 주세요." value="첨부파일명" readonly>
 														<button type="button" class="button h40 lineBlack">삭제</button>
 													</div>
 													<div class="requireText">
