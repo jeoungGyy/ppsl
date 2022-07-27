@@ -463,7 +463,6 @@ $(document).ready(function () {
 
       $depth1First.show()
       $depth1Link.filter('.active').each(function(i) {
-        console.log($(this).attr("data-menu"))
         if($(this).attr("data-menu") === 'depth_1' ||  $(this).attr("data-menu") === 'depth_8') { 
           return false;
         }
