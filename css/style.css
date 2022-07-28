@@ -1052,12 +1052,15 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 
 
 /* 설문조사 */
-.layerSurveyBody { overflow: hidden; position:relative; left:50%; top:50%; width: 384px; text-align: center; vertical-align: middle; background: #F4F7FC; border-radius: 8px; transform: translate(-50%, -50%);}
-.layerSurveyBody .layerContent { padding: 64px 16px 183px; background: url(../images/common/img_survey.svg) no-repeat left bottom/380px 160px;}
-.layerSurveyBody .tt { font-size: 19px; color: #000; line-height: 29px;}
-.layerSurveyBody .title { font-size: 28px; font-weight: 700; line-height: 42px;}
-.layerSurveyBody .tb { margin-top: 16px; padding: 0 49px; line-height: 24px;}
-.layerSurveyBody .button { width: 160px; margin-top: 24px;}
+.layerSurveyBody {}
+.layerSurveyBody { overflow: hidden; position:relative; left:50%; top:50%; width: 384px; text-align: center; vertical-align: middle; border-radius: 8px; transform: translate(-50%, -50%);}
+.layerSurveyBody .layerContent .bgCon { padding: 64px 16px 183px; background: #F4F7FC url(../images/common/img_survey.svg) no-repeat left bottom/380px 160px;}
+.layerSurveyBody .layerContent .partGroup { padding: 20px 18px 35px 14px; background-color: #fff;}
+.layerSurveyBody .layerContent .partGroup label { font-size: 16px;}
+.layerSurveyBody .bgCon .tt { font-size: 19px; color: #000; line-height: 29px;}
+.layerSurveyBody .bgCon .title { font-size: 28px; font-weight: 700; line-height: 42px;}
+.layerSurveyBody .bgCon .tb { margin-top: 16px; padding: 0 49px; line-height: 24px;}
+.layerSurveyBody .bgCon .button { width: 160px; margin-top: 24px;}
 .layerSurveyBody .layerClose { right: 24px;}
 
 .surveyLayer .surveyGuide { display: flex; align-items: center; padding: 32px 55px; background-color: rgba(54, 108, 195, 0.05); border-radius: 8px;}
