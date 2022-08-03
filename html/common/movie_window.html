@@ -34,6 +34,11 @@
 		.scriptBtn i { display: block; width: 16px; height: 16px; text-indent: -99999px; background: url(../../images/common/movie_arrow.svg) no-repeat center;}
 		.scriptBtn.active i { transform: rotate(180deg);}
 
+		@media (hover: hover) {
+			.scriptArea::-webkit-scrollbar { width: 4px;}
+			.scriptArea::-webkit-scrollbar-thumb { border-radius: 4px; background-color: #959595;}
+		}
+
 		@media screen and (max-width:767px){
 			body { padding: 0;}
 			.movieBody { flex-direction: column; height: calc(var(--vh, 1vh) * 100); min-height: calc(var(--vh, 1vh) * 100);}
