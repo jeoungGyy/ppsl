@@ -26,17 +26,18 @@
 		button::-moz-focus-inner { margin: -1px; padding: 0;}
 		.movieBody { display: flex; position: relative; height: calc(100vh - 80px);}
 		.movieArea { display: flex; align-items: center; overflow: hidden; position: relative; flex: 1; width: 100%; background-color: #000;}
-		.scriptArea { overflow-y: scroll; width: 260px; padding: 40px 24px 40px 32px;  background-color: #f7f7f7;}
-		.scriptArea p { font-size: 16px; color: #333; line-height: 24px;}
-		.scriptArea p ~ p { margin-top: 25px;}
+		.scriptArea { overflow: hidden; width: 260px; padding: 40px 8px 40px 32px; background-color: #f7f7f7;}
 		.scriptArea.active { display: none;}
+		.overflowY { overflow-y: scroll; height: 100%; padding-right: 12px;}
+		.overflowY p { font-size: 16px; color: #333; line-height: 24px;}
+		.overflowY p ~ p { margin-top: 25px;}
 		.scriptBtn { display: flex; align-items: center; justify-content: center; position: absolute; right: 0; top: 50%; z-index: 99999; width: 20px; height: 48px; margin-top: -24px; background-color: #f7f7f7; border-radius: 4px 0px 0px 4px;}
 		.scriptBtn i { display: block; width: 16px; height: 16px; text-indent: -99999px; background: url(../../images/common/movie_arrow.svg) no-repeat center;}
 		.scriptBtn.active i { transform: rotate(180deg);}
 
 		@media (hover: hover) {
-			.scriptArea::-webkit-scrollbar { width: 4px;}
-			.scriptArea::-webkit-scrollbar-thumb { border-radius: 4px; background-color: #959595;}
+			.overflowY::-webkit-scrollbar { width: 4px;}
+			.overflowY::-webkit-scrollbar-thumb { border-radius: 4px; background-color: #959595;}
 		}
 
 		@media screen and (max-width:767px){
@@ -59,12 +60,14 @@
 
 		<button type="button" class="scriptBtn"><i>대본/자막 창 닫기</i></button>
 	</div>
-	<div class="scriptArea" tabindex="0">
-		<p>동영상 설명 영역입니다. </p>
-		<p>대통령은 조국의 평화적 통일을 위한 성실한 의무를 진다. 국가원로자문회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다. 이 헌법시행 당시에 이 헌법에 의하여 새로 설치될 기관의 권한에 속하는 직무를 행하고 있는 기관은 이 헌법에 의하여 새로운 기관이 설치될 때까지 존속하며 그 직무를 행한다.</p>
-		<p>공무원인 근로자는 법률이 정하는 자에 한하여 단결권·단체교섭권 및 단체행동권을 가진다. 이 헌법중 공무원의 임기 또는 중임제한에 관한 규정은 이 헌법에 의하여 그 공무원이 최초로 선출 또는 임명된 때로부터 적용한다.</p>
-		<p>피고인의 자백이 고문·폭행·협박·구속의 부당한 장기화 또는 기망 기타의 방법에 의하여 자의로 진술된 것이 아니라고 인정될 때 또는 정식재판에 있어서 피고인의 자백이 그에게 불리한 유일한 증거일 때에는 이를 유죄의 증거로 삼거나 이를 이유로 처벌할 수 없다.</p>
-		<p>국회는 선전포고, 국군의 외국에의 파견 또는 외국군대의 대한민국 영역안에서의 주류에 대한 동의권을 가진다. 탄핵결정은 공직으로부터 파면함에 그친다. 그러나, 이에 의하여 민사상이나 형사상의 책임이 면제되지는 아니한다.</p>
+	<div class="scriptArea">
+		<div class="overflowY" tabindex="0">
+			<p>동영상 설명 영역입니다. </p>
+			<p>대통령은 조국의 평화적 통일을 위한 성실한 의무를 진다. 국가원로자문회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다. 이 헌법시행 당시에 이 헌법에 의하여 새로 설치될 기관의 권한에 속하는 직무를 행하고 있는 기관은 이 헌법에 의하여 새로운 기관이 설치될 때까지 존속하며 그 직무를 행한다.</p>
+			<p>공무원인 근로자는 법률이 정하는 자에 한하여 단결권·단체교섭권 및 단체행동권을 가진다. 이 헌법중 공무원의 임기 또는 중임제한에 관한 규정은 이 헌법에 의하여 그 공무원이 최초로 선출 또는 임명된 때로부터 적용한다.</p>
+			<p>피고인의 자백이 고문·폭행·협박·구속의 부당한 장기화 또는 기망 기타의 방법에 의하여 자의로 진술된 것이 아니라고 인정될 때 또는 정식재판에 있어서 피고인의 자백이 그에게 불리한 유일한 증거일 때에는 이를 유죄의 증거로 삼거나 이를 이유로 처벌할 수 없다.</p>
+			<p>국회는 선전포고, 국군의 외국에의 파견 또는 외국군대의 대한민국 영역안에서의 주류에 대한 동의권을 가진다. 탄핵결정은 공직으로부터 파면함에 그친다. 그러나, 이에 의하여 민사상이나 형사상의 책임이 면제되지는 아니한다.</p>
+		</div>
 	</div>
 </div>
 
