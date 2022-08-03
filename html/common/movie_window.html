@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title class="mainTitle">동영상 제목 - 공적연금연계제도</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<meta name="theme-color" content="#000000">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="icon" type="image/x-icon" sizes="16x16" href="../../images/common/url_icon.ico">
+	<meta name="description" content="공적연금연계제도 홈페이지">
+	<meta name="keywords" content="공적연금연계제도">
+	<meta name="copyright" content="(우)110-793 서울 종로구 을곡로 75(계동 140-2) 보건복지콜센터 120, 영상전화 : 070 - 7947 - 3745, 청소년전화 1388 ">
+	<meta name="author" content="공적연금연계제도">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="공적연금연계제도">
+	<meta property="og:description" content="공적연금연계제도 홈페이지">
+	<meta property="og:image" content="http://www.ppsl.or.kr/image/ppsl/por/man/ppslmetaog.jpg">
+	<meta property="og:url" content="http://www.ppsl.or.kr">
+	<script src="../../js/jquery-1.12.4.min.js"></script>
+	<style>
+		* { margin: 0; padding: 0; box-sizing:border-box; text-size-adjust : none; -webkit-text-size-adjust: none;}
+		body, html {	width:100%; height:100%;}
+		body { overflow: hidden; padding: 40px;}
+		button { border:0 none; padding:0; margin:0; font-family: "NanumBarunGothic"; font-size:100%; color:#111; vertical-align:middle; background:transparent; cursor:pointer;}
+		button::-moz-focus-inner { margin: -1px; padding: 0;}
+		.movieBody { display: flex; position: relative; height: calc(100vh - 80px);}
+		.movieArea { display: flex; align-items: center; overflow: hidden; position: relative; flex: 1; width: 100%; background-color: #000;}
+		.scriptArea { overflow-y: scroll; width: 260px; padding: 40px 24px 40px 32px;  background-color: #f7f7f7;}
+		.scriptArea p { font-size: 16px; color: #333; line-height: 24px;}
+		.scriptArea p ~ p { margin-top: 25px;}
+		.scriptArea.active { display: none;}
+		.scriptBtn { display: flex; align-items: center; justify-content: center; position: absolute; right: 0; top: 50%; z-index: 99999; width: 20px; height: 48px; margin-top: -24px; background-color: #f7f7f7; border-radius: 4px 0px 0px 4px;}
+		.scriptBtn i { display: block; width: 16px; height: 16px; text-indent: -99999px; background: url(../../images/common/movie_arrow.svg) no-repeat center;}
+		.scriptBtn.active i { transform: rotate(180deg);}
+
+		@media screen and (max-width:767px){
+			body { padding: 0;}
+			.movieBody { flex-direction: column; height: calc(var(--vh, 1vh) * 100); min-height: calc(var(--vh, 1vh) * 100);}
+			.movieArea { flex: inherit;}
+			.scriptBtn { right: 50%; top: inherit; bottom: 0; width: 48px; height: 24px; margin: 0 -24px 0 0; border-radius: 4px 4px 0 0;}
+			.scriptBtn i { transform: rotate(-90deg);}
+			.scriptBtn.active i { transform: rotate(90deg);}
+			.scriptArea { flex: 1; width: 100%; padding: 32px 25px;}
+		}
+	</style>
+</head>
+
+<body>
+<div class="movieBody">
+	<div class="movieArea">
+		<!-- 동영상 플레이어 영역 가로 100%, 세로 auto -->
+		<video src="test.mp4" width="100%" height="auto" controls></video>
+
+		<button type="button" class="scriptBtn"><i>대본/자막 창 닫기</i></button>
+	</div>
+	<div class="scriptArea" tabindex="0">
+		<p>동영상 설명 영역입니다. </p>
+		<p>대통령은 조국의 평화적 통일을 위한 성실한 의무를 진다. 국가원로자문회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다. 이 헌법시행 당시에 이 헌법에 의하여 새로 설치될 기관의 권한에 속하는 직무를 행하고 있는 기관은 이 헌법에 의하여 새로운 기관이 설치될 때까지 존속하며 그 직무를 행한다.</p>
+		<p>공무원인 근로자는 법률이 정하는 자에 한하여 단결권·단체교섭권 및 단체행동권을 가진다. 이 헌법중 공무원의 임기 또는 중임제한에 관한 규정은 이 헌법에 의하여 그 공무원이 최초로 선출 또는 임명된 때로부터 적용한다.</p>
+		<p>피고인의 자백이 고문·폭행·협박·구속의 부당한 장기화 또는 기망 기타의 방법에 의하여 자의로 진술된 것이 아니라고 인정될 때 또는 정식재판에 있어서 피고인의 자백이 그에게 불리한 유일한 증거일 때에는 이를 유죄의 증거로 삼거나 이를 이유로 처벌할 수 없다.</p>
+		<p>국회는 선전포고, 국군의 외국에의 파견 또는 외국군대의 대한민국 영역안에서의 주류에 대한 동의권을 가진다. 탄핵결정은 공직으로부터 파면함에 그친다. 그러나, 이에 의하여 민사상이나 형사상의 책임이 면제되지는 아니한다.</p>
+	</div>
+</div>
+
+<script>
+function setScreenSize() {
+	let vh = window.innerHeight * 0.01;
+	document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+
+setScreenSize();
+window.addEventListener('resize', () => setScreenSize());
+
+$(document).ready(function () {
+	var $scriptBtn = $('.scriptBtn');
+	var $scriptArea = $('.scriptArea');
+
+	$scriptBtn.on('click', function() {
+		$(this).toggleClass('active');
+		if($(this).hasClass('active')) {
+			$(this).find('i').text('대본/자막 창 열기');
+		} else {
+			$(this).find('i').text('대본/자막 창 닫기');
+		}
+		$scriptArea.toggleClass('active');
+	});
+});
+</script>
+</body>
+</html>
+
+
