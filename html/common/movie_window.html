@@ -19,9 +19,17 @@
 	<meta property="og:url" content="http://www.ppsl.or.kr">
 	<script src="../../js/jquery-1.12.4.min.js"></script>
 	<style>
+		@font-face {
+			font-family: 'NanumBarunGothic';
+			font-weight: 400;
+			src: local("나눔바른고딕"),
+			url(../fonts/NanumBarunGothic/NanumBarunGothicSubset.woff2) format('woff2'),
+			url(../fonts/NanumBarunGothic/NanumBarunGothicSubset.woff) format('woff'),
+			url(../fonts/NanumBarunGothic/NanumBarunGothicSubset.ttf) format('truetype');
+		}
 		* { margin: 0; padding: 0; box-sizing:border-box; text-size-adjust : none; -webkit-text-size-adjust: none;}
 		body, html {	width:100%; height:100%;}
-		body { overflow: hidden; padding: 40px;}
+		body { overflow: hidden; font: 16px/1 "NanumBarunGothic", "Apple SD Gothic Neo", "Droid sans", "Microsoft NeoGothic ", sans-serif; padding: 40px;}
 		button { border:0 none; padding:0; margin:0; font-family: "NanumBarunGothic"; font-size:100%; color:#111; vertical-align:middle; background:transparent; cursor:pointer;}
 		button::-moz-focus-inner { margin: -1px; padding: 0;}
 		.movieBody { display: flex; position: relative; height: calc(100vh - 80px);}
@@ -29,7 +37,7 @@
 		.scriptArea { overflow: hidden; width: 260px; padding: 40px 8px 40px 32px; background-color: #f7f7f7;}
 		.scriptArea.active { display: none;}
 		.overflowY { overflow-y: scroll; height: 100%; padding-right: 12px;}
-		.overflowY p { font-size: 16px; color: #333; line-height: 24px;}
+		.overflowY p { color: #333; line-height: 24px;}
 		.overflowY p ~ p { margin-top: 25px;}
 		.scriptBtn { display: flex; align-items: center; justify-content: center; position: absolute; right: 0; top: 50%; z-index: 99999; width: 20px; height: 48px; margin-top: -24px; background-color: #f7f7f7; border-radius: 4px 0px 0px 4px;}
 		.scriptBtn i { display: block; width: 16px; height: 16px; text-indent: -99999px; background: url(../../images/common/movie_arrow.svg) no-repeat center;}
