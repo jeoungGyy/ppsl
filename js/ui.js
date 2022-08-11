@@ -322,11 +322,24 @@ $(document).ready(function () {
 		},
     /* input file 스타일 */
     inputStyle: function () {
-      var fileTarget = $('.inputFile'); 
-      fileTarget.on('change', function(){ // 값이 변경되면
-        var _curent = $(this).val();
-        $(this).parent().find(".inputText").val(_curent);
-      }); 
+      var $fileStyle = $('.fileStyle'); 
+
+      $.each($fileStyle, function(idx) {
+        var $this = $fileStyle.eq(idx);
+        var $btnUpload = $this.find('[type="file"]');
+        var $label = $this.find('.labelBtn');
+        
+        $btnUpload.on('change', function() {
+          var $target = $(this);
+          var fileName = $target.val();
+          var $fileText = $target.siblings('.inputText');
+          $fileText.val(fileName);
+        });
+        
+        $btnUpload.on('focusin focusout', function(e) {
+          e.type == 'focusin' ? $label.addClass('etcFocus') : $label.removeClass('etcFocus');
+        });
+      });
 		},
     /* 초기화 */
 		initial: function () {
