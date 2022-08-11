@@ -1174,9 +1174,18 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
   top: 0;
   width: 100%;
   height: 100%;
-  
+  opacity: 1;
 }
-.mainBody .linksWrap .nDeco1 { animation:ani1 15s linear infinite; background: url(../images/home/KakaoTalk_20220722_092255496_01.png) no-repeat center/cover; opacity: 1;}
+.mainBody .linksWrap .newDeco.fade { opacity: 0; animation: fade 0.6s linear; }
+.mainBody .linksWrap .nDeco1 { background: url(../images/home/KakaoTalk_20220722_092255496_01.png) no-repeat center/cover;}
+.mainBody .linksWrap .nDeco2 { background: url(../images/home/KakaoTalk_20220722_092255496.png) no-repeat center/cover;}
+
+@keyframes fade {
+	0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+/* .mainBody .linksWrap .nDeco1 { animation:ani1 15s linear infinite; background: url(../images/home/KakaoTalk_20220722_092255496_01.png) no-repeat center/cover; opacity: 1;}
 .mainBody .linksWrap .nDeco2 { animation:ani2 15s linear infinite; background: url(../images/home/KakaoTalk_20220722_092255496.png) no-repeat center/cover; opacity: 0;}
 @keyframes ani1 {
 	0% {opacity: 1;}
@@ -1191,7 +1200,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 	50% {opacity: 1;}
   92% {opacity: 1;}
   100% {opacity: 0;}
-}
+} */
 
 .mainBody .contentWrap { width: 31%;}
 .mainBody .contentWrap h3 { font-size: 16px;}
