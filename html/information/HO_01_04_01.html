@@ -30,14 +30,14 @@
 					<div class="searchBody pl48 m_toggleArea">
 						<!-- onlyMobile -->
 						<div class="onlyMobile">
-							<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+							<button class="flexLeft spaceBetween toggleGroup" aria-expanded="false" aria-controls="list_target1">
 								<b class="defaultH5">상담사례</b>
-								<span class="toggleBtn"><i>상담사례 검색조건 토글</i></span>
+								<span class="toggleBtn"><i></i></span>
 							</button>
 						</div>
 						<!-- //onlyMobile -->
 			
-						<ul class="controlBox target">
+						<ul id="list_target1" class="controlBox target">
 							<li class="wp30">
 								<select title="구분 선택" class="ml">
 									<option disabled selected>구분전체</option>
@@ -47,7 +47,7 @@
 								</select>
 							</li>
 							<li class="wp70 pl4">
-								<span class="searchReset"><input type="text" title="검색어 입력" placeholder="검색어를 입력하세요." required><button type="button" class="searchResetBtn"><i>검색어 지우기</i></button></span>
+								<span class="searchReset"><input type="text" title="검색어 입력" placeholder="검색어를 입력하세요." required><button type="button" class="searchResetBtn" title="검색어 지우기"><i></i></button></span>
 								<button type="button" class="button h40 black"><i class="searchIcon"></i><span>검색</span></button>
 							</li>
 						</ul>
@@ -102,37 +102,37 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td class="mobileVisible"><i class="fix">공지</i></td>
+										<td class="mobileVisible"><i class="fix" title="공지"></i></td>
 										<td class="mobileVisible">국민연금</td>
-										<td class="textLeft"><a href="HO_01_04_02.html"><span>전산장애로 인한 홈페이지 서비스 일시 중단 안내 전산장애로 인한 홈페이지 서비스 일시 중단 안내</span>  <i class="new" title="신규 글">NEW</i></a></td>
+										<td class="textLeft"><a href="HO_01_04_02.html" role="button"><span>전산장애로 인한 홈페이지 서비스 일시 중단 안내 전산장애로 인한 홈페이지 서비스 일시 중단 안내</span>  <i class="new" title="신규 글">NEW</i></a></td>
 										<td>2022-03-12</td>
 										<td class="mobileVisible">346</td>
 									</tr>
 									<tr>
-										<td class="mobileVisible"><i class="fix">공지</i></td>
+										<td class="mobileVisible"><i class="fix" title="공지"></i></td>
 										<td class="mobileVisible">국민연금</td>
-										<td class="textLeft"><a href="HO_01_04_02.html" class="new"><span>전산장애로 인한 홈페이지 서비스 일시 중단 안내 전산장애로 인한 홈페이지 서비스 일시 중단 안내(복구완료)</span> <i class="new" title="신규 글">NEW</i></a></td>
+										<td class="textLeft"><a href="HO_01_04_02.html" class="new" role="button"><span>전산장애로 인한 홈페이지 서비스 일시 중단 안내 전산장애로 인한 홈페이지 서비스 일시 중단 안내(복구완료)</span> <i class="new" title="신규 글">NEW</i></a></td>
 										<td>2022-03-12</td>
 										<td class="mobileVisible">346</td>
 									</tr>
 									<tr>
 										<td class="mobileVisible">3</td>
 										<td class="mobileVisible">별정우체국연금</td>
-										<td class="textLeft"><a href="HO_01_04_02.html"><span>전산장애로 인한 홈페이지 서비스 일시 중단 안내(복구완료)</span></a></td>
+										<td class="textLeft"><a href="HO_01_04_02.html" role="button"><span>전산장애로 인한 홈페이지 서비스 일시 중단 안내(복구완료)</span></a></td>
 										<td>2022-03-12</td>
 										<td class="mobileVisible">346</td>
 									</tr>
 									<tr>
 										<td class="mobileVisible">2</td>
 										<td class="mobileVisible">별정우체국연금</td>
-										<td class="textLeft"><a href="HO_01_04_02.html"><span>전산장애로 인한 홈페이지 서비스 일시 중단 안내(복구완료)</span></a></td>
+										<td class="textLeft"><a href="HO_01_04_02.html" role="button"><span>전산장애로 인한 홈페이지 서비스 일시 중단 안내(복구완료)</span></a></td>
 										<td>2022-03-12</td>
 										<td class="mobileVisible">346</td>
 									</tr>
 									<tr>
 										<td class="mobileVisible">1</td>
 										<td class="mobileVisible">국민연금</td>
-										<td class="textLeft"><a href="HO_01_04_02.html"><span>전산장애로 인한 홈페이지 서비스 일시 중단 안내(복구완료)</span></a></td>
+										<td class="textLeft"><a href="HO_01_04_02.html" role="button"><span>전산장애로 인한 홈페이지 서비스 일시 중단 안내(복구완료)</span></a></td>
 										<td>2022-03-12</td>
 										<td class="mobileVisible">346</td>
 									</tr>
@@ -143,15 +143,15 @@
 							</table>
 
 							<div class="pageNumber">
-								<a href="#" class="first"><i>처음 페이지</i></a>
-								<a href="#" class="prev"><i>이전 페이지</i></a>
+								<a href="#" class="first" title="처음 페이지"><i></i></a>
+								<a href="#" class="prev" title="이전 페이지"><i></i></a>
 								<a href="#" class="active">1</a>
 								<a href="#">2</a>
 								<a href="#">3</a>
 								<a href="#">4</a>
 								<a href="#">5</a>
-								<a href="#" class="next"><i>다음 페이지</i></a>
-								<a href="#" class="last"><i>마지막 페이지</i></a>
+								<a href="#" class="next" title="다음 페이지"><i></i></a>
+								<a href="#" class="last" title="마지막 페이지"><i></i></a>
 							</div>
 						</div>
 					</div>

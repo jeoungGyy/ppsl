@@ -7,6 +7,9 @@
 #wrap .onlyMobile { display: block;}
 #wrap .mobileVisible { display: none;}
 
+/* skipnav */
+.skipnav { display: none;}
+
 /* header */
 /* .moHeader .global { display: flex; align-items: center; justify-content: space-between; height: 72px; padding: 0 16px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);}
 .moHeader .global h1 a { display: block;}
@@ -497,7 +500,7 @@ hr.space.style5 { margin: 8px -16px 32px;}
 **********************************************/
 
 .layerBody { max-height: 600px; padding: 8px 16px 32px;}
-.layerTitle { height: 48px; padding-right: 2rem;}
+.layerBody .layerTitle { height: 48px; padding-right: 2rem;}
 .layerBody.small,
 .layerBody.normal,
 .layerBody.big,

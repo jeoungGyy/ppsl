@@ -65,13 +65,13 @@
 						
 						<div class="m_toggleArea">
 							<div class="onlyMobile">
-								<button class="flexLeft spaceBetween toggleGroup active" title="확장됨">
+								<button class="flexLeft spaceBetween toggleGroup active" aria-expanded="true" aria-controls="list_target1">
 									<b class="defaultH5">개인정보</b>
-									<span class="toggleBtn"><i>개인정보 토글</i></span>
+									<span class="toggleBtn"><i></i></span>
 								</button>
 							</div>
 							
-							<div class="target">
+							<div id="list_target1" class="target">
 								<!-- PC -->
 								<div class="onlyPC">
 									<div class="flexLeft spaceBetween mt44">
@@ -170,13 +170,13 @@
 
 						<div class="m_toggleArea">
 							<div class="onlyMobile">
-								<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+								<button class="flexLeft spaceBetween toggleGroup" aria-expanded="false" aria-controls="list_target2">
 									<b class="defaultH5">연계 신청한 연금 가입내용</b>
-									<span class="toggleBtn"><i>연계 신청한 연금 가입내용 토글</i></span>
+									<span class="toggleBtn"><i></i></span>
 								</button>
 							</div>
 
-							<div class="target targetHidden">
+							<div id="list_target2" class="target targetHidden">
 								<h4 class="onlyPC defaultH5 bletSquare">연계 신청한 연금 가입내용</h4>
 								<p class="subText">연계급여청구는 연계신청을 기반으로 이루어 집니다.</p>
 
@@ -265,7 +265,7 @@
 													<td><img src="../../images/common/ico_p.svg" alt="공무원연금의 첫번째 내역"></td>
 													<td class="textLeft">사립학교 교직원 연금</td>
 													<td>공무원연금으로 합산</td>
-													<td>0개월 <button type="button" class="tooltipBtn"><i class="icon">도움말</i></button></td>
+													<td>0개월 <button type="button" class="tooltipBtn" title="도움말"><i class="icon"></i></button></td>
 													<td>yyyy-mm-dd ~ yyyy-mm-dd</td>
 													<td>-</td>
 												</tr>
@@ -435,7 +435,7 @@
 													<ul class="msList">
 														<li>
 															<label>연계기간</label>
-															<b>0개월 <button type="button" class="tooltipBtn"><i class="icon">도움말</i></button></b>
+															<b>0개월 <button type="button" class="tooltipBtn" title="도움말"><i class="icon"></i></button></b>
 														</li>
 														<li>
 															<label>연계급여청구</label>

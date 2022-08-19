@@ -52,9 +52,9 @@
 						<!-- 신청인정보 입력 -->
 						<div class="m_toggleArea">
 							<div class="onlyMobile">
-								<button class="flexLeft spaceBetween toggleGroup active" title="확장됨">
+								<button class="flexLeft spaceBetween toggleGroup active" aria-expanded="true" aria-controls="list_target1">
 									<b class="defaultH4">신청인 정보입력</b>
-									<span class="toggleBtn"><i>신청인 정보입력 토글</i></span>
+									<span class="toggleBtn"><i></i></span>
 								</button>
 							</div>
 							<div class="target">
@@ -107,7 +107,7 @@
 								<!-- //PC -->
 
 								<!-- Mobile -->
-								<div class="onlyMobile">
+								<div id="list_target1" class="onlyMobile">
 									<div class="flexLeft justifyRight">
 										<button type="button" class="button h24 lineBlack">수정</button>
 									</div>
@@ -158,9 +158,9 @@
 						<!-- 연금가입내역 확인 -->
 						<div class="m_toggleArea">
 							<div class="onlyMobile">
-								<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+								<button class="flexLeft spaceBetween toggleGroup" aria-expanded="false" aria-controls="list_target2">
 									<b class="defaultH4">연금가입내역 확인</b>
-									<span class="toggleBtn"><i>연금가입내역 토글</i></span>
+									<span class="toggleBtn"><i></i></span>
 								</button>
 							</div>
 
@@ -347,7 +347,7 @@
 								<!-- //PC -->
 
 								<!-- Mobile -->
-								<div class="onlyMobile">
+								<div id="list_target2" class="onlyMobile">
 									<div class="flexLeft justifyRight">
 										<button type="button" class="button h24 lineBlack">수정</button>
 									</div>
@@ -596,17 +596,17 @@
 								</div>
 							</div>
 							<div class="onlyMobile">
-								<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+								<button class="flexLeft spaceBetween toggleGroup" aria-expanded="false" aria-controls="list_target3">
 									<b class="defaultH4">국민연금자격취득일</b>
-									<span class="toggleBtn"><i>국민연금자격취득일 토글</i></span>
+									<span class="toggleBtn"><i></i></span>
 								</button>
 							</div>
-							<div class="target targetHidden">
+							<div id="list_target3" class="target targetHidden">
 								<div class="dateGroup otherStyle3 pdB0 m_line">
 									<div class="head">
 										<b>국민연금 가입자 자격을 취득한 날짜</b>
 										<div class="flexLeft alignCenter">
-											<button type="button" class="tooltipBtn m_ml0"><i class="icon">도움말</i></button>
+											<button type="button" class="tooltipBtn m_ml0" title="도움말"><i class="icon"></i></button>
 											<span>YYYY - MM - DD</span>
 										</div>
 									</div>
@@ -620,7 +620,7 @@
 								</div>
 								<div class="dateGroup otherStyle4 pdB0 pcmt40 momt24 m_dBlock">
 									<div class="head">
-										<b>접수기관 <button type="button" class="tooltipBtn"><i class="icon">도움말</i></button></b>
+										<b>접수기관 <button type="button" class="tooltipBtn" title="도움말"><i class="icon"></i></button></b>
 										<ul class="groupBox inlineGroupBox mt0">
 											<li>
 												<div class="radioBox">
@@ -691,9 +691,9 @@
 
 
 		<!-- 레이어 -->
-		<div id="applyGuideLayer" class="layerPopup" role="dialog" aria-modal="true" aria-labelledby="applyGuideLayerTitle" tabindex="0">
+		<div id="applyGuideLayer" class="layerPopup" role="dialog" aria-modal="true">
 			<div class="layerBody small applyGuideLayer">
-				<h5 id="applyGuideLayerTitle" class="layerTitle">안내</h5>
+				<h5 class="layerTitle" tabindex="0">안내</h5>
 				<div class="layerContent">
 					<div class="paragraphGroup">
 						<p>
@@ -706,13 +706,13 @@
 						</p>
 					</div>
 				</div>
-				<button type="button" class="layerClose"><i>창 닫기</i></button>
+				<button type="button" class="layerClose" title="창 닫기"><i></i></button>
 			</div>
 		</div>
 
-		<div id="applyPostLayer" class="layerPopup" role="dialog" aria-modal="true" aria-labelledby="applyPostLayerTitle" tabindex="0">
+		<div id="applyPostLayer" class="layerPopup" role="dialog" aria-modal="true">
 			<div class="layerBody normal applyPostLayer">
-				<h5 id="applyPostLayerTitle" class="layerTitle">우편번호 검색</h5>
+				<h5 class="layerTitle" tabindex="0">우편번호 검색</h5>
 				<div class="layerContent">
 					<div class="overflowY" tabindex="0">
 						<div class="postTitle">
@@ -777,7 +777,7 @@
 						</ul>
 					</div>
 				</div>
-				<button type="button" class="layerClose"><i>창 닫기</i></button>
+				<button type="button" class="layerClose" title="창 닫기"><i></i></button>
 			</div>
 		</div>
 		<!-- //레이어 -->

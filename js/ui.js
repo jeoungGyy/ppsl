@@ -4,7 +4,7 @@ $(document).ready(function () {
     mobile_size: 767,
 
 		init: function () {
-      common.groupBox();
+      // common.groupBox();
 			common.selectBox();
 			common.searchReset();
 			common.menu();
@@ -69,7 +69,7 @@ $(document).ready(function () {
         },
         "mouseleave": function () {
           setTimeout(menuchk, 300);
-          menu_change = false;
+          // menu_change = false;
         }
       });
       $gnb.find(">ul li a").on({
@@ -79,7 +79,7 @@ $(document).ready(function () {
         },
         "blur": function () {
           setTimeout(menuchk, 100);
-          menu_change = false;
+          // menu_change = false;
         }
       });
 
@@ -128,7 +128,7 @@ $(document).ready(function () {
       /* 3뎁스 메뉴 있는 것 체크 - 화살표 아이콘 달아주기위해 사용 */
 			$.each($depth2.find(">li >a"), function(index, item) {
 				if($(this).siblings("ul").length) {
-					$(this).addClass("menu_exist");
+					$(this).addClass("menu_exist").attr('aria-expanded', true);
 				}
 			});
 		},
@@ -152,7 +152,7 @@ $(document).ready(function () {
 					var _depth = _item.split("_");
 					var _depthShift = _depth.shift();
 					if(_depth.join("") === depth.join("")) {
-            $(this).addClass("active").attr('title', '메뉴 선택').parents("ul").siblings("a").addClass("active arrow").attr('title', '메뉴 선택');
+            $(this).addClass("active").attr('title', '선택됨').parents("ul").siblings("a").addClass("active arrow").attr('title', '선택됨');
 						var lnb_title = $(this).parents(".depth2").siblings("a").text();
 						var lnb_clone = $(this).parents(".depth2").clone();
             var lnb_title_clone2 = $(this).parents(".depth2").siblings("a").clone();
@@ -179,16 +179,16 @@ $(document).ready(function () {
 
 			/* LNB 아코디언 */
 			if ($(window).width() > common.mobile_size && !fired[0]) {
-				$lnbBody.find(".menu_exist").attr('title', '메뉴 축소');
-				$lnbBody.find(".menu_exist.arrow").attr('title', '메뉴 확장');
+				$lnbBody.find(".menu_exist").attr('aria-expanded', false);
+				$lnbBody.find(".menu_exist.arrow").attr('aria-expanded', true);
         setTimeout(function() {
           $lnbBody.find(".menu_exist.active").next().slideDown(200);
         }, 10);
 				$lnbBody.find(".menu_exist").on("click", function(e){
 					e.preventDefault();
 					if(!$(this).hasClass("arrow")) {
-						$lnbBody.find(".menu_exist").removeClass("arrow active").attr('title', '메뉴 축소').siblings("ul").slideUp(200);
-						$(this).addClass("arrow active").attr('title', '메뉴 확장').siblings("ul").slideDown(200);
+						$lnbBody.find(".menu_exist").removeClass("arrow active").attr('aria-expanded', false).siblings("ul").slideUp(200);
+						$(this).addClass("arrow active").attr('aria-expanded', true).siblings("ul").slideDown(200);
 					}
 				});
 			}
@@ -199,7 +199,7 @@ $(document).ready(function () {
       left / right : move by day
       up / down : move by week
       page up / down : move by month
-      control + up / down : move by year
+      control + page up / down : move by year
       control + home : move to current date
       enter : close datepicker and select currently highlighted date and place it in the input field ready for editing
       */
@@ -223,13 +223,13 @@ $(document).ready(function () {
         yearRange: '-100:+10',
         hideIfNoPrevNext: true,
         showMonthAfterYear: true,
-        // beforeShow: function(input) {
-        //   visible = true;
-        //   var _inputOffset = $(input).offset()
-        //   setTimeout(function() {
-        //     $('#ui-datepicker-div').css('top', _inputOffset.top + 36);
-        //   });
-        // },
+        beforeShow: function(input) {
+          visible = true;
+          var _inputOffset = $(input).offset()
+          setTimeout(function() {
+            $('#ui-datepicker-div').css('top', _inputOffset.top + 36);
+          });
+        },
         onSelect: function( date ) {
           date && $(this).next().addClass('active');
         },
@@ -358,9 +358,9 @@ $(document).ready(function () {
           var $toggleGroup = $('button.toggleGroup');
           $toggleGroup.off().on('click', function() {
             if($(this).parents('.m_toggleArea').find('.target').css('display') === "none") {
-              $(this).addClass('active').attr({'title': '확장됨'}).parents('.m_toggleArea').find('.target').slideDown(200);
+              $(this).addClass('active').attr({'aria-expanded': true}).parents('.m_toggleArea').find('.target').slideDown(200);
             } else {
-              $(this).removeClass('active').attr({'title': '축소됨'}).parents('.m_toggleArea').find('.target').slideUp(200);
+              $(this).removeClass('active').attr({'aria-expanded': false}).parents('.m_toggleArea').find('.target').slideUp(200);
             }
           });
         }
@@ -426,7 +426,8 @@ $(document).ready(function () {
       }
 
       $('body').addClass('noScroll');
-      _target.addClass('active').focus();
+      // _target.addClass('active').focus();
+      _target.addClass('active').find('.layerTitle').focus();
       TweenLite.to(_target, 0.3, {onComplete:function() {
         _target.addClass('show').find('.layerClose').off().on({
           'click': function() {
@@ -534,7 +535,7 @@ $(document).ready(function () {
         _this.addClass('active').attr('title', '통합검색 메뉴 닫기');
         $tbPopular.addClass('hidden');
         $blind.addClass('active');
-        $totalBody.addClass('active').focus();
+        $totalBody.addClass('active').find('.layerTitle').focus();
         TweenLite.to($totalBody, 0.3, {onComplete:function() {
           $blind.addClass('show');
           $totalBody.addClass('show');
@@ -598,8 +599,8 @@ $(document).ready(function () {
 				_target.slideDown(200).attr('tabindex', 0);
 
 				TweenLite.to(_target, .2, {onComplete:function() {
-					$accordionBtn.removeClass('active').attr({'aria-expanded': false, 'title': '축소됨'}).find('.invisible').remove();
-					$(_this).addClass('active').attr({'aria-expanded': true, 'title': '확장됨'}).prepend('<span class="invisible">현재 단계</span>');
+					$accordionBtn.removeClass('active').attr({'aria-expanded': false}).find('.invisible').remove();
+					$(_this).addClass('active').attr({'aria-expanded': true});
 				}});
 			}
 		},

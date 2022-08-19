@@ -1,10 +1,6 @@
 /* 공통 구조
 **********************************************/
 
-/* 접근성 탭 포커스 스타일 */
-
-
-
 .onlyPC { display: block;}
 .onlyMobile { display: none;}
 .area { position: relative; width: 1200px; margin: 0 auto;}
@@ -80,7 +76,7 @@ body.noScroll { overflow: hidden;}
 .gnb .depth3 >li >a { position: relative; padding-left: 8px; font-size: 14px;}
 .gnb .depth3 >li >a::after { content: ''; display: block; position: absolute; left: 0; top: 50%; width: 2px; height: 2px; margin-top: -1px; background-color: #333;}
 .gnb .depth3 >li >a:hover,
-.gnb .depth3 >li >a.active { color: #366cc3;}
+.gnb .depth3 >li >a.active { color: #366cc3 !important;}
 .gnb .depth3 >li >a:hover::after { background-color: #366cc3;}
 .gnb .depth1.active .depth2 { display: block;}
 .gnb .depth1.active.show .depth2 { opacity: 1;}
@@ -217,7 +213,7 @@ body.noScroll { overflow: hidden;}
 #wrap .lh24 { line-height: 24px;}
 #wrap .lh32 { line-height: 32px;}
 
-.subText { margin-top: 8px; font-size: 14px; color: #767676;}
+.subText { margin-top: 8px; font-size: 14px; color: #767676; line-height: 20px;}
 .requireBody { display: flex; align-items: center; justify-content: space-between;}
 .requireBody .requireText { margin-top: 0;}
 .requireBody .btn { position: relative; margin-top: 8px;}
@@ -340,12 +336,13 @@ select.wp100 { width: 100%;}
 select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 8px;}
 
 /* 체크박스, 라디오 박스 */
-.icheckbox,
-.iradio { position: absolute; top: -1px; left: 0; min-width: 20px; min-height: 20px; border: 1px solid #a5a5a5; background-color: #fff; border-radius: 50%; transition: all .2s ease-in-out;}
-.focus { outline: 2px solid #000 !important; border-radius: 50%;}
 .groupBox.flexLeft li ~ li { margin-left: 24px;}
 .groupBox.flexLeft.flexWrap { margin-top: -16px;}
 .groupBox.flexLeft.flexWrap li { margin: 16px 24px 0 0;}
+
+/* .icheckbox,
+.iradio { position: absolute; top: -1px; left: 0; min-width: 20px; min-height: 20px; border: 1px solid #a5a5a5; background-color: #fff; border-radius: 50%; transition: all .2s ease-in-out;}
+.focus { outline: 2px solid #000 !important; border-radius: 50%;}
 .groupBox.single { position: relative; display: inline-block; width: 20px; height: 20px; cursor: pointer;}
 .groupBox.single .icheckbox { top: 5px;}
 
@@ -366,7 +363,54 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .iradio.checked { border-color: #366cc3;}
 .iradio.checked::before { background-color: #366cc3;}
 .iradio.disabled { border-color: #dbdbdb;}
-.iradio.disabled::before { background-color: #eaeaea;}
+.iradio.disabled::before { background-color: #eaeaea;} */
+
+.checkboxBox,
+.radioBox { position: relative; padding-left: 1px; line-height: 20px;}
+.radioBox input[type=radio] { display: inline-block; position: relative; width: 18px; height: 18px; margin: -2px 5px 0 0; vertical-align: top; outline: none; cursor: pointer; -webkit-appearance: none;}
+.radioBox input[type=radio]::before { content: ''; position: absolute; left: 0; top: 0; width: 18px; height: 18px; background-color: #fff; border-radius: 50%; transition: all .2s ease-in-out; border: 1px solid #a5a5a5;}
+.radioBox input[type=radio]::after { content: ''; position: absolute; left: 4px; top: 4px; width: 12px; height: 12px; border-radius: 50%; transition: all .2s ease-in-out;}
+.radioBox input[type=radio]:checked::before { border-color: #366cc3;}
+.radioBox input[type=radio]:checked::after { background-color: #366cc3;}
+.radioBox input[type=radio]:disabled::before { border-color: #dbdbdb;}
+.radioBox input[type=radio]:disabled::after { background-color: #eaeaea;}
+
+.groupBox.single input,
+.checkboxBox input,
+.radioBox input[type=checkbox] { display: inline-block; position: relative; width: 18px; height: 18px; margin: -2px 5px 0 0; vertical-align: top; outline: none; cursor: pointer; -webkit-appearance: none;}
+.groupBox.single input { margin: 0;}
+.groupBox.single input::before,
+.checkboxBox input::before,
+.radioBox input[type=checkbox]::before { content: ''; position: absolute; left: 0; top: 0; width: 18px; height: 18px; background-color: #fff; border-radius: 50%; transition: all .2s ease-in-out; border: 1px solid #a5a5a5;}
+.groupBox.single input::after,
+.checkboxBox input::after,
+.radioBox input[type=checkbox]::after { content: ''; position: absolute; left: 0; top: 0; width: 20px; height: 20px; background: url(../images/common/ico_checkbox_d.svg) no-repeat center; border-radius: 50%; transition: all .2s ease-in-out;}
+.groupBox.single input:checked::before,
+.checkboxBox input:checked::before,
+.radioBox input[type=checkbox]:checked::before { border-color: #366cc3;}
+.groupBox.single input:checked::before,
+.checkboxBox input:checked::before,
+.radioBox input[type=checkbox]:checked::before { border-color: #366cc3;}
+.groupBox.single input:checked::after,
+.checkboxBox input:checked::after,
+.radioBox input[type=checkbox]:checked::after { background: #366cc3 url(../images/common/ico_checkbox_w.svg) no-repeat center;}
+.groupBox.single input:disabled::before,
+.checkboxBox input:disabled::before,
+.radioBox input[type=checkbox]:disabled::before { border-color: #dbdbdb;}
+.groupBox.single input:disabled::after,
+.checkboxBox input:disabled::after,
+.radioBox input[type=checkbox]:disabled::after { background-color: #f7f7f7;}
+
+.groupBox.single input:focus::before,
+.checkboxBox input:focus::before,
+.radioBox input:focus::before { outline: 1px solid #000;}
+.groupBox.single label,
+.checkboxBox label,
+.radioBox label { cursor: pointer;}
+.groupBox.single input:disabled + label,
+.checkboxBox input:disabled + label,
+.radioBox input:disabled + label { cursor: inherit;}
+
 
 /* lineSpace */
 .lineSpace { display: flex; align-items: center;}
@@ -837,7 +881,9 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .hTableBody table th { padding: 21px 10px 21px 24px; text-align: left; line-height: 24px; border-bottom: 1px solid #dbdbdb; background-color: #f7f7f7;}
 .hTableBody table th .smallText { display: block; margin-top: 4px; font-size: 14px; font-weight: 400; line-height: 21px;}
 .hTableBody table td { padding: 12px 15px; line-height: 24px; border-left: 1px solid #dbdbdb; border-bottom: 1px solid #dbdbdb;}
-.hTableBody table td input,
+.hTableBody table td input[type=text],
+.hTableBody table td input[type=tel],
+.hTableBody table td input[type=password],
 .hTableBody table td select { width: 100%;}
 .hTableBody table td +th { border-left: 1px solid #dbdbdb;}
 .hTableBody table td .post input { width: 120px;}
@@ -1024,7 +1070,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .layerBody.big { width: 792px;}
 .layerBody.giant { width: 996px;}
 .layerBody .overflowY { max-height: 560px; margin-right: -20px; padding-right: 16px;}
-.layerTitle { display: flex; align-items: center; height: 56px; margin-bottom: 24px; font-size: 19px; border-bottom: 1px solid #333;}
+.layerBody .layerTitle { display: flex; align-items: center; height: 56px; margin-bottom: 24px; font-size: 19px; border-bottom: 1px solid #333;}
 .layerClose { position: absolute; right: 40px; top: 24px; font-size: 13px; color: #fff;}
 .layerClose i { display: block; width: 24px; height: 24px; text-indent: -99999px; background: url(../images/common/ico_close2.svg) no-repeat center/cover;}
 
@@ -1083,6 +1129,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .surveyLayer .surveyList >li .inputOne input { width: 100%;}
 .surveyLayer .surveyList >li .groupBox .radioBox { display: block; height: inherit;}
 .surveyLayer .surveyList >li .groupBox li { margin-top: 8px;}
+.surveyLayer .surveyList >li .groupBox li input { margin-top: 0;}
 .surveyLayer .surveyList >li .groupBox li label { line-height: 24px;}
 .surveyLayer .surveyList >li .groupBox li label img { max-width: 100%; height: auto;}
 .surveyLayer .surveyList >li .groupBox li .icheckbox,

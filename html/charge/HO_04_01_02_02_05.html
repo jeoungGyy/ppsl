@@ -114,12 +114,12 @@
 							<!-- Mobile -->
 							<div class="m_toggleArea">
 								<div class="onlyMobile">
-									<button class="flexLeft spaceBetween toggleGroup active" title="확장됨">
+									<button class="flexLeft spaceBetween toggleGroup active" aria-expanded="true" aria-controls="list_target1">
 										<b class="defaultH5">개인정보</b>
-										<span class="toggleBtn"><i>개인정보 토글</i></span>
+										<span class="toggleBtn"><i></i></span>
 									</button>
 									
-									<div class="target">
+									<div id="list_target1" class="target">
 										<div class="flexLeft justifyRight">
 											<button type="button" class="button h24 lineBlack">수정</button>
 										</div>
@@ -256,7 +256,7 @@
 												<td><img src="../../images/common/ico_p.svg" alt="공무원연금의 첫번째 내역"></td>
 												<td class="textLeft">사립학교 교직원 연금</td>
 												<td>공무원연금으로 합산</td>
-												<td>0개월 <button type="button" class="tooltipBtn"><i class="icon">도움말</i></button></td>
+												<td>0개월 <button type="button" class="tooltipBtn" title="도움말"><i class="icon"></i></button></td>
 												<td>yyyy-mm-dd ~ yyyy-mm-dd</td>
 												<td>-</td>
 											</tr>
@@ -337,12 +337,12 @@
 							<!-- Mobile -->
 							<div class="onlyMobile">
 								<div class="m_toggleArea">
-									<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+									<button class="flexLeft spaceBetween toggleGroup" aria-expanded="false" aria-controls="list_target2">
 										<b class="defaultH5">연계 신청한 연금 가입내용</b>
-										<span class="toggleBtn"><i>연계 신청한 연금 가입내용 토글</i></span>
+										<span class="toggleBtn"><i></i></span>
 									</button>
 									
-									<div class="target targetHidden">
+									<div id="list_target2" class="target targetHidden">
 										<p class="subText">연계급여청구는 연계신청을 기반으로 이루어 집니다.</p>
 	
 										<div class="purpleBox mt16">
@@ -442,7 +442,7 @@
 														<ul class="msList">
 															<li>
 																<label>연계기간</label>
-																<b>0개월 <button type="button" class="tooltipBtn"><i class="icon">도움말</i></button></b>
+																<b>0개월 <button type="button" class="tooltipBtn" title="도움말"><i class="icon"></i></button></b>
 															</li>
 															<li>
 																<label>연계급여청구</label>
@@ -579,12 +579,12 @@
 							<!-- Mobile -->
 							<div class="onlyMobile">
 								<div class="m_toggleArea">
-									<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+									<button class="flexLeft spaceBetween toggleGroup" aria-expanded="false" aria-controls="list_target3">
 										<b class="defaultH5">연계노령연금</b>
-										<span class="toggleBtn"><i>연계노령연금 토글</i></span>
+										<span class="toggleBtn"><i></i></span>
 									</button>
 
-									<div class="target targetHidden">
+									<div id="list_target3" class="target targetHidden">
 										<ul class="mListMulti">
 											<li>
 												<ul class="msList mt0">
@@ -702,12 +702,12 @@
 							<!-- Mobile -->
 							<div class="onlyMobile">
 								<div class="m_toggleArea">
-									<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+									<button class="flexLeft spaceBetween toggleGroup" aria-expanded="false" aria-controls="list_target4">
 										<b class="defaultH5">연계퇴직연금</b>
-										<span class="toggleBtn"><i>연계퇴직연금 토글</i></span>
+										<span class="toggleBtn"><i></i></span>
 									</button>
 
-									<div class="target targetHidden">
+									<div id="list_target4" class="target targetHidden">
 										<h5 class="defaultH5 pcmt16">공무원연금</h5>
 										<ul class="mListMulti momt8">
 											<li>
@@ -949,12 +949,12 @@
 							<!-- Mobile -->
 							<div class="onlyMobile">
 								<div class="m_toggleArea">
-									<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+									<button class="flexLeft spaceBetween toggleGroup" aria-expanded="false" aria-controls="list_target5">
 										<b class="defaultH5">소득</b>
-										<span class="toggleBtn"><i>소득 토글</i></span>
+										<span class="toggleBtn"><i></i></span>
 									</button>
 
-									<div class="target targetHidden">
+									<div id="list_target5" class="target targetHidden">
 										<ul class="mListMulti">
 											<li>
 												<ul class="msList mt0">
@@ -980,12 +980,12 @@
 								<hr class="space style2 onlyMobile">
 
 								<div class="m_toggleArea">
-									<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+									<button class="flexLeft spaceBetween toggleGroup" aria-expanded="false" aria-controls="list_target6">
 										<b class="defaultH5">부양가족</b>
-										<span class="toggleBtn"><i>부양가족 토글</i></span>
+										<span class="toggleBtn"><i></i></span>
 									</button>
 
-									<div class="target targetHidden">
+									<div id="list_target6" class="target targetHidden">
 										<ul class="mListMulti">
 											<li>
 												<ul class="msList mt0">
@@ -1034,12 +1034,12 @@
 								<hr class="space style2 onlyMobile">
 
 								<div class="m_toggleArea">
-									<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+									<button class="flexLeft spaceBetween toggleGroup" aria-expanded="false" aria-controls="list_target7">
 										<b class="defaultH5">출산크레딧 대상자 입력</b>
-										<span class="toggleBtn"><i>출산크레딧 대상자 입력 토글</i></span>
+										<span class="toggleBtn"><i></i></span>
 									</button>
 
-									<div class="target targetHidden">
+									<div id="list_target7" class="target targetHidden">
 										<h5 class="defaultH5">크레딧 대상자</h5>
 										<ul class="mListMulti momt8">
 											<li>
@@ -1141,12 +1141,12 @@
 								<hr class="space style2 onlyMobile">
 
 								<div class="m_toggleArea">
-									<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+									<button class="flexLeft spaceBetween toggleGroup" aria-expanded="false" aria-controls="list_target8">
 										<b class="defaultH5">외국인 연금가입대상자</b>
-										<span class="toggleBtn"><i>외국인 연금가입대상자 토글</i></span>
+										<span class="toggleBtn"><i></i></span>
 									</button>
 
-									<div class="target targetHidden">
+									<div id="list_target8" class="target targetHidden">
 										<ul class="mListMulti momt8">
 											<li>
 												<ul class="msList mt0">
@@ -1163,12 +1163,12 @@
 								<hr class="space style2 onlyMobile">
 
 								<div class="m_toggleArea">
-									<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+									<button class="flexLeft spaceBetween toggleGroup" aria-expanded="false" aria-controls="list_target9">
 										<b class="defaultH5">외국 거주기간 대상자</b>
-										<span class="toggleBtn"><i>외국 거주기간 대상자 토글</i></span>
+										<span class="toggleBtn"><i></i></span>
 									</button>
 
-									<div class="target targetHidden">
+									<div id="list_target9" class="target targetHidden">
 										<ul class="mListMulti">
 											<li>
 												<ul class="msList mt0">
@@ -1287,12 +1287,12 @@
 							<!-- Mobile -->
 							<div class="onlyMobile">
 								<div class="m_toggleArea">
-									<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+									<button class="flexLeft spaceBetween toggleGroup" aria-expanded="false" aria-controls="list_target10">
 										<b class="defaultH5">형벌사항</b>
-										<span class="toggleBtn"><i>형벌사항 토글</i></span>
+										<span class="toggleBtn"><i></i></span>
 									</button>
 									
-									<div class="target targetHidden">
+									<div id="list_target10" class="target targetHidden">
 										<h5 class="defaultH5">공무원 연금</h5>
 										<ul class="mListMulti momt8">
 											<li>
@@ -1322,12 +1322,12 @@
 								<hr class="space style2 onlyMobile">
 
 								<div class="m_toggleArea">
-									<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+									<button class="flexLeft spaceBetween toggleGroup" aria-expanded="false" aria-controls="list_target11">
 										<b class="defaultH5">대부사항</b>
-										<span class="toggleBtn"><i>대부사항 토글</i></span>
+										<span class="toggleBtn"><i></i></span>
 									</button>
 									
-									<div class="target targetHidden">
+									<div id="list_target11" class="target targetHidden">
 										<h5 class="defaultH5">공무원 연금</h5>
 										<ul class="mListMulti momt8">
 											<li>
@@ -1388,7 +1388,7 @@
 
 						<div class="dateGroup otherStyle4 pdB0 pcmt40 momt24 m_dBlock">
 							<div class="head">
-								<b>접수기관 <button type="button" class="tooltipBtn"><i class="icon">도움말</i></button></b>
+								<b>접수기관 <button type="button" class="tooltipBtn" title="도움말"><i class="icon"></i></button></b>
 								<ul class="groupBox inlineGroupBox mt0">
 									<li>
 										<div class="radioBox">

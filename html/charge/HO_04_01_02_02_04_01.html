@@ -65,15 +65,15 @@
 						
 						<div class="m_toggleArea">
 							<div class="onlyMobile">
-								<button class="flexLeft spaceBetween toggleGroup active" title="확장됨">
+								<button class="flexLeft spaceBetween toggleGroup active" aria-expanded="true" aria-controls="list_target1">
 									<b class="defaultH5">형벌사항</b>
 									<div>
 										<span class="fontSize14 colorRed">미입력</span>
-										<span class="toggleBtn"><i>형벌사항 토글</i></span>
+										<span class="toggleBtn"><i></i></span>
 									</div>
 								</button>
 							</div>
-							<div class="target">
+							<div id="list_target1" class="target">
 								<!-- PC -->
 								<div class="onlyPC">
 									<h5 class="defaultH5 bletSquare pcmt40">형벌사항</h5>
@@ -204,15 +204,15 @@
 
 						<div class="pcmt24 m_toggleArea">
 							<div class="onlyMobile">
-								<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+								<button class="flexLeft spaceBetween toggleGroup" aria-expanded="false" aria-controls="list_target2">
 									<b class="defaultH5">대부사항</b>
 									<div>
 										<span class="fontSize14 colorRed">미입력</span>
-										<span class="toggleBtn"><i>대부사항 토글</i></span>
+										<span class="toggleBtn"><i></i></span>
 									</div>
 								</button>
 							</div>
-							<div class="target targetHidden">
+							<div id="list_target2" class="target targetHidden">
 								<!-- PC -->
 								<div class="onlyPC">
 									<h5 class="defaultH5 bletSquare">대부사항</h5>
@@ -286,7 +286,7 @@
 												<tr>
 													<th scope="row" id="radioLabel5">분할상환 <span class="colorOrange">*</span></th>
 													<td>
-														<ul class="groupBox flexLeft pcmt12" role="radiogroup" aria-labelledby="radioLabel5">
+														<ul class="groupBox flexLeft alignCenter" role="radiogroup" aria-labelledby="radioLabel5">
 															<li>
 																<div class="radioBox">
 																	<input type="radio" id="testRadio5_1" name="testRadio5">
@@ -294,7 +294,7 @@
 																</div>
 															</li>
 															<li>
-																<div class="radioBox">
+																<div class="radioBox flexLeft alignCenter">
 																	<input type="radio" id="testRadio5_2" name="testRadio5">
 																	<label for="testRadio5_2">일부</label>
 																	<div class="hiddenDiv">(분할상환 희망금 <input type="tel" title="상환액 입력" placeholder="상환액을 입력해주세요." required style="width: 200px;">원(원)</div>

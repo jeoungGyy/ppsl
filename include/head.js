@@ -26,7 +26,7 @@ str += '<script src="../../js/jquery-1.12.4.min.js"></script>';
 str += '<script src="../../js/jquery-ui.js"></script>';
 str += '<script src="../../js/swiper4.5.1.js"></script>';
 str += '<script src="../../js/gsap.min.js"></script>';
-str += '<script src="../../js/icheck.js"></script>';
+// str += '<script src="../../js/icheck.js"></script>';
 str += '<script src="../../js/ui.js"></script>';
 
 

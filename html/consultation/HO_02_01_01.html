@@ -39,14 +39,14 @@
 					<div class="searchBody pl48 m_toggleArea">
 						<!-- onlyMobile -->
 						<div class="onlyMobile">
-							<button class="flexLeft spaceBetween toggleGroup" title="축소됨">
+							<button class="flexLeft spaceBetween toggleGroup" aria-expanded="false" aria-controls="list_target1">
 								<b class="defaultH5">검색조건</b>
-								<span class="toggleBtn"><i>상담 검색조건 토글</i></span>
+								<span class="toggleBtn"><i></i></span>
 							</button>
 						</div>
 						<!-- //onlyMobile -->
 
-						<ul class="controlBox target">
+						<ul id="list_target1" class="controlBox target">
 							<li class="wp30">
 								<select title="기관 선택">
 									<option disabled selected>전체기관</option>
@@ -74,7 +74,7 @@
 								</div>
 							</li>
 							<li class="wp40 pl4">
-								<span class="searchReset"><input type="text" title="검색어 입력" placeholder="검색어를 입력하세요." required><button type="button" class="searchResetBtn"><i>검색어 지우기</i></button></span>
+								<span class="searchReset"><input type="text" title="검색어 입력" placeholder="검색어를 입력하세요." required><button type="button" class="searchResetBtn" title="검색어 지우기"><i></i></button></span>
 								<button type="button" class="button h40 black"><i class="searchIcon"></i><span>검색</span></button>
 							</li>
 						</ul>
@@ -123,8 +123,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td class="mobileVisible"><i class="fix">공지</i></td>
-										<td class="textLeft"><a href="HO_02_01_03.html"><span>군인연금 연계자입니다. 반납금 고지서를 이메일로만 받고 싶습니다.</span></a></td>
+										<td class="mobileVisible"><i class="fix" title="공지"></i></td>
+										<td class="textLeft"><a href="HO_02_01_03.html" role="button"><span>군인연금 연계자입니다. 반납금 고지서를 이메일로만 받고 싶습니다.</span></a></td>
 										<td class="mobileVisible"></td>
 										<td class="mobileVisible">홍길*</td>
 										<td class="mobileVisible">국민연금</td>
@@ -132,8 +132,8 @@
 										<td>2022-03-12</td>
 									</tr>
 									<tr>
-										<td class="mobileVisible"><i class="fix">공지</i></td>
-										<td class="textLeft"><a href="HO_02_01_03.html"><span>군인연금 연계자입니다. 반납금 고지서를 이메일로만 받고 싶습니다.</span></a></td>
+										<td class="mobileVisible"><i class="fix" title="공지"></i></td>
+										<td class="textLeft"><a href="HO_02_01_03.html" role="button"><span>군인연금 연계자입니다. 반납금 고지서를 이메일로만 받고 싶습니다.</span></a></td>
 										<td class="mobileVisible"></td>
 										<td class="mobileVisible">홍길*</td>
 										<td class="mobileVisible">별정우체국연금</td>
@@ -142,7 +142,7 @@
 									</tr>
 									<tr>
 										<td class="mobileVisible">3</td>
-										<td class="textLeft"><a href="HO_02_01_03.html"><span>전화상담 받고 싶습니다.</span> <i class="new" title="신규 글">NEW</i></a></td>
+										<td class="textLeft"><a href="HO_02_01_03.html" role="button"><span>전화상담 받고 싶습니다.</span> <i class="new" title="신규 글">NEW</i></a></td>
 										<td class="mobileVisible"></td>
 										<td class="mobileVisible">홍길*</td>
 										<td class="mobileVisible">별정우체국연금</td>
@@ -151,8 +151,8 @@
 									</tr>
 									<tr>
 										<td class="mobileVisible">2</td>
-										<td class="textLeft"><a href="HO_02_01_03.html"><span>1:1 상담 받고 싶습니다.</span> <i class="new" title="신규 글">NEW</i></a></td>
-										<td class="mobileVisible"><i class="file">첨부파일</i></td>
+										<td class="textLeft"><a href="HO_02_01_03.html" role="button"><span>1:1 상담 받고 싶습니다.</span> <i class="new" title="신규 글">NEW</i></a></td>
+										<td class="mobileVisible"><i class="file" title="첨부파일"></i></td>
 										<td class="mobileVisible">홍길*</td>
 										<td class="mobileVisible">국민연금</td>
 										<td class="mobileVisible">답변완료</td>
@@ -160,8 +160,8 @@
 									</tr>
 									<tr>
 										<td class="mobileVisible">1</td>
-										<td class="textLeft"><a href="HO_02_01_03.html"><span>1:1 상담 받고 싶습니다.</span></a></td>
-										<td class="mobileVisible"><i class="file">첨부파일</i></td>
+										<td class="textLeft"><a href="HO_02_01_03.html" role="button"><span>1:1 상담 받고 싶습니다.</span></a></td>
+										<td class="mobileVisible"><i class="file" title="첨부파일"></i></td>
 										<td class="mobileVisible">홍길*</td>
 										<td class="mobileVisible">국민연금</td>
 										<td class="mobileVisible">답변완료</td>
@@ -175,15 +175,15 @@
 						</div>
 
 						<div class="pageNumber">
-							<a href="#" class="first"><i>처음 페이지</i></a>
-							<a href="#" class="prev"><i>이전 페이지</i></a>
+							<a href="#" class="first" title="처음 페이지"><i></i></a>
+							<a href="#" class="prev" title="이전 페이지"><i></i></a>
 							<a href="#" class="active">1</a>
 							<a href="#">2</a>
 							<a href="#">3</a>
 							<a href="#">4</a>
 							<a href="#">5</a>
-							<a href="#" class="next"><i>다음 페이지</i></a>
-							<a href="#" class="last"><i>마지막 페이지</i></a>
+							<a href="#" class="next" title="다음 페이지"><i></i></a>
+							<a href="#" class="last" title="마지막 페이지"><i></i></a>
 						</div>
 
 						<div class="btnsGroup flexEnd">
