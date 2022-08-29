@@ -69,7 +69,7 @@ $(document).ready(function () {
         },
         "mouseleave": function () {
           setTimeout(menuchk, 300);
-          // menu_change = false;
+          menu_change = false;
         }
       });
       $gnb.find(">ul li a").on({
@@ -79,7 +79,7 @@ $(document).ready(function () {
         },
         "blur": function () {
           setTimeout(menuchk, 100);
-          // menu_change = false;
+          menu_change = false;
         }
       });
 
@@ -207,6 +207,7 @@ $(document).ready(function () {
       var $date = $(".jQdate");
       var $datepicker = null;
       var visible = false;
+
       
       $.datepicker.setDefaults({
         dateFormat: 'yy.mm.dd',
@@ -227,6 +228,8 @@ $(document).ready(function () {
           visible = true;
           var _inputOffset = $(input).offset()
           setTimeout(function() {
+            $('.ui-datepicker-prev').attr('tabindex', 0);
+            $('.ui-datepicker-next').attr('tabindex', 0);
             $('#ui-datepicker-div').css('top', _inputOffset.top + 36);
           });
         },
@@ -239,40 +242,41 @@ $(document).ready(function () {
         showOn: "button",
         buttonText: "달력선택"
       });
-      
-      $date.datepicker(); // instantiate datepicker
-      // $date.datepicker({
-      //   onSelect: function (date) {
-      //     $(this).trigger("focus");
-      //   }
-      // }).focus();
-      
-      $datepicker = $date.datepicker("widget");
+        
+      $date.datepicker({
+        onSelect: function (date) {
+          $(this).siblings('button').focus();
+        } // onSelect
+      }); // instantiate datepicker
+        
+      $datepicker = $date.datepicker ("widget");
       if ($datepicker.length == 0) {
-        // console.log("no date picker");
+        // alert ("no date picker");
         return false;
-      }
-      
-      $date.on("keydown", function(e) {
+      } // if
+        
+      // extracts currently highlighted date from calendar (including week day) and sticks it in the date field on arrow press
+      $date.on ("keydown", function (e) {
         if (! visible) return true;
-          var key = e.keyCode;
-          var date, day, month, year, $datepicker;
-          $datepicker = $(this).datepicker("widget");
+        var key = e.keyCode;
+        var message, date, day, month, year, $datepicker;
+        $datepicker = $(this).datepicker ("widget");
         
         if (key >= 37 && key <= 40 && ! e.ctrlKey) {
           e.ctrlKey = true;
           $date.trigger (e);
-         return false;
+          return false;
         } // if
         
         if (key >= 33 && key <=40) {
-          day = $datepicker.find(".ui-state-hover").text();
-          month = $datepicker.find(".ui-datepicker-month").text();
-          year = $datepicker.find(".ui-datepicker-year").text();
-          date = new Date (year + " " + month + " " + day);
+          day = $datepicker.find (".ui-state-hover").text();
+          month = $datepicker.find (".ui-datepicker-month").text();
+          year = $datepicker.find (".ui-datepicker-year").text();
+          date = new Date (month + " " + day + " " + year);
+          message = $.datepicker.formatDate ("DD d MM yy", date);
           return false;
         } // if
-
+        
         return true;
       }); // keydown
 		},
