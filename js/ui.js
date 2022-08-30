@@ -225,18 +225,20 @@ $(document).ready(function () {
         hideIfNoPrevNext: true,
         showMonthAfterYear: true,
         beforeShow: function(input) {
+          // $('#wrap').attr('aria-hidden', true);
           visible = true;
           var _inputOffset = $(input).offset()
           setTimeout(function() {
             $('.ui-datepicker-prev').attr('tabindex', 0);
             $('.ui-datepicker-next').attr('tabindex', 0);
-            $('#ui-datepicker-div').css('top', _inputOffset.top + 36);
+            // $('#ui-datepicker-div').css('top', _inputOffset.top + 36);
           });
         },
         onSelect: function( date ) {
           date && $(this).next().addClass('active');
         },
         onClose: function() {
+          // $('#wrap').removeAttr('aria-hidden');
           visible = false;
         },
         showOn: "button",
