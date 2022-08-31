@@ -3,9 +3,16 @@
 /* 공통 구조
 **********************************************/
 
-#wrap .onlyPC { display: none;}
+/* #wrap .onlyPC { display: none;}
 #wrap .onlyMobile { display: block;}
-#wrap .mobileVisible { display: none;}
+#wrap .mobileVisible { display: none;} */
+
+colgroup { display: none;}
+.hTableBody table th,
+.hTableBody table td,
+.tableBody table th { display: block;}
+.tableBody table td { display: block;}
+.tableBody table thead { display: none;}
 
 /* skipnav */
 .skipnav { display: none;}
