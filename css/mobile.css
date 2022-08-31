@@ -11,7 +11,7 @@ colgroup { display: none;}
 .hTableBody table th,
 .hTableBody table td,
 .tableBody table th { display: block;}
-.tableBody table td { display: block;}
+.tableBody table td { display: block; text-align: left;}
 .tableBody table thead { display: none;}
 
 /* skipnav */
