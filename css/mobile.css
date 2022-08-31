@@ -13,6 +13,7 @@ colgroup { display: none;}
 .tableBody table th { display: block;}
 .tableBody table td { display: block; text-align: left;}
 .tableBody table thead { display: none;}
+.tableBody table tr:last-child td { border-bottom: none;}
 
 /* skipnav */
 .skipnav { display: none;}
