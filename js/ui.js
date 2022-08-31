@@ -225,14 +225,13 @@ $(document).ready(function () {
         hideIfNoPrevNext: true,
         showMonthAfterYear: true,
         beforeShow: function(input) {
-          console.log(1)
           // $('#wrap').attr('aria-hidden', true);
           visible = true;
           // var _inputOffset = $(input).offset()
           setTimeout(function() {
             $('.ui-datepicker-prev').attr('tabindex', 0);
             $('.ui-datepicker-next').attr('tabindex', 0);
-            $('.ui-datepicker-prev').focus();
+            // $('.ui-datepicker-prev').focus();
             // $('#ui-datepicker-div').css('top', _inputOffset.top + 36);
           });
         },
@@ -240,7 +239,6 @@ $(document).ready(function () {
           date && $(this).next().addClass('active');
         },
         onClose: function() {
-          console.log(2)
           // $('#wrap').removeAttr('aria-hidden');
           visible = false;
         },
