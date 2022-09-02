@@ -248,7 +248,7 @@ $(document).ready(function () {
         
       $date.datepicker({
         onSelect: function (date) {
-          $(this).siblings('button').focus();
+          // $(this).siblings('button').focus();
         } // onSelect
       }); // instantiate datepicker
         
@@ -424,6 +424,8 @@ $(document).ready(function () {
       });
     },
     open: function (_this, _target, _target_aria) {
+      var $wrap = $('.wrap');
+      
       //전체메뉴일 경우
       if(_target_aria === 'allMenu_pop') {
         var gnb_clone = $(".gnb").clone();
@@ -433,9 +435,9 @@ $(document).ready(function () {
       }
 
       $('body').addClass('noScroll');
-      // _target.addClass('active').focus();
+      $wrap.attr('aria-hidden', true)
       _target.addClass('active').find('.layerTitle').focus();
-      TweenLite.to(_target, 0.3, {onComplete:function() {
+      TweenLite.to(_target, 0.3, { onComplete:function() {
         _target.addClass('show').find('.layerClose').off().on({
           'click': function() {
             layerPopup.close(_this, _target, _target_aria);
@@ -445,7 +447,7 @@ $(document).ready(function () {
             if(_keyCode === 9) {
               if(!e.shiftKey) {
                 e.preventDefault();
-                _target.focus();
+                _target.find('.layerTitle').focus();
               }
             }
           }
@@ -459,8 +461,10 @@ $(document).ready(function () {
       }});
     },
     close: function (_this, _target, _target_aria) {
+      var $wrap = $('.wrap');
       $(document).off();
       _target.removeClass("show");
+      $wrap.removeAttr('aria-hidden');
       TweenLite.to(_target, 0.3, {onComplete:function() {
         //전체메뉴일 경우
         if(_target_aria === 'allMenu_pop') {

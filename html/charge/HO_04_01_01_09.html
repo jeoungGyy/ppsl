@@ -138,22 +138,22 @@
 
 					<div class="btnsGroup flexEnd toolTipBox">
 						<div class="etcTip">
-							<div class="text">
+							<div id="tooltip1" class="text" role="tooltip" aria-hidden="true">
 								<b>연금종류를 선택해 주세요.</b>
 							</div>
-							<button type="button" class="button h48 blue" disabled>연계급여청구</button>
+							<button type="button" class="button h48 blue" disabled aria-describedby="tooltip1">연계급여청구</button>
 						</div>
 					</div>
 					
 					<!-- 활성화 된 버튼 모습(체크박스 선택): 버튼에 disabled 풀어주시고, etcTip에 active 넣어주세요. -->
 					<div class="btnsGroup flexEnd toolTipBox">
 						<div class="etcTip active">
-							<div class="text">
+							<div id="tooltip2" class="text" role="tooltip" aria-hidden="true">
 								<b><span class="colorBlue">연계노령청구</span> 가능하십니다.</b>
 								<b><span class="colorBlue">연계퇴직청구</span> 가능하십니다.</b>
 							</div>
 							
-							<button type="button" class="button h48 blue">연계급여청구</button>
+							<button type="button" class="button h48 blue" aria-describedby="tooltip2">연계급여청구</button>
 						</div>
 					</div>
 
