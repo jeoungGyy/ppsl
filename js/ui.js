@@ -207,9 +207,12 @@ $(document).ready(function () {
       var $date = $(".jQdate");
       var $datepicker = null;
       var visible = false;
+      var yearFocus = null;
 
       
       $.datepicker.setDefaults({
+        showOn: "button",
+        buttonText: "달력선택",
         dateFormat: 'yy.mm.dd',
         prevText: '이전 달',
         nextText: '다음 달',
@@ -231,19 +234,35 @@ $(document).ready(function () {
           setTimeout(function() {
             $('.ui-datepicker-prev').attr('tabindex', 0);
             $('.ui-datepicker-next').attr('tabindex', 0);
-            // $('.ui-datepicker-prev').focus();
+            $('.ui-datepicker-year').focus();
             // $('#ui-datepicker-div').css('top', _inputOffset.top + 36);
           });
         },
         onSelect: function( date ) {
+          console.log(date)
+          $(this).focus();  
           date && $(this).next().addClass('active');
         },
         onClose: function() {
           // $('#wrap').removeAttr('aria-hidden');
+          console.log(5)
           visible = false;
         },
-        showOn: "button",
-        buttonText: "달력선택"
+        onChangeMonthYear: function (year, month, element) {
+          if(yearFocus == null) {
+            yearFocus = element.selectedYear;
+          }
+          
+          setTimeout(function() {
+						if(yearFocus == year) {
+							element.dpDiv.find(".ui-datepicker-month").focus();
+						} else {
+							element.dpDiv.find(".ui-datepicker-year").focus();
+						}
+
+						yearFocus = year;
+					});
+        },
       });
         
       $date.datepicker({
@@ -253,35 +272,35 @@ $(document).ready(function () {
       }); // instantiate datepicker
         
       $datepicker = $date.datepicker ("widget");
-      if ($datepicker.length == 0) {
-        // alert ("no date picker");
-        return false;
-      } // if
+      // if ($datepicker.length == 0) {
+      //   // alert ("no date picker");
+      //   return false;
+      // } // if
         
       // extracts currently highlighted date from calendar (including week day) and sticks it in the date field on arrow press
-      $date.on ("keydown", function (e) {
-        if (! visible) return true;
-        var key = e.keyCode;
-        var message, date, day, month, year, $datepicker;
-        $datepicker = $(this).datepicker ("widget");
+      // $date.on ("keydown", function (e) {
+      //   if (! visible) return true;
+      //   var key = e.keyCode;
+      //   var message, date, day, month, year, $datepicker;
+      //   $datepicker = $(this).datepicker ("widget");
         
-        if (key >= 37 && key <= 40 && ! e.ctrlKey) {
-          e.ctrlKey = true;
-          $date.trigger (e);
-          return false;
-        } // if
+      //   if (key >= 37 && key <= 40 && ! e.ctrlKey) {
+      //     e.ctrlKey = true;
+      //     $date.trigger (e);
+      //     return false;
+      //   } // if
         
-        if (key >= 33 && key <=40) {
-          day = $datepicker.find (".ui-state-hover").text();
-          month = $datepicker.find (".ui-datepicker-month").text();
-          year = $datepicker.find (".ui-datepicker-year").text();
-          date = new Date (month + " " + day + " " + year);
-          message = $.datepicker.formatDate ("DD d MM yy", date);
-          return false;
-        } // if
+      //   if (key >= 33 && key <=40) {
+      //     day = $datepicker.find (".ui-state-hover").text();
+      //     month = $datepicker.find (".ui-datepicker-month").text();
+      //     year = $datepicker.find (".ui-datepicker-year").text();
+      //     date = new Date (month + " " + day + " " + year);
+      //     message = $.datepicker.formatDate ("DD d MM yy", date);
+      //     return false;
+      //   } // if
         
-        return true;
-      }); // keydown
+      //   return true;
+      // }); // keydown
 		},
     /* Loaction SNS Button Toggle */
 		snsBtnToggle: function () {
