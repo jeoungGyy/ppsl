@@ -203,12 +203,10 @@ $(document).ready(function () {
       control + home : move to current date
       enter : close datepicker and select currently highlighted date and place it in the input field ready for editing
       */
-      
       var $date = $(".jQdate");
       var $datepicker = null;
       var visible = false;
       var yearFocus = null;
-
       
       $.datepicker.setDefaults({
         showOn: "button",
@@ -245,7 +243,7 @@ $(document).ready(function () {
         },
         onClose: function() {
           // $('#wrap').removeAttr('aria-hidden');
-          console.log(5)
+          $(this).focus();
           visible = false;
         },
         onChangeMonthYear: function (year, month, element) {
@@ -410,7 +408,6 @@ $(document).ready(function () {
 
   /* 화면 확대/축소 */
   active = {
-    /* BODY 확대, 축소 */
     size : 1.0,
     zoom: function(v) {
       var tempSize = this.size;
