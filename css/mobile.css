@@ -309,6 +309,12 @@ hr.space.style5 { margin: 8px -16px 32px;}
 /* PC용 테이블에 스크롤 추가 */
 .m_scoll { overflow-x: scroll; overflow-y: hidden; padding-bottom: 8px; -webkit-overflow-scrolling:touch;}
 .m_scoll table { width: 912px;}
+.m_scoll table colgroup { display: table-column;}
+.m_scoll.tableBody table th, 
+.m_scoll.tableBody table td { display: table-cell;}
+.m_scoll.whTableBody table th, 
+.m_scoll.whTableBody table td { display: table-cell;}
+
 @media (hover: hover) {
 	.m_scoll::-webkit-scrollbar { height: 4px;}
 	.m_scoll::-webkit-scrollbar-thumb { border-radius: 4px; background-color: #959595;}
@@ -331,7 +337,7 @@ colgroup { display: none;}
 .tableBody table tr { border-top: 1px solid #dbdbdb;}
 .tableBody table th .colorOrange { margin-left: 4px;}
 .tableBody table th,
-.tableBody table td { display: flex; align-items: center; flex-wrap: wrap; padding: 8px 16px; border-top: none;}
+.tableBody table td { display: flex; align-items: center; flex-wrap: wrap; padding: 8px 16px; font-size: 14px; line-height: 20px; border-top: none;}
 .tableBody table tr:last-child td { border-bottom: none;}
 .tableBody table td.empty { justify-content: center;}
 .tableBody table td.textLeftStyle { padding-left: 16px;}
@@ -348,7 +354,7 @@ colgroup { display: none;}
 
 .hTableBody table th.brBreak br { display: none;}
 .hTableBody table th,
-.hTableBody table td { display: block; padding: 12px 15px; border: none;}
+.hTableBody table td { display: block; padding: 12px 15px; font-size: 14px; line-height: 20px; border: none;}
 .hTableBody table td +th { border-left: none;}
 .hTableBody table td .phone { position: relative; padding-bottom: 48px;}
 .hTableBody table td .phone select,
@@ -380,8 +386,8 @@ colgroup { display: none;}
 
 
 /* whTableBody */
-.whTableBody table th { display: block; padding: 12px 15px; text-align: left;}
-.whTableBody table td { display: block; padding: 12px 15px;}
+.whTableBody table th,
+.whTableBody table td { display: block; padding: 12px 15px; font-size: 14px; text-align: left; line-height: 20px;}
 .whTableBody table th.textLeft { padding: 12px 15px;}
 
 

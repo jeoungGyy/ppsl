@@ -1112,7 +1112,6 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 
 
 /* 설문조사 */
-.layerSurveyBody {}
 .layerSurveyBody { overflow: hidden; position:relative; left:50%; top:50%; width: 384px; text-align: center; vertical-align: middle; border-radius: 8px; transform: translate(-50%, -50%);}
 .layerSurveyBody .layerContent .bgCon { padding: 64px 16px 183px; background: #F4F7FC url(../images/common/img_survey.svg) no-repeat left bottom/380px 160px;}
 .layerSurveyBody .layerContent .partGroup { padding: 20px 18px 35px 14px; background-color: #fff;}
