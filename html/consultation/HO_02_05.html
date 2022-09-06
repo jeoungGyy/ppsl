@@ -45,148 +45,80 @@
 					<hr class="space onlyMobile">
 
 					<h4 class="defaultH4 pcmt40">퇴직일시금 수령 사항 입력</h4>
-					<!-- PC -->
-					<div class="onlyPC">
-						<div class="hTableBody">
-							<table>
-								<caption>퇴직일시금 수령 사항 입력 : 퇴직일시금 수령액, 퇴직일시금 수령일, 예상연계 신청일, 반납금 납부 방법으로 구성</caption>
-								<colgroup>
-									<col style="width: 170px;">
-									<col>
-								</colgroup>
-								<tbody>
-									<tr>
-										<th scope="row">퇴직일시금 수령액</th>
-										<td>
-											<div class="flexBtnOne mw220">
-												<input type="tel" title="퇴직일시금 수령액 입력" placeholder="금액을 입력해 주세요" required>
-												<span class="other">원</span>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<th scope="row">퇴직일시금 수령일</th>
-										<td>
-											<div class="dateSelect">
-												<select title="퇴직일시금 수령일 년도 선택">
-													<option>2022</option>
-												</select>
-												<span class="other">년</span>
-												<select title="퇴직일시금 수령일 월 선택">
-													<option>04</option>
-												</select>
-												<span class="other">월</span>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<th scope="row">예상연계 신청일</th>
-										<td>
-											<div class="dateSelect">
-												<select title="예상연계 신청일 년도 선택">
-													<option>2022</option>
-												</select>
-												<span class="other">년</span>
-												<select title="예상연계 신청일 년도 선택">
-													<option>04</option>
-												</select>
-												<span class="other">월</span>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<th scope="row">반납금 납부 방법</th>
-										<td>
-											<div class="combine">
-												<ul class="groupBox flexLeft">
-													<li>
-														<div class="radioBox">
-															<input type="radio" id="radio3_1" name="radio3" required>
-															<label for="radio3_1">일시납</label>
-														</div>
-													</li>
-													<li>
-														<div class="radioBox">
-															<input type="radio" id="radio3_2" name="radio3" required>
-															<label for="radio3_2">분할납부</label>
-														</div>
-													</li>
-												</ul>
-												<select title="반납금 납부 방법 선택" disabled>
-													<option>2회</option>
-												</select>
-											</div>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
+					<div class="hTableBody">
+						<table>
+							<caption>퇴직일시금 수령 사항 입력 : 퇴직일시금 수령액, 퇴직일시금 수령일, 예상연계 신청일, 반납금 납부 방법으로 구성</caption>
+							<colgroup>
+								<col style="width: 170px;">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">퇴직일시금 수령액</th>
+									<td>
+										<div class="flexBtnOne mw220">
+											<input type="tel" title="퇴직일시금 수령액 입력" placeholder="금액을 입력해 주세요" required>
+											<span class="other">원</span>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">퇴직일시금 수령일</th>
+									<td>
+										<div class="dateSelect">
+											<select title="퇴직일시금 수령일 년도 선택">
+												<option>2022</option>
+											</select>
+											<span class="other">년</span>
+											<select title="퇴직일시금 수령일 월 선택">
+												<option>04</option>
+											</select>
+											<span class="other">월</span>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">예상연계 신청일</th>
+									<td>
+										<div class="dateSelect">
+											<select title="예상연계 신청일 년도 선택">
+												<option>2022</option>
+											</select>
+											<span class="other">년</span>
+											<select title="예상연계 신청일 년도 선택">
+												<option>04</option>
+											</select>
+											<span class="other">월</span>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">반납금 납부 방법</th>
+									<td>
+										<div class="combine">
+											<ul class="groupBox flexLeft">
+												<li>
+													<div class="radioBox">
+														<input type="radio" id="radio3_1" name="radio3" required>
+														<label for="radio3_1">일시납</label>
+													</div>
+												</li>
+												<li>
+													<div class="radioBox">
+														<input type="radio" id="radio3_2" name="radio3" required>
+														<label for="radio3_2">분할납부</label>
+													</div>
+												</li>
+											</ul>
+											<select title="반납금 납부 방법 선택" disabled>
+												<option>2회</option>
+											</select>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
-					<!-- //PC -->
-
-					<!-- Mobile -->
-					<div class="onlyMobile">
-						<ul class="m_hTableBody momt24">
-							<li>
-								<label>퇴직일사금 수령액</label>
-								<div class="flexBtnOne">
-									<input type="tel" required title="퇴직일시금 수령액 입력" placeholder="금액을 입력해 주세요">
-									<span class="other">원</span>
-								</div>
-							</li>
-							<li>
-								<label>퇴직일시금 수령일</label>
-								<div class="dateSelect">
-									<select title="퇴직일시금 수령일 년도 선택">
-										<option>2022</option>
-									</select>
-									<span class="other">년</span>
-									<select title="퇴직일시금 수령일 월 선택">
-										<option>04</option>
-									</select>
-									<span class="other">월</span>
-								</div>
-							</li>
-							<li>
-								<label>예상연계 신청일</label>
-								<div class="dateSelect">
-									<select title="예상연계 신청일 년도 선택">
-										<option>2022</option>
-									</select>
-									<span class="other">년</span>
-									<select title="예상연계 신청일 년도 선택">
-										<option>04</option>
-									</select>
-									<span class="other">월</span>
-								</div>
-							</li>
-							<li>
-								<label>반납금 납부 방법</label>
-								<div class="roundBoxGray widePd radioSet">
-									<ul class="groupBox">
-										<li>
-											<div class="radioBox">
-												<input type="radio" id="m_radio3_1" name="m_radio3" required>
-												<label for="m_radio3_1">일시납</label>
-											</div>
-										</li>
-										<li>
-											<div class="radioBox">
-												<input type="radio" id="m_radio3_2" name="m_radio3" required>
-												<label for="m_radio3_2">분할납부</label>
-											</div>
-										</li>
-									</ul>
-									<div class="momt8">
-										<select title="반납금 납부 방법 선택" disabled>
-											<option>2회</option>
-										</select>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-					<!-- //Mobile -->
 
 					<div class="btnsGroup flexEnd">
 						<button type="button" class="button h40 gray">초기화</button>
@@ -196,133 +128,65 @@
 					<hr class="space">
 
 					<h4 class="defaultH4">연계반납금 예측결과</h4>
-					<div class="onlyPC">
-					<!-- PC -->
-						<!-- 일시납 -->
-						<div class="hTableBody">
-							<table>
-								<caption>연계반납금 예측결과 일시납 : 최초일시 반납금, 이자율으로 구성</caption>
-								<colgroup>
-									<col style="width: 170px;">
-									<col>
-								</colgroup>
-								<tbody>
-									<tr>
-										<th scope="row">최초일시 반납금</th>
-										<td class="textRight">10,000,000 원</td>
-									</tr>
-									<tr>
-										<th scope="row">이자율</th>
-										<td class="textRight">1,000 원</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<!-- //일시납 -->
-
-						<!-- 분할납부 -->
-						<div class="hTableBody">
-							<table>
-								<caption>연계반납금 예측결과 분할납부 : 최초일시 반납금, 분할회수, 반납금총액, 분할이자, 납부기간, 최초납부액, 매월납부액으로 구성</caption>
-								<colgroup>
-									<col style="width: 170px;">
-									<col style="width: 30%;">
-									<col style="width: 170px;">
-									<col>
-								</colgroup>
-								<tbody>
-									<tr>
-										<th scope="row">최초일시 반납금</th>
-										<td colspan="3" class="textRight">10,000,000 원</td>
-									</tr>
-									<tr>
-										<th scope="row">분할회수</th>
-										<td class="textRight">00 회</td>
-										<th scope="row">반납금총액</th>
-										<td class="textRight">10,000,000 원</td>
-									</tr>
-									<tr>
-										<th scope="row">분할이자</th>
-										<td class="textRight">10,000,000 원</td>
-										<th scope="row">납부기간</th>
-										<td class="textRight">YYYY - MM ~ YYYY - MM</td>
-									</tr>
-									<tr>
-										<th scope="row">최초납부액</th>
-										<td class="textRight">10,000,000 원</td>
-										<th scope="row">매월납부액</th>
-										<td class="textRight">10,000,000 원</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<!-- //분할납부 -->
+					<!-- 일시납 -->
+					<div class="hTableBody">
+						<table>
+							<caption>연계반납금 예측결과 일시납 : 최초일시 반납금, 이자율으로 구성</caption>
+							<colgroup>
+								<col style="width: 170px;">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">최초일시 반납금</th>
+									<td class="textRight">10,000,000 원</td>
+								</tr>
+								<tr>
+									<th scope="row">이자율</th>
+									<td class="textRight">1,000 원</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
-					<!-- //PC -->
+					<!-- //일시납 -->
 
-					<!-- Mobile -->
-					<div class="onlyMobile">
-						<!-- 일시납 -->
-						<ul class="mListMulti momt24">
-							<li>
-								<div>
-									<span class="single">최초일시 반납금</span>
-									<div class="momt8">
-										<b>10,000,000</b> <span>원</span>
-									</div>
-								</div>
-								
-								<ul class="msList">
-									<li class="lineBreak">
-										<span>이자율</span>
-										<b>10,000,000 원</b>
-									</li>
-								</ul>
-							</li>
-						</ul>
-						<!-- //일시납 -->
-
-						<!-- 분할납부 -->
-						<ul class="mListMulti momt24">
-							<li>
-								<div>
-									<span class="single">최초일시 반납금</span>
-									<div class="momt8">
-										<b>10,000,000</b> <span>원</span>
-									</div>
-								</div>
-								
-								<ul class="msList">
-									<li class="lineBreak">
-										<span>분할회수</span>
-										<b>100 회</b>
-									</li>
-									<li>
-										<span>반납금총액</span>
-										<b>10,000,000 원</b>
-									</li>
-									<li>
-										<span>분할이자</span>
-										<b>10,000,000 원</b>
-									</li>
-									<li>
-										<span>납부기간</span>
-										<b>YYYY - MM ~ YYYY - MM</b>
-									</li>
-									<li>
-										<span>최초납부액</span>
-										<b>10,000,000 원</b>
-									</li>
-									<li>
-										<span>매월납부액</span>
-										<b>10,000,000 원</b>
-									</li>
-								</ul>
-							</li>
-						</ul>
-						<!-- //분할납부 -->
+					<!-- 분할납부 -->
+					<div class="hTableBody">
+						<table>
+							<caption>연계반납금 예측결과 분할납부 : 최초일시 반납금, 분할회수, 반납금총액, 분할이자, 납부기간, 최초납부액, 매월납부액으로 구성</caption>
+							<colgroup>
+								<col style="width: 170px;">
+								<col style="width: 30%;">
+								<col style="width: 170px;">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">최초일시 반납금</th>
+									<td colspan="3" class="textRight">10,000,000 원</td>
+								</tr>
+								<tr>
+									<th scope="row">분할회수</th>
+									<td class="textRight">00 회</td>
+									<th scope="row">반납금총액</th>
+									<td class="textRight">10,000,000 원</td>
+								</tr>
+								<tr>
+									<th scope="row">분할이자</th>
+									<td class="textRight">10,000,000 원</td>
+									<th scope="row">납부기간</th>
+									<td class="textRight">YYYY - MM ~ YYYY - MM</td>
+								</tr>
+								<tr>
+									<th scope="row">최초납부액</th>
+									<td class="textRight">10,000,000 원</td>
+									<th scope="row">매월납부액</th>
+									<td class="textRight">10,000,000 원</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
-					<!-- //Mobile -->
+					<!-- //분할납부 -->
 
 					<script src="../../include/evaluation.js"></script> <!-- include: 공통 평가 -->
 				</div>

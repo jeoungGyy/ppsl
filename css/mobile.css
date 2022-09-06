@@ -81,6 +81,8 @@
 
 /* Heading */
 .defaultF24 { font-size: 19px; line-height: 29px;}
+.defaultH4.moNoBletSquare { padding-left: 0;}
+.defaultH4.moNoBletSquare::after { display: none;}
 
 /* Margin */
 #wrap .pcmt8 { margin-top: 0;}
@@ -326,26 +328,64 @@ hr.space.style5 { margin: 8px -16px 32px;}
 colgroup { display: none;}
 
 /* tableBody */
+.tableBody table tr { border-top: 1px solid #dbdbdb;}
+.tableBody table th .colorOrange { margin-left: 4px;}
 .tableBody table th,
-.tableBody table td { display: flex; align-items: center; padding: 12px; border-top: none;}
-.tableBody table tr ~ tr { border-top: 1px solid #dbdbdb;}
+.tableBody table td { display: flex; align-items: center; flex-wrap: wrap; padding: 8px 16px; border-top: none;}
 .tableBody table tr:last-child td { border-bottom: none;}
+.tableBody table td.empty { justify-content: center;}
+.tableBody table td.textLeftStyle { padding-left: 16px;}
+.tableBody table td.textLeftStyle img { margin: -4px 4px 0 0;}
+
+.tableBody.notBorder table td { border: none;}
+
+.tableBody table tr.off { border-top: 1px dashed #dbdbdb;}
+.tableBody table tr.off td { border-top: none;}
 
 
 /* hTableBody */
+.hTableBody { border-bottom: 1px solid #dbdbdb;}
+
+.hTableBody table th.brBreak br { display: none;}
 .hTableBody table th,
-.hTableBody table td { display: block; padding: 10px 0; border: none;}
+.hTableBody table td { display: block; padding: 12px 15px; border: none;}
 .hTableBody table td +th { border-left: none;}
 .hTableBody table td .phone { position: relative; padding-bottom: 48px;}
 .hTableBody table td .phone select,
 .hTableBody table td .phone span { width: calc(100% / 3);}
 .hTableBody table td .phone .button { position: absolute; left: 0; bottom: 0; margin-left: 0;}
-
 .hTableBody table td .post input { flex: 1;} 
-
 .hTableBody table td .address { flex-wrap: wrap;}
 .hTableBody table td .address input[type=text] { width: 100%;}
 .hTableBody table td .address input[type=text] ~ input { margin-top: 8px;}
+.hTableBody table td .email { flex-wrap: wrap;}
+.hTableBody table td .email span { width: 100%;}
+.hTableBody table td .email span input { width: 100%;}
+.hTableBody table td .email >input { width: 50%; margin-top: 8px;}
+.hTableBody table td .email select { width: calc(50% - 4px); margin-top: 8px;}
+.hTableBody table td .yearM select { width: 100px;}
+
+.hTableBody table td .groupBox.liOverFlow { flex-wrap: wrap;}
+.hTableBody table td .groupBox.liOverFlow .block { width: 100%; margin: 8px 0 0 0;}
+
+.hTableBody table td .allBlock { flex-direction: column; align-items: inherit !important;}
+.hTableBody table td .allBlock li { margin-left: 0;}
+.hTableBody table td .allBlock li ~ li { margin-top: 8px;}
+.hTableBody table td .allBlock li .radioBox { align-items: flex-start !important;}
+.hTableBody table td .hiddenDiv .inBlock { display: block; margin: 8px 0 0 -39px;}
+
+.hTableBody table td.textRight { text-align: left !important;}
+
+.fileStyle input[type=text] { width: 100% !important;}
+
+
+/* whTableBody */
+.whTableBody table th { display: block; padding: 12px 15px; text-align: left;}
+.whTableBody table td { display: block; padding: 12px 15px;}
+.whTableBody table th.textLeft { padding: 12px 15px;}
+
+
+
 
 
 
@@ -778,7 +818,8 @@ colgroup { display: none;}
 .targetBody .targetOn .textGroup .button { margin-top: 16px;}
 .targetBody .targetCancel { margin-top: 24px;} 
 .targetBody .targetComplete { margin-top: 24px;}
-.targetBody .gtm .lineButton { display: block; margin: 8px 0 0;}
+.gtm .lineButton { display: block; margin: 8px 0 0;}
+.gtm .lineButton i { display: inline-block; vertical-align: middle;}
 
 .flexOther { flex-wrap: wrap; justify-content: flex-end;}
 .flexOther .defaultH4 { width: 100%;}

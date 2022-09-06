@@ -33,329 +33,167 @@
 						<span class="fontSize14"><span class="colorOrange">*</span> 필수 입력 항목</span>
 					</div>
 
-					<!-- PC -->
-					<div class="onlyPC">
-						<div class="hTableBody">
-							<table>
-								<caption>전산문의 : 작성자, 공개여부, 비밀번호, 비밀번호 확인, 휴대폰번호, 제목, 내용, 첨부파일로 구성</caption>
-								<colgroup>
-									<col style="width: 160px;">
-									<col style="width: 290px;">
-									<col style="width: 160px;">
-									<col>
-								</colgroup>
-								<tbody>
-									<tr>
-										<th scope="row">작성자 <span class="colorOrange">*</span></th>
-										<td>홍길*</td>
-										<th scope="row">공개여부 <span class="colorOrange">*</span></th>
-										<td>
-											<ul class="groupBox flexLeft">
-												<li>
-													<div class="radioBox">
-														<input type="radio" id="radio2_1" name="radio2" required>
-														<label for="radio2_1">공개</label>
-													</div>
-												</li>
-												<li>
-													<div class="radioBox">
-														<input type="radio" id="radio2_2" name="radio2" required>
-														<label for="radio2_2">비공개</label>
-													</div>
-												</li>
-											</ul>
-										</td>
-									</tr>
-									<tr>
-										<th scope="row">비밀번호 <span class="colorOrange">*</span></th>
-										<td colspan="3">
-											<div class="mw260">
-												<input type="password" title="비밀번호 입력" placeholder="비밀번호 입력" required>
-											</div>
-											<div class="requireText">
-												<i></i>
-												<span>영문, 숫자, 특수문자 포함 9~20자리로 설정 하여 주세요.</span>
-											</div>
-											<div class="requireText error">
-												<i></i>
-												<span>에러 메세지</span>
-											</div>
-											<div class="requireText success">
-												<i></i>
-												<span>등록가능합니다.</span>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<th scope="row">비밀번호 확인 <span class="colorOrange">*</span></th>
-										<td colspan="3">
-											<div class="mw260">
-												<input type="password" title="비밀번호 재입력" placeholder="비밀번호 입력" required>
-											</div>
-											<div class="requireText">
-												<i></i>
-												<span>영문, 숫자, 특수문자 포함 9~20자리로 설정 하여 주세요.</span>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<th scope="row">휴대폰번호 <span class="colorOrange">*</span></th>
-										<td colspan="3">
-											<div class="flexLeft phone">
-												<span><input type="tel" title="휴대번호 국번 선택" disabled required></span>
-												<span><input type="tel" title="휴대번호 앞 4자리" disabled required></span>
-												<span><input type="tel" title="휴대번호 뒤 4자리" disabled required></span>
-												<button type="button" class="button h40 lineBlack">휴대폰인증</button>
-											</div>
-											<div class="requireText">
-												<i></i>
-												<span>상담안내를 위해 연락 드릴 수 있습니다.</span>
-											</div>
-											<div class="requireText success">
-												<i></i>
-												<span>휴대폰번호 인증되었습니다.</span>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<th scope="row">제목 <span class="colorOrange">*</span></th>
-										<td colspan="3">
-											<input type="text" title="제목을 입력해 주세요." placeholder="제목을 입력해 주세요." required>
-											<div class="requireText">
-												<i></i>
-												<span>제목은 최대 30자 이내로 입력해 주세요.</span>
-											</div>
-											<div class="requireText success">
-												<i></i>
-												<span>등록가능합니다.</span>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<th scope="row">내용 <span class="colorOrange">*</span></th>
-										<td colspan="3">
-											<div class="textarea">
-												<textarea cols="30" rows="6" title="내용을 입력해 주세요." placeholder="내용을 입력해 주세요." required></textarea>
-												<div class="byte"><span>0</span>/200</div>
-											</div>
-											<div class="requireBody">
-												<div class="requireText">
-													<i></i>
-													<span>한글 200자(영문 4000자)까지 입력할 수 있습니다.</span>
+					<div class="hTableBody">
+						<table>
+							<caption>전산문의 : 작성자, 공개여부, 비밀번호, 비밀번호 확인, 휴대폰번호, 제목, 내용, 첨부파일로 구성</caption>
+							<colgroup>
+								<col style="width: 160px;">
+								<col style="width: 290px;">
+								<col style="width: 160px;">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">작성자 <span class="colorOrange">*</span></th>
+									<td>홍길*</td>
+									<th scope="row">공개여부 <span class="colorOrange">*</span></th>
+									<td>
+										<ul class="groupBox flexLeft">
+											<li>
+												<div class="radioBox">
+													<input type="radio" id="radio2_1" name="radio2" required>
+													<label for="radio2_1">공개</label>
 												</div>
-												<div class="btn">
-													<button type="button" class="button h24 lineBlack">복사하기</button>
+											</li>
+											<li>
+												<div class="radioBox">
+													<input type="radio" id="radio2_2" name="radio2" required>
+													<label for="radio2_2">비공개</label>
 												</div>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<th scope="row">첨부파일</th>
-										<td colspan="3">
-											<div class="fileBtnBox">
-												<button type="button" class="button h40 lineBlack">파일추가</button>
-												<div class="volumeText"><span class="colorGray">총 용량</span> 11.2MB</div>
-											</div>
-											<ul class="fileList">
-												<li>
-													<div class="fileBody">
-														<div class="filePor">
-															<span class="box">첨부파일명1.doc</span>
-															<span class="volume">9.1 MB</span>
-														</div>
-														<button type="button" class="button h40 lineBlack">삭제</button>
-													</div>
-												</li>
-												<li>
-													<div class="fileBody">
-														<div class="filePor error">
-															<span class="box">첨부파일명1.doc</span>
-															<span class="volume">9.1 MB</span>
-														</div>
-														<button type="button" class="button h40 lineBlack">삭제</button>
-													</div>
-													<div class="requireText error">
-														<i></i>
-														<span>10MB를 초과 했습니다. 파일을 삭제 해 주세요</span>
-													</div>
-												</li>
-											</ul>
-											<div class="requireText">
-												<i></i>
-												<span>파일첨부 용량은 전체 최대 10MB, 최대 10개 이내 로 제한됩니다.<br>
-													지원하는 파일 형식은 : MS문서(doc, docx, ppt, pptx, xls, xlsx), 한글문서(hwp), 텍스트 문서(txt), 이미지(png, jpeg, jpg, gif) 입니다.</span>
-											</div>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-					<!-- //PC -->
-
-					<!-- Mobile -->
-					<div class="onlyMobile">
-						<ul class="m_hTableBody momt8">
-							<li>
-								<label>작성자 <span class="colorOrange">*</span></label>
-								<div>
-									홍길*
-								</div>
-							</li>
-							<li>
-								<label>공개여부 <span class="colorOrange">*</span></label>
-								<div class="roundBoxGray">
-									<ul class="groupBox flexLeft">
-										<li>
-											<div class="radioBox">
-												<input type="radio" id="m_radio2_1" name="m_radio2" required>
-												<label for="m_radio2_1">공개</label>
-											</div>
-										</li>
-										<li>
-											<div class="radioBox">
-												<input type="radio" id="m_radio2_2" name="m_radio2" required>
-												<label for="m_radio2_2">비공개</label>
-											</div>
-										</li>
-									</ul>
-								</div>
-							</li>
-							<li>
-								<label>비밀번호 <span class="colorOrange">*</span></label>
-								<div>
-									<input type="password" title="비밀번호 입력" placeholder="비밀번호 입력" required>
-									<div class="requireText">
-										<i></i>
-										<span>영문, 숫자, 특수문자 포함 9~20자리로 설정 하여 주세요.</span>
-									</div>
-									<div class="requireText error">
-										<i></i>
-										<span>에러 메세지</span>
-									</div>
-									<div class="requireText success">
-										<i></i>
-										<span>등록가능합니다.</span>
-									</div>
-								</div>
-							</li>
-							<li>
-								<label>비밀번호 확인 <span class="colorOrange">*</span></label>
-								<div>
-									<input type="password" title="비밀번호 재입력" placeholder="비밀번호 입력" required>
-									<div class="requireText">
-										<i></i>
-										<span>영문, 숫자, 특수문자 포함 9~20자리로 설정 하여 주세요.</span>
-									</div>
-									<div class="requireText error">
-										<i></i>
-										<span>에러 메세지</span>
-									</div>
-									<div class="requireText success">
-										<i></i>
-										<span>등록가능합니다.</span>
-									</div>
-								</div>
-							</li>
-							<li>
-								<label>휴대폰번호 <span class="colorOrange">*</span></label>
-								<div>
-									<div class="flexLeft phone">
-										<span><input type="tel" title="휴대폰번호 국번 선택" required disabled></span>
-										<span><input type="tel" title="휴대폰번호 앞 4자리" required disabled></span>
-										<span><input type="tel" title="휴대폰번호 뒤 4자리" required disabled></span>
-									</div>
-									<button type="button" class="button h40 lineBlack momt8">휴대폰인증</button>
-
-									<div class="requireText">
-										<i></i>
-										<span>상담원 안내를 위해 안내문자가 발송 될 수 있습니다.</span>
-									</div>
-									<div class="requireText success">
-										<i></i>
-										<span>휴대폰번호가 인증되었습니다.</span>
-									</div>
-								</div>
-							</li>
-							<li>
-								<label>제목 <span class="colorOrange">*</span></label>
-								<div>
-									<input type="text" title="제목을 입력해 주세요." placeholder="제목을 입력해 주세요." required>
-									<div class="requireText">
-										<i></i>
-										<span>제목은 최대 30자 이내로 입력해 주세요.</span>
-									</div>
-									<div class="requireText success">
-										<i></i>
-										<span>등록가능합니다.</span>
-									</div>
-								</div>
-							</li>
-							<li>
-								<label>내용 <span class="colorOrange">*</span></label>
-								<div>
-									<div class="textarea">
-										<textarea cols="30" rows="6" title="내용을 입력해 주세요." placeholder="내용을 입력해 주세요." required></textarea>
-										<div class="byte"><span>0</span>/200</div>
-									</div>
-									<div class="requireBody">
+											</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">비밀번호 <span class="colorOrange">*</span></th>
+									<td colspan="3">
+										<div class="mw260">
+											<input type="password" title="비밀번호 입력" placeholder="비밀번호 입력" required>
+										</div>
 										<div class="requireText">
 											<i></i>
-											<span>한글 200자(영문 4000자)까지 입력할 수 있습니다.</span>
+											<span>영문, 숫자, 특수문자 포함 9~20자리로 설정 하여 주세요.</span>
 										</div>
-										<div class="btn">
-											<button type="button" class="button h24 lineBlack">복사하기</button>
+										<div class="requireText error">
+											<i></i>
+											<span>에러 메세지</span>
 										</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<label>첨부파일</label>
-								<div>
-									<div class="fileBtnBox">
-										<button type="button" class="button h40 lineBlack">파일추가</button>
-										<div class="volumeText"><span class="colorGray">총 용량</span> 11.2MB</div>
-									</div>
-									<ul class="fileList">
-										<li>
-											<div class="fileBody">
-												<div class="filePor">
-													<span class="box">첨부파일명1.doc</span>
-													<span class="volume">9.1 MB</span>
-												</div>
-												<button type="button" class="button h40 lineBlack">삭제</button>
-											</div>
-										</li>
-										<li>
-											<div class="fileBody">
-												<div class="filePor error">
-													<span class="box">첨부파일명1.doc</span>
-													<span class="volume">9.1 MB</span>
-												</div>
-												<button type="button" class="button h40 lineBlack">삭제</button>
-											</div>
-											<div class="requireText error">
+										<div class="requireText success">
+											<i></i>
+											<span>등록가능합니다.</span>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">비밀번호 확인 <span class="colorOrange">*</span></th>
+									<td colspan="3">
+										<div class="mw260">
+											<input type="password" title="비밀번호 재입력" placeholder="비밀번호 입력" required>
+										</div>
+										<div class="requireText">
+											<i></i>
+											<span>영문, 숫자, 특수문자 포함 9~20자리로 설정 하여 주세요.</span>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">휴대폰번호 <span class="colorOrange">*</span></th>
+									<td colspan="3">
+										<div class="flexLeft phone">
+											<span><input type="tel" title="휴대번호 국번 선택" disabled required></span>
+											<span><input type="tel" title="휴대번호 앞 4자리" disabled required></span>
+											<span><input type="tel" title="휴대번호 뒤 4자리" disabled required></span>
+											<button type="button" class="button h40 lineBlack">휴대폰인증</button>
+										</div>
+										<div class="requireText">
+											<i></i>
+											<span>상담안내를 위해 연락 드릴 수 있습니다.</span>
+										</div>
+										<div class="requireText success">
+											<i></i>
+											<span>휴대폰번호 인증되었습니다.</span>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">제목 <span class="colorOrange">*</span></th>
+									<td colspan="3">
+										<input type="text" title="제목을 입력해 주세요." placeholder="제목을 입력해 주세요." required>
+										<div class="requireText">
+											<i></i>
+											<span>제목은 최대 30자 이내로 입력해 주세요.</span>
+										</div>
+										<div class="requireText success">
+											<i></i>
+											<span>등록가능합니다.</span>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">내용 <span class="colorOrange">*</span></th>
+									<td colspan="3">
+										<div class="textarea">
+											<textarea cols="30" rows="6" title="내용을 입력해 주세요." placeholder="내용을 입력해 주세요." required></textarea>
+											<div class="byte"><span>0</span>/200</div>
+										</div>
+										<div class="requireBody">
+											<div class="requireText">
 												<i></i>
-												<span>10MB를 초과 했습니다. 파일을 삭제 해 주세요</span>
+												<span>한글 200자(영문 4000자)까지 입력할 수 있습니다.</span>
 											</div>
-										</li>
-									</ul>
-									<div class="requireText">
-										<i></i>
-										<span>파일첨부 용량은 전체 최대 10MB, 최대 10개 이내 로 제한됩니다.<br>
-											지원하는 파일 형식은 : MS문서(doc, docx, ppt, pptx, xls, xlsx), 한글문서(hwp), 텍스트 문서(txt), 이미지(png, jpeg, jpg, gif) 입니다.</span>
-									</div>
-								</div>
-							</li>
-						</ul>
+											<div class="btn">
+												<button type="button" class="button h24 lineBlack">복사하기</button>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">첨부파일</th>
+									<td colspan="3">
+										<div class="fileBtnBox">
+											<button type="button" class="button h40 lineBlack">파일추가</button>
+											<div class="volumeText"><span class="colorGray">총 용량</span> 11.2MB</div>
+										</div>
+										<ul class="fileList">
+											<li>
+												<div class="fileBody">
+													<div class="filePor">
+														<span class="box">첨부파일명1.doc</span>
+														<span class="volume">9.1 MB</span>
+													</div>
+													<button type="button" class="button h40 lineBlack">삭제</button>
+												</div>
+											</li>
+											<li>
+												<div class="fileBody">
+													<div class="filePor error">
+														<span class="box">첨부파일명1.doc</span>
+														<span class="volume">9.1 MB</span>
+													</div>
+													<button type="button" class="button h40 lineBlack">삭제</button>
+												</div>
+												<div class="requireText error">
+													<i></i>
+													<span>10MB를 초과 했습니다. 파일을 삭제 해 주세요</span>
+												</div>
+											</li>
+										</ul>
+										<div class="requireText">
+											<i></i>
+											<span>파일첨부 용량은 전체 최대 10MB, 최대 10개 이내 로 제한됩니다.<br>
+												지원하는 파일 형식은 : MS문서(doc, docx, ppt, pptx, xls, xlsx), 한글문서(hwp), 텍스트 문서(txt), 이미지(png, jpeg, jpg, gif) 입니다.</span>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
-					<!-- //Mobile -->
 
 					<hr class="space style3 onlyMobile">
 
 					<ul class="guideText mt momt32">
 						<li>개인정보보호법 제71조 제3호에 의해 다른 사람의 개인정보를 위조 또는 유출한 자는 5년 이하의 징역 또는 5천만원 이하의 벌금이 부과될 수 있으며 등록된 글에 대한 법적 책임은 글쓴이에게 있습니다.</li>
-						<li>기타 개인정보 취급에 관한 상세한 사항은 저희 공적연금연계 홈페이지(www.ppsl.or.kr)에 공개하고 있는 <a href="https://www.nps.or.kr/jsppage/members/personal_policy_com.jsp" class="bLink" target="_blank"><span class="bLine">“개인정보 처리방침”</span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a> 을 참조하십시오.</li>
+						<li>기타 개인정보 취급에 관한 상세한 사항은 저희 공적연금연계 홈페이지(www.ppsl.or.kr)에 공개하고 있는 <a href="https://www.nps.or.kr/jsppage/members/personal_policy_com.jsp" class="bLink" target="_blank" role="button"><span class="bLine">“개인정보 처리방침”</span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a> 을 참조하십시오.</li>
 						<li>개인정보보호 및 보안을 위해 매 20분마다 입력 계속여부를 확인합니다. 만약 응답이 없는 경우에는 작성중인 글이 등록되지 않을 수 있습니다.</li>
 						<li class="colorBlue">게시글 작성 시 제목 또는 내용에 개인정보(주민등록번호, 휴대전화번호 등)가 포함되지 않도록 위의하여 주시기 바랍니다. 개인정보가 포함될 시 글이 삭제될 수 있습니다.</li>
 						<li>장확한 상담을 위하여 상담사가 고객님께 전화드릴 수 있습니다.</li>

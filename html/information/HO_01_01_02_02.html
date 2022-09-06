@@ -29,14 +29,14 @@
 
 					<ul class="aTab">
 						<li><a href="HO_01_01_02_01.html" role="button">연계연금</a></li>
-						<li><a href="HO_01_01_02_02.html" role="button" class="active">국민연금 <span class="invisible">선택됨</span></a></li>
+						<li><a href="HO_01_01_02_02.html" role="button" class="active" aria-selected="true">국민연금</a></li>
 						<li><a href="HO_01_01_02_03.html" role="button">직역연금 일반</a></li>
 					</ul>
 
 					<h4 class="defaultH4 mt40">국민연금 기준정보</h4>
 					<ul class="acoList mt16">
 						<li>
-							<button type="button" class="accordionBtn active" aria-controls="panel_1" title="확장됨"> <!-- id, aria-controls 값과 (아래) -->
+							<button type="button" class="accordionBtn active" aria-controls="panel_1" aria-expanded="true"> <!-- id, aria-controls 값과 (아래) -->
 								<span class="qText">가입대상</span>
 							</button>
 							<div id="panel_1" class="accopanel paragraphGroup" style="display: block;"> <!-- id, aria-labelledby 값이 서로 같게 맞춰주세요. -->
@@ -44,7 +44,7 @@
 							</div>
 						</li>
 						<li>
-							<button type="button" class="accordionBtn" aria-controls="panel_2" title="축소됨">
+							<button type="button" class="accordionBtn" aria-controls="panel_2" aria-expanded="false">
 								<span class="qText">가입자의 종별</span>
 							</button>
 							<div id="panel_2" class="accopanel paragraphGroup">
@@ -57,7 +57,7 @@
 							</div>
 						</li>
 						<li>
-							<button type="button" class="accordionBtn" aria-controls="panel_3" title="축소됨">
+							<button type="button" class="accordionBtn" aria-controls="panel_3" aria-expanded="false">
 								<span class="qText">근로자</span>
 							</button>
 							<div id="panel_3" class="accopanel paragraphGroup">
@@ -65,7 +65,7 @@
 							</div>
 						</li>
 						<li>
-							<button type="button" class="accordionBtn" aria-controls="panel_4" title="축소됨">
+							<button type="button" class="accordionBtn" aria-controls="panel_4" aria-expanded="false">
 								<span class="qText">임의계속 가입자</span>
 							</button>
 							<div id="panel_4" class="accopanel paragraphGroup">
@@ -76,7 +76,7 @@
 							</div>
 						</li>
 						<li>
-							<button type="button" class="accordionBtn" aria-controls="panel_5" title="축소됨">
+							<button type="button" class="accordionBtn" aria-controls="panel_5" aria-expanded="false">
 								<span class="qText">기준 소득월액</span>
 							</button>
 							<div id="panel_5" class="accopanel paragraphGroup">
@@ -85,7 +85,7 @@
 							</div>
 						</li>
 						<li>
-							<button type="button" class="accordionBtn" aria-controls="panel_6" title="축소됨">
+							<button type="button" class="accordionBtn" aria-controls="panel_6" aria-expanded="false">
 								<span class="qText">국민연금 가입기간</span>
 							</button>
 							<div id="panel_6" class="accopanel paragraphGroup">
@@ -96,7 +96,7 @@
 							</div>
 						</li>
 						<li>
-							<button type="button" class="accordionBtn" aria-controls="panel_7" title="축소됨">
+							<button type="button" class="accordionBtn" aria-controls="panel_7" aria-expanded="false">
 								<span class="qText">군복무크레딧,출산크레딧,실업크레딧</span>
 							</button>
 							<div id="panel_7" class="accopanel paragraphGroup" >
@@ -107,7 +107,7 @@
 							</div>
 						</li>
 						<li>
-							<button type="button" class="accordionBtn" aria-controls="panel_8" title="축소됨">
+							<button type="button" class="accordionBtn" aria-controls="panel_8" aria-expanded="false">
 								<span class="qText">노령연금</span>
 							</button>
 							<div id="panel_8" class="accopanel paragraphGroup">
@@ -121,7 +121,7 @@
 							</div>
 						</li>
 						<li>
-							<button type="button" class="accordionBtn" aria-controls="panel_9" title="축소됨">
+							<button type="button" class="accordionBtn" aria-controls="panel_9" aria-expanded="false">
 								<span class="qText">기본연금액</span>
 							</button>
 							<div id="panel_9" class="accopanel paragraphGroup">
@@ -132,7 +132,7 @@
 							</div>
 						</li>
 						<li>
-							<button type="button" class="accordionBtn" aria-controls="panel_10" title="축소됨">
+							<button type="button" class="accordionBtn" aria-controls="panel_10" aria-expanded="false">
 								<span class="qText">부양가족</span>
 							</button>
 							<div id="panel_10" class="accopanel paragraphGroup">
@@ -140,7 +140,7 @@
 							</div>
 						</li>
 						<li>
-							<button type="button" class="accordionBtn" aria-controls="panel_11" title="축소됨">
+							<button type="button" class="accordionBtn" aria-controls="panel_11" aria-expanded="false">
 								<span class="qText">분할연금</span>
 							</button>
 							<div id="panel_11" class="accopanel paragraphGroup">
@@ -148,7 +148,7 @@
 							</div>
 						</li>
 						<li>
-							<button type="button" class="accordionBtn" aria-controls="panel_12" title="축소됨">
+							<button type="button" class="accordionBtn" aria-controls="panel_12" aria-expanded="false">
 								<span class="qText">유족연금</span>
 							</button>
 							<div id="panel_12" class="accopanel paragraphGroup">
@@ -156,7 +156,7 @@
 							</div>
 						</li>
 						<li>
-							<button type="button" class="accordionBtn" aria-controls="panel_13" title="축소됨">
+							<button type="button" class="accordionBtn" aria-controls="panel_13" aria-expanded="false">
 								<span class="qText">미지급 급여</span>
 							</button>
 							<div id="panel_13" class="accopanel paragraphGroup">
@@ -168,7 +168,7 @@
 							</div>
 						</li>
 						<li>
-							<button type="button" class="accordionBtn" aria-controls="panel_14" title="축소됨">
+							<button type="button" class="accordionBtn" aria-controls="panel_14" aria-expanded="false">
 								<span class="qText">반환일시금</span>
 							</button>
 							<div id="panel_14" class="accopanel paragraphGroup">
@@ -179,7 +179,7 @@
 							</div>
 						</li>
 						<li>
-							<button type="button" class="accordionBtn" aria-controls="panel_15" title="축소됨">
+							<button type="button" class="accordionBtn" aria-controls="panel_15" aria-expanded="false">
 								<span class="qText">반납금</span>
 							</button>
 							<div id="panel_15" class="accopanel paragraphGroup">
@@ -188,7 +188,7 @@
 							</div>
 						</li>
 						<li>
-							<button type="button" class="accordionBtn" aria-controls="panel_16" title="축소됨">
+							<button type="button" class="accordionBtn" aria-controls="panel_16" aria-expanded="false">
 								<span class="qText">연금보험료</span>
 							</button>
 							<div id="panel_16" class="accopanel paragraphGroup">
@@ -200,7 +200,7 @@
 							</div>
 						</li>
 						<li>
-							<button type="button" class="accordionBtn" aria-controls="panel_17" title="축소됨">
+							<button type="button" class="accordionBtn" aria-controls="panel_17" aria-expanded="false">
 								<span class="qText">추납보험료</span>
 							</button>
 							<div id="panel_17" class="accopanel paragraphGroup">
@@ -208,7 +208,7 @@
 							</div>
 						</li>
 						<li>
-							<button type="button" class="accordionBtn" aria-controls="panel_18" title="축소됨">
+							<button type="button" class="accordionBtn" aria-controls="panel_18" aria-expanded="false">
 								<span class="qText">중복급여의 조정</span>
 							</button>
 							<div id="panel_18" class="accopanel paragraphGroup">
@@ -216,7 +216,7 @@
 							</div>
 						</li>
 						<li>
-							<button type="button" class="accordionBtn" aria-controls="panel_19" title="축소됨">
+							<button type="button" class="accordionBtn" aria-controls="panel_19" aria-expanded="false">
 								<span class="qText">연금원부</span>
 							</button>
 							<div id="panel_19" class="accopanel paragraphGroup">
@@ -224,7 +224,7 @@
 							</div>
 						</li>
 						<li>
-							<button type="button" class="accordionBtn" aria-controls="panel_20" title="축소됨">
+							<button type="button" class="accordionBtn" aria-controls="panel_20" aria-expanded="false">
 								<span class="qText">A(평균소득월액의 평균액)</span>
 							</button>
 							<div id="panel_20" class="accopanel paragraphGroup">
@@ -232,7 +232,7 @@
 							</div>
 						</li>
 						<li>
-							<button type="button" class="accordionBtn" aria-controls="panel_21" title="축소됨">
+							<button type="button" class="accordionBtn" aria-controls="panel_21" aria-expanded="false">
 								<span class="qText">B(현재 가치로 재평가한 평균액)</span>
 							</button>
 							<div id="panel_21" class="accopanel paragraphGroup">

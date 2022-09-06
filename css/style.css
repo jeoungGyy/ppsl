@@ -249,6 +249,8 @@ body.noScroll { overflow: hidden;}
 #wrap .mt0 { margin-top: 0;}
 #wrap .mt8 { margin-top: 8px;}
 #wrap .mt16 { margin-top: 16px;}
+#wrap .mt18 { margin-top: 18px;}
+#wrap .mt20 { margin-top: 20px;}
 #wrap .mt24 { margin-top: 24px;}
 #wrap .mt40 { margin-top: 40px;}
 #wrap .mt44 { margin-top: 44px;}
@@ -302,10 +304,11 @@ hr.space2 { margin: 25px 0; height: 1px; background-color: #dbdbdb;}
 .button .arrowRightSmall { display: inline-block; width: 16px; height: 16px; margin: -2px 0 0 4px; background: url(../images/common/ico_arrow_right.svg) no-repeat center/cover;}
 .button .icoDownload2 { display: inline-block; width: 16px; height: 16px; margin: -2px 0 0 4px; background: url(../images/common/ico_download2.svg) no-repeat center/cover;}
 
-.lineButton { display: inline-flex; align-items: center;}
+.lineButton { display: inline-flex; align-items: center; line-height: 1.1;}
 .lineButton span { font-size: 14px; border-bottom: 1px solid #333;}
 .lineButton .arrowRight { width: 16px; height: 16px; margin: 0 0 0 4px; background: url(../images/common/ico_arrow_right.svg) no-repeat center/cover;}
 .lineButton .icoPlus { width: 16px; height: 16px; margin: -1px 0 0 4px; background: url(../images/common/ico_plus.svg) no-repeat center/cover;}
+.lineButton .icoDownload { width: 16px; height: 16px; margin: -1px 0 0 4px; background: url(../images/common/ico_download2.svg) no-repeat center/cover;}
 .lineButton:hover { color: #366cc3;}
 .lineButton:hover span { border-color: #366cc3;}
 .lineButton:hover .arrowRight { background: url(../images/common/ico_arrow_right_hover.svg) no-repeat center/cover;}
@@ -899,8 +902,8 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .hTableBody table td .phone span ~ span::before { content: ''; display: block; position: absolute; left: -16px; top: 20px; width: 7px; height: 1px; background-color: #333;}
 .hTableBody table td .phone .button { margin-left: 6px;}
 .hTableBody table td .email input { width: 200px;}
-.hTableBody table td .email span { position: relative; margin-left: 33px;}
-.hTableBody table td .email span::before { content: '@'; position: absolute; left: -25px; top: 10px;}
+.hTableBody table td .email span { position: relative; margin-right: 33px;}
+.hTableBody table td .email span::after { content: '@'; position: absolute; right: -25px; top: 10px;}
 .hTableBody table td .email select { width: 200px; margin-left: 4px;}
 .hTableBody table td .textarea { border: solid 1px #dbdbdb;}
 .hTableBody table td .textarea textarea { border: none;}
@@ -921,7 +924,8 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .hTableBody table td .combine { display: flex; align-items: center;}
 .hTableBody table td .combine select { width: 100px; margin-left: 8px;}
 .hTableBody table td .hiddenDiv { margin-left: 5px;}
-.hTableBody table td .hiddenDiv input { margin: 0 5px;}
+.hTableBody table td .hiddenDiv .inBlock { display: inline-block;}
+.hTableBody table td .hiddenDiv .inBlock input { margin: 0 5px;}
 .hTableBody table td .yearM select { width: 130px;}
 .hTableBody table td .yearM .other { margin-left: 8px;}
 .hTableBody table td .yearM .other + select { margin-left: 16px;}
@@ -940,6 +944,8 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .hTableBody table td .spcemt { margin-top: 8px;}
 .hTableBody table td .defaultBtn input { width: 400px;}
 .hTableBody table td .defaultBtn .button { margin-left: 4px;}
+
+
 .fileStyle { display: flex; position: relative;}
 .fileStyle input[type=text] { position: relative; z-index: 1;}
 .fileStyle input[type=file] { position: absolute; left: 0; top: 0; width: 1px; height: 1px;}
@@ -1495,7 +1501,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .targetBody .targetOn .textGroup .button { margin-top: 24px;}
 .targetBody .sameStyle { margin-top: 40px;}
 .targetBody .sameStyle .tableBody { margin-top: 0;}
-.targetBody .gtm .lineButton { margin-left: 16px;}
+.gtm .lineButton { margin-left: 16px;}
 
 .agreeBody { margin-top: 40px;}
 

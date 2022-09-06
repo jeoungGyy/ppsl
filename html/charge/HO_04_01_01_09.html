@@ -36,19 +36,19 @@
 					<div class="stepBody mt">
 						<!-- 0단계 -->
 						<ul class="stepBy">
-							<li>
+							<li role="text">
 								<span class="fontMontserrat">01</span>
 								<span class="fontEliceDigital text">접수<span class="m_block">중</span></span>
 							</li>
-							<li>
+							<li role="text">
 								<span class="fontMontserrat">02</span>
 								<span class="fontEliceDigital text">접수<span class="m_block">완료</span></span>
 							</li>
-							<li>
+							<li role="text">
 								<span class="fontMontserrat">03</span>
 								<span class="fontEliceDigital text">기관<span class="m_block">심사중</span></span>
 							</li>
-							<li>
+							<li role="text">
 								<span class="fontMontserrat">04</span>
 								<span class="fontEliceDigital text">처리<span class="m_block">완료</span></span>
 							</li>
@@ -62,79 +62,43 @@
 
 					<hr class="space">
 
-					<!-- PC -->
-					<div class="onlyPC">
-						<div class="tableBody mt44">
-							<table>
-								<caption>연계 급여청구 : 선택, 연금 종류, 재직기간 합산, 연계기간, 가입·재직(복무) 기간, 연계급여청구로 구성</caption>
-								<colgroup>
-									<col style="width: 65px;">
-									<col>
-									<col style="width: 145px;">
-									<col style="width: 115px;">
-									<col style="width: 270px;">
-									<col style="width: 110px;">
-								</colgroup>
-								<thead>
-									<tr>
-										<th scope="col">선택</th>
-										<th scope="col">연금 종류</th>
-										<th scope="col">재직기간 합산</th>
-										<th scope="col">연계기간</th>
-										<th scope="col">가입·재직(복무) 기간</th>
-										<th scope="col">연계급여청구</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>
-											<div class="groupBox single">
-												<input type="checkbox" name="checkbox" title="첫번째 연계 급여청구 선택">
-											</div>
-										</td>
-										<td class="textLeft">국민연금</td>
-										<td>-</td>
-										<td>5년1개월</td>
-										<td>yyyy-mm-dd ~ yyyy-mm-dd</td>
-										<td><span class="colorBlue">가능</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
+					<div class="tableBody mt44">
+						<table>
+							<caption>연계 급여청구 : 선택, 연금 종류, 재직기간 합산, 연계기간, 가입·재직(복무) 기간, 연계급여청구로 구성</caption>
+							<colgroup>
+								<col style="width: 65px;">
+								<col>
+								<col style="width: 145px;">
+								<col style="width: 115px;">
+								<col style="width: 270px;">
+								<col style="width: 110px;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">선택</th>
+									<th scope="col">연금 종류</th>
+									<th scope="col">재직기간 합산</th>
+									<th scope="col">연계기간</th>
+									<th scope="col">가입·재직(복무) 기간</th>
+									<th scope="col">연계급여청구</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<div class="groupBox single">
+											<input type="checkbox" name="checkbox" title="첫번째 연계 급여청구 선택">
+										</div>
+									</td>
+									<td class="textLeft">국민연금</td>
+									<td>-</td>
+									<td>5년1개월</td>
+									<td>yyyy-mm-dd ~ yyyy-mm-dd</td>
+									<td><span class="colorBlue">가능</span></td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
-					<!-- //PC -->
-
-					<!-- Mobile -->
-					<div class="onlyMobile">
-						<ul class="mListMulti momt16">
-							<li>
-								<div class="groupBox">
-									<div class="checkboxBox">
-										<input type="checkbox" id="m_chechbox1" name="m_checkbox" title="첫번째 연계 급여청구 선택">
-										<label for="m_chechbox1">국민연금</label>
-									</div>
-								</div>
-								<div class="roundBoxGray sp mt">
-									<span>가입·재직(복무) 기간</span>
-									<div class="flexLeft momt12">
-										<b class="listDate">YYYY-MM-DD ~ YYYY-MM-DD</b>
-									</div>
-								</div>
-								
-								<ul class="msList">
-									<li>
-										<span>연계기간</span>
-										<b>5년 1개월</b>
-									</li>
-									<li>
-										<span>연계급여청구</span>
-										<b><span class="colorBlue">가능</span></b>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-					<!-- //Mobile -->
 
 					<div class="btnsGroup flexEnd toolTipBox">
 						<div class="etcTip">

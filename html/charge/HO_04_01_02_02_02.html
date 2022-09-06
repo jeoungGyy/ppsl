@@ -33,8 +33,7 @@
 								<span class="iconRound bgBlue"><i></i></span>
 								<span class="text">청구인정보 확인</span>
 							</li>
-							<li class="active">
-								<span class="invisible">현재 단계</span>
+							<li class="active" role="text" aria-current="step">
 								<span class="iconRound"><i></i></span>
 								<span class="text">지급계좌 확인</span>
 							</li>
@@ -83,7 +82,7 @@
 										<li>입출금이 가능한 본인 명의의 계좌만 등록 가능합니다.</li>
 										<li>
 											국민연금 안심통장은 금융기관에 방문해 안심통장을  개설 후 이용 하실 수 있습니다.
-											<a href="https://www.npsonair.kr/advantages/1818?fbclid=IwAR0soU7_MsN4Uj1uEgch-hulLddWjr_7TRRn_CkFmhEN3mQMlbH_5Hty0Mw" class="bLink" target="_blank"><span class="bLine">안심통장  자세히 보기</span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a>
+											<a href="https://www.npsonair.kr/advantages/1818?fbclid=IwAR0soU7_MsN4Uj1uEgch-hulLddWjr_7TRRn_CkFmhEN3mQMlbH_5Hty0Mw" class="bLink" target="_blank" role="button"><span class="bLine">안심통장  자세히 보기</span><img src="../../images/common/ico_link.svg" alt="새창 이동"></a>
 											<ul>
 												<li>- 국민연금법 제 58조 제2항 의거  수급권자에게 지급된 급여로 법원의 압류명령 및 체납 처분을 보호 받을 수 있는 계좌이며 최대 185만원 까지만 보호됩니다.</li>
 												<li>- 노령연금이 185만원 이상 수급 하시는 경우 일반계좌도 등록해 주시기 바랍니다.</li>
@@ -93,163 +92,87 @@
 									</ul>
 								</div>
 
-								<!-- PC -->
-								<div class="onlyPC">
-									<div class="hTableBody pcmt24">
-										<table>
-											<caption>연계노령연금 지급계좌 : 지급 받을 계좌로 구성</caption>
-											<colgroup>
-												<col style="width: 170px;">
-												<col>
-											</colgroup>
-											<tbody>
-												<tr>
-													<th scope="row">지급 받을 계좌 <span class="colorOrange">*</span></th>
-													<td>
-														<ul class="groupBox flexLeft">
-															<li>
-																<div class="radioBox">
-																	<input type="checkbox" id="testCheckbox1" name="testCheckbox">
-																	<label for="testCheckbox1">일반계좌</label>
-																</div>
-															</li>
-															<li>
-																<div class="radioBox">
-																	<input type="checkbox" id="testCheckbox2" name="testCheckbox">
-																	<label for="testCheckbox2">국민연금 안심통장</label>
-																</div>
-															</li>
-														</ul>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
+								<div class="hTableBody mt24">
+									<table>
+										<caption>연계노령연금 지급계좌 : 지급 받을 계좌로 구성</caption>
+										<colgroup>
+											<col style="width: 170px;">
+											<col>
+										</colgroup>
+										<tbody>
+											<tr>
+												<th scope="row">지급 받을 계좌 <span class="colorOrange">*</span></th>
+												<td>
+													<ul class="groupBox flexLeft">
+														<li>
+															<div class="radioBox">
+																<input type="checkbox" id="testCheckbox1" name="testCheckbox">
+																<label for="testCheckbox1">일반계좌</label>
+															</div>
+														</li>
+														<li>
+															<div class="radioBox">
+																<input type="checkbox" id="testCheckbox2" name="testCheckbox">
+																<label for="testCheckbox2">국민연금 안심통장</label>
+															</div>
+														</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
-								<!-- //PC -->
-
-								<!-- Mobile -->
-								<div class="onlyMobile">
-									<ul class="m_hTableBody momt24">
-										<li>
-											<label>지급 받을 계좌 <span class="colorOrange">*</span></label>
-											<div class="roundBoxGray">
-												<ul class="groupBox flexLeft">
-													<li>
-														<div class="radioBox">
-															<input type="checkbox" id="m_testCheckbox1" name="m_testCheckbox">
-															<label for="m_testCheckbox1">일반계좌</label>
-														</div>
-													</li>
-													<li>
-														<div class="radioBox">
-															<input type="checkbox" id="m_testCheckbox2" name="m_testCheckbox">
-															<label for="m_testCheckbox2">국민연금 안심통장</label>
-														</div>
-													</li>
-												</ul>
-											</div>
-										</li>
-									</ul>
-								</div>
-								<!-- //Mobile -->
 
 								<div class="requireText">
 									<i></i>
 									<span>중복선택 가능합니다. (한 개 이상 선택)</span>
 								</div>
 
-								<!-- PC -->
-								<div class="onlyPC">
-									<div class="hTableBody pcmt24">
-										<table>
-											<caption>연계노령연금 일반계좌 정보 : 계좌구분, 금융기관, 예금주, 계좌번호로 구성</caption>
-											<colgroup>
-												<col style="width: 170px;">
-												<col>
-											</colgroup>
-											<tbody>
-												<tr>
-													<th scope="row">계좌구분</th>
-													<td>일반계좌</td>
-												</tr>
-												<tr>
-													<th scope="row">금융기관 <span class="colorOrange">*</span></th>
-													<td>
-														<div class="mw200">
-															<select title="금융기관 선택">
-																<option>금융기관</option>
-															</select>
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<th scope="row">예금주 <span class="colorOrange">*</span></th>
-													<td>
-														<div class="mw200">
-															<input type="text" title="예금주 입력" placeholder="예금주" required>
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<th scope="row">계좌번호 <span class="colorOrange">*</span></th>
-													<td>
-														<div class="mw404">
-															<input type="text" title="계좌번호 입력" placeholder="계좌번호" required>
-														</div>
-														<div class="requireText">
-															<i></i>
-															<span>“-” 필수입력 <span style="margin-left:10px;">예)123-456-789-01</span></span>
-														</div>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-								<!-- //PC -->
-
-								<!-- Mobile -->
-								<div class="onlyMobile">
-									<ul class="mListMulti momt24">
-										<li>
-											<div class="roundBoxGraySmall">
-												<div class="flexLeft spaceBetween">
-													<span class="fontSize14">계좌구분</span>
-													<b class="fontSize14">일반계좌</b>
-												</div>
-											</div>
-
-											<ul class="msList momt16">
-												<li class="block">
-													<b>금융기관 <span class="colorOrange">*</span></b>
-													<div class="mt">
+								<div class="hTableBody mt24">
+									<table>
+										<caption>연계노령연금 일반계좌 정보 : 계좌구분, 금융기관, 예금주, 계좌번호로 구성</caption>
+										<colgroup>
+											<col style="width: 170px;">
+											<col>
+										</colgroup>
+										<tbody>
+											<tr>
+												<th scope="row">계좌구분</th>
+												<td><b>일반계좌</b></td>
+											</tr>
+											<tr>
+												<th scope="row">금융기관 <span class="colorOrange">*</span></th>
+												<td>
+													<div class="mw200">
 														<select title="금융기관 선택">
 															<option>금융기관</option>
 														</select>
 													</div>
-												</li>
-												<li class="block">
-													<b>예금주 <span class="colorOrange">*</span></b>
-													<div class="mt">
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">예금주 <span class="colorOrange">*</span></th>
+												<td>
+													<div class="mw200">
 														<input type="text" title="예금주 입력" placeholder="예금주" required>
 													</div>
-												</li>
-												<li class="block">
-													<b>계좌번호 <span class="colorOrange">*</span></b>
-													<div class="mt">
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">계좌번호 <span class="colorOrange">*</span></th>
+												<td>
+													<div class="mw404">
 														<input type="text" title="계좌번호 입력" placeholder="계좌번호" required>
-														<div class="requireText">
-															<i></i>
-															<span>“-” 필수입력 <span style="margin-left:10px;">예)123-456-789-01</span></span>
-														</div>
 													</div>
-												</li>
-											</ul>
-										</li>
-									</ul>
+													<div class="requireText">
+														<i></i>
+														<span>“-” 필수입력 <span style="margin-left:10px;">예)123-456-789-01</span></span>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
-								<!-- //Mobile -->
 
 								<div class="requireText error">
 									<i></i>
@@ -263,97 +186,51 @@
 									<button type="button" class="button h40 blue" disabled>계좌정보 확인</button><!-- 정보입력  완료전 버튼 비활성화 -->
 								</div>
 
-								<!-- PC -->
-								<div class="onlyPC">
-									<div class="hTableBody pcmt24">
-										<table>
-											<caption>연계노령연금 국민연금 안심통장 지급계좌 정보 : 계좌구분, 금융기관, 예금주, 계좌번호로 구성</caption>
-											<colgroup>
-												<col style="width: 170px;">
-												<col>
-											</colgroup>
-											<tbody>
-												<tr>
-													<th scope="row">계좌구분</th>
-													<td>국민연금 안심통장</td>
-												</tr>
-												<tr>
-													<th scope="row">금융기관 <span class="colorOrange">*</span></th>
-													<td>
-														<div class="mw200">
-															<select title="금융기관 선택">
-																<option>금융기관</option>
-															</select>
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<th scope="row">예금주 <span class="colorOrange">*</span></th>
-													<td>
-														<div class="mw200">
-															<input type="text" title="예금주 입력" placeholder="예금주" required>
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<th scope="row">계좌번호 <span class="colorOrange">*</span></th>
-													<td>
-														<div class="mw404">
-															<input type="text" title="계좌번호 입력" placeholder="계좌번호" required>
-														</div>
-														<div class="requireText">
-															<i></i>
-															<span>“-” 필수입력 <span style="margin-left:10px;">예)123-456-789-01</span></span>
-														</div>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-								<!-- //PC -->
-
-								<!-- Mobile -->
-								<div class="onlyMobile">
-									<ul class="mListMulti momt24">
-										<li>
-											<div class="roundBoxGraySmall">
-												<div class="flexLeft spaceBetween">
-													<span class="fontSize14">계좌구분</span>
-													<b class="fontSize14">국민연금 안심통장</b>
-												</div>
-											</div>
-
-											<ul class="msList momt16">
-												<li class="block">
-													<b>금융기관 <span class="colorOrange">*</span></b>
-													<div class="mt">
+								<div class="hTableBody mt24">
+									<table>
+										<caption>연계노령연금 국민연금 안심통장 지급계좌 정보 : 계좌구분, 금융기관, 예금주, 계좌번호로 구성</caption>
+										<colgroup>
+											<col style="width: 170px;">
+											<col>
+										</colgroup>
+										<tbody>
+											<tr>
+												<th scope="row">계좌구분</th>
+												<td><b>국민연금 안심통장</b></td>
+											</tr>
+											<tr>
+												<th scope="row">금융기관 <span class="colorOrange">*</span></th>
+												<td>
+													<div class="mw200">
 														<select title="금융기관 선택">
 															<option>금융기관</option>
 														</select>
 													</div>
-												</li>
-												<li class="block">
-													<b>예금주 <span class="colorOrange">*</span></b>
-													<div class="mt">
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">예금주 <span class="colorOrange">*</span></th>
+												<td>
+													<div class="mw200">
 														<input type="text" title="예금주 입력" placeholder="예금주" required>
 													</div>
-												</li>
-												<li class="block">
-													<b>계좌번호 <span class="colorOrange">*</span></b>
-													<div class="mt">
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">계좌번호 <span class="colorOrange">*</span></th>
+												<td>
+													<div class="mw404">
 														<input type="text" title="계좌번호 입력" placeholder="계좌번호" required>
-														<div class="requireText">
-															<i></i>
-															<span>“-” 필수입력 <span style="margin-left:10px;">예)123-456-789-01</span></span>
-														</div>
 													</div>
-												</li>
-											</ul>
-										</li>
-									</ul>
+													<div class="requireText">
+														<i></i>
+														<span>“-” 필수입력 <span style="margin-left:10px;">예)123-456-789-01</span></span>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
-								<!-- //Mobile -->
 
 								<div class="requireText error">
 									<i></i>
@@ -390,97 +267,51 @@
 								</div>
 								
 								<h5 class="defaultH5 pcmt24 momt32">공무원 연금</h5>
-								<!-- PC -->
-								<div class="onlyPC">
-									<div class="hTableBody">
-										<table>
-											<caption>연계퇴직연금 공무원 연금 지급계좌 : 계좌구분, 금융기관, 예금주, 계좌번호로 구성</caption>
-											<colgroup>
-												<col style="width: 170px;">
-												<col>
-											</colgroup>
-											<tbody>
-												<tr>
-													<th scope="row">계좌구분</th>
-													<td>일반계좌</td>
-												</tr>
-												<tr>
-													<th scope="row">금융기관 <span class="colorOrange">*</span></th>
-													<td>
-														<div class="mw200">
-															<select title="금융기관 선택">
-																<option>금융기관</option>
-															</select>
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<th scope="row">예금주 <span class="colorOrange">*</span></th>
-													<td>
-														<div class="mw200">
-															<input type="text" title="예금주 입력" placeholder="예금주" required>
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<th scope="row">계좌번호 <span class="colorOrange">*</span></th>
-													<td>
-														<div class="mw404">
-															<input type="text" title="계좌번호 입력" placeholder="계좌번호" required>
-														</div>
-														<div class="requireText">
-															<i></i>
-															<span>“-” 필수입력 <span style="margin-left:10px;">예)123-456-789-01</span></span>
-														</div>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-								<!-- //PC -->
-
-								<!-- Mobile -->
-								<div class="onlyMobile">
-									<ul class="mListMulti momt8">
-										<li>
-											<div class="roundBoxGraySmall">
-												<div class="flexLeft spaceBetween">
-													<span class="fontSize14">계좌구분</span>
-													<b class="fontSize14">일반계좌</b>
-												</div>
-											</div>
-
-											<ul class="msList momt16">
-												<li class="block">
-													<b>금융기관 <span class="colorOrange">*</span></b>
-													<div class="mt">
+								<div class="hTableBody">
+									<table>
+										<caption>연계퇴직연금 공무원 연금 지급계좌 : 계좌구분, 금융기관, 예금주, 계좌번호로 구성</caption>
+										<colgroup>
+											<col style="width: 170px;">
+											<col>
+										</colgroup>
+										<tbody>
+											<tr>
+												<th scope="row">계좌구분</th>
+												<td>일반계좌</td>
+											</tr>
+											<tr>
+												<th scope="row">금융기관 <span class="colorOrange">*</span></th>
+												<td>
+													<div class="mw200">
 														<select title="금융기관 선택">
 															<option>금융기관</option>
 														</select>
 													</div>
-												</li>
-												<li class="block">
-													<b>예금주 <span class="colorOrange">*</span></b>
-													<div class="mt">
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">예금주 <span class="colorOrange">*</span></th>
+												<td>
+													<div class="mw200">
 														<input type="text" title="예금주 입력" placeholder="예금주" required>
 													</div>
-												</li>
-												<li class="block">
-													<b>계좌번호 <span class="colorOrange">*</span></b>
-													<div class="mt">
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">계좌번호 <span class="colorOrange">*</span></th>
+												<td>
+													<div class="mw404">
 														<input type="text" title="계좌번호 입력" placeholder="계좌번호" required>
-														<div class="requireText">
-															<i></i>
-															<span>“-” 필수입력 <span style="margin-left:10px;">예)123-456-789-01</span></span>
-														</div>
 													</div>
-												</li>
-											</ul>
-										</li>
-									</ul>
+													<div class="requireText">
+														<i></i>
+														<span>“-” 필수입력 <span style="margin-left:10px;">예)123-456-789-01</span></span>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
-								<!-- //Mobile -->
 
 								<div class="requireText error">
 									<i></i>
@@ -495,97 +326,51 @@
 								</div>
 
 								<h5 class="defaultH5 pcmt24 momt24">사립학교 교직원 연금</h5>
-								<!-- PC -->
-								<div class="onlyPC">
-									<div class="hTableBody">
-										<table>
-											<caption>연계퇴직연금 사립학교 교직원 연금 지급계좌 : 계좌구분, 금융기관, 예금주, 계좌번호로 구성</caption>
-											<colgroup>
-												<col style="width: 170px;">
-												<col>
-											</colgroup>
-											<tbody>
-												<tr>
-													<th scope="row">계좌구분</th>
-													<td>국민연금 안심통장</td>
-												</tr>
-												<tr>
-													<th scope="row">금융기관 <span class="colorOrange">*</span></th>
-													<td>
-														<div class="mw200">
-															<select title="금융기관 선택">
-																<option>금융기관</option>
-															</select>
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<th scope="row">예금주 <span class="colorOrange">*</span></th>
-													<td>
-														<div class="mw200">
-															<input type="text" title="계좌번호 입력" placeholder="예금주" required>
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<th scope="row">계좌번호 <span class="colorOrange">*</span></th>
-													<td>
-														<div class="mw404">
-															<input type="text" title="계좌번호 입력" placeholder="계좌번호" required>
-														</div>
-														<div class="requireText">
-															<i></i>
-															<span>“-” 필수입력 <span style="margin-left:10px;">예)123-456-789-01</span></span>
-														</div>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-								<!-- //PC -->
-
-								<!-- Mobile -->
-								<div class="onlyMobile">
-									<ul class="mListMulti momt8">
-										<li>
-											<div class="roundBoxGraySmall">
-												<div class="flexLeft spaceBetween">
-													<span class="fontSize14">계좌구분</span>
-													<b class="fontSize14">일반계좌</b>
-												</div>
-											</div>
-
-											<ul class="msList momt16">
-												<li class="block">
-													<b>금융기관 <span class="colorOrange">*</span></b>
-													<div class="mt">
+								<div class="hTableBody">
+									<table>
+										<caption>연계퇴직연금 사립학교 교직원 연금 지급계좌 : 계좌구분, 금융기관, 예금주, 계좌번호로 구성</caption>
+										<colgroup>
+											<col style="width: 170px;">
+											<col>
+										</colgroup>
+										<tbody>
+											<tr>
+												<th scope="row">계좌구분</th>
+												<td>국민연금 안심통장</td>
+											</tr>
+											<tr>
+												<th scope="row">금융기관 <span class="colorOrange">*</span></th>
+												<td>
+													<div class="mw200">
 														<select title="금융기관 선택">
 															<option>금융기관</option>
 														</select>
 													</div>
-												</li>
-												<li class="block">
-													<b>예금주 <span class="colorOrange">*</span></b>
-													<div class="mt">
-														<input type="text" title="예금주 입력" placeholder="예금주" required>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">예금주 <span class="colorOrange">*</span></th>
+												<td>
+													<div class="mw200">
+														<input type="text" title="계좌번호 입력" placeholder="예금주" required>
 													</div>
-												</li>
-												<li class="block">
-													<b>계좌번호 <span class="colorOrange">*</span></b>
-													<div class="mt">
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">계좌번호 <span class="colorOrange">*</span></th>
+												<td>
+													<div class="mw404">
 														<input type="text" title="계좌번호 입력" placeholder="계좌번호" required>
-														<div class="requireText">
-															<i></i>
-															<span>“-” 필수입력 <span style="margin-left:10px;">예)123-456-789-01</span></span>
-														</div>
 													</div>
-												</li>
-											</ul>
-										</li>
-									</ul>
+													<div class="requireText">
+														<i></i>
+														<span>“-” 필수입력 <span style="margin-left:10px;">예)123-456-789-01</span></span>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
-								<!-- //Mobile -->
 
 								<div class="requireText error">
 									<i></i>

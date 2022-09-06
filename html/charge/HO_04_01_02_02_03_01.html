@@ -37,10 +37,9 @@
 								<span class="iconRound bgBlue"><i></i></span>
 								<span class="text">지급계좌 확인</span>
 							</li>
-							<li class="active">
-								<span class="invisible">현재 단계</span>
+							<li class="active" role="text" aria-current="step"> <!-- 현재 단계일 경우 class="active", aria-current="step" 추가 -->
 								<span class="iconRound"><i></i></span>
-								<span class="text">연계노령청구 정보</span>
+								<span class="text" >연계노령청구 정보</span>
 							</li>
 							<li>
 								<span class="iconRound"><i></i></span>
@@ -74,152 +73,79 @@
 								</button>
 							</div>
 							<div id="list_target1" class="target">
-								<!-- PC -->
-								<div class="onlyPC">
-									<h5 class="defaultH5 bletSquare">소득</h5>
-									<div class="hTableBody">
-										<table>
-											<caption>소득 : 종사여부, 소득종류, 월평균 소득금액로 구성</caption>
-											<colgroup>
-												<col style="width: 170px;">
-												<col>
-											</colgroup>
-											<tbody>
-												<tr>
-													<th scope="row">종사여부 <span class="colorOrange">*</span></th>
-													<td>
-														<ul class="groupBox flexLeft">
-															<li>
-																<div class="radioBox">
-																	<input type="radio" id="testRadio1_1" name="testRadio1" required>
-																	<label for="testRadio1_1">종사</label>
-																</div>
-															</li>
-															<li>
-																<div class="radioBox">
-																	<input type="radio" id="testRadio1_2" name="testRadio1" required>
-																	<label for="testRadio1_2">비종사</label>
-																</div>
-															</li>
-														</ul>
-													</td>
-												</tr>
-												<tr>
-													<th scope="row">소득종류 <span class="colorOrange">*</span></th>
-													<td>
-														<ul class="groupBox flexLeft">
-															<li>
-																<div class="checkboxBox">
-																	<input type="checkbox" id="testCheckbox1_1" name="testCheckbox1" required>
-																	<label for="testCheckbox1_1">근로소득</label>
-																</div>
-															</li>
-															<li>
-																<div class="checkboxBox">
-																	<input type="checkbox" id="testCheckbox1_2" name="testCheckbox1" required>
-																	<label for="testCheckbox1_2">사업소득</label>
-																</div>
-															</li>
-															<li>
-																<div class="checkboxBox">
-																	<input type="checkbox" id="testCheckbox1_3" name="testCheckbox1" required>
-																	<label for="testCheckbox1_3">부동산임대 소득</label>
-																</div>
-															</li>
-														</ul>
-														<div class="requireText">
-															<i></i>
-															<span>소득 종사일 경우 해당하는 종류를 선택 해 주세요</span>
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<th scope="row">월평균 소득금액 <span class="colorOrange">*</span></th>
-													<td>
-														<div class="default">
-															<input type="tel" title="월평균 소득액 입력" required placeholder="월평균 소득액 입력">
-															<span class="other">원(이백만원)</span>
-														</div>
-														<div class="requireText error">
-															<i></i>
-															<span>월평균 소득금액을 입력해주세요</span>
-														</div>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
+								<h5 class="onlyPC defaultH5 bletSquare">소득</h5>
+								<div class="hTableBody">
+									<table>
+										<caption>소득 : 종사여부, 소득종류, 월평균 소득금액로 구성</caption>
+										<colgroup>
+											<col style="width: 170px;">
+											<col>
+										</colgroup>
+										<tbody>
+											<tr>
+												<th scope="row">종사여부 <span class="colorOrange">*</span></th>
+												<td>
+													<ul class="groupBox flexLeft">
+														<li>
+															<div class="radioBox">
+																<input type="radio" id="testRadio1_1" name="testRadio1" required>
+																<label for="testRadio1_1">종사</label>
+															</div>
+														</li>
+														<li>
+															<div class="radioBox">
+																<input type="radio" id="testRadio1_2" name="testRadio1" required>
+																<label for="testRadio1_2">비종사</label>
+															</div>
+														</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">소득종류 <span class="colorOrange">*</span></th>
+												<td>
+													<ul class="groupBox flexLeft liOverFlow">
+														<li>
+															<div class="checkboxBox">
+																<input type="checkbox" id="testCheckbox1_1" name="testCheckbox1" required>
+																<label for="testCheckbox1_1">근로소득</label>
+															</div>
+														</li>
+														<li>
+															<div class="checkboxBox">
+																<input type="checkbox" id="testCheckbox1_2" name="testCheckbox1" required>
+																<label for="testCheckbox1_2">사업소득</label>
+															</div>
+														</li>
+														<li class="block">
+															<div class="checkboxBox">
+																<input type="checkbox" id="testCheckbox1_3" name="testCheckbox1" required>
+																<label for="testCheckbox1_3">부동산임대 소득</label>
+															</div>
+														</li>
+													</ul>
+													<div class="requireText">
+														<i></i>
+														<span>소득 종사일 경우 해당하는 종류를 선택 해 주세요</span>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">월평균 소득금액 <span class="colorOrange">*</span></th>
+												<td>
+													<div class="default">
+														<input type="tel" title="월평균 소득액 입력" required placeholder="월평균 소득액 입력">
+														<span class="other">원(이백만원)</span>
+													</div>
+													<div class="requireText error">
+														<i></i>
+														<span>월평균 소득금액을 입력해주세요</span>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
-								<!-- //PC -->
-
-								<!-- Mobile -->
-								<div class="onlyMobile">
-									<ul class="m_hTableBody">
-										<li>
-											<label>종사여부 <span class="colorOrange">*</span></label>
-											<div class="roundBoxGray">
-												<ul class="groupBox flexLeft">
-													<li>
-														<div class="radioBox">
-															<input type="radio" id="m_testRadio1_1" name="m_testRadio1" required>
-															<label for="m_testRadio1_1">종사</label>
-														</div>
-													</li>
-													<li>
-														<div class="radioBox">
-															<input type="radio" id="m_testRadio1_2" name="m_testRadio1" required>
-															<label for="m_testRadio1_2">비종사</label>
-														</div>
-													</li>
-												</ul>
-											</div>
-										</li>
-										<li>
-											<label>소득종류 <span class="colorOrange">*</span></label>
-											<div class="roundBoxGray">
-												<ul class="groupBox flexLeft flexWrap">
-													<li>
-														<div class="checkboxBox">
-															<input type="checkbox" id="m_testCheckbox1_1" name="m_testCheckbox1" required>
-															<label for="m_testCheckbox1_1">근로소득</label>
-														</div>
-													</li>
-													<li>
-														<div class="checkboxBox">
-															<input type="checkbox" id="m_testCheckbox1_2" name="m_testCheckbox1" required>
-															<label for="m_testCheckbox1_2">사업소득</label>
-														</div>
-													</li>
-													<li>
-														<div class="checkboxBox">
-															<input type="checkbox" id="m_testCheckbox1_3" name="m_testCheckbox1" required>
-															<label for="m_testCheckbox1_3">부동산임대 소득</label>
-														</div>
-													</li>
-												</ul>
-											</div>
-											<div class="requireText">
-												<i></i>
-												<span>소득 종사일 경우 해당하는 종류를 선택 해 주세요</span>
-											</div>
-										</li>
-										<li>
-											<label>월평균 소득금액 <span class="colorOrange">*</span></label>
-											<div>
-												<div class="flexBtnOne">
-													<input type="tel" title="월평균 소득액 입력" required placeholder="월평균 소득액 입력">
-													<span class="other">원</span>
-												</div>
-												<div class="requireText error">
-													<i></i>
-													<span>월평균 소득금액을 입력해주세요</span>
-												</div>
-												<div class="momt8">(이백만원)</div>
-											</div>
-										</li>
-									</ul>
-								</div>
-								<!-- //Mobile -->
 
 								<ul class="guideText mt">
 									<li>"소득"란에는 "[ ]종사, [ ]비종사" 중에서 해당 사항의 [ ] 안에 "√"표시를 한 후 소득이 있는 업무에 종사하는 경우 월평균소득금액과 소득 종류를 적으십시오.</li>
@@ -234,570 +160,275 @@
 								<button class="flexLeft spaceBetween toggleGroup" aria-expanded="false" aria-controls="list_target2">
 									<b class="defaultH5">부양가족 연금 지급대상자</b>
 									<span>
-										<span class="fontSize14 colorRed">미입력</span>
+										<span class="fontSize14 colorBlue">입력완료</span>
 										<span class="toggleBtn"><i></i></span>
 									</span>
 								</button>
 							</div>
 							<div id="list_target2" class="target targetHidden">
-								<!-- PC -->
-								<div class="onlyPC">
-									<h5 class="defaultH5 bletSquare">부양가족 연금 지급대상자</h5>
-									
-									<div class="hTableBody">
-										<table>
-											<caption>부양가족 연금 지급대상자 : 부양가족 연금 지급대상자로 구성</caption>
-											<colgroup>
-												<col style="width: 220px;">
-												<col>
-											</colgroup>
-											<tbody>
-												<tr>
-													<th scope="row">부양가족 연금 지급대상자 <span class="colorOrange">*</span></th>
-													<td>
-														<ul class="groupBox flexLeft">
-															<li>
-																<div class="radioBox">
-																	<input type="radio" id="testRadio20_1" name="testRadio20" required checked>
-																	<label for="testRadio20_1">있음</label>
-																</div>
-															</li>
-															<li>
-																<div class="radioBox">
-																	<input type="radio" id="testRadio20_2" name="testRadio20" required>
-																	<label for="testRadio20_2">있음</label>
-																</div>
-															</li>
-														</ul>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-									
-									<div class="tableBody padding12 vaTop">
-										<table>
-											<caption>부양가족 연금 지급대상자 : 선택, 이름, 주민번호, 관계, 장애여부, 확인으로 구성</caption>
-											<colgroup>
-												<col style="width: 64px;">
-												<col style="width: 156px;">
-												<col>
-												<col style="width: 154px;">
-												<col style="width: 200px;">
-												<col style="width: 90px;">
-											</colgroup>
-											<thead>
-												<tr>
-													<th scope="col">선택</th>
-													<th scope="col">이름 <span class="colorOrange">*</span></th>
-													<th scope="col">주민번호 <span class="colorOrange">*</span></th>
-													<th scope="col">관계 <span class="colorOrange">*</span></th>
-													<th scope="col">장애여부 <span class="colorOrange">*</span></th>
-													<th scope="col">확인</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>
-														<div class="groupBox single">
-															<input type="checkbox" name="wCheckbox" title="첫번째 부양가족 연금 지급대상자 선택">
-														</div>
-													</td>
-													<td><input type="text" title="첫번째 부양가족 이름 입력" required placeholder="실명입력"></td>
-													<td><input type="tel" title="첫번째 부양가족 주민번호 입력" required placeholder="13자리 주민번호 입력"></td>
-													<td>
-														<select title="첫번째 부양가족 관계선택">
-															<option disabled selected>관계선택</option>
-															<option>남편</option>
-															<option>남편(사실혼)</option>
-															<option>처</option>
-															<option>처(사실혼)</option>
-															<option>자녀의 부</option>
-															<option>자녀의 부(양부)</option>
-															<option>자녀의 모</option>
-															<option>자녀의 모(양모)</option>
-														</select>
-													</td>
-													<td>
-														<ul class="groupBox flexLeft justifyContent">
-															<li>
-																<div class="radioBox">
-																	<input type="radio" id="testRadio11_1" name="testRadio11" required title="첫번째 부양가족 장애 선택">
-																	<label for="testRadio11_1">장애</label>
-																</div>
-															</li>
-															<li>
-																<div class="radioBox">
-																	<input type="radio" id="testRadio11_2" name="testRadio11" required title="첫번째 부양가족 비장애 선택">
-																	<label for="testRadio11_2">비장애</label>
-																</div>
-															</li>
-														</ul>
-													</td>
-													<td><button type="button" class="button h32 lineBlack" disabled>확인</button></td>
-												</tr>
-												<tr>
-													<td>
-														<div class="groupBox single">
-															<input type="checkbox" name="wCheckbox" title="두번째 부양가족 연금 지급대상자 선택">
-														</div>
-													</td>
-													<td>
-														<input type="text" title="두번째 부양가족 이름 입력" required placeholder="실명입력">
-														<div class="requireText error">
-															<i></i>
-															<span>실명을 입력하세요</span>
-														</div>
-													</td>
-													<td>
-														<input type="tel" title="두번째 부양가족 주민번호 입력" required placeholder="13자리 주민번호 입력">
-														<div class="requireText error">
-															<i></i>
-															<span>13자리 주민번호를 입력하세요</span>
-														</div>
-													</td>
-													<td>
-														<select title="두번째 부양가족 관계선택">
-															<option disabled selected>관계선택</option>
-															<option>남편</option>
-															<option>남편(사실혼)</option>
-															<option>처</option>
-															<option>처(사실혼)</option>
-															<option>자녀의 부</option>
-															<option>자녀의 부(양부)</option>
-															<option>자녀의 모</option>
-															<option>자녀의 모(양모)</option>
-														</select>
-													</td>
-													<td>
-														<ul class="groupBox flexLeft justifyContent">
-															<li>
-																<div class="radioBox">
-																	<input type="radio" id="testRadio12_1" name="testRadio12" required title="두번째 부양가족 장애 선택">
-																	<label for="testRadio12_1">장애</label>
-																</div>
-															</li>
-															<li>
-																<div class="radioBox">
-																	<input type="radio" id="testRadio12_2" name="testRadio12" required title="두번째 부양가족 비장애 선택">
-																	<label for="testRadio12_2">비장애</label>
-																</div>
-															</li>
-														</ul>
-													</td>
-													<td><button type="button" class="button h32 lineBlack" disabled>확인</button></td>
-												</tr>
-												<tr>
-													<td>
-														<div class="groupBox single">
-															<input type="checkbox" name="wCheckbox" title="세번째 부양가족 연금 지급대상자 선택">
-														</div>
-													</td>
-													<td>
-														<input type="text" title="세번째 부양가족 이름 입력" required placeholder="실명입력">
-														<div class="requireText success">
-															<i></i>
-															<span>확인되었습니다</span>
-														</div>
-													</td>
-													<td>
-														<input type="tel" title="세번째 부양가족 주민번호 입력" required placeholder="13자리 주민번호 입력">
-														<div class="requireText success">
-															<i></i>
-															<span>확인되었습니다</span>
-														</div>
-													</td>
-													<td>
-														<select title="세번째 부양가족 관계선택">
-															<option disabled selected>관계선택</option>
-															<option>남편</option>
-															<option>남편(사실혼)</option>
-															<option>처</option>
-															<option>처(사실혼)</option>
-															<option>자녀의 부</option>
-															<option>자녀의 부(양부)</option>
-															<option>자녀의 모</option>
-															<option>자녀의 모(양모)</option>
-														</select>
-													</td>
-													<td>
-														<ul class="groupBox flexLeft justifyContent">
-															<li>
-																<div class="radioBox">
-																	<input type="radio" id="testRadio13_1" name="testRadio13" required title="세번째 부양가족 장애 선택">
-																	<label for="testRadio13_1">장애</label>
-																</div>
-															</li>
-															<li>
-																<div class="radioBox">
-																	<input type="radio" id="testRadio13_2" name="testRadio13" required title="세번째 부양가족 비장애 선택">
-																	<label for="testRadio13_2">비장애</label>
-																</div>
-															</li>
-														</ul>
-													</td>
-													<td><button type="button" class="button h32 lineBlack">확인</button></td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
+								<h5 class="onlyPC defaultH5 bletSquare">부양가족 연금 지급대상자</h5>
+								
+								<div class="hTableBody">
+									<table>
+										<caption>부양가족 연금 지급대상자 : 부양가족 연금 지급대상자로 구성</caption>
+										<colgroup>
+											<col style="width: 220px;">
+											<col>
+										</colgroup>
+										<tbody>
+											<tr>
+												<th scope="row">부양가족 연금 지급대상자 <span class="colorOrange">*</span></th>
+												<td>
+													<ul class="groupBox flexLeft">
+														<li>
+															<div class="radioBox">
+																<input type="radio" id="testRadio20_1" name="testRadio20" required checked>
+																<label for="testRadio20_1">있음</label>
+															</div>
+														</li>
+														<li>
+															<div class="radioBox">
+																<input type="radio" id="testRadio20_2" name="testRadio20" required>
+																<label for="testRadio20_2">있음</label>
+															</div>
+														</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
-								<!-- //PC -->
-
-								<!-- Mobile -->
-								<div class="onlyMobile">
-									<ul class="m_hTableBody">
-										<li>
-											<label>부양가족 연금 지급대상자 <span class="colorOrange">*</span></label>
-											<div class="roundBoxGray">
-												<ul class="groupBox flexLeft">
-													<li>
-														<div class="radioBox">
-															<input type="radio" id="m_testRadio20_1" name="m_testRadio20" required checked>
-															<label for="m_testRadio20_1">있음</label>
-														</div>
-													</li>
-													<li>
-														<div class="radioBox">
-															<input type="radio" id="m_testRadio20_2" name="m_testRadio20" required>
-															<label for="m_testRadio20_2">없음</label>
-														</div>
-													</li>
-												</ul>
-											</div>
-										</li>
-									</ul>
-
-									<ul class="m_xBtnBody momt16">
-										<li>
-											<div class="groupBox listRemove">
-												<input type="checkbox" name="m_wCheckbox" title="첫번째 부양가족 연금 지급대상자 선택">
-											</div>
-											<ul class="m_hTableBody">
-												<li>
-													<label>이름 <span class="colorOrange">*</span></label>
-													<div>
-														<input type="text" title="첫번째 부양가족 이름 입력" required placeholder="실명입력">
+									
+								<div class="tableBody padding12 vaTop">
+									<table>
+										<caption>부양가족 연금 지급대상자 : 선택, 이름, 주민번호, 관계, 장애여부, 확인으로 구성</caption>
+										<colgroup>
+											<col style="width: 64px;">
+											<col style="width: 156px;">
+											<col>
+											<col style="width: 154px;">
+											<col style="width: 200px;">
+											<col style="width: 90px;">
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">선택</th>
+												<th scope="col">이름 <span class="colorOrange">*</span></th>
+												<th scope="col">주민번호 <span class="colorOrange">*</span></th>
+												<th scope="col">관계 <span class="colorOrange">*</span></th>
+												<th scope="col">장애여부 <span class="colorOrange">*</span></th>
+												<th scope="col">확인</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													<div class="groupBox single">
+														<input type="checkbox" name="wCheckbox" title="첫번째 부양가족 연금 지급대상자 선택">
 													</div>
-												</li>
-												<li>
-													<label>주민번호 <span class="colorOrange">*</span></label>
-													<div>
-														<input type="tel" title="첫번째 부양가족 주민번호 입력" required placeholder="13자리 주민번호 입력">
-													</div>
-												</li>
-												<li>
-													<label>관계 <span class="colorOrange">*</span></label>
-													<div>
-														<select title="첫번째 부양가족 관계선택">
-															<option disabled selected>관계선택</option>
-															<option>남편</option>
-															<option>남편(사실혼)</option>
-															<option>처</option>
-															<option>처(사실혼)</option>
-															<option>자녀의 부</option>
-															<option>자녀의 부(양부)</option>
-															<option>자녀의 모</option>
-															<option>자녀의 모(양모)</option>
-														</select>
-													</div>
-												</li>
-												<li>
-													<label>장애여부 <span class="colorOrange">*</span></label>
-													<ul class="groupBox flexLeft">
+												</td>
+												<td><input type="text" title="첫번째 부양가족 이름 입력" required placeholder="실명입력"></td>
+												<td><input type="tel" title="첫번째 부양가족 주민번호 입력" required placeholder="13자리 주민번호 입력"></td>
+												<td>
+													<select title="첫번째 부양가족 관계선택">
+														<option disabled selected>관계선택</option>
+														<option>남편</option>
+														<option>남편(사실혼)</option>
+														<option>처</option>
+														<option>처(사실혼)</option>
+														<option>자녀의 부</option>
+														<option>자녀의 부(양부)</option>
+														<option>자녀의 모</option>
+														<option>자녀의 모(양모)</option>
+													</select>
+												</td>
+												<td>
+													<ul class="groupBox flexLeft justifyContent">
 														<li>
 															<div class="radioBox">
-																<input type="radio" id="m_testRadio11_1" name="m_testRadio11" required title="첫번째 부양가족 장애 선택">
-																<label for="m_testRadio11_1">장애</label>
+																<input type="radio" id="testRadio11_1" name="testRadio11" required title="첫번째 부양가족 장애 선택">
+																<label for="testRadio11_1">장애</label>
 															</div>
 														</li>
 														<li>
 															<div class="radioBox">
-																<input type="radio" id="m_testRadio11_2" name="m_testRadio11" required title="첫번째 부양가족 비장애 선택">
-																<label for="m_testRadio11_2">비장애</label>
+																<input type="radio" id="testRadio11_2" name="testRadio11" required title="첫번째 부양가족 비장애 선택">
+																<label for="testRadio11_2">비장애</label>
 															</div>
 														</li>
 													</ul>
-												</li>
-											</ul>
-											<div class="bottomStyle">
-												<button type="button" class="button h32 lineBlack" disabled>확인</button>
-											</div>
-										</li>
-										<li>
-											<div class="groupBox listRemove">
-												<input type="checkbox" name="m_wCheckbox" title="두번째 부양가족 연금 지급대상자 선택">
-											</div>
-											<ul class="m_hTableBody">
-												<li>
-													<label>이름 <span class="colorOrange">*</span></label>
-													<div>
-														<div>
-															<input type="text" title="두번째 부양가족 이름 입력" required placeholder="실명입력">
-														</div>
-														<div class="requireText error">
-															<i></i>
-															<span>실명을 입력하세요</span>
-														</div>
+												</td>
+												<td><button type="button" class="button h32 lineBlack" disabled>확인</button></td>
+											</tr>
+											<tr>
+												<td>
+													<div class="groupBox single">
+														<input type="checkbox" name="wCheckbox" title="두번째 부양가족 연금 지급대상자 선택">
 													</div>
-												</li>
-												<li>
-													<label>주민번호 <span class="colorOrange">*</span></label>
-													<div>
-														<div>
-															<input type="tel" title="두번째 부양가족 주민번호 입력" required placeholder="13자리 주민번호 입력">
-														</div>
-														<div class="requireText error">
-															<i></i>
-															<span>13자리 주민번호를 입력하세요</span>
-														</div>
-													</div>
-												</li>
-												<li>
-													<label>관계 <span class="colorOrange">*</span></label>
-													<div>
-														<select title="두번째 부양가족 관계선택">
-															<option disabled selected>관계선택</option>
-															<option>남편</option>
-															<option>남편(사실혼)</option>
-															<option>처</option>
-															<option>처(사실혼)</option>
-															<option>자녀의 부</option>
-															<option>자녀의 부(양부)</option>
-															<option>자녀의 모</option>
-															<option>자녀의 모(양모)</option>
-														</select>
-													</div>
-												</li>
-												<li>
-													<label>장애여부 <span class="colorOrange">*</span></label>
-													<ul class="groupBox flexLeft">
-														<li>
-															<div class="radioBox">
-																<input type="radio" id="m_testRadio12_1" name="m_testRadio12" required title="두번째 부양가족 장애 선택">
-																<label for="m_testRadio12_1">장애</label>
-															</div>
-														</li>
-														<li>
-															<div class="radioBox">
-																<input type="radio" id="m_testRadio12_2" name="m_testRadio12" required title="두번째 부양가족 비장애 선택">
-																<label for="m_testRadio12_2">비장애</label>
-															</div>
-														</li>
-													</ul>
-												</li>
-											</ul>
-											<div class="bottomStyle">
-												<button type="button" class="button h32 lineBlack">확인</button>
-											</div>
-										</li>
-										<li>
-											<div class="groupBox listRemove">
-												<input type="checkbox" name="m_wCheckbox" title="세번째 부양가족 연금 지급대상자 선택">
-											</div>
-											<ul class="m_hTableBody">
-												<li>
-													<label>이름 <span class="colorOrange">*</span></label>
-													<div>
-														<div>
-															<input type="text" title="세번째 부양가족 이름 입력" required placeholder="실명입력">
-														</div>
-														<div class="requireText success">
-															<i></i>
-															<span>확인되었습니다</span>
-														</div>
-													</div>
-												</li>
-												<li>
-													<label>주민번호 <span class="colorOrange">*</span></label>
-													<div>
-														<div>
-															<input type="tel" title="세번째 부양가족 주민번호 입력" required placeholder="13자리 주민번호 입력">
-														</div>
-														<div class="requireText success">
-															<i></i>
-															<span>확인되었습니다</span>
-														</div>
-													</div>
-												</li>
-												<li>
-													<label>관계 <span class="colorOrange">*</span></label>
-													<div>
-														<select title="세번째 부양가족 관계선택">
-															<option disabled selected>관계선택</option>
-															<option>남편</option>
-															<option>남편(사실혼)</option>
-															<option>처</option>
-															<option>처(사실혼)</option>
-															<option>자녀의 부</option>
-															<option>자녀의 부(양부)</option>
-															<option>자녀의 모</option>
-															<option>자녀의 모(양모)</option>
-														</select>
-													</div>
-												</li>
-												<li>
-													<label>장애여부 <span class="colorOrange">*</span></label>
-													<ul class="groupBox flexLeft">
-														<li>
-															<div class="radioBox">
-																<input type="radio" id="m_testRadio13_1" name="m_testRadio13" required title="세번째 부양가족 장애 선택">
-																<label for="m_testRadio13_1">장애</label>
-															</div>
-														</li>
-														<li>
-															<div class="radioBox">
-																<input type="radio" id="m_testRadio13_2" name="m_testRadio13" required title="세번째 부양가족 비장애 선택">
-																<label for="m_testRadio13_2">비장애</label>
-															</div>
-														</li>
-													</ul>
-												</li>
-											</ul>
-											<div class="bottomStyle">
-												<button type="button" class="button h32 lineBlack">확인</button>
-											</div>
-										</li>
-									</ul>
-
-									<ul class="mListMulti momt8">
-										<li>
-											<ul class="msList mt0">
-												<li class="block">
-													<b>혼인신고증명서 <span class="colorOrange">*</span></b>
-													<div class="flexBtnOne mt">
-														<input type="text" title="혼인관계증명서 등록" placeholder="등록해 주세요.">
-														<button type="button" class="button h40 lineBlack">찾기</button>
-													</div>
-													<div class="requireText">
+												</td>
+												<td>
+													<input type="text" title="두번째 부양가족 이름 입력" required placeholder="실명입력">
+													<div class="requireText error">
 														<i></i>
-														<span>지금 등록 준비 되지 않으셨다면,  관할 지사로 우편이나 팩스로 전송하시기 바랍니다.</span>
+														<span>실명을 입력하세요</span>
 													</div>
-												</li>
-											</ul>
-										</li>
-									</ul>
+												</td>
+												<td>
+													<input type="tel" title="두번째 부양가족 주민번호 입력" required placeholder="13자리 주민번호 입력">
+													<div class="requireText error">
+														<i></i>
+														<span>13자리 주민번호를 입력하세요</span>
+													</div>
+												</td>
+												<td>
+													<select title="두번째 부양가족 관계선택">
+														<option disabled selected>관계선택</option>
+														<option>남편</option>
+														<option>남편(사실혼)</option>
+														<option>처</option>
+														<option>처(사실혼)</option>
+														<option>자녀의 부</option>
+														<option>자녀의 부(양부)</option>
+														<option>자녀의 모</option>
+														<option>자녀의 모(양모)</option>
+													</select>
+												</td>
+												<td>
+													<ul class="groupBox flexLeft justifyContent">
+														<li>
+															<div class="radioBox">
+																<input type="radio" id="testRadio12_1" name="testRadio12" required title="두번째 부양가족 장애 선택">
+																<label for="testRadio12_1">장애</label>
+															</div>
+														</li>
+														<li>
+															<div class="radioBox">
+																<input type="radio" id="testRadio12_2" name="testRadio12" required title="두번째 부양가족 비장애 선택">
+																<label for="testRadio12_2">비장애</label>
+															</div>
+														</li>
+													</ul>
+												</td>
+												<td><button type="button" class="button h32 lineBlack" disabled>확인</button></td>
+											</tr>
+											<tr>
+												<td>
+													<div class="groupBox single">
+														<input type="checkbox" name="wCheckbox" title="세번째 부양가족 연금 지급대상자 선택">
+													</div>
+												</td>
+												<td>
+													<input type="text" title="세번째 부양가족 이름 입력" required placeholder="실명입력">
+													<div class="requireText success">
+														<i></i>
+														<span>확인되었습니다</span>
+													</div>
+												</td>
+												<td>
+													<input type="tel" title="세번째 부양가족 주민번호 입력" required placeholder="13자리 주민번호 입력">
+													<div class="requireText success">
+														<i></i>
+														<span>확인되었습니다</span>
+													</div>
+												</td>
+												<td>
+													<select title="세번째 부양가족 관계선택">
+														<option disabled selected>관계선택</option>
+														<option>남편</option>
+														<option>남편(사실혼)</option>
+														<option>처</option>
+														<option>처(사실혼)</option>
+														<option>자녀의 부</option>
+														<option>자녀의 부(양부)</option>
+														<option>자녀의 모</option>
+														<option>자녀의 모(양모)</option>
+													</select>
+												</td>
+												<td>
+													<ul class="groupBox flexLeft justifyContent">
+														<li>
+															<div class="radioBox">
+																<input type="radio" id="testRadio13_1" name="testRadio13" required title="세번째 부양가족 장애 선택">
+																<label for="testRadio13_1">장애</label>
+															</div>
+														</li>
+														<li>
+															<div class="radioBox">
+																<input type="radio" id="testRadio13_2" name="testRadio13" required title="세번째 부양가족 비장애 선택">
+																<label for="testRadio13_2">비장애</label>
+															</div>
+														</li>
+													</ul>
+												</td>
+												<td><button type="button" class="button h32 lineBlack">확인</button></td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
-								<!-- //Mobile -->
 
 								<div class="tableFooterControl flexLeft alignCenter justifyRight momt8">
 									<button type="button" class="button h24 lineBlack">선택삭제</button>
 									<button type="button" class="button h24 lineBlack">행추가</button>
 								</div>
 
-								<!-- PC -->
-								<div class="onlyPC">
-									<div class="hTableBody">
-										<table>
-											<caption>부양가족 연금 지급대상자 증명서 등록 : 혼인신고증명서(상세), 가족관계증명서로 구성</caption>
-											<colgroup>
-												<col style="width: 160px;">
-												<col>
-											</colgroup>
-											<tbody>
-												<tr>
-													<th>혼인신고증명서<br>(상세) <span class="colorOrange">*</span></th>
-													<td>
-														<div class="fileStyle">
-															<input type="text" class="inputText" title="혼인관계증명서 등록" placeholder="등록해 주세요." readonly style="width: 62%;">
-															<input type="file" id="textFile" class="inputFile">
-															<label for="textFile" class="labelBtn">찾기</label>
-														</div>
-														
-														<div class="requireText">
-															<i></i>
-															<span>지금 등록 준비 되지 않으셨다면,  관할 지사로 우편이나 팩스로 전송하시기 바랍니다.</span>
-														</div>
+								<div class="hTableBody">
+									<table>
+										<caption>부양가족 연금 지급대상자 증명서 등록 : 혼인신고증명서(상세), 가족관계증명서로 구성</caption>
+										<colgroup>
+											<col style="width: 160px;">
+											<col>
+										</colgroup>
+										<tbody>
+											<tr>
+												<th class="brBreak">혼인신고증명서<br>(상세) <span class="colorOrange">*</span></th>
+												<td>
+													<div class="fileStyle">
+														<input type="text" class="inputText" title="혼인관계증명서 등록" placeholder="등록해 주세요." readonly style="width: 62%;">
+														<input type="file" id="textFile" class="inputFile" aria-hidden="true">
+														<label for="textFile" class="labelBtn">찾기</label>
+													</div>
+													<div class="requireText">
+														<i></i>
+														<span>지금 등록 준비 되지 않으셨다면,  관할 지사로 우편이나 팩스로 전송하시기 바랍니다.</span>
+													</div>
 
+													<div class="fileStyle">
 														<input type="text" title="혼인관계증명서 등록" placeholder="등록해 주세요." value="첨부파일명" readonly style="width: 62%;">
-														<button type="button" class="button h40 lineBlack">삭제</button>
-														<div class="requireText success">
-															<i></i>
-															<span>등록되었습니다.</span>
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<th>가족관계증명서 <span class="colorOrange">*</span></th>
-													<td>
-														<div class="fileStyle">
-															<input type="text" class="inputText" title="가족관계증명서 등록" placeholder="등록해 주세요." readonly style="width: 62%;">
-															<input type="file" id="textFile2" class="inputFile">
-															<label for="textFile2" class="labelBtn">찾기</label>
-														</div>
-														
-														<div class="requireText">
-															<i></i>
-															<span>지금 등록 준비 되지 않으셨다면,  관할 지사로 우편이나 팩스로 전송하시기 바랍니다.</span>
-														</div>
+														<button type="button" class="labelBtn">삭제</button>
+													</div>
+													<div class="requireText success">
+														<i></i>
+														<span>등록되었습니다.</span>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th>가족관계증명서 <span class="colorOrange">*</span></th>
+												<td>
+													<div class="fileStyle">
+														<input type="text" class="inputText" title="가족관계증명서 등록" placeholder="등록해 주세요." readonly style="width: 62%;">
+														<input type="file" id="textFile2" class="inputFile" aria-hidden="true">
+														<label for="textFile2" class="labelBtn">찾기</label>
+													</div>
+													<div class="requireText">
+														<i></i>
+														<span>지금 등록 준비 되지 않으셨다면,  관할 지사로 우편이나 팩스로 전송하시기 바랍니다.</span>
+													</div>
 
-
+													<div class="fileStyle">
 														<input type="text" title="가족관계증명서 등록" placeholder="등록해 주세요." value="첨부파일명" readonly style="width: 62%;">
-														<button type="button" class="button h40 lineBlack">삭제</button>
-														<div class="requireText success">
-															<i></i>
-															<span>등록되었습니다.</span>
-														</div>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-								<!-- //PC -->
-
-								<!-- Mobile -->
-								<div class="onlyMobile">
-									<ul class="mListMulti momt8">
-										<li>
-											<ul class="msList mt0">
-												<li class="block">
-													<b>혼인신고증명서(상세) <span class="colorOrange">*</span></b>
-													<div class="flexBtnOne mt fileStyle">
-														<input type="text" class="inputText" title="혼인관계증명서 등록" placeholder="등록해 주세요." readonly>
-														<input type="file" id="m_textFile" class="inputFile">
-														<label for="m_textFile" class="labelBtn">찾기</label>
-													</div>
-													<div class="flexBtnOne mt">
-														<input type="text" title="혼인관계증명서 등록" placeholder="등록해 주세요." value="첨부파일명" readonly>
-														<button type="button" class="button h40 lineBlack">삭제</button>
-													</div>
-													<div class="requireText">
-														<i></i>
-														<span>지금 등록 준비 되지 않으셨다면,  관할 지사로 우편이나 팩스로 전송하시기 바랍니다.</span>
+														<button type="button" class="labelBtn">삭제</button>
 													</div>
 													<div class="requireText success">
 														<i></i>
 														<span>등록되었습니다.</span>
 													</div>
-												</li>
-												<li class="block">
-													<b>가족관계증명서 <span class="colorOrange">*</span></b>
-													<div class="flexBtnOne mt fileStyle">
-														<input type="text" class="inputText" title="가족관계증명서 등록" placeholder="등록해 주세요." readonly>
-														<input type="file" id="m_textFile2" class="inputFile">
-														<label for="m_textFile2" class="labelBtn">찾기</label>
-													</div>
-													<div class="flexBtnOne mt">
-														<input type="text" title="가족관계증명서 등록" placeholder="등록해 주세요." value="첨부파일명" readonly>
-														<button type="button" class="button h40 lineBlack">삭제</button>
-													</div>
-													<div class="requireText">
-														<i></i>
-														<span>지금 등록 준비 되지 않으셨다면,  관할 지사로 우편이나 팩스로 전송하시기 바랍니다.</span>
-													</div>
-													<div class="requireText success">
-														<i></i>
-														<span>등록되었습니다.</span>
-													</div>
-												</li>
-											</ul>
-										</li>
-									</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
-								<!-- //Mobile -->
 
-								
 
 								<ul class="guideText mt">
 									<li>"부양가족연금 지급대상자"란에는 연계노령연금 수급권자에 의해 생계를 유지하고 있던 사람 중에서 다음에 해당하는 사람을 적으십시오(국민연금 가입기간이 10년 이상인 경우에만 해당합니다).</li>
@@ -813,18 +444,19 @@
 						</div>
 						<div class="m_toggleArea">
 							<div class="onlyMobile">
-								<button class="flexLeft spaceBetween toggleGroup" aria-expanded="false" aria-controls="list_target2">
+								<button class="flexLeft spaceBetween toggleGroup" aria-expanded="false" aria-controls="list_target3">
 									<b class="defaultH5">출산크레딧 대상자 입력</b>
 									<span>
-										<span class="fontSize14 colorRed">미입력</span>
+										<span class="fontSize14 colorBlue">입력완료</span>
 										<span class="toggleBtn"><i></i></span>
 									</span>
 								</button>
 							</div>
-							<div id="list_target2" class="target targetHidden">
+							<div id="list_target3" class="target targetHidden">
 								<div class="borderRound pcmt8">
 									<b class="fontSize14">출산크레딧이란?</b>
 									<p class="fontSize14 mt8 lh21"><span class="colorBlue">2008년 1월 1일 이후 출생(입양)한 자녀</span>를 포함하여 <span class="colorBlue">2자녀 이상</span> 있을 경우 가입기간을  추가로 인정하는 제도 입니다.</p>
+									
 									<!-- PC -->
 									<div class="onlyPC">
 										<div class="tableBody pcmt16">
@@ -886,326 +518,187 @@
 
 								<h5 class="defaultH5 mt">크레딧 대상자</h5>
 								<div>
-									<!-- PC -->
-									<div class="onlyPC">
-										<div class="hTableBody">
-											<table>
-												<caption>크레딧 대상자 : 크레딧 대상자로 구성</caption>
-												<colgroup>
-													<col style="width: 150px;">
-													<col>
-												</colgroup>
-												<tbody>
-													<tr>
-														<th scope="row">크레딧 대상자 <span class="colorOrange">*</span></th>
-														<td>
-															<ul class="groupBox flexLeft">
-																<li>
-																	<div class="radioBox">
-																		<input type="radio" id="testRadio19_1" name="testRadio19" required checked>
-																		<label for="testRadio19_1">있음</label>
-																	</div>
-																</li>
-																<li>
-																	<div class="radioBox">
-																		<input type="radio" id="testRadio19_2" name="testRadio19" required>
-																		<label for="testRadio19_2">있음</label>
-																	</div>
-																</li>
-															</ul>
-														</td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
-										
-										<div class="tableBody padding12 vaTop">
-											<table>
-												<caption>크레딧 대상자 : 선택, 이름, 주민번호, 관계, 출생(입양)일자, 소멸(파양)일자, 확인으로 구성</caption>
-												<colgroup>
-													<col style="width: 70px;">
-													<col style="width: 110px;">
-													<col>
-													<col style="width: 144px;">
-													<col style="width: 164px;">
-													<col style="width: 164px;">
-													<col style="width: 90px;">
-												</colgroup>
-												<thead>
-													<tr>
-														<th scope="col">선택</th>
-														<th scope="col">이름 <span class="colorOrange">*</span></th>
-														<th scope="col">주민번호 <span class="colorOrange">*</span></th>
-														<th scope="col">관계 <span class="colorOrange">*</span></th>
-														<th scope="col">출생(입양)일자 <span class="colorOrange">*</span></th>
-														<th scope="col">소멸(파양)일자 <button type="button" class="tooltipBtn" title="도움말"><i class="icon"></i></button></th>
-														<th scope="col">확인</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>
-															<div class="groupBox single">
-																<input type="checkbox" name="wCheckbox2" title="첫번째 크레딧 대상자 선택">
-															</div>
-														</td>
-														<td><input type="text" required title="첫번째 크레딧 대상자 이름 입력" placeholder="실명입력"></td>
-														<td><input type="tel" required title="첫번째 크레딧 대상자 주민번호 입력" placeholder="13자리 주민번호"></td>
-														<td>
-															<select title="첫번째 크레딧 대상자 관계 선택">
-																<option disabled selected>관계선택</option>
-																<option>남편</option>
-																<option>남편(사실혼)</option>
-																<option>처</option>
-																<option>처(사실혼)</option>
-																<option>자녀의 부</option>
-																<option>자녀의 부(양부)</option>
-																<option>자녀의 모</option>
-																<option>자녀의 모(양모)</option>
-															</select>
-														</td>
-														<td>
-															<div class="calendarBody" role="application">
-																<input type="text" class="jQdate" title="첫번째 출생(입양)일자 선택" readonly placeholder="날짜선택">
-															</div>
-														</td>
-														<td>
-															<div class="calendarBody" role="application">
-																<input type="text" class="jQdate" title="첫번째 소멸(파양)일자 선택" readonly placeholder="날짜선택">
-															</div>
-														</td>
-														<td><button type="button" class="button h32 lineBlack" disabled>확인</button></td>
-													</tr>
-													<tr>
-														<td>
-															<div class="groupBox single">
-																<input type="checkbox" name="wCheckbox2" title="두번째 크레딧 대상자 선택">
-															</div>
-														</td>
-														<td>
-															<input type="text" required title="두번째 크레딧 대상자 이름 입력" placeholder="실명입력">
-															<div class="requireText error">
-																<i></i>
-																<span>실명을 입력하세요.</span>
-															</div>
-														</td>
-														<td>
-															<input type="tel" required title="두번째 크레딧 대상자 주민번호 입력" placeholder="13자리 주민번호">
-															<div class="requireText error">
-																<i></i>
-																<span>13자리 주민번호를 입력하세요</span>
-															</div>
-														</td>
-														<td>
-															<select title="두번째 크레딧 대상자 관계 선택">
-																<option disabled selected>관계선택</option>
-																<option>남편</option>
-																<option>남편(사실혼)</option>
-																<option>처</option>
-																<option>처(사실혼)</option>
-																<option>자녀의 부</option>
-																<option>자녀의 부(양부)</option>
-																<option>자녀의 모</option>
-																<option>자녀의 모(양모)</option>
-															</select>
-														</td>
-														<td>
-															<div class="calendarBody" role="application">
-																<input type="text" class="jQdate" title="두번째 출생(입양)일자 선택" readonly placeholder="날짜선택">
-															</div>
-														</td>
-														<td>
-															<div class="calendarBody" role="application">
-																<input type="text" class="jQdate" title="두번째 소멸(파양)일자 선택" readonly placeholder="날짜선택">
-															</div>
-														</td>
-														<td><button type="button" class="button h32 lineBlack">확인</button></td>
-													</tr>
-													<tr>
-														<td>
-															<div class="groupBox single">
-																<input type="checkbox" name="wCheckbox2" title="세번째 크레딧 대상자 선택">
-															</div>
-														</td>
-														<td>
-															<input type="text" required title="세번째 크레딧 대상자 이름 입력" placeholder="실명입력">
-															<div class="requireText success">
-																<i></i>
-																<span>확인되었습니다</span>
-															</div>
-														</td>
-														<td>
-															<input type="tel" required title="세번째 크레딧 대상자 주민번호 입력" placeholder="13자리 주민번호">
-															<div class="requireText success">
-																<i></i>
-																<span>확인되었습니다</span>
-															</div>
-														</td>
-														<td>
-															<select title="세번째 크레딧 대상자 관계 선택">
-																<option disabled selected>관계선택</option>
-																<option>남편</option>
-																<option>남편(사실혼)</option>
-																<option>처</option>
-																<option>처(사실혼)</option>
-																<option>자녀의 부</option>
-																<option>자녀의 부(양부)</option>
-																<option>자녀의 모</option>
-																<option>자녀의 모(양모)</option>
-															</select>
-														</td>
-														<td>
-															<div class="calendarBody" role="application">
-																<input type="text" class="jQdate" title="세번째 출생(입양)일자 선택" readonly placeholder="날짜선택">
-															</div>
-														</td>
-														<td>
-															<div class="calendarBody" role="application">
-																<input type="text" class="jQdate" title="세번째 소멸(파양)일자 선택" readonly placeholder="날짜선택">
-															</div>
-														</td>
-														<td><span class="colorBlue lh32">확인됨</span></td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
+									<div class="hTableBody">
+										<table>
+											<caption>크레딧 대상자 : 크레딧 대상자로 구성</caption>
+											<colgroup>
+												<col style="width: 150px;">
+												<col>
+											</colgroup>
+											<tbody>
+												<tr>
+													<th scope="row">크레딧 대상자 <span class="colorOrange">*</span></th>
+													<td>
+														<ul class="groupBox flexLeft">
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio19_1" name="testRadio19" required checked>
+																	<label for="testRadio19_1">있음</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio19_2" name="testRadio19" required>
+																	<label for="testRadio19_2">있음</label>
+																</div>
+															</li>
+														</ul>
+													</td>
+												</tr>
+											</tbody>
+										</table>
 									</div>
-									<!-- //PC -->
-
-									<!-- Mobile -->
-									<div class="onlyMobile">
-										<ul class="m_hTableBody momt16">
-											<li>
-												<label>크레딧 대상자 <span class="colorOrange">*</span></label>
-												<div class="roundBoxGray">
-													<ul class="groupBox flexLeft">
-														<li>
-															<div class="radioBox">
-																<input type="radio" id="m_testRadio19_1" name="m_testRadio19" required checked>
-																<label for="m_testRadio19_1">있음</label>
-															</div>
-														</li>
-														<li>
-															<div class="radioBox">
-																<input type="radio" id="m_testRadio19_2" name="m_testRadio19" required>
-																<label for="m_testRadio19_2">없음</label>
-															</div>
-														</li>
-													</ul>
-												</div>
-											</li>
-										</ul>
-
-										<ul class="m_xBtnBody momt16">
-											<li>
-												<div class="groupBox listRemove">
-													<input type="checkbox" name="m_wCheckbox2" title="첫번째 크레딧 대상자 선택">
-												</div>
-												<ul class="m_hTableBody">
-													<li>
-														<label>이름 <span class="colorOrange">*</span></label>
-														<div>
-															<input type="text" title="첫번째 크레딧 대상자 이름 입력" required placeholder="실명입력">
+									
+									<div class="tableBody padding12 vaTop">
+										<table>
+											<caption>크레딧 대상자 : 선택, 이름, 주민번호, 관계, 출생(입양)일자, 소멸(파양)일자, 확인으로 구성</caption>
+											<colgroup>
+												<col style="width: 70px;">
+												<col style="width: 110px;">
+												<col>
+												<col style="width: 144px;">
+												<col style="width: 164px;">
+												<col style="width: 164px;">
+												<col style="width: 90px;">
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col">선택</th>
+													<th scope="col">이름 <span class="colorOrange">*</span></th>
+													<th scope="col">주민번호 <span class="colorOrange">*</span></th>
+													<th scope="col">관계 <span class="colorOrange">*</span></th>
+													<th scope="col">출생(입양)일자 <span class="colorOrange">*</span></th>
+													<th scope="col">소멸(파양)일자 <button type="button" class="tooltipBtn" title="도움말"><i class="icon"></i></button></th>
+													<th scope="col">확인</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>
+														<div class="groupBox single">
+															<input type="checkbox" name="wCheckbox2" title="첫번째 크레딧 대상자 선택">
 														</div>
-													</li>
-													<li>
-														<label>주민번호 <span class="colorOrange">*</span></label>
-														<div>
-															<input type="tel" title="첫번째 크레딧 대상자 주민번호 입력" required placeholder="13자리 주민번호 입력">
-														</div>
-													</li>
-													<li>
-														<label>관계 <span class="colorOrange">*</span></label>
-														<div>
-															<select title="첫번째 크레딧 대상자 관계선택">
-																<option disabled selected>관계선택</option>
-																<option>남편</option>
-																<option>남편(사실혼)</option>
-																<option>처</option>
-																<option>처(사실혼)</option>
-																<option>자녀의 부</option>
-																<option>자녀의 부(양부)</option>
-																<option>자녀의 모</option>
-																<option>자녀의 모(양모)</option>
-															</select>
-														</div>
-													</li>
-													<li>
-														<label>출생(입양)일자 <span class="colorOrange">*</span></label>
+													</td>
+													<td><input type="text" required title="첫번째 크레딧 대상자 이름 입력" placeholder="실명입력"></td>
+													<td><input type="tel" required title="첫번째 크레딧 대상자 주민번호 입력" placeholder="13자리 주민번호"></td>
+													<td>
+														<select title="첫번째 크레딧 대상자 관계 선택">
+															<option disabled selected>관계선택</option>
+															<option>남편</option>
+															<option>남편(사실혼)</option>
+															<option>처</option>
+															<option>처(사실혼)</option>
+															<option>자녀의 부</option>
+															<option>자녀의 부(양부)</option>
+															<option>자녀의 모</option>
+															<option>자녀의 모(양모)</option>
+														</select>
+													</td>
+													<td>
 														<div class="calendarBody" role="application">
 															<input type="text" class="jQdate" title="첫번째 출생(입양)일자 선택" readonly placeholder="날짜선택">
 														</div>
-													</li>
-													<li>
-														<div class="flexLeft spaceBetween">
-															<label>소멸(파양)일자</label>
-															<button type="button" class="tooltipBtn" style="margin-bottom: 8px;" title="도움말"><i class="icon"></i></button>
-														</div>
+													</td>
+													<td>
 														<div class="calendarBody" role="application">
 															<input type="text" class="jQdate" title="첫번째 소멸(파양)일자 선택" readonly placeholder="날짜선택">
 														</div>
-													</li>
-												</ul>
-												<div class="bottomStyle">
-													<button type="button" class="button h32 lineBlack" disabled>확인</button>
-												</div>
-											</li>
-											<li>
-												<div class="groupBox listRemove">
-													<input type="checkbox" name="m_wCheckbox2" title="두번째 크레딧 대상자 선택">
-												</div>
-												<ul class="m_hTableBody">
-													<li>
-														<label>이름 <span class="colorOrange">*</span></label>
-														<div>
-															<input type="text" title="두번째 크레딧 대상자 이름 입력" required placeholder="실명입력">
+													</td>
+													<td><button type="button" class="button h32 lineBlack" disabled>확인</button></td>
+												</tr>
+												<tr>
+													<td>
+														<div class="groupBox single">
+															<input type="checkbox" name="wCheckbox2" title="두번째 크레딧 대상자 선택">
 														</div>
-													</li>
-													<li>
-														<label>주민번호 <span class="colorOrange">*</span></label>
-														<div>
-															<input type="tel" title="두번째 크레딧 대상자 주민번호 입력" required placeholder="13자리 주민번호 입력">
+													</td>
+													<td>
+														<input type="text" required title="두번째 크레딧 대상자 이름 입력" placeholder="실명입력">
+														<div class="requireText error">
+															<i></i>
+															<span>실명을 입력하세요.</span>
 														</div>
-													</li>
-													<li>
-														<label>관계 <span class="colorOrange">*</span></label>
-														<div>
-															<select title="두번째 크레딧 대상자 관계선택">
-																<option disabled selected>관계선택</option>
-																<option>남편</option>
-																<option>남편(사실혼)</option>
-																<option>처</option>
-																<option>처(사실혼)</option>
-																<option>자녀의 부</option>
-																<option>자녀의 부(양부)</option>
-																<option>자녀의 모</option>
-																<option>자녀의 모(양모)</option>
-															</select>
+													</td>
+													<td>
+														<input type="tel" required title="두번째 크레딧 대상자 주민번호 입력" placeholder="13자리 주민번호">
+														<div class="requireText error">
+															<i></i>
+															<span>13자리 주민번호를 입력하세요</span>
 														</div>
-													</li>
-													<li>
-														<label>출생(입양)일자 <span class="colorOrange">*</span></label>
+													</td>
+													<td>
+														<select title="두번째 크레딧 대상자 관계 선택">
+															<option disabled selected>관계선택</option>
+															<option>남편</option>
+															<option>남편(사실혼)</option>
+															<option>처</option>
+															<option>처(사실혼)</option>
+															<option>자녀의 부</option>
+															<option>자녀의 부(양부)</option>
+															<option>자녀의 모</option>
+															<option>자녀의 모(양모)</option>
+														</select>
+													</td>
+													<td>
 														<div class="calendarBody" role="application">
 															<input type="text" class="jQdate" title="두번째 출생(입양)일자 선택" readonly placeholder="날짜선택">
 														</div>
-													</li>
-													<li>
-														<div class="flexLeft spaceBetween">
-															<label>소멸(파양)일자 <span class="colorOrange">*</span></label>
-															<button type="button" class="tooltipBtn" style="margin-bottom: 8px;" title="도움말"><i class="icon"></i></button>
-														</div>
+													</td>
+													<td>
 														<div class="calendarBody" role="application">
 															<input type="text" class="jQdate" title="두번째 소멸(파양)일자 선택" readonly placeholder="날짜선택">
 														</div>
-													</li>
-												</ul>
-												<div class="bottomStyle">
-													<button type="button" class="button h32 lineBlack">확인</button>
-												</div>
-											</li>
-										</ul>
+													</td>
+													<td><button type="button" class="button h32 lineBlack">확인</button></td>
+												</tr>
+												<tr>
+													<td>
+														<div class="groupBox single">
+															<input type="checkbox" name="wCheckbox2" title="세번째 크레딧 대상자 선택">
+														</div>
+													</td>
+													<td>
+														<input type="text" required title="세번째 크레딧 대상자 이름 입력" placeholder="실명입력">
+														<div class="requireText success">
+															<i></i>
+															<span>확인되었습니다</span>
+														</div>
+													</td>
+													<td>
+														<input type="tel" required title="세번째 크레딧 대상자 주민번호 입력" placeholder="13자리 주민번호">
+														<div class="requireText success">
+															<i></i>
+															<span>확인되었습니다</span>
+														</div>
+													</td>
+													<td>
+														<select title="세번째 크레딧 대상자 관계 선택">
+															<option disabled selected>관계선택</option>
+															<option>남편</option>
+															<option>남편(사실혼)</option>
+															<option>처</option>
+															<option>처(사실혼)</option>
+															<option>자녀의 부</option>
+															<option>자녀의 부(양부)</option>
+															<option>자녀의 모</option>
+															<option>자녀의 모(양모)</option>
+														</select>
+													</td>
+													<td>
+														<div class="calendarBody" role="application">
+															<input type="text" class="jQdate" title="세번째 출생(입양)일자 선택" readonly placeholder="날짜선택">
+														</div>
+													</td>
+													<td>
+														<div class="calendarBody" role="application">
+															<input type="text" class="jQdate" title="세번째 소멸(파양)일자 선택" readonly placeholder="날짜선택">
+														</div>
+													</td>
+													<td><span class="colorBlue lh32">확인됨</span></td>
+												</tr>
+											</tbody>
+										</table>
 									</div>
-									<!-- //Mobile -->
 
 									<div class="tableFooterControl flexLeft alignCenter justifyRight momt8">
 										<button type="button" class="button h24 lineBlack">선택삭제</button>
@@ -1220,321 +713,190 @@
 
 								<h5 class="defaultH5 mt">합의대상자</h5>
 								<div>
-									<!-- PC -->
-									<div class="onlyPC">
-										<div class="hTableBody">
-											<table>
-												<caption>합의대상자 : 합의대상자로 구성</caption>
-												<colgroup>
-													<col style="width: 150px;">
-													<col>
-												</colgroup>
-												<tbody>
-													<tr>
-														<th scope="row">합의대상자 <span class="colorOrange">*</span></th>
-														<td>
-															<ul class="groupBox flexLeft">
-																<li>
-																	<div class="radioBox">
-																		<input type="radio" id="testRadio18_1" name="testRadio18" required checked>
-																		<label for="testRadio18_1">있음</label>
-																	</div>
-																</li>
-																<li>
-																	<div class="radioBox">
-																		<input type="radio" id="testRadio18_2" name="testRadio18" required>
-																		<label for="testRadio18_2">있음</label>
-																	</div>
-																</li>
-															</ul>
-														</td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
-										
-										<div class="tableBody padding12 vaTop">
-											<table>
-												<caption>합의대상자 : 선택, 이름, 주민번호, 관계, 합의사항, 확인으로 구성</caption>
-												<colgroup>
-													<col style="width: 70px;">
-													<col style="width: 110px;">
-													<col style="width: 164px;">
-													<col style="width: 164px;">
-													<col>
-													<col style="width: 90px;">
-												</colgroup>
-												<thead>
-													<tr>
-														<th scope="col">선택</th>
-														<th scope="col">이름 <span class="colorOrange">*</span></th>
-														<th scope="col">주민번호 <span class="colorOrange">*</span></th>
-														<th scope="col">관계 <span class="colorOrange">*</span></th>
-														<th scope="col">합의사항 <span class="colorOrange">*</span> <button type="button" class="tooltipBtn" title="도움말"><i class="icon"></i></button></th>
-														<th scope="col">확인</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>
-															<div class="groupBox single">
-																<input type="checkbox" name="wCheckbox3" title="첫번째 합의대상자 선택">
-															</div>
-														</td>
-														<td><input type="text" required title="첫번째 합의대상자 이름 입력" placeholder="실명입력"></td>
-														<td><input type="tel" required title="첫번째 합의대상자 주민번호 입력" placeholder="13자리 주민번호"></td>
-														<td>
-															<select title="첫번째 합의대상자 관계 선택">
-																<option disabled selected>관계선택</option>
-																<option>남편</option>
-																<option>남편(사실혼)</option>
-																<option>처</option>
-																<option>처(사실혼)</option>
-																<option>자녀의 부</option>
-																<option>자녀의 부(양부)</option>
-																<option>자녀의 모</option>
-																<option>자녀의 모(양모)</option>
-															</select>
-														</td>
-														<td>
-															<select title="첫번째 합의대상자 합의사항 선택">
-																<option disabled selected>합의사항</option>
-																<option>수급권자 전부인정</option>
-																<option>상대배우자 전부인정</option>
-																<option>미합의</option>
-															</select>
-														</td>
-														<td><button type="button" class="button h32 lineBlack" disabled>확인</button></td>
-													</tr>
-													<tr>
-														<td>
-															<div class="groupBox single">
-																<input type="checkbox" name="wCheckbox3" title="두번째 합의대상자 선택">
-															</div>
-														</td>
-														<td>
-															<input type="text" required title="두번째 합의대상자 이름 입력" placeholder="실명입력">
-															<div class="requireText error">
-																<i></i>
-																<span>실명을 입력하세요.</span>
-															</div>
-														</td>
-														<td>
-															<input type="tel" required title="두번째 합의대상자 주민번호 입력" placeholder="13자리 주민번호">
-															<div class="requireText error">
-																<i></i>
-																<span>13자리 주민번호를 입력하세요</span>
-															</div>
-														</td>
-														<td>
-															<select title="두번째 합의대상자 관계 선택">
-																<option disabled selected>관계선택</option>
-																<option>남편</option>
-																<option>남편(사실혼)</option>
-																<option>처</option>
-																<option>처(사실혼)</option>
-																<option>자녀의 부</option>
-																<option>자녀의 부(양부)</option>
-																<option>자녀의 모</option>
-																<option>자녀의 모(양모)</option>
-															</select>
-														</td>
-														<td>
-															<select title="두번째 합의대상자 합의사항 선택">
-																<option disabled selected>합의사항</option>
-																<option>수급권자 전부인정</option>
-																<option>상대배우자 전부인정</option>
-																<option>미합의</option>
-															</select>
-														</td>
-														<td><button type="button" class="button h32 lineBlack">확인</button></td>
-													</tr>
-													<tr>
-														<td>
-															<div class="groupBox single">
-																<input type="checkbox" name="wCheckbox3" title="세번째 합의대상자 선택">
-															</div>
-														</td>
-														<td>
-															<input type="text" required title="세번째 합의대상자 이름 입력" placeholder="실명입력">
-															<div class="requireText success">
-																<i></i>
-																<span>확인되었습니다</span>
-															</div>
-														</td>
-														<td>
-															<input type="tel" required title="세번째 합의대상자 주민번호 입력" placeholder="13자리 주민번호">
-															<div class="requireText success">
-																<i></i>
-																<span>확인되었습니다</span>
-															</div>
-														</td>
-														<td>
-															<select title="세번째 합의대상자 관계 선택">
-																<option disabled selected>관계선택</option>
-																<option>남편</option>
-																<option>남편(사실혼)</option>
-																<option>처</option>
-																<option>처(사실혼)</option>
-																<option>자녀의 부</option>
-																<option>자녀의 부(양부)</option>
-																<option>자녀의 모</option>
-																<option>자녀의 모(양모)</option>
-															</select>
-														</td>
-														<td>
-															<select title="세번째 합의대상자 합의사항 선택">
-																<option disabled selected>합의사항</option>
-																<option>수급권자 전부인정</option>
-																<option>상대배우자 전부인정</option>
-																<option>미합의</option>
-															</select>
-														</td>
-														<td><span class="colorBlue lh32">확인됨</span></td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
+									<div class="hTableBody">
+										<table>
+											<caption>합의대상자 : 합의대상자로 구성</caption>
+											<colgroup>
+												<col style="width: 150px;">
+												<col>
+											</colgroup>
+											<tbody>
+												<tr>
+													<th scope="row">합의대상자 <span class="colorOrange">*</span></th>
+													<td>
+														<ul class="groupBox flexLeft">
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio18_1" name="testRadio18" required checked>
+																	<label for="testRadio18_1">있음</label>
+																</div>
+															</li>
+															<li>
+																<div class="radioBox">
+																	<input type="radio" id="testRadio18_2" name="testRadio18" required>
+																	<label for="testRadio18_2">있음</label>
+																</div>
+															</li>
+														</ul>
+													</td>
+												</tr>
+											</tbody>
+										</table>
 									</div>
-									<!-- //PC -->
-
-									<!-- Mobile -->
-									<div class="onlyMobile">
-										<ul class="m_hTableBody momt16">
-											<li>
-												<label>합의대상자 <span class="colorOrange">*</span></label>
-												<div class="roundBoxGray">
-													<ul class="groupBox flexLeft">
-														<li>
-															<div class="radioBox">
-																<input type="radio" id="m_testRadio18_1" name="m_testRadio18" required checked>
-																<label for="m_testRadio18_1">있음</label>
-															</div>
-														</li>
-														<li>
-															<div class="radioBox">
-																<input type="radio" id="m_testRadio18_2" name="m_testRadio18" required>
-																<label for="m_testRadio18_2">없음</label>
-															</div>
-														</li>
-													</ul>
-												</div>
-											</li>
-										</ul>
-										
-										<ul class="m_xBtnBody momt16">
-											<li>
-												<div class="groupBox listRemove">
-													<input type="checkbox" name="m_wCheckbox3" title="첫번째 합의대상자 선택">
-												</div>
-												<ul class="m_hTableBody">
-													<li>
-														<label>이름 <span class="colorOrange">*</span></label>
-														<div>
-															<input type="text" title="첫번째 합의대상자 이름 입력" required placeholder="실명입력">
+									
+									<div class="tableBody padding12 vaTop">
+										<table>
+											<caption>합의대상자 : 선택, 이름, 주민번호, 관계, 합의사항, 확인으로 구성</caption>
+											<colgroup>
+												<col style="width: 70px;">
+												<col style="width: 110px;">
+												<col style="width: 164px;">
+												<col style="width: 164px;">
+												<col>
+												<col style="width: 90px;">
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col">선택</th>
+													<th scope="col">이름 <span class="colorOrange">*</span></th>
+													<th scope="col">주민번호 <span class="colorOrange">*</span></th>
+													<th scope="col">관계 <span class="colorOrange">*</span></th>
+													<th scope="col">합의사항 <span class="colorOrange">*</span> <button type="button" class="tooltipBtn" title="도움말"><i class="icon"></i></button></th>
+													<th scope="col">확인</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>
+														<div class="groupBox single">
+															<input type="checkbox" name="wCheckbox3" title="첫번째 합의대상자 선택">
 														</div>
-													</li>
-													<li>
-														<label>주민번호 <span class="colorOrange">*</span></label>
-														<div>
-															<input type="tel" title="첫번째 합의대상자 주민번호 입력" required placeholder="13자리 주민번호 입력">
+													</td>
+													<td><input type="text" required title="첫번째 합의대상자 이름 입력" placeholder="실명입력"></td>
+													<td><input type="tel" required title="첫번째 합의대상자 주민번호 입력" placeholder="13자리 주민번호"></td>
+													<td>
+														<select title="첫번째 합의대상자 관계 선택">
+															<option disabled selected>관계선택</option>
+															<option>남편</option>
+															<option>남편(사실혼)</option>
+															<option>처</option>
+															<option>처(사실혼)</option>
+															<option>자녀의 부</option>
+															<option>자녀의 부(양부)</option>
+															<option>자녀의 모</option>
+															<option>자녀의 모(양모)</option>
+														</select>
+													</td>
+													<td>
+														<select title="첫번째 합의대상자 합의사항 선택">
+															<option disabled selected>합의사항</option>
+															<option>수급권자 전부인정</option>
+															<option>상대배우자 전부인정</option>
+															<option>미합의</option>
+														</select>
+													</td>
+													<td><button type="button" class="button h32 lineBlack" disabled>확인</button></td>
+												</tr>
+												<tr>
+													<td>
+														<div class="groupBox single">
+															<input type="checkbox" name="wCheckbox3" title="두번째 합의대상자 선택">
 														</div>
-													</li>
-													<li>
-														<label>관계 <span class="colorOrange">*</span></label>
-														<div>
-															<select title="첫번째 합의대상자 관계선택">
-																<option disabled selected>관계선택</option>
-																<option>남편</option>
-																<option>남편(사실혼)</option>
-																<option>처</option>
-																<option>처(사실혼)</option>
-																<option>자녀의 부</option>
-																<option>자녀의 부(양부)</option>
-																<option>자녀의 모</option>
-																<option>자녀의 모(양모)</option>
-															</select>
+													</td>
+													<td>
+														<input type="text" required title="두번째 합의대상자 이름 입력" placeholder="실명입력">
+														<div class="requireText error">
+															<i></i>
+															<span>실명을 입력하세요.</span>
 														</div>
-													</li>
-													<li>
-														<label>합의사항 <span class="colorOrange">*</span></label>
-														<div>
-															<select title="첫번째 합의대상자 합의사항 선택">
-																<option disabled selected>선택</option>
-																<option>수급권자 전부인정</option>
-																<option>상대배우자 전부인정</option>
-																<option>미합의</option>
-															</select>
+													</td>
+													<td>
+														<input type="tel" required title="두번째 합의대상자 주민번호 입력" placeholder="13자리 주민번호">
+														<div class="requireText error">
+															<i></i>
+															<span>13자리 주민번호를 입력하세요</span>
 														</div>
-													</li>
-												</ul>
-												<div class="bottomStyle">
-													<button type="button" class="button h32 lineBlack" disabled>확인</button>
-												</div>
-											</li>
-											<li>
-												<div class="groupBox listRemove">
-													<input type="checkbox" name="m_wCheckbox3" title="두번째 합의대상자 선택">
-												</div>
-												<ul class="m_hTableBody">
-													<li>
-														<label>이름 <span class="colorOrange">*</span></label>
-														<div>
-															<input type="text" title="두번째 합의대상자 이름 입력" required placeholder="실명입력">
+													</td>
+													<td>
+														<select title="두번째 합의대상자 관계 선택">
+															<option disabled selected>관계선택</option>
+															<option>남편</option>
+															<option>남편(사실혼)</option>
+															<option>처</option>
+															<option>처(사실혼)</option>
+															<option>자녀의 부</option>
+															<option>자녀의 부(양부)</option>
+															<option>자녀의 모</option>
+															<option>자녀의 모(양모)</option>
+														</select>
+													</td>
+													<td>
+														<select title="두번째 합의대상자 합의사항 선택">
+															<option disabled selected>합의사항</option>
+															<option>수급권자 전부인정</option>
+															<option>상대배우자 전부인정</option>
+															<option>미합의</option>
+														</select>
+													</td>
+													<td><button type="button" class="button h32 lineBlack">확인</button></td>
+												</tr>
+												<tr>
+													<td>
+														<div class="groupBox single">
+															<input type="checkbox" name="wCheckbox3" title="세번째 합의대상자 선택">
 														</div>
-													</li>
-													<li>
-														<label>주민번호 <span class="colorOrange">*</span></label>
-														<div>
-															<input type="tel" title="두번째 합의대상자 주민번호 입력" required placeholder="13자리 주민번호 입력">
+													</td>
+													<td>
+														<input type="text" required title="세번째 합의대상자 이름 입력" placeholder="실명입력">
+														<div class="requireText success">
+															<i></i>
+															<span>확인되었습니다</span>
 														</div>
-													</li>
-													<li>
-														<label>관계 <span class="colorOrange">*</span></label>
-														<div>
-															<select title="두번째 합의대상자 관계선택">
-																<option disabled selected>관계선택</option>
-																<option>남편</option>
-																<option>남편(사실혼)</option>
-																<option>처</option>
-																<option>처(사실혼)</option>
-																<option>자녀의 부</option>
-																<option>자녀의 부(양부)</option>
-																<option>자녀의 모</option>
-																<option>자녀의 모(양모)</option>
-															</select>
+													</td>
+													<td>
+														<input type="tel" required title="세번째 합의대상자 주민번호 입력" placeholder="13자리 주민번호">
+														<div class="requireText success">
+															<i></i>
+															<span>확인되었습니다</span>
 														</div>
-													</li>
-													<li>
-														<div class="flexLeft spaceBetween">
-															<label>합의사항 <span class="colorOrange">*</span></label>
-															<button type="button" class="tooltipBtn" style="margin-bottom: 8px;" title="도움말"><i class="icon"></i></button>
-														</div>
-														<div>
-															<select title="두번째 합의대상자 합의사항 선택">
-																<option disabled selected>선택</option>
-																<option>수급권자 전부인정</option>
-																<option>상대배우자 전부인정</option>
-																<option>미합의</option>
-															</select>
-														</div>
-													</li>
-												</ul>
-												<div class="bottomStyle">
-													<span class="colorBlue">확인됨</span>
-												</div>
-											</li>
-										</ul>
+													</td>
+													<td>
+														<select title="세번째 합의대상자 관계 선택">
+															<option disabled selected>관계선택</option>
+															<option>남편</option>
+															<option>남편(사실혼)</option>
+															<option>처</option>
+															<option>처(사실혼)</option>
+															<option>자녀의 부</option>
+															<option>자녀의 부(양부)</option>
+															<option>자녀의 모</option>
+															<option>자녀의 모(양모)</option>
+														</select>
+													</td>
+													<td>
+														<select title="세번째 합의대상자 합의사항 선택">
+															<option disabled selected>합의사항</option>
+															<option>수급권자 전부인정</option>
+															<option>상대배우자 전부인정</option>
+															<option>미합의</option>
+														</select>
+													</td>
+													<td><span class="colorBlue lh32">확인됨</span></td>
+												</tr>
+											</tbody>
+										</table>
 									</div>
-									<!-- //Mobile -->
 
 									<div class="tableFooterControl tableFooterControl flexLeft alignCenter justifyRight momt8">
 										<button type="button" class="button h24 lineBlack">선택삭제</button>
 										<button type="button" class="button h24 lineBlack">행추가</button>
 									</div>
 
-									<ul class="guideText mt">
-										<li>함께 양육했던 배우자가 있는 경우 합의 대상자로 입력하고 합의서를 관할지사로 보내주시기 바랍니다.</li>
+									<ul class="guideText mt gtm">
+										<li>
+											함께 양육했던 배우자가 있는 경우 합의 대상자로 입력하고 합의서를 관할지사로 보내주시기 바랍니다.
+											<a href="#" class="lineButton" download role="button"><span>합의서 다운로드</span><i class="icoDownload"></i></a>
+										</li>
 									</ul>
 								</div>
 							</div>
@@ -1544,7 +906,7 @@
 
 						<div class="m_toggleArea">
 							<div class="onlyMobile">
-								<button class="flexLeft spaceBetween toggleGroup" aria-expanded="false" aria-controls="list_target3">
+								<button class="flexLeft spaceBetween toggleGroup" aria-expanded="false" aria-controls="list_target0">
 									<b class="defaultH5">외국인 연금가입대상자</b>
 									<span>
 										<span class="fontSize14 colorRed">미입력</span>
@@ -1553,168 +915,94 @@
 								</button>
 							</div>
 
-							<div id="list_target3" class="target targetHidden">
-								<!-- PC -->
-								<div class="onlyPC">
-									<h5 class="defaultH5 bletSquare">외국인 연금가입대상자</h5>
-									<div class="hTableBody">
-										<table>
-											<caption>외국인 연금가입대상자 가입기간 : 외국인 연금 가입기간으로 구성</caption>
-											<colgroup>
-												<col style="width: 195px;">
-												<col>
-											</colgroup>
-											<tbody>
-												<tr>
-													<th scope="row">외국인 연금 가입기간 <span class="colorOrange">*</span></th>
-													<td>
-														<ul class="groupBox flexLeft">
-															<li>
-																<div class="radioBox">
-																	<input type="radio" id="testRadio15_1" name="testRadio15" required checked>
-																	<label for="testRadio15_1">있음</label>
-																</div>
-															</li>
-															<li>
-																<div class="radioBox">
-																	<input type="radio" id="testRadio15_2" name="testRadio15" required>
-																	<label for="testRadio15_2">없음</label>
-																</div>
-															</li>
-														</ul>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-
-									<div class="tableBody padding12 vaTop">
-										<table>
-											<caption>외국인 연금가입대상자 가입기간 : 선택, 국가명, 가입기간으로 구성</caption>
-											<colgroup>
-												<col style="width: 66px;">
-												<col>
-												<col style="width: 222px;">
-											</colgroup>
-											<tbody>
-												<tr>
-													<th scope="col">선택</th>
-													<th scope="col">국가명 <span class="colorOrange">*</span></th>
-													<th scope="col">가입기간 <span class="colorOrange">*</span></th>
-												</tr>
-												<tr>
-													<td class="textCenter">
-														<div class="groupBox single">
-															<input type="checkbox" name="wCheckbox15" title="첫번째 외국인 연금가입대상자 선택">
-														</div>
-													</td>
-													<td>
-														<div class="flexBtnOne">
-															<input type="text" required title="첫번째 국가명 입력" placeholder="국가명 검색 후 입력">
-															<button type="button" class="button h32 lineBlack other layerLink" aria-controls="chargeCountryLayer">검색</button>
-														</div>
-													</td>
-													<td>
-														<div class="flexBtnOne">
-															<input type="tel" required title="첫번째 가입기간 입력" placeholder="가입기간 입력">
-															<span class="other">개월</span>
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<td class="textCenter">
-														<div class="groupBox single">
-															<input type="checkbox" name="wCheckbox15" title="두번째 외국인 연금가입대상자 선택">
-														</div>
-													</td>
-													<td>
-														<div class="flexBtnOne">
-															<input type="text" required title="두번째 국가명 입력" placeholder="국가명 검색 후 입력">
-															<button type="button" class="button h32 lineBlack other layerLink" aria-controls="chargeCountryLayer">검색</button>
-														</div>
-													</td>
-													<td>
-														<div class="flexBtnOne">
-															<input type="tel" required title="두번째 가입기간 입력" placeholder="가입기간 입력">
-															<span class="other">개월</span>
-														</div>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
+							<div id="list_target0" class="target targetHidden">
+								<h5 class="onlyPC defaultH5 bletSquare">외국인 연금가입대상자</h5>
+								<div class="hTableBody">
+									<table>
+										<caption>외국인 연금가입대상자 가입기간 : 외국인 연금 가입기간으로 구성</caption>
+										<colgroup>
+											<col style="width: 195px;">
+											<col>
+										</colgroup>
+										<tbody>
+											<tr>
+												<th scope="row">외국인 연금 가입기간 <span class="colorOrange">*</span></th>
+												<td>
+													<ul class="groupBox flexLeft">
+														<li>
+															<div class="radioBox">
+																<input type="radio" id="testRadio15_1" name="testRadio15" required checked>
+																<label for="testRadio15_1">있음</label>
+															</div>
+														</li>
+														<li>
+															<div class="radioBox">
+																<input type="radio" id="testRadio15_2" name="testRadio15" required>
+																<label for="testRadio15_2">없음</label>
+															</div>
+														</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
-								<!-- //PC -->
 
-								<!-- Mobile -->
-								<div class="onlyMobile">
-									<ul class="m_hTableBody">
-										<li>
-											<label>외국인 연금 가입기간 <span class="colorOrange">*</span></label>
-											<div class="roundBoxGray">
-												<ul class="groupBox flexLeft">
-													<li>
-														<div class="radioBox">
-															<input type="radio" id="m_testRadio15_1" name="m_testRadio15" required checked>
-															<label for="m_testRadio15_1">있음</label>
-														</div>
-													</li>
-													<li>
-														<div class="radioBox">
-															<input type="radio" id="m_testRadio15_2" name="m_testRadio15" required>
-															<label for="m_testRadio15_2">없음</label>
-														</div>
-													</li>
-												</ul>
-											</div>
-										</li>
-									</ul>
-									<ul class="m_xBtnBody mt defaultPadding">
-										<li>
-											<div class="groupBox listRemove">
-												<input type="checkbox" name="m_wCheckbox15" title="첫번째 외국인 연금가입대상자 선택">
-											</div>
-											<ul class="m_hTableBody">
-												<li>
-													<label>국가명 <span class="colorOrange">*</span></label>
+								<div class="tableBody padding12 vaTop">
+									<table>
+										<caption>외국인 연금가입대상자 가입기간 : 선택, 국가명, 가입기간으로 구성</caption>
+										<colgroup>
+											<col style="width: 66px;">
+											<col>
+											<col style="width: 222px;">
+										</colgroup>
+										<tbody>
+											<tr>
+												<th scope="col">선택</th>
+												<th scope="col">국가명 <span class="colorOrange">*</span></th>
+												<th scope="col">가입기간 <span class="colorOrange">*</span></th>
+											</tr>
+											<tr>
+												<td class="textCenter">
+													<div class="groupBox single">
+														<input type="checkbox" name="wCheckbox15" title="첫번째 외국인 연금가입대상자 선택">
+													</div>
+												</td>
+												<td>
 													<div class="flexBtnOne">
 														<input type="text" required title="첫번째 국가명 입력" placeholder="국가명 검색 후 입력">
-														<button type="button" class="button h40 lineBlack other layerLink" aria-controls="chargeCountryLayer">조회</button>
+														<button type="button" class="button h32 lineBlack other layerLink" aria-controls="chargeCountryLayer">검색</button>
 													</div>
-												</li>
-												<li>
-													<label>가입기간 <span class="colorOrange">*</span></label>
+												</td>
+												<td>
 													<div class="flexBtnOne">
 														<input type="tel" required title="첫번째 가입기간 입력" placeholder="가입기간 입력">
 														<span class="other">개월</span>
 													</div>
-												</li>
-											</ul>
-										</li>
-										<li>
-											<div class="groupBox listRemove">
-												<input type="checkbox" name="m_wCheckbox15" title="두번째 외국인 연금가입대상자 선택">
-											</div>
-											<ul class="m_hTableBody">
-												<li>
-													<label>국가명 <span class="colorOrange">*</span></label>
+												</td>
+											</tr>
+											<tr>
+												<td class="textCenter">
+													<div class="groupBox single">
+														<input type="checkbox" name="wCheckbox15" title="두번째 외국인 연금가입대상자 선택">
+													</div>
+												</td>
+												<td>
 													<div class="flexBtnOne">
 														<input type="text" required title="두번째 국가명 입력" placeholder="국가명 검색 후 입력">
-														<button type="button" class="button h40 lineBlack other layerLink" aria-controls="chargeCountryLayer">조회</button>
+														<button type="button" class="button h32 lineBlack other layerLink" aria-controls="chargeCountryLayer">검색</button>
 													</div>
-												</li>
-												<li>
-													<label>가입기간 <span class="colorOrange">*</span></label>
+												</td>
+												<td>
 													<div class="flexBtnOne">
 														<input type="tel" required title="두번째 가입기간 입력" placeholder="가입기간 입력">
 														<span class="other">개월</span>
 													</div>
-												</li>
-											</ul>
-										</li>
-									</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
-								<!-- //Mobile -->
 								
 								<div class="tableFooterControl flexLeft alignCenter justifyRight momt8">
 									<button type="button" class="button h24 lineBlack">선택삭제</button>
@@ -1741,68 +1029,38 @@
 							</div>
 							
 							<div id="list_target4" class="target targetHidden">
-								<!-- PC -->
-								<div class="onlyPC">
-									<h5 class="defaultH5 mt">외국 거주기간 대상자</h5>
+								<h5 class="defaultH5 mt">외국 거주기간 대상자</h5>
 
-									<div class="hTableBody">
-										<table>
-											<caption>외국 거주기간 대상자 : 외국 거주기간 대상자로 구성</caption>
-											<colgroup>
-												<col style="width: 195px;">
-												<col>
-											</colgroup>
-											<tbody>
-												<tr>
-													<th scope="row">외국 거주기간 대상자 <span class="colorOrange">*</span></th>
-													<td>
-														<ul class="groupBox flexLeft">
-															<li>
-																<div class="radioBox">
-																	<input type="radio" id="testRadio16_1" name="testRadio16" required checked>
-																	<label for="testRadio16_1">있음</label>
-																</div>
-															</li>
-															<li>
-																<div class="radioBox">
-																	<input type="radio" id="testRadio16_2" name="testRadio16" required>
-																	<label for="testRadio16_2">없음</label>
-																</div>
-															</li>
-														</ul>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
+								<div class="hTableBody">
+									<table>
+										<caption>외국 거주기간 대상자 : 외국 거주기간 대상자로 구성</caption>
+										<colgroup>
+											<col style="width: 195px;">
+											<col>
+										</colgroup>
+										<tbody>
+											<tr>
+												<th scope="row">외국 거주기간 대상자 <span class="colorOrange">*</span></th>
+												<td>
+													<ul class="groupBox flexLeft">
+														<li>
+															<div class="radioBox">
+																<input type="radio" id="testRadio16_1" name="testRadio16" required checked>
+																<label for="testRadio16_1">있음</label>
+															</div>
+														</li>
+														<li>
+															<div class="radioBox">
+																<input type="radio" id="testRadio16_2" name="testRadio16" required>
+																<label for="testRadio16_2">없음</label>
+															</div>
+														</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
-								<!-- //PC -->
-
-								<!-- Mobile -->
-								<div class="onlyMobile">
-									<ul class="m_hTableBody">
-										<li>
-											<label>외국 거주기간 대상자 <span class="colorOrange">*</span></label>
-											<div class="roundBoxGray">
-												<ul class="groupBox flexLeft">
-													<li>
-														<div class="radioBox">
-															<input type="radio" id="m_testRadio16_1" name="m_testRadio16" required checked>
-															<label for="m_testRadio16_1">있음</label>
-														</div>
-													</li>
-													<li>
-														<div class="radioBox">
-															<input type="radio" id="m_testRadio16_2" name="m_testRadio16" required>
-															<label for="m_testRadio16_2">없음</label>
-														</div>
-													</li>
-												</ul>
-											</div>
-										</li>
-									</ul>
-								</div>
-								<!-- //Mobile -->
 
 								<ul class="guideText mt">
 									<li>사회보장협정(가입기간협산) 체결국가 : 캐나다, 미국, 독일, 프랑스, 헝가리, 호주, 체코, 아일랜드, 벨기에, 폴란드, 불가리아, 슬로바키아, 루마니아, 오스크리아, 덴마크, 인도, 스페인, 스웨덴, 터키, 브라질, 핀란드 <br>(2017년3월 현재 21개국)</li>

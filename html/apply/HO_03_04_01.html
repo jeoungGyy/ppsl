@@ -37,19 +37,19 @@
 					<div class="stepBody mt">
 						<!-- 0단계 -->
 						<ul class="stepBy">
-							<li>
+							<li role="text">
 								<span class="fontMontserrat">01</span>
 								<span class="fontEliceDigital text">접수<span class="m_block">중</span></span>
 							</li>
-							<li>
+							<li role="text">
 								<span class="fontMontserrat">02</span>
 								<span class="fontEliceDigital text">접수<span class="m_block">완료</span></span>
 							</li>
-							<li>
+							<li role="text">
 								<span class="fontMontserrat">03</span>
 								<span class="fontEliceDigital text">기관<span class="m_block">심사중</span></span>
 							</li>
-							<li>
+							<li role="text">
 								<span class="fontMontserrat">04</span>
 								<span class="fontEliceDigital text">처리<span class="m_block">완료</span></span>
 							</li>
@@ -65,310 +65,99 @@
 					<h4 class="defaultH4">연계신청한 내역입니다.</h4>
 					<p class="subText">해당 내용을 선택하시면 상세조회 가능합니다.</p>
 					
-					<!-- PC -->
-					<div class="onlyPC">
-						<div class="tableBody mt2">
-							<table>
-								<caption>신청상태조회 : 접수방법, 접수번호, 접수일, 내용, 구분, 상태, 처리지사로 구성</caption>
-								<colgroup>
-									<col style="width: 100px;">
-									<col>
-									<col style="width: 144px;">
-									<col style="width: 144px;">
-									<col style="width: 140px;">
-									<col style="width: 126px;">
-									<col style="width: 124px;">
-								</colgroup>
-								<thead>
-									<tr>
-										<th scope="col">접수방법</th>
-										<th scope="col">접수번호</th>
-										<th scope="col">접수일</th>
-										<th scope="col">내용</th>
-										<th scope="col">구분</th>
-										<th scope="col">상태</th>
-										<th scope="col">처리지사</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>인터넷</td>
-										<td><a href="javascript:void(0);" class="linkA layerLink" aria-controls="paidTaxLayer">20183012000063</a></td>
-										<td>2006-03-01</td>
-										<td>연계신청서</td>
-										<td>반납금정보 변경</td>
-										<td>접수완료</td>
-										<td><button type="button" class="button h24 lineBlack">조회</button></td>
-									</tr>
-									<tr>
-										<td>인터넷</td>
-										<td><a href="HO_03_04_02_01.html" class="linkA">20183012000063</a></td>
-										<td>2006-03-01</td>
-										<td>연계신청서</td>
-										<td>-</td>
-										<td>접수중</td>
-										<td><button type="button" class="button h24 lineBlack">조회</button></td>
-									</tr>
-									<tr>
-										<td>인터넷</td>
-										<td><a href="javascript:void(0);" class="linkA layerLink" aria-controls="temp002Layer">20183012000063</a></td>
-										<td>2006-03-01</td>
-										<td>연계신청서</td>
-										<td>철회</td>
-										<td>접수완료</td>
-										<td><button type="button" class="button h24 lineBlack">조회</button></td>
-									</tr>
-									<tr>
-										<td>인터넷</td>
-										<td><a href="javascript:void(0);" class="linkA layerLink" aria-controls="temp003Layer">20183012000063</a></td>
-										<td>2006-03-01</td>
-										<td>연계신청서</td>
-										<td>-</td>
-										<td>신청접수취소</td>
-										<td><button type="button" class="button h24 lineBlack">조회</button></td>
-									</tr>
-									<tr>
-										<td>인터넷</td>
-										<td><a href="javascript:void(0);" class="linkA layerLink" aria-controls="temp004Layer">20183012000063</a></td>
-										<td>2006-03-01</td>
-										<td>연계신청서</td>
-										<td>취하</td>
-										<td>접수중</td>
-										<td><button type="button" class="button h24 lineBlack">조회</button></td>
-									</tr>
-									<tr>
-										<td>인터넷</td>
-										<td><a href="javascript:void(0);" class="linkA layerLink" aria-controls="temp005Layer">20183012000063</a></td>
-										<td>2006-03-01</td>
-										<td>연계신청서</td>
-										<td>미해당</td>
-										<td>접수중</td>
-										<td><button type="button" class="button h24 lineBlack">조회</button></td>
-									</tr>	
-									<tr>
-										<td>인터넷</td>
-										<td><a href="javascript:void(0);" class="linkA layerLink" aria-controls="temp006Layer">20183012000063</a></td>
-										<td>2006-03-01</td>
-										<td>연계신청서</td>
-										<td>취소</td>
-										<td>접수중</td>
-										<td><button type="button" class="button h24 lineBlack">조회</button></td>
-									</tr>
-									<tr>
-										<td class="empty" colspan="7">데이터가 없습니다.</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
+					<div class="tableBody mt2">
+						<table>
+							<caption>신청상태조회 : 접수방법, 접수번호, 접수일, 내용, 구분, 상태, 처리지사로 구성</caption>
+							<colgroup>
+								<col style="width: 100px;">
+								<col>
+								<col style="width: 144px;">
+								<col style="width: 144px;">
+								<col style="width: 140px;">
+								<col style="width: 126px;">
+								<col style="width: 124px;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">접수방법</th>
+									<th scope="col">접수번호</th>
+									<th scope="col">접수일</th>
+									<th scope="col">내용</th>
+									<th scope="col">구분</th>
+									<th scope="col">상태</th>
+									<th scope="col">처리지사</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>인터넷</td>
+									<td><a href="javascript:void(0);" class="linkA layerLink" aria-controls="paidTaxLayer">20183012000063</a></td>
+									<td>2006-03-01</td>
+									<td>연계신청서</td>
+									<td>반납금정보 변경</td>
+									<td>접수완료</td>
+									<td><button type="button" class="button h24 lineBlack">조회</button></td>
+								</tr>
+								<tr>
+									<td>인터넷</td>
+									<td><a href="HO_03_04_02_01.html" class="linkA">20183012000063</a></td>
+									<td>2006-03-01</td>
+									<td>연계신청서</td>
+									<td>-</td>
+									<td>접수중</td>
+									<td><button type="button" class="button h24 lineBlack">조회</button></td>
+								</tr>
+								<tr>
+									<td>인터넷</td>
+									<td><a href="javascript:void(0);" class="linkA layerLink" aria-controls="temp002Layer">20183012000063</a></td>
+									<td>2006-03-01</td>
+									<td>연계신청서</td>
+									<td>철회</td>
+									<td>접수완료</td>
+									<td><button type="button" class="button h24 lineBlack">조회</button></td>
+								</tr>
+								<tr>
+									<td>인터넷</td>
+									<td><a href="javascript:void(0);" class="linkA layerLink" aria-controls="temp003Layer">20183012000063</a></td>
+									<td>2006-03-01</td>
+									<td>연계신청서</td>
+									<td>-</td>
+									<td>신청접수취소</td>
+									<td><button type="button" class="button h24 lineBlack">조회</button></td>
+								</tr>
+								<tr>
+									<td>인터넷</td>
+									<td><a href="javascript:void(0);" class="linkA layerLink" aria-controls="temp004Layer">20183012000063</a></td>
+									<td>2006-03-01</td>
+									<td>연계신청서</td>
+									<td>취하</td>
+									<td>접수중</td>
+									<td><button type="button" class="button h24 lineBlack">조회</button></td>
+								</tr>
+								<tr>
+									<td>인터넷</td>
+									<td><a href="javascript:void(0);" class="linkA layerLink" aria-controls="temp005Layer">20183012000063</a></td>
+									<td>2006-03-01</td>
+									<td>연계신청서</td>
+									<td>미해당</td>
+									<td>접수중</td>
+									<td><button type="button" class="button h24 lineBlack">조회</button></td>
+								</tr>	
+								<tr>
+									<td>인터넷</td>
+									<td><a href="javascript:void(0);" class="linkA layerLink" aria-controls="temp006Layer">20183012000063</a></td>
+									<td>2006-03-01</td>
+									<td>연계신청서</td>
+									<td>취소</td>
+									<td>접수중</td>
+									<td><button type="button" class="button h24 lineBlack">조회</button></td>
+								</tr>
+								<tr>
+									<td class="empty" colspan="7">데이터가 없습니다.</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
-					<!-- //PC -->
-
-					<!-- Mobile -->
-					<div class="onlyMobile m_tableBody mt2 noBorder">
-						<ul class="mList">
-							<li>
-								<div class="roundBoxGray">
-									<h6 class="fontDefault">접수번호</h6>
-									<div class="flexLeft spaceBetween">
-										<a href="javascript:void(0);" class="linkA layerLink" aria-controls="paidTaxLayer"><b class="listDate colorBlue">2009101000040</b></a>
-										<div class="roundText">접수완료</div>
-									</div>
-									
-									<ul class="msList bdt">
-										<li>
-											<label>접수일</label>
-											<b>2006-03-01</b>
-										</li>
-										<li>
-											<label>내용</label>
-											<b>연계신청서</b>
-										</li>
-										<li>
-											<label>구분</label>
-											<b>반납금정보 변경</b>
-										</li>
-										<li>
-											<label>처리지사</label>
-											<button type="button" class="button h24 lineBlack">조회</button>
-										</li>
-									</ul>
-								</div>
-							</li>
-							<li>
-								<div class="roundBoxGray">
-									<h6 class="fontDefault">접수번호</h6>
-									<div class="flexLeft spaceBetween">
-										<a href="HO_03_04_02_01.html" class="linkA"><b class="listDate colorBlue">2009101000040</b></a>
-										<div class="roundText">접수중</div>
-									</div>
-									
-									<ul class="msList bdt">
-										<li>
-											<label>접수일</label>
-											<b>2006-03-01</b>
-										</li>
-										<li>
-											<label>내용</label>
-											<b>연계신청서</b>
-										</li>
-										<li>
-											<label>구분</label>
-											<b>-</b>
-										</li>
-										<li>
-											<label>처리지사</label>
-											<button type="button" class="button h24 lineBlack">조회</button>
-										</li>
-									</ul>
-								</div>
-							</li>
-							<li>
-								<div class="roundBoxGray">
-									<h6 class="fontDefault">접수번호</h6>
-									<div class="flexLeft spaceBetween">
-										<a href="javascript:void(0);" class="linkA layerLink" aria-controls="temp002Layer"><b class="listDate colorBlue">2009101000040</b></a>
-										<div class="roundText">접수완료</div>
-									</div>
-									
-									<ul class="msList bdt">
-										<li>
-											<label>접수일</label>
-											<b>2006-03-01</b>
-										</li>
-										<li>
-											<label>내용</label>
-											<b>연계신청서</b>
-										</li>
-										<li>
-											<label>구분</label>
-											<b>철회</b>
-										</li>
-										<li>
-											<label>처리지사</label>
-											<button type="button" class="button h24 lineBlack">조회</button>
-										</li>
-									</ul>
-								</div>
-							</li>
-							<li>
-								<div class="roundBoxGray">
-									<h6 class="fontDefault">접수번호</h6>
-									<div class="flexLeft spaceBetween">
-										<a href="javascript:void(0);" class="linkA layerLink" aria-controls="temp003Layer"><b class="listDate colorBlue">2009101000040</b></a>
-										<div class="roundText">신청접수취소</div>
-									</div>
-									
-									<ul class="msList bdt">
-										<li>
-											<label>접수일</label>
-											<b>2006-03-01</b>
-										</li>
-										<li>
-											<label>내용</label>
-											<b>연계신청서</b>
-										</li>
-										<li>
-											<label>구분</label>
-											<b>-</b>
-										</li>
-										<li>
-											<label>처리지사</label>
-											<button type="button" class="button h24 lineBlack">조회</button>
-										</li>
-									</ul>
-								</div>
-							</li>
-							<li>
-								<div class="roundBoxGray">
-									<h6 class="fontDefault">접수번호</h6>
-									<div class="flexLeft spaceBetween">
-										<a href="javascript:void(0);" class="linkA layerLink" aria-controls="temp004Layer"><b class="listDate colorBlue">2009101000040</b></a>
-										<div class="roundText">접수완료</div>
-									</div>
-									
-									<ul class="msList bdt">
-										<li>
-											<label>접수일</label>
-											<b>2006-03-01</b>
-										</li>
-										<li>
-											<label>내용</label>
-											<b>연계신청서</b>
-										</li>
-										<li>
-											<label>구분</label>
-											<b>취하</b>
-										</li>
-										<li>
-											<label>처리지사</label>
-											<button type="button" class="button h24 lineBlack">조회</button>
-										</li>
-									</ul>
-								</div>
-							</li>
-							<li>
-								<div class="roundBoxGray">
-									<h6 class="fontDefault">접수번호</h6>
-									<div class="flexLeft spaceBetween">
-										<a href="javascript:void(0);" class="linkA layerLink" aria-controls="temp005Layer"><b class="listDate colorBlue">2009101000040</b></a>
-										<div class="roundText">접수완료</div>
-									</div>
-									
-									<ul class="msList bdt">
-										<li>
-											<label>접수일</label>
-											<b>2006-03-01</b>
-										</li>
-										<li>
-											<label>내용</label>
-											<b>연계신청서</b>
-										</li>
-										<li>
-											<label>구분</label>
-											<b>미해당</b>
-										</li>
-										<li>
-											<label>처리지사</label>
-											<button type="button" class="button h24 lineBlack">조회</button>
-										</li>
-									</ul>
-								</div>
-							</li>
-							<li>
-								<div class="roundBoxGray">
-									<h6 class="fontDefault">접수번호</h6>
-									<div class="flexLeft spaceBetween">
-										<a href="javascript:void(0);" class="linkA layerLink" aria-controls="temp006Layer"><b class="listDate colorBlue">2009101000040</b></a>
-										<div class="roundText">접수완료</div>
-									</div>
-									
-									<ul class="msList bdt">
-										<li>
-											<label>접수일</label>
-											<b>2006-03-01</b>
-										</li>
-										<li>
-											<label>내용</label>
-											<b>연계신청서</b>
-										</li>
-										<li>
-											<label>구분</label>
-											<b>취소</b>
-										</li>
-										<li>
-											<label>처리지사</label>
-											<button type="button" class="button h24 lineBlack">조회</button>
-										</li>
-									</ul>
-								</div>
-							</li>
-							<li class="empty">
-								데이터가 없습니다.
-							</li>
-						</ul>
-					</div>
-					<!-- //Mobile -->
-					
 
 					<script src="../../include/evaluation.js"></script> <!-- include: 공통 평가 -->
 				</div>
@@ -383,7 +172,7 @@
 			<div class="layerBody giant paidTaxLayer">
 				<h5 class="layerTitle" tabindex="0">반납금 정보변경</h5>
 				<div class="layerContent">
-					<div class="proposalBody overflowY" tabindex="0">
+					<div class="proposalBody overflowY">
 				
 						<!-- PC -->
 						<div class="onlyPC">
@@ -452,26 +241,26 @@
 										<tr>
 											<th scope="col" rowspan="2">연금기관</th>
 											<th scope="col" rowspan="2">재직기간 합산</th>
-											<th id="listA" colspan="4">가입•재직(복무) 기간</th>
+											<th id="NlistA" colspan="4">가입•재직(복무) 기간</th>
 										</tr>
 										<tr>
-											<th id="listB" class="bdt"><b class="colorBlue">연계신청 가능 개월수</b></th>
-											<th id="listC" class="bdt">퇴직일시금 수령</th>
-											<th id="listD" class="bdt">반납금 납부방법</th>
-											<th id="listE" class="bdt">반납금 납부횟수</th>
+											<th id="NlistB" class="bdt"><b class="colorBlue">연계신청 가능 개월수</b></th>
+											<th id="NlistC" class="bdt">퇴직일시금 수령</th>
+											<th id="NlistD" class="bdt">반납금 납부방법</th>
+											<th id="NlistE" class="bdt">반납금 납부횟수</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
 											<td rowspan="2" class="textLeft">사립학교교직원 연금공단</td>
 											<td rowspan="2"></td>
-											<td headers="listA" colspan="4">2년 6월  ( YYYY - MM - DD ~ YYYY - MM - DD )</td>
+											<td headers="NlistA" colspan="4">2년 6월  ( YYYY - MM - DD ~ YYYY - MM - DD )</td>
 										</tr>
 										<tr>
-											<td headers="listB"><span class="colorBlue">30</span></td>
-											<td headers="listC">미수령</td>
-											<td headers="listD" class="vat">분할납부</td>
-											<td headers="listE" class="vat">24회</td>
+											<td headers="NlistB"><span class="colorBlue">30</span></td>
+											<td headers="NlistC">미수령</td>
+											<td headers="NlistD" class="vat">분할납부</td>
+											<td headers="NlistE" class="vat">24회</td>
 										</tr>
 									</tbody>
 								</table>

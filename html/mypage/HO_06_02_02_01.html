@@ -43,8 +43,7 @@
 					<h4 class="defaultH4 pcmt40 momt24">고객 재직이력</h4>
 					<p class="subText">나의 예상 반납금을 조회 할 수 있습니다.</p>
 						
-					<!-- PC -->
-					<div class="tableBody mt2 onlyPC">
+					<div class="tableBody mt2">
 						<table>
 							<caption>고객 재직이력 : 연금관리기관, 가입/재직기간, 퇴직급여수령여부, 퇴직급여 수령일, 퇴직급여 수령액, 반납금 예측조회로 구성</caption>
 							<colgroup>
@@ -88,151 +87,50 @@
 							</tbody>
 						</table>
 					</div>
-					<!-- //PC -->
-
-					<!-- Mobile -->
-					<div class="onlyMobile m_tableBody momt16 noBorder">
-						<ul class="mList">
-							<li>
-								<div class="roundBoxGray">
-									<h6 class="colorBlue">사학연금</h6>
-									<div class="flexLeft">
-										<b class="listText">YYYY-MM-DD ~ YYYY-MM-DD</b>
-									</div>
-									
-									<ul class="msList bdt">
-										<li>
-											<label>퇴직급여 수령여부</label>
-											<b>수령</b>
-										</li>
-										<li>
-											<label>퇴직급여 수령일</label>
-											<b>YYYY-MM-DD</b>
-										</li>
-										<li>
-											<label>퇴직급여 수령액</label>
-											<b>000,000원</b>
-										</li>
-										<li>
-											<label>반남급 예측조회</label>
-											<button type="button" class="button h24 lineBlack">조회</button>
-										</li>
-									</ul>
-								</div>
-							</li>
-							<li>
-								<div class="roundBoxGray">
-									<h6 class="colorBlue">국민연금</h6>
-									<div class="flexLeft">
-										<b class="listText">YYYY-MM-DD ~ YYYY-MM-DD</b>
-									</div>
-									
-									<ul class="msList bdt">
-										<li>
-											<label>퇴직급여 수령여부</label>
-											<b>수령</b>
-										</li>
-										<li>
-											<label>퇴직급여 수령일</label>
-											<b>YYYY-MM-DD</b>
-										</li>
-										<li>
-											<label>퇴직급여 수령액</label>
-											<b>000,000원</b>
-										</li>
-										<li>
-											<label>반남급 예측조회</label>
-											<b>미해당</b>
-										</li>
-									</ul>
-								</div>
-							</li>
-						</ul>
-					</div>
-					<!-- //Mobile -->
-
 
 					<hr class="space onlyMobile">
 
 					<h4 class="defaultH4 pcmt40">납부방법 입력</h4>
 					<h5 class="defaultH5 mt16">사학연금</h5>
 
-					<!-- PC -->
-					<div class="onlyPC">
-						<div class="hTableBody">
-							<table>
-								<caption>납부방법 입력 : 사학연금, 예상연계신청 년월, 반납금납부방법으로 구성</caption>
-								<colgroup>
-									<col style="width: 165px;">
-									<col>
-								</colgroup>
-								<tbody>
-									<tr>
-										<th scope="row">예상연계신청 년월</th>
-										<td>
-											<div class="flexLeft alignCenter yearM">
-												<select title="예상연계신청 년 선택">
-													<option>2022</option>
-												</select>
-												<span class="other">년</span>
-												<select title="예상연계신청 월 선택">
-													<option>04</option>
-												</select>
-												<span class="other">월</span>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<th scope="row">반납금납부방법</th>
-										<td>
-											<div class="flexLeft alignCenter numberT">
-												<span>분할납부횟수</span>
-												<select title="분할납부횟수 선택">
-													<option>04</option>
-												</select>
-												<span class="other">회</span>
-											</div>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-					<!-- //PC -->
-						
-					<!-- Mobile -->
-					<div class=" onlyMobile">
-						<ul class="mListMulti momt8">
-							<li>
-								<ul class="msList mt0">
-									<li class="block">
-										<b>예상연계신청 년월</b>
-										<div class="selectPatten momt8">
+					<div class="hTableBody">
+						<table>
+							<caption>납부방법 입력 : 사학연금, 예상연계신청 년월, 반납금납부방법으로 구성</caption>
+							<colgroup>
+								<col style="width: 165px;">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">예상연계신청 년월</th>
+									<td>
+										<div class="flexLeft alignCenter yearM">
 											<select title="예상연계신청 년 선택">
 												<option>2022</option>
 											</select>
-											<span class="ml">년</span>
-											<select title="예상연계신청 월 선택" class="ml2">
+											<span class="other">년</span>
+											<select title="예상연계신청 월 선택">
 												<option>04</option>
 											</select>
-											<span class="ml">월</span>
+											<span class="other">월</span>
 										</div>
-									</li>
-									<li class="block momt24">
-										<b>반납금납부방법</b>
-										<div class="tNT momt8">
-											<span class="fontSize14">분할납부횟수</span>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">반납금납부방법</th>
+									<td>
+										<div class="flexLeft alignCenter numberT">
+											<span>분할납부횟수</span>
 											<select title="분할납부횟수 선택">
 												<option>04</option>
 											</select>
 											<span class="other">회</span>
 										</div>
-									</li>
-								</ul>
-							</li>
-						</ul>
+									</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
-					<!-- //Mobile -->
 
 					<div class="btnsGroup flexEnd pcmt16 momt20 pdt0">
 						<button type="button" class="button h24 lineBlack layerLink" aria-controls="expAmountLayer">연계반납금계산</button>

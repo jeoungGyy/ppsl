@@ -32,421 +32,178 @@
 					<h4 class="defaultH4 pcmt40">연금가입내역 확인</h4>
 					<p class="subText momt16">반납금 정보 수정(반납금 납부방법, 납부횟수 변경 가능)</p>
 					
-					<!-- PC -->
-					<div class="onlyPC">
-						<div class="tableBody">
-							<table>
-								<caption>연금가입내역 확인 : 선택, 연금기관, 재직기간 합산, 가입•재직(복무) 기간, 연계신청 가능 개월수, 퇴직일시금 수령, 반납금 납부방법, 반납금 납부횟수로 구성</caption>
-								<colgroup>
-									<col style="width: 85px;">
-									<col>
-									<col style="width: 115px;">
-									<col style="width: 160px;">
-									<col style="width: 140px;">
-									<col style="width: 140px;">
-									<col style="width: 140px;">
-								</colgroup>
-								<thead>
-									<tr>
-										<th scope="col" rowspan="2">선택</th>
-										<th scope="col" rowspan="2">연금기관</th>
-										<th scope="col" rowspan="2">재직기간 합산</th>
-										<th id="listA" colspan="4">가입•재직(복무) 기간</th>
-									</tr>
-									<tr>
-										<th id="listB" class="bdt"><b class="colorBlue">연계신청 가능 개월수</b></th>
-										<th id="listC" class="bdt">퇴직일시금 수령</th>
-										<th id="listD" class="bdt">반납금 납부방법</th>
-										<th id="listE" class="bdt">반납금 납부횟수</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr class="bgPurple">
-										<td rowspan="2">
-											<img src="../../images/common/ico_check_bg.svg" alt="첫번째 선택 된 연금가입내역">
-										</td>
-										<td rowspan="2" class="textLeft">국민연금공단</td>
-										<td rowspan="2"></td>
-										<td headers="listA" colspan="4">2년 6월  ( YYYY - MM - DD ~ YYYY - MM - DD )</td>
-									</tr>
-									<tr class="bgPurple">
-										<td headers="listB"><span class="colorBlue">30</span></td>
-										<td headers="listC">미수령</td>
-										<td headers="listD" class="vat">-</td>
-										<td headers="listE" class="vat">-</td>
-									</tr>
-									<tr class="bgPurple">
-										<td rowspan="2">
-											<img src="../../images/common/ico_check_bg.svg" alt="두번째 선택 된 연금가입내역">
-											<button type="button" class="button h24 lineBlack pcmt8 layerLink" title="두번째 선택 된 연금가입내역 수정" aria-controls="paidTaxLayer">수정</button>
-										</td>
-										<td rowspan="2" class="textLeft">사립학교교직원 연금공단</td>
-										<td rowspan="2"></td>
-										<td headers="listA" colspan="4">2년 6월  ( YYYY - MM - DD ~ YYYY - MM - DD )</td>
-									</tr>
-									<tr class="bgPurple">
-										<td headers="listB"><span class="colorBlue">45</span></td>
-										<td headers="listC">수령</td>
-										<td headers="listD" class="vat">분할납부</td>
-										<td headers="listE" class="vat">60회</td>
-									</tr>
-									<tr class="off bgPurple">
-										<td rowspan="2">
-											<img src="../../images/common/ico_p.svg" alt="두번째 선택 된 연금가입내역의 첫번째 내역">
-										</td>
-										<td rowspan="2" class="textLeft">공무원연금</td>
-										<td rowspan="2">사학연금으로 합산</td>
-										<td headers="listA" colspan="4">2년 6월  ( YYYY - MM - DD ~ YYYY - MM - DD )</td>
-									</tr>
-									<tr class="off subOff bgPurple">
-										<td headers="listB"><span class="colorBlue">0</span></td>
-										<td headers="listC">수령</td>
-										<td headers="listD" class="vat">분할납부</td>
-										<td headers="listE" class="vat">60회</td>
-									</tr>
-									<tr class="off bgPurple">
-										<td rowspan="2">
-											<img src="../../images/common/ico_p.svg" alt="두번째 선택 된 연금가입내역의 두번째 내역">
-										</td>
-										<td rowspan="2" class="textLeft">공무원연금</td>
-										<td rowspan="2">사학연금으로 합산</td>
-										<td headers="listA" colspan="4">2년 6월  ( YYYY - MM - DD ~ YYYY - MM - DD )</td>
-									</tr>
-									<tr class="off subOff bgPurple">
-										<td headers="listB"><span class="colorBlue">0</span></td>
-										<td headers="listC">수령</td>
-										<td headers="listD" class="vat">-</td>
-										<td headers="listE" class="vat">-</td>
-									</tr>
-									<tr>
-										<td rowspan="2">
-											<div class="groupBox single">
-												<input type="checkbox" name="checkbox" title="세번째 연금가입내역 선택" disabled>
-											</div>
-										</td>
-										<td rowspan="2" class="textLeft">별정우체국 연금</td>
-										<td rowspan="2"></td>
-										<td headers="listA" colspan="4">2년 6월  ( YYYY - MM - DD ~ YYYY - MM - DD )</td>
-									</tr>
-									<tr>
-										<td headers="listB"><span class="colorBlue">22</span></td>
-										<td headers="listC">수령</td>
-										<td headers="listD" class="vat">
-											<select title="반납금 납부방법 선택" disabled>
-												<option disabled selected>선택</option>
-												<option>일시납부</option>
-												<option>분할납부</option>
-											</select>
-										</td>
-										<td headers="listE" class="vat">
-											<select title="반납금 납부횟수 선택" disabled>
-												<option disabled selected>선택</option>
-												<option>2회</option>
-												<option>3회</option>
-												<option>4회</option>
-												<option>5회</option>
-												<option>6회</option>
-												<option>7회</option>
-												<option>8회</option>
-												<option>9회</option>
-												<option>10회</option>
-												<option>11회</option>
-												<option>12회</option>
-												<option>13회</option>
-												<option>14회</option>
-												<option>15회</option>
-												<option>16회</option>
-												<option>17회</option>
-												<option>18회</option>
-												<option>19회</option>
-												<option>20회</option>
-												<option>21회</option>
-												<option>22회</option>
-												<option>23회</option>
-												<option>24회</option>
-												<option>25회</option>
-												<option>26회</option>
-												<option>27회</option>
-												<option>28회</option>
-												<option>29회</option>
-												<option>30회</option>
-												<option>31회</option>
-												<option>32회</option>
-												<option>33회</option>
-												<option>34회</option>
-												<option>35회</option>
-												<option>36회</option>
-												<option>37회</option>
-												<option>38회</option>
-												<option>39회</option>
-												<option>40회</option>
-												<option>41회</option>
-												<option>42회</option>
-												<option>43회</option>
-												<option>44회</option>
-												<option>45회</option>
-												<option>46회</option>
-												<option>47회</option>
-												<option>48회</option>
-												<option>49회</option>
-												<option>50회</option>
-												<option>51회</option>
-												<option>52회</option>
-												<option>53회</option>
-												<option>54회</option>
-												<option>55회</option>
-												<option>56회</option>
-												<option>57회</option>
-												<option>58회</option>
-												<option>59회</option>
-												<option>60회</option>
-											</select>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-					<!-- //PC -->
-
-					<!-- Mobile -->
-					<div class="onlyMobile">
-						<ul class="mListMulti momt8">
-							<li class="active"> <!-- 체크박스 체크시 active 추가 -->
-								<div class="flexLeft spaceBetween">
-									<div class="flexLeft alignCenter">
+					<div class="tableBody">
+						<table>
+							<caption>연금가입내역 확인 : 선택, 연금기관, 재직기간 합산, 가입•재직(복무) 기간, 연계신청 가능 개월수, 퇴직일시금 수령, 반납금 납부방법, 반납금 납부횟수로 구성</caption>
+							<colgroup>
+								<col style="width: 85px;">
+								<col>
+								<col style="width: 115px;">
+								<col style="width: 160px;">
+								<col style="width: 140px;">
+								<col style="width: 140px;">
+								<col style="width: 140px;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col" rowspan="2">선택</th>
+									<th scope="col" rowspan="2">연금기관</th>
+									<th scope="col" rowspan="2">재직기간 합산</th>
+									<th id="listA" colspan="4">가입•재직(복무) 기간</th>
+								</tr>
+								<tr>
+									<th id="listB" class="bdt"><b class="colorBlue">연계신청 가능 개월수</b></th>
+									<th id="listC" class="bdt">퇴직일시금 수령</th>
+									<th id="listD" class="bdt">반납금 납부방법</th>
+									<th id="listE" class="bdt">반납금 납부횟수</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="bgPurple">
+									<td rowspan="2">
 										<img src="../../images/common/ico_check_bg.svg" alt="첫번째 선택 된 연금가입내역">
-										<b class="m_ml8">사립학교교직원 연금공단</b>
-									</div>
-									<!-- <button type="button" class="button h24 lineBlack pcmt8" title="두번째 선택 된 연금가입내역 수정">수정</button> -->
-								</div>
-								<div class="roundBoxGray sp mt momt12">
-									<span>가입기간</span>
-									<div class="flexLeft spaceBetween momt12">
-										<b class="listDate">2년 6월<br>( YYYY - MM - DD ~ YYYY - MM - DD )</b>
-									</div>
-								</div>
-								<ul class="msList">
-									<li>
-										<span class="colorBlue">연계신청가능 개월수</span>
-										<b class="colorBlue">30</b>
-									</li>
-									<li>
-										<span>퇴직일시금 수령</span>
-										<b>미수령</b>
-									</li>
-									<li>
-										<b>반납금 납부방법</b>
-										<span>-</span>
-									</li>
-									<li>
-										<b>반납금 납부횟수</b>
-										<span>-</span>
-									</li>
-								</ul>
-							</li>
-							<li class="active">
-								<div class="flexLeft spaceBetween">
-									<div class="flexLeft alignCenter">
+									</td>
+									<td rowspan="2" class="textLeft">국민연금공단</td>
+									<td rowspan="2"></td>
+									<td headers="listA" colspan="4">2년 6월  ( YYYY - MM - DD ~ YYYY - MM - DD )</td>
+								</tr>
+								<tr class="bgPurple">
+									<td headers="listB"><span class="colorBlue">30</span></td>
+									<td headers="listC">미수령</td>
+									<td headers="listD" class="vat">-</td>
+									<td headers="listE" class="vat">-</td>
+								</tr>
+								<tr class="bgPurple">
+									<td rowspan="2">
 										<img src="../../images/common/ico_check_bg.svg" alt="두번째 선택 된 연금가입내역">
-										<b class="m_ml8">사립학교교직원연금공단</b>
-									</div>
-									<button type="button" class="button h24 lineBlack pcmt8 layerLink" title="두번째 선택 된 연금가입내역 수정" aria-controls="paidTaxLayer">수정</button>
-								</div>
-								<div class="roundBoxGray sp mt">
-									<span>재직기간</span>
-									<div class="flexLeft spaceBetween momt12">
-										<b class="listDate">2년 6월<br>( YYYY - MM - DD ~ YYYY - MM - DD )</b>
-									</div>
-								</div>
-								<ul class="msList">
-									<li>
-										<span class="colorBlue">연계신청가능 개월수</span>
-										<b class="colorBlue">45</b>
-									</li>
-									<li>
-										<span>퇴직일시금 수령</span>
-										<b>수령</b>
-									</li>
-									<li>
-										<b>반납금 납부방법</b>
-										<span>분할납부</span>
-									</li>
-									<li>
-										<b>반납금 납부횟수</b>
-										<span>60회</span>
-									</li>
-								</ul>
-
-								<ul class="grayBoxList momt16">
-									<li>
-										<div class="flexLeft alignCenter">
-											<span class="treeIco"><img src="../../images/common/ico_p.svg" alt="두번째 연금가입내역의 첫번째 내역"></span>
-											<h6 class="name">공무원연금</h6>
+										<button type="button" class="button h24 lineBlack pcmt8 layerLink" title="두번째 선택 된 연금가입내역 수정" aria-controls="paidTaxLayer">수정</button>
+									</td>
+									<td rowspan="2" class="textLeft">사립학교교직원 연금공단</td>
+									<td rowspan="2"></td>
+									<td headers="listA" colspan="4">2년 6월  ( YYYY - MM - DD ~ YYYY - MM - DD )</td>
+								</tr>
+								<tr class="bgPurple">
+									<td headers="listB"><span class="colorBlue">45</span></td>
+									<td headers="listC">수령</td>
+									<td headers="listD" class="vat">분할납부</td>
+									<td headers="listE" class="vat">60회</td>
+								</tr>
+								<tr class="off bgPurple">
+									<td rowspan="2">
+										<img src="../../images/common/ico_p.svg" alt="두번째 선택 된 연금가입내역의 첫번째 내역">
+									</td>
+									<td rowspan="2" class="textLeft">공무원연금</td>
+									<td rowspan="2">사학연금으로 합산</td>
+									<td headers="listA" colspan="4">2년 6월  ( YYYY - MM - DD ~ YYYY - MM - DD )</td>
+								</tr>
+								<tr class="off subOff bgPurple">
+									<td headers="listB"><span class="colorBlue">0</span></td>
+									<td headers="listC">수령</td>
+									<td headers="listD" class="vat">분할납부</td>
+									<td headers="listE" class="vat">60회</td>
+								</tr>
+								<tr class="off bgPurple">
+									<td rowspan="2">
+										<img src="../../images/common/ico_p.svg" alt="두번째 선택 된 연금가입내역의 두번째 내역">
+									</td>
+									<td rowspan="2" class="textLeft">공무원연금</td>
+									<td rowspan="2">사학연금으로 합산</td>
+									<td headers="listA" colspan="4">2년 6월  ( YYYY - MM - DD ~ YYYY - MM - DD )</td>
+								</tr>
+								<tr class="off subOff bgPurple">
+									<td headers="listB"><span class="colorBlue">0</span></td>
+									<td headers="listC">수령</td>
+									<td headers="listD" class="vat">-</td>
+									<td headers="listE" class="vat">-</td>
+								</tr>
+								<tr>
+									<td rowspan="2">
+										<div class="groupBox single">
+											<input type="checkbox" name="checkbox" title="세번째 연금가입내역 선택" disabled>
 										</div>
-										<div class="roundBoxGray border sp mt">
-											<span>재직기간(사학연금으로합산)</span>
-											<div class="flexLeft spaceBetween momt12">
-												<b class="listDate">2년 6월<br>( YYYY - MM - DD ~ YYYY - MM - DD )</b>
-											</div>
-										</div>
-										
-										<ul class="msList">
-											<li>
-												<label class="colorBlue">연계신청 가능 개월수</label>
-												<b class="colorBlue">0</b>
-											</li>
-											<li>
-												<label>퇴직일시금 수령</label>
-												<b>수령</b>
-											</li>
-											<li>
-												<label>반납금 납부방법</label>
-												<b>-</b>
-											</li>
-											<li>
-												<label>반납금 납부횟수</label>
-												<b>-</b>
-											</li>
-										</ul>
-									</li>
-									<li>
-										<div class="flexLeft alignCenter">
-											<span class="treeIco"><img src="../../images/common/ico_p.svg" alt="두번째 연금가입내역의 두번째 내역"></span>
-											<h6 class="name">사립학교교직원 연금공단</h6>
-										</div>
-										<div class="roundBoxGray border sp mt">
-											<span>재직기간(사학연금으로합산)</span>
-											<div class="flexLeft spaceBetween momt12">
-												<b class="listDate">2년 6월<br>( YYYY - MM - DD ~ YYYY - MM - DD )</b>
-											</div>
-										</div>
-										
-										<ul class="msList">
-											<li>
-												<label class="colorBlue">연계신청 가능 개월수</label>
-												<b class="colorBlue">0</b>
-											</li>
-											<li>
-												<label>퇴직일시금 수령</label>
-												<b>수령</b>
-											</li>
-											<li>
-												<label>반납금 납부방법</label>
-												<b>-</b>
-											</li>
-											<li>
-												<label>반납금 납부횟수</label>
-												<b>-</b>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<div class="groupBox">
-									<div class="checkboxBox">
-										<input type="checkbox" id="m_chechbox1" name="m_checkbox" title="세번째 연금가입내역 선택" disabled>
-										<label for="m_chechbox1">별정우체국 연금</label>
-									</div>
-								</div>
-								<div class="roundBoxGray sp mt">
-									<span>재직기간</span>
-									<div class="flexLeft spaceBetween momt12">
-										<b class="listDate">2년 6월<br>( YYYY - MM - DD ~ YYYY - MM - DD )</b>
-									</div>
-								</div>
-								<ul class="msList">
-									<li>
-										<span class="colorBlue">연계신청가능 월수</span>
-										<b class="colorBlue">22</b>
-									</li>
-									<li>
-										<span>퇴직일시금 수령</span>
-										<b>수령</b>
-									</li>
-									<li class="block lineBreak">
-										<b>반납금 납부방법</b>
-										<span>
-											<select title="반납금 납부방법 선택" disabled>
-												<option disabled selected>선택</option>
-												<option>일시납부</option>
-												<option>분할납부</option>
-											</select>
-										</span>
-									</li>
-									<li class="block">
-										<b>반납금 납부횟수</b>
-										<span>
-											<select title="반납금 납부횟수 선택" disabled>
-												<option disabled selected>선택</option>
-												<option>2회</option>
-												<option>3회</option>
-												<option>4회</option>
-												<option>5회</option>
-												<option>6회</option>
-												<option>7회</option>
-												<option>8회</option>
-												<option>9회</option>
-												<option>10회</option>
-												<option>11회</option>
-												<option>12회</option>
-												<option>13회</option>
-												<option>14회</option>
-												<option>15회</option>
-												<option>16회</option>
-												<option>17회</option>
-												<option>18회</option>
-												<option>19회</option>
-												<option>20회</option>
-												<option>21회</option>
-												<option>22회</option>
-												<option>23회</option>
-												<option>24회</option>
-												<option>25회</option>
-												<option>26회</option>
-												<option>27회</option>
-												<option>28회</option>
-												<option>29회</option>
-												<option>30회</option>
-												<option>31회</option>
-												<option>32회</option>
-												<option>33회</option>
-												<option>34회</option>
-												<option>35회</option>
-												<option>36회</option>
-												<option>37회</option>
-												<option>38회</option>
-												<option>39회</option>
-												<option>40회</option>
-												<option>41회</option>
-												<option>42회</option>
-												<option>43회</option>
-												<option>44회</option>
-												<option>45회</option>
-												<option>46회</option>
-												<option>47회</option>
-												<option>48회</option>
-												<option>49회</option>
-												<option>50회</option>
-												<option>51회</option>
-												<option>52회</option>
-												<option>53회</option>
-												<option>54회</option>
-												<option>55회</option>
-												<option>56회</option>
-												<option>57회</option>
-												<option>58회</option>
-												<option>59회</option>
-												<option>60회</option>
-											</select>
-										</span>
-									</li>
-								</ul>
-							</li>
-						</ul>
+									</td>
+									<td rowspan="2" class="textLeft">별정우체국 연금</td>
+									<td rowspan="2"></td>
+									<td headers="listA" colspan="4">2년 6월  ( YYYY - MM - DD ~ YYYY - MM - DD )</td>
+								</tr>
+								<tr>
+									<td headers="listB"><span class="colorBlue">22</span></td>
+									<td headers="listC">수령</td>
+									<td headers="listD" class="vat">
+										<select title="반납금 납부방법 선택" disabled>
+											<option disabled selected>선택</option>
+											<option>일시납부</option>
+											<option>분할납부</option>
+										</select>
+									</td>
+									<td headers="listE" class="vat">
+										<select title="반납금 납부횟수 선택" disabled>
+											<option disabled selected>선택</option>
+											<option>2회</option>
+											<option>3회</option>
+											<option>4회</option>
+											<option>5회</option>
+											<option>6회</option>
+											<option>7회</option>
+											<option>8회</option>
+											<option>9회</option>
+											<option>10회</option>
+											<option>11회</option>
+											<option>12회</option>
+											<option>13회</option>
+											<option>14회</option>
+											<option>15회</option>
+											<option>16회</option>
+											<option>17회</option>
+											<option>18회</option>
+											<option>19회</option>
+											<option>20회</option>
+											<option>21회</option>
+											<option>22회</option>
+											<option>23회</option>
+											<option>24회</option>
+											<option>25회</option>
+											<option>26회</option>
+											<option>27회</option>
+											<option>28회</option>
+											<option>29회</option>
+											<option>30회</option>
+											<option>31회</option>
+											<option>32회</option>
+											<option>33회</option>
+											<option>34회</option>
+											<option>35회</option>
+											<option>36회</option>
+											<option>37회</option>
+											<option>38회</option>
+											<option>39회</option>
+											<option>40회</option>
+											<option>41회</option>
+											<option>42회</option>
+											<option>43회</option>
+											<option>44회</option>
+											<option>45회</option>
+											<option>46회</option>
+											<option>47회</option>
+											<option>48회</option>
+											<option>49회</option>
+											<option>50회</option>
+											<option>51회</option>
+											<option>52회</option>
+											<option>53회</option>
+											<option>54회</option>
+											<option>55회</option>
+											<option>56회</option>
+											<option>57회</option>
+											<option>58회</option>
+											<option>59회</option>
+											<option>60회</option>
+										</select>
+									</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
-					<!-- //Mobile -->
 
 					<script src="../../include/evaluation.js"></script> <!-- include: 공통 평가 -->
 				</div>

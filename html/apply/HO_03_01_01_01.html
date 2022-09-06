@@ -35,19 +35,19 @@
 					<div class="stepBody">
 						<!-- 0단계 -->
 						<ul class="stepBy">
-							<li>
+							<li role="text">
 								<span class="fontMontserrat">01</span>
 								<span class="fontEliceDigital text">접수<span class="m_block">중</span></span>
 							</li>
-							<li>
+							<li role="text">
 								<span class="fontMontserrat">02</span>
 								<span class="fontEliceDigital text">접수<span class="m_block">완료</span></span>
 							</li>
-							<li>
+							<li role="text">
 								<span class="fontMontserrat">03</span>
 								<span class="fontEliceDigital text">기관<span class="m_block">심사중</span></span>
 							</li>
-							<li>
+							<li role="text">
 								<span class="fontMontserrat">04</span>
 								<span class="fontEliceDigital text">처리<span class="m_block">완료</span></span>
 							</li>
@@ -62,20 +62,19 @@
 							접수번호 : <b class="colorBlue">1234568888</b>
 						</div>
 						<ul class="stepBy">
-							<li class="active">
-								<span class="invisible">현재 단계</span>
+							<li class="active" role="text" aria-current="step">
 								<span class="fontMontserrat">01</span>
 								<span class="fontEliceDigital text">접수<span class="m_block">중</span></span>
 							</li>
-							<li>
+							<li role="text">
 								<span class="fontMontserrat">02</span>
 								<span class="fontEliceDigital text">접수<span class="m_block">완료</span></span>
 							</li>
-							<li>
+							<li role="text">
 								<span class="fontMontserrat">03</span>
 								<span class="fontEliceDigital text">기관<span class="m_block">심사중</span></span>
 							</li>
-							<li>
+							<li role="text">
 								<span class="fontMontserrat">04</span>
 								<span class="fontEliceDigital text">처리<span class="m_block">완료</span></span>
 							</li>
@@ -90,20 +89,19 @@
 							접수번호 : <b class="colorBlue">1234568888</b>
 						</div>
 						<ul class="stepBy">
-							<li class="active">
+							<li class="active" role="text">
 								<span class="fontMontserrat">01</span>
 								<span class="fontEliceDigital text">접수<span class="m_block">중</span></span>
 							</li>
-							<li class="active">
-								<span class="invisible">현재 단계</span> <!-- 현재 단계일 경우 <span class="invisible">현재 단계</span> 태그도 같이 움직여 줘야 합니다. -->
+							<li class="active" role="text" aria-current="step"> <!-- 현재 단계일 경우 aria-current="step" 추가 -->
 								<span class="fontMontserrat">02</span>
 								<span class="fontEliceDigital text">접수<span class="m_block">완료</span></span>
 							</li>
-							<li>
+							<li role="text">
 								<span class="fontMontserrat">03</span>
 								<span class="fontEliceDigital text">기관<span class="m_block">심사중</span></span>
 							</li>
-							<li>
+							<li role="text">
 								<span class="fontMontserrat">04</span>
 								<span class="fontEliceDigital text">처리<span class="m_block">완료</span></span>
 							</li>
@@ -119,20 +117,19 @@
 							접수번호 : <b class="colorBlue">1234568888</b>
 						</div>
 						<ul class="stepBy">
-							<li class="active">
+							<li class="active" role="text">
 								<span class="fontMontserrat">01</span>
 								<span class="fontEliceDigital text">접수<span class="m_block">중</span></span>
 							</li>
-							<li class="active">
+							<li class="active" role="text">
 								<span class="fontMontserrat">02</span>
 								<span class="fontEliceDigital text">접수<span class="m_block">완료</span></span>
 							</li>
-							<li class="active">
-								<span class="invisible">현재 단계</span>
+							<li class="active" class="active" role="text" aria-current="step">
 								<span class="fontMontserrat">03</span>
 								<span class="fontEliceDigital text">기관<span class="m_block">심사중</span></span>
 							</li>
-							<li>
+							<li role="text">
 								<span class="fontMontserrat">04</span>
 								<span class="fontEliceDigital text">처리<span class="m_block">완료</span></span>
 							</li>
@@ -148,21 +145,19 @@
 							접수번호 : <b class="colorBlue">1234568888</b>
 						</div>
 						<ul class="stepBy">
-							<li class="active">
-								<span class="invisible">현재 단계</span>
+							<li class="active" role="text">
 								<span class="fontMontserrat">01</span>
 								<span class="fontEliceDigital text">접수<span class="m_block">중</span></span>
 							</li>
-							<li class="active">
+							<li class="active" role="text">
 								<span class="fontMontserrat">02</span>
 								<span class="fontEliceDigital text">접수<span class="m_block">완료</span></span>
 							</li>
-							<li class="active">
+							<li class="active" role="text">
 								<span class="fontMontserrat">03</span>
 								<span class="fontEliceDigital text">기관<span class="m_block">심사중</span></span>
 							</li>
-							<li class="active">
-								<span class="invisible">현재 단계</span>
+							<li class="active" role="text" aria-current="step">
 								<span class="fontMontserrat">04</span>
 								<span class="fontEliceDigital text">처리<span class="m_block">완료</span></span>
 							</li>
@@ -209,113 +204,47 @@
 
 						<!-- 신청 취소 -->
 						<div class="targetCancel sameStyle">
-							<!-- PC -->
-							<div class="onlyPC">
-								<div class="tableBody">
-									<table>
-										<caption>연계신청 취소 : 접수번호, 접수일, 내용, 구분, 상태, 처리지사로 구성</caption>
-										<colgroup>
-											<col>
-											<col style="width: 184px;">
-											<col style="width: 144px;">
-											<col style="width: 136px;">
-											<col style="width: 136px;">
-											<col style="width: 124px;">
-										</colgroup>
-										<thead>
-											<tr>
-												<th scope="col">접수번호</th>
-												<th scope="col">접수일</th>
-												<th scope="col">내용</th>
-												<th scope="col">구분</th>
-												<th scope="col">상태</th>
-												<th scope="col">처리지사</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td><a href="#" class="linkA">2009101000040</a></td>
-												<td>2006-03-01</td>
-												<td>연계신청서</td>
-												<td></td>
-												<td>접수완료</td>
-												<td><button type="button" class="button h24 lineBlack layerLink" aria-controls="applyManagerLayer">조회</button></td>
-											</tr>
-											<tr>
-												<td><a href="#" class="linkA">2009101000040</a></td>
-												<td>2006-03-01</td>
-												<td>연계신청서</td>
-												<td></td>
-												<td><span class="colorBlue">처리완료</span></td><!-- 처리완료만 파랑색상을 사용합니다. -->
-												<td><button type="button" class="button h24 lineBlack layerLink" aria-controls="applyManagerLayer">조회</button></td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
+							<div class="tableBody">
+								<table>
+									<caption>연계신청 취소 : 접수번호, 접수일, 내용, 구분, 상태, 처리지사로 구성</caption>
+									<colgroup>
+										<col>
+										<col style="width: 184px;">
+										<col style="width: 144px;">
+										<col style="width: 136px;">
+										<col style="width: 136px;">
+										<col style="width: 124px;">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">접수번호</th>
+											<th scope="col">접수일</th>
+											<th scope="col">내용</th>
+											<th scope="col">구분</th>
+											<th scope="col">상태</th>
+											<th scope="col">처리지사</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><a href="#" class="linkA">2009101000040</a></td>
+											<td>2006-03-01</td>
+											<td>연계신청서</td>
+											<td></td>
+											<td>접수완료</td>
+											<td><button type="button" class="button h24 lineBlack layerLink" aria-controls="applyManagerLayer">조회</button></td>
+										</tr>
+										<tr>
+											<td><a href="#" class="linkA">2009101000040</a></td>
+											<td>2006-03-01</td>
+											<td>연계신청서</td>
+											<td></td>
+											<td><span class="colorBlue">처리완료</span></td><!-- 처리완료만 파랑색상을 사용합니다. -->
+											<td><button type="button" class="button h24 lineBlack layerLink" aria-controls="applyManagerLayer">조회</button></td>
+										</tr>
+									</tbody>
+								</table>
 							</div>
-							<!-- //PC -->
-							<!-- Mobile -->
-							<div class="onlyMobile m_tableBody mt noBorder">
-								<ul class="mList">
-									<li>
-										<div class="roundBoxGray">
-											<h6>접수번호</h6>
-											<div class="flexLeft spaceBetween">
-												<a href="#" class="linkA"><b class="listDate colorBlue">2009101000040</b></a>
-												<div class="roundText">접수중</div>
-											</div>
-											
-											<ul class="msList bdt">
-												<li>
-													<label>접수일</label>
-													<b>2006-03-01</b>
-												</li>
-												<li>
-													<label>내용</label>
-													<b>연계신청서</b>
-												</li>
-												<li>
-													<label>구분</label>
-													<b>미해당</b>
-												</li>
-												<li>
-													<label>처리지사</label>
-													<button type="button" class="button h24 lineBlack layerLink" aria-controls="applyManagerLayer">조회</button>
-												</li>
-											</ul>
-										</div>
-									</li>
-									<li>
-										<div class="roundBoxGray">
-											<h6>접수번호</h6>
-											<div class="flexLeft spaceBetween">
-												<a href="#" class="linkA"><b class="listDate colorBlue">2009101000040</b></a>
-												<div class="roundText blueLine">처리완료</div><!-- 처리완료만 파랑색상을 사용합니다. -->
-											</div>
-											
-											<ul class="msList bdt">
-												<li>
-													<label>접수일</label>
-													<b>2006-03-01</b>
-												</li>
-												<li>
-													<label>내용</label>
-													<b>연계신청서</b>
-												</li>
-												<li>
-													<label>구분</label>
-													<b>미해당</b>
-												</li>
-												<li>
-													<label>처리지사</label>
-													<button type="button" class="button h24 lineBlack layerLink" aria-controls="applyManagerLayer">조회</button>
-												</li>
-											</ul>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<!-- //Mobile -->
 							<ul class="guideText mt gtm">
 								<li>접수중 단계에서 연계신청 접수 취소 가능합니다. <button type="button" class="lineButton"><span>신청접수 취소</span><i class="arrowRight"></i></button></li>
 							</ul>
@@ -324,118 +253,51 @@
 
 						<!-- 완료 -->
 						<div class="targetComplete sameStyle">
-							<!-- PC -->
-							<div class="onlyPC">
-								<div class="tableBody">
-									<table>
-										<caption>연계신청 완료 : 접수방법, 접수번호, 접수일, 내용, 구분, 상태, 처리지사로 구성</caption>
-										<colgroup>
-											<col style="width: 105px;">
-											<col>
-											<col style="width: 130px;">
-											<col style="width: 145px;">
-											<col style="width: 110px;">
-											<col style="width: 140px;">
-											<col style="width: 120px;">
-										</colgroup>
-										<thead>
-											<tr>
-												<th scope="col">접수방법</th>
-												<th scope="col">접수번호</th>
-												<th scope="col">접수일</th>
-												<th scope="col">내용</th>
-												<th scope="col">구분</th>
-												<th scope="col">상태</th>
-												<th scope="col">처리지사</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>인터넷</td>
-												<td><a href="#" class="linkA">2009101000040</a></td>
-												<td>2006-03-01</td>
-												<td>연계신청서</td>
-												<td>-</td>
-												<td>기관심사중</td>
-												<td><button type="button" class="button h24 lineBlack layerLink" aria-controls="applyManagerLayer">확인</button></td>
-											</tr>
-											<tr>
-												<td>인터넷</td>
-												<td><a href="#" class="linkA">2009101000040</a></td>
-												<td>2006-03-01</td>
-												<td>연계신청서</td>
-												<td>-</td>
-												<td><span class="colorBlue">처리완료</span></td>
-												<td><button type="button" class="button h24 lineBlack layerLink" aria-controls="applyManagerLayer">확인</button></td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
+							<div class="tableBody">
+								<table>
+									<caption>연계신청 완료 : 접수방법, 접수번호, 접수일, 내용, 구분, 상태, 처리지사로 구성</caption>
+									<colgroup>
+										<col style="width: 105px;">
+										<col>
+										<col style="width: 130px;">
+										<col style="width: 145px;">
+										<col style="width: 110px;">
+										<col style="width: 140px;">
+										<col style="width: 120px;">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">접수방법</th>
+											<th scope="col">접수번호</th>
+											<th scope="col">접수일</th>
+											<th scope="col">내용</th>
+											<th scope="col">구분</th>
+											<th scope="col">상태</th>
+											<th scope="col">처리지사</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>인터넷</td>
+											<td><a href="#" class="linkA">2009101000040</a></td>
+											<td>2006-03-01</td>
+											<td>연계신청서</td>
+											<td>-</td>
+											<td>기관심사중</td>
+											<td><button type="button" class="button h24 lineBlack layerLink" aria-controls="applyManagerLayer">확인</button></td>
+										</tr>
+										<tr>
+											<td>인터넷</td>
+											<td><a href="#" class="linkA">2009101000040</a></td>
+											<td>2006-03-01</td>
+											<td>연계신청서</td>
+											<td>-</td>
+											<td><span class="colorBlue">처리완료</span></td>
+											<td><button type="button" class="button h24 lineBlack layerLink" aria-controls="applyManagerLayer">확인</button></td>
+										</tr>
+									</tbody>
+								</table>
 							</div>
-							<!-- //PC -->
-
-							<!-- Mobile -->
-							<div class="onlyMobile m_tableBody mt noBorder">
-								<ul class="mList">
-									<li>
-										<div class="roundBoxGray">
-											<h6>접수번호</h6>
-											<div class="flexLeft spaceBetween">
-												<a href="#" class="linkA"><b class="listDate colorBlue">2009101000040</b></a>
-												<div class="roundText">기관심사중</div>
-											</div>
-											
-											<ul class="msList bdt">
-												<li>
-													<label>접수일</label>
-													<b>2006-03-01</b>
-												</li>
-												<li>
-													<label>내용</label>
-													<b>연계신청서</b>
-												</li>
-												<li>
-													<label>구분</label>
-													<b>-</b>
-												</li>
-												<li>
-													<label>처리지사</label>
-													<button type="button" class="button h24 lineBlack layerLink" aria-controls="applyManagerLayer">확인</button>
-												</li>
-											</ul>
-										</div>
-									</li>
-									<li>
-										<div class="roundBoxGray">
-											<h6>접수번호</h6>
-											<div class="flexLeft spaceBetween">
-												<a href="#" class="linkA"><b class="listDate colorBlue">2009101000040</b></a>
-												<div class="roundText blueLine">처리완료</div>
-											</div>
-											
-											<ul class="msList bdt">
-												<li>
-													<label>접수일</label>
-													<b>2006-03-01</b>
-												</li>
-												<li>
-													<label>내용</label>
-													<b>연계신청서</b>
-												</li>
-												<li>
-													<label>구분</label>
-													<b>-</b>
-												</li>
-												<li>
-													<label>처리지사</label>
-													<button type="button" class="button h24 lineBlack layerLink" aria-controls="applyManagerLayer">확인</button>
-												</li>
-											</ul>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<!-- //Mobile -->
 
 							<ul class="guideText mt">
 								<li>연계신청  관련 문의는 처리 지사를  통해 문의 하시기 바랍니다</li>
@@ -452,334 +314,127 @@
 						<span class="subDate">조회일 : 2022.03.10</span>
 					</div>
 					<div>
-						<!-- PC -->
-						<div class="onlyPC">
-							<h5 class="defaultH5 mt">국민연금</h5>
-							<div class="tableBody">
-								<table>
-									<caption>국민연금 가입(재직)이력 : 기관, 기간, 가입기간, 퇴직급여수령, 연계신청으로 구성</caption>
-									<colgroup>
-										<col style="width: 184px;">
-										<col>
-										<col style="width: 136px;">
-										<col style="width: 136px;">
-										<col style="width: 92px;">
-										<col style="width: 98px;">
-									</colgroup>
-									<thead>
-										<tr>
-											<th scope="col">기관</th>
-											<th scope="col">기간</th>
-											<th scope="col">가입기간</th>
-											<th scope="col">퇴직급여수령</th>
-											<th scope="col" colspan="2">연계신청</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>국민연금</td>
-											<td>2006-03-01 ~ 2011-03-01</td>
-											<td>5년 00개월</td>
-											<td>-</td>
-											<td>60개월</td>
-											<td>신청접수</td>
-										</tr>
-										<tr>
-											<td>국민연금</td>
-											<td>2020-08-01 ~ 현재</td>
-											<td>1년05개월</td>
-											<td>-</td>
-											<td>17개월</td>
-											<td><span class="colorGray">불가(합산)</span></td>
-										</tr>
-										<tr>
-											<td>국민연금</td>
-											<td>2020-08-01 ~ 현재</td>
-											<td>1년05개월</td>
-											<td>-</td>
-											<td>17개월</td>
-											<td><span class="colorBlue">처리완료</span></td>
-										</tr>
-										<tr>
-											<td>국민연금</td>
-											<td>2020-08-01 ~ 현재</td>
-											<td>1년05개월</td>
-											<td>-</td>
-											<td>17개월</td>
-											<td><span class="colorBlue">가능</span></td>
-										</tr>
-										<tr>
-											<td class="empty" colspan="6">데이터가 없습니다.</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
+						<h5 class="defaultH5 mt">국민연금</h5>
+						<div class="tableBody">
+							<table>
+								<caption>국민연금 가입(재직)이력 : 기관, 기간, 가입기간, 퇴직급여수령, 연계신청으로 구성</caption>
+								<colgroup>
+									<col style="width: 184px;">
+									<col>
+									<col style="width: 136px;">
+									<col style="width: 136px;">
+									<col style="width: 92px;">
+									<col style="width: 98px;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">기관</th>
+										<th scope="col">기간</th>
+										<th scope="col">가입기간</th>
+										<th scope="col">퇴직급여수령</th>
+										<th scope="col" colspan="2">연계신청</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>국민연금</td>
+										<td>2006-03-01 ~ 2011-03-01</td>
+										<td>5년 00개월</td>
+										<td>-</td>
+										<td>60개월</td>
+										<td>신청접수</td>
+									</tr>
+									<tr>
+										<td>국민연금</td>
+										<td>2020-08-01 ~ 현재</td>
+										<td>1년05개월</td>
+										<td>-</td>
+										<td>17개월</td>
+										<td><span class="colorGray">불가(합산)</span></td>
+									</tr>
+									<tr>
+										<td>국민연금</td>
+										<td>2020-08-01 ~ 현재</td>
+										<td>1년05개월</td>
+										<td>-</td>
+										<td>17개월</td>
+										<td><span class="colorBlue">처리완료</span></td>
+									</tr>
+									<tr>
+										<td>국민연금</td>
+										<td>2020-08-01 ~ 현재</td>
+										<td>1년05개월</td>
+										<td>-</td>
+										<td>17개월</td>
+										<td><span class="colorBlue">가능</span></td>
+									</tr>
+									<tr>
+										<td class="empty" colspan="6">데이터가 없습니다.</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
-						<!-- //PC -->
 
-						<!-- Mobile -->
-						<div class="onlyMobile m_tableBody mt">
-							<h5 class="defaultH5">국민연금</h5>
-							<ul class="mList mt">
-								<li>
-									<div class="roundBoxGray">
-										<h6 class="colorBlue">국민연금</h6>
-										<div class="flexLeft spaceBetween">
-											<b class="listDate">2006-03-01 ~ 2011-03-01</b>
-										</div>
-										
-										<ul class="msList bdt">
-											<li>
-												<label>가입기간</label>
-												<b>5년 00개월</b>
-											</li>
-											<li>
-												<label>퇴직급여수령</label>
-												<b>-</b>
-											</li>
-											<li>
-												<label>연계신청</label>
-												<b>60개월 / 신청접수</b>
-											</li>
-										</ul>
-									</div>
-								</li>
-								<li>
-									<div class="roundBoxGray">
-										<h6 class="colorBlue">국민연금</h6>
-										<div class="flexLeft spaceBetween">
-											<b class="listDate">2020-08-01 ~ 현재</b>
-										</div>
-										<ul class="msList bdt">
-											<li>
-												<label>가입기간</label>
-												<b>1년05개월</b>
-											</li>
-											<li>
-												<label>퇴직급여수령</label>
-												<b>-</b>
-											</li>
-											<li>
-												<label>연계신청</label>
-												<b>17개월 / <span class="colorGray">불가(합산)</span></b>
-											</li>
-										</ul>
-									</div>
-								</li>
-								<li>
-									<div class="roundBoxGray">
-										<h6 class="colorBlue">국민연금</h6>
-										<div class="flexLeft spaceBetween">
-											<b class="listDate">2020-08-01 ~ 현재</b>
-										</div>
-										<ul class="msList bdt">
-											<li>
-												<label>가입기간</label>
-												<b>1년05개월</b>
-											</li>
-											<li>
-												<label>퇴직급여수령</label>
-												<b>-</b>
-											</li>
-											<li>
-												<label>연계신청</label>
-												<b>17개월 / <span class="colorBlue">가능</span></b>
-											</li>
-										</ul>
-									</div>
-								</li>
-								<li>
-									<div class="roundBoxGray">
-										<h6 class="colorBlue">국민연금</h6>
-										<div class="flexLeft spaceBetween">
-											<b class="listDate">2020-08-01 ~ 현재</b>
-										</div>
-										<ul class="msList bdt">
-											<li>
-												<label>가입기간</label>
-												<b>1년05개월</b>
-											</li>
-											<li>
-												<label>퇴직급여수령</label>
-												<b>-</b>
-											</li>
-											<li>
-												<label>연계신청</label>
-												<b>17개월 / <span class="colorBlue">처리완료</span></b> <!-- 처리완료만 색상이 들어갑니다. -->
-											</li>
-										</ul>
-									</div>
-								</li>
-								<li class="empty">
-									<div class="roundBoxGray">데이터가 없습니다.</div>
-								</li>
-							</ul>
+						<h5 class="defaultH5 mt">직역연금</h5>
+						<div class="tableBody">
+							<table>
+								<caption>직역연금 가입(재직)이력 : 기관, 기간, 가입기간, 퇴직급여수령, 연계신청으로 구성</caption>
+								<colgroup>
+									<col style="width: 184px;">
+									<col>
+									<col style="width: 136px;">
+									<col style="width: 136px;">
+									<col style="width: 92px;">
+									<col style="width: 98px;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">기관</th>
+										<th scope="col">기간</th>
+										<th scope="col">가입기간</th>
+										<th scope="col">퇴직급여수령</th>
+										<th scope="col" colspan="2">연계신청</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="textLeftStyle">공무원연금</td>
+										<td>2020-08-01 ~ 현재</td>
+										<td>1년05개월</td>
+										<td>-</td>
+										<td>17개월</td>
+										<td>신청접수</td>
+									</tr>
+									<tr class="off">
+										<td class="textLeftStyle"><img src="../../images/common/ico_p.svg" alt="합산"> 사학연금</td>
+										<td>2020-08-01 ~ 현재</td>
+										<td>1년05개월</td>
+										<td>-</td>
+										<td>0개월</td>
+										<td><span class="colorGray">불가(합산)</span></td>
+									</tr>
+									<tr>
+										<td class="textLeftStyle">별정우체국</td>
+										<td>2020-08-01 ~ 현재</td>
+										<td>1년05개월</td>
+										<td>-</td>
+										<td>17개월</td>
+										<td><span class="colorBlue">가능</span></td>
+									</tr>
+									<tr>
+										<td class="textLeftStyle">군인연금</td>
+										<td>2020-08-01 ~ 현재</td>
+										<td>1년05개월</td>
+										<td>-</td>
+										<td>17개월</td>
+										<td><span class="colorBlue">처리완료</span></td>
+									</tr>
+									<tr>
+										<td class="empty" colspan="6">재직 이력이 없습니다.</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
-						<!-- //Mobile -->
-
-						<!-- PC -->
-						<div class="onlyPC">
-							<h5 class="defaultH5 mt">직역연금</h5>
-							<div class="tableBody">
-								<table>
-									<caption>직역연금 가입(재직)이력 : 기관, 기간, 가입기간, 퇴직급여수령, 연계신청으로 구성</caption>
-									<colgroup>
-										<col style="width: 184px;">
-										<col>
-										<col style="width: 136px;">
-										<col style="width: 136px;">
-										<col style="width: 92px;">
-										<col style="width: 98px;">
-									</colgroup>
-									<thead>
-										<tr>
-											<th scope="col">기관</th>
-											<th scope="col">기간</th>
-											<th scope="col">가입기간</th>
-											<th scope="col">퇴직급여수령</th>
-											<th scope="col" colspan="2">연계신청</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td class="textLeftStyle">공무원연금</td>
-											<td>2020-08-01 ~ 현재</td>
-											<td>1년05개월</td>
-											<td>-</td>
-											<td>17개월</td>
-											<td>신청접수</td>
-										</tr>
-										<tr class="off">
-											<td class="textLeftStyle"><img src="../../images/common/ico_p.svg" alt="합산"> 사학연금</td>
-											<td>2020-08-01 ~ 현재</td>
-											<td>1년05개월</td>
-											<td>-</td>
-											<td>0개월</td>
-											<td><span class="colorGray">불가(합산)</span></td>
-										</tr>
-										<tr>
-											<td class="textLeftStyle">별정우체국</td>
-											<td>2020-08-01 ~ 현재</td>
-											<td>1년05개월</td>
-											<td>-</td>
-											<td>17개월</td>
-											<td><span class="colorBlue">가능</span></td>
-										</tr>
-										<tr>
-											<td class="textLeftStyle">군인연금</td>
-											<td>2020-08-01 ~ 현재</td>
-											<td>1년05개월</td>
-											<td>-</td>
-											<td>17개월</td>
-											<td><span class="colorBlue">처리완료</span></td>
-										</tr>
-										<tr>
-											<td class="empty" colspan="6">재직 이력이 없습니다.</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
-						<!-- //PC -->
-
-						<!-- Mobile -->
-						<div class="onlyMobile m_tableBody mt">
-							<h5 class="defaultH5">직역연금</h5>
-							<ul class="mList mt">
-								<li>
-									<div class="roundBoxGray">
-										<h6 class="colorBlue">공무원연금</h6>
-										<div class="flexLeft spaceBetween">
-											<b class="listDate">2006-03-01 ~ 2011-03-01</b>
-										</div>
-										<ul class="msList bdt">
-											<li>
-												<label>가입기간</label>
-												<b>5년 00개월</b>
-											</li>
-											<li>
-												<label>퇴직급여수령</label>
-												<b>-</b>
-											</li>
-											<li>
-												<label>연계신청</label>
-												<b>60개월 / 신청접수</b>
-											</li>
-										</ul>
-									</div>
-								</li>
-								<li>
-									<div class="roundBoxGray">
-										<h6 class="colorBlue"><img src="../../images/common/ico_p.svg" alt="합산"> 사학연금</h6>
-										<div class="flexLeft spaceBetween">
-											<b class="listDate">2020-08-01 ~ 현재</b>
-										</div>
-										<ul class="msList bdt">
-											<li>
-												<label>가입기간</label>
-												<b>1년05개월</b>
-											</li>
-											<li>
-												<label>퇴직급여수령</label>
-												<b>-</b>
-											</li>
-											<li>
-												<label>연계신청</label>
-												<b>17개월 / <span class="colorGray">불가(합산)</span></b>
-											</li>
-										</ul>
-									</div>
-								</li>
-								<li>
-									<div class="roundBoxGray">
-										<h6 class="colorBlue">별정우체국</h6>
-										<div class="flexLeft spaceBetween">
-											<b class="listDate">2020-08-01 ~ 현재</b>
-										</div>
-										<ul class="msList bdt">
-											<li>
-												<label>가입기간</label>
-												<b>1년05개월</b>
-											</li>
-											<li>
-												<label>퇴직급여수령</label>
-												<b>-</b>
-											</li>
-											<li>
-												<label>연계신청</label>
-												<b>17개월 / <span class="colorBlue">가능</span></b>
-											</li>
-										</ul>
-									</div>
-								</li>
-								<li>
-									<div class="roundBoxGray">
-										<h6 class="colorBlue">군인연금</h6>
-										<div class="flexLeft spaceBetween">
-											<b class="listDate">2020-08-01 ~ 현재</b>
-										</div>
-										<ul class="msList bdt">
-											<li>
-												<label>가입기간</label>
-												<b>1년05개월</b>
-											</li>
-											<li>
-												<label>퇴직급여수령</label>
-												<b>-</b>
-											</li>
-											<li>
-												<label>연계신청</label>
-												<b>17개월 / <span class="colorBlue">처리완료</span></b>
-											</li>
-										</ul>
-									</div>
-								</li>
-								<li class="empty">
-									<div class="roundBoxGray">재직 이력이 없습니다.</div>
-								</li>
-							</ul>
-						</div>
-						<!-- //Mobile -->
 					</div>
 				</div>
 			</div>

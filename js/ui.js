@@ -443,7 +443,7 @@ $(document).ready(function () {
       });
     },
     open: function (_this, _target, _target_aria) {
-      var $wrap = $('.wrap');
+      var $wrap = $('.wrap, .header, .mFooterCon');
       
       //전체메뉴일 경우
       if(_target_aria === 'allMenu_pop') {
@@ -480,7 +480,8 @@ $(document).ready(function () {
       }});
     },
     close: function (_this, _target, _target_aria) {
-      var $wrap = $('.wrap');
+      var $wrap = $('.wrap, .header, .mFooterCon');
+      
       $(document).off();
       _target.removeClass("show");
       $wrap.removeAttr('aria-hidden');
@@ -624,15 +625,16 @@ $(document).ready(function () {
 			var $accordionBtn = $('.accordionBtn');
 			var $accopanel = $('.accopanel');
 
-			if(_target.css('display') === "none") {
+			if($(_this).attr('aria-expanded') === "false") {
 				$accopanel.slideUp(200).attr('tabindex', -1);
 				_target.slideDown(200).attr('tabindex', 0);
-
-				TweenLite.to(_target, .2, {onComplete:function() {
-					$accordionBtn.removeClass('active').attr({'aria-expanded': false}).find('.invisible').remove();
-					$(_this).addClass('active').attr({'aria-expanded': true});
-				}});
-			}
+        
+        $accordionBtn.removeClass('active').attr({'aria-expanded': false});
+        $(_this).addClass('active').attr({'aria-expanded': true});
+			} else {
+        $(_this).siblings('.accopanel').slideUp(200).attr('tabindex', -1);
+        $(_this).removeClass('active').attr({'aria-expanded': false});
+      }
 		},
 	}
 
