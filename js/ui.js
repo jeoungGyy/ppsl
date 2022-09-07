@@ -360,7 +360,11 @@ $(document).ready(function () {
 		},
     /* 모바일 반응형 클래스 추가 */
     thAddTable: function () {
-      var $thAddTable = $('.thAddTable'); 
+      var $thAddTable = $('.thAddTable');
+
+      if($thAddTable.length === 0) {
+        return false;
+      } 
       
       $thAddTable.each(function(index, element) {
         $(element).find('tbody tr').each(function(idx, elem) {
