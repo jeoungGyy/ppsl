@@ -348,6 +348,14 @@ colgroup { display: none;}
 .tableBody table tr.off { border-top: 1px dashed #dbdbdb;}
 .tableBody table tr.off td { border-top: none;}
 
+.tableBody.thAddTable table thead { display: none;}
+.tableBody.thAddTable table td .thHeader { display: block; width: calc(100% + 24px); margin: 0 0 12px -12px; padding: 12px 15px; font-weight: 700; text-align: left; background-color: #f7f7f7;}
+.tableBody.thAddTable table tbody tr td:last-child { padding-bottom: 12px;}
+.tableBody.thAddTable table tbody tr td:first-child { padding-top: 0;}
+.tableBody.thAddTable table td { display: block; padding: 12px 12px 0; text-align: left;}
+.tableBody.thAddTable table td .groupBox { justify-content: flex-start;}
+
+
 
 /* hTableBody */
 .hTableBody { border-bottom: 1px solid #dbdbdb;}

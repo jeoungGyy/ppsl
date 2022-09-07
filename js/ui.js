@@ -4,8 +4,7 @@ $(document).ready(function () {
     mobile_size: 767,
 
 		init: function () {
-      // common.groupBox();
-			common.selectBox();
+      common.selectBox();
 			common.searchReset();
 			common.menu();
 			common.menu_active();
@@ -13,16 +12,10 @@ $(document).ready(function () {
 			common.snsBtnToggle();
 			common.familySite();
 			common.inputStyle();
+      common.thAddTable();
 			common.initial();
 		},
-    /* 라디오, 체크박스 */
-		groupBox: function () {
-      $('.groupBox input').iCheck({
-        checkboxClass: 'icheckbox',
-        radioClass: 'iradio',
-      });
-		},
-     /* 셀렉트박스 */
+    /* 셀렉트박스 */
 		selectBox: function () {
       var select = $('select');
       select.change(function() {
@@ -362,6 +355,20 @@ $(document).ready(function () {
         
         $btnUpload.on('focusin focusout', function(e) {
           e.type == 'focusin' ? $label.addClass('etcFocus') : $label.removeClass('etcFocus');
+        });
+      });
+		},
+    /* 모바일 반응형 클래스 추가 */
+    thAddTable: function () {
+      var $thAddTable = $('.thAddTable'); 
+      
+      $thAddTable.each(function(index, element) {
+        $(element).find('tbody tr').each(function(idx, elem) {
+          $(element).find('.thHeader').each(function(i, obj) {
+            var _cloneObj = $(this).clone();
+
+            $(elem).find('td').eq(i).prepend(_cloneObj);
+          });
         });
       });
 		},
