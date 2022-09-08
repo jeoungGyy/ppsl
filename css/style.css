@@ -323,6 +323,7 @@ hr.space2 { margin: 25px 0; height: 1px; background-color: #dbdbdb;}
 .btnsGroup.pdt0 { padding-top: 0;}
 .btnsGroup.pdt24 { padding-top: 24px;}
 .btnsGroup >div { display: flex;}
+.btnsGroup button ~ a,
 .btnsGroup button ~ button { margin-left: 8px;}
 .btnsGroup .etcTip { position: relative; margin-top: 50px;}
 .btnsGroup .etcTip .text { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; position: absolute; right: 0; bottom: 66px; width: 180px; padding: 10px 0; font-size: 14px; color: #767676; border: 1px solid #DBDBDB; background-color: #fff; border-radius: 8px;}

@@ -452,6 +452,7 @@ $(document).ready(function () {
     },
     open: function (_this, _target, _target_aria) {
       var $wrap = $('.wrap, .header, .mFooterCon');
+      var $subLayerClose = $('.subLayerClose');
       
       //전체메뉴일 경우
       if(_target_aria === 'allMenu_pop') {
@@ -486,6 +487,11 @@ $(document).ready(function () {
           }
         });
       }});
+
+      // 레이어 닫기 버튼 클릭 시
+      $subLayerClose.on('click', function() {
+        layerPopup.close(_this, _target, _target_aria);
+      })
     },
     close: function (_this, _target, _target_aria) {
       var $wrap = $('.wrap, .header, .mFooterCon');
