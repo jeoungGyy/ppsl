@@ -339,14 +339,17 @@ colgroup { display: none;}
 .tableBody table th,
 .tableBody table td { display: flex; align-items: center; flex-wrap: wrap; padding: 8px 16px; font-size: 14px; line-height: 20px; border-top: none;}
 .tableBody table tr:last-child td { border-bottom: none;}
-.tableBody table td.empty { justify-content: center;}
+.tableBody table td.empty { padding: 8px 16px;}
 .tableBody table td.textLeftStyle { padding-left: 16px;}
 .tableBody table td.textLeftStyle img { margin: -4px 4px 0 0;}
-
-.tableBody.notBorder table td { border: none;}
-
 .tableBody table tr.off { border-top: 1px dashed #dbdbdb;}
 .tableBody table tr.off td { border-top: none;}
+.tableBody table tr.off.subOff { border-top: 1px solid #dbdbdb;}
+.tableBody table tr.off.subOff td { border-top: none;}
+.tableBody table tr.bgPurple td .button.h24 { margin-left: 16px;}
+.tableBody table th.bdt { border-top: none;}
+
+.tableBody.notBorder table td { border: none;}
 
 .tableBody.thAddTable table thead { display: none;}
 .tableBody.thAddTable table td .thHeader { display: block; width: calc(100% + 24px); margin: 0 0 12px -12px; padding: 12px 15px; font-weight: 700; text-align: left; background-color: #f7f7f7;}
@@ -368,6 +371,7 @@ colgroup { display: none;}
 .hTableBody table td .phone select,
 .hTableBody table td .phone span { width: calc(100% / 3);}
 .hTableBody table td .phone .button { position: absolute; left: 0; bottom: 0; margin-left: 0;}
+.hTableBody table td .phone.noPadding { padding-bottom: 0;}
 .hTableBody table td .post input { flex: 1;} 
 .hTableBody table td .address { flex-wrap: wrap;}
 .hTableBody table td .address input[type=text] { width: 100%;}
