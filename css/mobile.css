@@ -337,7 +337,7 @@ colgroup { display: none;}
 .tableBody table tr { border-top: 1px solid #dbdbdb;}
 .tableBody table th .colorOrange { margin-left: 4px;}
 .tableBody table th,
-.tableBody table td { display: flex; align-items: center; flex-wrap: wrap; padding: 8px 16px; font-size: 14px; line-height: 20px; border-top: none;}
+.tableBody table td { display: flex; align-items: center; flex-wrap: wrap; padding: 8px 16px; font-size: 14px; text-align: left; line-height: 20px; border-top: none;}
 .tableBody table tr:last-child td { border-bottom: none;}
 .tableBody table td.empty { padding: 8px 16px;}
 .tableBody table td.textLeftStyle { padding-left: 16px;}
