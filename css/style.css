@@ -1161,6 +1161,13 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .consultationPWLayer .pwInput { margin-top: 16px;}
 .consultationPWLayer .pwInput input { width: 100%;}
 
+/* 본인인증 처리 중 */
+.authenticationLayer .authRound { display: flex; align-items: center; justify-content: center; width: 80px; height: 80px; margin: 24px auto 0; background-color: #F4F7FC; border-radius: 50%;}
+.authenticationLayer .authRound .icon { width: 48px; height: 48px; background: url(../images/common/ico_secure.svg) no-repeat center/cover;}
+.authenticationLayer .authParagraph { margin-top: 24px; text-align: center; line-height: 24px;}
+.authenticationLayer .authParagraph p ~ p { margin-top: 20px;}
+.authenticationLayer .authRound {}
+
 /* 404페이지 */
 .errorPage { position: absolute; left: 50%; top: 50%; width: 900px; transform: translate(-50%, -50%);}
 .errorPage .textCompleteGroup { margin-top: 32px;}

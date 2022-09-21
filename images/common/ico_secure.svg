@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g id="ico_secure" transform="translate(4 2)">
+    <rect id="area" width="48" height="48" transform="translate(-4 -2)" fill="none"/>
+    <path id="제외_1" data-name="제외 1" d="M19,42h0l-2.1-.98A26.2,26.2,0,0,1,5.871,32.374,25.267,25.267,0,0,1,1.03,19.414L0,6.533A2.356,2.356,0,0,1,1.819,4.2L19,0h0L36.18,4.2A2.358,2.358,0,0,1,38,6.533L36.97,19.414a25.275,25.275,0,0,1-4.842,12.961A26.208,26.208,0,0,1,21.106,41.02L19,42h0Z" transform="translate(1 1)" fill="#366cc3"/>
+    <path id="패스_542" data-name="패스 542" d="M9,12.423l3.423,3.423L19.269,9" transform="translate(5.5 9.501)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>
