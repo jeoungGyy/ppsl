@@ -1321,7 +1321,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .mainBody .cwNot .targetGroup .cwTitle .new { display: inline-block; width: 16px; height: 16px; margin: -2px 0 0 4px; font-family: "Montserrat"; font-size: 10px; font-weight: 600; font-style: normal; color: #fff; text-align: center; line-height: 17px; vertical-align: middle; background-color: #fc676c; border-radius: 4px;}
 .mainBody .cwNot .targetGroup .cwDate { display: block; position: absolute; left: 16px; bottom: 24px; font-size: 14px; color: #767676;}
 .mainBody .cwNot .cwnMoreBtn { display: block; position: absolute; right: 6px; top: 0;}
-.mainBody .cwNot .cwnMoreBtn i { display: block; width: 16px; height: 16px; text-indent: -99999px; background: url(../images/common/ico_more.svg) no-repeat center/cover;}
+.mainBody .cwNot .cwnMoreBtn i { display: block; width: 16px; height: 16px; text-indent: -99999px; background: url(../images/common/ico_more@2x.png) no-repeat center/cover;}
 .mainFooter { margin-top: 32px; padding: 17px 0; border: solid 1px #dbdbdb; border-radius: 16px;}
 .mainFooter ul { display: flex; align-items: center;}
 .mainFooter ul li { width: 200px;}
