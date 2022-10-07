@@ -291,6 +291,7 @@
 								$mianSideSlideA.first().find('a').attr({'tabindex': 0, 'aria-hidden': false});
 								$mianSideSlideA.find('a').on({
 									"focus": function () {
+										console.log(1)
 										swiperA.autoplay.stop();
 									},
 									"blur": function () {
@@ -298,7 +299,7 @@
 									}
 								});
 
-								autoPlayBtnA = $('.posA .wrap-autoplay-control >button');
+								var autoPlayBtnA = $('.posA .wrap-autoplay-control >button');
 								autoPlayBtnA.on('click', function (e) {
 									autoPlayState = $(this).attr('aria-pressed');
 									if (autoPlayState === 'false') {
@@ -342,20 +343,19 @@
 						on: {
 							init: function() {
 								var thisSlide = this;
-
 								var $mianSideSlideB = $('#mianSideSlideB .swiper-wrapper >li');
 
 								$mianSideSlideB.first().find('a').attr({'tabindex': 0, 'aria-hidden': false});
 								$mianSideSlideB.find('a').on({
 									"focus": function () {
-										swiperA.autoplay.stop();
+										thisSlide.autoplay.stop();
 									},
 									"blur": function () {
-										swiperA.autoplay.start();
+										thisSlide.autoplay.start();
 									}
 								});
 
-								autoPlayBtnB = $('.posB .wrap-autoplay-control >button');
+								var autoPlayBtnB = $('.posB .wrap-autoplay-control >button');
 								autoPlayBtnB.on('click', function (e) {
 									autoPlayState = $(this).attr('aria-pressed');
 									if (autoPlayState === 'false') {
