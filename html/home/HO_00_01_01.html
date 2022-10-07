@@ -316,8 +316,7 @@
 
 								$swiperPaginationNumber.find('em').text(this.activeIndex + 1).siblings('span').text(this.slides.length);
 
-								$mianSideSlideA.eq(this.activeIndex).siblings().find('a').attr({'tabindex': -1, 'aria-hidden': true});
-								$mianSideSlideA.eq(this.activeIndex).find('a').attr({'tabindex': 0, 'aria-hidden': false});
+								$mianSideSlideA.eq(this.activeIndex).find('a').attr({'tabindex': 0, 'aria-hidden': false}).parent().siblings().find('a').attr({'tabindex': -1, 'aria-hidden': true});
 							},
 						},
 					});
@@ -375,8 +374,7 @@
 							slideChange: function() {
 								var $mianSideSlideB = $('#mianSideSlideB .swiper-wrapper >li');
 
-								$mianSideSlideB.eq(this.activeIndex).siblings().find('a').attr({'tabindex': -1, 'aria-hidden': true});
-								$mianSideSlideB.eq(this.activeIndex).find('a').attr({'tabindex': 0, 'aria-hidden': false});
+								$mianSideSlideB.eq(this.activeIndex).find('a').attr({'tabindex': 0, 'aria-hidden': false}).parent().siblings().find('a').attr({'tabindex': -1, 'aria-hidden': true});
 
 								setTimeout(function() {
 									$('.swiper-pagination-bullet').removeAttr('aria-label');
