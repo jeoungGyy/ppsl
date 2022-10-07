@@ -1291,7 +1291,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .mainBody .cwCov .cwBody a:hover { color: #366cc3;}
 .mainBody .cwCov .cwBody a:hover span { background-color: #366cc3;}
 .mainBody .cwSeo { position: relative; margin-top: 23px;}
-.mainBody .cwSeo .prop { display: flex; align-items: center; position: absolute; left: 24px; bottom: 20px; z-index: 1; width: 100%;}
+.mainBody .cwSeo .prop { display: flex; align-items: center; position: absolute; left: 24px; bottom: 20px; z-index: 1;}
 .mainBody .cwSeo .swiper-pagination { display: flex;}
 .mainBody .cwSeo .swiper-pagination button { margin: 0 2px; border: 1px solid #333; background-color: transparent; opacity: 1 !important;}
 .mainBody .cwSeo .swiper-pagination button.swiper-pagination-bullet-active { background-color: #333;}
