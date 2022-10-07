@@ -287,11 +287,9 @@
 								var $mianSideSlideA = $('#mianSideSlideA .swiper-wrapper >li');
 								
 								$swiperPaginationNumber.find('em').text(this.activeIndex + 1).siblings('span').text(this.slides.length);
-
 								$mianSideSlideA.first().find('a').attr({'tabindex': 0, 'aria-hidden': false});
 								$mianSideSlideA.find('a').on({
 									"focus": function () {
-										console.log(1)
 										swiperA.autoplay.stop();
 									},
 									"blur": function () {
@@ -354,6 +352,7 @@
 										thisSlide.autoplay.start();
 									}
 								});
+								$mianSideSlideB.find('a').append('<span class="invisible">총 ${slideAll.length} 장의 슬라이드 중 1번째 슬라이드입니다.</span>');
 
 								var autoPlayBtnB = $('.posB .wrap-autoplay-control >button');
 								autoPlayBtnB.on('click', function (e) {
