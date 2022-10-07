@@ -116,7 +116,7 @@
 								<div class="cwBody">
 									<div class="wrap-slide-box">
 										<div class="prop">
-											<div class="swiper-pagination-number" role="text"><em></em>/<span></span></div>
+											<div class="swiper-pagination-number" role="text"><em class="current"></em>/<span class="total"></span></div>
 										</div>
 										<div class="swiper-button-prev"></div>
 										<div class="prop posA">
@@ -282,7 +282,7 @@
 						},
 						on: {
 							init: function() {
-								thisSlide = this;
+								var thisSlide = this;
 								var $swiperPaginationNumber = $('.swiper-pagination-number');
 								var $mianSideSlideA = $('#mianSideSlideA .swiper-wrapper >li');
 								
@@ -341,7 +341,7 @@
 						},
 						on: {
 							init: function() {
-								thisSlide = this;
+								var thisSlide = this;
 
 								var $mianSideSlideB = $('#mianSideSlideB .swiper-wrapper >li');
 

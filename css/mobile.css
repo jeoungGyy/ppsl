@@ -689,7 +689,7 @@ colgroup { display: none;}
 .mainBody .cwNot .targetGroup { min-height: inherit;}
 .mainBody .cwNot .targetGroup .cwTitle b { padding-bottom: 25px;}
 
-.mainFooter { margin-top: 24px; padding: 0 16px; border: none; border-radius: 0;}
+.mainFooter { margin-top: 24px; padding: 30px 16px 0; border: none; border-top: solid 1px #dbdbdb; border-radius: 0;}
 .mainFooter ul { flex-wrap: wrap; margin: -4px;}
 .mainFooter ul li { width: calc(33.33% - 8px); margin: 4px;}
 .mainFooter ul li a { flex-direction: column; height: 104px; text-align: center; background-color: #f7f7f7; border-radius: 16px;}
