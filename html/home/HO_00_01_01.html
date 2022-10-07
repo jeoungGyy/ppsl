@@ -290,10 +290,10 @@
 								$mianSideSlideA.first().find('a').attr({'tabindex': 0, 'aria-hidden': false});
 								$mianSideSlideA.find('a').on({
 									"focus": function () {
-										swiperA.autoplay.stop();
+										thisSlide.autoplay.stop();
 									},
 									"blur": function () {
-										swiperA.autoplay.start();
+										thisSlide.autoplay.start();
 									}
 								});
 
