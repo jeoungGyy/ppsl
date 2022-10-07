@@ -1269,14 +1269,14 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .wrap-slide-box { position: relative; height: 132px;}
 .wrap-slide-box .swiper-container { width: 100%; height: 100%; margin: 0 auto; padding: 2px 0;}
 .wrap-slide-box .swiper-slide { display: flex; justify-content: center; align-items: center; flex-wrap: nowrap; flex-direction: column;}
-.wrap-slide-box .swiper-button-prev, 
+.wrap-slide-box .swiper-button-prev,
 .wrap-slide-box .swiper-container-rtl .swiper-button-next { left: inherit; right: 40px; top: -26px; width: 16px; height: 16px; margin-top: 0; background: url(../images/common/ico_arrow_left.svg) no-repeat center/cover;}
 .wrap-slide-box .swiper-button-next, 
 .wrap-slide-box .swiper-container-rtl .swiper-button-prev { right: 0; top: -26px; width: 16px; height: 16px; margin-top: 0; background: url(../images/common/ico_arrow_right.svg) no-repeat center/cover;}
 .wrap-slide-box .wrap-autoplay-control button { display: block; width: 16px; height: 16px;}
 .wrap-slide-box .posA .wrap-autoplay-control button { position: absolute; top: -26px;}
 .wrap-slide-box .wrap-autoplay-control button[aria-pressed="true"] { right: 20px; background: url(../images/common/ico_play_indi.svg) no-repeat center/cover;}
-.wrap-slide-box .wrap-autoplay-control button[aria-pressed="false"] { right: 20px; background: url(../images/common/ico_stop.svg) no-repeat center/cover;}
+.wrap-slide-box .wrap-autoplay-control button[aria-pressed="false"] { right: 20px; background: url(../images/common/ico_stop@2x.png) no-repeat center/cover;}
 .wrap-slide-box .swiper-pagination-number { position: absolute; right: 64px; top: -25px; font-size: 14px; color: #767676; letter-spacing: 3px;}
 .wrap-slide-box .swiper-pagination-number .current { font-size: 14px; font-weight: 700; color: #333;}
 .wrap-slide-box .swiper-pagination-number .total { font-size: 14px;}
