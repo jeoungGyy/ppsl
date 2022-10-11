@@ -9,6 +9,8 @@
 .gnb .depth1 >li { width: 16%;}
 .gnb .depth1 >li:nth-child(6) { width: 20%;}
 
+.header .menu .subMenuBlind::after { left: -20px; width: 100%; margin-left: 0;}
+
 /* wrap */
 .wrap { padding: 104px 16px 0;}
 
