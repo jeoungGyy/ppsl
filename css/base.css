@@ -91,6 +91,7 @@ input:not([type=checkbox]):not([type=radio])[readonly] { color: #333; background
 input:not([type=checkbox]):not([type=radio])[disabled] { color: #767676; background-color:#f7f7f7; -webkit-text-fill-color: #767676; opacity: 1;}
 input.jQdate[readonly] { background-color: #fff !important;}
 input.jQdate[readonly] + button { background-color: #fff;}
+input[type="text"]::-ms-clear { display: none;}
 /* input[type=file]:required:not(:placeholder-shown),
 input[type=text]:required:not(:placeholder-shown),
 input[type=tel]:required:not(:placeholder-shown),
