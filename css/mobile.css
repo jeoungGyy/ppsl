@@ -7,6 +7,8 @@
 #wrap .onlyMobile { display: block;}
 #wrap .mobileVisible { display: none;}
 
+.area { width: 100%;}
+
 /* skipnav */
 .skipnav { display: none;}
 
@@ -339,7 +341,7 @@ colgroup { display: none;}
 .tableBody table th,
 .tableBody table td { display: flex; align-items: center; flex-wrap: wrap; padding: 8px 16px; font-size: 14px; text-align: left; line-height: 20px; border-top: none;}
 .tableBody table tr:last-child td { border-bottom: none;}
-.tableBody table td.empty { padding: 8px 16px;}
+.tableBody table td.empty { justify-content: center; padding: 24px 16px;}
 .tableBody table td.textLeftStyle { padding-left: 16px;}
 .tableBody table td.textLeftStyle img { margin: -4px 4px 0 0;}
 .tableBody table tr.off { border-top: 1px dashed #dbdbdb;}

@@ -271,8 +271,12 @@ hr.space { margin: 40px 0; height: 1px; background-color: #dbdbdb;}
 hr.space2 { margin: 25px 0; height: 1px; background-color: #dbdbdb;}
 
 /* 기타등등 */
-.bLine { color: #333; border-bottom: 1px solid #333;}
-.bLink img { margin: -2px 0 0 2px; vertical-align: middle;}
+.bLine { color: #333; line-height: 1; border-bottom: 1px solid #333;}
+.bLink { display: inline-flex; align-items: center;}
+.bLink .arrowUp { width: 16px; height: 16px; margin: -2px 0 0 4px; background: url(../images/common/ico_link.svg) no-repeat center/cover;}
+.bLink:hover >span,
+.bLink:hover .bLine { color: #366CC3; border-color: #366CC3;}
+.bLink:hover .arrowUp { background: url(../images/common/ico_link_blue.svg) no-repeat center/cover;}
 .supBody { display: inline-block; line-height: 1;}
 .supBody span { display: inline-block; vertical-align: middle;}
 .supBody .sup { display: inline-block; margin-left: 2px; font-size: 10px; vertical-align: top; zoom: 0.9;}
@@ -283,7 +287,7 @@ hr.space2 { margin: 25px 0; height: 1px; background-color: #dbdbdb;}
 .button.h40 { min-width: 80px; min-height: 40px; height: 40px;}
 .button.h32 { min-width: 60px; min-height: 32px; height: 32px; font-size: 14px;}
 .button.h24 { min-height: 24px; height: 24px; font-size: 14px;}
-.button[disabled] { color: #959595 !important; border-color: #EAEAEA !important; background-color: #EAEAEA !important; cursor: not-allowed;}
+.button[disabled] { color: #767676 !important; border-color: #f7f7f7 !important; background-color: #f7f7f7 !important; cursor: not-allowed;}
 .button.black { color: #fff; background-color: #333;}
 .button.black:hover, 
 .button.black:active { background-color: #000;}
@@ -296,7 +300,9 @@ hr.space2 { margin: 25px 0; height: 1px; background-color: #dbdbdb;}
 .button.lineBlack { border: 1px solid #333; background-color: #fff;}
 .button.lineBlack:hover,
 .button.lineBlack:active { color: #366cc3; border-color: #366cc3;}
-.button.lineBlack[disabled] { background-color: #f7f7f7 !important;}
+.button.lineBlack:hover .arrowRightSmall { background: url(../images/common/ico_arrow_right_hover.svg) no-repeat center/cover;}
+
+.button.lineBlack[disabled] { border-color: #dbdbdb !important;}
 .button.lineWhite { color: #fff; border: 1px solid #fff;}
 
 .button .dsBlock { vertical-align: middle; line-height: 24px;}
@@ -306,12 +312,15 @@ hr.space2 { margin: 25px 0; height: 1px; background-color: #dbdbdb;}
 
 .lineButton { display: inline-flex; align-items: center; line-height: 1.1;}
 .lineButton span { font-size: 14px; border-bottom: 1px solid #333;}
-.lineButton .arrowRight { width: 16px; height: 16px; margin: 0 0 0 4px; background: url(../images/common/ico_arrow_right.svg) no-repeat center/cover;}
+.lineButton .arrowRight { width: 16px; height: 16px; margin: -2px 0 0 4px; background: url(../images/common/ico_arrow_right.svg) no-repeat center/cover;}
 .lineButton .icoPlus { width: 16px; height: 16px; margin: -1px 0 0 4px; background: url(../images/common/ico_plus.svg) no-repeat center/cover;}
 .lineButton .icoDownload { width: 16px; height: 16px; margin: -1px 0 0 4px; background: url(../images/common/ico_download2.svg) no-repeat center/cover;}
 .lineButton:hover { color: #366cc3;}
 .lineButton:hover span { border-color: #366cc3;}
 .lineButton:hover .arrowRight { background: url(../images/common/ico_arrow_right_hover.svg) no-repeat center/cover;}
+.lineButton[disabled] { color: #959595;}
+.lineButton[disabled] span { border-color: #959595;}
+.lineButton[disabled] .arrowRight { background: url(../images/common/ico_bc_arrow.svg) no-repeat center/cover;}
 
 .btnsGroup { display: flex; align-items: center; padding-top: 32px;}
 .btnsGroup.spaceBetween { justify-content: space-between;}
@@ -377,7 +386,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .radioBox input[type=radio]:checked::before { border-color: #366cc3;}
 .radioBox input[type=radio]:checked::after { background-color: #366cc3;}
 .radioBox input[type=radio]:disabled::before { border-color: #dbdbdb;}
-.radioBox input[type=radio]:disabled::after { background-color: #eaeaea;}
+.radioBox input[type=radio]:disabled::after { background-color: #dbdbdb;}
 
 .groupBox.single input,
 .checkboxBox input,
@@ -414,6 +423,36 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .groupBox.single input:disabled + label,
 .checkboxBox input:disabled + label,
 .radioBox input:disabled + label { cursor: inherit;}
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .radioBox,
+  .checkboxBox { padding-left: 28px;}
+  .radioBox input[type=radio],
+  .radioBox input[type=checkbox],
+  .checkboxBox input { display: none;}
+  .radioBox input[type=checkbox] + label:before,
+  .checkboxBox input + label:before { content: ''; position: absolute; left: 0; top: 0; width: 18px; height: 18px; background-color: #fff; border-radius: 50%; transition: all .2s ease-in-out; border: 1px solid #a5a5a5;}
+  .radioBox input[type=checkbox] + label:after,
+  .checkboxBox input + label:after { content: ''; position: absolute; left: 0; top: 0; width: 20px; height: 20px; background: url(../images/common/ico_checkbox_d.svg) no-repeat center; border-radius: 50%; transition: all .2s ease-in-out;}
+  .checkboxBox input:checked + label:before,
+  .radioBox input[type=checkbox]:checked + label:before { border-color: #366cc3;}
+  .checkboxBox input:checked + label:before,
+  .radioBox input[type=checkbox]:checked + label:before { border-color: #366cc3;}
+  .checkboxBox input:checked + label:after,
+  .radioBox input[type=checkbox]:checked + label:after { background: #366cc3 url(../images/common/ico_checkbox_w.svg) no-repeat center;}
+  .checkboxBox input:disabled + label:before,
+  .radioBox input[type=checkbox]:disabled + label:before { border-color: #dbdbdb;}
+  .checkboxBox input:disabled + label:after,
+  .radioBox input[type=checkbox]:disabled + label:after { background-color: #f7f7f7;}
+
+  .radioBox input[type=radio] + label:before { content: ''; position: absolute; left: 0; top: 0; width: 18px; height: 18px; background-color: #fff; border-radius: 50%; transition: all .2s ease-in-out; border: 1px solid #a5a5a5;}
+  .radioBox input[type=radio] + label:after { content: ''; position: absolute; left: 4px; top: 4px; width: 12px; height: 12px; border-radius: 50%; transition: all .2s ease-in-out;}
+  .radioBox input[type=radio]:checked + label:before { border-color: #366cc3;}
+  .radioBox input[type=radio]:checked + label:after { background-color: #366cc3;}
+  .radioBox input[type=radio]:disabled + label:before { border-color: #dbdbdb;}
+  .radioBox input[type=radio]:disabled + label:after { background-color: #dbdbdb;}
+}
 
 
 /* lineSpace */
@@ -532,7 +571,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .ui-datepicker td.ui-datepicker-week-end a { color: #ee0700;}
 .ui-datepicker td:last-child.ui-datepicker-week-end a { color: #0052bb;}
 .ui-state-default, 
-.ui-widget-content .ui-state-default { display: flex; align-items: center; justify-content: center; width: 28px; height: 28px; margin: 0 auto; font-size: 14px; color: #333; text-align: center; border: none; border-radius: 50%;}
+.ui-widget-content .ui-state-default { display: flex; align-items: center; justify-content: center; width: 28px; height: 28px; margin: 0 auto; font-size: 14px; color: #767676; text-align: center; border: none; border-radius: 50%;}
 .ui-datepicker .ui-datepicker-prev { display: block; left: -6px; top: 6px; cursor: pointer;}
 .ui-datepicker .ui-datepicker-next { display: block; right: -6px; top: 6px; cursor: pointer;}
 .ui-datepicker .ui-datepicker-prev span,
@@ -568,6 +607,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .viewBody .fileForm ul li a i { display: inline-block; width: 24px; height: 24px; margin-left: 4px; vertical-align: middle;}
 .viewBody .fileForm ul li a i.play {  background: url(../images/common/ico_play.svg) no-repeat center/cover;}
 .viewBody .fileForm ul li a i.download { background: url(../images/common/ico_download.svg) no-repeat center/cover;}
+.viewBody .fileForm ul li a:hover { text-decoration: underline;}
 .viewBody .fileForm ul li ~ li { margin-top: 8px;}
 .viewBody .article { padding: 40px 0;}
 .viewBody .article p { line-height: 24px;}
@@ -907,9 +947,12 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 .hTableBody table td .email span { position: relative; margin-right: 33px;}
 .hTableBody table td .email span::after { content: '@'; position: absolute; right: -25px; top: 10px;}
 .hTableBody table td .email select { width: 200px; margin-left: 4px;}
-.hTableBody table td .textarea { border: solid 1px #dbdbdb;}
-.hTableBody table td .textarea textarea { border: none;}
-.hTableBody table td .textarea .byte { display: block; padding-right: 8px; font-size: 12px; color: #767676; text-align: right;}
+.textarea { border: solid 1px #dbdbdb; transition: border-color .2s ease-in-out;}
+.textarea textarea { border: none;}
+.textarea .byte { display: block; padding-right: 8px; font-size: 12px; color: #767676; text-align: right;}
+.textarea:hover{ border-color: #333;}
+.textarea.readonly { background-color: #f7f7f7;}
+.textarea.disabled { background-color: #f7f7f7;}
 .hTableBody table td .fileBtnBox { display: flex; align-items: flex-end; margin-bottom: 8px;}
 .hTableBody table td .fileBtnBox .volumeText { margin-left: 16px; font-size: 12px;}
 .hTableBody table td .fileList li ~ li { margin-top: 8px;}
@@ -1065,7 +1108,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 
 
 
-/* 레이어
+/* 레이어 팝업 popup
 **********************************************/
 
 .layerPopup { display: none; position: fixed; z-index: 1000; top: 0; right: 0; bottom: 0; left: 0; padding: 0 16px; background: rgba(0,0,0,0.7); outline: none; opacity: 0; transition: opacity .3s;}
@@ -1116,7 +1159,7 @@ select.h32 { height: 32px; font-size: 14px; background-position: right 16px top 
 /* 설문조사 */
 .layerSurveyBody { overflow: hidden; position:relative; left:50%; top:50%; width: 384px; text-align: center; vertical-align: middle; border-radius: 8px; transform: translate(-50%, -50%);}
 .layerSurveyBody .layerContent .bgCon { padding: 64px 16px 183px; background: #F4F7FC url(../images/common/img_survey.svg) no-repeat left bottom/380px 160px;}
-.layerSurveyBody .layerContent .partGroup { padding: 20px 18px 35px 14px; background-color: #fff;}
+.layerSurveyBody .layerContent .partGroup { padding: 20px 18px 20px 14px; background-color: #fff;}
 .layerSurveyBody .layerContent .partGroup label { font-size: 16px;}
 .layerSurveyBody .bgCon .tt { font-size: 19px; color: #000; line-height: 29px;}
 .layerSurveyBody .bgCon .title { font-size: 28px; font-weight: 700; line-height: 42px;}

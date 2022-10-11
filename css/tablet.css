@@ -3,8 +3,6 @@
 /* 공통 구조
 **********************************************/
 
-.area { width: 100%;}
-
 /* header */
 .header .global,
 .header .menu { padding: 0 16px;}
