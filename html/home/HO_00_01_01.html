@@ -64,6 +64,7 @@
 								</div>
 							</div>
 							<div class="newDeco nDeco1" style="z-index: 1"></div>
+							<div class="newDeco nDeco2"></div>
 						</div>
 
 						<div class="onlyMobile">
@@ -262,6 +263,40 @@
 				</div>
 
 				<script>
+					// 계절별 변화 이미지
+					var season = {
+						firstSecond: 5, // 기본 이미지 시간
+						nextSecond: 10, // 계절 이미지 시간
+						seasonName : 'autumn', // 봄: spring, 여름: summer, 가을: autumn, 겨울: winter
+						active : function() {
+							var $nDeco1 = $('.nDeco1');
+							var $nDeco2 = $('.nDeco2');
+							$nDeco2.addClass(season.seasonName);
+							
+							var firstImg = function() {
+								$nDeco2.removeClass('fade').removeAttr('style');
+								$nDeco1.attr('style', 'z-index: 1');
+
+								setTimeout(function() {
+									$nDeco1.addClass('fade');
+									setTimeout(nextImg, season.nextSecond * 1000)
+								});
+							}
+							var nextImg = function() {
+								$nDeco1.removeClass('fade').removeAttr('style');
+								$nDeco2.attr('style', 'z-index: 1');
+
+								setTimeout(function() {
+									$nDeco2.addClass('fade');
+									setTimeout(firstImg, season.firstSecond * 1000)
+								});
+							}
+							setTimeout(firstImg, season.firstSecond * 1000)
+						}
+					}
+					season.active();
+					
+					// 슬라이드
 					var swiperA = new Swiper("#mianSideSlideA", {
 						slidesPerView: 1,
 						speed: 300,
@@ -295,6 +330,10 @@
 									"blur": function () {
 										thisSlide.autoplay.start();
 									}
+								});
+
+								$.each($mianSideSlideA, function(index) {
+									$(this).find('a').append('<span class="invisible">총 '+ $mianSideSlideA.length +'장의 슬라이드 중 '+ (index+1) +'번째 슬라이드입니다.</span>');
 								});
 
 								var autoPlayBtnA = $('.posA .wrap-autoplay-control >button');
@@ -352,7 +391,10 @@
 										thisSlide.autoplay.start();
 									}
 								});
-								$mianSideSlideB.find('a').append('<span class="invisible">총 ${slideAll.length} 장의 슬라이드 중 1번째 슬라이드입니다.</span>');
+
+								$.each($mianSideSlideB, function(index) {
+									$(this).find('a').append('<span class="invisible">총 '+ $mianSideSlideB.length +'장의 슬라이드 중 '+ (index+1) +'번째 슬라이드입니다.</span>');
+								});
 
 								var autoPlayBtnB = $('.posB .wrap-autoplay-control >button');
 								autoPlayBtnB.on('click', function (e) {

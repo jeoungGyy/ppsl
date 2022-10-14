@@ -39,7 +39,16 @@ str += '              <li><a href="../information/HO_01_02_01.html" data-menu="d
 str += '                <ul class="depth3">';
 str += '                  <li><a href="../information/HO_01_02_01.html" data-menu="depth_1_2_1" role="button"><span>연계신청</span></a></li>';
 str += '                  <li><a href="../information/HO_01_02_02.html" data-menu="depth_1_2_2" role="button"><span>반납금납부</span></a></li>';
-str += '                  <li><a href="../information/HO_01_02_03_01.html" data-menu="depth_1_2_3" role="button"><span>연금종류 및 청구</span></a></li>';
+str += '                  <li><a href="../information/HO_01_02_03_01.html" data-menu="depth_1_2_3" role="button"><span>연금종류 및 청구</span></a>';
+str += '                    <ul class="depth4">';
+str += '                      <li>';
+str += '                        <a href="../information/HO_01_02_03_01_01.html" data-menu="depth_1_2_3_1" role="button"><span>4depth 01</span></a>';
+str += '                        <ul class="depth5">';
+str += '                          <li><a href="../information/HO_01_02_03_01_01_01.html" data-menu="depth_1_2_3_1_1" role="button"><span>5depth 01</span></a></li>';
+str += '                        </ul>';
+str += '                      </li>';
+str += '                    </ul>';
+str += '                  </li>';
 str += '                </ul>';
 str += '              </li>';
 str += '              <li><a href="../information/HO_01_03_01.html" data-menu="depth_1_3" role="button"><span>신고/절차안내</span></a>';

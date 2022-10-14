@@ -145,16 +145,22 @@ $(document).ready(function () {
 					var _depth = _item.split("_");
 					var _depthShift = _depth.shift();
 					if(_depth.join("") === depth.join("")) {
-            $(this).addClass("active").attr('title', '선택됨').parents("ul").siblings("a").addClass("active arrow").attr('title', '선택됨');
+            $(this).addClass("active").attr('title', '선택됨').parents("ul").siblings("a").addClass("active arrow").attr('title', '메뉴 확장');
 						var lnb_title = $(this).parents(".depth2").siblings("a").text();
 						var lnb_clone = $(this).parents(".depth2").clone();
             var lnb_title_clone2 = $(this).parents(".depth2").siblings("a").clone();
             var lnb_title_clone3 = $(this).parents(".depth3").siblings("a").clone();
+            var lnb_title_clone4 = $(this).parents(".depth4").siblings("a").clone();
+            var lnb_title_clone5 = $(this).parents(".depth5").siblings("a").clone();
             var this_clone = $(this).clone();
 
 						$lnbBody.find("h2").text(lnb_title).siblings(".lnb").append(lnb_clone);
             if(_depth.length == 3) {
               $location.append(lnb_title_clone2).append(lnb_title_clone3).append(this_clone);
+            } else if(_depth.length == 4) {
+              $location.append(lnb_title_clone2).append(lnb_title_clone3).append(lnb_title_clone4).append(this_clone);
+            } else if(_depth.length == 5) {
+              $location.append(lnb_title_clone2).append(lnb_title_clone3).append(lnb_title_clone4).append(lnb_title_clone5).append(this_clone);
             } else {
               $location.append(lnb_title_clone2).append(this_clone);
             }

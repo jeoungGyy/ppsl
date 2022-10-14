@@ -122,5 +122,5 @@ table td { vertical-align: middle;}
 
 .ellipsis { overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
 .hidden {	display:none;}
-.invisible { position: absolute; z-index: -1; display: inline-block; overflow: hidden; height: 1px; width: 1px; border: 0; clip: rect(1px, 1px, 1px, 1px); clip-path: inset(50%); word-break: initial; word-wrap: initial; border: none;}
+.invisible { position: absolute; z-index: -1; display: inline-block; overflow: hidden; height: 1px; width: 1px; border: none; clip: rect(1px, 1px, 1px, 1px); clip-path: inset(50%); word-break: initial; word-wrap: initial;}
 .etcFocus { overflow: hidden; outline: 1px solid #000 !important; border-radius: 3px;}
