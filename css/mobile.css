@@ -38,9 +38,14 @@
 .contentsHeader { display: block; text-align: center;}
 .contentsHeader .title h3 { font-size: 24px;}
 .contentsHeader .title p { color: #767676;}
-.contentsHeader .location { position: inherit; right: inherit; top: inherit; margin-top: 16px;}
+.contentsHeader .location { display: inline-block; position: inherit; right: inherit; top: inherit; margin-top: 16px; line-height: 32px; word-break: keep-all;}
 .contentsHeader .location button.printBtn { display: none;}
 .contentsHeader .location button.shareBtn { margin-left: 16px;}
+
+.contentsHeader .location i.home { vertical-align: middle;}
+.contentsHeader .location .locationDepth { display: inline; vertical-align: middle;}
+.contentsHeader .location .snsBox { display: inline-block; vertical-align: middle;}
+
 
 /* 푸터 */
 .mFooterCon .ftLinks { margin-top: 40px; padding: 32px 16px 0; border-bottom: none;}

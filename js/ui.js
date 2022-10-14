@@ -404,6 +404,10 @@ $(document).ready(function () {
               $(this).removeClass('active').attr({'aria-expanded': false}).parents('.m_toggleArea').find('.target').slideUp(200);
             }
           });
+
+          /* location A태그 title 속성 삭제 */
+          var $locationDepth = $('.locationDepth');
+          $locationDepth.find('a').removeAttr('title');
         }
         else if ($(this).width() >= 768 && !fired[1]) {
           fired[0] = false;
