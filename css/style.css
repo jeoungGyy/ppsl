@@ -154,10 +154,12 @@ body.noScroll { overflow: hidden;}
 .contentsHeader .location .shareBtn i { background: url(../images/common/ico_share.svg) no-repeat center/cover;}
 .contentsHeader .location .shareBtn:hover i { background: url(../images/common/ico_share_w.svg) no-repeat center/cover;}
 .contentsHeader .location .snsBox { position: relative;}
-.contentsHeader .location .snsBox .snsLinks { display: none; position: absolute; right: 0; top: 40px; z-index: 1; width: 110px; height: 154px; padding: 22px 0 0 12px; background: url(../images/common/sns_border.svg) no-repeat center; opacity: 0; transition: opacity .6s;}
+.contentsHeader .location .snsBox .snsLinks { display: none; position: absolute; right: 0; top: 40px; z-index: 1; padding: 10px 0 0 0; opacity: 0; transition: opacity .6s;}
+.contentsHeader .location .snsLinks ul { position: relative; min-width: 110px; padding: 11px; border: 1px solid #ddd; background-color: #fff; border-radius: 8px;}
+.contentsHeader .location .snsLinks ul::after { content: ''; position: absolute; right: 5px; top: -11px; width: 18px; height: 15px; background: url(../images/common/sns_border.png) no-repeat;}
 .contentsHeader .location .snsLinks ul li img { margin-right: 8px;}
 .contentsHeader .location .snsLinks ul li ~ li { margin-top: 8px;}
-.contentsHeader .location .snsLinks ul li .sBtn { display: flex; align-items: center; font-size: 12px;}
+.contentsHeader .location .snsLinks ul li .sBtn { display: flex; align-items: center; font-size: 12px; white-space:nowrap;}
 
 .contentsHeader .location .shareBtn.active { border-color: #366cc3; background-color: #366cc3;}
 .contentsHeader .location .shareBtn.active i { background: url(../images/common/ico_sns_close_w.svg) no-repeat center/cover;}
