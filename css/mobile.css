@@ -186,6 +186,7 @@ hr.space.style5 { margin: 8px -16px 32px;}
 .viewBody .lineSpace >span ~ span { margin: 8px 0 0 0; padding-left: 0;}
 .viewBody .lineSpace >span ~ span::before { display: none;}
 .viewBody .lineSpace ~ .lineSpace { margin-top: 8px;}
+.viewBody .lineSpace.file ul { margin: 4px 0 0;} 
 .viewBody .fileForm { margin-top: 16px;}
 .viewBody .article { padding: 24px 0;}
 .postGroup li .ellipsis { flex: 1;}
